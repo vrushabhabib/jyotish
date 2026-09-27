@@ -1,0 +1,15 @@
+# Foundations — how the chart is calculated
+
+- **Ayanamsa**: Lahiri (Chitrapaksha) — official Indian Rashtriya Panchang. ~24.2° in 2026. Raman (~22.5°) and KP (~23.9°, Krishnamurti) differ; a planet within ~1° of a sign/nakshatra boundary can shift. The agent must flag boundary cases.
+- **Sidereal vs tropical**: Vedic = sidereal. Western = tropical. Same sky, different zero point.
+- **Lagna**: the sidereal ecliptic degree rising in the east at the birth moment. Changes sign every ~2 hours — birth-time accuracy is the primary source of error. ±5 min shifts lagna degree ~1.25°; ±30 min can shift lagna sign near boundaries.
+- **Houses**: Whole Sign (Rashi chakra) for placement; Bhava Chalit (Sripati/equal-from-lagna-cusp) for cusp-based strength in North Indian practice; KP uses Placidus cusps. The agent's default is Whole Sign; notes a planet that changes house in Chalit.
+- **Nakshatras**: 27 × 13°20' from 0° Aries sidereal; 4 padas of 3°20'. Abhijit (28th) only for muhurta.
+- **Vargas**: D1 rashi, D2 hora (wealth), D3 drekkana (siblings, courage), D4 (property), D7 saptamsa (children), D9 navamsa (marriage, dharma, inner self — the most important after D1), D10 dasamsa (career), D12 dwadasamsa (parents), D16 (vehicles/comforts), D20 (spirituality), D24 (education), D27 (strength), D30 trimsamsa (evils, health), D40, D45, D60 shashtiamsa (past karma; needs exact time). **Vargottama**: same sign in D1 and D9 — very strong.
+- **Panchanga** (five limbs of the day at birth): Vara (weekday), Tithi (lunar day: Moon−Sun / 12°), Nakshatra (Moon's), Yoga (Sun+Moon / 13°20'), Karana (half tithi). Tithi and weekday affect temperament and are used in some dasha/prashna systems.
+- **Shadbala** (six-fold strength): Sthana (positional), Dig (directional: Sun/Mars strong in 10, Jupiter/Mercury in 1, Moon/Venus in 4, Saturn in 7), Kala (temporal), Chesta (motional), Naisargika (natural), Drik (aspectual). Required minimums (in rupas): Sun 6.5, Moon 6, Mars 5, Mercury 7, Jupiter 6.5, Venus 5.5, Saturn 5. — to be added to `engine/shadbala.py`.
+- **Ashtakavarga**: each planet's benefic points (bindus) in each sign from 7 reference points; Sarvashtakavarga sum per sign (avg 28; >30 strong, <25 weak). Used for transit judgement and house strength. — to be added to `engine/ashtakavarga.py`.
+- **Aspects (drishti)**: all planets aspect 7th. Mars also 4 & 8; Jupiter 5 & 9; Saturn 3 & 10; Rahu/Ketu 5 & 9 (some traditions: also 7 / 2 & 12). Rashi drishti (Jaimini): movable signs aspect fixed signs except adjacent, etc.
+- **Combustion**: within ~8° (Mercury 14°, Venus 10°, Mars 17°, Jupiter 11°, Saturn 15°, Moon 12°) of Sun — planet loses strength (except a retrograde Mercury/Venus, less so).
+- **Retrograde**: stronger by Chesta bala; results delayed/internalised/reversed; exalted retrograde ≈ debilitated and vice versa (one school).
+- **Birth time rectification**: methods — event-based (dasha of known events), Nadi (Moon pada/gender), Kunda (Tattva), lagna–Moon relationship, D60 consistency. Flag charts whose time is "approximate".
