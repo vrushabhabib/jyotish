@@ -1,0 +1,38 @@
+{
+  "_note": "27 nakshatras, 13°20' each, starting 0° Aries sidereal. Attributes used for Ashtakoota: gana, yoni (animal + gender), nadi, plus vimshottari lord. Varna and vashya derive from rashi. Deity/symbol for interpretation.",
+  "nakshatras": [
+    {"n":1,"name":"Ashwini","lord":"Ketu","deity":"Ashwini Kumaras","symbol":"Horse's head","gana":"Deva","yoni":"Horse","yoni_gender":"M","nadi":"Adi","guna":"Rajas","motive":"Dharma","nature":"Kshipra (swift)"},
+    {"n":2,"name":"Bharani","lord":"Venus","deity":"Yama","symbol":"Yoni / womb","gana":"Manushya","yoni":"Elephant","yoni_gender":"M","nadi":"Madhya","guna":"Rajas","motive":"Artha","nature":"Ugra (fierce)"},
+    {"n":3,"name":"Krittika","lord":"Sun","deity":"Agni","symbol":"Razor / flame","gana":"Rakshasa","yoni":"Sheep","yoni_gender":"F","nadi":"Antya","guna":"Rajas","motive":"Kama","nature":"Mishra (mixed)"},
+    {"n":4,"name":"Rohini","lord":"Moon","deity":"Brahma / Prajapati","symbol":"Cart / chariot","gana":"Manushya","yoni":"Serpent","yoni_gender":"M","nadi":"Antya","guna":"Rajas","motive":"Moksha","nature":"Dhruva (fixed)"},
+    {"n":5,"name":"Mrigashira","lord":"Mars","deity":"Soma","symbol":"Deer's head","gana":"Deva","yoni":"Serpent","yoni_gender":"F","nadi":"Madhya","guna":"Tamas","motive":"Moksha","nature":"Mridu (soft)"},
+    {"n":6,"name":"Ardra","lord":"Rahu","deity":"Rudra","symbol":"Teardrop / gem","gana":"Manushya","yoni":"Dog","yoni_gender":"F","nadi":"Adi","guna":"Tamas","motive":"Kama","nature":"Tikshna (sharp)"},
+    {"n":7,"name":"Punarvasu","lord":"Jupiter","deity":"Aditi","symbol":"Bow and quiver","gana":"Deva","yoni":"Cat","yoni_gender":"F","nadi":"Adi","guna":"Sattva","motive":"Artha","nature":"Chara (movable)"},
+    {"n":8,"name":"Pushya","lord":"Saturn","deity":"Brihaspati","symbol":"Cow's udder / lotus","gana":"Deva","yoni":"Sheep","yoni_gender":"M","nadi":"Madhya","guna":"Tamas","motive":"Dharma","nature":"Kshipra (swift)"},
+    {"n":9,"name":"Ashlesha","lord":"Mercury","deity":"Nagas","symbol":"Coiled serpent","gana":"Rakshasa","yoni":"Cat","yoni_gender":"M","nadi":"Antya","guna":"Sattva","motive":"Dharma","nature":"Tikshna (sharp)"},
+    {"n":10,"name":"Magha","lord":"Ketu","deity":"Pitris","symbol":"Throne","gana":"Rakshasa","yoni":"Rat","yoni_gender":"M","nadi":"Antya","guna":"Tamas","motive":"Artha","nature":"Ugra (fierce)"},
+    {"n":11,"name":"Purva Phalguni","lord":"Venus","deity":"Bhaga","symbol":"Front legs of bed / hammock","gana":"Manushya","yoni":"Rat","yoni_gender":"F","nadi":"Madhya","guna":"Rajas","motive":"Kama","nature":"Ugra (fierce)"},
+    {"n":12,"name":"Uttara Phalguni","lord":"Sun","deity":"Aryaman","symbol":"Back legs of bed","gana":"Manushya","yoni":"Cow","yoni_gender":"M","nadi":"Adi","guna":"Rajas","motive":"Moksha","nature":"Dhruva (fixed)"},
+    {"n":13,"name":"Hasta","lord":"Moon","deity":"Savitar","symbol":"Hand / fist","gana":"Deva","yoni":"Buffalo","yoni_gender":"F","nadi":"Adi","guna":"Rajas","motive":"Moksha","nature":"Kshipra (swift)"},
+    {"n":14,"name":"Chitra","lord":"Mars","deity":"Vishwakarma / Tvashtar","symbol":"Bright jewel / pearl","gana":"Rakshasa","yoni":"Tiger","yoni_gender":"F","nadi":"Madhya","guna":"Tamas","motive":"Kama","nature":"Mridu (soft)"},
+    {"n":15,"name":"Swati","lord":"Rahu","deity":"Vayu","symbol":"Young sprout in wind / coral","gana":"Deva","yoni":"Buffalo","yoni_gender":"M","nadi":"Antya","guna":"Tamas","motive":"Artha","nature":"Chara (movable)"},
+    {"n":16,"name":"Vishakha","lord":"Jupiter","deity":"Indra-Agni","symbol":"Triumphal archway / potter's wheel","gana":"Rakshasa","yoni":"Tiger","yoni_gender":"M","nadi":"Antya","guna":"Sattva","motive":"Dharma","nature":"Mishra (mixed)"},
+    {"n":17,"name":"Anuradha","lord":"Saturn","deity":"Mitra","symbol":"Lotus / staff","gana":"Deva","yoni":"Deer","yoni_gender":"F","nadi":"Madhya","guna":"Tamas","motive":"Dharma","nature":"Mridu (soft)"},
+    {"n":18,"name":"Jyeshtha","lord":"Mercury","deity":"Indra","symbol":"Earring / umbrella / talisman","gana":"Rakshasa","yoni":"Deer","yoni_gender":"M","nadi":"Adi","guna":"Sattva","motive":"Artha","nature":"Tikshna (sharp)"},
+    {"n":19,"name":"Mula","lord":"Ketu","deity":"Nirriti","symbol":"Bunch of roots / lion's tail","gana":"Rakshasa","yoni":"Dog","yoni_gender":"M","nadi":"Adi","guna":"Tamas","motive":"Kama","nature":"Tikshna (sharp)"},
+    {"n":20,"name":"Purva Ashadha","lord":"Venus","deity":"Apas","symbol":"Elephant tusk / fan / winnowing basket","gana":"Manushya","yoni":"Monkey","yoni_gender":"M","nadi":"Madhya","guna":"Rajas","motive":"Moksha","nature":"Ugra (fierce)"},
+    {"n":21,"name":"Uttara Ashadha","lord":"Sun","deity":"Vishvadevas","symbol":"Elephant tusk / planks of bed","gana":"Manushya","yoni":"Mongoose","yoni_gender":"F","nadi":"Antya","guna":"Rajas","motive":"Moksha","nature":"Dhruva (fixed)"},
+    {"n":22,"name":"Shravana","lord":"Moon","deity":"Vishnu","symbol":"Ear / three footprints","gana":"Deva","yoni":"Monkey","yoni_gender":"F","nadi":"Antya","guna":"Rajas","motive":"Artha","nature":"Chara (movable)"},
+    {"n":23,"name":"Dhanishta","lord":"Mars","deity":"Eight Vasus","symbol":"Drum / flute","gana":"Rakshasa","yoni":"Lion","yoni_gender":"F","nadi":"Madhya","guna":"Tamas","motive":"Dharma","nature":"Chara (movable)"},
+    {"n":24,"name":"Shatabhisha","lord":"Rahu","deity":"Varuna","symbol":"Empty circle / 100 physicians","gana":"Rakshasa","yoni":"Horse","yoni_gender":"F","nadi":"Adi","guna":"Tamas","motive":"Dharma","nature":"Chara (movable)"},
+    {"n":25,"name":"Purva Bhadrapada","lord":"Jupiter","deity":"Aja Ekapada","symbol":"Front legs of funeral cot / sword","gana":"Manushya","yoni":"Lion","yoni_gender":"M","nadi":"Adi","guna":"Sattva","motive":"Artha","nature":"Ugra (fierce)"},
+    {"n":26,"name":"Uttara Bhadrapada","lord":"Saturn","deity":"Ahir Budhnya","symbol":"Back legs of funeral cot / twins","gana":"Manushya","yoni":"Cow","yoni_gender":"F","nadi":"Madhya","guna":"Tamas","motive":"Kama","nature":"Dhruva (fixed)"},
+    {"n":27,"name":"Revati","lord":"Mercury","deity":"Pushan","symbol":"Fish / drum","gana":"Deva","yoni":"Elephant","yoni_gender":"F","nadi":"Antya","guna":"Sattva","motive":"Moksha","nature":"Mridu (soft)"}
+  ],
+  "yoni_enmity": {
+    "_note": "Pairs that are natural enemies (0 points in Yoni koota). Same animal = 4, friendly = 3, neutral = 2, unfriendly = 1, enemy = 0.",
+    "enemies": [["Horse","Buffalo"],["Elephant","Lion"],["Sheep","Monkey"],["Serpent","Mongoose"],["Dog","Deer"],["Cat","Rat"],["Cow","Tiger"]]
+  },
+  "vimshottari_years": {"Ketu":7,"Venus":20,"Sun":6,"Moon":10,"Mars":7,"Rahu":18,"Jupiter":16,"Saturn":19,"Mercury":17},
+  "vimshottari_order": ["Ketu","Venus","Sun","Moon","Mars","Rahu","Jupiter","Saturn","Mercury"]
+}
