@@ -1,0 +1,43 @@
+{
+  "name": "Rahul Pawar",
+  "relation_to_vrushab": "Frolic Distilleries co-founder (India partner)",
+  "birth": {"date": "1992-08-26", "time": "15:45", "place": "Hubli, Karnataka", "lat": 15.3333, "lon": 75.1333, "tz": "Asia/Kolkata",
+            "time_confidence": "unknown (round figure from AstroSage PDF; ask if record or memory)"},
+  "source": "AstroSage PDF (56 pp, basic report — no Shadbala) shared 2026-09-29; engine cross-check: lagna within 35 arc-sec, Moon Pushya-4, Saturn balance 1y5m29d — PASS",
+  "ayanamsa_lahiri": 23.7544,
+  "lagna": {"sign": "Dhanu", "deg": "22-10-33", "nakshatra": "Purva Ashadha-3", "lord": "Jupiter"},
+  "moon": {"sign": "Karka", "deg": "15-37-07", "nakshatra": "Pushya-4", "lord": "Saturn"},
+  "planets": {
+    "Sun":     {"sign": "Simha", "deg": "09-40", "house": 9, "nak": "Magha-3", "d9": "Mithuna", "dignity": "moolatrikona", "role": "9L"},
+    "Moon":    {"sign": "Karka", "deg": "15-37", "house": 8, "nak": "Pushya-4", "d9": "Vrishchika (debilitated)", "dignity": "own", "role": "8L"},
+    "Mars":    {"sign": "Vrishabha", "deg": "26-13", "house": 6, "nak": "Mrigashira-1", "d9": "Simha", "dignity": "neutral", "role": "5L/12L — Vipareeta (Vimala)"},
+    "Mercury": {"sign": "Karka", "deg": "22-36", "house": 8, "nak": "Ashlesha-2", "d9": "Makara", "dignity": "enemy", "role": "7L/10L"},
+    "Jupiter": {"sign": "Simha", "deg": "26-33", "house": 9, "nak": "Purva Phalguni-4", "d9": "Vrishchika", "dignity": "friend", "role": "1L/4L"},
+    "Venus":   {"sign": "Simha", "deg": "29-48", "house": 9, "nak": "Uttara Phalguni-1", "d9": "Dhanu", "dignity": "enemy, sandhi (last 12 arc-min of sign)", "role": "6L/11L"},
+    "Saturn":  {"sign": "Makara", "deg": "19-60", "house": 2, "nak": "Shravana-3", "d9": "Mithuna", "dignity": "own", "retro": true, "role": "2L/3L"},
+    "Rahu":    {"sign": "Dhanu", "deg": "03-25", "house": 1, "nak": "Mula-2", "d9": "Vrishabha"},
+    "Ketu":    {"sign": "Mithuna", "deg": "03-25", "house": 7, "nak": "Mrigashira-4", "d9": "Vrishchika"}
+  },
+  "combustion": "none",
+  "d9_lagna": "Tula (approx 1°10' inside navamsa; flips to Vrishchika if birth ~5 min later)",
+  "d10_astrosage": {"lagna": "Karka", "Sun": "Vrishchika", "Moon": "Simha", "Mars": "Kanya", "Mercury": "Tula", "Jupiter": "Mesha (10th from D10 lagna)", "Venus": "Vrishabha (own)", "Saturn": "Meena", "Rahu": "Makara", "Ketu": "Karka"},
+  "ashtakavarga_sav": {"1": 25, "2": 40, "3": 33, "4": 22, "5": 21, "6": 30, "7": 25, "8": 27, "9": 30, "10": 24, "11": 25, "12": 35},
+  "yogas": [
+    "Lagna lord Jupiter + 9L Sun (moolatrikona) in 9th — Dharma-Karmadhipati-type raja yoga, fortune via father",
+    "Vimala Vipareeta Raja yoga — 12L Mars in 6th",
+    "Chandra-Budha in 8th (own-sign Moon) — occult/hidden-finance mind; indecision",
+    "Saturn own sign in 2nd — family wealth held, conservative"
+  ],
+  "doshas": {"kalasarpa": "absent (Mars, Saturn outside axis)", "manglik": "absent from lagna, Moon and Venus", "sade_sati": "none now; next 2032-05 to 2039-07 (Gemini/Cancer/Leo); Kantaka Shani (Saturn 10th from Moon) mid-2027 to 2029"},
+  "vimshottari": {
+    "Venus": "2018-02-23 → 2038-02-23",
+    "antars_current": {"Rahu": "2025-04-25 → 2028-04-24", "Jupiter": "2028-04-24 → 2030-12-25", "Saturn": "2030-12-25 → 2034-02-25", "Mercury": "2034-02-25 → 2036-12-25"},
+    "Sun": "2038 → 2044", "Moon": "2044 → 2054"
+  },
+  "business_synastry_vs_vrushab_2026-09-29": {"net": -4, "verdict": "Friction likely — define exit terms",
+    "factors": ["Rahul's lagna is 12th from Vrushab's (Vrushab is Rahul's 2nd): expense/loss for V, income for R",
+                "Rahul's 7th: Ketu occupant, 7L Mercury in 8th — detached, unstable partnerships",
+                "Rahul's natal Saturn (Makara 20°) sits on Vrushab's lagna (Makara 11°)",
+                "Vrushab in Venus maha with Venus in 12th; Rahul in Venus maha with Venus in 9th — Venus favours Rahul's side"]},
+  "reading_summary_2026-09-29": "Fortune-through-father chart (Jup+Sun 9th, Sat own 2nd, 4L in 9th = property via family). Career/partnership lords (Mercury 7L/10L) in 8th with Moon: instability, indecision, other-people's-money orientation. Rahu 1 / Ketu 7 axis: self-focus, detaches from partnerships. Venus 6L/11L at sandhi degree: gains promised, disputes/debts delivered. Venus-Rahu antar to Apr 2028 = overreach and self-interest; Jupiter antar Apr 2028-Dec 2030 is his best window. Money accumulates (SAV 2nd=40) but 10th/11th weak (24/25). Synastry with Vrushab net -4."
+}
