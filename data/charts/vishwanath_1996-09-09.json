@@ -1,0 +1,37 @@
+{
+  "name": "Vishwanath Badiger",
+  "birth": {"date": "1996-09-09", "time": "08:30", "place": "Sangli, Maharashtra", "lat": 16.85, "lon": 74.55, "tz": "Asia/Kolkata",
+            "time_confidence": "unknown (round figure from AstroSage PDF; ask if record or memory)"},
+  "source": "AstroSage PDFs shared 2026-09-29; engine cross-check matched to arc-minute",
+  "ayanamsa_lahiri": 23.8108,
+  "lagna": {"sign": "Kanya", "deg": "23-28-07", "nakshatra": "Chitra-1", "lord": "Mercury"},
+  "moon": {"sign": "Karka", "deg": "10-40-52", "nakshatra": "Pushya-3", "lord": "Saturn"},
+  "planets": {
+    "Sun": {"sign": "Simha", "deg": "22-54", "house": 12, "nak": "Purva Phalguni-3", "d9": "Tula", "dignity": "own"},
+    "Moon": {"sign": "Karka", "deg": "10-41", "house": 11, "nak": "Pushya-3", "d9": "Tula", "dignity": "own"},
+    "Mars": {"sign": "Karka", "deg": "05-45", "house": 11, "nak": "Pushya-1", "d9": "Simha", "dignity": "debilitated", "neechabhanga": "yes (Saturn, lord of exaltation sign, in kendra)"},
+    "Mercury": {"sign": "Kanya", "deg": "08-26", "house": 1, "nak": "Uttara Phalguni-4", "d9": "Meena", "dignity": "exalted", "retro": true},
+    "Jupiter": {"sign": "Dhanu", "deg": "14-03", "house": 4, "nak": "Purva Ashadha-1", "d9": "Simha", "dignity": "own"},
+    "Venus": {"sign": "Karka", "deg": "08-14", "house": 11, "nak": "Pushya-2", "d9": "Kanya (debilitated)", "dignity": "enemy"},
+    "Saturn": {"sign": "Meena", "deg": "11-30", "house": 7, "nak": "Uttara Bhadrapada-3", "d9": "Tula (exalted)", "dignity": "neutral", "retro": true},
+    "Rahu": {"sign": "Kanya", "deg": "15-16", "house": 1, "nak": "Hasta-2", "d9": "Vrishabha"},
+    "Ketu": {"sign": "Meena", "deg": "15-16", "house": 7, "nak": "Uttara Bhadrapada-4", "d9": "Vrishchika"}
+  },
+  "d9_lagna": "Simha (only ~8 arcmin from Karka boundary - uncertain)",
+  "d10": {"lagna": "Dhanu", "Sun": "Meena/4", "Moon": "Mithuna/7", "Mars": "Mesha/5 own", "Mercury": "Karka/8", "Jupiter": "Mesha/5", "Venus": "Vrishabha/6 own", "Saturn": "Kumbha/3 own", "Rahu": "Tula/11", "Ketu": "Mesha/5"},
+  "shadbala_ratio": {"Sun": 1.61, "Moon": 1.06, "Mars": 1.27, "Mercury": 1.22, "Jupiter": 1.04, "Venus": 1.16, "Saturn": 1.39},
+  "shadbala_rank": ["Sun", "Saturn", "Mars", "Mercury", "Venus", "Moon", "Jupiter"],
+  "ashtakavarga_sav": {"Vi": 24, "Li": 40, "Sc": 30, "Sg": 32, "Cp": 23, "Aq": 29, "Pi": 27, "Ar": 30, "Ta": 27, "Ge": 26, "Cn": 27, "Le": 22},
+  "bhava_bala_rank_top": [10, 12, 1, 7, 8],
+  "kp": {"lagna_sub": "Mars", "cusp7_sub": "Mars", "cusp10_sub": "Saturn"},
+  "yogas": ["Bhadra Mahapurusha (Mercury exalted in kendra)", "Hamsa Mahapurusha (Jupiter own sign in kendra; Jupiter Shadbala weak 1.04)",
+            "Dhana yoga: 2L+9L Venus with 11L Moon in 11th", "Chandra-Mangala in 11th (Mars debilitated, neechabhanga)",
+            "Four lords in own houses: Mercury 1, Jupiter 4, Moon 11, Sun 12"],
+  "doshas": {"manglik": "lagna no; Moon yes; Venus yes; Mars debilitated + neechabhanga => mild", "kalasarpa": "no", "sade_sati_now": "no (next 2032-2039)"},
+  "vimshottari": {"Saturn": "1996-2005", "Mercury": "2005-2022", "Ketu": "2022-2029", "Venus": "2029-2049", "Sun": "2049-2055", "Moon": "2055-2065", "Mars": "2065-2072", "Rahu": "2072-2090", "Jupiter": "2090-2106"},
+  "now": "Ketu maha / Jupiter antar (to 2027-02); then Ketu/Saturn to 2028-03",
+  "readings": [
+    {"date": "2026-09-29", "summary": "Stable, self-made chart (4 own-house lords; Bhadra+Hamsa). Career technical/analytical, own enterprise, foreign/export angle (Sun own-sign 12th strongest planet; D10 Mars+Saturn own signs). Wealth good, 2nd-house SAV 40; Venus dasha 2029-49 prime earning. Marriage sensitive: Saturn+Ketu in 7th, Venus debilitated D9, mild Manglik by Moon -> late deliberate marriage, mature partner. Marriage window open: Ketu-Jupiter(7L) to Feb 2027, Ketu-Saturn(in 7th) to Mar 2028, Saturn transiting natal 7th, Jupiter in Cancer aspecting 7th -> probability late 2026-2027, else 2029-31. Business partner: loyal hardworking, needs role-defined written terms; Rahu in lagna over-promises. Health: digestion, anxiety/skin, joints later. Uncertain: D9 lagna near Karka boundary."}
+  ],
+  "relation_to_vrushab": "not yet stated"
+}
