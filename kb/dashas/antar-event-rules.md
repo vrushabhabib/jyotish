@@ -65,3 +65,24 @@ lagna-dependent facts (health from 6th, mother from 4L, secret vs open love from
 3. Then send dated periods, ages first, and let the native answer cold.
 4. Keep misses visible in the native's copy ("chart said / you said"). Honesty is what buys trust for the future sections.
 5. Score: ≥70% hits with zero timing misses = chart confirmed; proceed to future. Record misses here.
+
+## Rule 8 — Sambandha cannot rectify a birth DATE (tested 20 Oct 2026)
+Test: one native, home birth, no record. 11 dated life events + 4 transit checks + 6 static facts scored with one fixed
+rubric on 248 candidate charts (every day ±30 days, four times in the 9–10am window). Median 13.5/18, recorded date 15/18
+(top ~7%), best 15.5/18 — half a point, i.e. noise. Almost any date "links" its sub-period lords to the event's house,
+because each planet owns/occupies/aspects/disposes several houses. Consequences:
+- Do NOT say "the timing works" because the events fell in linked sub-periods after the fact. That passes for most dates.
+- The real accuracy measure is forward predictions answered cold (here 5/14 = 36%).
+- To rectify a date, use facts that change sharply with the Moon: festival/tithi memory (e.g. "day after Ram Navami"),
+  Sade Sati/Ashtama Shani onset months, nakshatra-based dasha START months matched to a sharp life change.
+
+## Rule 9 — Lessons from the same case (misses turned into rules, single case: treat as provisional)
+- Ketu in the 3rd + Saturn and Mars aspecting the 3rd = no younger siblings (native was youngest of four), even with an
+  own-sign Moon in the 3rd. Do not let one dignified occupant outvote three malefic influences.
+- Injury location: read the HOUSE that Mars and Saturn both afflict (3rd = arms/shoulders), not the sign Mars sits in.
+- A Ketu mahadasha that follows a loss reads as quiet and withdrawn (living with family, no new relationship). Do not
+  assign events to Ketu antardashas from transits alone — two forecast events in that period both failed.
+- A sub-lord conjunct the 7th lord can deliver marriage even when it is also the career lord (9L+10L Saturn conjunct
+  7L Mars gave marriage, not a first job). List every area the sub-lord links to before choosing one.
+- Spouse's age: Saturn with the 7th lord predicted an older husband; the second husband was 4 years younger.
+  Second marriage may need the 2nd house (8th from 7th) as well as the 7th. Unresolved.
