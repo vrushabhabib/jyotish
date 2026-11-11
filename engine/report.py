@@ -152,6 +152,20 @@ def markdown(r, name="native"):
     w("| Yoga | Type | Planets | Formation | Weakened by | How common |\n|---|---|---|---|---|---|")
     for y in a["yogas"]:
         w(f"| {y['name']} | {y['category']} | {', '.join(y['planets'])} | {y['note']} | {y['weakened_by']} | {_label(_rate('yoga', y['name']))} |")
+    try:
+        from engine.yogas_extra import detect as _det, catalogue as _cat, coverage as _cov
+        ex = _det(v); cat = _cat(); cv = _cov()
+        w("\n### 8b. Further combinations from the 160-yoga catalogue (kb/yogas/yogas.json)\n")
+        w("Sorted rarest first. 'n/a' in the last column means the combination did not occur once in 4,000 random charts.\n")
+        w("| Yoga | Planets | Formed by | Classical result | Cancelled or weakened when | How common |\n|---|---|---|---|---|---|")
+        for x in sorted(ex, key=lambda x: _rate("cat", x["id"]) or 0):
+            e = cat.get(x["id"], {})
+            if x["id"].startswith("nabhasa_sankhya") and any(y["id"].startswith("nabhasa_") and "sankhya" not in y["id"] for y in ex): continue
+            w(f"| {e.get('name', x['id'])} | {', '.join(x['planets']) if len(x['planets']) < 7 else 'all seven'} | {x['note'] or e.get('condition', '')[:110]} | "
+              f"{e.get('result', '')[:170]} | {e.get('cancellation', '')[:150]} | {_label(_rate('cat', x['id']))} |")
+        w(f"\nCoverage: {len(cv['in_analysis']) + len(cv['in_yogas_extra'])} of {cv['catalogue']} catalogued combinations are tested by the engine; not tested: {', '.join(cv['not_coded'])}.\n")
+    except Exception as e:                                    # noqa: BLE001
+        w(f"\n(catalogue yogas failed: {e})\n")
     m = a["doshas"]["manglik"]; ks = a["doshas"]["kaal_sarp"]
     w(f"\n**Manglik:** {m['verdict']}. Mars is in house {m['from']['lagna']['mars_house']} from lagna, {m['from']['moon']['mars_house']} from Moon, "
       f"{m['from']['venus']['mars_house']} from Venus. Classical cancellations: {'; '.join(m['cancellations_classical']) or 'none'}. Also claimed: {'; '.join(m['cancellations_claimed']) or 'none'}. Base rate: {m['base_rate']}.  ")
@@ -287,10 +301,12 @@ def markdown(r, name="native"):
                 w(f"| {area} | {_d(k['from'])} - {_d(k['to'])} | {k['peak']} | {', '.join(k['systems'])} | {', '.join(k['vimshottari'])} | {x['share']*100:.0f}% | {verdict} |")
         st = _lg.stats()
         if st["scored"]:
-            lg = st["legacy_record"]
-            w(f"\n**Project track record.** All verification questions to date: {lg['hits']} right of {lg['asked']} ({lg['rate']*100:.0f}%) - " +
-              ", ".join(f"{k} {x}" for k, x in lg["by_chart"].items()) + ". Every one was about the past, asked cold; no forward prediction has matured yet. "
-              f"Itemised in data/ledger.jsonl: {st['scored']} scored, {st['open']} open. Log every dated forward statement with `python3 -m engine.ledger add` before a reading is sent.\n")
+            w(f"\n**Project track record (data/ledger.jsonl).** {st['scored']} verification questions scored: {st['overall_strict']*100:.0f}% fully right, "
+              f"{st['overall']*100:.0f}% counting a partly-right answer as half. By chart: " +
+              ", ".join(f"{k} {x['strict']*100:.0f}% (n={x['n']})" for k, x in st["by_chart"].items()) + ". By kind of statement: " +
+              "; ".join(f"{k} {x['strict']*100:.0f}% (n={x['n']})" for k, x in st["by_category"].items()) +
+              f". Every scored item is about the past, asked cold; {st['open']} forward prediction(s) open, none matured yet. "
+              "Log every dated forward statement with `python3 -m engine.ledger add` before a reading is sent.\n")
     except Exception as e:                                    # noqa: BLE001
         w(f"\n(convergence section failed: {e})\n")
     return "\n".join(L)

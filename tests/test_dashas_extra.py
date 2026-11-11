@@ -55,10 +55,22 @@ def test_convergence_and_ledger_run():
     md = markdown(r, "T")
     assert "13a. KP system" in md and "13c. Convergence" in md and "How common" in md
     s = ledger.stats()
-    assert s["scored"] >= 13 and s["open"] >= 1
+    assert s["scored"] >= 39 and s["open"] >= 1 and 0.5 < s["overall_strict"] < 0.8
 
 
 def test_base_rates_file():
     from engine.baserates import rate
     assert 0.4 < rate("dosha", "Manglik from lagna (6-house list)") < 0.6        # independent estimate: about 50%
     assert rate("yoga", "Dhana yoga") > 0.7                                       # near-universal: weak evidence
+
+
+def test_yoga_catalogue_coverage():
+    from engine.yogas_extra import coverage, detect, catalogue
+    from engine.analysis import View
+    cv = coverage()
+    assert cv["catalogue"] == 160 and len(cv["not_coded"]) <= 4
+    ids = {x["id"] for x in detect(View(C))}
+    assert {"mriti", "kuhu", "daridra_pd"} <= ids                 # 3L Jupiter in 12th, 4L/11L Mars in 8th
+    assert ids <= set(catalogue())
+    from engine.baserates import rate
+    assert 0.2 < rate("cat", "kuhu") < 0.3                         # a lord falls in 3 of 12 houses: 25% by arithmetic

@@ -27,6 +27,7 @@ python3 -m engine.store data/charts/<name>_<date>.json          # refresh a stor
 | `report.py` | The worksheet: 14 sections, everything above in one document. |
 | `houses.py` | Placidus cusps with KP ayanamsa, KP star/sub/sub-sub lords and four-level significators, Sripati Bhava Chalit. All 12 cusps within 0.5 arc-min of AstroSage. |
 | `dashas_extra.py` | Yogini, Jaimini Chara (K.N. Rao method) and Ashtottari dashas. Yogini and Chara reproduce the AstroSage tables. |
+| `yogas_extra.py` | Detection for the rest of the 160-yoga catalogue (156 of 160 tested), each with the catalogue's result, cancellation and how common it is. |
 | `convergence.py` | Months in which 4 of 5 independent timing systems agree on a life area, with a self-check of how often that happens by chance in the same chart. |
 | `baserates.py` | Firing rate of every yoga and dosha over 4,000 random charts (`data/base_rates.json`). |
 | `ledger.py` | Prediction ledger (`data/ledger.jsonl`): log before the answer is known, score after, report hit rates. |

@@ -53,5 +53,5 @@ The engine calculates and measures; the reader (Claude) interprets, asks and exp
 6. Reader: explanations in plain language, continuous prose, no jargon without a gloss; classical death, widowhood and childlessness wording is never passed on literally.
 
 ## 7. Roadmap
-Done 11-12 Nov 2026: Shadbala, Ashtakavarga, Jaimini karakas and arudhas, KP cusps and significators, Bhava Chalit, Yogini, Chara and Ashtottari dashas, AstroSage PDF parser, transits, convergence, base rates, ledger, time discrimination.
-Open: geocoding; yoga detection driven from `kb/yogas/yogas.json` (only about 40 of the 160 catalogued yogas are detected); Narayana dasha; a second reference PDF to settle the three Shadbala items; itemising the remaining 26 legacy verification questions in the ledger; reading Raman, K.N. Rao and the KP Readers from the printed books.
+Done 11-12 Nov 2026: Shadbala, Ashtakavarga, Jaimini karakas and arudhas, KP cusps and significators, Bhava Chalit, Yogini, Chara and Ashtottari dashas, AstroSage PDF parser, transits, convergence, base rates, ledger (all 39 past questions entered), time discrimination, 156 of 160 catalogued yogas detected.
+Open: geocoding; Narayana dasha; a second reference PDF to settle the three Shadbala items; reading Raman, K.N. Rao and the KP Readers from the printed books.

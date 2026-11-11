@@ -31,6 +31,9 @@ def run(n=4000, seed=7):
         done += 1
         for name in {y["name"] for y in a["yogas"]}:
             c["yoga:" + name] += 1
+        from engine.yogas_extra import detect as _det
+        for i in {x["id"] for x in _det(a["view"])}:
+            c["cat:" + i] += 1
         m = a["doshas"]["manglik"]
         if m["from"]["lagna"]["dosha"]: c["dosha:Manglik from lagna (6-house list)"] += 1
         if m["from"]["lagna"]["bphs"]: c["dosha:Manglik from lagna (BPHS 1,4,7,8,12)"] += 1
@@ -51,7 +54,7 @@ def run(n=4000, seed=7):
 
 _cache = None
 def rate(kind, name):
-    """Base rate (0..1) or None. kind = 'yoga' | 'dosha'."""
+    """Base rate (0..1) or None. kind = 'yoga' | 'dosha' | 'cat' (catalogue id from yogas_extra)."""
     global _cache
     if _cache is None:
         try: _cache = json.load(open(PATH))["rates"]

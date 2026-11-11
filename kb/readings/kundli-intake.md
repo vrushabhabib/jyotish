@@ -85,10 +85,5 @@ Follow `kb/readings/full-reading-protocol.md` (13 parts; block form; plain words
 - Memory `/people/<name>.md`: what the user stated.
 - New lesson learned from a miss → `kb/dashas/antar-event-rules.md` as a numbered rule, marked provisional until seen twice.
 
-## Accuracy record (keep updated)
-
-| Chart | Forward questions | Hits | Notes |
-|---|---|---|---|
-| Hoang Anh | 20 | 14 (70 %) | all misses were relationship "filler" in unlinked sub-periods |
-| Saira | 14 | 5 (36 %) | no birth record; descriptions of people failed, timing held |
-| Tanzil | 5 | 5 (100 %) | time from AstroSage printout; both lagna-discriminating questions hit |
+## Accuracy record
+Kept in `data/ledger.jsonl`; print it with `python3 -m engine.ledger report`. On 12 Nov 2026: 39 questions about the past, 62% fully right (65% counting partly-right as half) - Hoang Anh 14 of 20, Saira 5 of 14, Tanzil 5 of 5. All eight "event placed in a sub-period that had no link to the area" statements were wrong; dated period statements held far better. One forward prediction is open; none has matured.
