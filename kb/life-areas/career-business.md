@@ -106,7 +106,7 @@ Cross-check: Jataka Parijata XI.18 (via WP-Karma) agrees on the pattern — 10th
 | Saturn | Heavy labour, roots and fruits, low-grade grain, carrying loads, woodwork, sculpture, menial service | Mining, oil, construction, labour management, agriculture, logistics, long-haul industry |
 | Rahu / Ketu | Not in the classical karmajiva list | Rahu: foreign, technology, unconventional trades, chemicals, alcohol-type goods; Ketu: research, coding, occult, veterinary — M, low reliability |
 
-Note for this project's owner profile (spirits trade): classical texts place liquids, perfumes and luxury goods under Venus and Moon; "intoxicants → Rahu/Saturn" is modern lore, not Phaladeepika.
+Note on liquids and spirits trades: classical texts place liquids, perfumes and luxury goods under Venus and Moon; "intoxicants → Rahu/Saturn" is modern lore, not Phaladeepika.
 
 ### Sign element of the 10th house / 10th lord (unsourced – common practice)
 

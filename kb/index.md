@@ -14,21 +14,41 @@ Tradition: Parashari (BPHS) as the base. Where Jaimini, KP, or regional (Tamil /
 9. **Gochar** — current Saturn (Sade Sati / Dhaiya), Jupiter, Rahu-Ketu from Moon and Lagna. Ashtakavarga bindus for the transiting sign.
 10. **Synthesis** — repeated signals win. One indication = possibility; three = probability. Say what is *strong*, what is *weak*, what is *uncertain because the birth time is uncertain*.
 
-## Folders
-| Folder | Contents |
+## Working order for any chart (v2, 11 Nov 2026)
+1. `readings/kundli-intake.md` — run the worksheet, cross-check, read time sensitivity, verify.
+2. `dashas/antar-event-rules.md` — the in-house calibration rules (Rules 1–10). They outrank any single classical rule.
+3. The life-area rule file for the question asked, checked line by line against the worksheet.
+4. `readings/full-reading-protocol.md` — the form of the written reading.
+
+## Files
+| File | Contents |
 |---|---|
-| `foundations/` | Ayanamsa, house systems, nakshatra maths, panchanga, birth-time rectification, Shadbala, Ashtakavarga |
-| `planets/` | Each graha: significations, in each house, in each sign, dignity effects, conjunctions, retrograde, combust |
-| `rashis/` | Each rashi as lagna: body, temperament, functional benefics/malefics (which planets are yogakaraka / maraka per lagna) |
-| `bhavas/` | Each house: what it rules, lord in each of 12 houses, planets in it, karaka |
-| `nakshatras/` | Each of 27: deity, symbol, temperament, Moon in it, lagna in it, padas |
-| `yogas/` | Raja, Dhana, Mahapurusha, Neecha Bhanga, Viparita Raja, Arishta, Sanyasa, Nabhasa; formation + strength + cancellation |
-| `doshas/` | Mangal, Kaal Sarp, Pitru, Grahan, Kemadruma, Guru Chandal, Shrapit, Vish, Angarak; cancellation rules |
-| `dashas/` | Vimshottari interpretation per lord per house; antar combinations; Ashtottari, Yogini, Chara (Jaimini) |
-| `transits/` | Sade Sati (3 phases, by Moon sign), Ashtama/Ardhashtama Shani, Guru gochar, Rahu-Ketu gochar, Ashtakavarga transit scoring |
-| `matching/` | Ashtakoota (all 8 kootas with full point tables), Dashakoota (South Indian 10-koota), Manglik matching, Dasha sandhi, 7th house synastry, business partnership, family/parent-child |
-| `remedies/` | Gemstones (by lagna, never by sun sign), mantras, daan, fasting, yantras, Navagraha shanti, homa; what is prescribed for what and the cautions |
-| `life-areas/` | Career, wealth, marriage, children, health, education, foreign travel, property, litigation, spirituality — which houses/karakas/vargas/dashas to combine |
+| `readings/kundli-intake.md` | Document and birth-data processing, step by step |
+| `readings/full-reading-protocol.md` | 13-part reading form |
+| `dashas/antar-event-rules.md` | Project calibration rules from verified charts |
+| `dashas/dasha-systems.md` | Vimshottari judging rules, Yogini, Ashtottari, Chara dasha (K.N. Rao method), conditional dashas |
+| `life-areas/marriage-spouse.md` | Promise, delay, spouse description, plurality, timing, Mangal dosha with sourced cancellations and base rates |
+| `life-areas/children.md` | Promise, delay, timing, Beeja/Kshetra sphuta, Santana tithi, curses and remedies |
+| `life-areas/career-business.md` | 10th house, Karmajiva, D10, Amatyakaraka, A10, service vs business, foreign, timing |
+| `life-areas/wealth.md` | Dhana and daridra yogas, Arudha Lagna, Indu Lagna, Hora, SAV rules |
+| `life-areas/health-longevity.md` | Disease by planet and house, D30, balarishta, marakas, longevity methods; no diagnosis, no death prediction |
+| `life-areas/family-members.md` | Derived houses for every relative, siblings, parents, D3/D12 |
+| `foundations/strength-systems.md` | Shadbala, Bhava bala, Vimshopaka, avasthas, combustion, war, gandanta, pushkara, mrityu bhaga |
+| `foundations/ashtakavarga.md` | Tables (Parashara and Varahamihira variants), reductions, Shodhya pinda, kakshya, transit use |
+| `foundations/rectification-and-panchanga.md` | Which rectification methods discriminate and which only look precise; panchanga formulas |
+| `kp/kp-system.md` | KP ayanamsa, cusps, sub-lords, significators, cuspal rules. Engine computes sub-lords for planets and the four angles only; intermediate Placidus cusps are not computed yet |
+| `yogas/yogas-catalogue.md`, `yogas/yogas.json` | 160 yogas: condition, strength, cancellation, result, source |
+| `transits/transits.md` | Sade Sati by phase, Saturn and Jupiter from Moon, vedha, double transit, Rahu-Ketu, Ashtakavarga scoring |
+| `nakshatras/nakshatras-27.md` | The 27 nakshatras with padas |
+| `planets/planets-in-houses.md` | Each planet in each house, lordship notes |
+| `remedies/remedies.md` | Remedies by planet with cautions |
+| `rashis/functional-nature.md`, `bhavas/lord-placements.md`, `matching/match-protocol.md` | Earlier files, still current |
+
+## How to read the rule files
+- Each rule has an ID, a checkable condition, a result and the source that was actually opened in November 2026.
+- `[UNSOURCED]` or "unsourced – common practice" means widely taught but not traced to a text. `[MEMORY]` or `[MEM-…]` means attributed to a book that could not be opened online (B.V. Raman, K.N. Rao, the KP Readers, K.S. Charak, Uttara Kalamrita). Treat both as lower confidence.
+- No controlled study supporting any of these rules was found. Narlikar et al. (2009): 27 astrologers averaged 17.25 correct of 40 against 20 expected by chance. The project's own record is in `readings/kundli-intake.md`.
+- Classical outcome wording ("wife dies", "childless") is read as trouble in that area, never stated literally.
 
 ## Sources the KB is built from
 Brihat Parashara Hora Shastra (BPHS), Phaladeepika, Saravali, Jataka Parijata, Brihat Jataka, Uttara Kalamrita, Hora Ratna, Jaimini Sutras; B.V. Raman (300 Combinations, How to Judge a Horoscope), K.N. Rao (Predicting through Jaimini, Sade Sati), Sanjay Rath, KP Reader series (Krishnamurti). Muhurta: Muhurta Chintamani. Matching: standard North Indian Ashtakoota tables and South Indian Dashakoota.
