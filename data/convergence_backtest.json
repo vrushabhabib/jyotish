@@ -1,0 +1,34 @@
+{
+ "run": "2026-11-12",
+ "note": "Known past events from two charts on file, tested against the 5-system convergence vote. 'flagged' = 4 or more votes in the month of the event. Only counts are kept here; the events themselves are not recorded in this file.",
+ "events": 8,
+ "flagged": 2,
+ "by_area": {
+  "marriage": {
+   "events": 3,
+   "flagged": 0,
+   "votes": [
+    2,
+    2,
+    3
+   ]
+  },
+  "career": {
+   "events": 3,
+   "flagged": 2,
+   "votes": [
+    5,
+    5,
+    1
+   ]
+  },
+  "home/property": {
+   "events": 2,
+   "flagged": 0,
+   "votes": [
+    2,
+    2
+   ]
+  }
+ }
+}
