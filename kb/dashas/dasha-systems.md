@@ -140,7 +140,7 @@ Implement 1, 2, 3a, 4 as certain; make 3b–3d a configurable ordered list and l
 ### 4.5 Antardashas
 - 12 antardashas, each = MD/12 (so an MD of n years has ADs of n months each) [ABX; SAT; TEM].
 - The MD sign's own antardasha comes **last**; the sequence starts from the next sign in the direction of travel [SAT].
-- Direction: [ABX], [SAT], [TEM] say "same direction as the mahadasha sequence". From recall of Rao's book the direction of sub-periods is fixed by the MD sign's own group (4.1 list applied to the MD sign), which gives a different order whenever the MD sign's group differs from the lagna's. UNRESOLVED — verify in Rao's book, and compare with Jagannatha Hora's "Chara dasa (K.N. Rao)" output for a test chart.
+- Direction: [ABX], [SAT], [TEM] say "same direction as the mahadasha sequence". From recall of Rao's book the direction of sub-periods is fixed by the MD sign's own group (4.1 list applied to the MD sign), which gives a different order whenever the MD sign's group differs from the lagna's. RESOLVED for this project (12 Nov 2026): the AstroSage printout for a Capricorn lagna shows Libra, Virgo and Leo mahadashas running their sub-periods forward and Cancer, Gemini and Taurus backward, i.e. direction by the MD sign's own group. `engine/dashas_extra.py` follows that and reproduces all twelve AstroSage mahadasha lengths (AstroSage itself prints Aquarius as "-1 Year", a wrap-around bug; the rule gives 11). Rao's book is still unread.
 
 ### 4.6 Algorithm
 ```

@@ -76,8 +76,8 @@
  "post_hoc_not_scored": "School stopped at 4th grade (~1999-2000) = Mer-Ket AD (1999-2000) with transit Saturn over 5L Mercury in 12th (Apr 1998 - Jun 2000)",
  "rectification": "CORRECTED 11 Nov 2026. Venus MD starts 5 Jul 2021 (09:00), 25 Apr 2021 (09:15), 14 Feb 2021 (09:30), 25 Sep 2020 (10:00). Ven-Sun starts 4 Nov 2024 (09:00), 25 Aug 2024 (09:15), 15 Jun 2024 (09:30), 25 Jan 2024 (10:00). Vehicle bought Jun 2024 falls in Ven-Sun only for birth at or after about 09:30. Rule 8 applies: this is an after-the-fact fit, not proof.",
  "computed": {
-  "schema_version": 2,
-  "generated": "2026-11-11",
+  "schema_version": 3,
+  "generated": "2026-11-12",
   "engine": {
    "backend": "ephem",
    "ayanamsa_lahiri": 23.72093
@@ -280,23 +280,38 @@
     "from": {
      "lagna": {
       "mars_house": 9,
-      "dosha": false
+      "dosha": false,
+      "bphs": false,
+      "southern": false
      },
      "moon": {
       "mars_house": 7,
-      "dosha": true
+      "dosha": true,
+      "bphs": true,
+      "southern": true
      },
      "venus": {
       "mars_house": 12,
-      "dosha": true
+      "dosha": true,
+      "bphs": true,
+      "southern": true
      }
     },
     "present": true,
     "cancellations": [
+     "benefic joins/aspects Mars: Moon (BPHS 80.47)",
      "Mars exalted",
-     "native past 28 (Mars matured)"
+     "native past 28 (one source; another calls it a myth)"
     ],
-    "verdict": "present but cancelled/mitigated"
+    "cancellations_classical": [
+     "benefic joins/aspects Mars: Moon (BPHS 80.47)",
+     "Mars exalted"
+    ],
+    "cancellations_claimed": [
+     "native past 28 (one source; another calls it a myth)"
+    ],
+    "base_rate": "about 50% of charts from lagna, 75% from lagna or Moon - weak evidence alone",
+    "verdict": "present but cancelled (classical ground)"
    },
    "kaal_sarp": {
     "full": false,
@@ -480,6 +495,228 @@
     "2039-07-12"
    ]
   ],
+  "yogini": [
+   {
+    "yogini": "Dhanya",
+    "lord": "Jupiter",
+    "start": "1990-04-04",
+    "end": "1991-05-05"
+   },
+   {
+    "yogini": "Bhramari",
+    "lord": "Mars",
+    "start": "1991-05-05",
+    "end": "1995-05-05"
+   },
+   {
+    "yogini": "Bhadrika",
+    "lord": "Mercury",
+    "start": "1995-05-05",
+    "end": "2000-05-04"
+   },
+   {
+    "yogini": "Ulka",
+    "lord": "Saturn",
+    "start": "2000-05-04",
+    "end": "2006-05-05"
+   },
+   {
+    "yogini": "Siddha",
+    "lord": "Venus",
+    "start": "2006-05-05",
+    "end": "2013-05-04"
+   },
+   {
+    "yogini": "Sankata",
+    "lord": "Rahu",
+    "start": "2013-05-04",
+    "end": "2021-05-04"
+   },
+   {
+    "yogini": "Mangala",
+    "lord": "Moon",
+    "start": "2021-05-04",
+    "end": "2022-05-05"
+   },
+   {
+    "yogini": "Pingala",
+    "lord": "Sun",
+    "start": "2022-05-05",
+    "end": "2024-05-04"
+   },
+   {
+    "yogini": "Dhanya",
+    "lord": "Jupiter",
+    "start": "2024-05-04",
+    "end": "2027-05-05"
+   },
+   {
+    "yogini": "Bhramari",
+    "lord": "Mars",
+    "start": "2027-05-05",
+    "end": "2031-05-05"
+   }
+  ],
+  "chara": [
+   {
+    "sign": "Vrishabha",
+    "years": 9,
+    "start": "1990-04-04",
+    "end": "1999-04-04"
+   },
+   {
+    "sign": "Mesha",
+    "years": 9,
+    "start": "1999-04-04",
+    "end": "2008-04-03"
+   },
+   {
+    "sign": "Meena",
+    "years": 9,
+    "start": "2008-04-03",
+    "end": "2017-04-04"
+   },
+   {
+    "sign": "Kumbha",
+    "years": 1,
+    "start": "2017-04-04",
+    "end": "2018-04-04"
+   },
+   {
+    "sign": "Makara",
+    "years": 12,
+    "start": "2018-04-04",
+    "end": "2030-04-04"
+   },
+   {
+    "sign": "Dhanu",
+    "years": 6,
+    "start": "2030-04-04",
+    "end": "2036-04-03"
+   },
+   {
+    "sign": "Vrishchika",
+    "years": 2,
+    "start": "2036-04-03",
+    "end": "2038-04-04"
+   },
+   {
+    "sign": "Tula",
+    "years": 4,
+    "start": "2038-04-04",
+    "end": "2042-04-04"
+   },
+   {
+    "sign": "Kanya",
+    "years": 5,
+    "start": "2042-04-04",
+    "end": "2047-04-04"
+   },
+   {
+    "sign": "Simha",
+    "years": 5,
+    "start": "2047-04-04",
+    "end": "2052-04-03"
+   },
+   {
+    "sign": "Karka",
+    "years": 12,
+    "start": "2052-04-03",
+    "end": "2064-04-03"
+   },
+   {
+    "sign": "Mithuna",
+    "years": 10,
+    "start": "2064-04-03",
+    "end": "2074-04-04"
+   }
+  ],
+  "kp": {
+   "cusp_sub_lords": {
+    "1": "Mars",
+    "2": "Rahu",
+    "3": "Saturn",
+    "4": "Venus",
+    "5": "Saturn",
+    "6": "Rahu",
+    "7": "Moon",
+    "8": "Jupiter",
+    "9": "Saturn",
+    "10": "Mercury",
+    "11": "Saturn",
+    "12": "Jupiter"
+   },
+   "planet_significations": {
+    "Sun": [
+     2,
+     4,
+     5,
+     11
+    ],
+    "Moon": [
+     3,
+     8,
+     9,
+     10
+    ],
+    "Mars": [
+     7,
+     9,
+     12
+    ],
+    "Mercury": [
+     2,
+     3,
+     5,
+     11
+    ],
+    "Jupiter": [
+     2,
+     8,
+     9,
+     11
+    ],
+    "Venus": [
+     1,
+     6,
+     7,
+     9,
+     10,
+     12
+    ],
+    "Saturn": [
+     4,
+     8,
+     9,
+     10,
+     11
+    ],
+    "Rahu": [
+     3,
+     9
+    ],
+    "Ketu": [
+     2,
+     3,
+     5,
+     11
+    ]
+   }
+  },
+  "chalit_shifted": {
+   "Mars": [
+    9,
+    10
+   ],
+   "Rahu": [
+    9,
+    10
+   ],
+   "Ketu": [
+    3,
+    4
+   ]
+  },
   "shadbala": {
    "Sun": {
     "rupas": 8.35,
@@ -524,5 +761,14 @@
    "what": "Planet longitudes recomputed. The fallback engine used on 20 Oct 2026 read positions in the J2000 frame: every planet was about 8 arc-minutes too far forward and all dasha dates about 2 months too early. Signs, houses and nakshatra-padas did not change. Old hand-entered blocks (planets, vimshottari_0930, venus_AD, ketu_AD_0930, mercury_AD_0930, dasha_by_time, sade_sati, d9 tables) were removed; use 'computed'.",
    "dasha_shift": "Mercury MD 14 Feb 1997; Ketu MD 14 Feb 2014; Venus MD 14 Feb 2021; Ven-Sun 15 Jun 2024; Ven-Moon 15 Jun 2025; Ven-Mars 14 Feb 2027; Ven-Rahu 15 Apr 2028 (at 09:30)"
   }
- ]
+ ],
+ "birth": {
+  "date": "1990-04-04",
+  "time": "09:30",
+  "lat": 15.4854,
+  "lon": 75.1297,
+  "tz": "Asia/Kolkata",
+  "sex": "F"
+ },
+ "schema_version": 2
 }

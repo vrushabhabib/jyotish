@@ -18,7 +18,7 @@ import json, sys, datetime as dt, argparse
 
 from engine.report import build
 
-SCHEMA_VERSION = 2
+SCHEMA_VERSION = 3
 
 
 def _d(x):
@@ -59,6 +59,10 @@ def computed(date, time, lat, lon, tz="Asia/Kolkata", sex=None):
         "vimshottari": {"maha": maha, "antar_current_and_next": antar},
         "sade_sati": [[_d(s), _d(e)] for s, e in r["sade_sati"]],
     }
+    out["yogini"] = [{"yogini": y["yogini"], "lord": y["lord"], "start": _d(y["start"]), "end": _d(y["end"])} for y in r["yogini"][:10]]
+    out["chara"] = [{"sign": m["sign"], "years": m["years"], "start": _d(m["start"]), "end": _d(m["end"])} for m in r["chara"]["maha"]]
+    out["kp"] = {"cusp_sub_lords": {str(h): c["sub"] for h, c in r["kp"]["cusps"].items()}, "planet_significations": r["kp"]["planet_significations"]}
+    out["chalit_shifted"] = {p: list(x) for p, x in r["chalit"]["shifted"].items()}
     sb = r.get("shadbala")
     if sb and "planets" in sb:
         out["shadbala"] = {p: {k: (round(v[k], 2) if isinstance(v[k], float) else v[k]) for k in ("rupas", "ratio", "rank") if k in v}
@@ -66,10 +70,29 @@ def computed(date, time, lat, lon, tz="Asia/Kolkata", sex=None):
     return out
 
 
+def _coord(x):
+    """15.33 | '15.3333' | '30N16' | '97W44' -> signed decimal degrees."""
+    try:
+        return float(x)
+    except (TypeError, ValueError):
+        import re
+        m = re.match(r"\s*(\d+)\s*([NSEW])\s*(\d+)?", str(x).upper())
+        v = int(m.group(1)) + int(m.group(3) or 0) / 60
+        return -v if m.group(2) in "SW" else v
+
+
+def birth_of(d):
+    """Birth data from any of the historical file layouts -> (date, time, lat, lon, tz, sex)."""
+    b = d.get("birth") or d.get("input") or d.get("meta") or {}
+    g = lambda *ks: next((x[k] for x in (d, b) for k in ks if isinstance(x, dict) and x.get(k) not in (None, "")), None)
+    tz = str(g("tz") or "Asia/Kolkata").split()[0]
+    return (str(g("date", "dob"))[:10], str(g("time", "tob"))[:5], _coord(g("lat")), _coord(g("lon")), tz, g("sex"))
+
+
 def refresh(path, time=None, sex=None, drop=()):
     d = json.load(open(path))
-    t = time or str(d.get("time", ""))[:5]
-    d["computed"] = computed(d["date"], t, d["lat"], d["lon"], d.get("tz", "Asia/Kolkata"), sex or d.get("sex"))
+    date, t0, lat, lon, tz, sx = birth_of(d)
+    d["computed"] = computed(date, time or t0, lat, lon, tz, sex or sx)
     for k in drop:
         d.pop(k, None)
     json.dump(d, open(path, "w"), indent=1, ensure_ascii=False)

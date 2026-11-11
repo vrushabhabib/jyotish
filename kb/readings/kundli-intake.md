@@ -51,6 +51,11 @@ The table shows the minute at which the lagna, D9, D10, D7, D12 and D3 lagnas ch
 | 10 Link test | which sub-period lords can deliver which area — strong links only |
 | 11 Vimshottari with area tags and pratyantars | every dated statement |
 | 12–13 Saturn phases, transits with SAV/BAV, double transit, returns | timing windows |
+| 13a KP cusps, sub-lords, significators; Bhava Chalit shifts | KP confirmation of promise; planets that sit on a house border |
+| 13b Yogini and Chara dashas | second and third timing systems |
+| 13c Convergence table and track record | the ONLY windows that may be dated in a reading: 4 of 5 systems agree and the verdict column says "usable" |
+
+Column "How common" in section 8: a yoga found in more than 40% of random charts (Dhana 88%, Raja kendra-trikona 80%, Pitru 61%, Budha-Aditya 51%) is not mentioned as a distinction. Lead with the uncommon ones.
 
 Take Shadbala and Bhava Bala from the PDF when one is supplied; `engine/shadbala.py` is used otherwise, and its unverified components are listed in the worksheet.
 
@@ -63,6 +68,12 @@ Take Shadbala and Bhava Bala from the PDF when one is supplied; `engine/shadbala
    - within a time window: the *month* a dasha begins, matched to a sharp life change;
    - for an unrecorded date: festival/tithi memory ("the day after Ram Navami"), Saturn-phase onset months.
 4. Do **not** treat "past events fall in linked sub-periods" as proof. Tested on 248 candidate dates: nearly all pass (Rule 8). Only forward statements answered cold count.
+
+### Uncertain time: let the engine pick the questions
+`python3 -m engine.discriminate DATE T0 T1 LAT LON TZ` lists the minutes at which lagna, D9, D10, D7 and the Moon's pada change inside the window, how many months the dasha starts move, and which kind of question separates the segments. Ask only those.
+
+### Log before you send
+Every dated forward statement goes into the ledger first: `python3 -m engine.ledger add --chart NAME --category timing --kind forward --statement "..." --window YYYY-MM-DD:YYYY-MM-DD --basis "..." --confidence 0.x`. When the person reports back: `python3 -m engine.ledger score ID hit|partly|miss`. `python3 -m engine.ledger report` gives the running hit rate by category; the worksheet prints it.
 
 ## Step 6 — Write
 

@@ -43,6 +43,15 @@ Output format for a first reading: snapshot line → 6–8 numbered findings (st
 - `/projects/<id>/people/<name>.md` — one file per person whose chart is on file: relation to Vrushab, birth data source/confidence, chart file path, key findings, questions asked and answers given. Never store health diagnoses or sensitive personal facts beyond what the user stated.
 - `/projects/<id>/areas/operating-manual.md` — pointer to this document.
 
-## 6. Roadmap (engine)
-Done 11 Nov 2026: Shadbala, Ashtakavarga, Jaimini karakas and arudhas, KP sub-lords, AstroSage PDF parser, transit tables, worksheet.
-Open: Bhava Chalit cusps, geocoding, Chara dasha, Yogini dasha, a second reference PDF to settle the Shadbala items listed as unverified, yoga detection driven from `kb/yogas/yogas.json`.
+## 6. How the agent uses the engine (the division of labour)
+The engine calculates and measures; the reader (Claude) interprets, asks and explains. Neither does the other's job.
+1. Engine: worksheet. Reader: never states a position, date or yoga that is not in it.
+2. Engine: "How common" column and convergence verdicts. Reader: leads with uncommon factors, dates only "usable" windows, says plainly when a test does not discriminate.
+3. Engine: `discriminate` for an uncertain time. Reader: turns the listed differences into plain questions, asks them one at a time, scores the answers in the open.
+4. Reader: logs each dated forward statement in the ledger before sending. Engine: reports the running hit rate, which is quoted in Part 1 of every reading.
+5. Reader: a miss becomes a numbered rule in `kb/dashas/antar-event-rules.md` (provisional until seen twice); a rule that keeps missing is demoted.
+6. Reader: explanations in plain language, continuous prose, no jargon without a gloss; classical death, widowhood and childlessness wording is never passed on literally.
+
+## 7. Roadmap
+Done 11-12 Nov 2026: Shadbala, Ashtakavarga, Jaimini karakas and arudhas, KP cusps and significators, Bhava Chalit, Yogini, Chara and Ashtottari dashas, AstroSage PDF parser, transits, convergence, base rates, ledger, time discrimination.
+Open: geocoding; yoga detection driven from `kb/yogas/yogas.json` (only about 40 of the 160 catalogued yogas are detected); Narayana dasha; a second reference PDF to settle the three Shadbala items; itemising the remaining 26 legacy verification questions in the ledger; reading Raman, K.N. Rao and the KP Readers from the printed books.

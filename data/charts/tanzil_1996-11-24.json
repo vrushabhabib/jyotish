@@ -103,8 +103,8 @@
  "verification_score": "5/5 (100%) - confirmed for practical use; all timing hits",
  "notes_foreign": "12th-house foreign theme verified (Europe travel, US study attempt). Next foreign windows: Rahu-Mercury Jun 2027-Dec 2029 (Mercury 9L) with transit Rahu in her 12th Jun 2028-Jan 2030; Jupiter MD from Jun 2037",
  "computed": {
-  "schema_version": 2,
-  "generated": "2026-11-11",
+  "schema_version": 3,
+  "generated": "2026-11-12",
   "engine": {
    "backend": "ephem",
    "ayanamsa_lahiri": 23.81371
@@ -301,24 +301,38 @@
     "from": {
      "lagna": {
       "mars_house": 8,
-      "dosha": true
+      "dosha": true,
+      "bphs": true,
+      "southern": true
      },
      "moon": {
       "mars_house": 5,
-      "dosha": false
+      "dosha": false,
+      "bphs": false,
+      "southern": false
      },
      "venus": {
       "mars_house": 11,
-      "dosha": false
+      "dosha": false,
+      "bphs": false,
+      "southern": false
      }
     },
     "present": true,
     "cancellations": [
-     "Mars in Leo/Aquarius (held harmless by several authorities)",
-     "Jupiter joins/aspects Mars",
-     "native past 28 (Mars matured)"
+     "benefic joins/aspects Mars: Jupiter (BPHS 80.47)",
+     "Mars in Leo/Aquarius",
+     "native past 28 (one source; another calls it a myth)"
     ],
-    "verdict": "present but cancelled/mitigated"
+    "cancellations_classical": [
+     "benefic joins/aspects Mars: Jupiter (BPHS 80.47)"
+    ],
+    "cancellations_claimed": [
+     "Mars in Leo/Aquarius",
+     "native past 28 (one source; another calls it a myth)"
+    ],
+    "base_rate": "about 50% of charts from lagna, 75% from lagna or Moon - weak evidence alone",
+    "verdict": "present but cancelled (classical ground)"
    },
    "kaal_sarp": {
     "full": false,
@@ -503,6 +517,230 @@
     "2032-05-30"
    ]
   ],
+  "yogini": [
+   {
+    "yogini": "Ulka",
+    "lord": "Saturn",
+    "start": "1996-11-24",
+    "end": "2002-06-30"
+   },
+   {
+    "yogini": "Siddha",
+    "lord": "Venus",
+    "start": "2002-06-30",
+    "end": "2009-06-29"
+   },
+   {
+    "yogini": "Sankata",
+    "lord": "Rahu",
+    "start": "2009-06-29",
+    "end": "2017-06-29"
+   },
+   {
+    "yogini": "Mangala",
+    "lord": "Moon",
+    "start": "2017-06-29",
+    "end": "2018-06-30"
+   },
+   {
+    "yogini": "Pingala",
+    "lord": "Sun",
+    "start": "2018-06-30",
+    "end": "2020-06-29"
+   },
+   {
+    "yogini": "Dhanya",
+    "lord": "Jupiter",
+    "start": "2020-06-29",
+    "end": "2023-06-30"
+   },
+   {
+    "yogini": "Bhramari",
+    "lord": "Mars",
+    "start": "2023-06-30",
+    "end": "2027-06-30"
+   },
+   {
+    "yogini": "Bhadrika",
+    "lord": "Mercury",
+    "start": "2027-06-30",
+    "end": "2032-06-29"
+   },
+   {
+    "yogini": "Ulka",
+    "lord": "Saturn",
+    "start": "2032-06-29",
+    "end": "2038-06-30"
+   },
+   {
+    "yogini": "Siddha",
+    "lord": "Venus",
+    "start": "2038-06-30",
+    "end": "2045-06-29"
+   }
+  ],
+  "chara": [
+   {
+    "sign": "Makara",
+    "years": 10,
+    "start": "1996-11-24",
+    "end": "2006-11-25"
+   },
+   {
+    "sign": "Dhanu",
+    "years": 12,
+    "start": "2006-11-25",
+    "end": "2018-11-25"
+   },
+   {
+    "sign": "Vrishchika",
+    "years": 4,
+    "start": "2018-11-25",
+    "end": "2022-11-25"
+   },
+   {
+    "sign": "Tula",
+    "years": 12,
+    "start": "2022-11-25",
+    "end": "2034-11-25"
+   },
+   {
+    "sign": "Kanya",
+    "years": 10,
+    "start": "2034-11-25",
+    "end": "2044-11-24"
+   },
+   {
+    "sign": "Simha",
+    "years": 9,
+    "start": "2044-11-24",
+    "end": "2053-11-24"
+   },
+   {
+    "sign": "Karka",
+    "years": 3,
+    "start": "2053-11-24",
+    "end": "2056-11-24"
+   },
+   {
+    "sign": "Mithuna",
+    "years": 5,
+    "start": "2056-11-24",
+    "end": "2061-11-24"
+   },
+   {
+    "sign": "Vrishabha",
+    "years": 5,
+    "start": "2061-11-24",
+    "end": "2066-11-25"
+   },
+   {
+    "sign": "Mesha",
+    "years": 4,
+    "start": "2066-11-25",
+    "end": "2070-11-25"
+   },
+   {
+    "sign": "Meena",
+    "years": 3,
+    "start": "2070-11-25",
+    "end": "2073-11-24"
+   },
+   {
+    "sign": "Kumbha",
+    "years": 11,
+    "start": "2073-11-24",
+    "end": "2084-11-24"
+   }
+  ],
+  "kp": {
+   "cusp_sub_lords": {
+    "1": "Jupiter",
+    "2": "Rahu",
+    "3": "Rahu",
+    "4": "Mercury",
+    "5": "Mercury",
+    "6": "Venus",
+    "7": "Jupiter",
+    "8": "Saturn",
+    "9": "Rahu",
+    "10": "Mercury",
+    "11": "Venus",
+    "12": "Moon"
+   },
+   "planet_significations": {
+    "Sun": [
+     1,
+     2,
+     10
+    ],
+    "Moon": [
+     3,
+     7,
+     10
+    ],
+    "Mars": [
+     3,
+     4,
+     7,
+     9,
+     10
+    ],
+    "Mercury": [
+     5,
+     6,
+     8,
+     10
+    ],
+    "Jupiter": [
+     2,
+     4,
+     9,
+     11,
+     12
+    ],
+    "Venus": [
+     4,
+     8,
+     9
+    ],
+    "Saturn": [
+     1,
+     2
+    ],
+    "Rahu": [
+     3,
+     7,
+     8
+    ],
+    "Ketu": [
+     1,
+     2
+    ]
+   }
+  },
+  "chalit_shifted": {
+   "Sun": [
+    11,
+    10
+   ],
+   "Venus": [
+    10,
+    9
+   ],
+   "Saturn": [
+    3,
+    2
+   ],
+   "Rahu": [
+    9,
+    8
+   ],
+   "Ketu": [
+    3,
+    2
+   ]
+  },
   "shadbala": {
    "Sun": {
     "rupas": 7.03,
@@ -547,5 +785,14 @@
    "date": "2026-11-11",
    "what": "Recomputed with the corrected engine; dasha dates moved by up to one week and now agree with the AstroSage printout (Rahu-Saturn ends 12 Jun 2027). New findings the hand analysis missed: Sun-Mars exchange (8th and 11th lords, Dainya Parivartana) and Mercury combust."
   }
- ]
+ ],
+ "birth": {
+  "date": "1996-11-24",
+  "time": "12:05",
+  "lat": 15.3333,
+  "lon": 75.1333,
+  "tz": "Asia/Kolkata",
+  "sex": "F"
+ },
+ "schema_version": 2
 }

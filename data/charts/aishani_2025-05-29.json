@@ -1,58 +1,942 @@
 {
-  "name": "Aishani Banwar",
-  "sex": "F",
-  "dob": "2025-05-29",
-  "tob": "16:46",
-  "tz": "America/Chicago (CDT, UTC-5)",
-  "place": "Austin, Texas, USA",
-  "lat": "30N16",
-  "lon": "97W44",
-  "time_confidence": "US hospital birth 2025 - presumed birth-certificate time; NOT yet confirmed by user. Lagna 28°41' Virgo is 1°19' (~5-6 min) from Libra sandhi.",
-  "source": "AstroSage PDFs aishani.pdf (18pp) + VedicReport9-28-20267-34-29PM.pdf (55pp), both printed 28 Sep 2026 7:34 PM; identical data. Verified with engine.chart to arc-minute.",
-  "relation_to_vrushab": "NOT YET STATED",
-  "ayanamsa": "Lahiri 24-12-41",
-  "lagna": {"sign": "Kanya (Virgo)", "deg": "28-41-19", "nakshatra": "Chitra-2", "lord": "Mercury"},
-  "moon": {"sign": "Mithuna (Gemini)", "deg": "22-43-10", "nakshatra": "Punarvasu-1", "lord": "Jupiter"},
-  "dasa_balance": "Jupiter 12y 8m 26d",
-  "panchanga": {"tithi": "Shukla Chaturthi", "yoga": "Ganda", "karana": "Vanij", "vara": "Thursday"},
+ "name": "Aishani Banwar",
+ "sex": "F",
+ "dob": "2025-05-29",
+ "tob": "16:46",
+ "tz": "America/Chicago (CDT, UTC-5)",
+ "place": "Austin, Texas, USA",
+ "lat": "30N16",
+ "lon": "97W44",
+ "time_confidence": "US hospital birth 2025 - presumed birth-certificate time; NOT yet confirmed by user. Lagna 28°41' Virgo is 1°19' (~5-6 min) from Libra sandhi.",
+ "source": "AstroSage PDFs aishani.pdf (18pp) + VedicReport9-28-20267-34-29PM.pdf (55pp), both printed 28 Sep 2026 7:34 PM; identical data. Verified with engine.chart to arc-minute.",
+ "relation_to_vrushab": "NOT YET STATED",
+ "ayanamsa": "Lahiri 24-12-41",
+ "lagna": {
+  "sign": "Kanya (Virgo)",
+  "deg": "28-41-19",
+  "nakshatra": "Chitra-2",
+  "lord": "Mercury"
+ },
+ "moon": {
+  "sign": "Mithuna (Gemini)",
+  "deg": "22-43-10",
+  "nakshatra": "Punarvasu-1",
+  "lord": "Jupiter"
+ },
+ "dasa_balance": "Jupiter 12y 8m 26d",
+ "panchanga": {
+  "tithi": "Shukla Chaturthi",
+  "yoga": "Ganda",
+  "karana": "Vanij",
+  "vara": "Thursday"
+ },
+ "planets": {
+  "Sun": {
+   "sign": "Vrishabha",
+   "deg": "14-33-48",
+   "nak": "Rohini-2",
+   "house": 9,
+   "lords": [
+    12
+   ],
+   "d9": "Vrishabha"
+  },
+  "Moon": {
+   "sign": "Mithuna",
+   "deg": "22-43-10",
+   "nak": "Punarvasu-1",
+   "house": 10,
+   "lords": [
+    11
+   ],
+   "d9": "Mesha"
+  },
+  "Mars": {
+   "sign": "Karka",
+   "deg": "25-44-58",
+   "nak": "Ashlesha-3",
+   "house": 11,
+   "lords": [
+    3,
+    8
+   ],
+   "d9": "Kumbha",
+   "note": "debilitated"
+  },
+  "Mercury": {
+   "sign": "Vrishabha",
+   "deg": "14-14-19",
+   "nak": "Rohini-2",
+   "house": 9,
+   "lords": [
+    1,
+    10
+   ],
+   "d9": "Vrishabha",
+   "note": "combust, 0°20' from Sun; lagna lord and Moon-sign lord"
+  },
+  "Jupiter": {
+   "sign": "Mithuna",
+   "deg": "03-17-07",
+   "nak": "Mrigasira-3",
+   "house": 10,
+   "lords": [
+    4,
+    7
+   ],
+   "d9": "Tula"
+  },
+  "Venus": {
+   "sign": "Meena",
+   "deg": "28-44-01",
+   "nak": "Revati-4",
+   "house": 7,
+   "lords": [
+    2,
+    9
+   ],
+   "d9": "Meena",
+   "note": "exalted, near deep exaltation; vargottama"
+  },
+  "Saturn": {
+   "sign": "Meena",
+   "deg": "06-07-31",
+   "nak": "U.Bhadra-1",
+   "house": 7,
+   "lords": [
+    5,
+    6
+   ],
+   "d9": "Simha"
+  },
+  "Rahu": {
+   "sign": "Kumbha",
+   "deg": "29-23-41",
+   "nak": "P.Bhadra-3",
+   "house": 6,
+   "d9": "Mithuna"
+  },
+  "Ketu": {
+   "sign": "Simha",
+   "deg": "29-23-41",
+   "nak": "U.Phalguni-1",
+   "house": 12,
+   "d9": "Dhanu"
+  }
+ },
+ "d9_lagna": "Kanya",
+ "shadbala_rupas": {
+  "Sun": 8.16,
+  "Moon": 6.46,
+  "Mars": 6.58,
+  "Mercury": 6.06,
+  "Jupiter": 9.39,
+  "Venus": 6.95,
+  "Saturn": 6.52
+ },
+ "shadbala_ratio": {
+  "Sun": 1.63,
+  "Moon": 1.08,
+  "Mars": 1.32,
+  "Mercury": 0.87,
+  "Jupiter": 1.45,
+  "Venus": 1.26,
+  "Saturn": 1.3
+ },
+ "shadbala_rank": {
+  "Sun": 1,
+  "Jupiter": 2,
+  "Mars": 3,
+  "Saturn": 4,
+  "Venus": 5,
+  "Moon": 6,
+  "Mercury": 7
+ },
+ "sav": [
+  32,
+  27,
+  23,
+  31,
+  24,
+  25,
+  28,
+  30,
+  26,
+  32,
+  28,
+  31
+ ],
+ "bhava_bala_rupas_1_to_12": [
+  7.07,
+  7.44,
+  6.58,
+  8.99,
+  7.0,
+  6.96,
+  9.76,
+  7.14,
+  7.51,
+  5.94,
+  6.29,
+  8.44
+ ],
+ "bhava_bala_rank_1_to_12": [
+  7,
+  5,
+  10,
+  2,
+  8,
+  9,
+  1,
+  6,
+  4,
+  12,
+  11,
+  3
+ ],
+ "chalit_note": "Bhava Chalit (AstroSage cusps, lagna mid 28°41'): Sun bhava 9, Mercury bhava 8, Jupiter bhava 9, Moon bhava 10, Mars bhava 11, Venus bhava 7, Saturn bhava 6, Rahu bhava 7, Ketu bhava 1. Because lagna is at the very end of Virgo, half the planets shift a house in Chalit - whole-sign readings should be cross-checked.",
+ "dasha": {
+  "Jupiter": "2025-05-29 to 2038-02-25 (subs: Jup/Sat to 25 Oct 2026, Jup/Mer to 1 Feb 2029, Jup/Ket to 7 Jan 2030, Jup/Ven to 7 Sep 2032, Jup/Sun to 25 Jun 2033, Jup/Moon to 25 Oct 2034, Jup/Mars to 1 Oct 2035, Jup/Rahu to 25 Feb 2038)",
+  "Saturn": "2038-02-25 to 2057-02-25",
+  "Mercury": "2057-02-25 to 2074-02-25",
+  "Ketu": "2074-02-25 to 2081-02-25",
+  "Venus": "2081-02-25 to 2101-02-25",
+  "engine_note": "engine gives Jupiter MD end 2038-02-17 (8 days earlier); AstroSage taken as reference"
+ },
+ "sade_sati": "First: rising 8 Aug-5 Oct 2029 and 17 Apr 2030-30 May 2032; peak 31 May 2032-12 Jul 2034; setting 13 Jul 2034-27 Aug 2036 (age 4-11).",
+ "manglik": "Absent from lagna (Mars 11th) and from Moon (Mars 2nd from Moon).",
+ "yogas": [
+  "Gajakesari (Moon+Jupiter conjunct in 10th kendra)",
+  "Budhaditya in 9th (Mercury combust)",
+  "Exalted vargottama Venus in 7th kendra (Malavya)",
+  "Rahu in 6th / Ketu in 12th",
+  "Mars debilitated in 11th (2nd from Moon)",
+  "Saturn conjunct exalted Venus in 7th, both aspecting lagna",
+  "Lagna lord + Moon-sign lord Mercury weakest planet, combust, in 9th"
+ ],
+ "reading_2026-09-28": "First pass only; relation to Vrushab not stated; birth-time confirmation pending.",
+ "revision": 1,
+ "birth": {
+  "date": "2025-05-29",
+  "time": "16:46",
+  "lat": 30.2667,
+  "lon": -97.7333,
+  "tz": "America/Chicago",
+  "sex": "F"
+ },
+ "schema_version": 2,
+ "computed": {
+  "schema_version": 3,
+  "generated": "2026-11-11",
+  "engine": {
+   "backend": "ephem",
+   "ayanamsa_lahiri": 24.212
+  },
+  "birth": {
+   "date": "2025-05-29",
+   "time": "16:46",
+   "lat": 30.266666666666666,
+   "lon": -97.73333333333333,
+   "tz": "America/Chicago"
+  },
+  "lagna": {
+   "rashi": "Kanya",
+   "deg": "28°41'35\"",
+   "nakshatra": "Chitra",
+   "d9": 6,
+   "d10": 11,
+   "d7": 6
+  },
   "planets": {
-    "Sun":     {"sign": "Vrishabha", "deg": "14-33-48", "nak": "Rohini-2",    "house": 9,  "lords": [12],   "d9": "Vrishabha"},
-    "Moon":    {"sign": "Mithuna",   "deg": "22-43-10", "nak": "Punarvasu-1", "house": 10, "lords": [11],   "d9": "Mesha"},
-    "Mars":    {"sign": "Karka",     "deg": "25-44-58", "nak": "Ashlesha-3",  "house": 11, "lords": [3, 8], "d9": "Kumbha", "note": "debilitated"},
-    "Mercury": {"sign": "Vrishabha", "deg": "14-14-19", "nak": "Rohini-2",    "house": 9,  "lords": [1, 10], "d9": "Vrishabha", "note": "combust, 0°20' from Sun; lagna lord and Moon-sign lord"},
-    "Jupiter": {"sign": "Mithuna",   "deg": "03-17-07", "nak": "Mrigasira-3", "house": 10, "lords": [4, 7], "d9": "Tula"},
-    "Venus":   {"sign": "Meena",     "deg": "28-44-01", "nak": "Revati-4",    "house": 7,  "lords": [2, 9], "d9": "Meena", "note": "exalted, near deep exaltation; vargottama"},
-    "Saturn":  {"sign": "Meena",     "deg": "06-07-31", "nak": "U.Bhadra-1",  "house": 7,  "lords": [5, 6], "d9": "Simha"},
-    "Rahu":    {"sign": "Kumbha",    "deg": "29-23-41", "nak": "P.Bhadra-3",  "house": 6,  "d9": "Mithuna"},
-    "Ketu":    {"sign": "Simha",     "deg": "29-23-41", "nak": "U.Phalguni-1","house": 12, "d9": "Dhanu"}
+   "Sun": {
+    "rashi": "Vrishabha",
+    "deg": "14°33'06\"",
+    "nakshatra": "Rohini",
+    "pada": 2,
+    "house": 9,
+    "dignity": "Enemy's sign",
+    "retro": false,
+    "combust": false,
+    "d9": 2
+   },
+   "Moon": {
+    "rashi": "Mithuna",
+    "deg": "22°43'58\"",
+    "nakshatra": "Punarvasu",
+    "pada": 1,
+    "house": 10,
+    "dignity": "Friend's sign",
+    "retro": false,
+    "combust": false,
+    "d9": 1
+   },
+   "Mars": {
+    "rashi": "Karka",
+    "deg": "25°44'06\"",
+    "nakshatra": "Ashlesha",
+    "pada": 3,
+    "house": 11,
+    "dignity": "Debilitated",
+    "retro": false,
+    "combust": false,
+    "d9": 11
+   },
+   "Mercury": {
+    "rashi": "Vrishabha",
+    "deg": "14°13'07\"",
+    "nakshatra": "Rohini",
+    "pada": 2,
+    "house": 9,
+    "dignity": "Friend's sign",
+    "retro": false,
+    "combust": true,
+    "d9": 2
+   },
+   "Jupiter": {
+    "rashi": "Mithuna",
+    "deg": "3°19'11\"",
+    "nakshatra": "Mrigashira",
+    "pada": 3,
+    "house": 10,
+    "dignity": "Enemy's sign",
+    "retro": false,
+    "combust": false,
+    "d9": 7
+   },
+   "Venus": {
+    "rashi": "Meena",
+    "deg": "28°43'19\"",
+    "nakshatra": "Revati",
+    "pada": 4,
+    "house": 7,
+    "dignity": "Exalted",
+    "retro": false,
+    "combust": false,
+    "d9": 12
+   },
+   "Saturn": {
+    "rashi": "Meena",
+    "deg": "6°07'56\"",
+    "nakshatra": "Uttara Bhadrapada",
+    "pada": 1,
+    "house": 7,
+    "dignity": "Neutral sign",
+    "retro": false,
+    "combust": false,
+    "d9": 5
+   },
+   "Rahu": {
+    "rashi": "Kumbha",
+    "deg": "29°24'01\"",
+    "nakshatra": "Purva Bhadrapada",
+    "pada": 3,
+    "house": 6,
+    "dignity": "Own sign",
+    "retro": false,
+    "combust": false,
+    "d9": 3
+   },
+   "Ketu": {
+    "rashi": "Simha",
+    "deg": "29°24'01\"",
+    "nakshatra": "Uttara Phalguni",
+    "pada": 1,
+    "house": 12,
+    "dignity": "Enemy's sign",
+    "retro": false,
+    "combust": false,
+    "d9": 9
+   }
   },
-  "d9_lagna": "Kanya",
-  "shadbala_rupas": {"Sun": 8.16, "Moon": 6.46, "Mars": 6.58, "Mercury": 6.06, "Jupiter": 9.39, "Venus": 6.95, "Saturn": 6.52},
-  "shadbala_ratio": {"Sun": 1.63, "Moon": 1.08, "Mars": 1.32, "Mercury": 0.87, "Jupiter": 1.45, "Venus": 1.26, "Saturn": 1.30},
-  "shadbala_rank": {"Sun": 1, "Jupiter": 2, "Mars": 3, "Saturn": 4, "Venus": 5, "Moon": 6, "Mercury": 7},
-  "sav": [32, 27, 23, 31, 24, 25, 28, 30, 26, 32, 28, 31],
-  "bhava_bala_rupas_1_to_12": [7.07, 7.44, 6.58, 8.99, 7.00, 6.96, 9.76, 7.14, 7.51, 5.94, 6.29, 8.44],
-  "bhava_bala_rank_1_to_12": [7, 5, 10, 2, 8, 9, 1, 6, 4, 12, 11, 3],
-  "chalit_note": "Bhava Chalit (AstroSage cusps, lagna mid 28°41'): Sun bhava 9, Mercury bhava 8, Jupiter bhava 9, Moon bhava 10, Mars bhava 11, Venus bhava 7, Saturn bhava 6, Rahu bhava 7, Ketu bhava 1. Because lagna is at the very end of Virgo, half the planets shift a house in Chalit - whole-sign readings should be cross-checked.",
-  "dasha": {
-    "Jupiter": "2025-05-29 to 2038-02-25 (subs: Jup/Sat to 25 Oct 2026, Jup/Mer to 1 Feb 2029, Jup/Ket to 7 Jan 2030, Jup/Ven to 7 Sep 2032, Jup/Sun to 25 Jun 2033, Jup/Moon to 25 Oct 2034, Jup/Mars to 1 Oct 2035, Jup/Rahu to 25 Feb 2038)",
-    "Saturn": "2038-02-25 to 2057-02-25",
-    "Mercury": "2057-02-25 to 2074-02-25",
-    "Ketu": "2074-02-25 to 2081-02-25",
-    "Venus": "2081-02-25 to 2101-02-25",
-    "engine_note": "engine gives Jupiter MD end 2038-02-17 (8 days earlier); AstroSage taken as reference"
+  "panchanga": {
+   "tithi": "Shukla Chaturthi",
+   "paksha": "Shukla",
+   "vara": "Thursday",
+   "yoga": "Ganda",
+   "karana": "Vanija",
+   "day_birth": true,
+   "nakshatra": "Punarvasu",
+   "pada": 1
   },
-  "sade_sati": "First: rising 8 Aug-5 Oct 2029 and 17 Apr 2030-30 May 2032; peak 31 May 2032-12 Jul 2034; setting 13 Jul 2034-27 Aug 2036 (age 4-11).",
-  "manglik": "Absent from lagna (Mars 11th) and from Moon (Mars 2nd from Moon).",
+  "karakas": {
+   "AK": "Venus",
+   "AmK": "Mars",
+   "BK": "Moon",
+   "MK": "Sun",
+   "PK": "Mercury",
+   "GK": "Saturn",
+   "DK": "Jupiter"
+  },
+  "arudhas": {
+   "AL": {
+    "sign": "Makara",
+    "house": 5,
+    "occupants": []
+   },
+   "UL": {
+    "sign": "Vrishchika",
+    "house": 3,
+    "occupants": []
+   },
+   "A7": {
+    "sign": "Mithuna",
+    "house": 10,
+    "occupants": [
+     "Moon",
+     "Jupiter"
+    ]
+   },
+   "A10": {
+    "sign": "Mesha",
+    "house": 8,
+    "occupants": []
+   }
+  },
+  "sav_by_house": {
+   "1": 25,
+   "2": 28,
+   "3": 30,
+   "4": 26,
+   "5": 32,
+   "6": 28,
+   "7": 31,
+   "8": 32,
+   "9": 27,
+   "10": 23,
+   "11": 31,
+   "12": 24
+  },
   "yogas": [
-    "Gajakesari (Moon+Jupiter conjunct in 10th kendra)",
-    "Budhaditya in 9th (Mercury combust)",
-    "Exalted vargottama Venus in 7th kendra (Malavya)",
-    "Rahu in 6th / Ketu in 12th",
-    "Mars debilitated in 11th (2nd from Moon)",
-    "Saturn conjunct exalted Venus in 7th, both aspecting lagna",
-    "Lagna lord + Moon-sign lord Mercury weakest planet, combust, in 9th"
+   "Malavya (Mahapurusha)",
+   "Gajakesari",
+   "Durudhara",
+   "Vesi",
+   "Budha-Aditya",
+   "Amala (from lagna)",
+   "Amala (from Moon)",
+   "Dhana yoga",
+   "Dhana yoga",
+   "Lakshmi",
+   "Neecha bhanga"
   ],
-  "reading_2026-09-28": "First pass only; relation to Vrushab not stated; birth-time confirmation pending.",
-  "revision": 1
+  "doshas": {
+   "manglik": {
+    "from": {
+     "lagna": {
+      "mars_house": 11,
+      "dosha": false,
+      "bphs": false,
+      "southern": false
+     },
+     "moon": {
+      "mars_house": 2,
+      "dosha": true,
+      "bphs": false,
+      "southern": true
+     },
+     "venus": {
+      "mars_house": 5,
+      "dosha": false,
+      "bphs": false,
+      "southern": false
+     }
+    },
+    "present": true,
+    "cancellations": [
+     "Mars in a movable sign",
+     "Saturn in 1/4/7/8/12 (equivalent affliction, used in matching)"
+    ],
+    "cancellations_classical": [],
+    "cancellations_claimed": [
+     "Mars in a movable sign",
+     "Saturn in 1/4/7/8/12 (equivalent affliction, used in matching)"
+    ],
+    "base_rate": "about 50% of charts from lagna, 75% from lagna or Moon - weak evidence alone",
+    "verdict": "present; only later-list mitigations apply"
+   },
+   "kaal_sarp": {
+    "full": true,
+    "type": "Ketu leads (Kaal Amrita)",
+    "partial": false,
+    "planets_outside": [],
+    "note": "Not in BPHS/Phaladeepika; a later doctrine. A planet with Rahu/Ketu or one planet outside the arc breaks it."
+   },
+   "pitru": []
+  },
+  "vimshottari": {
+   "maha": [
+    {
+     "lord": "Jupiter",
+     "start": "2025-05-29",
+     "end": "2038-02-16"
+    },
+    {
+     "lord": "Saturn",
+     "start": "2038-02-16",
+     "end": "2057-02-16"
+    },
+    {
+     "lord": "Mercury",
+     "start": "2057-02-16",
+     "end": "2074-02-16"
+    },
+    {
+     "lord": "Ketu",
+     "start": "2074-02-16",
+     "end": "2081-02-16"
+    },
+    {
+     "lord": "Venus",
+     "start": "2081-02-16",
+     "end": "2101-02-17"
+    },
+    {
+     "lord": "Sun",
+     "start": "2101-02-17",
+     "end": "2107-02-18"
+    },
+    {
+     "lord": "Moon",
+     "start": "2107-02-18",
+     "end": "2117-02-17"
+    },
+    {
+     "lord": "Mars",
+     "start": "2117-02-17",
+     "end": "2124-02-18"
+    },
+    {
+     "lord": "Rahu",
+     "start": "2124-02-18",
+     "end": "2142-02-17"
+    }
+   ],
+   "antar_current_and_next": [
+    {
+     "md": "Jupiter",
+     "ad": "Saturn",
+     "start": "2025-05-29",
+     "end": "2026-10-18"
+    },
+    {
+     "md": "Jupiter",
+     "ad": "Mercury",
+     "start": "2026-10-18",
+     "end": "2029-01-23"
+    },
+    {
+     "md": "Jupiter",
+     "ad": "Ketu",
+     "start": "2029-01-23",
+     "end": "2029-12-30"
+    },
+    {
+     "md": "Jupiter",
+     "ad": "Venus",
+     "start": "2029-12-30",
+     "end": "2032-08-30"
+    },
+    {
+     "md": "Jupiter",
+     "ad": "Sun",
+     "start": "2032-08-30",
+     "end": "2033-06-18"
+    },
+    {
+     "md": "Jupiter",
+     "ad": "Moon",
+     "start": "2033-06-18",
+     "end": "2034-10-18"
+    },
+    {
+     "md": "Jupiter",
+     "ad": "Mars",
+     "start": "2034-10-18",
+     "end": "2035-09-24"
+    },
+    {
+     "md": "Jupiter",
+     "ad": "Rahu",
+     "start": "2035-09-24",
+     "end": "2038-02-16"
+    },
+    {
+     "md": "Saturn",
+     "ad": "Saturn",
+     "start": "2038-02-16",
+     "end": "2041-02-19"
+    },
+    {
+     "md": "Saturn",
+     "ad": "Mercury",
+     "start": "2041-02-19",
+     "end": "2043-10-30"
+    },
+    {
+     "md": "Saturn",
+     "ad": "Ketu",
+     "start": "2043-10-30",
+     "end": "2044-12-08"
+    },
+    {
+     "md": "Saturn",
+     "ad": "Venus",
+     "start": "2044-12-08",
+     "end": "2048-02-08"
+    },
+    {
+     "md": "Saturn",
+     "ad": "Sun",
+     "start": "2048-02-08",
+     "end": "2049-01-20"
+    },
+    {
+     "md": "Saturn",
+     "ad": "Moon",
+     "start": "2049-01-20",
+     "end": "2050-08-21"
+    },
+    {
+     "md": "Saturn",
+     "ad": "Mars",
+     "start": "2050-08-21",
+     "end": "2051-09-30"
+    },
+    {
+     "md": "Saturn",
+     "ad": "Rahu",
+     "start": "2051-09-30",
+     "end": "2054-08-06"
+    },
+    {
+     "md": "Saturn",
+     "ad": "Jupiter",
+     "start": "2054-08-06",
+     "end": "2057-02-16"
+    },
+    {
+     "md": "Mercury",
+     "ad": "Mercury",
+     "start": "2057-02-16",
+     "end": "2059-07-16"
+    },
+    {
+     "md": "Mercury",
+     "ad": "Ketu",
+     "start": "2059-07-16",
+     "end": "2060-07-12"
+    },
+    {
+     "md": "Mercury",
+     "ad": "Venus",
+     "start": "2060-07-12",
+     "end": "2063-05-13"
+    },
+    {
+     "md": "Mercury",
+     "ad": "Sun",
+     "start": "2063-05-13",
+     "end": "2064-03-18"
+    },
+    {
+     "md": "Mercury",
+     "ad": "Moon",
+     "start": "2064-03-18",
+     "end": "2065-08-18"
+    },
+    {
+     "md": "Mercury",
+     "ad": "Mars",
+     "start": "2065-08-18",
+     "end": "2066-08-15"
+    },
+    {
+     "md": "Mercury",
+     "ad": "Rahu",
+     "start": "2066-08-15",
+     "end": "2069-03-03"
+    },
+    {
+     "md": "Mercury",
+     "ad": "Jupiter",
+     "start": "2069-03-03",
+     "end": "2071-06-09"
+    },
+    {
+     "md": "Mercury",
+     "ad": "Saturn",
+     "start": "2071-06-09",
+     "end": "2074-02-16"
+    }
+   ]
+  },
+  "sade_sati": [
+   [
+    "2029-08-08",
+    "2036-08-27"
+   ]
+  ],
+  "yogini": [
+   {
+    "yogini": "Pingala",
+    "lord": "Sun",
+    "start": "2025-05-29",
+    "end": "2026-12-31"
+   },
+   {
+    "yogini": "Dhanya",
+    "lord": "Jupiter",
+    "start": "2026-12-31",
+    "end": "2029-12-31"
+   },
+   {
+    "yogini": "Bhramari",
+    "lord": "Mars",
+    "start": "2029-12-31",
+    "end": "2033-12-31"
+   },
+   {
+    "yogini": "Bhadrika",
+    "lord": "Mercury",
+    "start": "2033-12-31",
+    "end": "2038-12-31"
+   },
+   {
+    "yogini": "Ulka",
+    "lord": "Saturn",
+    "start": "2038-12-31",
+    "end": "2044-12-30"
+   },
+   {
+    "yogini": "Siddha",
+    "lord": "Venus",
+    "start": "2044-12-30",
+    "end": "2051-12-31"
+   },
+   {
+    "yogini": "Sankata",
+    "lord": "Rahu",
+    "start": "2051-12-31",
+    "end": "2059-12-31"
+   },
+   {
+    "yogini": "Mangala",
+    "lord": "Moon",
+    "start": "2059-12-31",
+    "end": "2060-12-30"
+   },
+   {
+    "yogini": "Pingala",
+    "lord": "Sun",
+    "start": "2060-12-30",
+    "end": "2062-12-31"
+   },
+   {
+    "yogini": "Dhanya",
+    "lord": "Jupiter",
+    "start": "2062-12-31",
+    "end": "2065-12-31"
+   }
+  ],
+  "chara": [
+   {
+    "sign": "Kanya",
+    "years": 4,
+    "start": "2025-05-29",
+    "end": "2029-05-29"
+   },
+   {
+    "sign": "Tula",
+    "years": 5,
+    "start": "2029-05-29",
+    "end": "2034-05-29"
+   },
+   {
+    "sign": "Vrishchika",
+    "years": 9,
+    "start": "2034-05-29",
+    "end": "2043-05-30"
+   },
+   {
+    "sign": "Dhanu",
+    "years": 6,
+    "start": "2043-05-30",
+    "end": "2049-05-29"
+   },
+   {
+    "sign": "Makara",
+    "years": 10,
+    "start": "2049-05-29",
+    "end": "2059-05-30"
+   },
+   {
+    "sign": "Kumbha",
+    "years": 11,
+    "start": "2059-05-30",
+    "end": "2070-05-29"
+   },
+   {
+    "sign": "Meena",
+    "years": 9,
+    "start": "2070-05-29",
+    "end": "2079-05-30"
+   },
+   {
+    "sign": "Mesha",
+    "years": 3,
+    "start": "2079-05-30",
+    "end": "2082-05-29"
+   },
+   {
+    "sign": "Vrishabha",
+    "years": 10,
+    "start": "2082-05-29",
+    "end": "2092-05-29"
+   },
+   {
+    "sign": "Mithuna",
+    "years": 11,
+    "start": "2092-05-29",
+    "end": "2103-05-31"
+   },
+   {
+    "sign": "Karka",
+    "years": 1,
+    "start": "2103-05-31",
+    "end": "2104-05-30"
+   },
+   {
+    "sign": "Simha",
+    "years": 3,
+    "start": "2104-05-30",
+    "end": "2107-05-31"
+   }
+  ],
+  "kp": {
+   "cusp_sub_lords": {
+    "1": "Saturn",
+    "2": "Venus",
+    "3": "Saturn",
+    "4": "Rahu",
+    "5": "Ketu",
+    "6": "Rahu",
+    "7": "Saturn",
+    "8": "Moon",
+    "9": "Saturn",
+    "10": "Moon",
+    "11": "Venus",
+    "12": "Jupiter"
+   },
+   "planet_significations": {
+    "Sun": [
+     8,
+     9,
+     10,
+     11
+    ],
+    "Moon": [
+     6,
+     7,
+     9,
+     10
+    ],
+    "Mars": [
+     1,
+     3,
+     8,
+     10,
+     12
+    ],
+    "Mercury": [
+     1,
+     8,
+     9,
+     10,
+     12
+    ],
+    "Jupiter": [
+     3,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "Venus": [
+     1,
+     2,
+     7,
+     8,
+     9,
+     12
+    ],
+    "Saturn": [
+     4,
+     5,
+     6
+    ],
+    "Rahu": [
+     5,
+     6,
+     7,
+     9
+    ],
+    "Ketu": [
+     8,
+     11
+    ]
+   }
+  },
+  "chalit_shifted": {
+   "Mercury": [
+    9,
+    8
+   ],
+   "Jupiter": [
+    10,
+    9
+   ],
+   "Saturn": [
+    7,
+    6
+   ]
+  },
+  "shadbala": {
+   "Sun": {
+    "rupas": 8.16,
+    "ratio": 1.63,
+    "rank": 1
+   },
+   "Moon": {
+    "rupas": 5.88,
+    "ratio": 0.98,
+    "rank": 6
+   },
+   "Mars": {
+    "rupas": 6.84,
+    "ratio": 1.37,
+    "rank": 3
+   },
+   "Mercury": {
+    "rupas": 6.25,
+    "ratio": 0.89,
+    "rank": 7
+   },
+   "Jupiter": {
+    "rupas": 8.39,
+    "ratio": 1.29,
+    "rank": 5
+   },
+   "Venus": {
+    "rupas": 8.29,
+    "ratio": 1.51,
+    "rank": 2
+   },
+   "Saturn": {
+    "rupas": 6.71,
+    "ratio": 1.34,
+    "rank": 4
+   }
+  }
+ }
 }

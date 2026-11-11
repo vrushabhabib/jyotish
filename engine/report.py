@@ -73,6 +73,16 @@ def build(date, time, lat, lon, tz, name="native", sex=None, window=15, years_ah
         out["shadbala"] = _sb(date, time, lat, lon, off)
     except Exception as e:                                    # noqa: BLE001 - report, never crash the worksheet
         out["shadbala"] = {"error": str(e)}
+    # cross-check systems: KP (Placidus), Bhava Chalit (Sripati), Yogini and Jaimini Chara dashas
+    from engine import houses as H, dashas_extra as DX
+    jd = chart["input"]["jd_ut"]
+    naive = local.replace(tzinfo=None)
+    out["kp"] = H.kp_chart(jd, lat, lon)
+    bh = H.sripati(jd, lat, lon)
+    out["chalit"] = {"bhavas": bh, "shifted": {p: (d["bhava"], H.chalit_house(d["lon"], bh)) for p, d in chart["planets"].items()
+                                              if H.chalit_house(d["lon"], bh) != d["bhava"]}}
+    out["yogini"] = DX.yogini(chart["planets"]["Moon"]["lon"], naive, cycles=3)
+    out["chara"] = DX.chara(chart["lagna"]["rashi"], {p: d["rashi"] for p, d in chart["planets"].items()}, naive)
     return out
 
 
@@ -137,9 +147,11 @@ def markdown(r, name="native"):
     w(f"\n2nd from UL: {ar['UL_2nd']['sign']} (lord {ar['UL_2nd']['lord']}; occupants {ar['UL_2nd']['occupants']}; aspected by {ar['UL_2nd']['aspected_by']}). "
       f"8th from UL: {ar['UL_8th']['sign']} (occupants {ar['UL_8th']['occupants']}).\n")
     w("## 8. Yogas and afflictions detected\n")
-    w("| Yoga | Type | Planets | Formation | Weakened by |\n|---|---|---|---|---|")
+    from engine.baserates import rate as _rate, label as _label
+    w("The last column is how often the same combination appears in 4,000 random charts. Anything above 40% says almost nothing about one person.\n")
+    w("| Yoga | Type | Planets | Formation | Weakened by | How common |\n|---|---|---|---|---|---|")
     for y in a["yogas"]:
-        w(f"| {y['name']} | {y['category']} | {', '.join(y['planets'])} | {y['note']} | {y['weakened_by']} |")
+        w(f"| {y['name']} | {y['category']} | {', '.join(y['planets'])} | {y['note']} | {y['weakened_by']} | {_label(_rate('yoga', y['name']))} |")
     m = a["doshas"]["manglik"]; ks = a["doshas"]["kaal_sarp"]
     w(f"\n**Manglik:** {m['verdict']}. Mars is in house {m['from']['lagna']['mars_house']} from lagna, {m['from']['moon']['mars_house']} from Moon, "
       f"{m['from']['venus']['mars_house']} from Venus. Classical cancellations: {'; '.join(m['cancellations_classical']) or 'none'}. Also claimed: {'; '.join(m['cancellations_claimed']) or 'none'}. Base rate: {m['base_rate']}.  ")
@@ -220,6 +232,67 @@ def markdown(r, name="native"):
         w(f"- House {h}: " + ("; ".join(f"{_d(x['from'])} - {_d(x['to'])}{'*' if x['on_house_itself'] else ''}" for x in wins[:14]) or "none in range"))
     rt = r["returns"]
     w("\n**Returns (first entry to the natal sign).** " + "; ".join(f"{b}: {', '.join(_d(x) for x in ds[:4])}" for b, ds in rt.items()) + ".\n")
+    # ---- cross-check systems
+    RN = ["Mesha", "Vrishabha", "Mithuna", "Karka", "Simha", "Kanya", "Tula", "Vrishchika", "Dhanu", "Makara", "Kumbha", "Meena"]
+    def dm(x): return f"{RN[int(x // 30)]} {int(x % 30)}\u00b0{int((x % 30 % 1) * 60):02d}'"
+    kp = r.get("kp")
+    if kp:
+        w("\n## 13a. KP system (Placidus cusps, KP ayanamsa) - a separate system, never mixed with whole-sign judgement\n")
+        w("| Cusp | Longitude | Sign lord | Star | Sub | Sub-sub | Occupants | Significators (in star of occupants / occupants / in star of owner / owner) |\n|---|---|---|---|---|---|---|---|")
+        for h, c in kp["cusps"].items():
+            s = kp["house_significators"][h]
+            w(f"| {h} | {dm(c['lon'])} | {c['sign_lord']} | {c['star']} | {c['sub']} | {c['subsub']} | {', '.join(s['B_occupants']) or '-'} | "
+              f"{', '.join(s['A_in_star_of_occupants']) or '-'} / {', '.join(s['B_occupants']) or '-'} / {', '.join(s['C_in_star_of_owner']) or '-'} / {s['D_owner'][0]} |")
+        w("\nHouses each planet signifies: " + "; ".join(f"{p} {v_}" for p, v_ in kp["planet_significations"].items()) + ".  ")
+        subs = {h: kp["cusps"][h]["sub"] for h in (2, 5, 7, 10, 11)}
+        w("Cuspal sub-lord tests (the sub-lord of the cusp must signify the houses named): "
+          f"marriage - 7th sub-lord {subs[7]} signifies {kp['planet_significations'][subs[7]]} (needs 2, 7 or 11); "
+          f"children - 5th sub-lord {subs[5]} signifies {kp['planet_significations'][subs[5]]} (needs 2, 5 or 11); "
+          f"career - 10th sub-lord {subs[10]} signifies {kp['planet_significations'][subs[10]]} (needs 2, 6, 10 or 11); "
+          f"gains - 11th sub-lord {subs[11]} signifies {kp['planet_significations'][subs[11]]}.\n")
+    chl = r.get("chalit")
+    if chl:
+        sh = chl["shifted"]
+        w("**Bhava Chalit (Sripati).** " + ("Planets that fall in a different house than by whole sign: " +
+          "; ".join(f"{p} {a_}->{b_}" for p, (a_, b_) in sh.items()) + ". Treat their house results as shared between the two houses." if sh
+          else "No planet changes house.") + "\n")
+    yg, ch = r.get("yogini"), r.get("chara")
+    if yg and ch:
+        now = dt.datetime.combine(r["today"], dt.time())
+        w("## 13b. Second and third dasha systems (cross-check for Vimshottari)\n")
+        w("An event window is trusted more when Vimshottari, Yogini and Chara all point to the same area in the same years.\n")
+        w("| Yogini | Lord | From | To | Sub-periods now |\n|---|---|---|---|---|")
+        for y in yg:
+            if y["end"] < now - dt.timedelta(days=365 * 3) or y["start"] > now + dt.timedelta(days=365 * 15): continue
+            cur = "; ".join(f"{a_['yogini']} to {_d(a_['end'])}" for a_ in y["antar"] if y["start"] <= now < y["end"] and a_["end"] > now)
+            w(f"| {y['yogini']} | {y['lord']} | {_d(y['start'])} | {_d(y['end'])} | {cur} |")
+        w("\n| Chara dasha sign | Years | From | To | Sub-periods now |\n|---|---|---|---|---|")
+        for m in ch["maha"]:
+            cur = "; ".join(f"{a_['sign']} to {_d(a_['end'])}" for a_ in m["antar"] if m["start"] <= now < m["end"] and a_["end"] > now)
+            w(f"| {m['sign']} | {m['years']} | {_d(m['start'])} | {_d(m['end'])} | {cur} |")
+        w(f"\nMethod: {ch['method']}. " + (" ".join(ch["notes"]) if ch["notes"] else "") + "\n")
+    try:
+        from engine.convergence import timeline as _tl
+        from engine import ledger as _lg
+        tl = _tl(r, sex=a.get("sex"))
+        w("## 13c. Convergence - months where independent timing systems agree\n")
+        w("Five votes per area: Vimshottari main lord, Vimshottari sub-lord, Yogini sub-lord, Chara sub-sign, Jupiter-Saturn double transit. "
+          "A window needs 4 of 5. 'Share' is the part of the next 15 years that reaches the same level: above about a third, the test does not discriminate for this chart and the window carries little weight.\n")
+        w("| Area | Window | Votes | Systems agreeing | Vimshottari | Share of all months | Verdict |\n|---|---|---|---|---|---|---|")
+        for area, x in tl.items():
+            verdict = "usable" if x["discriminates"] and x["level"] >= x["need"] else "weak: best level only " + str(x["level"]) + " of 5" if x["level"] < x["need"] else "does not discriminate"
+            if not x["windows"]:
+                w(f"| {area} | none | - | - | - | {x['share']*100:.0f}% | {verdict} |")
+            for k in x["windows"][:8]:
+                w(f"| {area} | {_d(k['from'])} - {_d(k['to'])} | {k['peak']} | {', '.join(k['systems'])} | {', '.join(k['vimshottari'])} | {x['share']*100:.0f}% | {verdict} |")
+        st = _lg.stats()
+        if st["scored"]:
+            lg = st["legacy_record"]
+            w(f"\n**Project track record.** All verification questions to date: {lg['hits']} right of {lg['asked']} ({lg['rate']*100:.0f}%) - " +
+              ", ".join(f"{k} {x}" for k, x in lg["by_chart"].items()) + ". Every one was about the past, asked cold; no forward prediction has matured yet. "
+              f"Itemised in data/ledger.jsonl: {st['scored']} scored, {st['open']} open. Log every dated forward statement with `python3 -m engine.ledger add` before a reading is sent.\n")
+    except Exception as e:                                    # noqa: BLE001
+        w(f"\n(convergence section failed: {e})\n")
     return "\n".join(L)
 
 
