@@ -90,7 +90,11 @@ EXACT = {  # component: tolerance in virupas
 def test_matched_components_default_mode():
     sb = _sb()
     for key, tol in EXACT.items():
-        assert _maxdiff(_row(sb, key), AS[key]) <= tol + 1e-9, (key, _row(sb, key), AS[key])
+        skip = ("Moon",) if key == "paksha" else ()        # default mode doubles the Moon's paksha bala (Raman, BPHS)
+        assert _maxdiff(_row(sb, key), AS[key], skip=skip) <= tol + 1e-9, (key, _row(sb, key), AS[key])
+    moon = PLANETS.index("Moon")
+    assert abs(_row(sb, "paksha")[moon] - 2 * AS["paksha"][moon]) <= 0.05
+    assert _maxdiff(_row(_sb("astrosage"), "paksha"), AS["paksha"]) <= 0.02
 
 
 def test_saptavargaja_default_mode():
@@ -145,11 +149,11 @@ def test_totals_default_mode():
     d = {p: a - b for p, a, b in zip(PLANETS, _row(sb, "rupas"), AS["rupas"])}
     for p in ("Sun", "Mars"):
         assert abs(d[p]) <= 0.02
-    assert abs(d["Moon"] + 0.19) <= 0.02 and abs(d["Venus"] + 0.12) <= 0.02       # D12 boundary
+    assert abs(d["Moon"] - 0.75) <= 0.03 and abs(d["Venus"] + 0.12) <= 0.02       # D12 boundary; Moon also +56.37 virupas from the doubled paksha bala
     assert abs(d["Mercury"] - 0.26) <= 0.02                                       # saptavargaja +15
     assert abs(d["Jupiter"] - 0.98) <= 0.03 and abs(d["Saturn"] + 1.01) <= 0.03   # hora lord 60 virupas
-    assert sb["order"][:2] == ["Sun", "Moon"]
-    assert sb["unverified"] and any("hora" in u for u in sb["unverified"])
+    assert set(sb["order"][:2]) == {"Sun", "Moon"}
+    assert sb["unverified"] and any("hora" in u for u in sb["resolved"])
 
 
 def test_required_minima_and_shape():

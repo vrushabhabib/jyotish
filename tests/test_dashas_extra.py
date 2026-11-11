@@ -74,3 +74,10 @@ def test_yoga_catalogue_coverage():
     assert ids <= set(catalogue())
     from engine.baserates import rate
     assert 0.2 < rate("cat", "kuhu") < 0.3                         # a lord falls in 3 of 12 houses: 25% by arithmetic
+
+
+def test_place_lookup_offline():
+    from engine.places import resolve
+    p = resolve("Hubli")
+    assert p and abs(p["lat"] - 15.35) < 0.1 and abs(p["lon"] - 75.13) < 0.1 and p["tz"] == "Asia/Kolkata"
+    assert resolve("Hebballi-no-such-village") is None

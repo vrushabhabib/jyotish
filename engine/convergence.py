@@ -47,11 +47,11 @@ def _at(periods, when, key="antar"):
     return None, None
 
 
-def timeline(r, sex=None, years=15, need=4):
+def timeline(r, sex=None, years=15, need=4, start=None, rows_out=None):
     """r = engine.report.build(...) result. Returns {area: {'windows': [...], 'share': float, 'static': [...]}}."""
     a = r["analysis"]; v: View = a["view"]
     RN = {n: i + 1 for i, n in enumerate(["Mesha", "Vrishabha", "Mithuna", "Karka", "Simha", "Kanya", "Tula", "Vrishchika", "Dhanu", "Makara", "Kumbha", "Meena"])}
-    today = r["today"]; ck = a["karakas"]["seven"]
+    today = start or r["today"]; ck = a["karakas"]["seven"]
     tz = r["chart"]["input"]["local"].tzinfo
     out = {}
     for area, (hs, km, kf, ckey) in AREAS.items():
@@ -75,6 +75,7 @@ def timeline(r, sex=None, years=15, need=4):
                      "DT": any(w["from"] <= d <= w["to"] for w in dts)}
             rows.append((d, sum(votes.values()), votes, f"{md}-{ad}", ya["yogini"] if ya else "-", ca["sign"] if ca else "-"))
             d += dt.timedelta(days=30)
+        if rows_out is not None: rows_out[area] = rows
         top = max(x[1] for x in rows)
         level = need if top >= need else top           # no month reaches `need`: report the best level reached instead
         wins, run = [], None
@@ -92,4 +93,21 @@ def timeline(r, sex=None, years=15, need=4):
         out[area] = {"windows": wins, "share": round(share, 3), "need": need, "level": level,
                      "strong_planets": [p for p, x in ok.items() if x],
                      "discriminates": share <= 0.35}
+    return out
+
+
+def backtest(r, sex, events, span_years=20):
+    """events: [(area, date, label)]. For each known past event report how many of the five systems voted for that
+    area in that month, and what share of all months in a `span_years` window centred on the event reach the same
+    level. A method that works puts real events at high votes AND low share."""
+    out = []
+    for area, d, label in events:
+        rows = {}
+        timeline(r, sex=sex, years=span_years, start=d - dt.timedelta(days=int(365.25 * span_years / 2)), rows_out=rows)
+        rs = rows[area]
+        near = min(rs, key=lambda x: abs((x[0] - d).days))
+        share = sum(1 for x in rs if x[1] >= near[1]) / len(rs)
+        out.append({"label": label, "area": area, "date": d.isoformat(), "votes": near[1],
+                    "systems": [k for k, v in near[2].items() if v], "share_at_or_above": round(share, 2),
+                    "flagged": near[1] >= 4})
     return out

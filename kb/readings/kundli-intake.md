@@ -6,7 +6,8 @@ How any birth data or kundli document is turned into a reading. Follow the steps
 
 ```bash
 cd /home/claude && git clone https://github.com/vrushabhabib/jyotish.git && cd jyotish
-pip install -q ephem pytest --break-system-packages      # pyswisseph is optional; the engine falls back to ephem
+pip install -q ephem pytest geonamescache --break-system-packages
+bash tools/install_swisseph.sh                             # optional second engine; the two agree to about 1 arc-second
 python3 -m pytest -q tests                                # must be all green before any chart is trusted
 ```
 
@@ -18,7 +19,7 @@ python3 -m pytest -q tests                                # must be all green be
 |---|---|
 | AstroSage PDF | `python3 -m engine.report --pdf file.pdf --out /tmp/ws` — the parser (`engine/astrosage_pdf.py`) reads birth data, planets, 16 vargas, Shadbala, Bhava Bala, Ashtakavarga, KP cusps, Jaimini karakas, dashas, and cross-checks them against our own computation. |
 | Other PDF / photo of a chart | Read the birth data by eye, run the worksheet from date/time/place, then compare lagna, Moon nakshatra-pada and every planet's house with the document. |
-| Date, time, place only | Geocode the place (plus code or lat/lon), then `python3 -m engine.report DATE TIME LAT LON TZ --name N --sex F|M --out /tmp/ws`. |
+| Date, time, place only | `python3 -m engine.report DATE TIME "Place" --name N --sex F --out /tmp/ws` looks the town up offline (towns above 15,000 people; old names such as Hubli, Bangalore, Belgaum are understood). For a village give a plus code or coordinates, or the nearest town. With coordinates: `python3 -m engine.report DATE TIME LAT LON TZ --name N --sex F|M --out /tmp/ws`. |
 
 Record at intake: where the **time** comes from (hospital record / family memory / estimate / window), where the **date** comes from, sex, and whether the person is employed, in business, or both.
 
@@ -53,7 +54,7 @@ The table shows the minute at which the lagna, D9, D10, D7, D12 and D3 lagnas ch
 | 12–13 Saturn phases, transits with SAV/BAV, double transit, returns | timing windows |
 | 13a KP cusps, sub-lords, significators; Bhava Chalit shifts | KP confirmation of promise; planets that sit on a house border |
 | 13b Yogini and Chara dashas | second and third timing systems |
-| 13c Convergence table and track record | the ONLY windows that may be dated in a reading: 4 of 5 systems agree and the verdict column says "usable" |
+| 13c Convergence table and track record | experimental cross-check of timing. Back-test 12 Nov 2026: 2 of 8 known events fell in a 4-of-5 month (career 2 of 3, marriage 0 of 3, home/property 0 of 2). Not a filter: state such windows as tentative and log them |
 
 Column "How common" in section 8: a yoga found in more than 40% of random charts (Dhana 88%, Raja kendra-trikona 80%, Pitru 61%, Budha-Aditya 51%) is not mentioned as a distinction. Lead with the uncommon ones.
 

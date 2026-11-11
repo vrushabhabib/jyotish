@@ -155,3 +155,10 @@ What it can and cannot resolve: an ascendant sub lasts 40'–2°13' of arc, i.e.
 - From recall only: exact ayanamsa definition (291 CE, Newcomb rate), Swiss Ephemeris constant names, the E-level significator, the remaining cusp groups (property, education, illness, longevity, litigation, loans, business), badhaka rule, Moon–Lagna rectification link, gender rule.
 - KP sources online are mostly secondary blogs; the KP Readers themselves were not accessible. Before publishing the cusp-rule table, check it against KP Reader VI (*Horary Astrology*) or Reader IV (*Marriage, Married Life and Children*).
 - KP gives crisp yes/no outputs, which makes it testable — and also makes it sensitive to birth-time error of a few minutes. Do not present KP cuspal results for a chart whose time is uncertain by more than about 2–4 minutes without saying so.
+
+
+## Addendum 12 Nov 2026 - rules read at a KP source, and engine status
+- **Second marriage** (AstroSage KP tutorial site, quoting message 608 of the K P System group; https://sites.google.com/a/astrosage.com/kpastrology/kp-learning-home/kp-rules/7th-house): BOTH must hold - (1) the 7th cusp sub-lord is in a dual sign, or in the star of a planet that sits in or owns a dual sign, or is Mercury; and (2) that sub-lord signifies house 2 or 11. If either fails, a second marriage is denied. The dual-sign condition alone is NOT the rule. Confidence: low (a discussion-group rule, no outcome data); never volunteer it in a reading.
+- The same site's pages for the other houses were empty when read; the KP Readers themselves remain unread. Cuspal groups in the table above that are tagged [MEM-KP] keep that tag.
+- A 12th-house rule about self-harm appears on that site. It is deliberately not used and not reproduced here.
+- Engine: `engine/houses.py` computes Placidus cusps with the KP "New" ayanamsa, star/sub/sub-sub lords and the four-level significators. All twelve cusps and all planet significations match an AstroSage KP printout (tests/test_dashas_extra.py).

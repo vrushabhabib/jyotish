@@ -18,7 +18,10 @@ Rahu is the MEAN node (the AstroSage / Rashtriya Panchang default); Ketu = Rahu 
 from __future__ import annotations
 import math, datetime as dt
 
+import os
 try:                                    # pragma: no cover - depends on the machine
+    if os.environ.get("JYOTISH_BACKEND") == "ephem":
+        raise ImportError("ephem backend forced by JYOTISH_BACKEND")
     import swisseph as swe
     swe.set_sid_mode(swe.SIDM_LAHIRI)
     BACKEND = "swisseph"
@@ -46,7 +49,23 @@ def jd_to_datetime(jd: float) -> dt.datetime:
     return dt.datetime(2000, 1, 1, 12) + dt.timedelta(days=jd - 2451545.0)
 
 
+_OFFSET = 0.0          # degrees subtracted from Lahiri; set by set_ayanamsa()
+
+
+def set_ayanamsa(name: str = "lahiri") -> None:
+    """'lahiri' (project standard) or 'raman' (used only to reproduce B.V. Raman's published examples:
+    Raman's value is 1.4463 degrees smaller than Lahiri in 1918 and the gap changes by under 0.001 degree a decade)."""
+    global _OFFSET
+    _OFFSET = {"lahiri": 0.0, "raman": 1.4463}[name]
+
+
 def ayanamsa(jd: float) -> float:
+    if _OFFSET:
+        return _lahiri(jd) - _OFFSET
+    return _lahiri(jd)
+
+
+def _lahiri(jd: float) -> float:
     if swe:
         return swe.get_ayanamsa_ut(jd)
     # Lahiri anchor as Swiss Ephemeris defines it: JD 2435553.5 (21 Mar 1956) -> 23.245524743 deg
@@ -62,9 +81,19 @@ def obliquity(jd: float) -> float:
     return 23.4392911 - 0.0130042 * T - 1.64e-7 * T * T
 
 
-def _mean_node_tropical(jd: float) -> float:
+def nutation_lon(jd: float) -> float:
+    """Nutation in longitude, degrees (four largest terms, good to about 0.5 arc-second)."""
     T = (jd - 2451545.0) / 36525.0
-    return (125.0445479 - 1934.1362891 * T + 0.0020754 * T * T + T ** 3 / 467441.0) % 360.0
+    om = math.radians(125.04452 - 1934.136261 * T)
+    L = math.radians(280.4665 + 36000.7698 * T)
+    Lm = math.radians(218.3165 + 481267.8813 * T)
+    return (-17.20 * math.sin(om) - 1.32 * math.sin(2 * L) - 0.23 * math.sin(2 * Lm) + 0.21 * math.sin(2 * om)) / 3600.0
+
+
+def _mean_node_tropical(jd: float) -> float:
+    """Mean node referred to the true equinox of date (as Swiss Ephemeris returns it)."""
+    T = (jd - 2451545.0) / 36525.0
+    return (125.0445479 - 1934.1362891 * T + 0.0020754 * T * T + T ** 3 / 467441.0 + nutation_lon(jd)) % 360.0
 
 
 def _ephem_body(name):
@@ -122,8 +151,8 @@ def angles(jd: float, lat: float, lon: float):
     if swe:
         _, ascmc = swe.houses(jd, lat, lon, b"W")
         return (ascmc[0] - ay) % 360.0, (ascmc[1] - ay) % 360.0
-    ramc = math.radians((_gmst_deg(jd) + lon) % 360.0)
     eps = math.radians(obliquity(jd))
+    ramc = math.radians((_gmst_deg(jd) + nutation_lon(jd) * math.cos(eps) + lon) % 360.0)   # apparent sidereal time
     phi = math.radians(lat)
     asc = math.degrees(math.atan2(math.cos(ramc),
                                   -(math.sin(ramc) * math.cos(eps) + math.tan(phi) * math.sin(eps)))) % 360.0

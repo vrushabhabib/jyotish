@@ -93,3 +93,9 @@ A reading is only as good as its positions. On 20 Oct 2026 a fallback calculator
 - A cross-check passes at 1 arc-minute for planets, not 3. Above that, find the reason.
 - Eight arc-minutes of Moon equals two months of Vimshottari. Any statement dated to the month depends on the Moon to the minute of arc and on the birth time to about four minutes of clock time. Say so.
 
+## Rule 11 — A timing method is trusted only after a back-test (added 12 Nov 2026)
+The five-system convergence vote (Vimshottari main and sub lord, Yogini, Chara, Jupiter-Saturn double transit) looked rigorous. Tested on the eight dated past events on file, a 4-of-5 month caught 2 and missed 6 (career 2 of 3, marriage 0 of 3, home/property 0 of 2). One of the two charts is unconfirmed and eight events prove little either way, but the method has NOT earned the right to veto or to date anything alone.
+- Every new timing method gets `engine.convergence.backtest` on known events before it is used in a reading; counts are stored in `data/`.
+- Agreement between systems that share inputs (Vimshottari and Yogini both start from the Moon's nakshatra) is not independent confirmation.
+- Shadbala (12 Nov): settled against two references. Mercury's Saptavargaja, the Hora lord and the dwadasamsa boundaries follow Raman's worked example exactly; AstroSage deviates on all three. The Moon's paksha bala is doubled (Raman, BPHS).
+

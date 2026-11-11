@@ -44,7 +44,7 @@ VARIANTS = {
     "kendradi": "by whole-sign house from the lagna sign",
     "dig": "arc from the weak point (true MC / IC / lagna / descendant), /3",
     "nathonnata": "measured from true local midnight (midpoint of sunset..sunrise), i.e. noon = (sunrise+sunset)/2",
-    "paksha": "Moon-Sun elongation/3 for benefics, complement for malefics; Moon NOT doubled; "
+    "paksha": "Moon-Sun elongation/3 for benefics, complement for malefics; Moon's own value doubled (not in compat mode); "
               "Mercury malefic when it is in the same sign as a natural malefic; Moon always benefic here",
     "tribhaga": "day/night divided in three from actual sunrise/sunset; Jupiter always 60",
     "abda_masa": "Raman's ahargana (his Table I count: 174 on 31 Dec 1951), 360-day years and 30-day months; "
@@ -483,7 +483,8 @@ def shadbala(date_str, time_str, lat, lon, tz_off=5.5, compat=None):
         }
         kala = {
             "nathonnata": nathonnata_bala(p, ctx),
-            "paksha": paksha_bala(p, lons),
+            # BPHS and Raman double the Moon's own paksha bala (confirmed on Raman's standard horoscope); AstroSage does not
+            "paksha": paksha_bala(p, lons) * (2.0 if p == "Moon" and compat != "astrosage" else 1.0),
             "tribhaga": tribhaga_bala(p, ctx),
             "abda": 15.0 if p == abda else 0.0,
             "masa": 30.0 if p == masa else 0.0,
@@ -521,24 +522,28 @@ def shadbala(date_str, time_str, lat, lon, tz_off=5.5, compat=None):
         "variants": VARIANTS,
         "compat": compat,
         "quirks_applied": dict(ASTROSAGE_QUIRKS) if compat == "astrosage" else {},
+        "resolved": RESOLVED,
         "unverified": list(UNVERIFIED),
     }
 
 
-# Components that could not be reproduced / confirmed against the AstroSage reference chart.  They are implemented
-# per BPHS / Raman as described above.
+# Settled on 12 Nov 2026 against a second, independent reference: B.V. Raman's "standard horoscope"
+# (16 Oct 1918, 2:20 pm, 13N 77E35, Raman ayanamsa), component totals as reproduced at vedastro.org.
+# With Raman's ayanamsa this engine gives his Sthana bala for all seven planets to 0.1 virupa and his Kala bala
+# to 0.7 once the Moon's paksha bala is doubled. See tests/test_shadbala_raman.py.
+RESOLVED = [
+    "sthana.saptavargaja (incl. Mercury) and the dwadasamsa boundaries: identical to Raman's example; the AstroSage "
+    "figures that differ (Mercury 48.75; shifted D12 for Moon and Venus) are AstroSage's own deviations",
+    "kala.hora: the lord of the running hora, as Raman's example requires (Moon there); AstroSage credits the previous hora",
+    "kala.paksha: the Moon's own value is doubled (Raman, BPHS); AstroSage leaves it single",
+    "kala.abda / masa / vara / tribhaga / nathonnata / ayana: reproduced on both reference charts",
+]
+# Still not confirmed against an independent reference.
 UNVERIFIED = [
-    "sthana.saptavargaja[Mercury]: AstroSage prints 48.75 where this engine (and the printed varga + friendship "
-    "tables of the same report) give 63.75; no convention tried explains the 15-virupa gap",
-    "kala.hora: classical rule gives the lord of the running hora; AstroSage credits the previous hora's lord "
-    "(reproduced only with compat='astrosage', a conjecture from a single chart)",
-    "sthana.saptavargaja D12: AstroSage's dwadasamsa boundaries are shifted (compat='astrosage'); classical "
-    "boundaries used by default, which moves Moon by -11.25 and Venus by -7.5 virupas on the reference chart",
-    "cheshta[Mars,Mercury,Jupiter,Venus,Saturn]: Raman's kendra formula with modern mean elements agrees with "
-    "AstroSage only to ~1.5 virupas; AstroSage's mean-longitude source is unknown",
-    "kala.yuddha: no planetary war in the reference chart, formula untested against software",
-    "kala.abda / kala.masa: epoch fixed from Raman's table via PyJHora; matches the one reference chart only",
-    "paksha: Moon's own paksha bala is not doubled (AstroSage convention; BPHS/Raman double it)",
+    "cheshta[Mars,Mercury,Jupiter,Venus,Saturn]: Raman's kendra formula with modern mean elements; agrees with "
+    "AstroSage to about 1.5 virupas, not checked against Raman's own figures (the published copy is unreliable there)",
+    "drik: agrees with AstroSage to 0.03 virupa; Raman's own drik figures could not be reproduced from the published copy",
+    "kala.yuddha: no planetary war in either reference chart, formula untested",
 ]
 
 

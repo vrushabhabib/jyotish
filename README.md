@@ -32,6 +32,7 @@ python3 -m engine.store data/charts/<name>_<date>.json          # refresh a stor
 | `baserates.py` | Firing rate of every yoga and dosha over 4,000 random charts (`data/base_rates.json`). |
 | `ledger.py` | Prediction ledger (`data/ledger.jsonl`): log before the answer is known, score after, report hit rates. |
 | `discriminate.py` | For an uncertain birth time: where in the window each divisional lagna changes and which questions separate the segments. |
+| `places.py` | Offline place-name lookup (towns above 15,000 people) to latitude, longitude and time zone. |
 | `store.py` | Standard `computed` block for files in `data/charts/`. |
 | `matching.py` | Ashtakoota and business synastry. |
 
@@ -41,4 +42,6 @@ Start at `kb/index.md`. Intake is `kb/readings/kundli-intake.md`; the reading fo
 ## Validation record
 - 11 Nov 2026: Sun and Jupiter apparent longitudes identical to JPL Horizons to 4 decimals (1996-11-24 06:35 UT). Sarvashtakavarga identical to AstroSage sign by sign. Published ingresses reproduced (Saturn to Mesha 3 Jun 2027; Jupiter to Karka 2 Jun 2026).
 - Known bug fixed the same day: the 20 Oct 2026 fallback read positions in the J2000 frame (0.84 arc-min per year from 2000). Charts computed with it before the fix: Saira (dates were about 2 months early) and Tanzil (under 1 week).
-- Shadbala: Sun, Mars, and most components match AstroSage; Hora lord, Mercury's Saptavargaja and Cheshta for the five planets do not, and are flagged.
+- Shadbala (12 Nov 2026): second reference found - B.V. Raman's standard horoscope. With his ayanamsa the engine gives his Sthana bala for all seven planets to 0.1 virupa and his Kala bala to 0.7. Mercury's Saptavargaja, the Hora lord and the dwadasamsa boundaries are therefore ours and Raman's; AstroSage deviates. Cheshta, Drik against Raman, and Yuddha remain unconfirmed.
+- Two ephemeris engines (Swiss Ephemeris and pyephem) agree over 400 random dates 1930-2040: planets within 1.6 arc-seconds, Moon 10.5, lagna 8.4. All tests pass on both (`JYOTISH_BACKEND=ephem python3 -m pytest tests`).
+- Convergence timing back-test: 2 of 8 known events caught. Experimental.

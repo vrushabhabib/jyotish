@@ -46,7 +46,7 @@ Output format for a first reading: snapshot line → 6–8 numbered findings (st
 ## 6. How the agent uses the engine (the division of labour)
 The engine calculates and measures; the reader (Claude) interprets, asks and explains. Neither does the other's job.
 1. Engine: worksheet. Reader: never states a position, date or yoga that is not in it.
-2. Engine: "How common" column and convergence verdicts. Reader: leads with uncommon factors, dates only "usable" windows, says plainly when a test does not discriminate.
+2. Engine: "How common" column and convergence verdicts. Reader: leads with uncommon factors, treats convergence windows as tentative (back-test: 2 of 8 known events caught), says plainly when a test does not discriminate.
 3. Engine: `discriminate` for an uncertain time. Reader: turns the listed differences into plain questions, asks them one at a time, scores the answers in the open.
 4. Reader: logs each dated forward statement in the ledger before sending. Engine: reports the running hit rate, which is quoted in Part 1 of every reading.
 5. Reader: a miss becomes a numbered rule in `kb/dashas/antar-event-rules.md` (provisional until seen twice); a rule that keeps missing is demoted.

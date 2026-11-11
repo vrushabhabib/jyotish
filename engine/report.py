@@ -185,7 +185,7 @@ def markdown(r, name="native"):
         for p, x in sorted(sb["planets"].items(), key=lambda kv: kv[1].get("rank", 9)):
             w(f"| {p} | {x.get('rupas', 0):.2f} | {x.get('required', 0)} | {x.get('ratio', 0):.2f} | {x.get('rank', '')} |")
         if sb.get("unverified"):
-            w(f"\nShadbala components not yet verified against a reference: {sb['unverified']}.")
+            w("\nShadbala was checked against two references (an AstroSage printout and B.V. Raman's standard horoscope). Still unconfirmed: " + "; ".join(sb["unverified"]) + ".")
     else:
         w("\nShadbala: not computed here - take it from the kundli PDF if one is supplied.")
     pt = a["points"]
@@ -291,7 +291,8 @@ def markdown(r, name="native"):
         tl = _tl(r, sex=a.get("sex"))
         w("## 13c. Convergence - months where independent timing systems agree\n")
         w("Five votes per area: Vimshottari main lord, Vimshottari sub-lord, Yogini sub-lord, Chara sub-sign, Jupiter-Saturn double transit. "
-          "A window needs 4 of 5. 'Share' is the part of the next 15 years that reaches the same level: above about a third, the test does not discriminate for this chart and the window carries little weight.\n")
+          "A window needs 4 of 5. 'Share' is the part of the next 15 years that reaches the same level: above about a third, the test does not discriminate for this chart and the window carries little weight. "
+          "EXPERIMENTAL: in the back-test of 12 Nov 2026 (data/convergence_backtest.json) only 2 of 8 known past events fell in a 4-of-5 month. Use these windows as one input, state them as tentative, and log each one in the ledger.\n")
         w("| Area | Window | Votes | Systems agreeing | Vimshottari | Share of all months | Verdict |\n|---|---|---|---|---|---|---|")
         for area, x in tl.items():
             verdict = "usable" if x["discriminates"] and x["level"] >= x["need"] else "weak: best level only " + str(x["level"]) + " of 5" if x["level"] < x["need"] else "does not discriminate"
@@ -324,7 +325,7 @@ def to_json(r):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("birth", nargs="*", help="DATE TIME LAT LON TZ")
+    ap.add_argument("birth", nargs="*", help="DATE TIME LAT LON TZ   or   DATE TIME PLACE")
     ap.add_argument("--pdf"); ap.add_argument("--name", default="native"); ap.add_argument("--sex")
     ap.add_argument("--window", type=int, default=15); ap.add_argument("--out")
     o = ap.parse_args(argv)
@@ -336,6 +337,14 @@ def main(argv=None):
         tz = "Asia/Kolkata" if abs((b.get("tz_offset") or 5.5) - 5.5) < 0.01 else o.birth[0] if o.birth else "UTC"
         name = o.name if o.name != "native" else (b.get("name") or "native"); sex = o.sex or (b.get("sex") or "")[:1].upper() or None
         check = crosscheck(pdf)
+    elif len(o.birth) == 3:                                   # DATE TIME "Place name" - offline lookup
+        from engine.places import resolve
+        pl = resolve(o.birth[2])
+        if not pl:
+            raise SystemExit(f"Place '{o.birth[2]}' is not in the offline list (towns above 15,000 people). Give LAT LON TZ, or the nearest town.")
+        date, time, lat, lon, tz = o.birth[0], o.birth[1], pl["lat"], pl["lon"], pl["tz"]
+        name, sex = o.name, o.sex
+        print(f"place: {pl['name']}, {pl['country']} {lat} {lon} {tz}" + (f"  (other matches: {pl['ambiguous']})" if pl["ambiguous"] else ""))
     else:
         date, time, lat, lon, tz = o.birth[0], o.birth[1], float(o.birth[2]), float(o.birth[3]), o.birth[4]
         name, sex = o.name, o.sex
