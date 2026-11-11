@@ -14,21 +14,19 @@ Read at the start of every chat in the Claude project "Horoscope Reading And Ana
 2. If the person has a file in `/projects/<id>/people/`, read it before reading their chart.
 3. Restore the engine (container resets between sessions):
    ```
-   cd /home/claude && git clone https://github.com/vrushabhabib/jyotish.git
-   cd jyotish && pip install -q pyswisseph --break-system-packages
+   cd /home/claude && git clone https://github.com/vrushabhabib/jyotish.git && cd jyotish
+   pip install -q ephem pytest --break-system-packages && python3 -m pytest -q tests
    ```
+   Never write position code in the chat. A hand-rolled fallback on 20 Oct 2026 had a reference-frame bug that moved dasha dates by two months; the tests pin the engine to JPL Horizons.
 4. Existing charts: `data/charts/*.json`. Load instead of recomputing when the person is known.
 
 ## 2. Intake of a shared document
-Accepted inputs: AstroSage/other kundli PDF, a photo of a hand-written patrika, or plain birth data.
-Extract and confirm: name, date, time (24h), place, lat/lon, timezone, and **time confidence** (birth record / family memory / estimate).
-Then run:
+Follow `kb/readings/kundli-intake.md`. In short:
 ```
-python -m engine.chart YYYY-MM-DD HH:MM Place LAT LON Asia/Kolkata
+python3 -m engine.report --pdf file.pdf --out /tmp/ws                              # AstroSage PDF
+python3 -m engine.report YYYY-MM-DD HH:MM LAT LON Asia/Kolkata --name N --sex F --out /tmp/ws
 ```
-Cross-check engine vs document: lagna degree, Moon nakshatra-pada, dasha balance. If they differ by >1° → ayanamsa mismatch or wrong time — stop and resolve before reading.
-Pull from the PDF what the engine does not yet compute: Shadbala, Ashtakavarga (SAV per house), Bhava Chalit, D10/D7 tables, KP sub-lords.
-Save: `data/charts/<firstname>_<YYYY-MM-DD>.json` (engine output + extras + a dated reading summary). Push to GitHub.
+The worksheet has every factor the reading protocol asks for. Read its section 1 (birth-time sensitivity) first, then the cross-check. Save with `python3 -m engine.store data/charts/<name>_<date>.json`; the `computed` block is never typed by hand. Push to GitHub.
 
 ## 3. Reading protocol (kb/index.md, condensed)
 Lagna → Moon → Sun → all 12 bhavas (sign, lord placement+dignity, occupants, aspects, karaka) → yogas with strength → doshas with cancellations → vargas D9/D10/D7 → Vimshottari maha/antar/pratyantar → gochar (Sade Sati phase, Jupiter, Rahu-Ketu from Moon and lagna, SAV of transited sign) → synthesis.
@@ -46,4 +44,5 @@ Output format for a first reading: snapshot line → 6–8 numbered findings (st
 - `/projects/<id>/areas/operating-manual.md` — pointer to this document.
 
 ## 6. Roadmap (engine)
-Shadbala, Ashtakavarga, Bhava Chalit, geocoding, Jaimini karakas, KP sub-lords, PDF parser for AstroSage reports (auto-extract tables).
+Done 11 Nov 2026: Shadbala, Ashtakavarga, Jaimini karakas and arudhas, KP sub-lords, AstroSage PDF parser, transit tables, worksheet.
+Open: Bhava Chalit cusps, geocoding, Chara dasha, Yogini dasha, a second reference PDF to settle the Shadbala items listed as unverified, yoga detection driven from `kb/yogas/yogas.json`.

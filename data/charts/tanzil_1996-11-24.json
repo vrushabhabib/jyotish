@@ -1,1 +1,551 @@
-{"name": "Tanzil", "sex": "F", "date": "1996-11-24", "time": "12:05", "place": "Hubli", "lat": 15.3333, "lon": 75.1333, "tz": "Asia/Kolkata", "source": "AstroSage PDF (Lahiri), printed 15 Apr 2018", "time_confidence": "unknown - ask whether from a record; 2 lagna-dependent hits support Capricorn (birth before ~12:16)", "crosscheck": "ephem engine matches AstroSage within 3 arcmin; dasha balance within ~1 week (Sun 5y7m4d)", "time_sensitivity": {"D1_lagna": "Makara 27d06 - becomes Kumbha at ~12:16", "D9_lagna": "Kanya only 12:04-12:15; Simha before 12:04"}, "planets": {"Lagna": "Makara 27d06 Dhanishta 2", "Sun": "Vrishchika 8d29 Anuradha 2, H11", "Moon": "Mesha 27d36 Krittika 1, H4 (7L, AK)", "Mars": "Simha 19d24 P.Phalguni 2, H8", "Mercury": "Vrishchika 20d55 Jyeshtha 2, H11", "Jupiter": "Dhanu 23d12 P.Ashadha 3, H12 own", "Venus": "Tula 7d43 Swati 1, H10 own (Malavya; yogakaraka)", "Saturn": "Meena 6d54 R U.Bhadrapada 2, H3 (DK)", "Rahu": "Kanya 11d14 Hasta 1, H9", "Ketu": "Meena 11d14 U.Bhadrapada 3, H3"}, "d9": {"Lagna": "Kanya", "Sun": "Kanya", "Moon": "Dhanu", "Mars": "Kanya", "Mercury": "Makara", "Jupiter": "Tula", "Venus": "Dhanu", "Saturn": "Kanya", "Rahu": "Mesha", "Ketu": "Tula"}, "d2": "Sun hora: Mercury, Venus; Moon hora: Sun, Moon, Mars, Jupiter, Saturn", "d4": "Lagna Tula; Moon + Venus in D4 4th (Makara)", "sav": {"Mesha": 27, "Vrishabha": 27, "Mithuna": 35, "Karka": 24, "Simha": 29, "Kanya": 36, "Tula": 29, "Vrishchika": 30, "Dhanu": 19, "Makara": 29, "Kumbha": 25, "Meena": 27}, "jaimini": {"AK": "Moon", "AmK": "Jupiter", "BK": "Mercury", "MK": "Mars", "PK": "Sun", "GK": "Venus", "DK": "Saturn", "karakamsa": "Dhanu"}, "arudhas": {"AL": "Vrishabha H5", "A7": "Tula H10", "UL": "Kanya H9 with Rahu", "A10": "Karka H7"}, "kp": {"7th_cusp": "Karka 27d11 Ashlesha, star Mercury, sub Jupiter (signifies 2,4,9,11,12)", "flag": "7th CSL in dual sign - KP possibility of more than one marriage (74% match in a 100-chart two-marriage study; weak)"}, "strength": {"shadbala_rank": "Sun 1, Moon 2, Venus 3, Jupiter 4, Mars 5, Saturn 6, Mercury 7", "bhava_bala_rank": "7th 1, 8th 2, 12th 3, 3rd 4 ... 1st 11, 2nd 12"}, "manglik": "Mars in 8th from lagna (not from Moon); cancelled - Mars in Leo, Jupiter aspect, age>28", "vimshottari": {"Rahu_MD": "2019-06-23 to 2037-06-23", "Rahu-Saturn": "2024-07-29 to 2027-06-05", "Rahu-Mercury": "2027-06-05 to 2029-12-22", "Rahu-Ketu": "2029-12-22 to 2031-01-10", "Rahu-Venus": "2031-01-10 to 2034-01-10", "Rahu-Sun": "2034-01-10 to 2034-12-04", "Rahu-Moon": "2034-12-04 to 2036-06-04", "Rahu-Mars": "2036-06-04 to 2037-06-23"}, "sade_sati": "2025-03-30 to 2032-05-30, peak Jun 2027 - Apr 2030 (Saturn over Moon = 7L)", "verification": [{"date": "2026-10-27", "q": "money tight / family tension Jan 2023 - Mar 2025 (Saturn transit over 2nd)", "said": "yes", "score": "HIT"}, {"date": "2026-10-27", "q": "youngest sibling (Saturn + Ketu in 3rd, aspected by Mars and Rahu; 3L in 12th)", "said": "yes", "score": "HIT - also a Capricorn-vs-Aquarius discriminator (Aquarius would put Moon in 3rd)"}, {"date": "2026-10-27", "q": "home/property change in Mars MD 2012-19 (Mars = 4L in 8th)", "said": "moved house Hubli to Bangalore at 16 (2012-13)", "score": "HIT"}, {"date": "2026-10-27", "q": "expenses/travel/moving away in Rahu-Jupiter Mar 2022 - Jul 2024 (Jupiter = 12L own sign)", "said": "moved away from home, tried for US studies, travelled to Europe", "score": "HIT"}, {"date": "2026-10-27", "q": "differs from father in belief/way of life (Rahu in 9th)", "said": "yes", "score": "HIT"}], "pending_checks": ["is 12:05 from a record (affects navamsa only)", "employed vs own business"], "readings": [{"date": "2026-10-27", "type": "spouse description (personality, career, status, family, where met, marriage status, timing)"}, {"date": "2026-10-27", "type": "money, finances and family (earning, retention, leak pattern, asset classes, property, father, mother, siblings, extended family, timeline to 2053)"}], "verification_score": "5/5 (100%) - confirmed for practical use; all timing hits", "notes_foreign": "12th-house foreign theme verified (Europe travel, US study attempt). Next foreign windows: Rahu-Mercury Jun 2027-Dec 2029 (Mercury 9L) with transit Rahu in her 12th Jun 2028-Jan 2030; Jupiter MD from Jun 2037"}
+{
+ "name": "Tanzil",
+ "sex": "F",
+ "date": "1996-11-24",
+ "time": "12:05",
+ "place": "Hubli",
+ "lat": 15.3333,
+ "lon": 75.1333,
+ "tz": "Asia/Kolkata",
+ "source": "AstroSage PDF (Lahiri), printed 15 Apr 2018",
+ "time_confidence": "unknown - ask whether from a record; 2 lagna-dependent hits support Capricorn (birth before ~12:16)",
+ "time_sensitivity": {
+  "D1_lagna": "Makara 27d06 - becomes Kumbha at ~12:16",
+  "D9_lagna": "Kanya only 12:04-12:15; Simha before 12:04"
+ },
+ "d2": "Sun hora: Mercury, Venus; Moon hora: Sun, Moon, Mars, Jupiter, Saturn",
+ "d4": "Lagna Tula; Moon + Venus in D4 4th (Makara)",
+ "sav": {
+  "Mesha": 27,
+  "Vrishabha": 27,
+  "Mithuna": 35,
+  "Karka": 24,
+  "Simha": 29,
+  "Kanya": 36,
+  "Tula": 29,
+  "Vrishchika": 30,
+  "Dhanu": 19,
+  "Makara": 29,
+  "Kumbha": 25,
+  "Meena": 27
+ },
+ "jaimini": {
+  "AK": "Moon",
+  "AmK": "Jupiter",
+  "BK": "Mercury",
+  "MK": "Mars",
+  "PK": "Sun",
+  "GK": "Venus",
+  "DK": "Saturn",
+  "karakamsa": "Dhanu"
+ },
+ "arudhas": {
+  "AL": "Vrishabha H5",
+  "A7": "Tula H10",
+  "UL": "Kanya H9 with Rahu",
+  "A10": "Karka H7"
+ },
+ "kp": {
+  "7th_cusp": "Karka 27d11 Ashlesha, star Mercury, sub Jupiter (signifies 2,4,9,11,12)",
+  "flag": "7th CSL in dual sign - KP possibility of more than one marriage (74% match in a 100-chart two-marriage study; weak)"
+ },
+ "strength": {
+  "shadbala_rank": "Sun 1, Moon 2, Venus 3, Jupiter 4, Mars 5, Saturn 6, Mercury 7",
+  "bhava_bala_rank": "7th 1, 8th 2, 12th 3, 3rd 4 ... 1st 11, 2nd 12"
+ },
+ "manglik": "Mars in 8th from lagna (not from Moon); cancelled - Mars in Leo, Jupiter aspect, age>28",
+ "verification": [
+  {
+   "date": "2026-10-27",
+   "q": "money tight / family tension Jan 2023 - Mar 2025 (Saturn transit over 2nd)",
+   "said": "yes",
+   "score": "HIT"
+  },
+  {
+   "date": "2026-10-27",
+   "q": "youngest sibling (Saturn + Ketu in 3rd, aspected by Mars and Rahu; 3L in 12th)",
+   "said": "yes",
+   "score": "HIT - also a Capricorn-vs-Aquarius discriminator (Aquarius would put Moon in 3rd)"
+  },
+  {
+   "date": "2026-10-27",
+   "q": "home/property change in Mars MD 2012-19 (Mars = 4L in 8th)",
+   "said": "moved house Hubli to Bangalore at 16 (2012-13)",
+   "score": "HIT"
+  },
+  {
+   "date": "2026-10-27",
+   "q": "expenses/travel/moving away in Rahu-Jupiter Mar 2022 - Jul 2024 (Jupiter = 12L own sign)",
+   "said": "moved away from home, tried for US studies, travelled to Europe",
+   "score": "HIT"
+  },
+  {
+   "date": "2026-10-27",
+   "q": "differs from father in belief/way of life (Rahu in 9th)",
+   "said": "yes",
+   "score": "HIT"
+  }
+ ],
+ "pending_checks": [
+  "is 12:05 from a record (affects navamsa only)",
+  "employed vs own business"
+ ],
+ "readings": [
+  {
+   "date": "2026-10-27",
+   "type": "spouse description (personality, career, status, family, where met, marriage status, timing)"
+  },
+  {
+   "date": "2026-10-27",
+   "type": "money, finances and family (earning, retention, leak pattern, asset classes, property, father, mother, siblings, extended family, timeline to 2053)"
+  }
+ ],
+ "verification_score": "5/5 (100%) - confirmed for practical use; all timing hits",
+ "notes_foreign": "12th-house foreign theme verified (Europe travel, US study attempt). Next foreign windows: Rahu-Mercury Jun 2027-Dec 2029 (Mercury 9L) with transit Rahu in her 12th Jun 2028-Jan 2030; Jupiter MD from Jun 2037",
+ "computed": {
+  "schema_version": 2,
+  "generated": "2026-11-11",
+  "engine": {
+   "backend": "ephem",
+   "ayanamsa_lahiri": 23.81371
+  },
+  "birth": {
+   "date": "1996-11-24",
+   "time": "12:05",
+   "lat": 15.3333,
+   "lon": 75.1333,
+   "tz": "Asia/Kolkata"
+  },
+  "lagna": {
+   "rashi": "Makara",
+   "deg": "27°06'19\"",
+   "nakshatra": "Dhanishta",
+   "d9": 6,
+   "d10": 3,
+   "d7": 10
+  },
+  "planets": {
+   "Sun": {
+    "rashi": "Vrishchika",
+    "deg": "8°26'59\"",
+    "nakshatra": "Anuradha",
+    "pada": 2,
+    "house": 11,
+    "dignity": "Friend's sign",
+    "retro": false,
+    "combust": false,
+    "d9": 6
+   },
+   "Moon": {
+    "rashi": "Mesha",
+    "deg": "27°33'59\"",
+    "nakshatra": "Krittika",
+    "pada": 1,
+    "house": 4,
+    "dignity": "Neutral sign",
+    "retro": false,
+    "combust": false,
+    "d9": 9
+   },
+   "Mars": {
+    "rashi": "Simha",
+    "deg": "19°22'25\"",
+    "nakshatra": "Purva Phalguni",
+    "pada": 2,
+    "house": 8,
+    "dignity": "Friend's sign",
+    "retro": false,
+    "combust": false,
+    "d9": 6
+   },
+   "Mercury": {
+    "rashi": "Vrishchika",
+    "deg": "20°53'06\"",
+    "nakshatra": "Jyeshtha",
+    "pada": 2,
+    "house": 11,
+    "dignity": "Neutral sign",
+    "retro": false,
+    "combust": true,
+    "d9": 10
+   },
+   "Jupiter": {
+    "rashi": "Dhanu",
+    "deg": "23°09'47\"",
+    "nakshatra": "Purva Ashadha",
+    "pada": 3,
+    "house": 12,
+    "dignity": "Own sign",
+    "retro": false,
+    "combust": false,
+    "d9": 7
+   },
+   "Venus": {
+    "rashi": "Tula",
+    "deg": "7°40'40\"",
+    "nakshatra": "Swati",
+    "pada": 1,
+    "house": 10,
+    "dignity": "Moolatrikona",
+    "retro": false,
+    "combust": false,
+    "d9": 9
+   },
+   "Saturn": {
+    "rashi": "Meena",
+    "deg": "6°52'17\"",
+    "nakshatra": "Uttara Bhadrapada",
+    "pada": 2,
+    "house": 3,
+    "dignity": "Neutral sign",
+    "retro": true,
+    "combust": false,
+    "d9": 6
+   },
+   "Rahu": {
+    "rashi": "Kanya",
+    "deg": "11°14'22\"",
+    "nakshatra": "Hasta",
+    "pada": 1,
+    "house": 9,
+    "dignity": "Friend's sign",
+    "retro": false,
+    "combust": false,
+    "d9": 1
+   },
+   "Ketu": {
+    "rashi": "Meena",
+    "deg": "11°14'22\"",
+    "nakshatra": "Uttara Bhadrapada",
+    "pada": 3,
+    "house": 3,
+    "dignity": "Neutral sign",
+    "retro": false,
+    "combust": false,
+    "d9": 7
+   }
+  },
+  "panchanga": {
+   "tithi": "Shukla Purnima",
+   "paksha": "Shukla",
+   "vara": "Sunday",
+   "yoga": "Parigha",
+   "karana": "Vishti",
+   "day_birth": true,
+   "nakshatra": "Krittika",
+   "pada": 1
+  },
+  "karakas": {
+   "AK": "Moon",
+   "AmK": "Jupiter",
+   "BK": "Mercury",
+   "MK": "Mars",
+   "PK": "Sun",
+   "GK": "Venus",
+   "DK": "Saturn"
+  },
+  "arudhas": {
+   "AL": {
+    "sign": "Vrishabha",
+    "house": 5,
+    "occupants": []
+   },
+   "UL": {
+    "sign": "Kanya",
+    "house": 9,
+    "occupants": [
+     "Rahu"
+    ]
+   },
+   "A7": {
+    "sign": "Tula",
+    "house": 10,
+    "occupants": [
+     "Venus"
+    ]
+   },
+   "A10": {
+    "sign": "Karka",
+    "house": 7,
+    "occupants": []
+   }
+  },
+  "sav_by_house": {
+   "1": 29,
+   "2": 25,
+   "3": 27,
+   "4": 27,
+   "5": 27,
+   "6": 35,
+   "7": 24,
+   "8": 29,
+   "9": 36,
+   "10": 29,
+   "11": 30,
+   "12": 19
+  },
+  "yogas": [
+   "Malavya (Mahapurusha)",
+   "Anapha",
+   "Adhi yoga (partial)",
+   "Ubhayachari",
+   "Budha-Aditya",
+   "Amala (from lagna)",
+   "Raja yoga (kendra-trikona)",
+   "Yogakaraka",
+   "Vimala (Viparita)",
+   "Dainya Parivartana"
+  ],
+  "doshas": {
+   "manglik": {
+    "from": {
+     "lagna": {
+      "mars_house": 8,
+      "dosha": true
+     },
+     "moon": {
+      "mars_house": 5,
+      "dosha": false
+     },
+     "venus": {
+      "mars_house": 11,
+      "dosha": false
+     }
+    },
+    "present": true,
+    "cancellations": [
+     "Mars in Leo/Aquarius (held harmless by several authorities)",
+     "Jupiter joins/aspects Mars",
+     "native past 28 (Mars matured)"
+    ],
+    "verdict": "present but cancelled/mitigated"
+   },
+   "kaal_sarp": {
+    "full": false,
+    "type": null,
+    "partial": false,
+    "planets_outside": [
+     "Moon",
+     "Mars"
+    ],
+    "note": "Not in BPHS/Phaladeepika; a later doctrine. A planet with Rahu/Ketu or one planet outside the arc breaks it."
+   },
+   "pitru": [
+    "Rahu in the 9th"
+   ]
+  },
+  "vimshottari": {
+   "maha": [
+    {
+     "lord": "Sun",
+     "start": "1996-11-24",
+     "end": "2002-06-30"
+    },
+    {
+     "lord": "Moon",
+     "start": "2002-06-30",
+     "end": "2012-06-29"
+    },
+    {
+     "lord": "Mars",
+     "start": "2012-06-29",
+     "end": "2019-06-30"
+    },
+    {
+     "lord": "Rahu",
+     "start": "2019-06-30",
+     "end": "2037-06-29"
+    },
+    {
+     "lord": "Jupiter",
+     "start": "2037-06-29",
+     "end": "2053-06-29"
+    },
+    {
+     "lord": "Saturn",
+     "start": "2053-06-29",
+     "end": "2072-06-29"
+    },
+    {
+     "lord": "Mercury",
+     "start": "2072-06-29",
+     "end": "2089-06-29"
+    },
+    {
+     "lord": "Ketu",
+     "start": "2089-06-29",
+     "end": "2096-06-29"
+    },
+    {
+     "lord": "Venus",
+     "start": "2096-06-29",
+     "end": "2116-06-30"
+    }
+   ],
+   "antar_current_and_next": [
+    {
+     "md": "Rahu",
+     "ad": "Rahu",
+     "start": "2019-06-30",
+     "end": "2022-03-12"
+    },
+    {
+     "md": "Rahu",
+     "ad": "Jupiter",
+     "start": "2022-03-12",
+     "end": "2024-08-05"
+    },
+    {
+     "md": "Rahu",
+     "ad": "Saturn",
+     "start": "2024-08-05",
+     "end": "2027-06-12"
+    },
+    {
+     "md": "Rahu",
+     "ad": "Mercury",
+     "start": "2027-06-12",
+     "end": "2029-12-29"
+    },
+    {
+     "md": "Rahu",
+     "ad": "Ketu",
+     "start": "2029-12-29",
+     "end": "2031-01-16"
+    },
+    {
+     "md": "Rahu",
+     "ad": "Venus",
+     "start": "2031-01-16",
+     "end": "2034-01-16"
+    },
+    {
+     "md": "Rahu",
+     "ad": "Sun",
+     "start": "2034-01-16",
+     "end": "2034-12-11"
+    },
+    {
+     "md": "Rahu",
+     "ad": "Moon",
+     "start": "2034-12-11",
+     "end": "2036-06-11"
+    },
+    {
+     "md": "Rahu",
+     "ad": "Mars",
+     "start": "2036-06-11",
+     "end": "2037-06-29"
+    },
+    {
+     "md": "Jupiter",
+     "ad": "Jupiter",
+     "start": "2037-06-29",
+     "end": "2039-08-18"
+    },
+    {
+     "md": "Jupiter",
+     "ad": "Saturn",
+     "start": "2039-08-18",
+     "end": "2042-02-28"
+    },
+    {
+     "md": "Jupiter",
+     "ad": "Mercury",
+     "start": "2042-02-28",
+     "end": "2044-06-05"
+    },
+    {
+     "md": "Jupiter",
+     "ad": "Ketu",
+     "start": "2044-06-05",
+     "end": "2045-05-12"
+    },
+    {
+     "md": "Jupiter",
+     "ad": "Venus",
+     "start": "2045-05-12",
+     "end": "2048-01-11"
+    },
+    {
+     "md": "Jupiter",
+     "ad": "Sun",
+     "start": "2048-01-11",
+     "end": "2048-10-29"
+    },
+    {
+     "md": "Jupiter",
+     "ad": "Moon",
+     "start": "2048-10-29",
+     "end": "2050-02-28"
+    },
+    {
+     "md": "Jupiter",
+     "ad": "Mars",
+     "start": "2050-02-28",
+     "end": "2051-02-04"
+    },
+    {
+     "md": "Jupiter",
+     "ad": "Rahu",
+     "start": "2051-02-04",
+     "end": "2053-06-29"
+    }
+   ]
+  },
+  "sade_sati": [
+   [
+    "1996-11-24",
+    "2003-04-07"
+   ],
+   [
+    "2025-03-30",
+    "2032-05-30"
+   ]
+  ],
+  "shadbala": {
+   "Sun": {
+    "rupas": 7.03,
+    "ratio": 1.41,
+    "rank": 1
+   },
+   "Moon": {
+    "rupas": 7.74,
+    "ratio": 1.29,
+    "rank": 2
+   },
+   "Mars": {
+    "rupas": 4.2,
+    "ratio": 0.84,
+    "rank": 5
+   },
+   "Mercury": {
+    "rupas": 5.44,
+    "ratio": 0.78,
+    "rank": 6
+   },
+   "Jupiter": {
+    "rupas": 8.08,
+    "ratio": 1.24,
+    "rank": 3
+   },
+   "Venus": {
+    "rupas": 6.46,
+    "ratio": 1.17,
+    "rank": 4
+   },
+   "Saturn": {
+    "rupas": 2.86,
+    "ratio": 0.57,
+    "rank": 7
+   }
+  }
+ },
+ "crosscheck": "11 Nov 2026: engine vs AstroSage PDF - lagna, Moon, Mars, Saturn, Rahu within 0.4 arc-min; Sun 0.5', Jupiter 2.8' (AstroSage's own offsets from JPL Horizons). SAV identical. Dasha dates within 1 day.",
+ "corrections": [
+  {
+   "date": "2026-11-11",
+   "what": "Recomputed with the corrected engine; dasha dates moved by up to one week and now agree with the AstroSage printout (Rahu-Saturn ends 12 Jun 2027). New findings the hand analysis missed: Sun-Mars exchange (8th and 11th lords, Dainya Parivartana) and Mercury combust."
+  }
+ ]
+}

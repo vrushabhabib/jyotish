@@ -1,6 +1,6 @@
 """Fallback natal chart via pyephem (libastro) + Lahiri ayanamsa.
-Use when pyswisseph will not build. Accuracy: planets/Moon to ~arc-seconds; ayanamsa model good to ~10 arc-sec.
-Cross-checked 20 Oct 2026: Saturn/Rahu ingress dates match the pyswisseph-era table (Saturn->Mesha 2027-06-07, Rahu->Makara 2026-12-06).
+Use when pyswisseph will not build. Thin wrapper kept for backward compatibility; the real work is in engine/ephemeris.py.
+Validation lives in tests/test_engine_v2.py (JPL Horizons, AstroSage, published ingresses).
 Usage: python3 engine/ephem_chart.py YYYY-MM-DD HH:MM LAT LON   (IST assumed)
 """
 import math, datetime as dt
@@ -43,24 +43,23 @@ def fmt(lon):
     return f"{RASHI[r]:11s} {int(d):2d}°{int((d%1)*60):02d}' {NAK[nidx]:13s} p{pada}"
 
 def build(date_str, time_str, lat, lon, tz_off=5.5):
+    """Sidereal (Lahiri) longitudes for the nine grahas and the lagna.
+
+    FIXED 11 Nov 2026: this used to read ephem.Ecliptic(body) in the J2000 frame instead of the
+    ecliptic of date, so every planet was off by the precession since 2000 (about 0.84' per year:
+    +8' for a 1990 birth, -22' for a 2026 transit). It now delegates to engine.ephemeris, which was
+    validated against an AstroSage printout to under 0.5 arc-minute. The lagna was never affected.
+    """
+    import os, sys
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+    from engine import ephemeris as E
     local = dt.datetime.fromisoformat(f"{date_str}T{time_str}")
-    ut = local - dt.timedelta(hours=tz_off)
-    obs = ephem.Observer()
-    obs.lat, obs.lon = str(lat), str(lon)
-    obs.date = ut.strftime("%Y/%m/%d %H:%M:%S")
-    obs.pressure = 0
-    jd = ephem.julian_date(obs.date)
-    ay = lahiri_ayanamsa(jd)
-    bodies = {"Sun":ephem.Sun(),"Moon":ephem.Moon(),"Mars":ephem.Mars(),"Mercury":ephem.Mercury(),
-              "Jupiter":ephem.Jupiter(),"Venus":ephem.Venus(),"Saturn":ephem.Saturn()}
-    out={n:(ecl_lon(b,obs)-ay)%360.0 for n,b in bodies.items()}
-    T=(jd-2451545.0)/36525.0
-    node_trop=(125.0445479 - 1934.1362891*T + 0.0020754*T*T + T**3/467441.0)%360.0  # mean node
-    out["Rahu"]=(node_trop-ay)%360.0
-    out["Ketu"]=(out["Rahu"]+180.0)%360.0
-    out["Lagna"]=(ascendant_tropical(obs,jd)-ay)%360.0
-    out["_ayanamsa"]=ay
-    out["_jd"]=jd
+    jd = E.julday(local - dt.timedelta(hours=tz_off))
+    pos = E.positions(jd, float(lat), float(lon))
+    out = {n: pos[n]["lon"] for n in E.BODIES}
+    out["Lagna"] = pos["Lagna"]["lon"]
+    out["_ayanamsa"] = E.ayanamsa(jd)
+    out["_jd"] = jd
     return out
 
 def vimshottari(moon_lon, birth_dt):

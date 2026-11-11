@@ -86,3 +86,10 @@ because each planet owns/occupies/aspects/disposes several houses. Consequences:
   7L Mars gave marriage, not a first job). List every area the sub-lord links to before choosing one.
 - Spouse's age: Saturn with the 7th lord predicted an older husband; the second husband was 4 years younger.
   Second marriage may need the 2nd house (8th from 7th) as well as the 7th. Unresolved.
+
+## Rule 10 — The calculator is checked before the chart is (added 11 Nov 2026)
+A reading is only as good as its positions. On 20 Oct 2026 a fallback calculator written in the chat read planets in the wrong reference frame. Every planet was 8 arc-minutes off for a 1990 birth, and every dasha date about two months early. The check made at the time ("within 3 arc-minutes of AstroSage", "ingress dates match") was too loose to catch it.
+- Run `python3 -m pytest -q tests` at the start of every session. The tests compare the engine with JPL Horizons and a printed AstroSage chart.
+- A cross-check passes at 1 arc-minute for planets, not 3. Above that, find the reason.
+- Eight arc-minutes of Moon equals two months of Vimshottari. Any statement dated to the month depends on the Moon to the minute of arc and on the birth time to about four minutes of clock time. Say so.
+

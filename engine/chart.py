@@ -12,17 +12,13 @@ House system: Whole Sign (Parashari). Bhava chalit (Sripati) is also computed fo
 from __future__ import annotations
 import json, os, datetime as dt
 from zoneinfo import ZoneInfo
-import swisseph as swe
+from engine import ephemeris as E
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "..", "data")
 NAK = json.load(open(os.path.join(DATA, "nakshatras.json")))
 RAS = json.load(open(os.path.join(DATA, "rashis.json")))
 
-PLANET_IDS = {
-    "Sun": swe.SUN, "Moon": swe.MOON, "Mars": swe.MARS, "Mercury": swe.MERCURY,
-    "Jupiter": swe.JUPITER, "Venus": swe.VENUS, "Saturn": swe.SATURN, "Rahu": swe.MEAN_NODE,
-}
 PLANET_ORDER = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn", "Rahu", "Ketu"]
 RASHI_NAMES = [r["name"] for r in RAS["rashis"]]
 RASHI_EN = [r["en"] for r in RAS["rashis"]]
@@ -32,7 +28,6 @@ NAK_LIST = NAK["nakshatras"]
 # Combustion orbs (degrees from Sun), standard Parashari values
 COMBUST_ORB = {"Moon": 12, "Mars": 17, "Mercury": 14, "Jupiter": 11, "Venus": 10, "Saturn": 15}
 
-swe.set_sid_mode(swe.SIDM_LAHIRI)
 
 
 # ---------- helpers ----------
@@ -58,7 +53,7 @@ def dms(x):
 def to_jd_utc(date_str, time_str, tz):
     local = dt.datetime.fromisoformat(f"{date_str}T{time_str}").replace(tzinfo=ZoneInfo(tz))
     u = local.astimezone(dt.timezone.utc)
-    return swe.julday(u.year, u.month, u.day, u.hour + u.minute / 60 + u.second / 3600), local
+    return E.julday(u), local
 
 
 # ---------- dignity ----------
@@ -178,28 +173,22 @@ def current_dasha(dashas, when):
 # ---------- main ----------
 def build_chart(date_str, time_str, lat, lon_geo, tz, place=""):
     jd, local = to_jd_utc(date_str, time_str, tz)
-    flags = swe.FLG_SWIEPH | swe.FLG_SIDEREAL | swe.FLG_SPEED
-    ayan = swe.get_ayanamsa_ut(jd)
-
-    # Lagna & cusps (tropical from swe, then subtract ayanamsa)
-    cusps, ascmc = swe.houses(jd, lat, lon_geo, b'W')
-    lagna = norm(ascmc[0] - ayan)
-    mc = norm(ascmc[1] - ayan)
+    ayan = E.ayanamsa(jd)
+    pos = E.positions(jd, lat, lon_geo)
+    lagna = pos["Lagna"]["lon"]
+    mc = pos["MC"]["lon"]
     lagna_rashi = rashi_of(lagna)
 
     planets = {}
     for name in PLANET_ORDER:
-        if name == "Ketu":
-            L = norm(planets["Rahu"]["lon"] + 180); speed = planets["Rahu"]["speed"]
-        else:
-            res, _ = swe.calc_ut(jd, PLANET_IDS[name], flags)
-            L, speed = res[0], res[3]
+        L, speed = pos[name]["lon"], pos[name]["speed"]
         r = rashi_of(L); n, pada, _ = nakshatra_of(L)
         planets[name] = {
             "lon": L, "speed": speed, "rashi": r, "rashi_name": RASHI_NAMES[r - 1], "rashi_en": RASHI_EN[r - 1],
             "deg": deg_in_rashi(L), "deg_dms": dms(deg_in_rashi(L)),
             "nakshatra": NAK_LIST[n - 1]["name"], "nak_lord": NAK_LIST[n - 1]["lord"], "pada": pada,
-            "retrograde": speed < 0 and name not in ("Sun", "Moon"),
+            "retrograde": speed < 0 and name not in ("Sun", "Moon", "Rahu", "Ketu"),
+            "declination": pos[name]["dec"],
             "bhava": (r - lagna_rashi) % 12 + 1,
             "dignity": dignity(name, L),
         }
@@ -207,12 +196,15 @@ def build_chart(date_str, time_str, lat, lon_geo, tz, place=""):
     sun = planets["Sun"]["lon"]
     for p, orb in COMBUST_ORB.items():
         d = abs((planets[p]["lon"] - sun + 180) % 360 - 180)
+        if planets[p]["retrograde"]:                      # Surya Siddhanta: tighter orb when retrograde
+            orb = {"Mercury": 12, "Venus": 8}.get(p, orb)
         planets[p]["combust"] = d < orb
     # vargas
-    for n in (2, 3, 7, 9, 10, 12, 30, 60):
+    VARGAS = (2, 3, 4, 7, 9, 10, 12, 16, 20, 24, 27, 30, 40, 45, 60)
+    for n in VARGAS:
         for p in PLANET_ORDER:
             planets[p][f"D{n}"] = varga_rashi(planets[p]["lon"], n)
-    lagna_vargas = {f"D{n}": varga_rashi(lagna, n) for n in (2, 3, 7, 9, 10, 12, 30, 60)}
+    lagna_vargas = {f"D{n}": varga_rashi(lagna, n) for n in VARGAS}
 
     # bhavas (whole sign)
     bhavas = {}
@@ -232,8 +224,7 @@ def build_chart(date_str, time_str, lat, lon_geo, tz, place=""):
     # moon-based
     moon_rashi = planets["Moon"]["rashi"]
     # Sade Sati now: Saturn transit in 12th, 1st, 2nd from Moon
-    sat_now, _ = swe.calc_ut(swe.julday(now.year, now.month, now.day, now.hour), swe.SATURN, flags)
-    sat_r = rashi_of(sat_now[0]); rel = (sat_r - moon_rashi) % 12
+    sat_r = rashi_of(E.body("Saturn", E.julday(now))[0]); rel = (sat_r - moon_rashi) % 12
     sade_sati = {0: "Sade Sati — 2nd phase (peak, Saturn on Moon)", 11: "Sade Sati — 1st phase (rising)",
                  1: "Sade Sati — 3rd phase (setting)", 3: "Ardhashtama Shani (4th from Moon)",
                  7: "Ashtama Shani (8th from Moon)"}.get(rel, "No Sade Sati / Dhaiya")
@@ -246,7 +237,7 @@ def build_chart(date_str, time_str, lat, lon_geo, tz, place=""):
 
     return {
         "input": {"date": date_str, "time": time_str, "tz": tz, "lat": lat, "lon": lon_geo, "place": place,
-                  "jd_ut": jd, "ayanamsa_lahiri": ayan},
+                  "jd_ut": jd, "ayanamsa_lahiri": ayan, "backend": E.BACKEND, "local": local},
         "lagna": {"lon": lagna, "rashi": lagna_rashi, "rashi_name": RASHI_NAMES[lagna_rashi - 1],
                   "deg_dms": dms(deg_in_rashi(lagna)), "nakshatra": NAK_LIST[nakshatra_of(lagna)[0] - 1]["name"],
                   "lord": RASHI_LORD[lagna_rashi - 1], "vargas": lagna_vargas, "mc": mc},

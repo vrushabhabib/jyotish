@@ -1,0 +1,83 @@
+# Kundli intake and processing — v2 (11 Nov 2026)
+
+How any birth data or kundli document is turned into a reading. Follow the steps in order. Nothing is computed by hand any more: every factor comes from the worksheet, so nothing is missed and nothing is invented.
+
+## Step 0 — Start the engine
+
+```bash
+cd /home/claude && git clone https://github.com/vrushabhabib/jyotish.git && cd jyotish
+pip install -q ephem pytest --break-system-packages      # pyswisseph is optional; the engine falls back to ephem
+python3 -m pytest -q tests                                # must be all green before any chart is trusted
+```
+
+`engine/ephemeris.py` picks Swiss Ephemeris when installed and pyephem otherwise. Both are checked against JPL Horizons in the tests. Do not write one-off position code in a chat: a hand-rolled fallback on 20 Oct 2026 read planets in the J2000 frame and put every planet 8′ off for a 1990 birth (dasha dates two months early). The tests exist so that cannot recur.
+
+## Step 1 — Get the birth data
+
+| Source | What to do |
+|---|---|
+| AstroSage PDF | `python3 -m engine.report --pdf file.pdf --out /tmp/ws` — the parser (`engine/astrosage_pdf.py`) reads birth data, planets, 16 vargas, Shadbala, Bhava Bala, Ashtakavarga, KP cusps, Jaimini karakas, dashas, and cross-checks them against our own computation. |
+| Other PDF / photo of a chart | Read the birth data by eye, run the worksheet from date/time/place, then compare lagna, Moon nakshatra-pada and every planet's house with the document. |
+| Date, time, place only | Geocode the place (plus code or lat/lon), then `python3 -m engine.report DATE TIME LAT LON TZ --name N --sex F|M --out /tmp/ws`. |
+
+Record at intake: where the **time** comes from (hospital record / family memory / estimate / window), where the **date** comes from, sex, and whether the person is employed, in business, or both.
+
+## Step 2 — Cross-check (stop if it fails)
+
+- Lagna and every planet within **5′** of the document; a difference over 1′ is noted. Known: AstroSage's own Sun runs about 0.5′ and its Jupiter about 3′ from JPL — those two residuals are AstroSage's, not ours.
+- Moon nakshatra and pada identical. Vimshottari balance within about a week.
+- Sarvashtakavarga identical sign by sign (ours reproduces AstroSage exactly).
+- A mismatch above 1° means wrong date, time, time zone or place. Resolve it before reading anything.
+
+## Step 3 — Read section 1 of the worksheet first: birth-time sensitivity
+
+The table shows the minute at which the lagna, D9, D10, D7, D12 and D3 lagnas change. Compare with how sure the time is:
+
+- time from a record → ±2 minutes; family memory → ±15; "morning" → the whole window.
+- Any lagna that changes inside that margin makes its findings **uncertain** — mark them so (◇) and keep time-proof findings (Moon, planets' signs, karakas) separate (◆).
+- If the D1 lagna itself changes inside the margin, run both charts and ask discriminating questions (Step 5) before writing.
+
+## Step 4 — Use the worksheet, section by section
+
+| Worksheet section | Feeds |
+|---|---|
+| 2 Planets (dignity, D9 dignity, avastha, combust/retro/vargottama/gandanta) | strength of every statement |
+| 3 Rulerships and functional nature | written out before any interpretation (protocol rule) |
+| 4–5 Houses from lagna and from Moon (occupants, aspects, lord, lord's company, SAV) | every life area; the completeness checklist |
+| 6 Divisional charts | D9 marriage, D10 career, D7 children, D12 parents, D3 siblings, D4 property, D30 health |
+| 7 Jaimini (karakas, arudhas, UL and its 2nd/8th, karakamsa) | spouse, image, career |
+| 8 Yogas, Manglik with cancellations, Kaal Sarp, Pitru | never state a yoga without its "weakened by" column |
+| 9 Ashtakavarga, Shadbala, special points, KP lords | strength, fertility points, KP confirmation |
+| 10 Link test | which sub-period lords can deliver which area — strong links only |
+| 11 Vimshottari with area tags and pratyantars | every dated statement |
+| 12–13 Saturn phases, transits with SAV/BAV, double transit, returns | timing windows |
+
+Take Shadbala and Bhava Bala from the PDF when one is supplied; `engine/shadbala.py` is used otherwise, and its unverified components are listed in the worksheet.
+
+## Step 5 — Verify before reading (unchanged principle, sharper method)
+
+1. Ask 8–14 questions, one at a time, answered cold. Score hits/partly/miss in the open.
+2. **70 % or more → confirmed.** Below that, say so and limit the reading to timing of periods.
+3. Choose questions that discriminate:
+   - between two candidate lagnas: facts that flip (younger siblings, mother's centrality, career drive);
+   - within a time window: the *month* a dasha begins, matched to a sharp life change;
+   - for an unrecorded date: festival/tithi memory ("the day after Ram Navami"), Saturn-phase onset months.
+4. Do **not** treat "past events fall in linked sub-periods" as proof. Tested on 248 candidate dates: nearly all pass (Rule 8). Only forward statements answered cold count.
+
+## Step 6 — Write
+
+Follow `kb/readings/full-reading-protocol.md` (13 parts; block form; plain words; years; rules). For each part, open the matching `kb/life-areas/*.md` rule file and go down its checklist against worksheet sections 4–8. State evidence counts (1 = possibility, 2 = likely, 3+ = probability) and the verification score in Part 1.
+
+## Step 7 — File
+
+- `data/charts/<name>_<date>.json`: birth data, time confidence, verification log (question, chart said, person said, score), readings delivered. No sensitive personal history beyond what the user approves.
+- Memory `/people/<name>.md`: what the user stated.
+- New lesson learned from a miss → `kb/dashas/antar-event-rules.md` as a numbered rule, marked provisional until seen twice.
+
+## Accuracy record (keep updated)
+
+| Chart | Forward questions | Hits | Notes |
+|---|---|---|---|
+| Hoang Anh | 20 | 14 (70 %) | all misses were relationship "filler" in unlinked sub-periods |
+| Saira | 14 | 5 (36 %) | no birth record; descriptions of people failed, timing held |
+| Tanzil | 5 | 5 (100 %) | time from AstroSage printout; both lagna-discriminating questions hit |
