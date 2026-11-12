@@ -222,7 +222,12 @@ def markdown(r, name="native"):
     w("## 11. Vimshottari\n")
     now = a["dasha_now"]
     w("Now: " + " / ".join(f"{d['lord']} (to {_d(d['end'])})" for d in now) + ".\n")
-    w("| Mahadasha | Antardasha | From | To | Age | Areas the antardasha lord is STRONGLY linked to |\n|---|---|---|---|---|---|")
+    w("| Mahadasha | Antardasha | From | To | Age | Sub-lord from dasha lord | Areas the antardasha lord is STRONGLY linked to |\n|---|---|---|---|---|---|---|")
+    P_ = c["planets"]
+    def _rel(md, ad):
+        if md == ad: return "same"
+        n = (P_[ad]["rashi"] - P_[md]["rashi"]) % 12 + 1
+        return f"house {n} - " + ("adverse" if n in (6, 8, 12) else "supportive" if n in (1, 3, 4, 5, 7, 9, 10, 11) else "mostly supportive")
     local = c["input"]["local"]
     for md, ms, me, ads in a["dasha_tree"]:
         if me <= local or (ms - local).days / 365.25 > 100: continue
@@ -230,7 +235,12 @@ def markdown(r, name="native"):
             if e <= local: continue
             s2 = max(s, local)
             tags = [ar_ for ar_ in AREAS if any(x.startswith(("occupies", "owns", "with", "is karaka")) for x in links[(ar_, ad)])]
-            w(f"| {md} | {ad} | {_d(s2)} | {_d(e)} | {(s2 - local).days / 365.25:.1f}-{(e - local).days / 365.25:.1f} | {', '.join(tags)} |")
+            w(f"| {md} | {ad} | {_d(s2)} | {_d(e)} | {(s2 - local).days / 365.25:.1f}-{(e - local).days / 365.25:.1f} | {_rel(md, ad)} | {', '.join(tags)} |")
+    w("\nSub-lord from dasha lord (Parashara ch. 52-60, stated pair by pair for most of the 81 pairs): in a kendra, a trine, the 3rd or the 11th from the dasha lord the sub-period supports; in the 6th, 8th or 12th it obstructs; the 2nd is listed with the supportive places for most pairs. This is weighed together with the sub-lord's own house from the lagna and its dignity.\n")
+    third = lambda p: ("start", "middle", "end")[min(2, int(P_[p]["deg"] // 10))]
+    flip = {"start": "end", "middle": "middle", "end": "start"}
+    w("When inside its own period a planet delivers (Parashara 47.3-4, by the third of the sign it is in; reversed when retrograde): " +
+      "; ".join(f"{p} {flip[third(p)] if P_[p].get('retrograde') else third(p)}" for p in PLANET_ORDER) + ".\n")
     cur_md = next((x for x in a["dasha_tree"] if x[1] <= dt.datetime.now(local.tzinfo) < x[2]), None)
     if cur_md:
         w("\nPratyantardashas of the running and next two antardashas:\n")

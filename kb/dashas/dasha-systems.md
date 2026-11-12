@@ -29,8 +29,9 @@ Order and years: Ketu 7, Venus 20, Sun 6, Moon 10, Mars 7, Rahu 18, Jupiter 16, 
 
 ### 1.2 MD lord versus AD lord [MEM]
 - Count the AD lord's sign from the MD lord's sign.
-  - 6/8 (shashtashtaka) or 2/12 (dwirdwadasha): friction, obstacles, health/expense themes, results of the AD come with a break from the MD's direction.
-  - 1/1, 5/9 (trine), 3/11, 4/10, 1/7 (kendra): cooperative; 5/9 best.
+  - AD lord in the 6th, 8th or 12th from the MD lord: obstructs - loss of place, quarrels, expense, the AD breaks from the MD's direction. [BPHS ch. 52-60, stated pair by pair; read from the Sanskrit 12 Nov 2026]
+  - AD lord in a kendra, a trine, the 3rd or the 11th from the MD lord: supports. The **2nd** from the MD lord is listed with the supportive places in most pairs - the earlier note here that 2/12 is adverse on both sides was wrong for the 2nd. [same source]
+  - Exceptions the text states outright (bad first, good only when specially strong): Ketu's AD in the Sun's, Rahu's and Saturn's MDs; Rahu's AD in Saturn's MD; Saturn's AD in Ketu's MD; the Sun's AD in Venus's MD. See `kb/sources/bphs/ch51-60.md`.
 - Natural and temporary friendship between the two lords: friends cooperate, enemies obstruct.
 - Laghu Parashari rules: (a) the MD lord does not give its own full results in its own AD; they come in the ADs of planets related to it (sambandhi) or of similar nature (sadharmi); (b) a yogakaraka's AD inside a malefic's MD still gives good results if the two are related; (c) maraka results come in the AD of a maraka related to the MD lord.
 - The AD lord is judged for houses counted from the MD lord's sign as a temporary lagna (e.g. AD lord in the 10th from the MD lord → work prominence).
