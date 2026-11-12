@@ -41,6 +41,7 @@ Tradition: Parashari (BPHS) as the base. Where Jaimini, KP, or regional (Tamil /
 | `transits/transits.md` | Sade Sati by phase, Saturn and Jupiter from Moon, vedha, double transit, Rahu-Ketu, Ashtakavarga scoring |
 | `nakshatras/nakshatras-27.md` | The 27 nakshatras with padas |
 | `planets/planets-in-houses.md` | Each planet in each house, lordship notes |
+| `sources/bphs-verse-readings.md` | Parashara read in the Sanskrit: verse-by-verse readings and the rule corrections they caused |
 | `remedies/remedies.md` | Remedies by planet with cautions |
 | `rashis/functional-nature.md`, `bhavas/lord-placements.md`, `matching/match-protocol.md` | Earlier files, still current |
 

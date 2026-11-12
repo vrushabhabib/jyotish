@@ -1,6 +1,7 @@
 # Source policy and audit (set 12 Nov 2026)
 
 ## Policy
+0. The Sanskrit root text is the source. English renderings, websites and any machine-generated summaries are aids only; where a rule matters it is read in the Sanskrit and the reading is recorded in `sources/`.
 1. Only free, openly readable material is used: public-domain texts, works released free by their authors, and websites that anyone can read without payment or login.
 2. Nothing locked: no paywalled or licensed databases, no purchased-only books, no scans of in-copyright books uploaded by third parties, no bulk exports that need a licence.
 3. If a rule cannot be supported from a free source it is tagged `[UNSOURCED]` or `[MEMORY]` and treated as low confidence. It is not "fixed" by reaching for a locked source.
@@ -32,6 +33,7 @@
 - R. Santhanam's and other in-copyright translations of the classics.
 
 ## Work this leaves open
-- Re-read the 14 yoga citations from BPHS chapters 75-92 in the free Sanskrit text and clear their "not yet re-verified" mark.
+- Done 12 Nov 2026: the 14 yoga citations from BPHS chapters 75-92 were re-read in the Sanskrit; see `sources/bphs-verse-readings.md` (4 rules corrected, 1 wrong citation removed).
+- Read the rest of Parashara the same way, chapter by chapter, starting with those the life-area files lean on most (marriage ch. 18, children ch. 16, career ch. 21, longevity ch. 43-44, female chart ch. 80).
 - Re-read the 41 Phaladeepika citations against the Sanskrit text (the English they rest on is machine-generated).
 - Read the public-domain Brihat Jataka translation (Chidambaram Iyer, 1885) if a clean scan can be found, to source the Nabhasa and Moon yogas directly.

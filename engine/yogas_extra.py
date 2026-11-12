@@ -22,11 +22,11 @@ IN_ANALYSIS = {"ruchaka", "bhadra", "hamsa", "malavya", "shasha", "gajakesari", 
                "adhi_chandra", "chandra_mangala", "shakata_lunar", "amala", "vesi", "vasi", "ubhayachari", "budha_aditya",
                "lakshmi", "saraswati", "kendra_trikona_raja", "yogakaraka_planet", "dharma_karmadhipati", "harsha", "sarala",
                "vimala", "dhana_lords", "maha_parivartana", "khala_parivartana", "dainya_parivartana", "guru_chandala",
-               "angaraka", "shrapit", "vish", "grahan", "kaal_sarp", "kaal_sarp_partial", "kala_amrita", "pitru_dosha", "mangal_dosha"}
+               "angaraka", "shrapit", "vish", "kaal_sarp", "kaal_sarp_partial", "kala_amrita", "mangal_dosha"}
 NOT_CODED = {"kemadruma_bhanga_4": "all planets in kendras - covered by the Kamala nabhasa yoga",
              "kemadruma_bhanga_7": "full-Moon condition is contested; tithi is printed in the worksheet",
-             "mridanga": "needs a graded strength test for every planet",
-             "pravrajya_moon_saturn": "needs drekkana ownership and an 'aspected only by' test"}
+             "mridanga": "needs a graded strength test for every planet"
+             }
 
 
 def detect(v: View):
@@ -197,11 +197,57 @@ def detect(v: View):
     if S[L[7]] == DEBIL.get(L[7]) or c["planets"][L[7]].get("combust"): k7.append(f"7L {L[7]} debilitated or combust")
     if c["planets"]["Venus"].get("combust"): k7.append("Venus combust")
     if k7: add("kalatra_dosha", [L[7], "Venus"], "; ".join(k7))
-    if (H["Rahu"] == 5 and (aspects_sign("Mars", S["Mars"], S["Rahu"]) or S["Rahu"] in (1, 8))) or S[L[5]] == S["Rahu"]:
-        add("sarpa_shapa", ["Rahu", L[5]])
-    for nm, lon in (("Moon", v.lon["Moon"]), ("Lagna", c["lagna"]["lon"])):
-        x = lon % 120.0
-        if x < 3 + 1 / 3 or x > 120 - (3 + 1 / 3): add("gandanta_birth", [nm] if nm == "Moon" else [], f"{nm} within 3d20' of a water-fire junction")
+    # --- BPHS ch. 83 (curses shown by childlessness), translated from the Sanskrit on 12 Nov 2026
+    lag_occ = [p for p in v.s if H[p] == 1]
+    weak = lambda p: not v.strong(p) and (S[p] == DEBIL.get(p) or H[p] in DUSTHANA or c["planets"][p].get("combust"))
+    ss = []
+    if H["Rahu"] == 5 and (aspects_sign("Mars", S["Mars"], S["Rahu"]) or S["Rahu"] in (1, 8)):
+        ss.append("83.9: Rahu in the 5th aspected by Mars or in Mars's sign")
+    if S[L[5]] == S["Rahu"] and H["Saturn"] == 5 and touched_by("Saturn", "Moon"):
+        ss.append("83.10: 5th lord with Rahu, Saturn in the 5th joined or aspected by the Moon")
+    if S["Jupiter"] == S["Rahu"] and weak(L[5]) and l1 != "Mars" and S[l1] == S["Mars"]:
+        ss.append("83.11: Jupiter with Rahu, 5th lord weak, lagna lord with Mars")
+    if S["Jupiter"] == S["Mars"] and H["Rahu"] == 1 and H[L[5]] in DUSTHANA:
+        ss.append("83.12: Jupiter with Mars, Rahu in the lagna, 5th lord in a dusthana")
+    if ss: add("sarpa_shapa", ["Rahu", L[5]], "; ".join(ss))
+    ps = []
+    mal_in = lambda h: [m for m in M5 if H[m] == h]
+    if H["Sun"] == 5 and S["Sun"] == 7 and c["planets"]["Sun"]["D9"] in (10, 11) and mal_in(4) and mal_in(6):
+        ps.append("83.20: Sun debilitated in the 5th in Saturn's navamsa, malefics on both sides")
+    if L[5] == "Sun" and H["Sun"] in (5, 9) and any(S[m] == S["Sun"] for m in M5 if m != "Sun") and \
+       mal_in((H["Sun"] - 2) % 12 + 1) and mal_in(H["Sun"] % 12 + 1):
+        ps.append("83.21: Sun as 5th lord in a trine with a malefic and between malefics")
+    if S["Jupiter"] == 5 and L[5] != "Sun" and S[L[5]] == S["Sun"] and mal_in(5) and mal_in(1):
+        ps.append("83.22: Jupiter in Leo, 5th lord with the Sun, malefics in the 5th and the lagna")
+    if H[l1] == 5 and weak(l1) and L[5] != "Sun" and S[L[5]] == S["Sun"] and mal_in(5) and mal_in(1):
+        ps.append("83.23: weak lagna lord in the 5th, 5th lord with the Sun, malefics in the 5th and the lagna")
+    if {H["Sun"], H["Mars"], H["Saturn"]} <= {1, 5} and {H["Rahu"], H["Jupiter"]} <= {8, 12}:
+        ps.append("83.27: Sun, Mars, Saturn in the lagna and 5th; Rahu and Jupiter in the 8th and 12th")
+    if ps: add("pitru_dosha", ["Sun", L[5]], "Parashara's father's-curse combination - " + "; ".join(ps))
+    # --- BPHS 92.1-5 gandanta, widths from the text: nakshatra junction four nadis (taken as 2 ghatis each side of the
+    # junction = about 0d27' of Moon; the looser reading of 4 each side = 0d53' is reported as 'near'); lagna one ghati
+    # (taken as half a ghati = 3 degrees each side); Abhukta Mula = last 5 ghatis of Jyeshtha and first 8 of Mula.
+    xm = v.lon["Moon"] % 120.0; dm = min(xm, 120.0 - xm)
+    if dm <= 2 * 13.3333 / 60: add("gandanta_birth", ["Moon"], f"Moon {dm * 60:.0f}' from a water-fire junction (BPHS 92.3: within two ghatis)")
+    elif dm <= 4 * 13.3333 / 60: add("gandanta_birth", ["Moon"], f"Moon {dm * 60:.0f}' from a junction - near; inside only on the looser reading of four ghatis each side")
+    ml = v.lon["Moon"]
+    if 240 - 5 * 13.3333 / 60 <= ml < 240 + 8 * 13.3333 / 60:
+        add("gandanta_birth", ["Moon"], "Abhukta Mula (BPHS 92.5: last 5 ghatis of Jyeshtha, first 8 of Mula)")
+    xl = c["lagna"]["lon"] % 120.0; dl = min(xl, 120.0 - xl)
+    if dl <= 3.0: add("gandanta_birth", [], f"Lagna {dl:.1f} deg from a water-fire sign junction (BPHS 92.4: within about half a ghati)")
+    # --- BPHS 91.1: birth during a solar or lunar eclipse (approximate test: syzygy within 1 degree and the Sun close to a node)
+    el0 = (v.lon["Moon"] - v.lon["Sun"]) % 360.0
+    nd = min((v.lon["Sun"] - v.lon["Rahu"]) % 180.0, 180.0 - (v.lon["Sun"] - v.lon["Rahu"]) % 180.0)
+    if (min(el0, 360 - el0) < 1.0 and nd < 15.0) or (abs(el0 - 180.0) < 1.0 and nd < 10.0):
+        add("grahan", ["Sun", "Moon", "Rahu"], "birth at or very near an eclipse (BPHS 91.1) - confirm against an eclipse table")
+    # --- BPHS 79.7-8: Saturn's renunciation
+    msl = RASHI_LORD[moon - 1]
+    onlysat = [q for q in SEVEN if q != msl and touched_by(msl, q)]
+    if msl != "Saturn" and weak(msl) and onlysat == ["Saturn"]:
+        add("pravrajya_moon_saturn", [msl, "Saturn"], "79.7: weak lord of the Moon's sign aspected by Saturn alone")
+    d3, d9 = c["planets"]["Moon"].get("D3"), c["planets"]["Moon"]["D9"]
+    if d3 in (10, 11) and d9 in (10, 11, 1, 8) and aspects_sign("Saturn", S["Saturn"], moon):
+        add("pravrajya_moon_saturn", ["Moon", "Saturn"], "79.8: Moon in Saturn's drekkana and a navamsa of Saturn or Mars, aspected by Saturn")
     el = (v.lon["Moon"] - v.lon["Sun"]) % 360.0
     if el >= 336: add("amavasya_birth", ["Sun", "Moon"], "new-moon tithi" if el >= 348 else "14th tithi of the dark half")
     if H["Moon"] in DUSTHANA and any(aspects_sign(m, S[m], moon) for m in ("Mars", "Saturn", "Rahu", "Ketu")) and \

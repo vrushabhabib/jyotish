@@ -27,35 +27,35 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Strength:** Stronger when the planet is unafflicted, not combust, not in planetary war, strong in navamsa, and its dasha runs in working years. PROJECT CALIBRATION: when formed in the 7th from the Moon (esp. Ruchaka/Shasha) read it first as pressure on marriage, not as a blessing.
 - **Cancellation:** Texts give no formal bhanga; practice treats it as void/weak if the planet is combust, defeated in war, debilitated in navamsa, conjunct or closely aspected by malefics/Rahu-Ketu, or (Phaladeepika tradition) if Sun or Moon are both weak.
 - **Result:** Native bold, victorious, commander-like, fond of contest; scarred or ruddy body. BPHS adds region ruled and life span.
-- **Source:** BPHS ch. 75 vv.1-22 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par7180.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
+- **Source:** BPHS ch. 75 vv.1-22 (re-read in the Sanskrit 12 Nov 2026 - conditions corrected where needed in yogas.json and in kb/sources/bphs-verse-readings.md, which override this entry)
 
 ### Bhadra yoga  `bhadra`
 - **Condition:** Mercury in Gemini (own) or Virgo (own/exalted) AND Mercury in house 1/4/7/10 counted from Lagna. (Variant: Phaladeepika ch. 6 and later authors also allow the count from the Moon.)
 - **Strength:** Stronger when the planet is unafflicted, not combust, not in planetary war, strong in navamsa, and its dasha runs in working years. PROJECT CALIBRATION: when formed in the 7th from the Moon (esp. Ruchaka/Shasha) read it first as pressure on marriage, not as a blessing.
 - **Cancellation:** Texts give no formal bhanga; practice treats it as void/weak if the planet is combust, defeated in war, debilitated in navamsa, conjunct or closely aspected by malefics/Rahu-Ketu, or (Phaladeepika tradition) if Sun or Moon are both weak.
 - **Result:** Native learned, articulate, sattvic, long-lived, comfortable. BPHS adds region ruled and life span.
-- **Source:** BPHS ch. 75 vv.1-22 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par7180.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
+- **Source:** BPHS ch. 75 vv.1-22 (re-read in the Sanskrit 12 Nov 2026 - conditions corrected where needed in yogas.json and in kb/sources/bphs-verse-readings.md, which override this entry)
 
 ### Hamsa yoga  `hamsa`
 - **Condition:** Jupiter in Sagittarius, Pisces (own) or Cancer (exalted) AND Jupiter in house 1/4/7/10 counted from Lagna. (Variant: Phaladeepika ch. 6 and later authors also allow the count from the Moon.)
 - **Strength:** Stronger when the planet is unafflicted, not combust, not in planetary war, strong in navamsa, and its dasha runs in working years. PROJECT CALIBRATION: when formed in the 7th from the Moon (esp. Ruchaka/Shasha) read it first as pressure on marriage, not as a blessing.
 - **Cancellation:** Texts give no formal bhanga; practice treats it as void/weak if the planet is combust, defeated in war, debilitated in navamsa, conjunct or closely aspected by malefics/Rahu-Ketu, or (Phaladeepika tradition) if Sun or Moon are both weak.
 - **Result:** Native righteous, respected, handsome, teacher/adviser status. BPHS adds region ruled and life span.
-- **Source:** BPHS ch. 75 vv.1-22 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par7180.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
+- **Source:** BPHS ch. 75 vv.1-22 (re-read in the Sanskrit 12 Nov 2026 - conditions corrected where needed in yogas.json and in kb/sources/bphs-verse-readings.md, which override this entry)
 
 ### Malavya yoga  `malavya`
 - **Condition:** Venus in Taurus, Libra (own) or Pisces (exalted) AND Venus in house 1/4/7/10 counted from Lagna. (Variant: Phaladeepika ch. 6 and later authors also allow the count from the Moon.)
 - **Strength:** Stronger when the planet is unafflicted, not combust, not in planetary war, strong in navamsa, and its dasha runs in working years. PROJECT CALIBRATION: when formed in the 7th from the Moon (esp. Ruchaka/Shasha) read it first as pressure on marriage, not as a blessing.
 - **Cancellation:** Texts give no formal bhanga; practice treats it as void/weak if the planet is combust, defeated in war, debilitated in navamsa, conjunct or closely aspected by malefics/Rahu-Ketu, or (Phaladeepika tradition) if Sun or Moon are both weak.
 - **Result:** Native refined, attractive, learned, vehicles and comforts, happy spouse. BPHS adds region ruled and life span.
-- **Source:** BPHS ch. 75 vv.1-22 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par7180.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
+- **Source:** BPHS ch. 75 vv.1-22 (re-read in the Sanskrit 12 Nov 2026 - conditions corrected where needed in yogas.json and in kb/sources/bphs-verse-readings.md, which override this entry)
 
 ### Shasha (Sasa) yoga  `shasha`
 - **Condition:** Saturn in Capricorn, Aquarius (own) or Libra (exalted) AND Saturn in house 1/4/7/10 counted from Lagna. (Variant: Phaladeepika ch. 6 and later authors also allow the count from the Moon.)
 - **Strength:** Stronger when the planet is unafflicted, not combust, not in planetary war, strong in navamsa, and its dasha runs in working years. PROJECT CALIBRATION: when formed in the 7th from the Moon (esp. Ruchaka/Shasha) read it first as pressure on marriage, not as a blessing.
 - **Cancellation:** Texts give no formal bhanga; practice treats it as void/weak if the planet is combust, defeated in war, debilitated in navamsa, conjunct or closely aspected by malefics/Rahu-Ketu, or (Phaladeepika tradition) if Sun or Moon are both weak.
 - **Result:** Native authority over many, organiser, fond of wilds/solitude, takes what belongs to others. BPHS adds region ruled and life span.
-- **Source:** BPHS ch. 75 vv.1-22 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par7180.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
+- **Source:** BPHS ch. 75 vv.1-22 (re-read in the Sanskrit 12 Nov 2026 - conditions corrected where needed in yogas.json and in kb/sources/bphs-verse-readings.md, which override this entry)
 
 
 ## Raja yogas (17)
@@ -574,13 +574,13 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** Moon and Saturn in the same sign. Wider variants: Saturn aspecting the Moon (3rd/7th/10th aspect), or Moon in Saturn's nakshatra with Saturn in Moon's.
 - **Cancellation:** Mild when Moon is waxing/strong, in Taurus/Cancer, when Saturn is yogakaraka (Taurus/Libra lagna), or Jupiter aspects.
 - **Result:** Melancholy, emotional restraint, delayed comforts, distance from mother; also discipline and endurance. Classical texts read Moon-Saturn as a renunciation factor (BPHS 79 vv.6-8).
-- **Source:** Name 'Vish yoga' is modern/popular; Moon-Saturn pravrajya reading per BPHS ch. 79 vv.6-8 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par7180.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
+- **Source:** Name 'Vish yoga' is modern/popular; Moon-Saturn pravrajya reading per BPHS ch. 79 vv.6-8 (re-read in the Sanskrit 12 Nov 2026 - conditions corrected where needed in yogas.json and in kb/sources/bphs-verse-readings.md, which override this entry)
 
 ### Grahan (eclipse) dosha  `grahan`
 - **Condition:** Sun or Moon in the same sign as Rahu or Ketu. Strict form: within ~12-15 deg of the node, or birth during an actual solar/lunar eclipse.
 - **Cancellation:** Wide orb, luminary in own/exalted sign, Jupiter's aspect reduce it.
 - **Result:** Weakens what the luminary stands for (Sun: father, vitality, authority; Moon: mother, mind).
-- **Source:** Birth during eclipse and its shanti: BPHS ch. 91 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par9197.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified); the generic 'Grahan dosha' label is modern
+- **Source:** Birth during eclipse and its shanti: BPHS ch. 91 (re-read in the Sanskrit 12 Nov 2026 - conditions corrected where needed in yogas.json and in kb/sources/bphs-verse-readings.md, which override this entry); the generic 'Grahan dosha' label is modern
 
 ### Kaal Sarp (Kala Sarpa) yoga  `kaal_sarp`
 - **Condition:** All seven planets Sun..Saturn lie in the half of the zodiac going from Rahu to Ketu (zodiacal order), no planet in the other half. Strict form (B.V. Raman): Lagna must also be inside the same half. Compute by longitude, not only by sign.
@@ -804,13 +804,13 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** Rahu in house 5 aspected by Mars, or in Mars's sign; 5th lord with Rahu; Jupiter with Rahu and 5th lord weak; and similar combinations afflicting the 5th house, its lord and Jupiter (several variants).
 - **Cancellation:** Remedy prescribed, not a cancellation: Naga worship, charity (vv.17-19).
 - **Result:** Difficulty in having or keeping children.
-- **Source:** BPHS ch. 83 vv.9-19 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par8190.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
+- **Source:** BPHS ch. 83 vv.9-19 (re-read in the Sanskrit 12 Nov 2026 - conditions corrected where needed in yogas.json and in kb/sources/bphs-verse-readings.md, which override this entry)
 
 ### Pitru dosha / Pitru shapa  `pitru_dosha`
 - **Condition:** Classical (BPHS): Sun debilitated in house 5 hemmed/joined by malefics; Sun as 5th lord with malefics; 9th/5th lords and Sun afflicted by Saturn/Rahu etc. (several variants, all tied to progeny). Popular: Sun with Rahu/Ketu/Saturn, or 9th house/9th lord afflicted by Rahu/Saturn.
 - **Cancellation:** Benefic (Jupiter) aspect on Sun/9th; strong 9th lord. Remedy in text: shraddha at Gaya, feeding, charity (vv.31-33).
 - **Result:** Classical: obstruction to children due to father's/ancestors' displeasure. Popular: generic family obstacles.
-- **Source:** BPHS ch. 83 vv.20-33 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par8190.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
+- **Source:** BPHS ch. 83 vv.20-33 (re-read in the Sanskrit 12 Nov 2026 - conditions corrected where needed in yogas.json and in kb/sources/bphs-verse-readings.md, which override this entry)
 - **Note:** The popular definition is far wider than the classical one; flag which one fired.
 
 ### Kalatra dosha (7th-house affliction)  `kalatra_dosha`  [unverified]
@@ -831,13 +831,13 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** Moon (nakshatra gandanta) or Lagna (lagna gandanta) at the water-fire junctions: end of Revati/start of Ashwini (Pisces-Aries), end of Ashlesha/start of Magha (Cancer-Leo), end of Jyeshtha/start of Mula (Scorpio-Sagittarius). Abhukta Mula = last 6 ghatis of Jyeshtha + first 8 ghatis of Mula.
 - **Cancellation:** Shanti rites prescribed; in practice strength of Moon/Lagna lord and benefic aspect.
 - **Result:** Risk to child or a parent in early life per text; modern reading: a knot to be untied around the junction's themes.
-- **Source:** BPHS ch. 92-94 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par9197.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
+- **Source:** BPHS ch. 92-94 (re-read in the Sanskrit 12 Nov 2026 - conditions corrected where needed in yogas.json and in kb/sources/bphs-verse-readings.md, which override this entry)
 
 ### Amavasya / Krishna Chaturdashi birth  `amavasya_birth`
 - **Condition:** Birth on new-moon tithi (Sun-Moon within 12 deg, dark side) or on the 14th tithi of the dark fortnight (divided into six parts; first part harmless).
 - **Cancellation:** Shanti prescribed.
 - **Result:** Poverty or harm to a specified relative per the part of the tithi.
-- **Source:** BPHS ch. 86-87 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par8190.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
+- **Source:** BPHS ch. 86-87 (re-read in the Sanskrit 12 Nov 2026 - conditions corrected where needed in yogas.json and in kb/sources/bphs-verse-readings.md, which override this entry)
 
 ### Balarishta (infant affliction)  `balarishta`  [unverified]
 - **Condition:** Moon in house 6, 8 or 12 from Lagna aspected by malefics with no benefic aspect (several variants).
@@ -852,19 +852,19 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** Four or more planets (Sun..Saturn) strong and together in one sign/house. The strongest decides the order: Sun-tapasvi, Moon-kapali, Mars-red-robed, Mercury-staff-bearer, Jupiter-yati/teacher order, Venus-chakra-bearer/wanderer, Saturn-naked ascetic.
 - **Cancellation:** If the planets are combust the person only reveres the order without initiation (v.4); if the deciding planet is defeated in planetary war the person abandons it (v.10).
 - **Result:** Renunciation or a monastic/ascetic way of life; with raja yoga present, a founder/leader instead.
-- **Source:** BPHS ch. 79 vv.2-13 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par7180.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
+- **Source:** BPHS ch. 79 vv.2-13 (re-read in the Sanskrit 12 Nov 2026 - conditions corrected where needed in yogas.json and in kb/sources/bphs-verse-readings.md, which override this entry)
 
 ### Pravrajya (Moon-Saturn) yoga  `pravrajya_moon_saturn`
 - **Condition:** Lord of the Moon's sign is weak and aspected only by Saturn; OR Moon in a drekkana/navamsa of Saturn or Mars and aspected by Saturn.
 - **Cancellation:** Benefic aspect on the Moon; strong Moon-sign lord.
 - **Result:** Takes to Saturn's (austere) order; in modern life: withdrawal, austerity, late or no marriage.
-- **Source:** BPHS ch. 79 vv.6-8 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par7180.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
+- **Source:** BPHS ch. 79 vv.6-8 (re-read in the Sanskrit 12 Nov 2026 - conditions corrected where needed in yogas.json and in kb/sources/bphs-verse-readings.md, which override this entry)
 
 ### Pravrajya with raja yoga  `pravrajya_jupiter_9`
 - **Condition:** Jupiter in house 9 AND Lagna, Moon and Jupiter all aspected by Saturn; OR Saturn in house 9 unaspected.
 - **Cancellation:** None formal.
 - **Result:** Founder of a school/philosophy; or initiation before/instead of kingship. Without a raja yoga: a religious wanderer.
-- **Source:** BPHS ch. 79 vv.14-15 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par7180.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
+- **Source:** BPHS ch. 79 vv.14-15 (re-read in the Sanskrit 12 Nov 2026 - conditions corrected where needed in yogas.json and in kb/sources/bphs-verse-readings.md, which override this entry)
 
 ### Moksha indicator (Ketu in 12th)  `sanyasa_ketu_12`  [unverified]
 - **Condition:** Ketu in house 12 from Lagna or from the Karakamsa, esp. with/aspected by benefics.
@@ -1122,3 +1122,7 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 **Modern internet lore (keep, but label):** Kaal Sarp and its 12 names; Shrapit, Angaraka, Vish, Guru-Chandala and Grahan as named 'doshas'; the wide popular Pitru dosha; neecha bhanga by retrogression or by the planet's own kendra position; degree bands for Budha-Aditya; the long Mangal dosha exception lists.
 
 **Could not access:** P.V.R. Narasimha Rao's textbook PDF (vedicastrologer.org blocked from this environment), B.V. Raman's book text, K.N. Rao's own articles on Kaal Sarp, Saravali and Jataka Parijata primary text.
+
+## Corrections from the Sanskrit (12 Nov 2026)
+Fourteen entries citing Parashara chapters 75-92 were re-read in the Sanskrit. `yogas.json` carries the corrected conditions and `kb/sources/bphs-verse-readings.md` the verse readings; where this file differs, those two win. Corrected: serpent curse (needs Saturn in the 5th with the Moon, not just the 5th lord with Rahu), Pitru dosha (Parashara's version is narrow and about children; the common one is not his), gandanta (window about 0d27', not 3d20'), Saturn's renunciation (drekkana AND navamsa), eclipse birth (an actual eclipse), Vish yoga (not in Parashara at all).
+

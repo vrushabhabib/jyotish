@@ -170,7 +170,8 @@ def markdown(r, name="native"):
     w(f"\n**Manglik:** {m['verdict']}. Mars is in house {m['from']['lagna']['mars_house']} from lagna, {m['from']['moon']['mars_house']} from Moon, "
       f"{m['from']['venus']['mars_house']} from Venus. Classical cancellations: {'; '.join(m['cancellations_classical']) or 'none'}. Also claimed: {'; '.join(m['cancellations_claimed']) or 'none'}. Base rate: {m['base_rate']}.  ")
     w(f"**Kaal Sarp:** {'full - ' + ks['type'] if ks['full'] else 'partial (one planet outside: ' + ', '.join(ks['planets_outside']) + ')' if ks['partial'] else 'no'}.  ")
-    w(f"**Pitru indications:** {'; '.join(a['doshas']['pitru']) or 'none'}.\n")
+    w(f"**Pitru dosha, popular definition (NOT Parashara's; found in about 61% of charts, so almost no weight):** {'; '.join(a['doshas']['pitru']) or 'none'}. "
+      "Parashara's own father's-curse combinations (BPHS 83.20-27) are tested in section 8b under 'Pitru dosha'.\n")
     w("## 9. Strength\n")
     w("Sarvashtakavarga by house: " + ", ".join(f"H{h} {x}" for h, x in av["by_house"].items()) + ".  ")
     w("Checks: " + "; ".join(f"{t}: {'yes' if ok else 'NO'}" for t, ok in r["av_checks"]["checks"]) + ".  ")
