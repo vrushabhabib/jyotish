@@ -260,3 +260,6 @@ Cross-checks from sources read: maternal uncle = 6th (BPHS-32 v.23 uses the 6th 
 - "Sun in 10th = father" failed; it described the native's own authority (FAM-11).
 
 **Empirical tests:** none found for any family rule. Tempora's pages on the 3rd house and D12 (https://www.tempora.ltd/findings/3rd-house, https://www.tempora.ltd/findings/dwadasamsa-d12-chart) state openly that they report no calibration for these rules. Narlikar et al. 2009 (general test, astrologers at chance) is the only controlled Indian study read (https://thoughtnaction.antisuperstition.org/an-indian-test-of-indian-astrology/).
+
+## Significators of the parents by day and night (Phaladeepika 2.25, Sanskrit read 12 Nov 2026)
+For a day birth the Sun stands for the father and Venus for the mother; for a night birth Saturn stands for the father and the Moon for the mother. The other pair then stands for the father's brother and the mother's sister. Parashara's general statement is "the Sun is the father and the Moon the mother of all" (BPHS 9.43) and the 9th house is the father's (BPHS 7.39; Phaladeepika 1.14). Use the house first, then the significator that fits the time of birth.
