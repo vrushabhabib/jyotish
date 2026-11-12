@@ -15,7 +15,7 @@ Read at the start of every chat in the Claude project "Horoscope Reading And Ana
 3. Restore the engine (container resets between sessions):
    ```
    cd /home/claude && git clone https://github.com/vrushabhabib/jyotish.git && cd jyotish
-   pip install -q ephem pytest geonamescache --break-system-packages && python3 -m pytest -q tests   # 62 tests on 12 Nov 2026
+   pip install -q ephem pytest geonamescache --break-system-packages && python3 -m pytest -q tests   # 71 tests on 12 Nov 2026
    bash tools/install_swisseph.sh    # optional second engine
    ```
    Never write position code in the chat. A hand-rolled fallback on 20 Oct 2026 had a reference-frame bug that moved dasha dates by two months; the tests pin the engine to JPL Horizons.
@@ -56,5 +56,9 @@ The engine calculates and measures; the reader (Claude) interprets, asks and exp
 6. Reader: explanations in plain language, continuous prose, no jargon without a gloss; classical death, widowhood and childlessness wording is never passed on literally.
 
 ## 7. Roadmap
-Done 11-12 Nov 2026: two ephemeris engines validated against JPL; Shadbala, Ashtakavarga (standard and Sanskrit-recension tables), Jaimini karakas and arudhas, KP cusps, Bhava Chalit, Yogini, Chara and Ashtottari dashas, AstroSage PDF parser, transits, base rates, ledger, discriminating questions; **Parashara (97 chapters) and Phaladeepika (25 of 28) read in the Sanskrit and the rule files corrected to them**; `engine/classical.py` and `engine/rashmi.py` (twenty-point strength, special lagnas, rays, Sudarshana year, livelihood pointer, delivery timing, month triggers, birth-time conditions, Mantreshvara's transit triggers).
-Open: planetary states (BPHS 45.7-17), argala, leftover raja-yoga and poverty verses, Gulika; Narayana dasha; the same Sanskrit-first check for Jaimini, Brihat Jataka and Saravali; more dated events and forward-logged predictions - the only route to a proven hit rate.
+State on the evening of 12 Nov 2026:
+- **Sources read in the Sanskrit:** Parashara (all 97 chapters), Phaladeepika (26 of 28; two excluded by rule), Brihat Jataka (all 28), Jataka Parijata (ch. 1-2 and the cited verses). Notes in `kb/sources/`, analysis in `kb/sources/ANALYSIS.md`.
+- **Engine:** every rule found in those texts that the project is willing to use is computed and tested (71 tests, both ephemeris back-ends); the catalogue has 181 combinations and all are tested; `tools/build_catalogue.py` rebuilds the catalogue document from `kb/yogas/yogas.json`, which is the single source of truth.
+- **Shadbala:** quote the texts' ratio and rank (Sun needs 6.5 rupas); the AstroSage column is for cross-checking only.
+- **Not closable from a desk:** Jaimini's sutras and Saravali (no clean free Sanskrit text found); Jataka Parijata ch. 5-18; and the evidence itself - every reading must log its dated forward statements (`engine.ledger`) so that each rule earns its own hit rate. Until then the predictive side is unproven.
+- **Deliberately not computed:** the table in `kb/sources/ANALYSIS.md` section 9.

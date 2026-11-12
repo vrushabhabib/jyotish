@@ -67,6 +67,7 @@ Filler romance in unlinked sub-periods · 6th read only as illness · "first job
 
 
 ## 8. Method taken from the source texts (added 12 Nov 2026 - applies to every reading from now on)
+*Since the evening of 12 Nov 2026 every life-area file opens with a section 0, 'Verified rules - these win'. Read that section first; an older numbered rule that differs from it is the one in doubt.*
 Background and evidence: `kb/sources/ANALYSIS.md`. Where a line below conflicts with an older line in sections 3-4, this section wins.
 
 **Order of judgement for any matter (BPHS 7.39-43; Phaladeepika 15.1-7, 16.31-35)**
@@ -98,6 +99,12 @@ Background and evidence: `kb/sources/ANALYSIS.md`. Where a line below conflicts 
 | Direction of the spouse | Part 10 - only when both texts agree |
 | Birth-time conditions | answered if the family asks; named with the rite, never with the harm wording |
 | Special lagnas | only with a recorded birth time |
+| Shadbala rank | **quote the texts' columns** (Sun needs 6.5 rupas: BPHS 27.32-33, Jataka Parijata 2.40). The AstroSage column is only for cross-checking a supplied kundli. Where the rank changes under Parashara's own dignity scale, say the rank is not firm |
+| States and moods (BPHS 45) | Part 2 or the house concerned - mention only blazing, at ease, and the rare moods (ashamed, thirsty, agitated, proud). "Glad" and "hungry" are in most charts and are not remarked on. A planet listed as harming its house is one input, never a statement on its own |
+| Argala (BPHS 31) | the house under question - remark only when it has no unobstructed support, or support from benefics alone |
+| Gulika and the shadow points | low weight; mention Gulika's house only when all three computations agree, and never with harm wording |
+| Sudarshana table | Part 5 and Part 12 - a year is remarked on only when the lagna ring (or all three rings, when the condition is met) and the dasha say the same thing |
+| New raja-yoga and poverty lines in section 8b | by the "How common" column as always; "loss of money in a planet's own period" (42.13) is a timing note for that planet's dasha, never a description of the person |
 
 **Not stated to anyone, ever** - in addition to section 5: popular "Pitru dosha", "Vish yoga" and Kaal Sarp as if they were classical (they are not in the texts; if the person raises one, say so plainly); a significator in its own house as a fault by itself; any wording from the excluded chapters listed in `kb/sources/bphs/README.md`.
 

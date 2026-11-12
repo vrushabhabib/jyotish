@@ -2,6 +2,22 @@
 
 Tradition: Parashari base (BPHS), Lahiri ayanamsa, whole-sign houses. Houses counted from Lagna unless stated.
 
+## 0. Verified rules - these win over anything below that differs
+*(Moved to the top on 12 Nov 2026. Each rule below was read in the Sanskrit. Where an older numbered rule further down says something different, the older rule is the one in doubt.)*
+
+### Rules confirmed in the Sanskrit (read 12 Nov 2026; `kb/sources/bphs/ch41-45.md`, `ch71-80.md`, `kb/sources/phaladeepika/`)
+- **SRC-W1** The lords of the 9th and 5th give wealth, and so do the planets joined with them, in their own periods (BPHS 41.16). The two tables of BPHS 41.2-15 (5th house with the 11th; lagna in a planet's own sign) are in the engine as `dhana_5_11` and `dhana_lagna_own`.
+- **SRC-W2** 2nd lord in a chief house with benefics in the 2nd: family wealth and foresight (PD 16.5). A strong 2nd lord's period: family established, money by speech and livelihood; a weak one's: spending, unsettled family (PD 20.3, 20.15).
+- **SRC-W3** Poverty combinations are narrow and always involve the lagna lord in the 6th, 8th or 12th with a maraka's aspect, or the lords of the 5th and 9th in the 6th and 12th (BPHS 42.2-7). "Dhana yoga present" fires in most charts and is never offered as a distinction; a poverty combination is stated only as "care with money", with its verse.
+- **SRC-W4** Harsha, Sarala, Vimala - the lords of the 6th, 8th and 12th in the 6th, 8th or 12th - give comfort, firmness and saving (PD 6.63, 65, 69). Vimala in particular: "spends little, saves much".
+- **SRC-W5** Rays (BPHS 73): a scale of means "according to the family's standing"; remarked on only above 30 or below 12.
+- **SRC-W6** Ashtakavarga house comparisons as in career rule SRC-C8; the three-part table for which third of life carries the most (BPHS 72.9-10).
+- **SRC-W7** Gain and loss by house through the 11th and 12th lords (PD 16.29-30).
+
+- **SRC-W8** All benefics in upachaya houses (3, 6, 10, 11) from the lagna - very wealthy; from the Moon - wealthy; two of them - middling (Brihat Jataka 13.9; BPHS 37.6). About 8% of charts.
+- **SRC-W9** Parashara's remaining poverty combinations (42.8-11, 13-15) are now tested by the engine and printed in worksheet section 8b with how common each is. Two of them are so common they say nothing alone: 'joined with a 6th, 8th or 12th lord and unaspected by a trine lord' (68% of charts - a note for that planet's own period only) and 'lord of the Moon's navamsa with a maraka' (32%).
+- **SRC-W10** Rays (BPHS 73), the twenty-point strength of the 2nd and 11th lords (BPHS 7.17-27) and argala on the 2nd and 11th houses (BPHS 31.13-16: 'argala on the 2nd - wealth and grain; on the 11th - gains') are the three strength lines to read for means; each only at its extremes.
+
 ## Source keys (URL actually read)
 
 | Key | Source | URL |
@@ -267,13 +283,3 @@ Jaimini aspects (rasi drishti) are usually applied to AL work; BPHS-29 does not 
 - Daridra yogas need the maraka-lord link AND no trikona-lord relief before being stated; never tell a client "poverty" from one factor.
 
 **Empirical tests:** none found for any wealth rule. The one controlled Indian test read (Narlikar et al. 2009, *Current Science* 96(5); summary at https://thoughtnaction.antisuperstition.org/an-indian-test-of-indian-astrology/) found astrologers at chance on a different question. Score these rules against the project's own verified charts before trusting them.
-
-
-## Rules confirmed in the Sanskrit (read 12 Nov 2026; `kb/sources/bphs/ch41-45.md`, `ch71-80.md`, `kb/sources/phaladeepika/`)
-- **SRC-W1** The lords of the 9th and 5th give wealth, and so do the planets joined with them, in their own periods (BPHS 41.16). The two tables of BPHS 41.2-15 (5th house with the 11th; lagna in a planet's own sign) are in the engine as `dhana_5_11` and `dhana_lagna_own`.
-- **SRC-W2** 2nd lord in a chief house with benefics in the 2nd: family wealth and foresight (PD 16.5). A strong 2nd lord's period: family established, money by speech and livelihood; a weak one's: spending, unsettled family (PD 20.3, 20.15).
-- **SRC-W3** Poverty combinations are narrow and always involve the lagna lord in the 6th, 8th or 12th with a maraka's aspect, or the lords of the 5th and 9th in the 6th and 12th (BPHS 42.2-7). "Dhana yoga present" fires in most charts and is never offered as a distinction; a poverty combination is stated only as "care with money", with its verse.
-- **SRC-W4** Harsha, Sarala, Vimala - the lords of the 6th, 8th and 12th in the 6th, 8th or 12th - give comfort, firmness and saving (PD 6.63, 65, 69). Vimala in particular: "spends little, saves much".
-- **SRC-W5** Rays (BPHS 73): a scale of means "according to the family's standing"; remarked on only above 30 or below 12.
-- **SRC-W6** Ashtakavarga house comparisons as in career rule SRC-C8; the three-part table for which third of life carries the most (BPHS 72.9-10).
-- **SRC-W7** Gain and loss by house through the 11th and 12th lords (PD 16.29-30).

@@ -40,3 +40,11 @@
 
 ## What the text itself claims (BPHS 66.10-12, read in the Sanskrit 12 Nov 2026)
 Parashara, introducing Ashtakavarga: to settle the length of life and the course of life with certainty "neither Vasishtha nor Brihaspati is able - how much less men, and in the Kali age especially". The science has a general part and a particular part; the particular part is offered to narrow the judgement, not as certainty. The project states its confidence in the same spirit: evidence counts and a logged track record, never a guarantee.
+
+## Added 12 Nov 2026 (evening)
+| Source | Used for | Terms |
+|---|---|---|
+| sanskritdocuments.org `brihajjAtakam.itx` - Brihat Jataka of Varahamihira, Sanskrit | read in full; my translation in `kb/sources/brihat-jataka/` | volunteer e-text "for personal study and research"; the Sanskrit is not stored here |
+| sanskritdocuments.org `jAtakapArijAtaH.itx` - Jataka Parijata of Vaidyanatha, Sanskrit | ch. 1-2 and the cited verses; `kb/sources/jataka-parijata/` | same terms; the file is marked "needs proofreading" and has lost pages |
+
+Not available as a clean free Sanskrit text (searched 12 Nov 2026) and therefore not used as sources: **Jaimini's Upadesha Sutras** and **Saravali**. Rules once cited to them through secondary pages keep that tag. Narayana dasha is taught only in modern in-copyright books and is not adopted.

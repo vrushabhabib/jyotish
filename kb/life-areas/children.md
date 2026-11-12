@@ -5,6 +5,18 @@
 
 Scope: promise, delay, denial, adoption, medical assistance, Saptamsa (D7), Beeja and Kshetra sphuta, Santana tithi, number and sex of children, timing, male versus female chart, classical remedies.
 
+## 0. Verified rules - these win over anything below that differs
+*(Moved to the top on 12 Nov 2026. Each rule below was read in the Sanskrit. Where an older numbered rule further down says something different, the older rule is the one in doubt.)*
+
+### Rules confirmed in the Sanskrit of Phaladeepika ch. 12 (read 12 Nov 2026, `kb/sources/phaladeepika/ch10-12.md`)
+- **PD12-a** — 5th lord and Jupiter well placed from the lagna and from the Moon; 5th joined or aspected by lords of good houses and benefics; lagna lord and 5th lord joined, in mutual aspect or exchanged (12.1).
+- **PD12-b** — A malefic in its own sign in the 5th gives children (12.3). Scorpio, Taurus, Virgo and Leo on the 5th: fewer and later.
+- **PD12-c** — Fertility points: Jupiter + Moon + Mars in an even sign and navamsa (woman); Sun + Venus + Jupiter in an odd sign and navamsa (man) (12.14).
+- **PD12-d** — Timing by dasha: lagna lord, 7th lord, 5th lord, Jupiter, a planet in or aspecting the 5th (12.25, 27-28).
+- **PD12-e** — Timing by transit: Jupiter in the sign (or navamsa sign) of the 5th lord, or in a trine of the sign or navamsa of natal Jupiter or the 5th lord (12.25, 29); the lagna lord joining the 5th lord or reaching the 5th sign (12.26).
+- Mantreshvara's "others say" note on Jupiter in the 5th (15.26) is a minority view; it is not stated by itself.
+- Never stated to a client: sex or number of children, or that there will be none (12.2, 4-11, 13 are recorded and not used).
+
 ## How to read this file
 
 - Each rule has an ID, a machine-checkable condition, the stated result, the source, and a note.
@@ -105,8 +117,8 @@ Scope: promise, delay, denial, adoption, medical assistance, Saptamsa (D7), Beej
 ## F. Number and sex of children (all LOW reliability)
 
 - **NS-01** — Condition: count planets in the 5th and planets joined to the 5th lord; each in a friendly navamsa counts, those in debilitated or enemy navamsa are losses; repeat from Jupiter's sign. Result: number of children. Source: PD-12 v.13 (translation garbled at the URL read).
-- **NS-02** — Condition: number of navamsas elapsed by the 5th lord (or by Jupiter) in its sign = number of children, reduced for malefic aspects. Source: `[UNSOURCED]` common practice (attributed online to Jataka Parijata / Sarvartha Chintamani; not read).
-- **NS-03** — BPHS fixed counts: Jupiter at deep exaltation with karaka and benefics, 2nd lord with Rahu → ten sons; 9th lord in the 9th, Jupiter in the 5th, 5th lord strong → nine; 2nd lord in the 10th, Saturn in the 9th, 5th lord in the 5th → eight; 2nd lord and 5th lord in the 5th → seven, with twins; Jupiter and Saturn mutually 5th/9th → six, three surviving; malefic in the 5th or Saturn 5th from Jupiter → one. Source: BPHS-16 v.25-30. Note: literal counts belong to another era; use only as "more" versus "fewer".
+- **NS-02** — Condition: number of navamsas elapsed by the 5th lord (or by Jupiter) in its sign = number of children, reduced for malefic aspects. Source: `[UNSOURCED]` common practice (attributed online to Jataka Parijata / Sarvartha Chintamani; not read). **Checked 12 Nov 2026:** not found in any text read. In any case the project never states a number of children.
+- **NS-03** — BPHS fixed counts: Jupiter at deep exaltation with karaka and benefics, 2nd lord with Rahu → ten sons; 9th lord in the 9th, Jupiter in the 5th, 5th lord strong → nine; 2nd lord in the 10th, Saturn in the 9th, 5th lord in the 5th → eight; 2nd lord and 5th lord in the 5th → seven, with twins; Jupiter and Saturn mutually 5th/9th → six, three surviving; malefic in the 5th or Saturn 5th from Jupiter → one. Source: BPHS-16 v.25-30. Note: literal counts belong to another era; use only as "more" versus "fewer". **Checked 12 Nov 2026:** recorded as the text has it; never stated to a person (no count of children is ever given).
 - **NS-04** — Condition: 5th house (sign or navamsa) or 5th lord in a male sign/navamsa, or joined/aspected by male planets → sons; female sign/navamsa or female planets → daughters. Source: PD-12 v.11.
 - **NS-05** — Condition: 5th lord, Jupiter, Mars and Sun all in male navamsas. Result: many children. Source: PD-12 v.10.
 - **NS-06** — Condition: 5th lord conjunct the Moon or in the Moon's drekkana. Result: daughter(s). Source: BPHS-16 v.13.
@@ -122,7 +134,7 @@ Scope: promise, delay, denial, adoption, medical assistance, Saptamsa (D7), Beej
 - **CT-04** — Condition: sum the longitudes of lagna lord, 7th lord and 5th lord; the nakshatra of that point gives a dasha lord; birth in that planet's mahadasha, in the antardasha of the planet in, aspecting or owning the 5th. Source: PD-12 v.27 (method only partly legible in the translation read; the "sum of longitudes" reading is the usual one `[MEMORY]`).
 - **CT-05** — Condition: transiting lagna lord conjunct the natal 5th lord, or in its own or exaltation sign, or in the 5th house, or in the sign of the 5th lord. Result: month of conception or birth. Source: PD-12 v.26.
 - **CT-06** — Condition: sum the longitudes of the Moon's nakshatra lord and of the 5th lord from it [reading uncertain]; Jupiter transiting that sign or its trines. Result: birth. Source: PD-12 v.30. Note: unclear in translation; low priority.
-- **CT-07** (double transit) — Condition: transiting Jupiter AND Saturn both aspect or occupy the 5th house or the sign of the 5th lord (many versions accept the 9th as well), from lagna and from Moon, during a capable dasha (CT-01). Result: childbirth window, usually read as the year before or of the birth. Source: K.N. Rao, "Planets and Children" `[MEMORY]` — no page stating this rule for children could be read in this run; JH-2C mentions Jupiter and Saturn only informally. Treat as `[UNSOURCED]` until checked against the book. Note: same chance-rate caveat as for marriage: with 5th, 5th lord and 9th all allowed, from both lagna and Moon, a large share of years qualify.
+- **CT-07** (double transit) — Condition: transiting Jupiter AND Saturn both aspect or occupy the 5th house or the sign of the 5th lord (many versions accept the 9th as well), from lagna and from Moon, during a capable dasha (CT-01). Result: childbirth window, usually read as the year before or of the birth. Source: K.N. Rao, "Planets and Children" `[MEMORY]` — no page stating this rule for children could be read in this run; JH-2C mentions Jupiter and Saturn only informally. Treat as `[UNSOURCED]` until checked against the book. Note: same chance-rate caveat as for marriage: with 5th, 5th lord and 9th all allowed, from both lagna and Moon, a large share of years qualify. **Checked 12 Nov 2026:** not in the texts read; modern. The classical triggers are in section 0 (Phaladeepika 12.25-29).
 - **CT-08** (second and later children) — Condition: second child from the 7th (3rd from the 5th), third from the 9th; so the 7th lord's and then the 9th lord's periods apply. Result: timing of later children. Source: JH-2C; OJ-112. Note: one tradition gives the second child to the 9th (5th from the 5th). CONFLICT, same as D7-06.
 - **CT-09** — Condition (conception windows): man — Sun and Venus strong and transiting own signs/navamsas in an upachaya sign; woman — Mars and Moon so placed. Result: time when conception can occur. Source: PD-12 v.12. Note: Phaladeepika v.31-33 adds rules from the conception (adhana/nisheka) chart: Sun in the 3rd sign from nisheka lagna or trine to it; Moon's dwadasamsa at conception fixes the Moon sign at delivery. These need the conception time and are impractical.
 - **CT-10** — BPHS age rules: Jupiter in the 5th with its dispositor [5th lord] joined to Venus → child at 32-33; 5th lord in a kendra with Jupiter → 30 or 36; Jupiter in the 9th from lagna with Venus 9th from Jupiter, or lagna lord with Venus → 40. Source: BPHS-16 v.18-20. Note: all are late ages; these are delay signatures, not literal ages.
@@ -172,7 +184,7 @@ Scope: promise, delay, denial, adoption, medical assistance, Saptamsa (D7), Beej
 - Santana tithi formula: (5 × Moon) − Sun versus 5 × (Moon − Sun).
 - Which planets deny children in the Jaimini rule: Saturn/Moon/Mercury versus Saturn/Mercury/Venus; and the reference point (Upapada versus D7 lagna).
 - A malefic in the 5th: many sons (PD-12 v.3) versus one son (BPHS-16 v.30); 5th lord in the 5th: good (general rule) versus loss without benefic aspect (PD-12 v.9).
-- Jupiter in the 5th: karaka-in-house harm (PD-15 v.26) versus the popular "best placement".
+- Jupiter in the 5th: karaka-in-house harm versus the popular "best placement". Settled 12 Nov 2026: Parashara does not state the harm; Mantreshvara reports it as what "others say" (15.26); the only verses that assert it are Jataka Parijata 2.52 and 2.72, a late compilation. Treat Jupiter in the 5th by its dignity and aspects like any planet.
 
 ### Modern teaching or internet lore
 
@@ -198,13 +210,3 @@ Scope: promise, delay, denial, adoption, medical assistance, Saptamsa (D7), Beej
 - Jaimini Sutras 1.4 (upapada and children) in a named translation, to settle the Moon-versus-Venus reading in D7-08.
 - Phaladeepika ch. 12 v.13, v.27, v.30 in a clean translation (the online text is partly garbled).
 - Saravali and Jataka Parijata chapters on progeny (not read in this run).
-
-
-## Rules confirmed in the Sanskrit of Phaladeepika ch. 12 (read 12 Nov 2026, `kb/sources/phaladeepika/ch10-12.md`)
-- **PD12-a** — 5th lord and Jupiter well placed from the lagna and from the Moon; 5th joined or aspected by lords of good houses and benefics; lagna lord and 5th lord joined, in mutual aspect or exchanged (12.1).
-- **PD12-b** — A malefic in its own sign in the 5th gives children (12.3). Scorpio, Taurus, Virgo and Leo on the 5th: fewer and later.
-- **PD12-c** — Fertility points: Jupiter + Moon + Mars in an even sign and navamsa (woman); Sun + Venus + Jupiter in an odd sign and navamsa (man) (12.14).
-- **PD12-d** — Timing by dasha: lagna lord, 7th lord, 5th lord, Jupiter, a planet in or aspecting the 5th (12.25, 27-28).
-- **PD12-e** — Timing by transit: Jupiter in the sign (or navamsa sign) of the 5th lord, or in a trine of the sign or navamsa of natal Jupiter or the 5th lord (12.25, 29); the lagna lord joining the 5th lord or reaching the 5th sign (12.26).
-- Mantreshvara's "others say" note on Jupiter in the 5th (15.26) is a minority view; it is not stated by itself.
-- Never stated to a client: sex or number of children, or that there will be none (12.2, 4-11, 13 are recorded and not used).

@@ -226,11 +226,11 @@
  },
  "schema_version": 2,
  "computed": {
-  "schema_version": 3,
-  "generated": "2026-11-11",
+  "schema_version": 4,
+  "generated": "2026-11-12",
   "engine": {
-   "backend": "ephem",
-   "ayanamsa_lahiri": 24.212
+   "backend": "swisseph",
+   "ayanamsa_lahiri": 24.21204
   },
   "birth": {
    "date": "2025-05-29",
@@ -241,7 +241,7 @@
   },
   "lagna": {
    "rashi": "Kanya",
-   "deg": "28°41'35\"",
+   "deg": "28°41'36\"",
    "nakshatra": "Chitra",
    "d9": 6,
    "d10": 11,
@@ -261,7 +261,7 @@
    },
    "Moon": {
     "rashi": "Mithuna",
-    "deg": "22°43'58\"",
+    "deg": "22°43'54\"",
     "nakshatra": "Punarvasu",
     "pada": 1,
     "house": 10,
@@ -283,7 +283,7 @@
    },
    "Mercury": {
     "rashi": "Vrishabha",
-    "deg": "14°13'07\"",
+    "deg": "14°13'06\"",
     "nakshatra": "Rohini",
     "pada": 2,
     "house": 9,
@@ -294,7 +294,7 @@
    },
    "Jupiter": {
     "rashi": "Mithuna",
-    "deg": "3°19'11\"",
+    "deg": "3°19'12\"",
     "nakshatra": "Mrigashira",
     "pada": 3,
     "house": 10,
@@ -316,7 +316,7 @@
    },
    "Saturn": {
     "rashi": "Meena",
-    "deg": "6°07'56\"",
+    "deg": "6°07'55\"",
     "nakshatra": "Uttara Bhadrapada",
     "pada": 1,
     "house": 7,
@@ -327,7 +327,7 @@
    },
    "Rahu": {
     "rashi": "Kumbha",
-    "deg": "29°24'01\"",
+    "deg": "29°24'02\"",
     "nakshatra": "Purva Bhadrapada",
     "pada": 3,
     "house": 6,
@@ -338,7 +338,7 @@
    },
    "Ketu": {
     "rashi": "Simha",
-    "deg": "29°24'01\"",
+    "deg": "29°24'02\"",
     "nakshatra": "Uttara Phalguni",
     "pada": 1,
     "house": 12,
@@ -452,6 +452,8 @@
      "Saturn in 1/4/7/8/12 (equivalent affliction, used in matching)"
     ],
     "base_rate": "about 50% of charts from lagna, 75% from lagna or Moon - weak evidence alone",
+    "matching_note": "BPHS 80.49: the combination is broken when both partners have it (classical; apply in matching)",
+    "source": "BPHS 80.47 read in Sanskrit 12 Nov 2026: Mars in 1, 12, 4, 7 or 8 without a benefic's aspect or conjunction",
     "verdict": "present; only later-list mitigations apply"
    },
    "kaal_sarp": {
@@ -468,47 +470,47 @@
     {
      "lord": "Jupiter",
      "start": "2025-05-29",
-     "end": "2038-02-16"
+     "end": "2038-02-17"
     },
     {
      "lord": "Saturn",
-     "start": "2038-02-16",
-     "end": "2057-02-16"
+     "start": "2038-02-17",
+     "end": "2057-02-17"
     },
     {
      "lord": "Mercury",
-     "start": "2057-02-16",
-     "end": "2074-02-16"
+     "start": "2057-02-17",
+     "end": "2074-02-17"
     },
     {
      "lord": "Ketu",
-     "start": "2074-02-16",
-     "end": "2081-02-16"
+     "start": "2074-02-17",
+     "end": "2081-02-17"
     },
     {
      "lord": "Venus",
-     "start": "2081-02-16",
-     "end": "2101-02-17"
+     "start": "2081-02-17",
+     "end": "2101-02-18"
     },
     {
      "lord": "Sun",
-     "start": "2101-02-17",
+     "start": "2101-02-18",
      "end": "2107-02-18"
     },
     {
      "lord": "Moon",
      "start": "2107-02-18",
-     "end": "2117-02-17"
+     "end": "2117-02-18"
     },
     {
      "lord": "Mars",
-     "start": "2117-02-17",
+     "start": "2117-02-18",
      "end": "2124-02-18"
     },
     {
      "lord": "Rahu",
      "start": "2124-02-18",
-     "end": "2142-02-17"
+     "end": "2142-02-18"
     }
    ],
    "antar_current_and_next": [
@@ -558,30 +560,30 @@
      "md": "Jupiter",
      "ad": "Rahu",
      "start": "2035-09-24",
-     "end": "2038-02-16"
+     "end": "2038-02-17"
     },
     {
      "md": "Saturn",
      "ad": "Saturn",
-     "start": "2038-02-16",
-     "end": "2041-02-19"
+     "start": "2038-02-17",
+     "end": "2041-02-20"
     },
     {
      "md": "Saturn",
      "ad": "Mercury",
-     "start": "2041-02-19",
-     "end": "2043-10-30"
+     "start": "2041-02-20",
+     "end": "2043-10-31"
     },
     {
      "md": "Saturn",
      "ad": "Ketu",
-     "start": "2043-10-30",
-     "end": "2044-12-08"
+     "start": "2043-10-31",
+     "end": "2044-12-09"
     },
     {
      "md": "Saturn",
      "ad": "Venus",
-     "start": "2044-12-08",
+     "start": "2044-12-09",
      "end": "2048-02-08"
     },
     {
@@ -594,12 +596,12 @@
      "md": "Saturn",
      "ad": "Moon",
      "start": "2049-01-20",
-     "end": "2050-08-21"
+     "end": "2050-08-22"
     },
     {
      "md": "Saturn",
      "ad": "Mars",
-     "start": "2050-08-21",
+     "start": "2050-08-22",
      "end": "2051-09-30"
     },
     {
@@ -612,12 +614,12 @@
      "md": "Saturn",
      "ad": "Jupiter",
      "start": "2054-08-06",
-     "end": "2057-02-16"
+     "end": "2057-02-17"
     },
     {
      "md": "Mercury",
      "ad": "Mercury",
-     "start": "2057-02-16",
+     "start": "2057-02-17",
      "end": "2059-07-16"
     },
     {
@@ -636,12 +638,12 @@
      "md": "Mercury",
      "ad": "Sun",
      "start": "2063-05-13",
-     "end": "2064-03-18"
+     "end": "2064-03-19"
     },
     {
      "md": "Mercury",
      "ad": "Moon",
-     "start": "2064-03-18",
+     "start": "2064-03-19",
      "end": "2065-08-18"
     },
     {
@@ -654,19 +656,19 @@
      "md": "Mercury",
      "ad": "Rahu",
      "start": "2066-08-15",
-     "end": "2069-03-03"
+     "end": "2069-03-04"
     },
     {
      "md": "Mercury",
      "ad": "Jupiter",
-     "start": "2069-03-03",
-     "end": "2071-06-09"
+     "start": "2069-03-04",
+     "end": "2071-06-10"
     },
     {
      "md": "Mercury",
      "ad": "Saturn",
-     "start": "2071-06-09",
-     "end": "2074-02-16"
+     "start": "2071-06-10",
+     "end": "2074-02-17"
     }
    ]
   },
@@ -705,12 +707,12 @@
     "yogini": "Ulka",
     "lord": "Saturn",
     "start": "2038-12-31",
-    "end": "2044-12-30"
+    "end": "2044-12-31"
    },
    {
     "yogini": "Siddha",
     "lord": "Venus",
-    "start": "2044-12-30",
+    "start": "2044-12-31",
     "end": "2051-12-31"
    },
    {
@@ -723,12 +725,12 @@
     "yogini": "Mangala",
     "lord": "Moon",
     "start": "2059-12-31",
-    "end": "2060-12-30"
+    "end": "2060-12-31"
    },
    {
     "yogini": "Pingala",
     "lord": "Sun",
-    "start": "2060-12-30",
+    "start": "2060-12-31",
     "end": "2062-12-31"
    },
    {
@@ -905,38 +907,188 @@
    "Sun": {
     "rupas": 8.16,
     "ratio": 1.63,
-    "rank": 1
+    "rank": 1,
+    "ratio_text": 1.25,
+    "rank_text": 5
    },
    "Moon": {
     "rupas": 5.88,
     "ratio": 0.98,
-    "rank": 6
+    "rank": 6,
+    "ratio_text": 0.98,
+    "rank_text": 6
    },
    "Mars": {
     "rupas": 6.84,
     "ratio": 1.37,
-    "rank": 3
+    "rank": 3,
+    "ratio_text": 1.37,
+    "rank_text": 2
    },
    "Mercury": {
     "rupas": 6.25,
     "ratio": 0.89,
-    "rank": 7
+    "rank": 7,
+    "ratio_text": 0.89,
+    "rank_text": 7
    },
    "Jupiter": {
     "rupas": 8.39,
     "ratio": 1.29,
-    "rank": 5
+    "rank": 5,
+    "ratio_text": 1.29,
+    "rank_text": 4
    },
    "Venus": {
     "rupas": 8.29,
     "ratio": 1.51,
-    "rank": 2
+    "rank": 2,
+    "ratio_text": 1.51,
+    "rank_text": 1
    },
    "Saturn": {
     "rupas": 6.71,
     "ratio": 1.34,
-    "rank": 4
+    "rank": 4,
+    "ratio_text": 1.34,
+    "rank_text": 3
    }
+  },
+  "shadbala_note": "ratio_text / rank_text use the Sun's required 6.5 rupas of BPHS 27.32-33 and Jataka Parijata 2.40; ratio / rank are as AstroSage prints them",
+  "classical": {
+   "vimshopaka": {
+    "Sun": 11.8,
+    "Moon": 13.2,
+    "Mars": 12.6,
+    "Mercury": 17.2,
+    "Jupiter": 13.9,
+    "Venus": 13.6,
+    "Saturn": 14.0
+   },
+   "rays_total": 29.6,
+   "special_lagnas": {
+    "bhava_lagna": "Tula",
+    "hora_lagna": "Meena",
+    "ghati_lagna": "Karka"
+   },
+   "states": {
+    "Sun": [
+     "poor (neutral sign)"
+    ],
+    "Moon": [
+     "glad (great friend's sign)"
+    ],
+    "Mars": [
+     "glad (great friend's sign)"
+    ],
+    "Mercury": [
+     "glad (great friend's sign)",
+     "angry (with the Sun)"
+    ],
+    "Jupiter": [
+     "poor (neutral sign)"
+    ],
+    "Venus": [
+     "blazing (exalted)",
+     "crippled (with a malefic)"
+    ],
+    "Saturn": [
+     "calm (friend's sign)"
+    ]
+   },
+   "moods": {
+    "Sun": [
+     "hungry"
+    ],
+    "Moon": [
+     "glad"
+    ],
+    "Mars": [
+     "glad"
+    ],
+    "Mercury": [
+     "glad"
+    ],
+    "Jupiter": [
+     "hungry",
+     "glad"
+    ],
+    "Venus": [
+     "proud",
+     "hungry",
+     "glad"
+    ],
+    "Saturn": [
+     "glad"
+    ]
+   },
+   "argala_unobstructed": {
+    "1": [
+     "Mars"
+    ],
+    "2": [
+     "Ketu"
+    ],
+    "3": [
+     "Venus",
+     "Saturn"
+    ],
+    "4": [
+     "Venus",
+     "Saturn"
+    ],
+    "5": [
+     "Rahu",
+     "Sun",
+     "Mercury"
+    ],
+    "6": [
+     "Venus",
+     "Saturn",
+     "Sun",
+     "Mercury",
+     "Moon",
+     "Jupiter"
+    ],
+    "7": [
+     "Moon",
+     "Jupiter",
+     "Mars"
+    ],
+    "8": [
+     "Mars",
+     "Ketu"
+    ],
+    "9": [
+     "Moon",
+     "Jupiter",
+     "Venus",
+     "Saturn"
+    ],
+    "10": [],
+    "11": [
+     "Sun",
+     "Mercury"
+    ],
+    "12": [
+     "Moon",
+     "Jupiter"
+    ]
+   },
+   "gulika": {
+    "parashara_start": "Karka",
+    "parashara_end": "Karka",
+    "mandi_phaladeepika": "Karka"
+   },
+   "spouse_direction": {
+    "parashara": "south",
+    "mantreshvara": [
+     "north",
+     "west"
+    ],
+    "both": null
+   },
+   "birth_conditions": []
   }
  }
 }

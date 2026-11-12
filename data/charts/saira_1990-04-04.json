@@ -76,11 +76,11 @@
  "post_hoc_not_scored": "School stopped at 4th grade (~1999-2000) = Mer-Ket AD (1999-2000) with transit Saturn over 5L Mercury in 12th (Apr 1998 - Jun 2000)",
  "rectification": "CORRECTED 11 Nov 2026. Venus MD starts 5 Jul 2021 (09:00), 25 Apr 2021 (09:15), 14 Feb 2021 (09:30), 25 Sep 2020 (10:00). Ven-Sun starts 4 Nov 2024 (09:00), 25 Aug 2024 (09:15), 15 Jun 2024 (09:30), 25 Jan 2024 (10:00). Vehicle bought Jun 2024 falls in Ven-Sun only for birth at or after about 09:30. Rule 8 applies: this is an after-the-fact fit, not proof.",
  "computed": {
-  "schema_version": 3,
+  "schema_version": 4,
   "generated": "2026-11-12",
   "engine": {
-   "backend": "ephem",
-   "ayanamsa_lahiri": 23.72093
+   "backend": "swisseph",
+   "ayanamsa_lahiri": 23.72097
   },
   "birth": {
    "date": "1990-04-04",
@@ -91,7 +91,7 @@
   },
   "lagna": {
    "rashi": "Vrishabha",
-   "deg": "11°42'44\"",
+   "deg": "11°42'58\"",
    "nakshatra": "Rohini",
    "d9": 1,
    "d10": 1,
@@ -111,7 +111,7 @@
    },
    "Moon": {
     "rashi": "Karka",
-    "deg": "11°50'55\"",
+    "deg": "11°50'56\"",
     "nakshatra": "Pushya",
     "pada": 3,
     "house": 3,
@@ -122,7 +122,7 @@
    },
    "Mars": {
     "rashi": "Makara",
-    "deg": "23°45'19\"",
+    "deg": "23°45'20\"",
     "nakshatra": "Dhanishta",
     "pada": 1,
     "house": 9,
@@ -144,7 +144,7 @@
    },
    "Jupiter": {
     "rashi": "Mithuna",
-    "deg": "9°23'11\"",
+    "deg": "9°23'10\"",
     "nakshatra": "Ardra",
     "pada": 1,
     "house": 2,
@@ -155,7 +155,7 @@
    },
    "Venus": {
     "rashi": "Kumbha",
-    "deg": "4°00'57\"",
+    "deg": "4°00'58\"",
     "nakshatra": "Dhanishta",
     "pada": 4,
     "house": 10,
@@ -166,7 +166,7 @@
    },
    "Saturn": {
     "rashi": "Makara",
-    "deg": "0°51'01\"",
+    "deg": "0°51'02\"",
     "nakshatra": "Uttara Ashadha",
     "pada": 2,
     "house": 9,
@@ -177,7 +177,7 @@
    },
    "Rahu": {
     "rashi": "Makara",
-    "deg": "19°48'13\"",
+    "deg": "19°48'25\"",
     "nakshatra": "Shravana",
     "pada": 3,
     "house": 9,
@@ -188,7 +188,7 @@
    },
    "Ketu": {
     "rashi": "Karka",
-    "deg": "19°48'13\"",
+    "deg": "19°48'25\"",
     "nakshatra": "Ashlesha",
     "pada": 1,
     "house": 3,
@@ -311,6 +311,8 @@
      "native past 28 (one source; another calls it a myth)"
     ],
     "base_rate": "about 50% of charts from lagna, 75% from lagna or Moon - weak evidence alone",
+    "matching_note": "BPHS 80.49: the combination is broken when both partners have it (classical; apply in matching)",
+    "source": "BPHS 80.47 read in Sanskrit 12 Nov 2026: Mars in 1, 12, 4, 7 or 8 without a benefic's aspect or conjunction",
     "verdict": "present but cancelled (classical ground)"
    },
    "kaal_sarp": {
@@ -457,18 +459,18 @@
      "md": "Sun",
      "ad": "Jupiter",
      "start": "2043-03-04",
-     "end": "2043-12-22"
+     "end": "2043-12-21"
     },
     {
      "md": "Sun",
      "ad": "Saturn",
-     "start": "2043-12-22",
-     "end": "2044-12-03"
+     "start": "2043-12-21",
+     "end": "2044-12-02"
     },
     {
      "md": "Sun",
      "ad": "Mercury",
-     "start": "2044-12-03",
+     "start": "2044-12-02",
      "end": "2045-10-09"
     },
     {
@@ -721,38 +723,189 @@
    "Sun": {
     "rupas": 8.35,
     "ratio": 1.67,
-    "rank": 1
+    "rank": 1,
+    "ratio_text": 1.29,
+    "rank_text": 3
    },
    "Moon": {
     "rupas": 6.25,
     "ratio": 1.04,
-    "rank": 7
+    "rank": 7,
+    "ratio_text": 1.04,
+    "rank_text": 7
    },
    "Mars": {
     "rupas": 5.69,
     "ratio": 1.14,
-    "rank": 6
+    "rank": 6,
+    "ratio_text": 1.14,
+    "rank_text": 6
    },
    "Mercury": {
     "rupas": 8.56,
     "ratio": 1.22,
-    "rank": 5
+    "rank": 5,
+    "ratio_text": 1.22,
+    "rank_text": 5
    },
    "Jupiter": {
     "rupas": 9.95,
     "ratio": 1.53,
-    "rank": 2
+    "rank": 2,
+    "ratio_text": 1.53,
+    "rank_text": 1
    },
    "Venus": {
     "rupas": 7.06,
     "ratio": 1.28,
-    "rank": 4
+    "rank": 4,
+    "ratio_text": 1.28,
+    "rank_text": 4
    },
    "Saturn": {
     "rupas": 6.59,
     "ratio": 1.32,
-    "rank": 3
+    "rank": 3,
+    "ratio_text": 1.32,
+    "rank_text": 2
    }
+  },
+  "shadbala_note": "ratio_text / rank_text use the Sun's required 6.5 rupas of BPHS 27.32-33 and Jataka Parijata 2.40; ratio / rank are as AstroSage prints them",
+  "classical": {
+   "vimshopaka": {
+    "Sun": 13.1,
+    "Moon": 13.4,
+    "Mars": 12.7,
+    "Mercury": 15.6,
+    "Jupiter": 13.6,
+    "Venus": 17.0,
+    "Saturn": 15.7
+   },
+   "rays_total": 34.6,
+   "special_lagnas": {
+    "bhava_lagna": "Vrishabha",
+    "hora_lagna": "Mithuna",
+    "ghati_lagna": "Vrishchika"
+   },
+   "states": {
+    "Sun": [
+     "glad (great friend's sign)"
+    ],
+    "Moon": [
+     "at ease (own sign)",
+     "crippled (with a malefic)"
+    ],
+    "Mars": [
+     "blazing (exalted)",
+     "crippled (with a malefic)",
+     "wicked (in a malefic's sign)"
+    ],
+    "Mercury": [
+     "calm (friend's sign)",
+     "wicked (in a malefic's sign)"
+    ],
+    "Jupiter": [
+     "poor (neutral sign)"
+    ],
+    "Venus": [
+     "glad (great friend's sign)",
+     "wicked (in a malefic's sign)"
+    ],
+    "Saturn": [
+     "at ease (own sign)",
+     "crippled (with a malefic)"
+    ]
+   },
+   "moods": {
+    "Sun": [
+     "hungry",
+     "thirsty",
+     "glad"
+    ],
+    "Moon": [],
+    "Mars": [
+     "proud",
+     "hungry",
+     "glad"
+    ],
+    "Mercury": [],
+    "Jupiter": [
+     "hungry"
+    ],
+    "Venus": [
+     "glad"
+    ],
+    "Saturn": [
+     "hungry"
+    ]
+   },
+   "argala_unobstructed": {
+    "1": [],
+    "2": [
+     "Moon",
+     "Ketu",
+     "Mercury"
+    ],
+    "3": [],
+    "4": [
+     "Jupiter"
+    ],
+    "5": [
+     "Moon",
+     "Ketu",
+     "Mars",
+     "Saturn",
+     "Rahu"
+    ],
+    "6": [
+     "Mars",
+     "Saturn",
+     "Rahu"
+    ],
+    "7": [
+     "Venus",
+     "Mars",
+     "Saturn",
+     "Rahu"
+    ],
+    "8": [
+     "Mars",
+     "Saturn",
+     "Rahu",
+     "Sun",
+     "Mercury"
+    ],
+    "9": [
+     "Venus",
+     "Mercury"
+    ],
+    "10": [
+     "Jupiter"
+    ],
+    "11": [
+     "Jupiter",
+     "Mars",
+     "Saturn",
+     "Rahu",
+     "Moon",
+     "Ketu"
+    ],
+    "12": []
+   },
+   "gulika": {
+    "parashara_start": "Mithuna",
+    "parashara_end": "Mithuna",
+    "mandi_phaladeepika": "Mithuna"
+   },
+   "spouse_direction": {
+    "parashara": "east",
+    "mantreshvara": [
+     "south",
+     "west"
+    ],
+    "both": null
+   },
+   "birth_conditions": []
   }
  },
  "corrections": [

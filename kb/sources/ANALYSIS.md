@@ -1,12 +1,15 @@
-# The two source texts read as a whole — what they say, where they differ, what it changed (12 Nov 2026)
+# The source texts read as a whole — what they say, where they differ, what it changed (12 Nov 2026)
 
-This is the analysis asked for after the full reading: the whole dataset looked at together, not chapter by chapter. Every statement below points to a verse recorded in `kb/sources/bphs/` or `kb/sources/phaladeepika/`. Nothing here rests on a secondary website or on memory of a translation.
+This is the analysis asked for after the full reading: the whole dataset looked at together, not chapter by chapter. Every statement below points to a verse recorded in `kb/sources/bphs/`, `kb/sources/phaladeepika/`, `kb/sources/brihat-jataka/` or `kb/sources/jataka-parijata/`. Nothing here rests on a secondary website or on memory of a translation.
 
 ## 1. What was read
 | Text | Extent | Status |
 |---|---|---|
 | Brihat Parashara Hora Shastra (Sanskrit, sanskritdocuments.org) | 97 chapters, eleven files | **all read**, recorded verse by verse |
-| Phaladeepika of Mantreshvara (Sanskrit, same site) | 28 chapters, about 870 verses | 20 chapters read in full; the 81 sub-periods, sub-sub-periods, Kalachakra and shadow-point chapters (20 part, 21, 22, 25) not yet read in detail; length of life and death (13, 17) excluded by rule |
+| Phaladeepika of Mantreshvara (Sanskrit, same site) | 28 chapters, about 870 verses | **26 chapters read in full**, including the coded verses of ch. 22 and 25, decoded; length of life and death (13, 17) excluded by rule |
+| Brihat Jataka of Varahamihira (Sanskrit, same site) | 28 chapters, 407 verses | **all read** (added the same evening) |
+| Jataka Parijata of Vaidyanatha (Sanskrit, same site; marked "needs proofreading") | 18 chapters | ch. 1-2 read in full; ch. 3-4 read, not used; every verse the knowledge base cited was located and read; the rest keyword-searched only |
+| Jaimini's sutras; Saravali of Kalyanavarman | - | **no clean, free Sanskrit e-text was found** (searched 12 Nov 2026: the usual free library, Sanskrit Wikisource, GRETIL listings). By the project's source rule they are not used. Every "Jaimini" tool the project uses - movable significators, arudhas, Upapada, Karakamsa, sign aspects, argala, Chara dasha - is taught in Parashara's own chapters 8, 29-33, 46 and 50, which were read. Lines that cited Saravali through a secondary page keep that tag and stay low confidence |
 
 Limits of this reading, stated once: it is my own translation of a volunteer-typed e-text, made in one long pass; number-words and long ornate verses are where an error is most likely, and such places are marked [?] in the files. It is not a critical edition.
 
@@ -35,7 +38,14 @@ The project's working rules - verify first, count evidence, log predictions, nev
 | Combined Ashtakavarga threshold | above 30 good, 25-30 middling (72.3) | 28 the dividing line (23.20); also 30 / 25 (24.37) | print the number with both readings |
 | Rahu's favourable signs | three lists (55.1; 57.68; 58.47) | Virgo, Pisces, Scorpio (19.16) | only Virgo is in all five lists; not used as a rule |
 | Shrinatha, Kahala, Parvata, Lakshmi yogas | one set of definitions (ch. 36) | different definitions under the same names (6.21, 28, 35) | engine follows Parashara; catalogue notes the variant |
-| "Significator in its own house harms it" | not stated as a rule | reported as what "others say" (15.26) | minority view, never stated alone |
+| "Significator in its own house harms it" | not stated as a rule | reported as what "others say" (15.26) | minority view, never stated alone. Its only verses are in the 15th-century Jataka Parijata (2.52, 2.72), and those two lists disagree with each other |
+| Required strength of the Sun (Shadbala) | 390 = 6.5 rupas (27.32-33); Jataka Parijata 2.40 the same | - | **texts' figure used for ratio and rank; Raman's and AstroSage's 5.0 shown beside it for cross-checking only** |
+| Ashtakavarga tables | three cells differ from the usual table (66.16-60) | - | the usual table is **Varahamihira's** (Brihat Jataka 9.1-7, all seven tables checked cell by cell); default stays Varahamihira, Parashara's is `variant="bphs"` |
+| States of a planet | nine states and six moods (45.7-17) | - | Jataka Parijata 2.16-18 has a different list of ten; the worksheet prints Parashara's |
+| Trine-sign portions | Jupiter 10°, Venus 15°, Mercury 15-20° (3.51-54) | Venus 0-5° (1.7) | Jataka Parijata 1.26-28: 20° for Sun, Venus, Saturn, Jupiter; Mercury 15-25°. Three texts, three lists - a dignity that rests on this boundary alone is not firm |
+| Gulika | the sign rising in Saturn's eighth of the day; start or end not said (3.66-70) | fixed ghatis that fall just before the end (25.2) | both printed; "uncertain" stated when they give different signs |
+| Share of result in an enemy's sign | nothing (3.59-60) | - | Varahamihira 20.11: "little"; same scale, one step apart |
+| Dasha system | Vimshottari "the chief" (46.3, 46.14) | Vimshottari (ch. 19-21) | Varahamihira does not teach it at all (ch. 8: life-span dasha and a natural dasha). Vimshottari rests on Parashara and Mantreshvara |
 | Which aspects count | all special aspects with graded strength (ch. 26) | "the 7th aspect alone is the chief one" (4.9) | Parashara's special aspects are kept; Mantreshvara's caution is noted beside them |
 | Friendship used for results | five-fold combined friendship (3.57-58) | "natural friendship alone is the proper measure" (4.10) | the engine's strength arithmetic uses the five-fold table; Mantreshvara's preference is noted |
 
@@ -57,6 +67,11 @@ The project's working rules - verify first, count evidence, log predictions, nev
 | "Sade Sati" as a named 7½-year period | the name does not occur; Saturn in the 12th, 1st and 2nd from the Moon are each given hard results among the other places (PD 26.22-23, 33) |
 | Cancellation of debilitation when the two lords are "in kendras from each other" | "both or one of them in a kendra" (PD 7.30) |
 | Cancellation when the debilitated planet itself is in a kendra | not in PD 7.26-30 |
+| Cancellation by "the planet exalted in that sign in a kendra", "exchange with the dispositor", "aspect of another debilitated planet" | none found in Parashara, Varahamihira, Mantreshvara or Jataka Parijata ch. 7; modern list items |
+| "Debilitated but exalted in navamsa" as a full cancellation | Jataka Parijata 7.30 speaks of two to four debilitated planets together in good divisions; the single-planet form is an extension |
+| Kemadruma cancelled by a full Moon, or by all planets in kendras | no verse found; the texts' cancellations are a planet in a kendra or with the Moon (Brihat Jataka 13.3) and Jupiter's aspect on the Moon (Jataka Parijata 7.80-81) |
+| Vasumati yoga "from the Moon; from the lagna is a modern variant" | Varahamihira 13.9 gives both, and the lagna form is the stronger |
+| The eleven-column table of "fatal degrees", attributed to Jataka Parijata | that text has one list, for the Moon only (1.57), and it is not the table's Moon column |
 | Shakata = Jupiter in the 6th, 8th or 12th from the Moon | the Moon in the 6th, 8th or 12th from Jupiter; not formed if the Moon is in a kendra from the lagna (PD 6.14) |
 | Gandanta = the last and first 3°20' | four nadis at the star junction, one ghati at the sign junction (BPHS 92.2-4) |
 | "Double transit of Jupiter and Saturn" | not found in either text as read; the classical triggers are Jupiter over the trines of the house lord's sign and the meeting of the lagna lord with the house lord (PD 16.31-35, 10.12-14, 12.25-29); Parashara names transit as a trigger once (57.27-28) |
@@ -111,11 +126,27 @@ New in the worksheet (each from a verse)
 - Sub-lord "supportive" from the dasha lord: about 69% of the time by chance.
 - Jupiter in a trine of a given sign or its navamsa sign: about 42% of the time.
 - Yoga base rates were re-run after today's rule changes (`data/base_rates.json`).
+- Moods (BPHS 45.11-17) over 1,200 random charts: "glad" on 68% of planets and "hungry" on 47% - these two say almost nothing; "proud" 11%, "ashamed" 4%, "thirsty" 1%, "agitated" 1%. One planet in seven is hungry or agitated with nothing to offset it; one chart in three has no such planet.
+- Argala (BPHS 31): four houses in five have some unobstructed argala; 45% of charts have it on the 1st, 5th and 9th together (the verse's "ruler" combination) - not a distinction. A house with none (21%) or with benefics alone (13%) is the informative case.
+- New combinations: "loss of money in a planet's own period" (42.13) fires in 68% of charts and the arudha pair of 39.23 in 56% - both near-useless alone; the lord of the Moon's navamsa with a maraka (42.10) in 32%; a raja yoga through the three lagnas (39.12) in 11%; the single-planet raja yogas of ch. 24 in 8-9% each; the rest under 6%.
+- Gulika: Parashara's start-of-part and end-of-part readings name the same sign in only 24% of charts - which is why the worksheet prints both, with Mantreshvara's Mandi as the tie-breaker.
+- The Sun's Shadbala rank: with the texts' 6.5 rupas in place of 5, the Sun's ratio falls by 23% in every chart. On the ten charts on file the printed figure made the Sun the strongest planet in nine; by the texts' figure it is the strongest in one. A rank that puts the same planet first in nine charts out of ten was never information. Any earlier statement that "the Sun is the strongest planet" taken from the printed rank must be re-checked against the new column.
 
 ## 9. What is still open
-Done since this analysis was first written (same day): the remaining Phaladeepika chapters (20, 21, 25 read; 22's coded sequences not decoded); twenty-point strength, special lagnas, delivery timing by two pointers, the three-part combined table, months from the Sun's table, direction of the spouse, birth-time conditions, conditional star dashas, the dasha lord's own transit and month trigger - all coded with tests (62 tests pass on both engines); Mantreshvara's transit track coded and back-tested (result above: at chance).
+Closed on the evening of 12 Nov 2026 (71 tests pass on both engines): the nine states and six moods, argala, the non-luminous points, Gulika and Pranapada, the year-by-year Sudarshana table, Parashara's own dignity scale as a Shadbala option, every remaining raja-yoga and poverty verse of chapters 24, 39 and 42 (the catalogue now has 181 entries and the engine tests all of them), the coded verses of Phaladeepika 22 and 25, Brihat Jataka in full, and the Jataka Parijata verses the knowledge base cited.
 
-Still open
-1. Nine states and six moods of planets (BPHS 45.7-17), argala (ch. 31), the remaining raja-yoga and poverty verses (39.8-10, 17, 39, 47; 24.58, 24.106; 42.8-11, 13-15), the non-luminous points and Gulika - found in the text, not yet computed.
-2. Jaimini's sutras, Brihat Jataka and Saravali are still cited in places from secondary pages; the same Sanskrit-first check is owed to them.
-3. A larger set of dated, consented events - the only thing that turns "consistent with the source" into "tested". Six events cannot separate any rule from chance.
+Deliberately not computed, with the reason
+| Item | Why |
+|---|---|
+| Length of life by any method (BPHS 43-44; Brihat Jataka 7; PD 13) and manner of death (BPHS 44; Brihat Jataka 25; PD 17) | never stated in a reading; Varahamihira himself calls the span arithmetic faulty (7.7-8, 7.13) |
+| Ashtakavarga reductions (BPHS 67-69) and the lagna's own table (66.61-68) | their stated use is span of life and bereavement timing |
+| Kalachakra dasha (BPHS 46.52-100, PD 22) | sequences decoded and on file; needs the Moon's star-quarter to the minute; Parashara keeps Vimshottari as chief |
+| Twelve activity states (BPHS 45.30-39) | coded (`activity_states`) but not printed: the verse's ghati count is ambiguous, the result changes every 24 minutes and the sub-states need the name's first sound |
+| Body marks, moles (BPHS 81-82), character labels on women (BPHS 80.8-16; Brihat Jataka 24.3-7), child's sex or number | excluded by the project's rules |
+| The six further curse groups of BPHS 83 | flags that are never stated to a person; widening them adds only silent flags |
+| Narayana dasha | not in any text read; it comes from modern books that are in copyright, so by the source rule it is not adopted |
+
+What cannot be closed from a desk
+1. **Jaimini's sutras and Saravali**: no clean free Sanskrit text found. If one is supplied, the same reading is owed to them.
+2. **Jataka Parijata chapters 5-18** beyond the cited verses: unread. It is a late compilation, so nothing in the method depends on it, but the reading is not complete.
+3. **Evidence.** Six dated events cannot separate any rule from chance. Only forward statements logged before the event, and more dated events given with consent, can turn "consistent with the sources" into "tested". The predictive side of this project is still unproven; the calculation side is verified.

@@ -103,11 +103,11 @@
  "verification_score": "5/5 (100%) - confirmed for practical use; all timing hits",
  "notes_foreign": "12th-house foreign theme verified (Europe travel, US study attempt). Next foreign windows: Rahu-Mercury Jun 2027-Dec 2029 (Mercury 9L) with transit Rahu in her 12th Jun 2028-Jan 2030; Jupiter MD from Jun 2037",
  "computed": {
-  "schema_version": 3,
+  "schema_version": 4,
   "generated": "2026-11-12",
   "engine": {
-   "backend": "ephem",
-   "ayanamsa_lahiri": 23.81371
+   "backend": "swisseph",
+   "ayanamsa_lahiri": 23.81375
   },
   "birth": {
    "date": "1996-11-24",
@@ -118,7 +118,7 @@
   },
   "lagna": {
    "rashi": "Makara",
-   "deg": "27°06'19\"",
+   "deg": "27°06'24\"",
    "nakshatra": "Dhanishta",
    "d9": 6,
    "d10": 3,
@@ -138,7 +138,7 @@
    },
    "Moon": {
     "rashi": "Mesha",
-    "deg": "27°33'59\"",
+    "deg": "27°34'01\"",
     "nakshatra": "Krittika",
     "pada": 1,
     "house": 4,
@@ -160,7 +160,7 @@
    },
    "Mercury": {
     "rashi": "Vrishchika",
-    "deg": "20°53'06\"",
+    "deg": "20°53'05\"",
     "nakshatra": "Jyeshtha",
     "pada": 2,
     "house": 11,
@@ -193,7 +193,7 @@
    },
    "Saturn": {
     "rashi": "Meena",
-    "deg": "6°52'17\"",
+    "deg": "6°52'18\"",
     "nakshatra": "Uttara Bhadrapada",
     "pada": 2,
     "house": 3,
@@ -219,7 +219,7 @@
     "nakshatra": "Uttara Bhadrapada",
     "pada": 3,
     "house": 3,
-    "dignity": "Neutral sign",
+    "dignity": "Enemy's sign",
     "retro": false,
     "combust": false,
     "d9": 7
@@ -332,6 +332,8 @@
      "native past 28 (one source; another calls it a myth)"
     ],
     "base_rate": "about 50% of charts from lagna, 75% from lagna or Moon - weak evidence alone",
+    "matching_note": "BPHS 80.49: the combination is broken when both partners have it (classical; apply in matching)",
+    "source": "BPHS 80.47 read in Sanskrit 12 Nov 2026: Mars in 1, 12, 4, 7 or 8 without a benefic's aspect or conjunction",
     "verdict": "present but cancelled (classical ground)"
    },
    "kaal_sarp": {
@@ -745,38 +747,181 @@
    "Sun": {
     "rupas": 7.03,
     "ratio": 1.41,
-    "rank": 1
+    "rank": 1,
+    "ratio_text": 1.08,
+    "rank_text": 4
    },
    "Moon": {
     "rupas": 7.74,
     "ratio": 1.29,
-    "rank": 2
+    "rank": 2,
+    "ratio_text": 1.29,
+    "rank_text": 1
    },
    "Mars": {
     "rupas": 4.2,
     "ratio": 0.84,
-    "rank": 5
+    "rank": 5,
+    "ratio_text": 0.84,
+    "rank_text": 5
    },
    "Mercury": {
     "rupas": 5.44,
     "ratio": 0.78,
-    "rank": 6
+    "rank": 6,
+    "ratio_text": 0.78,
+    "rank_text": 6
    },
    "Jupiter": {
     "rupas": 8.08,
     "ratio": 1.24,
-    "rank": 3
+    "rank": 3,
+    "ratio_text": 1.24,
+    "rank_text": 2
    },
    "Venus": {
     "rupas": 6.46,
     "ratio": 1.17,
-    "rank": 4
+    "rank": 4,
+    "ratio_text": 1.17,
+    "rank_text": 3
    },
    "Saturn": {
     "rupas": 2.86,
     "ratio": 0.57,
-    "rank": 7
+    "rank": 7,
+    "ratio_text": 0.57,
+    "rank_text": 7
    }
+  },
+  "shadbala_note": "ratio_text / rank_text use the Sun's required 6.5 rupas of BPHS 27.32-33 and Jataka Parijata 2.40; ratio / rank are as AstroSage prints them",
+  "classical": {
+   "vimshopaka": {
+    "Sun": 13.5,
+    "Moon": 8.5,
+    "Mars": 12.6,
+    "Mercury": 10.8,
+    "Jupiter": 13.5,
+    "Venus": 13.7,
+    "Saturn": 11.2
+   },
+   "rays_total": 13.0,
+   "special_lagnas": {
+    "bhava_lagna": "Kumbha",
+    "hora_lagna": "Mesha",
+    "ghati_lagna": "Dhanu"
+   },
+   "states": {
+    "Sun": [
+     "glad (great friend's sign)",
+     "wicked (in a malefic's sign)"
+    ],
+    "Moon": [
+     "distressed (enemy's sign)",
+     "wicked (in a malefic's sign)"
+    ],
+    "Mars": [
+     "glad (great friend's sign)",
+     "wicked (in a malefic's sign)"
+    ],
+    "Mercury": [
+     "calm (friend's sign)",
+     "wicked (in a malefic's sign)",
+     "angry (with the Sun)"
+    ],
+    "Jupiter": [
+     "at ease (own sign)"
+    ],
+    "Venus": [
+     "at ease (own sign)"
+    ],
+    "Saturn": [
+     "calm (friend's sign)",
+     "crippled (with a malefic)"
+    ]
+   },
+   "moods": {
+    "Sun": [
+     "glad"
+    ],
+    "Moon": [],
+    "Mars": [
+     "glad"
+    ],
+    "Mercury": [
+     "glad"
+    ],
+    "Jupiter": [],
+    "Venus": [
+     "proud",
+     "hungry"
+    ],
+    "Saturn": [
+     "hungry",
+     "thirsty"
+    ]
+   },
+   "argala_unobstructed": {
+    "1": [],
+    "2": [
+     "Saturn",
+     "Ketu"
+    ],
+    "3": [
+     "Moon"
+    ],
+    "4": [],
+    "5": [
+     "Mars",
+     "Saturn",
+     "Ketu",
+     "Rahu"
+    ],
+    "6": [
+     "Venus"
+    ],
+    "7": [
+     "Mars"
+    ],
+    "8": [
+     "Rahu",
+     "Sun",
+     "Mercury"
+    ],
+    "9": [
+     "Jupiter"
+    ],
+    "10": [
+     "Sun",
+     "Mercury"
+    ],
+    "11": [
+     "Rahu",
+     "Saturn",
+     "Ketu"
+    ],
+    "12": [
+     "Saturn",
+     "Ketu",
+     "Venus"
+    ]
+   },
+   "gulika": {
+    "parashara_start": "Meena",
+    "parashara_end": "Mesha",
+    "mandi_phaladeepika": "Mesha"
+   },
+   "spouse_direction": {
+    "parashara": "east",
+    "mantreshvara": [
+     "east",
+     "west"
+    ],
+    "both": "east"
+   },
+   "birth_conditions": [
+    "Vishti (Bhadra) karana (ch. 88)"
+   ]
   }
  },
  "crosscheck": "11 Nov 2026: engine vs AstroSage PDF - lagna, Moon, Mars, Saturn, Rahu within 0.4 arc-min; Sun 0.5', Jupiter 2.8' (AstroSage's own offsets from JPL Horizons). SAV identical. Dasha dates within 1 day.",

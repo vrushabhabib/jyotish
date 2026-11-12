@@ -319,11 +319,11 @@
  "sex": "M",
  "schema_version": 2,
  "computed": {
-  "schema_version": 3,
+  "schema_version": 4,
   "generated": "2026-11-12",
   "engine": {
-   "backend": "ephem",
-   "ayanamsa_lahiri": 23.72485
+   "backend": "swisseph",
+   "ayanamsa_lahiri": 23.72489
   },
   "birth": {
    "date": "1990-07-15",
@@ -334,7 +334,7 @@
   },
   "lagna": {
    "rashi": "Meena",
-   "deg": "19°47'04\"",
+   "deg": "19°47'21\"",
    "nakshatra": "Revati",
    "d9": 9,
    "d10": 2,
@@ -365,7 +365,7 @@
    },
    "Mars": {
     "rashi": "Mesha",
-    "deg": "8°23'22\"",
+    "deg": "8°23'21\"",
     "nakshatra": "Ashwini",
     "pada": 3,
     "house": 2,
@@ -376,7 +376,7 @@
    },
    "Mercury": {
     "rashi": "Karka",
-    "deg": "13°31'46\"",
+    "deg": "13°31'47\"",
     "nakshatra": "Pushya",
     "pada": 4,
     "house": 5,
@@ -420,7 +420,7 @@
    },
    "Rahu": {
     "rashi": "Makara",
-    "deg": "14°22'02\"",
+    "deg": "14°22'16\"",
     "nakshatra": "Shravana",
     "pada": 2,
     "house": 11,
@@ -431,7 +431,7 @@
    },
    "Ketu": {
     "rashi": "Karka",
-    "deg": "14°22'02\"",
+    "deg": "14°22'16\"",
     "nakshatra": "Pushya",
     "pada": 4,
     "house": 5,
@@ -545,6 +545,8 @@
      "native past 28 (one source; another calls it a myth)"
     ],
     "base_rate": "about 50% of charts from lagna, 75% from lagna or Moon - weak evidence alone",
+    "matching_note": "BPHS 80.49: the combination is broken when both partners have it (classical; apply in matching)",
+    "source": "BPHS 80.47 read in Sanskrit 12 Nov 2026: Mars in 1, 12, 4, 7 or 8 without a benefic's aspect or conjunction",
     "verdict": "present but cancelled (classical ground)"
    },
    "kaal_sarp": {
@@ -949,38 +951,197 @@
    "Sun": {
     "rupas": 8.13,
     "ratio": 1.63,
-    "rank": 1
+    "rank": 1,
+    "ratio_text": 1.25,
+    "rank_text": 4
    },
    "Moon": {
     "rupas": 7.37,
     "ratio": 1.23,
-    "rank": 5
+    "rank": 5,
+    "ratio_text": 1.23,
+    "rank_text": 5
    },
    "Mars": {
     "rupas": 7.26,
     "ratio": 1.45,
-    "rank": 3
+    "rank": 3,
+    "ratio_text": 1.45,
+    "rank_text": 2
    },
    "Mercury": {
     "rupas": 5.99,
     "ratio": 0.86,
-    "rank": 7
+    "rank": 7,
+    "ratio_text": 0.86,
+    "rank_text": 7
    },
    "Jupiter": {
     "rupas": 7.04,
     "ratio": 1.08,
-    "rank": 6
+    "rank": 6,
+    "ratio_text": 1.08,
+    "rank_text": 6
    },
    "Venus": {
     "rupas": 8.4,
     "ratio": 1.53,
-    "rank": 2
+    "rank": 2,
+    "ratio_text": 1.53,
+    "rank_text": 1
    },
    "Saturn": {
     "rupas": 6.65,
     "ratio": 1.33,
-    "rank": 4
+    "rank": 4,
+    "ratio_text": 1.33,
+    "rank_text": 3
    }
+  },
+  "shadbala_note": "ratio_text / rank_text use the Sun's required 6.5 rupas of BPHS 27.32-33 and Jataka Parijata 2.40; ratio / rank are as AstroSage prints them",
+  "classical": {
+   "vimshopaka": {
+    "Sun": 13.6,
+    "Moon": 11.6,
+    "Mars": 15.7,
+    "Mercury": 14.1,
+    "Jupiter": 14.5,
+    "Venus": 14.0,
+    "Saturn": 7.3
+   },
+   "rays_total": 27.7,
+   "special_lagnas": {
+    "bhava_lagna": "Meena",
+    "hora_lagna": "Dhanu",
+    "ghati_lagna": "Kumbha"
+   },
+   "states": {
+    "Sun": [
+     "calm (friend's sign)"
+    ],
+    "Moon": [
+     "distressed (enemy's sign)",
+     "crippled (with a malefic)",
+     "wicked (in a malefic's sign)"
+    ],
+    "Mars": [
+     "at ease (own sign)"
+    ],
+    "Mercury": [
+     "poor (neutral sign)",
+     "crippled (with a malefic)"
+    ],
+    "Jupiter": [
+     "poor (neutral sign)",
+     "angry (with the Sun)"
+    ],
+    "Venus": [
+     "glad (great friend's sign)",
+     "angry (with the Sun)"
+    ],
+    "Saturn": [
+     "distressed (enemy's sign)"
+    ]
+   },
+   "moods": {
+    "Sun": [
+     "hungry",
+     "glad"
+    ],
+    "Moon": [],
+    "Mars": [
+     "proud",
+     "glad"
+    ],
+    "Mercury": [
+     "ashamed",
+     "hungry"
+    ],
+    "Jupiter": [
+     "hungry",
+     "glad"
+    ],
+    "Venus": [
+     "hungry",
+     "glad"
+    ],
+    "Saturn": [
+     "hungry",
+     "glad"
+    ]
+   },
+   "argala_unobstructed": {
+    "1": [
+     "Moon",
+     "Mars",
+     "Sun",
+     "Jupiter",
+     "Venus",
+     "Rahu",
+     "Mercury",
+     "Ketu"
+    ],
+    "2": [
+     "Mercury",
+     "Ketu"
+    ],
+    "3": [
+     "Sun",
+     "Jupiter",
+     "Venus"
+    ],
+    "4": [
+     "Mercury",
+     "Ketu",
+     "Moon",
+     "Mars"
+    ],
+    "5": [],
+    "6": [
+     "Sun",
+     "Jupiter",
+     "Venus"
+    ],
+    "7": [
+     "Mercury",
+     "Ketu",
+     "Rahu"
+    ],
+    "8": [],
+    "9": [
+     "Saturn"
+    ],
+    "10": [
+     "Rahu",
+     "Moon",
+     "Mars"
+    ],
+    "11": [
+     "Moon",
+     "Mars"
+    ],
+    "12": [
+     "Sun",
+     "Jupiter",
+     "Venus"
+    ]
+   },
+   "gulika": {
+    "parashara_start": "Kumbha",
+    "parashara_end": "Meena",
+    "mandi_phaladeepika": "Meena"
+   },
+   "spouse_direction": {
+    "parashara": "east",
+    "mantreshvara": [
+     "north",
+     "west"
+    ],
+    "both": null
+   },
+   "birth_conditions": [
+    "within about a day of the Sun's entry into a sign (ch. 90)"
+   ]
   }
  }
 }

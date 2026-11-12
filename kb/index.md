@@ -61,7 +61,9 @@ Brihat Parashara Hora Shastra (BPHS), Phaladeepika, Saravali, Jataka Parijata, B
 ## Source texts read in the Sanskrit (12 Nov 2026)
 | File | What it holds |
 |---|---|
-| `sources/ANALYSIS.md` | **Read first.** The two texts taken as a whole: the shared method, where they differ, popular rules that are not in them, what was corrected, what our own cases can and cannot show |
+| `sources/ANALYSIS.md` | **Read first.** The source texts taken as a whole: the shared method, where they differ, popular rules that are not in them, what was corrected, what our own cases can and cannot show |
 | `sources/bphs/` | Brihat Parashara Hora Shastra, all 97 chapters, verse by verse, with engine checks |
-| `sources/phaladeepika/` | Phaladeepika, 25 of 28 chapters in full (13 and 17 excluded by rule, 22 not decoded), with the citation check |
+| `sources/phaladeepika/` | Phaladeepika, 26 of 28 chapters in full with the coded verses of ch. 22 and 25 decoded (13 and 17 excluded by rule), with the citation check |
+| `sources/brihat-jataka/` | Brihat Jataka of Varahamihira, all 28 chapters, with what it settled (the Ashtakavarga table, Kemadruma, Vasumati, the women's chapter, livelihood) |
+| `sources/jataka-parijata/` | Jataka Parijata: ch. 1-2 in full and every verse the knowledge base cited; the rest unread and said so |
 | `SOURCES.md` | Source policy and audit: free and public-domain material only |

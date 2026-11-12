@@ -180,11 +180,11 @@
  "sex": "F",
  "schema_version": 2,
  "computed": {
-  "schema_version": 3,
+  "schema_version": 4,
   "generated": "2026-11-12",
   "engine": {
-   "backend": "ephem",
-   "ayanamsa_lahiri": 23.76092
+   "backend": "swisseph",
+   "ayanamsa_lahiri": 23.76096
   },
   "birth": {
    "date": "1993-02-13",
@@ -195,7 +195,7 @@
   },
   "lagna": {
    "rashi": "Tula",
-   "deg": "28°03'48\"",
+   "deg": "28°04'03\"",
    "nakshatra": "Vishakha",
    "d9": 3,
    "d10": 4,
@@ -226,7 +226,7 @@
    },
    "Mars": {
     "rashi": "Mithuna",
-    "deg": "14°57'18\"",
+    "deg": "14°57'17\"",
     "nakshatra": "Ardra",
     "pada": 3,
     "house": 9,
@@ -237,7 +237,7 @@
    },
    "Mercury": {
     "rashi": "Kumbha",
-    "deg": "15°05'52\"",
+    "deg": "15°05'51\"",
     "nakshatra": "Shatabhisha",
     "pada": 3,
     "house": 5,
@@ -248,7 +248,7 @@
    },
    "Jupiter": {
     "rashi": "Kanya",
-    "deg": "20°35'18\"",
+    "deg": "20°35'19\"",
     "nakshatra": "Hasta",
     "pada": 4,
     "house": 12,
@@ -259,7 +259,7 @@
    },
    "Venus": {
     "rashi": "Meena",
-    "deg": "14°44'18\"",
+    "deg": "14°44'17\"",
     "nakshatra": "Uttara Bhadrapada",
     "pada": 4,
     "house": 6,
@@ -281,7 +281,7 @@
    },
    "Rahu": {
     "rashi": "Vrishchika",
-    "deg": "24°23'39\"",
+    "deg": "24°23'57\"",
     "nakshatra": "Jyeshtha",
     "pada": 3,
     "house": 2,
@@ -292,7 +292,7 @@
    },
    "Ketu": {
     "rashi": "Vrishabha",
-    "deg": "24°23'39\"",
+    "deg": "24°23'57\"",
     "nakshatra": "Mrigashira",
     "pada": 1,
     "house": 8,
@@ -404,6 +404,8 @@
      "native past 28 (one source; another calls it a myth)"
     ],
     "base_rate": "about 50% of charts from lagna, 75% from lagna or Moon - weak evidence alone",
+    "matching_note": "BPHS 80.49: the combination is broken when both partners have it (classical; apply in matching)",
+    "source": "BPHS 80.47 read in Sanskrit 12 Nov 2026: Mars in 1, 12, 4, 7 or 8 without a benefic's aspect or conjunction",
     "verdict": "present; only later-list mitigations apply"
    },
    "kaal_sarp": {
@@ -814,38 +816,175 @@
    "Sun": {
     "rupas": 5.95,
     "ratio": 1.19,
-    "rank": 4
+    "rank": 4,
+    "ratio_text": 0.92,
+    "rank_text": 6
    },
    "Moon": {
     "rupas": 6.87,
     "ratio": 1.15,
-    "rank": 5
+    "rank": 5,
+    "ratio_text": 1.15,
+    "rank_text": 4
    },
    "Mars": {
     "rupas": 6.92,
     "ratio": 1.38,
-    "rank": 2
+    "rank": 2,
+    "ratio_text": 1.38,
+    "rank_text": 2
    },
    "Mercury": {
     "rupas": 6.78,
     "ratio": 0.97,
-    "rank": 6
+    "rank": 6,
+    "ratio_text": 0.97,
+    "rank_text": 5
    },
    "Jupiter": {
     "rupas": 5.44,
     "ratio": 0.84,
-    "rank": 7
+    "rank": 7,
+    "ratio_text": 0.84,
+    "rank_text": 7
    },
    "Venus": {
     "rupas": 7.46,
     "ratio": 1.36,
-    "rank": 3
+    "rank": 3,
+    "ratio_text": 1.36,
+    "rank_text": 3
    },
    "Saturn": {
     "rupas": 7.48,
     "ratio": 1.5,
-    "rank": 1
+    "rank": 1,
+    "ratio_text": 1.5,
+    "rank_text": 1
    }
+  },
+  "shadbala_note": "ratio_text / rank_text use the Sun's required 6.5 rupas of BPHS 27.32-33 and Jataka Parijata 2.40; ratio / rank are as AstroSage prints them",
+  "classical": {
+   "vimshopaka": {
+    "Sun": 12.0,
+    "Moon": 12.4,
+    "Mars": 12.2,
+    "Mercury": 11.8,
+    "Jupiter": 9.2,
+    "Venus": 10.3,
+    "Saturn": 15.3
+   },
+   "rays_total": 22.6,
+   "special_lagnas": {
+    "bhava_lagna": "Tula",
+    "hora_lagna": "Karka",
+    "ghati_lagna": "Tula"
+   },
+   "states": {
+    "Sun": [
+     "poor (neutral sign)",
+     "wicked (in a malefic's sign)"
+    ],
+    "Moon": [
+     "distressed (enemy's sign)"
+    ],
+    "Mars": [
+     "distressed (enemy's sign)"
+    ],
+    "Mercury": [
+     "calm (friend's sign)",
+     "wicked (in a malefic's sign)",
+     "angry (with the Sun)"
+    ],
+    "Jupiter": [
+     "distressed (enemy's sign)"
+    ],
+    "Venus": [
+     "blazing (exalted)"
+    ],
+    "Saturn": [
+     "at ease (own sign)"
+    ]
+   },
+   "moods": {
+    "Sun": [
+     "hungry"
+    ],
+    "Moon": [],
+    "Mars": [
+     "hungry"
+    ],
+    "Mercury": [
+     "ashamed",
+     "glad"
+    ],
+    "Jupiter": [
+     "hungry",
+     "glad"
+    ],
+    "Venus": [
+     "proud",
+     "glad"
+    ],
+    "Saturn": [
+     "hungry"
+    ]
+   },
+   "argala_unobstructed": {
+    "1": [
+     "Saturn",
+     "Sun",
+     "Mercury"
+    ],
+    "2": [
+     "Sun",
+     "Mercury",
+     "Venus"
+    ],
+    "3": [],
+    "4": [
+     "Sun",
+     "Mercury"
+    ],
+    "5": [],
+    "6": [
+     "Mars"
+    ],
+    "7": [
+     "Sun",
+     "Mercury"
+    ],
+    "8": [
+     "Mars",
+     "Venus"
+    ],
+    "9": [],
+    "10": [
+     "Moon"
+    ],
+    "11": [
+     "Jupiter"
+    ],
+    "12": [
+     "Moon"
+    ]
+   },
+   "gulika": {
+    "parashara_start": "Tula",
+    "parashara_end": "Vrishchika",
+    "mandi_phaladeepika": "Vrishchika"
+   },
+   "spouse_direction": {
+    "parashara": "south",
+    "mantreshvara": [
+     "north",
+     "west"
+    ],
+    "both": null
+   },
+   "birth_conditions": [
+    "within about a day of the Sun's entry into a sign (ch. 90)"
+   ]
   }
  }
 }

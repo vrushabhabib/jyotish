@@ -11,14 +11,16 @@ Schema of "computed" (schema_version 2):
     lagna{rashi,deg,nakshatra,d9,d10,d7}, planets{name:{rashi,deg,nakshatra,pada,house,dignity,retro,combust,d9}},
     panchanga, karakas, arudhas{AL,UL,A7,A10}, sav_by_house, yogas[names], doshas,
     vimshottari{maha:[{lord,start,end}], antar_current_and_next:[{md,ad,start,end}]},
-    sade_sati[[start,end]], shadbala{planet:{rupas,ratio,rank}} (when engine.shadbala runs)
+    sade_sati[[start,end]], shadbala{planet:{rupas,ratio,rank,ratio_text,rank_text}} (when engine.shadbala runs),
+    classical{vimshopaka, rays_total, special_lagnas, states, moods, argala_unobstructed, gulika, spouse_direction,
+              birth_conditions}  (schema 4: quantities from the Sanskrit readings of 12 Nov 2026)
 """
 from __future__ import annotations
 import json, sys, datetime as dt, argparse
 
 from engine.report import build
 
-SCHEMA_VERSION = 3
+SCHEMA_VERSION = 4
 
 
 def _d(x):
@@ -65,8 +67,28 @@ def computed(date, time, lat, lon, tz="Asia/Kolkata", sex=None):
     out["chalit_shifted"] = {p: list(x) for p, x in r["chalit"]["shifted"].items()}
     sb = r.get("shadbala")
     if sb and "planets" in sb:
-        out["shadbala"] = {p: {k: (round(v[k], 2) if isinstance(v[k], float) else v[k]) for k in ("rupas", "ratio", "rank") if k in v}
+        out["shadbala"] = {p: {k: (round(v[k], 2) if isinstance(v[k], float) else v[k]) for k in ("rupas", "ratio", "rank", "ratio_text", "rank_text") if k in v}
                            for p, v in sb["planets"].items() if isinstance(v, dict)}
+        out["shadbala_note"] = "ratio_text / rank_text use the Sun's required 6.5 rupas of BPHS 27.32-33 and Jataka Parijata 2.40; ratio / rank are as AstroSage prints them"
+    try:                                                     # quantities taken from the Sanskrit readings (schema 4)
+        from engine import classical as _K, rashmi as _R, parashara_extra as _X
+        ns, mo, ag, ug = _X.nine_states(c), _X.six_moods(c), _X.argala(c), _X.upagrahas(c)
+        sl = _K.special_lagnas(c)
+        out["classical"] = {
+            "vimshopaka": {p: x["points"] for p, x in _K.vimshopaka(c).items()},
+            "rays_total": _R.rashmi(c)["total"],
+            "special_lagnas": {k: sl[k]["sign_name"] for k in ("bhava_lagna", "hora_lagna", "ghati_lagna")},
+            "states": {p: [ns[p]["state"]] + ns[p]["also"] for p in ns},
+            "moods": {p: mo[p]["moods"] for p in mo},
+            "argala_unobstructed": {str(h): ag[h]["planets"] for h in range(1, 13)},
+            "gulika": {"parashara_start": ug["gulika_group"]["Gulika"]["at_start"]["sign_name"],
+                       "parashara_end": ug["gulika_group"]["Gulika"]["at_end"]["sign_name"],
+                       "mandi_phaladeepika": ug["mandi_group_pd"]["Mandi"]["sign_name"]},
+            "spouse_direction": _K.spouse_direction(c),
+            "birth_conditions": _K.birth_conditions(c)["conditions"],
+        }
+    except Exception as e:                                   # noqa: BLE001
+        out["classical"] = {"error": str(e)}
     return out
 
 

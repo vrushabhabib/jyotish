@@ -92,3 +92,9 @@ Follow `kb/readings/full-reading-protocol.md` (13 parts; block form; plain words
 
 ## Accuracy record
 Kept in `data/ledger.jsonl`; print it with `python3 -m engine.ledger report`. On 12 Nov 2026: 39 questions about the past, 62% fully right (65% counting partly-right as half) - Hoang Anh 14 of 20, Saira 5 of 14, Tanzil 5 of 5. All eight "event placed in a sub-period that had no link to the area" statements were wrong; dated period statements held far better. One forward prediction is open; none has matured.
+
+## Worksheet lines added on the evening of 12 Nov 2026
+- Section 9, Shadbala table: ratio and rank by the texts' required strength (the Sun needs 6.5 rupas, not 5), the AstroSage figures beside them, and the totals under Parashara's own dignity scale.
+- Section 9: states and moods of the planets (BPHS 45.7-17); argala on each house (BPHS 31); Gulika by Parashara at both ends of Saturn's part and Mandi by Mantreshvara's fixed time (PD 25.2), the five non-luminous points and Pranapada; a twelve-year Sudarshana table.
+- Section 8b: the remaining raja-yoga and poverty verses of BPHS 24, 39 and 42, Jataka Parijata's navamsa form of neecha bhanga, and the three catalogue items that were untested. The catalogue has 181 entries; all are tested.
+- How each is used: `kb/readings/full-reading-protocol.md` section 8.

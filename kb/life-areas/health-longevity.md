@@ -2,6 +2,14 @@
 
 Tradition: Parashari base (BPHS), Lahiri ayanamsa, whole-sign houses. Houses counted from Lagna unless stated.
 
+## 0. Verified ground rules - these win over anything below that differs
+*(Added 12 Nov 2026 after the Sanskrit readings.)*
+- **No length of life and no manner or time of death is ever stated.** The texts themselves set the limit: certainty about the span of life "is beyond Vasishtha and Brihaspati" (BPHS 66.10-12); no reckoning before the age of twenty-four (BPHS 9.2) or twelve (Phaladeepika 13.3); Varahamihira calls the span arithmetic of his own sources faulty (Brihat Jataka 7.7-8, 7.13). Sections H and I below are reference only.
+- Limbs by sign from Aries - head, face, chest, heart, belly, waist, lower abdomen, private parts, thighs, knees, shanks, feet - confirmed in Brihat Jataka 1.4 and BPHS 4.4-5.
+- A house is judged by house, lord and significator from the lagna and from the Moon (Phaladeepika 15.20-25); the 6th, 8th and 12th lords harm the house they sit in and the planets they join (15.1-7). A planet's state (BPHS 45.7-17, printed in the worksheet) qualifies the house it sits in.
+- The 64th navamsa and the 22nd drekkana are named in Jataka Parijata 5.52-53 among seven sensitive planets, in its chapter on the span of life. They are never used to time anything.
+- No medical diagnosis. Health statements are tendencies of a body system, with the advice to see a doctor.
+
 ## FIRM NOTE — read before using anything below
 
 - These rules describe **tendencies** recorded in old texts. They are **never diagnoses**. The agent must not name a disease as a prediction, must not advise on treatment, and must tell the person to see a doctor for any health concern.
