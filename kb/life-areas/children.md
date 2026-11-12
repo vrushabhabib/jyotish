@@ -22,9 +22,9 @@ Scope: promise, delay, denial, adoption, medical assistance, Saptamsa (D7), Beej
 | BPHS-30 | BPHS ch. 30 (Upapada; children verses 23-30) | https://enjoylearningsanskrit.com/scriptures/parashara/chapter-30 |
 | BPHS-80 | BPHS ch. 80 (Stri Jataka) | https://enjoylearningsanskrit.com/scriptures/parashara/chapter-80 |
 | BPHS-83 | BPHS ch. 83 (curses causing childlessness, and remedies) | https://enjoylearningsanskrit.com/scriptures/parashara/chapter-83 |
-| PD-12 | Phaladeepika (Mantreswara) ch. 12, V. Subrahmanya Sastri translation | https://www.siva.sh/phaladeepika/12/ and /12/6-10, /12/11-15, /12/16-20, /12/21-25, /12/26-30, /12/31-34 |
-| PD-11 | Phaladeepika ch. 11 (women) | https://www.siva.sh/phaladeepika/11/ |
-| PD-10 | Phaladeepika ch. 10 (7th house) | https://www.siva.sh/phaladeepika/10/ |
+| PD-12 | Phaladeepika (Mantreswara) ch. 12, V. Subrahmanya Sastri translation | Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/ /12/11-15, /12/16-20, /12/21-25, /12/26-30, /12/31-34 |
+| PD-11 | Phaladeepika ch. 11 (women) | Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/ |
+| PD-10 | Phaladeepika ch. 10 (7th house) | Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/ |
 | PD-15 | Phaladeepika ch. 15 (judging a bhava) | https://www.wisdomlib.org/hinduism/book/phaladeepika-by-mantreswara-text-and-translation/d/doc1621587.html |
 | PP-BK | planetarypositions.com, Beeja and Kshetra sphuta (cites Phaladeepika; 9 charts) | https://planetarypositions.com/astro-remedies/2015/07/04/beeja-sphuta-kshetra-sphuta/ |
 | BVB-D7 | Prof. Anthony Writer, D7 lecture notes, Bharatiya Vidya Bhavan Mumbai | https://www.slideshare.net/slideshow/saptamsa-d-7/43725446 |

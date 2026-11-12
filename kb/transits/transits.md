@@ -3,7 +3,7 @@
 Tradition: Parashari, Lahiri, whole-sign. All "house from Moon" counts are whole signs counted inclusively from the natal Moon sign (Janma rashi). Read every transit under three locks: (1) natal promise, (2) running dasha, (3) transit. A transit cannot deliver what the chart and dasha do not promise.
 
 Source tags used below:
-- **[PD26]** Phaladeepika ch. 26, verses 26-30 read at https://www.siva.sh/phaladeepika/26/26-30
+- **[PD26]** Phaladeepika ch. 26, verses 26-30 read at Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/
 - **[Sastri]** Dr. P.S. Sastri, "Transit Influences", Astrological Magazine Dec 1977, read at https://saptarishisastrology.com/?p=1170
 - **[JSD44]** "Gochara Phala Adhyaya" summary read at https://theeyeofvedas.blogspot.com/2025/11/chapter-44-gochara-phala-adhyaya.html (secondary)
 - **[OJ102]** https://www.onlinejyotish.com/free-astrology/astrology-lessons/lesson_102.php (secondary)

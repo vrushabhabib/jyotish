@@ -16,7 +16,7 @@ Ethics: the texts give ages for a parent's death. These are reference data only.
 | Key | Source | URL |
 |---|---|---|
 | BPHS-n | Brihat Parashara Hora Shastra ch. n (chapter numbers match Santhanam; verse numbers are this site's) | https://enjoylearningsanskrit.com/scriptures/parashara/chapter-n (n = 7, 9, 10, 14, 15, 17, 20, 21, 24, 32) |
-| PD-16 | Phaladeepika, verses on karakas and houses for relatives (numbered 15.21–25 on this site; ch. 16 in V.S. Sastri's edition) | https://www.siva.sh/phaladeepika/15/21-25 |
+| PD-16 | Phaladeepika, verses on karakas and houses for relatives (numbered 15.21–25 on this site; ch. 16 in V.S. Sastri's edition) | Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/ |
 | PD-13 | Phaladeepika ch. 13, V. Subrahmanya Sastri ed. (OCR) | https://www.wisdomlib.org/uploads/ocr/essays/phaladeepika/phaladeepika-2nd-ed-1950-by-v-subrahmanya-sastri-text.pdf |
 | PVR | P.V.R. Narasimha Rao, *Vedic Astrology: An Integrated Approach* | https://www.vedicastrologer.org/articles/vedic_astro_textbook.pdf |
 | JSD | "Jathaka Sara Dheepa" ch. 22 with commentary (blog) — father 9th vs 10th | https://theeyeofvedas.blogspot.com/2025/11/chapter-22-bhagya-dharma-bhava-phala.html |

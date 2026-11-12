@@ -22,7 +22,7 @@ Tradition: Parashari base (BPHS), Lahiri ayanamsa, whole-sign houses. Houses cou
 |---|---|---|
 | BPHS-n | Brihat Parashara Hora Shastra ch. n (chapter numbers match Santhanam; verse numbers are this site's) | https://enjoylearningsanskrit.com/scriptures/parashara/chapter-n (n = 4, 7, 9, 10, 12, 17, 19, 43, 44, 80) |
 | PD-13/14 | Phaladeepika ch. 13 (length of life), ch. 14 (disease, death), V. Subrahmanya Sastri ed. (OCR) | https://www.wisdomlib.org/uploads/ocr/essays/phaladeepika/phaladeepika-2nd-ed-1950-by-v-subrahmanya-sastri-text.pdf |
-| PD-14s | Phaladeepika ch. 14 v.1–10, Sanskrit + English | https://www.siva.sh/phaladeepika/14/1-5 and https://www.siva.sh/phaladeepika/14/6-10 |
+| PD-14s | Phaladeepika ch. 14 v.1–10, Sanskrit + English | Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/ and Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/ |
 | PVR | P.V.R. Narasimha Rao, *Vedic Astrology: An Integrated Approach* | https://www.vedicastrologer.org/articles/vedic_astro_textbook.pdf |
 | RATH-D30 | Sanjay Rath, Trimsamsa article | https://srath.com/?p=1186 |
 | WP-Bhava | Wikipedia "Bhāva" (body parts per house; cites Phaladeepika) | https://en.wikipedia.org/wiki/Bh%C4%81va |

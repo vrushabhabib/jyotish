@@ -367,21 +367,21 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** Lord of house 6 placed in house 6, 8 or 12 from Lagna (most authors: best when in its own dusthana or another dusthana, alone, without a non-dusthana lord).
 - **Cancellation:** Diluted when the dusthana lord is joined by a kendra/trikona lord (it then damages that lord), or when it also owns a good house (e.g. Jupiter for Leo: 5th+8th).
 - **Result:** Fortunate, sturdy, defeats enemies, avoids sin, wealth, fame, sons (v.63).
-- **Source:** Phaladeepika ch. 6 vv.57-70 (https://www.siva.sh/phaladeepika/6/56-60 , /6/61-65 , /6/66-70)
+- **Source:** Phaladeepika ch. 6 vv.57-70 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/)
 - **Note:** Formation rule (v.57) is terse on the page read; the house-lord-in-dusthana reading is the standard commentary.
 
 ### Sarala yoga  `sarala`
 - **Condition:** Lord of house 8 placed in house 6, 8 or 12 from Lagna (most authors: best when in its own dusthana or another dusthana, alone, without a non-dusthana lord).
 - **Cancellation:** Diluted when the dusthana lord is joined by a kendra/trikona lord (it then damages that lord), or when it also owns a good house (e.g. Jupiter for Leo: 5th+8th).
 - **Result:** Long-lived, resolute, fearless, prosperous, learned, defeats rivals (v.65).
-- **Source:** Phaladeepika ch. 6 vv.57-70 (https://www.siva.sh/phaladeepika/6/56-60 , /6/61-65 , /6/66-70)
+- **Source:** Phaladeepika ch. 6 vv.57-70 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/)
 - **Note:** Formation rule (v.57) is terse on the page read; the house-lord-in-dusthana reading is the standard commentary.
 
 ### Vimala yoga  `vimala`
 - **Condition:** Lord of house 12 placed in house 6, 8 or 12 from Lagna (most authors: best when in its own dusthana or another dusthana, alone, without a non-dusthana lord).
 - **Cancellation:** Diluted when the dusthana lord is joined by a kendra/trikona lord (it then damages that lord), or when it also owns a good house (e.g. Jupiter for Leo: 5th+8th).
 - **Result:** Frugal, saves wealth, independent, kind, respected (v.69).
-- **Source:** Phaladeepika ch. 6 vv.57-70 (https://www.siva.sh/phaladeepika/6/56-60 , /6/61-65 , /6/66-70)
+- **Source:** Phaladeepika ch. 6 vv.57-70 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/)
 - **Note:** Formation rule (v.57) is terse on the page read; the house-lord-in-dusthana reading is the standard commentary.
 
 
@@ -392,28 +392,28 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Strength:** Count how many conditions hold; 2+ classical conditions (1-4) = real. A cancelled debility is still not equal to exaltation.
 - **Cancellation:** Bhanga itself fails in practice if: the dispositor is also debilitated, the planet is combust, or the planet sits in 6/8/12 (then relief only, no raja yoga).
 - **Result:** Debility is cancelled; with conditions 1-4 the texts promise raja-yoga-level rise, usually after early struggle.
-- **Source:** Phaladeepika 7.26, 7.29 (https://www.siva.sh/phaladeepika/7/26-30)
+- **Source:** Phaladeepika 7.26, 7.29 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/)
 
 ### Neecha bhanga condition #2  `neecha_bhanga_2`
 - **Condition:** A planet is in its debilitation sign AND: Lord of the debilitated planet's EXALTATION sign is in house 1/4/7/10 from Lagna OR from the Moon.
 - **Strength:** Count how many conditions hold; 2+ classical conditions (1-4) = real. A cancelled debility is still not equal to exaltation.
 - **Cancellation:** Bhanga itself fails in practice if: the dispositor is also debilitated, the planet is combust, or the planet sits in 6/8/12 (then relief only, no raja yoga).
 - **Result:** Debility is cancelled; with conditions 1-4 the texts promise raja-yoga-level rise, usually after early struggle.
-- **Source:** Phaladeepika 7.26, 7.29 (https://www.siva.sh/phaladeepika/7/26-30)
+- **Source:** Phaladeepika 7.26, 7.29 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/)
 
 ### Neecha bhanga condition #3  `neecha_bhanga_3`
 - **Condition:** A planet is in its debilitation sign AND: BOTH of the above (dispositor and exaltation-sign lord) are in kendras: strongest grade ('emperor honoured by kings').
 - **Strength:** Count how many conditions hold; 2+ classical conditions (1-4) = real. A cancelled debility is still not equal to exaltation.
 - **Cancellation:** Bhanga itself fails in practice if: the dispositor is also debilitated, the planet is combust, or the planet sits in 6/8/12 (then relief only, no raja yoga).
 - **Result:** Debility is cancelled; with conditions 1-4 the texts promise raja-yoga-level rise, usually after early struggle.
-- **Source:** Phaladeepika 7.27, 7.30 (https://www.siva.sh/phaladeepika/7/26-30)
+- **Source:** Phaladeepika 7.27, 7.30 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/)
 
 ### Neecha bhanga condition #4  `neecha_bhanga_4`
 - **Condition:** A planet is in its debilitation sign AND: The debilitated planet is aspected by the lord of the sign it occupies; stronger if the debilitated planet is NOT in house 6/8/12.
 - **Strength:** Count how many conditions hold; 2+ classical conditions (1-4) = real. A cancelled debility is still not equal to exaltation.
 - **Cancellation:** Bhanga itself fails in practice if: the dispositor is also debilitated, the planet is combust, or the planet sits in 6/8/12 (then relief only, no raja yoga).
 - **Result:** Debility is cancelled; with conditions 1-4 the texts promise raja-yoga-level rise, usually after early struggle.
-- **Source:** Phaladeepika 7.28 (https://www.siva.sh/phaladeepika/7/26-30)
+- **Source:** Phaladeepika 7.28 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/)
 
 ### Neecha bhanga condition #5  `neecha_bhanga_5`
 - **Condition:** A planet is in its debilitation sign AND: The planet that gets EXALTED in the sign of debilitation (e.g. Sun for a planet in Aries) is in a kendra from Lagna or Moon.
@@ -705,63 +705,63 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** Lord of house 1 placed in house 6, 8 or 12 from Lagna; OR house 1 itself occupied/aspected by malefics with its lord weak.
 - **Cancellation:** Eased when the lord is strong (own/exalted) or aspected by a benefic; verse 70 reverses the whole set when good-house lords are strong in kendra/trikona and dusthana lords are weak in dusthanas.
 - **Result:** Obscure, poor, short-lived, humiliated, unstable position (v.58).
-- **Source:** Phaladeepika ch. 6 vv.57-70 (https://www.siva.sh/phaladeepika/6/56-60 , /6/61-65 , /6/66-70)
+- **Source:** Phaladeepika ch. 6 vv.57-70 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/)
 - **Note:** Formation rule (v.57) is terse on the page read; the house-lord-in-dusthana reading is the standard commentary.
 
 ### Nisswa yoga  `nisswa`
 - **Condition:** Lord of house 2 placed in house 6, 8 or 12 from Lagna; OR house 2 itself occupied/aspected by malefics with its lord weak.
 - **Cancellation:** Eased when the lord is strong (own/exalted) or aspected by a benefic; verse 70 reverses the whole set when good-house lords are strong in kendra/trikona and dusthana lords are weak in dusthanas.
 - **Result:** Harsh speech, no family wealth, poor teeth/eyes, enemies take wealth (v.59).
-- **Source:** Phaladeepika ch. 6 vv.57-70 (https://www.siva.sh/phaladeepika/6/56-60 , /6/61-65 , /6/66-70)
+- **Source:** Phaladeepika ch. 6 vv.57-70 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/)
 - **Note:** Formation rule (v.57) is terse on the page read; the house-lord-in-dusthana reading is the standard commentary.
 
 ### Mriti yoga  `mriti`
 - **Condition:** Lord of house 3 placed in house 6, 8 or 12 from Lagna; OR house 3 itself occupied/aspected by malefics with its lord weak.
 - **Cancellation:** Eased when the lord is strong (own/exalted) or aspected by a benefic; verse 70 reverses the whole set when good-house lords are strong in kendra/trikona and dusthana lords are weak in dusthanas.
 - **Result:** Overpowered by enemies, no brothers, little strength or shame (v.60).
-- **Source:** Phaladeepika ch. 6 vv.57-70 (https://www.siva.sh/phaladeepika/6/56-60 , /6/61-65 , /6/66-70)
+- **Source:** Phaladeepika ch. 6 vv.57-70 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/)
 - **Note:** Formation rule (v.57) is terse on the page read; the house-lord-in-dusthana reading is the standard commentary.
 
 ### Kuhu yoga  `kuhu`
 - **Condition:** Lord of house 4 placed in house 6, 8 or 12 from Lagna; OR house 4 itself occupied/aspected by malefics with its lord weak.
 - **Cancellation:** Eased when the lord is strong (own/exalted) or aspected by a benefic; verse 70 reverses the whole set when good-house lords are strong in kendra/trikona and dusthana lords are weak in dusthanas.
 - **Result:** Loss of mother, vehicles, home, comforts, friends (v.61).
-- **Source:** Phaladeepika ch. 6 vv.57-70 (https://www.siva.sh/phaladeepika/6/56-60 , /6/61-65 , /6/66-70)
+- **Source:** Phaladeepika ch. 6 vv.57-70 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/)
 - **Note:** Formation rule (v.57) is terse on the page read; the house-lord-in-dusthana reading is the standard commentary.
 
 ### Pamara yoga  `pamara`
 - **Condition:** Lord of house 5 placed in house 6, 8 or 12 from Lagna; OR house 5 itself occupied/aspected by malefics with its lord weak.
 - **Cancellation:** Eased when the lord is strong (own/exalted) or aspected by a benefic; verse 70 reverses the whole set when good-house lords are strong in kendra/trikona and dusthana lords are weak in dusthanas.
 - **Result:** Hard life, deceit, loss/lack of children, irreligious (v.62).
-- **Source:** Phaladeepika ch. 6 vv.57-70 (https://www.siva.sh/phaladeepika/6/56-60 , /6/61-65 , /6/66-70)
+- **Source:** Phaladeepika ch. 6 vv.57-70 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/)
 - **Note:** Formation rule (v.57) is terse on the page read; the house-lord-in-dusthana reading is the standard commentary.
 
 ### Dushkriti yoga  `dushkriti`
 - **Condition:** Lord of house 7 placed in house 6, 8 or 12 from Lagna; OR house 7 itself occupied/aspected by malefics with its lord weak.
 - **Cancellation:** Eased when the lord is strong (own/exalted) or aspected by a benefic; verse 70 reverses the whole set when good-house lords are strong in kendra/trikona and dusthana lords are weak in dusthanas.
 - **Result:** Loss of spouse, drawn to others' partners, urinary/venereal ailments, scorned by kin (v.64).
-- **Source:** Phaladeepika ch. 6 vv.57-70 (https://www.siva.sh/phaladeepika/6/56-60 , /6/61-65 , /6/66-70)
+- **Source:** Phaladeepika ch. 6 vv.57-70 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/)
 - **Note:** Formation rule (v.57) is terse on the page read; the house-lord-in-dusthana reading is the standard commentary.
 
 ### Nirbhagya yoga  `nirbhagya`
 - **Condition:** Lord of house 9 placed in house 6, 8 or 12 from Lagna; OR house 9 itself occupied/aspected by malefics with its lord weak.
 - **Cancellation:** Eased when the lord is strong (own/exalted) or aspected by a benefic; verse 70 reverses the whole set when good-house lords are strong in kendra/trikona and dusthana lords are weak in dusthanas.
 - **Result:** Loses patrimony, disrespects elders, destitute (v.66).
-- **Source:** Phaladeepika ch. 6 vv.57-70 (https://www.siva.sh/phaladeepika/6/56-60 , /6/61-65 , /6/66-70)
+- **Source:** Phaladeepika ch. 6 vv.57-70 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/)
 - **Note:** Formation rule (v.57) is terse on the page read; the house-lord-in-dusthana reading is the standard commentary.
 
 ### Duryoga  `duryoga`
 - **Condition:** Lord of house 10 placed in house 6, 8 or 12 from Lagna; OR house 10 itself occupied/aspected by malefics with its lord weak.
 - **Cancellation:** Eased when the lord is strong (own/exalted) or aspected by a benefic; verse 70 reverses the whole set when good-house lords are strong in kendra/trikona and dusthana lords are weak in dusthanas.
 - **Result:** Labour bears little fruit, low regard, lives abroad (v.67).
-- **Source:** Phaladeepika ch. 6 vv.57-70 (https://www.siva.sh/phaladeepika/6/56-60 , /6/61-65 , /6/66-70)
+- **Source:** Phaladeepika ch. 6 vv.57-70 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/)
 - **Note:** Formation rule (v.57) is terse on the page read; the house-lord-in-dusthana reading is the standard commentary.
 
 ### Daridra yoga (Phaladeepika)  `daridra_pd`
 - **Condition:** Lord of house 11 placed in house 6, 8 or 12 from Lagna; OR house 11 itself occupied/aspected by malefics with its lord weak.
 - **Cancellation:** Eased when the lord is strong (own/exalted) or aspected by a benefic; verse 70 reverses the whole set when good-house lords are strong in kendra/trikona and dusthana lords are weak in dusthanas.
 - **Result:** Heavy debt, harsh, poor, ear ailments, serves others (v.68).
-- **Source:** Phaladeepika ch. 6 vv.57-70 (https://www.siva.sh/phaladeepika/6/56-60 , /6/61-65 , /6/66-70)
+- **Source:** Phaladeepika ch. 6 vv.57-70 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/)
 - **Note:** Formation rule (v.57) is terse on the page read; the house-lord-in-dusthana reading is the standard commentary.
 
 ### Daridra: Lagna lord / dusthana lord swap  `daridra_1`

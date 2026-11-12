@@ -26,8 +26,8 @@ Jaimini and KP are noted where they add a checkable test. All rules are paraphra
 | BPHS-18 | Brihat Parashara Hora Shastra, ch. 18 (7th house); English rendering, translator not named on page | https://barbarapijan.com/bpa/Bhava/7yuvati_bhava_BPHS.htm |
 | BPHS-30 | BPHS ch. 30 (Upapada) with Sanskrit and gloss | https://enjoylearningsanskrit.com/scriptures/parashara/chapter-30 |
 | BPHS-80 | BPHS ch. 80 (Stri Jataka, 55 verses) | https://enjoylearningsanskrit.com/scriptures/parashara/chapter-80 |
-| PD-10 | Phaladeepika (Mantreswara), ch. 10 Kalatra bhava, V. Subrahmanya Sastri translation | https://www.siva.sh/phaladeepika/10/ , /10/6-10 , /10/11-15 |
-| PD-11 | Phaladeepika ch. 11, horoscopes of women | https://www.siva.sh/phaladeepika/11/ |
+| PD-10 | Phaladeepika (Mantreswara), ch. 10 Kalatra bhava, V. Subrahmanya Sastri translation | Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/ |
+| PD-11 | Phaladeepika ch. 11, horoscopes of women | Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/ |
 | PD-15 | Phaladeepika ch. 15, method of judging a bhava | https://www.wisdomlib.org/hinduism/book/phaladeepika-by-mantreswara-text-and-translation/d/doc1621587.html |
 | JS | Jaimini Sutras, English translation with notes (translator not named in portion read) | https://lakshminarayanlenasia.com/wp-content/uploads/2022/10/docs2/LakshmiNarayanLenasia.com/Astrology (Jyotish) collection/Jaimini Sutras.pdf |
 | PVR | P.V.R. Narasimha Rao, "Vedic Astrology: An Integrated Approach" | https://www.vedicastrologer.org/articles/vedic_astro_textbook.pdf |
