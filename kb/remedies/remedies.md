@@ -16,18 +16,18 @@ Tradition: Parashari base. This file separates four layers that are usually mixe
 - **Gemstones only under the rule in §3**, on trial, never for a 6th/8th/12th lord, and never as an expense the person can't easily afford.
 
 ## 1. Classical graha shanti — BPHS ch. 84 (read this session)
-Source: BPHS English e-text, ch. 84 "Remedies from the malevolence of planets", https://sanskritdocuments.org/brihatparashara (Sanskrit root text; English reading not yet re-verified) . Condition for use in the text: a planet that is ill-placed/malefic at birth, or whose dasha or transit is troubling.
+Source: BPHS ch. 84, read in the Sanskrit on 12 Nov 2026 (sanskritdocuments.org par8190.itx; my translation in `kb/sources/bphs/ch81-90.md`). Every cell below was checked against vv.4, 19-25; one correction: Mars is 10,000, not 11,000. Condition for use in the text: a planet that is ill-placed/malefic at birth, or whose dasha or transit is troubling.
 
 | Graha | Image material (vv.3-5) | Japa count (vv.17-20) | Homa wood (vv.21-22) | Food offered (vv.23-24) | Classical daan (v.25) |
 |---|---|---|---|---|---|
 | Sun | copper | 7,000 | arka (aak) | rice cooked with jaggery | cow with calf |
 | Moon | crystal | 11,000 | palasha | rice cooked in milk | conch |
-| Mars | red sandalwood | 11,000 (popular lists: 10,000) | khadira | havishya | bullock |
+| Mars | red sandalwood | 10,000 | khadira | havishya | bullock |
 | Mercury | gold | 9,000 (some lists 4,000 or 17,000) | apamarga | milk-rice | gold |
 | Jupiter | gold | 19,000 | pipal (ashvattha) | curd rice | garments |
 | Venus | silver | 16,000 | udumbara | ghee rice | horse |
 | Saturn | iron | 23,000 | shami | sesame rice | black cow |
-| Rahu | glass/lead | 18,000 | durva | (meat rice in text — do not relay) | iron/weapons (relay as: iron utensils) |
+| Rahu | lead | 18,000 | durva | (meat rice in text — do not relay) | iron/weapons (relay as: iron utensils) |
 | Ketu | bell-metal | 17,000 (some lists 7,000) | kusha | mixed-grain rice | goat (relay as: blanket/grain) |
 
 Homa offerings: 108 or 28. The text's mantras are the Vedic graha mantras, not the beeja mantras of §2. Disagreement: popular handbooks multiply the count by 4 "for Kali Yuga"; BPHS as read does not say this. Animal gifts in the text are to be read as their modern equivalents (feed, fodder, donation to a goshala), never literally.
