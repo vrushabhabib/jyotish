@@ -59,6 +59,7 @@ The engine calculates and measures; the reader (Claude) interprets, asks and exp
 State on the evening of 12 Nov 2026:
 - **Sources read in the Sanskrit:** Parashara (all 97 chapters), Phaladeepika (26 of 28; two excluded by rule), Brihat Jataka (all 28), Jataka Parijata (ch. 1-2 and the cited verses). Notes in `kb/sources/`, analysis in `kb/sources/ANALYSIS.md`.
 - **Engine:** every rule found in those texts that the project is willing to use is computed and tested (71 tests, both ephemeris back-ends); the catalogue has 181 combinations and all are tested; `tools/build_catalogue.py` rebuilds the catalogue document from `kb/yogas/yogas.json`, which is the single source of truth.
+- **Every chart, not one person:** all of the above is in the engine and the protocol, so it applies to any birth data put in. The worksheet prints, for every chart, how far the dasha dates move across the birth-time window (`--window N` minutes).
 - **Shadbala:** quote the texts' ratio and rank (Sun needs 6.5 rupas); the AstroSage column is for cross-checking only.
 - **Not closable from a desk:** Jaimini's sutras and Saravali (no clean free Sanskrit text found); Jataka Parijata ch. 5-18; and the evidence itself - every reading must log its dated forward statements (`engine.ledger`) so that each rule earns its own hit rate. Until then the predictive side is unproven.
 - **Deliberately not computed:** the table in `kb/sources/ANALYSIS.md` section 9.

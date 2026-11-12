@@ -98,3 +98,4 @@ Kept in `data/ledger.jsonl`; print it with `python3 -m engine.ledger report`. On
 - Section 9: states and moods of the planets (BPHS 45.7-17); argala on each house (BPHS 31); Gulika by Parashara at both ends of Saturn's part and Mandi by Mantreshvara's fixed time (PD 25.2), the five non-luminous points and Pranapada; a twelve-year Sudarshana table.
 - Section 8b: the remaining raja-yoga and poverty verses of BPHS 24, 39 and 42, Jataka Parijata's navamsa form of neecha bhanga, and the three catalogue items that were untested. The catalogue has 181 entries; all are tested.
 - How each is used: `kb/readings/full-reading-protocol.md` section 8.
+- Section 11 now opens with 'How firm the dates are': the start of the next eight sub-periods at the given time and at the two ends of the birth-time window (`--window`, default 15 minutes), for every chart.

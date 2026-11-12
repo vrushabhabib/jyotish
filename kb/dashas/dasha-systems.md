@@ -224,3 +224,12 @@ Source notes: `kb/sources/phaladeepika/ch20-28.md`, `kb/sources/bphs/ch46-50.md`
 8. **Month trigger.** The good of a favourable dasha lord arrives when the Sun (or Jupiter) is in that lord's own or exaltation sign; the hardship of an unfavourable one when the Sun is in its debilitation or an enemy's sign (PD 20.38).
 9. **Day-level tone.** The Moon in the dasha lord's exaltation or friendly sign, or in the 3rd, 6th, 7th, 10th, 11th or a trine from it: favourable days (PD 20.36, 60-62).
 10. **Fixed grids are tie-breakers only.** Mantreshvara's 81 unconditional sub-period verses (PD ch. 21) and Parashara's finer-level grids (BPHS ch. 61-63) ignore placement; rules 1-3 override them.
+
+## Further verified dasha rules (Jataka Parijata ch. 18 and Brihat Jataka ch. 8, read in the Sanskrit 12 Nov 2026)
+These agree with the ten rules above and add four things.
+11. **The moment a period begins matters** (Brihat Jataka 8.10; Jataka Parijata 18.6-9, 14): good when the dasha lord is then in the lagna or the 3rd, 6th, 10th or 11th; and when the Moon is then in the lord's friend's or exaltation sign, or in the 7th, a trine or an upachaya house from it. Deliberately not computed: it needs the start of the period to the hour, and a quarter-hour of doubt in the birth time already moves every start by about ten weeks (see the 'How firm the dates are' table in the worksheet).
+12. **Dasha lord and sub-lord: mutual friends and strong - good; mutual enemies and weak - harm; in the 6th and 8th from each other - fear, loss of position, leaving one's place** (Jataka Parijata 18.16, 18.30, 18.53). With rule 4 above (sub-lord's house from the dasha lord) this is now stated by three texts.
+13. **A debilitated planet, a planet joined to it, a planet joined to Rahu, and the lord of a debilitated planet's sign do not give good in their periods** (18.28). A planet at a sign junction gives strain in its period (18.27).
+14. **Which third of a period gives what** (18.57-58): a benefic gives the matters of its house first, of its sign in the middle, of the aspects on it last; a malefic gives the result of its dignity first, of its house in the middle, of the aspects last. Together with the head-rising / back-rising rule (four texts) this is the texts' whole method for timing inside a period.
+15. Sub-periods of the lords of the 2nd, 4th, 6th, 8th and 9th stars from the birth star are helped (18.25) - a small additional vote, untested here.
+All five are the texts' statements, not findings of this project; none has a hit rate in the ledger yet.

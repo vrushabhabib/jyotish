@@ -99,6 +99,7 @@ Background and evidence: `kb/sources/ANALYSIS.md`. Where a line below conflicts 
 | Direction of the spouse | Part 10 - only when both texts agree |
 | Birth-time conditions | answered if the family asks; named with the rite, never with the harm wording |
 | Special lagnas | only with a recorded birth time |
+| 'How firm the dates are' table (section 11) | **every reading, Part 1 and Part 4:** state how many weeks the dates move for the stated doubt in the birth time, and give dated statements as a season unless the time is recorded to the minute. Run the worksheet with `--window N` set to the real doubt in minutes |
 | Shadbala rank | **quote the texts' columns** (Sun needs 6.5 rupas: BPHS 27.32-33, Jataka Parijata 2.40). The AstroSage column is only for cross-checking a supplied kundli. Where the rank changes under Parashara's own dignity scale, say the rank is not firm |
 | States and moods (BPHS 45) | Part 2 or the house concerned - mention only blazing, at ease, and the rare moods (ashamed, thirsty, agitated, proud). "Glad" and "hungry" are in most charts and are not remarked on. A planet listed as harming its house is one input, never a statement on its own |
 | Argala (BPHS 31) | the house under question - remark only when it has no unobstructed support, or support from benefics alone |

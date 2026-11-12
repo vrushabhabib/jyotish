@@ -20,6 +20,8 @@ All houses are counted whole-sign from the reference named (Lagna unless stated)
 - **SRC-C10** The standing promised by a raja yoga comes in the period of the planet in the 10th or the lagna, or of the strongest planet; it is lost in the period of a planet in an enemy's or debilitation sign (Brihat Jataka 11.19).
 - **SRC-C11** Single-planet raja yogas named by Parashara: 5th lord in the 10th (24.58), 9th lord in the 10th (24.106). Each is in about one chart in twelve - supporting evidence only.
 
+- **SRC-C12** Work by the lord of the navamsa of the 10th lord, counted from the stronger of lagna and Moon (Jataka Parijata 15.43-50, read in the Sanskrit): Sun - medicines, grain, gold, go-between work; Moon - things from water, farming, cloth, music, a woman's support; Mars - metals, disputes, fire, daring; Mercury - crafts, writing, calculation, astrology, priestly work; Jupiter - teaching, law, religious instruction, service of the learned; Venus - gold, gems, cattle, sweets and dairy, through a woman; Saturn - hard labour, woodcraft, carrying loads. Gains by the planet in the 11th (15.66-67): Sun relatives, Moon the mother's side, Mars brothers, Mercury friends and employers, Jupiter learning and children, Venus women and the arts, Saturn servants' work. Jupiter, Moon or Venus in the 12th protect money (15.78).
+
 ## Source keys (URL actually read)
 
 | Key | Source | URL |
@@ -87,7 +89,7 @@ All houses are counted whole-sign from the reference named (Lagna unless stated)
 | CAR-L11 | 11th | Wealth, sons, cheerfulness, general happiness |
 | CAR-L12 | 12th | Spends on government matters, fear from enemies; clever but anxious |
 
-Cross-check: Jataka Parijata XI.18 (via WP-Karma) agrees on the pattern — 10th lord strong in Lagna = self-made; in the 2nd = exceptional fame; in 6/8/12 = bad reputation and hardship.
+Cross-check: Jataka Parijata 15.5 (read in the Sanskrit) gives the self-made part; the rest of this line is from a secondary page (WP-Karma), which cites it as XI.18 - a different edition's numbering - and agrees on the pattern — 10th lord strong in Lagna = self-made; in the 2nd = exceptional fame; in 6/8/12 = bad reputation and hardship.
 
 ---
 
@@ -194,7 +196,7 @@ Calculation (pada of any house): count from the house to the sign of its lord, t
 |---|---|---|---|---|
 | CAR-34 | Parashari: 6th house/lord stronger than 7th and linked to 10th house/lord | Service (employment) | OJ-111; unsourced as a classical verse | Classical texts do not make a job/business split; this is modern practice |
 | CAR-35 | 7th house/lord stronger than 6th and linked to 10th, 2nd, 11th | Business/trade | OJ-111; KP-J | |
-| CAR-36 | 10th lord linked with Lagna lord, 10th lord in Lagna, or strong Lagna + 10th without 6th/7th emphasis | Independent profession/self-made | BPHS-24 v.109; Jataka Parijata XI.18 via WP-Karma | |
+| CAR-36 | 10th lord linked with Lagna lord, 10th lord in Lagna, or strong Lagna + 10th without 6th/7th emphasis | Independent profession/self-made | BPHS-24 v.109; Jataka Parijata 15.5 (read in the Sanskrit 12 Nov 2026: lagna lord and 10th lord together, or one planet ruling both - works done with self-earned money) | |
 | CAR-37 | KP: sub-lord of the 10th cusp signifies 2, 6, 10, 11 (especially 6 and 10) | Job promised | KP-A | KP uses Placidus cusps and KP ayanamsa — not whole-sign. Keep KP results in a separate track |
 | CAR-38 | KP: 10th cusp sub-lord signifies 7 (with 2, 10, 11) | Business | KP-A; KP-J | Many charts show both; treat as indicator only |
 | CAR-39 | KP: dasha/bhukti/antara lords signify 1, 5, 9, 12 (12th from 2, 6, 10, 1) | Break, loss or leaving of job; 5 and 9 = leaving current job; 3-10-12 = transfer | KP-A | Some KP teachers add 8; groupings vary between teachers |

@@ -8,7 +8,7 @@ This is the analysis asked for after the full reading: the whole dataset looked 
 | Brihat Parashara Hora Shastra (Sanskrit, sanskritdocuments.org) | 97 chapters, eleven files | **all read**, recorded verse by verse |
 | Phaladeepika of Mantreshvara (Sanskrit, same site) | 28 chapters, about 870 verses | **26 chapters read in full**, including the coded verses of ch. 22 and 25, decoded; length of life and death (13, 17) excluded by rule |
 | Brihat Jataka of Varahamihira (Sanskrit, same site) | 28 chapters, 407 verses | **all read** (added the same evening) |
-| Jataka Parijata of Vaidyanatha (Sanskrit, same site; marked "needs proofreading") | 18 chapters | ch. 1-2 read in full; ch. 3-4 read, not used; every verse the knowledge base cited was located and read; the rest keyword-searched only |
+| Jataka Parijata of Vaidyanatha (Sanskrit, same site; marked "needs proofreading") | 18 chapters | ch. 1-3, 13-16 read in full, ch. 18 to v.76, and every other verse the knowledge base cited; ch. 6, 8-12, 17 and parts of 7 and 18 unread |
 | Jaimini's sutras; Saravali of Kalyanavarman | - | **no clean, free Sanskrit e-text was found** (searched 12 Nov 2026: the usual free library, Sanskrit Wikisource, GRETIL listings). By the project's source rule they are not used. Every "Jaimini" tool the project uses - movable significators, arudhas, Upapada, Karakamsa, sign aspects, argala, Chara dasha - is taught in Parashara's own chapters 8, 29-33, 46 and 50, which were read. Lines that cited Saravali through a secondary page keep that tag and stay low confidence |
 
 Limits of this reading, stated once: it is my own translation of a volunteer-typed e-text, made in one long pass; number-words and long ornate verses are where an error is most likely, and such places are marked [?] in the files. It is not a critical edition.
@@ -61,7 +61,7 @@ The project's working rules - verify first, count evidence, log predictions, nev
 | Popular rule | What the texts actually have |
 |---|---|
 | "Pitru dosha" = Sun with Rahu, Saturn or Ketu, or an afflicted 9th (fires in 61% of random charts) | eleven narrow combinations, all tied to the 5th house, under "father's curse" (BPHS 83.20-30) |
-| Manglik counted from the 2nd house, and from the Moon and Venus | Mars in the 1st, 4th, 7th, 8th, 12th from the lagna, without a benefic's aspect or company; broken when both partners have it (BPHS 80.47-49) |
+| Manglik counted from the Moon and Venus; "cancellations" by sign and by Jupiter's aspect | Parashara: Mars in the 1st, 4th, 7th, 8th, 12th from the lagna, without a benefic's aspect or company; broken when both partners have it (BPHS 80.47-49). The list with the **2nd house and without the lagna** (2, 12, 7, 4, 8) is real but late: Jataka Parijata 14.34, with the same both-partners cancellation (14.36). Counting from the Moon and Venus has no verse in any text read |
 | "Vish yoga" (Moon with Saturn) | not in Parashara; the verses once cited for it are about renunciation (79.6-8) |
 | Kaal Sarp yoga | not found in any chapter of either text as read |
 | "Sade Sati" as a named 7½-year period | the name does not occur; Saturn in the 12th, 1st and 2nd from the Moon are each given hard results among the other places (PD 26.22-23, 33) |
@@ -148,5 +148,5 @@ Deliberately not computed, with the reason
 
 What cannot be closed from a desk
 1. **Jaimini's sutras and Saravali**: no clean free Sanskrit text found. If one is supplied, the same reading is owed to them.
-2. **Jataka Parijata chapters 5-18** beyond the cited verses: unread. It is a late compilation, so nothing in the method depends on it, but the reading is not complete.
+2. **Jataka Parijata**: chapters 6, 8-12, 17 and parts of 7 and 18 are unread (the chapters on marriage, women, children, career and the dasha rules are read). It is a late compilation whose own sources are read in full, so nothing in the method depends on the rest.
 3. **Evidence.** Six dated events cannot separate any rule from chance. Only forward statements logged before the event, and more dated events given with consent, can turn "consistent with the sources" into "tested". The predictive side of this project is still unproven; the calculation side is verified.

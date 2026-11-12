@@ -17,6 +17,11 @@ Scope: promise, delay, denial, adoption, medical assistance, Saptamsa (D7), Beej
 - Mantreshvara's "others say" note on Jupiter in the 5th (15.26) is a minority view; it is not stated by itself.
 - Never stated to a client: sex or number of children, or that there will be none (12.2, 4-11, 13 are recorded and not used).
 
+- **JP13-a** Children are gained when the 5th, its lord or Jupiter is joined or aspected by a benefic; when the lagna lord is in the 5th with a strong 5th lord and Jupiter; when a strong Jupiter in the 5th is aspected by the lagna lord (Jataka Parijata 13.16-19, read in the Sanskrit 12 Nov 2026). Judge also from the 5th from Jupiter (13.9).
+- **JP13-b** Timing (13.48-50): Jupiter transiting a trine of the sign of (5th lord + lagna lord); the periods of the lords of the 5th from Jupiter, Moon and lagna and of the 9th; of planets joining or aspecting them. Tentative like every timing rule.
+- **JP13-c** In a woman's chart Jataka Parijata 16.5-6 gives children from the 9th and adds that some say the 5th - so read both, as already ruled.
+- The same text's cautions about Jupiter in the 5th (13.30-31) are tied to four signs only and are never stated to a person.
+
 ## How to read this file
 
 - Each rule has an ID, a machine-checkable condition, the stated result, the source, and a note.

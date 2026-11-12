@@ -928,7 +928,7 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Cancellation:** Commonly listed: Mars in own/exalted sign (Aries, Scorpio, Capricorn); Mars conjunct/aspected by Jupiter; Mars in 2nd in Gemini/Virgo, 12th in Taurus/Libra, 4th in Aries/Scorpio, 7th in Cancer/Capricorn, 8th in Sagittarius/Pisces; partner has equal dosha.
 - **Result:** Friction, delay or danger in marriage.
 - **Source:** BPHS 80.47-49, read in the Sanskrit 12 Nov 2026: Mars in the 1st, 4th, 7th, 8th or 12th from the lagna without a benefic's aspect or company; broken when both partners have it. The 2nd house and the counts from Moon and Venus are later practice
-- **Note:** Exception lists vary widely between regions; treat as matching practice, not Parashari doctrine.
+- **Note:** Exception lists vary widely between regions; treat as matching practice, not Parashari doctrine. The list that counts the 2nd house and leaves out the lagna (2, 12, 7, 4, 8) is Jataka Parijata 14.34 (read in the Sanskrit), with the same both-partners cancellation (14.36). Counting from the Moon or Venus has no verse in any text read.
 
 ### Gandanta birth  `gandanta_birth`
 - **Condition:** BPHS 92.1-5: nakshatra gandanta = four nadis at the Revati-Ashwini, Ashlesha-Magha and Jyeshtha-Mula junctions (about 0d27' of the Moon either side; 0d53' on the loosest reading); lagna gandanta = one ghati at the Pisces-Aries, Cancer-Leo, Scorpio-Sagittarius junctions (about 3 degrees either side); Abhukta Mula = last 5 ghatis of Jyeshtha and first 8 of Mula; tithi gandanta = four nadis at the junction of tithis 5/6, 10/11, 15/1 (not tested).

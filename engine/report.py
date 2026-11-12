@@ -61,7 +61,7 @@ def build(date, time, lat, lon, tz, name="native", sex=None, window=15, years_ah
     horizon = today + dt.timedelta(days=int(365.25 * years_ahead))
     moon = v.s["Moon"]
     out = {"chart": chart, "analysis": a, "ashtakavarga": av, "av_checks": house_checks(av),
-           "time_sensitivity": time_sensitivity(date, time, lat, lon, tz, window),
+           "time_sensitivity": time_sensitivity(date, time, lat, lon, tz, window), "window": window,
            "saturn_phases": T.saturn_phases(moon, birth, horizon),
            "sade_sati": T.sade_sati_spans(moon, birth, horizon),
            "transits": {b: T.house_table(v, b, today - dt.timedelta(days=400), horizon) for b in ("Saturn", "Jupiter", "Rahu")},
@@ -313,6 +313,27 @@ def markdown(r, name="native"):
     w("## 11. Vimshottari\n")
     now = a["dasha_now"]
     w("Now: " + " / ".join(f"{d['lord']} (to {_d(d['end'])})" for d in now) + ".\n")
+    try:                                                      # every chart: how far the dates move inside the birth-time window
+        from engine.chart import build_chart as _bc
+        i_ = c["input"]; win = int(r.get("window", 15))
+        t0 = dt.datetime.strptime(i_["time"][:5], "%H:%M")
+        def _starts(delta):
+            t = (t0 + dt.timedelta(minutes=delta)).strftime("%H:%M")
+            cc = _bc(i_["date"], t, i_["lat"], i_["lon"], i_["tz"])
+            return t, {(m["lord"], ad["lord"]): ad["start"] for m in cc["dasha"]["maha"] for ad in m["antar"]}
+        (ta, A), (tb, B) = _starts(-win), _starts(win)
+        today_ = r["today"]
+        rows = [(m["lord"], ad["lord"], ad["start"]) for m in c["dasha"]["maha"] for ad in m["antar"]
+                if (ad["end"].date() if hasattr(ad["end"], "date") else ad["end"]) >= today_][:8]
+        shift = abs((A[rows[0][:2]] - B[rows[0][:2]]).days) / 2.0 if rows and rows[0][:2] in A and rows[0][:2] in B else 0
+        w(f"**How firm the dates are.** If the birth time is off by {win} minutes either way, every dasha date moves by about {shift:.0f} days "
+          f"({shift / 7:.0f} weeks). State dates as a season, not a day, unless the birth time is recorded to the minute; with a wider uncertainty re-run with `--window`.\n")
+        w(f"| Sub-period begins | If born {ta} | As given ({i_['time'][:5]}) | If born {tb} |\n|---|---|---|---|")
+        for md_, ad_, st_ in rows:
+            w(f"| {md_} - {ad_} | {_d(A.get((md_, ad_), st_))} | {_d(st_)} | {_d(B.get((md_, ad_), st_))} |")
+        w("")
+    except Exception as _e:                                  # noqa: BLE001
+        w(f"(Date range across the birth-time window not computed: {_e})\n")
     w("| Mahadasha | Antardasha | From | To | Age | Sub-lord from dasha lord | Areas the antardasha lord is STRONGLY linked to |\n|---|---|---|---|---|---|---|")
     P_ = c["planets"]
     def _rel(md, ad):
