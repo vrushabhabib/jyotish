@@ -335,3 +335,12 @@ Implementation advice: compute KD-01 and KD-02 separately and report which defin
 - Brihat Jataka ch. 24 and Saravali stri jataka parallels to BPHS-80.
 - Jaimini Sutras upapada section (the PDF portion read did not reach it); BPHS ch. 30 was used instead.
 - A KP Reader (vol. on marriage) for the exact denial house group and the dual-sign rule.
+
+
+## Timing and description rules confirmed in the Sanskrit of Phaladeepika ch. 10 (read 12 Nov 2026, `kb/sources/phaladeepika/ch10-12.md`)
+- **PD10-a** — The 5th and 7th from the lagna and from the Moon, joined or aspected by their lords or benefics: children and spouse both do well (10.1).
+- **PD10-b** — A benefic in the 7th gives happiness unless it is the lord of the 6th, 8th or 12th; even a malefic in its own sign in the 7th does good (10.6).
+- **PD10-c** — Direction the spouse comes from: the signs of the planet in the 7th, the 7th lord and Venus (10.12). Parashara adds the 7th from Venus (BPHS 70.35-36).
+- **PD10-d** — Timing by dasha: a planet in the 7th, one aspecting the 7th, the 7th lord (10.13); the stronger of the lords of the sign and navamsa holding the 7th lord, Venus and the Moon (10.14).
+- **PD10-e** — Timing by transit: Venus or the 7th lord in a trine of the sign or navamsa of the lagna lord (10.12); the lagna lord in the 7th sign (10.13); Jupiter in a trine of the sign or navamsa holding the 7th lord (10.14).
+- In a woman's chart Mantreshvara reads the husband and her good fortune from the 7th and children from the 9th (11.1); Parashara reads children from the 5th (BPHS 80.3). Check both and name the text.

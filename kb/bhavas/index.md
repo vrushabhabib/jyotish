@@ -24,6 +24,17 @@
 - **Marakas** (2,7): their lords and planets in them are marakas — relevant in dasha only when longevity is otherwise judged short.
 - **Yogakaraka**: one planet owning both a kendra and a trikona. Mars for Cancer & Leo lagnas, Venus for Capricorn & Aquarius, Saturn for Taurus & Libra.
 - **Bhavat bhavam**: 10th from 10th = 7th also shows career; 9th from 9th = 5th; 4th from 4th = 7th.
-- **A house is judged by**: sign, lord (placement, dignity, aspects), occupants, aspects on it, karaka, its condition in the relevant varga. Karaka *in* its own bhava harms it (karako bhava nashaya): Jupiter in 5th, Venus in 7th, Saturn in 8th, Sun in 9th, Mars in 3rd — softened by dignity.
+- **A house is judged by**: sign, lord (placement, dignity, aspects), occupants, aspects on it, karaka, its condition in the relevant varga. The saying that a significator in its own house harms it (Jupiter in 5th, Venus in 7th, Saturn in 8th, Sun in 9th, Moon in 4th, Mars in 3rd) is given in Phaladeepika 15.26 only as what "others say" - a minority view, never stated by itself.
 
 See `lord-placements.md` for each lord in each house.
+
+
+## How a house is judged - Phaladeepika ch. 15, read in the Sanskrit 12 Nov 2026 (`kb/sources/phaladeepika/ch15-26.md`)
+1. A house does well when it is joined or aspected by its own lord, lords of good houses or benefics, and is free of malefic aspect and company (15.1).
+2. Counted from the house itself: benefics in its trines, 2nd, 4th, 7th and 10th build it; malefics in its 6th, 8th and 12th, 4th and trines break it; malefics in its 3rd, 6th and 11th support it (15.2, 4, 6-7).
+3. Its lord in the 6th, 8th or 12th, combust, debilitated or in an enemy's sign harms it; a benefic's aspect repairs it (15.3, 5).
+4. The lord of a bad house sitting in its other, good, own sign gives only that good house's result (15.29).
+5. A planet owning two houses gives mainly its moolatrikona house (15.11); Parashara: it gives both, and equal opposite results cancel (BPHS 24.146).
+6. A planet at the border of a house gives nothing; at the middle, everything (15.13-14).
+7. "It becomes clear when two or three agree" (15.6) - the basis of the evidence count used in every reading.
+8. Five kinds of connection between planets: exchange of signs, conjunction, aspect, mutual kendras, mutual trines (15.30).

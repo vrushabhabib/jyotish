@@ -198,3 +198,13 @@ Scope: promise, delay, denial, adoption, medical assistance, Saptamsa (D7), Beej
 - Jaimini Sutras 1.4 (upapada and children) in a named translation, to settle the Moon-versus-Venus reading in D7-08.
 - Phaladeepika ch. 12 v.13, v.27, v.30 in a clean translation (the online text is partly garbled).
 - Saravali and Jataka Parijata chapters on progeny (not read in this run).
+
+
+## Rules confirmed in the Sanskrit of Phaladeepika ch. 12 (read 12 Nov 2026, `kb/sources/phaladeepika/ch10-12.md`)
+- **PD12-a** — 5th lord and Jupiter well placed from the lagna and from the Moon; 5th joined or aspected by lords of good houses and benefics; lagna lord and 5th lord joined, in mutual aspect or exchanged (12.1).
+- **PD12-b** — A malefic in its own sign in the 5th gives children (12.3). Scorpio, Taurus, Virgo and Leo on the 5th: fewer and later.
+- **PD12-c** — Fertility points: Jupiter + Moon + Mars in an even sign and navamsa (woman); Sun + Venus + Jupiter in an odd sign and navamsa (man) (12.14).
+- **PD12-d** — Timing by dasha: lagna lord, 7th lord, 5th lord, Jupiter, a planet in or aspecting the 5th (12.25, 27-28).
+- **PD12-e** — Timing by transit: Jupiter in the sign (or navamsa sign) of the 5th lord, or in a trine of the sign or navamsa of natal Jupiter or the 5th lord (12.25, 29); the lagna lord joining the 5th lord or reaching the 5th sign (12.26).
+- Mantreshvara's "others say" note on Jupiter in the 5th (15.26) is a minority view; it is not stated by itself.
+- Never stated to a client: sex or number of children, or that there will be none (12.2, 4-11, 13 are recorded and not used).
