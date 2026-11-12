@@ -44,11 +44,16 @@ Rule: `good = house_from_moon(transit_planet) in table[planet]`; all planets are
 | Jupiter | 2→12, 5→4, 7→3, 9→10, 11→8 |
 | Venus | 1→8, 2→7, 3→1, 4→10, 5→9, 8→5, 9→11, 11→3, 12→6 |
 | Saturn | 3→12, 6→9, 11→5 |
-| Rahu/Ketu | usually left outside the scheme; if used, as Saturn |
+| Rahu/Ketu | "like the Sun" (Phaladeepika 26.2, Sanskrit) - the earlier note "as Saturn" was wrong |
 
 Source: [Sastri] for all rows (his Saturn row is misprinted on the page as "9→9"; 6→9 is the standard value and matches [JH-G]). Jupiter and Saturn rows independently confirmed by [JH-G].
 
-**Disagreement to flag:** for Venus many circulated tables give 11→6 and 12→3; Sastri (pair list and his sign grid agree with each other) gives 11→3 and 12→6. Engine: use Sastri's, expose a switch.
+**Checked against the Sanskrit (Phaladeepika 26.3-8, read 12 Nov 2026, `kb/sources/phaladeepika/ch15-26.md`):** every pair in the table above is in the verses, including Venus 11→3 and 12→6; the circulated 11→6 / 12→3 is not what the text has. Exceptions in the verses: the Sun is not obstructed by Saturn, the Moon not by Mercury, Saturn not by the Sun, Mercury not by the Moon.
+
+**Three more rules from the same chapter**
+- 26.25: the Sun and Mars act in the first third of a sign, Jupiter and Venus in the middle third, the Moon and Saturn in the last third, Mercury and Rahu throughout.
+- 26.30-32: a bad-place planet aspected by a benefic, a good-place planet aspected by a malefic, and any planet aspected by its enemy give nothing; a planet in its own or exaltation sign does no harm in a bad place; a debilitated, combust or enemy-sign planet gives nothing in a good place.
+- 26.41: where the ashtakavarga has more points the transit is good even in the 6th, 8th or 12th - the same priority Parashara gives (BPHS 72.30-31).
 
 **Exceptions (no mutual vedha):** Sun and Saturn do not obstruct each other; Moon and Mercury do not obstruct each other (father-son pairs). [Sastri], [JSD44], [JH-G]. Sastri words it one-directionally and adds Sun does not obstruct Mars; the two-pair rule is the common form.
 
