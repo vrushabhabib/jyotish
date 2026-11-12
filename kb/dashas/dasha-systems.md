@@ -210,3 +210,17 @@ Planet orders and per-planet years for these were not in the page read; take the
 - Many websites state "odd signs forward, even signs backward" for Chara dasha — that is a different (wrong for Rao) rule; do not use it.
 - Vimshottari judgement rules are textbook Laghu Parashari practice from recall; chapter/verse numbers were not looked up.
 - Interpretation is the weak link in every dasha system; treat single-system, single-level matches as non-evidence.
+
+
+## Rules for judging a dasha and sub-period, read in the Sanskrit (Phaladeepika 20.22-63 and BPHS 47-60; 12 Nov 2026)
+Source notes: `kb/sources/phaladeepika/ch20-28.md`, `kb/sources/bphs/ch46-50.md`, `ch51-60.md`. These replace the "from memory" tags on the Laghu-Parashari lines above.
+1. **Subject and outcome.** The lord's houses say what the period is about (BPHS 48.2-7); its strength and placement say how it goes (PD 20.2-20). A lord of the 6th, 8th, 11th or 12th that is strong and well placed gives the good side of its house (PD 20.7, 9, 12, 13).
+2. **Scale.** Good results: full in exaltation, three quarters in moolatrikona, half in own sign, a quarter in a friend's, little in an enemy's, none in debilitation or combustion; bad results the other way (PD 20.30; BPHS 3.59-60). The twenty-point strength grades it (BPHS 7.26-27).
+3. **Sub-lord from dasha lord.** The sub-lord gives the results of the house it occupies counted from the dasha lord; the 6th, 8th and 12th from it are hard, the rest comfortable (PD 20.29; BPHS ch. 52-60).
+4. **Own sub-period.** A planet does not give its own results in its own sub-period; they come in the sub-periods of planets connected with it or of like nature (PD 20.43-44).
+5. **Kendra and trine lords.** Trine lords always good; a benefic owning a kendra is blemished (Jupiter and Venus most, then Mercury, then the Moon), a malefic owning one improves; lords of the 3rd, 6th and 11th give trouble; the 8th lord too unless it is also lagna lord or is the Sun or Moon (PD 20.41, 50-51; BPHS ch. 34). Kendra and trine lords connected give yoga and help in each other's sub-periods (PD 20.42, 45-49).
+6. **When in the period.** By the third of the sign (BPHS 47.3-4) and by the rising-type of the sign (BPHS 50.88-89; PD 20.33); stated only when the two agree.
+7. **Transit of the dasha lord itself.** The house it is passing through prospers while it is in its own, exaltation or a friend's sign (if strong at birth), and suffers while it is debilitated, combust or in an enemy's sign (PD 20.34-35, 37).
+8. **Month trigger.** The good of a favourable dasha lord arrives when the Sun (or Jupiter) is in that lord's own or exaltation sign; the hardship of an unfavourable one when the Sun is in its debilitation or an enemy's sign (PD 20.38).
+9. **Day-level tone.** The Moon in the dasha lord's exaltation or friendly sign, or in the 3rd, 6th, 7th, 10th, 11th or a trine from it: favourable days (PD 20.36, 60-62).
+10. **Fixed grids are tie-breakers only.** Mantreshvara's 81 unconditional sub-period verses (PD ch. 21) and Parashara's finer-level grids (BPHS ch. 61-63) ignore placement; rules 1-3 override them.
