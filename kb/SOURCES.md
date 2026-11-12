@@ -37,3 +37,6 @@
 - Read the rest of Parashara the same way, chapter by chapter, starting with those the life-area files lean on most (marriage ch. 18, children ch. 16, career ch. 21, longevity ch. 43-44, female chart ch. 80).
 - Re-read the 41 Phaladeepika citations against the Sanskrit text (the English they rest on is machine-generated).
 - Read the public-domain Brihat Jataka translation (Chidambaram Iyer, 1885) if a clean scan can be found, to source the Nabhasa and Moon yogas directly.
+
+## What the text itself claims (BPHS 66.10-12, read in the Sanskrit 12 Nov 2026)
+Parashara, introducing Ashtakavarga: to settle the length of life and the course of life with certainty "neither Vasishtha nor Brihaspati is able - how much less men, and in the Kali age especially". The science has a general part and a particular part; the particular part is offered to narrow the judgement, not as certainty. The project states its confidence in the same spirit: evidence counts and a logged track record, never a guarantee.

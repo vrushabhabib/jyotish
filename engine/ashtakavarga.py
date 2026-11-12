@@ -1,8 +1,13 @@
 """Ashtakavarga: Bhinnashtakavarga (BAV) for the seven grahas and Sarvashtakavarga (SAV).
 
-Benefic places are those of BPHS ch. 66 (as tabulated by B.V. Raman, 'Ashtakavarga System of
-Prediction'). Totals: Sun 48, Moon 49, Mars 39, Mercury 54, Jupiter 56, Venus 52, Saturn 39 = 337.
+Benefic places are the standard table (B.V. Raman, 'Ashtakavarga System of Prediction'; identical to
+AstroSage). Totals: Sun 48, Moon 49, Mars 39, Mercury 54, Jupiter 56, Venus 52, Saturn 39 = 337.
 Validated 11 Nov 2026 against an AstroSage printout (all 12 SAV values identical).
+
+BPHS ch. 66 read in the Sanskrit (sanskritdocuments.org par6170.itx, 12 Nov 2026): the per-house counts of
+Sun, Mars, Mercury, Jupiter and Saturn agree in all twelve houses. Three cells differ in that recension, with
+the same totals: Moon's table - Jupiter gives in the 2nd (not the 12th) and the Moon gives in the 9th where
+the standard table has Mars; Venus's table - Mars gives in the 4th (not the 5th). variant="bphs" applies them.
 
 Reading thresholds (Raman): a sign with 28 SAV bindus is average; 30+ strong, 25 or less weak.
 In a planet's own BAV, 4 is neutral, 5+ good and 3 or fewer poor for its transit through that sign.
@@ -30,8 +35,13 @@ TOTALS = {"Sun": 48, "Moon": 49, "Mars": 39, "Mercury": 54, "Jupiter": 56, "Venu
 KAKSHYA = ["Saturn", "Jupiter", "Mars", "Sun", "Venus", "Mercury", "Moon", "Lagna"]   # 3 deg 45 min each, in this order
 
 
-def ashtakavarga(chart):
-    """Returns {'bav': {planet: [12 bindus, Aries..Pisces]}, 'sav': [12], 'by_house': {...}, 'contributors': {...}}"""
+BPHS_VARIANT = {("Moon", "Jupiter"): [1,2,4,7,8,10,11], ("Moon", "Moon"): [1,3,6,7,9,10,11],
+                ("Moon", "Mars"): [2,3,5,6,10,11], ("Venus", "Mars"): [3,4,6,9,11,12]}
+
+
+def ashtakavarga(chart, variant="standard"):
+    """Returns {'bav': {planet: [12 bindus, Aries..Pisces]}, 'sav': [12], 'by_house': {...}, 'contributors': {...}}
+    variant="bphs" uses the three cells of the Sanskrit recension that differ from the standard table."""
     pos = {p: chart["planets"][p]["rashi"] for p in REFS[:-1]}
     pos["Lagna"] = chart["lagna"]["rashi"]
     bav, contrib = {}, {}
@@ -39,6 +49,7 @@ def ashtakavarga(chart):
         row = [0] * 12
         who = [[] for _ in range(12)]
         for ref, places in rules.items():
+            if variant == "bphs": places = BPHS_VARIANT.get((planet, ref), places)
             for h in places:
                 sg = (pos[ref] - 1 + h - 1) % 12
                 row[sg] += 1; who[sg].append(ref)
