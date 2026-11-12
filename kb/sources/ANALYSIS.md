@@ -96,8 +96,13 @@ New in the worksheet (each from a verse)
 | Sub-lord not in the 6th, 8th or 12th from the dasha lord (BPHS 52-60) | 6 of 6 | 69% |
 | Jupiter in a trine of the sign or navamsa sign of the house lord (PD 16.32) | 4 of 6 | 42% |
 | The same with the sign alone | 1 of 6 | 25% |
+| Mantreshvara's four transit triggers, at least two together (PD 16.31-35) - counted from the lagna | 4 of 6 | 58% |
+| The same, at least three together | 1 of 6 | 20% |
+| The same counted from the Moon, at least two | 3 of 6 | 66% |
+| Sun in an own or exaltation sign of the dasha or sub-period lord (PD 20.38) | 2 of 6 | 32% |
+| Sun in a debilitation or enemy sign of those lords (the events were mostly welcome ones) | 1 of 6 | 44% |
 
-  Six of six against a 69% chance level happens by luck about one time in nine; four of six against 42% is no evidence at all. **Neither rule is confirmed. Neither is refuted.** With six events nothing can be. The honest position is unchanged: the calculation side is verified to the arc-second; the predictive side has a consistent method taken from the source, a small past-question record, and no matured forward prediction.
+  Six of six against a 69% chance level happens by luck about one time in nine; four of six against 42% is no evidence at all. The transit-trigger track and the month trigger sit exactly at chance. They are coded (`engine/classical.py`) and the month trigger is printed in the worksheet marked tentative; the four-trigger track is **not** printed as a prediction. **Neither rule is confirmed. Neither is refuted.** With six events nothing can be. The honest position is unchanged: the calculation side is verified to the arc-second; the predictive side has a consistent method taken from the source, a small past-question record, and no matured forward prediction.
 - What would settle it: forward statements logged before the event. Every reading from now on logs its dated statements with the rule that produced them, so that in a year each rule in section 2 has its own hit rate.
 
 ## 8. How common the new quantities are (so they are not over-read)
@@ -108,8 +113,9 @@ New in the worksheet (each from a verse)
 - Yoga base rates were re-run after today's rule changes (`data/base_rates.json`).
 
 ## 9. What is still open
-1. Code and back-test Mantreshvara's transit-timing method as a separate track (section 5, last-but-two row).
-2. Code the high-priority items in `kb/sources/bphs/README.md` (twenty-point strength first: the text grades dasha results by it).
-3. Read the remaining Phaladeepika chapters (20 part, 21, 22, 25).
-4. Jaimini's sutras, Brihat Jataka and Saravali are cited in places from secondary pages; the same Sanskrit-first check is owed to them.
-5. A larger set of dated, consented events - the only thing that turns "consistent with the source" into "tested".
+Done since this analysis was first written (same day): the remaining Phaladeepika chapters (20, 21, 25 read; 22's coded sequences not decoded); twenty-point strength, special lagnas, delivery timing by two pointers, the three-part combined table, months from the Sun's table, direction of the spouse, birth-time conditions, conditional star dashas, the dasha lord's own transit and month trigger - all coded with tests (62 tests pass on both engines); Mantreshvara's transit track coded and back-tested (result above: at chance).
+
+Still open
+1. Nine states and six moods of planets (BPHS 45.7-17), argala (ch. 31), the remaining raja-yoga and poverty verses (39.8-10, 17, 39, 47; 24.58, 24.106; 42.8-11, 13-15), the non-luminous points and Gulika - found in the text, not yet computed.
+2. Jaimini's sutras, Brihat Jataka and Saravali are still cited in places from secondary pages; the same Sanskrit-first check is owed to them.
+3. A larger set of dated, consented events - the only thing that turns "consistent with the source" into "tested". Six events cannot separate any rule from chance.

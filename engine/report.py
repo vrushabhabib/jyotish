@@ -284,6 +284,15 @@ def markdown(r, name="native"):
     w("When inside its own period a planet delivers - two classical pointers (by the third of its sign, reversed if retrograde: Parashara 47.3-4; by the rising-type of its sign: 50.88-89). "
       "Where both agree: " + ("; ".join(f"{p} {x['by_third']}" for p, x in dv.items() if x["agree"]) or "none") +
       ". Where they differ (no statement): " + ("; ".join(f"{p} {x['by_third']}/{x['by_rising']}" for p, x in dv.items() if not x["agree"]) or "none") + ".\n")
+    try:
+        _today = dt.date.today()
+        for _lvl, _dl in zip(("Dasha lord", "Sub-period lord"), now[:2]):
+            _mt = KL.month_triggers(_dl["lord"]); _tr = KL.dasha_lord_transit(c, _dl["lord"], _today)
+            w(f"{_lvl} {_dl['lord']} (Phaladeepika 20.34-38): now passing through {_tr['sign']}, house {_tr['house']} - it {_tr['effect']} that house while there. "
+              "Its good tends to arrive with the Sun in " + ", ".join(f"{n} ({m})" for n, m in _mt["good"]) +
+              ("; its hardship with the Sun in " + ", ".join(f"{n} ({m})" for n, m in _mt["hard"]) if _mt["hard"] else "") + ". Classical, untested here - tentative.\n")
+    except Exception as _e:
+        w(f"(dasha-lord transit line not computed: {_e})\n")
     cur_md = next((x for x in a["dasha_tree"] if x[1] <= dt.datetime.now(local.tzinfo) < x[2]), None)
     if cur_md:
         w("\nPratyantardashas of the running and next two antardashas:\n")

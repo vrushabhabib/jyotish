@@ -198,3 +198,35 @@ def fruition_windows(chart, house, start, end, need=3, step_days=7, ref="lagna")
         d += dt.timedelta(days=step_days)
     if cur: out.append(tuple(cur))
     return out
+
+
+# ---------------------------------------------------------------------------------------------------------
+# PD 20.34-38: the dasha lord's own transit, and the Sun's month as the trigger
+# ---------------------------------------------------------------------------------------------------------
+import json as _json, os as _os
+_PL = _json.load(open(_os.path.join(_os.path.dirname(__file__), "..", "data", "rashis.json")))["planets"]
+SUN_MONTH = {1: "mid-Apr to mid-May", 2: "mid-May to mid-Jun", 3: "mid-Jun to mid-Jul", 4: "mid-Jul to mid-Aug",
+             5: "mid-Aug to mid-Sep", 6: "mid-Sep to mid-Oct", 7: "mid-Oct to mid-Nov", 8: "mid-Nov to mid-Dec",
+             9: "mid-Dec to mid-Jan", 10: "mid-Jan to mid-Feb", 11: "mid-Feb to mid-Mar", 12: "mid-Mar to mid-Apr"}
+
+
+def lord_signs(planet):
+    """Signs in which `planet` is at its best and worst: own + exaltation; debilitation + signs of natural enemies."""
+    d = _PL[planet]
+    good = set(d.get("own", [])) | {d["exalt"]["rashi"]}
+    bad = {d["debil"]["rashi"]} | {i + 1 for i, l in enumerate(RASHI_LORD) if l in d.get("enemies", [])}
+    return sorted(good), sorted(bad - good)
+
+
+def month_triggers(planet):
+    """PD 20.38: the months (by the Sun's sign) in which a dasha lord's good, or its hardship, arrives."""
+    g, b = lord_signs(planet)
+    return {"good": [(RASHI_NAMES[x - 1], SUN_MONTH[x]) for x in g], "hard": [(RASHI_NAMES[x - 1], SUN_MONTH[x]) for x in b]}
+
+
+def dasha_lord_transit(chart, planet, day):
+    """PD 20.34-37: where the dasha lord is passing now, and whether it helps or harms that house."""
+    if planet in ("Rahu", "Ketu", "Sun", "Moon") and planet not in _PL: return None
+    sg = _sidereal_sign(planet, day); g, b = lord_signs(planet)
+    house = (sg - chart["lagna"]["rashi"]) % 12 + 1
+    return {"sign": RASHI_NAMES[sg - 1], "house": house, "effect": "helps" if sg in g else "harms" if sg in b else "neutral"}

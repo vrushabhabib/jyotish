@@ -30,21 +30,16 @@ All 97 chapters have been read from the Sanskrit and recorded here.
 ## What is deliberately not used
 Length of life and death-inflicting periods (ch. 43-44, 71, parts of 46, 70); infant-death combinations (ch. 9); body marks and moles (ch. 81-82); character labels on women (80.8-16, 26-33); statements of widowhood, childlessness, a child's sex or number of children; reconstruction of a birth time from a question chart (ch. 78); every wording that a birth harms a named relative (ch. 85-96). They are recorded so that the reading of the text is complete and so that nobody mistakes their absence from a reading for ignorance of them.
 
-## Rules found in the text that the engine does not yet compute
-| Rule | Verse | Priority |
-|---|---|---|
-| Twenty-point strength (Vimshopaka) over sixteen divisions | 7.17-27 | high - the text says dasha results are graded by it |
-| Timing inside a dasha by rising-type of the planet's sign | 50.88-89 | medium |
-| Nine states and six moods of planets | 45.7-17 | medium |
-| Argala and its obstruction | 31 | medium |
-| Raja yogas 39.8-10, 17, 39, 47; single-planet raja yogas 24.58, 24.106 | as cited | medium |
-| Poverty combinations 42.8-11, 13-15 | as cited | medium |
-| Months and days to prefer or avoid from the Sun's and Moon's tables | 70.19-21 | medium |
-| Direction of the spouse from the 7th from Venus | 70.34-36 | low |
-| Three-block reading of the combined Ashtakavarga (childhood / middle / age) | 72.9-10 | low |
-| Year-by-year Sudarshana table | 74.21-26 | low |
-| Hora lagna, ghati lagna; non-luminous points; Gulika | 5.2-8; 3.61-70 | low |
-| Birth-time conditions line (new moon, dark 14th, Vishti, solar ingress, Vyatipata, lunar-day junction) | 85; 92.2 | low |
-| Which star dasha applies to this chart | 46.17-43 | low |
-| Parashara's dignity scale as a Shadbala option | 27.2-3 | low |
-| Share of results by dignity (full, three-quarters, half ...) beside each planet | 3.59-60 | low |
+## Rules found in the text: what is now computed and what is not
+Computed since the reading (in `engine/classical.py`, `engine/rashmi.py`, printed in the worksheet, with tests): twenty-point strength (7.17-27); timing inside a dasha by the third of the sign and by rising-type (47.3-4, 50.88-89); months from the Sun's table (70.19-20); direction of the spouse (70.35-36); three-part reading of the combined table (72.9-10); rays (73); running Sudarshana year (74.21-26); bhava, hora and ghati lagna (5.2-8); birth-time conditions (85; 92.2); which star dasha's condition is met (46.17-43); sub-lord's house from the dasha lord (52-60).
+
+Not yet computed
+| Rule | Verse |
+|---|---|
+| Nine states and six moods of planets | 45.7-17 |
+| Argala and its obstruction | 31 |
+| Raja yogas 39.8-10, 17, 39, 47; single-planet raja yogas 24.58, 24.106 | as cited |
+| Poverty combinations 42.8-11, 13-15 | as cited |
+| A full year-by-year Sudarshana table | 74.21-26 |
+| The five non-luminous points; Gulika | 3.61-70 |
+| Parashara's dignity scale as a Shadbala option | 27.2-3 |
