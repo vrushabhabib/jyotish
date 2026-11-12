@@ -102,14 +102,17 @@ def detect(v: View):
     # ---- poverty combinations (BPHS ch. 42)
     l1 = L[1]
     marakas = {L[2], L[7]} - {l1}
-    if ((H[l1] == 12 and H[L[12]] == 1) or (H[l1] == 6 and H[L[6]] == 1)) and any(touched_by(l1, m) for m in marakas):
-        add("daridra_1", [l1], "lagna lord exchanged with 6th/12th lord, touched by a maraka lord")
+    for hh in (12, 6):                                  # BPHS 42.2-3: the lord sitting in the lagna is the one touched by a maraka lord
+        if H[l1] == hh and H[L[hh]] == 1 and any(touched_by(L[hh], m) for m in {L[2], L[7]} - {L[hh]}):
+            add("daridra_1", [l1, L[hh]], f"lagna lord in the {hh}th, {hh}th lord in the lagna touched by a maraka lord")
     if (H["Ketu"] == 1 or S["Ketu"] == moon) and H[l1] == 8: add("daridra_2", [l1, "Ketu"])
     ben_asp = any(touched_by(l1, b) for b in BEN3 if b != l1)
-    if not ben_asp and ((H[l1] in DUSTHANA and any(S[m] == S[l1] for m in MAL3 + ["Rahu", "Ketu"] if m != l1)) or
-                        any(S[q] == S[l1] for q in {L[6], L[8], L[12], "Saturn"} if q != l1)):
-        add("daridra_3", [l1], "lagna lord with malefic/dusthana lord, no benefic aspect")
-    if H[L[5]] == 6 and H[L[9]] == 12: add("daridra_4", [L[5], L[9]])
+    if H[l1] in DUSTHANA and any(S[m] == S[l1] for m in MAL3 + ["Rahu", "Ketu"] if m != l1) and L[2] in DEBIL and S[L[2]] == DEBIL[L[2]]:
+        add("daridra_3", [l1, L[2]], "BPHS 42.5: lagna lord with a malefic in a dusthana, 2nd lord debilitated (enemy sign not tested)")
+    elif not ben_asp and any(S[q] == S[l1] for q in {L[6], L[8], L[12], "Saturn"} if q != l1):
+        add("daridra_3", [l1], "BPHS 42.6: lagna lord with a dusthana lord or Saturn, no benefic aspect")
+    if H[L[5]] == 6 and H[L[9]] == 12 and all(any(touched_by(q, m) for m in {L[2], L[7]} - {q}) for q in (L[5], L[9])):
+        add("daridra_4", [L[5], L[9]], "BPHS 42.7: both touched by maraka lords")
     if all(H[b] in DUSTHANA for b in BEN3) and all(H[m] in KENDRA | TRIKONA for m in MAL3): add("daridra_5", BEN3 + MAL3)
     if H["Mars"] == 2 and H["Saturn"] == 2 and not aspects_sign("Mercury", S["Mercury"], S["Mars"]): add("daridra_6", ["Mars", "Saturn"])
 
@@ -126,7 +129,7 @@ def detect(v: View):
         add("shubha_kartari_lagna", [b for b in B4 if H[b] in (2, 12)], "benefics on both sides of the lagna")
     if any(H[m] == 2 for m in M5) and any(H[m] == 12 for m in M5):
         add("ashubha_papa_kartari", [m for m in M5 if H[m] in (2, 12)], "malefics on both sides of the lagna")
-    if any(H[b] in KENDRA for b in BEN3) and not any(H[m] in (7, 8) for m in M5) and not any(H[m] in KENDRA for m in MAL3):
+    if any(H[b] in KENDRA for b in BEN3) and not any(H[m] in (7, 8) for m in M5):          # BPHS 36.7-8
         add("parvata", [b for b in BEN3 if H[b] in KENDRA], "benefics in kendras, 7th and 8th free of malefics")
     elif l1 != L[12] and mutual_kendra(l1, L[12]): add("parvata", [l1, L[12]], "Raman variant: 1L and 12L in mutual kendras")
     if (L[4] != "Jupiter" and mutual_kendra(L[4], "Jupiter") and v.strong(l1)) or (v.strong(L[4]) and L[4] != L[10] and S[L[4]] == S[L[10]]):
@@ -136,8 +139,10 @@ def detect(v: View):
         add("chamara", [l1], "two benefics together in house " + str(two_ben[0]) if two_ben else "lagna lord exalted in a kendra, aspected by Jupiter")
     if (v.strong(l1) and L[5] != L[6] and mutual_kendra(L[5], L[6])) or (S[l1] in (1, 4, 7, 10) and S[L[10]] in (1, 4, 7, 10) and v.strong(L[9])):
         add("shankha", [l1, L[5], L[6]])
-    if v.strong(L[9]) and len({"Venus", "Jupiter", l1}) == 3 and mutual_kendra("Venus", "Jupiter") and mutual_kendra("Venus", l1) and mutual_kendra("Jupiter", l1):
-        add("bheri", ["Venus", "Jupiter", l1])
+    if v.strong(L[9]) and all(H[p] in KENDRA for p in ("Venus", "Jupiter", l1)):
+        add("bheri", ["Venus", "Jupiter", l1], "BPHS 36.16: Venus, Jupiter and lagna lord in kendras, 9th lord strong")
+    elif v.strong(L[9]) and all(any(H[p] == h for p in v.s) for h in (12, 1, 2, 7)):
+        add("bheri", [L[9]], "BPHS 36.15: houses 12, 1, 2 and 7 occupied, 9th lord strong")
     if H[L[7]] == 10 and L[10] in EXALT and S[L[10]] == EXALT[L[10]] and S[L[10]] == S[L[9]]: add("shrinatha", [L[7], L[10], L[9]])
     if (H[L[10]] == 5 and H["Mercury"] in KENDRA and S["Sun"] == 5) or \
        (any(hfrom(S[p], moon) in (5, 9) for p in ("Jupiter", "Mercury")) and H["Mars"] == 11):
@@ -168,9 +173,9 @@ def detect(v: View):
     if all(L[h] in EXALT and (S[L[h]] == DEBIL[L[h]] or c["planets"][L[h]].get("combust")) for h in (6, 8, 12)) and v.strong(l1) and \
        (H[l1] == 1 or aspects_sign(l1, S[l1], v.lag)):
         add("viparita_bphs", [L[6], L[8], L[12]])
-    pair = {"Venus": ["Mars"], "Mercury": ["Moon", "Jupiter"], "Sun": ["Saturn", "Moon", "Jupiter"], "Saturn": ["Sun", "Moon"],
+    pair = {"Venus": ["Mars"], "Mercury": ["Moon", "Mars", "Jupiter"], "Sun": ["Saturn", "Moon", "Jupiter"], "Saturn": ["Sun", "Moon"],
             "Jupiter": ["Mercury"], "Mars": ["Venus"], "Moon": ["Saturn"]}
-    if H[L[5]] == 5 and any(H[q] == 11 for q in pair[L[5]]): add("dhana_5_11", [L[5]] + [q for q in pair[L[5]] if H[q] == 11])
+    if H[L[5]] == 5 and all(H[q] == 11 for q in pair[L[5]]): add("dhana_5_11", [L[5]] + pair[L[5]], "BPHS 41.2-8: all the named planets in the 11th")
     pl = {"Sun": ["Mars", "Jupiter"], "Moon": ["Mercury", "Jupiter"], "Mars": ["Mercury", "Venus", "Saturn"], "Mercury": ["Saturn", "Jupiter"],
           "Jupiter": ["Mercury", "Mars"], "Venus": ["Saturn", "Mercury"], "Saturn": ["Mars", "Jupiter"]}
     if H[l1] == 1 and all(touched_by(l1, q) for q in pl[l1]): add("dhana_lagna_own", [l1] + pl[l1])
@@ -181,7 +186,8 @@ def detect(v: View):
     for _ in range(2):
         k = RASHI_LORD[S[k] - 1]; chain.append(k)
     chain.append(RASHI_LORD[c["planets"][k]["D9"] - 1])
-    if all(H[p] in KENDRA | TRIKONA or S[p] == EXALT[p] for p in chain): add("kalpadruma", sorted(set(chain)))
+    if all(H[p] in KENDRA | TRIKONA for p in chain) or all(S[p] == EXALT.get(p) for p in chain):
+        add("kalpadruma", sorted(set(chain)), "BPHS 36.33-34: all four in kendras/trikonas, or all exalted")
 
     # ---- afflictions
     mal7 = [m for m in M5 if H[m] == 7]

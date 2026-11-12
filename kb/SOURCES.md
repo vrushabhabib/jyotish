@@ -14,7 +14,9 @@
 | P.V.R. Narasimha Rao, "Vedic Astrology: An Integrated Approach" and articles at vedicastrologer.org | Ashtakavarga tables, dashas, vargas, longevity | Free: released by the author on his own site |
 | siva.sh/phaladeepika | Phaladeepika verses (41 citations) | Free to read online; translation edition not stated on the pages read - provenance to confirm |
 | saravali.github.io | Saravali, strength rules | Free to read online; edition not stated - provenance to confirm |
-| archive.org item "ParasharaHoraSastra" | BPHS chapter and verse references (205 citations) | **Unclear.** Community upload, no licence shown, translator not named. It may be a scan of an in-copyright translation. The rules cited are Parashara's and are paraphrased, but every citation should be re-checked against a clearly free text and the link replaced |
+| sanskritdocuments.org, Brihat Parashara Hora Shastra: Sanskrit text of all 97 chapters (par0110 ... par9197) and an English meaning of chapters 34-45 | the Parashara rules; yoga, raja-yoga, wealth and poverty chapters | Free: prepared by volunteers "for personal study and research". Not to be reposted or used commercially - we cite and paraphrase only. On 12 Nov 2026 chapters 35-42 were re-read here and 87 of the 101 yoga citations moved to it; six yoga rules were corrected to match the text |
+| archive.org item "ParasharaHoraSastra" | formerly the BPHS link | **Removed.** Community upload with no licence and no named translator. 14 yoga citations (chapters 75-92) still rest on its English reading and are marked "not yet re-verified"; the Sanskrit for them is free at sanskritdocuments.org |
+| enjoylearningsanskrit.com/scriptures/parashara | verse-by-verse BPHS in the life-area files | Free to read online |
 | wisdomlib.org, Brihat Jataka (M. D. Neely) | chapter structure only | Free to read with the author's permission; the online pages carry the Sanskrit only, the English is in the paid book and is NOT used |
 | Wellcome Collection, Brihat Samhita tr. N. Chidambaram Iyer (1884-85) | not yet used | Public Domain Mark - usable |
 | en.wikipedia.org | definitions, cross-checks | Free (CC BY-SA) |
@@ -30,6 +32,6 @@
 - R. Santhanam's and other in-copyright translations of the classics.
 
 ## Work this leaves open
-- Re-check the 205 BPHS citations against a clearly free text (Sanskrit on a public-domain site plus P.V.R. Narasimha Rao's free textbook) and replace the archive.org link.
+- Re-read the 14 yoga citations from BPHS chapters 75-92 in the free Sanskrit text and clear their "not yet re-verified" mark.
 - Confirm the edition behind the Phaladeepika and Saravali sites.
 - Read the public-domain Brihat Jataka translation (Chidambaram Iyer, 1885) if a clean scan can be found, to source the Nabhasa and Moon yogas directly.

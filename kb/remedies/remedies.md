@@ -16,7 +16,7 @@ Tradition: Parashari base. This file separates four layers that are usually mixe
 - **Gemstones only under the rule in §3**, on trial, never for a 6th/8th/12th lord, and never as an expense the person can't easily afford.
 
 ## 1. Classical graha shanti — BPHS ch. 84 (read this session)
-Source: BPHS English e-text, ch. 84 "Remedies from the malevolence of planets", https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt . Condition for use in the text: a planet that is ill-placed/malefic at birth, or whose dasha or transit is troubling.
+Source: BPHS English e-text, ch. 84 "Remedies from the malevolence of planets", https://sanskritdocuments.org/brihatparashara (Sanskrit root text; English reading not yet re-verified) . Condition for use in the text: a planet that is ill-placed/malefic at birth, or whose dasha or transit is troubling.
 
 | Graha | Image material (vv.3-5) | Japa count (vv.17-20) | Homa wood (vv.21-22) | Food offered (vv.23-24) | Classical daan (v.25) |
 |---|---|---|---|---|---|

@@ -9,7 +9,7 @@ Source tags used below:
 - **[OJ102]** https://www.onlinejyotish.com/free-astrology/astrology-lessons/lesson_102.php (secondary)
 - **[JH-G]** https://jagannathhora.com/gochara/ ; **[JH-SS]** https://jagannathhora.com/sade-sati-effects-all-moon-signs/ (secondary, modern)
 - **[DP]** https://dekhopanchang.com/en/learn/gochar (secondary, modern)
-- **[BPHS]** English e-text at https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt (ch. 66-72 Ashtakavarga)
+- **[BPHS]** English e-text at https://sanskritdocuments.org/brihatparashara (Sanskrit root text; English reading not yet re-verified) (ch. 66-72 Ashtakavarga)
 - **[PVR]** P.V.R. Narasimha Rao, "Two transit principles" https://www.vedicastrologer.org/articles/pp_transits.pdf
 - **[WK]** written from working knowledge of the named text; not re-read this session
 

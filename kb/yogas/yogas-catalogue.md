@@ -27,35 +27,35 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Strength:** Stronger when the planet is unafflicted, not combust, not in planetary war, strong in navamsa, and its dasha runs in working years. PROJECT CALIBRATION: when formed in the 7th from the Moon (esp. Ruchaka/Shasha) read it first as pressure on marriage, not as a blessing.
 - **Cancellation:** Texts give no formal bhanga; practice treats it as void/weak if the planet is combust, defeated in war, debilitated in navamsa, conjunct or closely aspected by malefics/Rahu-Ketu, or (Phaladeepika tradition) if Sun or Moon are both weak.
 - **Result:** Native bold, victorious, commander-like, fond of contest; scarred or ruddy body. BPHS adds region ruled and life span.
-- **Source:** BPHS ch. 75 vv.1-22 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 75 vv.1-22 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par7180.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
 
 ### Bhadra yoga  `bhadra`
 - **Condition:** Mercury in Gemini (own) or Virgo (own/exalted) AND Mercury in house 1/4/7/10 counted from Lagna. (Variant: Phaladeepika ch. 6 and later authors also allow the count from the Moon.)
 - **Strength:** Stronger when the planet is unafflicted, not combust, not in planetary war, strong in navamsa, and its dasha runs in working years. PROJECT CALIBRATION: when formed in the 7th from the Moon (esp. Ruchaka/Shasha) read it first as pressure on marriage, not as a blessing.
 - **Cancellation:** Texts give no formal bhanga; practice treats it as void/weak if the planet is combust, defeated in war, debilitated in navamsa, conjunct or closely aspected by malefics/Rahu-Ketu, or (Phaladeepika tradition) if Sun or Moon are both weak.
 - **Result:** Native learned, articulate, sattvic, long-lived, comfortable. BPHS adds region ruled and life span.
-- **Source:** BPHS ch. 75 vv.1-22 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 75 vv.1-22 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par7180.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
 
 ### Hamsa yoga  `hamsa`
 - **Condition:** Jupiter in Sagittarius, Pisces (own) or Cancer (exalted) AND Jupiter in house 1/4/7/10 counted from Lagna. (Variant: Phaladeepika ch. 6 and later authors also allow the count from the Moon.)
 - **Strength:** Stronger when the planet is unafflicted, not combust, not in planetary war, strong in navamsa, and its dasha runs in working years. PROJECT CALIBRATION: when formed in the 7th from the Moon (esp. Ruchaka/Shasha) read it first as pressure on marriage, not as a blessing.
 - **Cancellation:** Texts give no formal bhanga; practice treats it as void/weak if the planet is combust, defeated in war, debilitated in navamsa, conjunct or closely aspected by malefics/Rahu-Ketu, or (Phaladeepika tradition) if Sun or Moon are both weak.
 - **Result:** Native righteous, respected, handsome, teacher/adviser status. BPHS adds region ruled and life span.
-- **Source:** BPHS ch. 75 vv.1-22 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 75 vv.1-22 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par7180.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
 
 ### Malavya yoga  `malavya`
 - **Condition:** Venus in Taurus, Libra (own) or Pisces (exalted) AND Venus in house 1/4/7/10 counted from Lagna. (Variant: Phaladeepika ch. 6 and later authors also allow the count from the Moon.)
 - **Strength:** Stronger when the planet is unafflicted, not combust, not in planetary war, strong in navamsa, and its dasha runs in working years. PROJECT CALIBRATION: when formed in the 7th from the Moon (esp. Ruchaka/Shasha) read it first as pressure on marriage, not as a blessing.
 - **Cancellation:** Texts give no formal bhanga; practice treats it as void/weak if the planet is combust, defeated in war, debilitated in navamsa, conjunct or closely aspected by malefics/Rahu-Ketu, or (Phaladeepika tradition) if Sun or Moon are both weak.
 - **Result:** Native refined, attractive, learned, vehicles and comforts, happy spouse. BPHS adds region ruled and life span.
-- **Source:** BPHS ch. 75 vv.1-22 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 75 vv.1-22 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par7180.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
 
 ### Shasha (Sasa) yoga  `shasha`
 - **Condition:** Saturn in Capricorn, Aquarius (own) or Libra (exalted) AND Saturn in house 1/4/7/10 counted from Lagna. (Variant: Phaladeepika ch. 6 and later authors also allow the count from the Moon.)
 - **Strength:** Stronger when the planet is unafflicted, not combust, not in planetary war, strong in navamsa, and its dasha runs in working years. PROJECT CALIBRATION: when formed in the 7th from the Moon (esp. Ruchaka/Shasha) read it first as pressure on marriage, not as a blessing.
 - **Cancellation:** Texts give no formal bhanga; practice treats it as void/weak if the planet is combust, defeated in war, debilitated in navamsa, conjunct or closely aspected by malefics/Rahu-Ketu, or (Phaladeepika tradition) if Sun or Moon are both weak.
 - **Result:** Native authority over many, organiser, fond of wilds/solitude, takes what belongs to others. BPHS adds region ruled and life span.
-- **Source:** BPHS ch. 75 vv.1-22 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 75 vv.1-22 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par7180.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
 
 
 ## Raja yogas (17)
@@ -64,92 +64,92 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** (a) Lagna lord exalted, in a kendra, aspected by Jupiter; OR (b) two benefics together in house 1, 7, 9 or 10.
 - **Cancellation:** None formal.
 - **Result:** King or honoured by the king; eloquent, learned, long-lived.
-- **Source:** BPHS ch. 36 vv.11-12 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.11-12 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Mridanga yoga  `mridanga`
 - **Condition:** Lagna lord strong AND the other planets in kendras/trikonas in own or exalted signs.
 - **Cancellation:** Weak Lagna lord.
 - **Result:** King or equal to a king, happy.
-- **Source:** BPHS ch. 36 v.17 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 v.17 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Shrinatha yoga  `shrinatha`
 - **Condition:** 7th lord in house 10 AND 10th lord exalted AND conjunct the 9th lord.
 - **Cancellation:** None formal.
 - **Result:** Equal to Indra; great prosperity.
-- **Source:** BPHS ch. 36 v.18 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 v.18 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Kurma yoga  `kurma`
 - **Condition:** Benefics in houses 5, 6, 7 in own/exalted/friendly signs AND malefics in houses 1, 3, 11 in own/exalted signs.
 - **Cancellation:** None formal.
 - **Result:** King/leader, virtuous, grateful, happy.
-- **Source:** BPHS ch. 36 vv.23-24 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.23-24 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Kusuma yoga  `kusuma`
 - **Condition:** Lagna in a fixed sign, Venus in a kendra, Moon in a trine with a benefic, Saturn in house 10.
 - **Cancellation:** None formal.
 - **Result:** King or equal, charitable, head of clan.
-- **Source:** BPHS ch. 36 vv.29-30 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.29-30 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Kalpadruma (Parijata) yoga  `kalpadruma`
 - **Condition:** Take Lagna lord -> its dispositor -> that planet's dispositor -> that one's navamsa dispositor: all in kendras/trikonas or exalted.
 - **Cancellation:** Any link in 6/8/12 or debilitated.
 - **Result:** Wealthy, king-like, pious, strong, fond of battle yet merciful.
-- **Source:** BPHS ch. 36 vv.33-34 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.33-34 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Kendra-Trikona raja yoga  `kendra_trikona_raja`
 - **Condition:** A lord of a kendra (1/4/7/10) and a lord of a trikona (1/5/9) are (a) conjunct in one sign, OR (b) in mutual aspect, OR (c) exchange signs. Lagna lord counts as both.
 - **Strength:** Rank: 9th+10th > 5th+10th > 9th+4th/7th > others. Stronger in kendra/trikona, in own/exalted signs, repeated in navamsa.
 - **Cancellation:** Spoiled when either lord also owns 6/8/12 without redeeming ownership, is debilitated/combust, or the pair sits in 6/8/12; 3rd/11th lord joining dilutes (Laghu Parashari rule, NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers)).
 - **Result:** Fame and position 'like a king' in proportion to strength; fructifies in the dasha/antardasha of the two lords.
-- **Source:** BPHS ch. 34 vv.11-12 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 34 vv.11-12 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Yogakaraka (single planet)  `yogakaraka_planet`
 - **Condition:** One planet owns both a kendra and a trikona: Mars for Cancer & Leo lagna; Venus for Capricorn & Aquarius; Saturn for Taurus & Libra.
 - **Cancellation:** Debilitated, combust or in 6/8/12 it gives little.
 - **Result:** That planet alone gives raja-yoga results in its periods.
-- **Source:** BPHS ch. 34 v.13 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 34 v.13 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Rahu/Ketu as yogakaraka  `node_yogakaraka`
 - **Condition:** Rahu or Ketu in a kendra AND conjunct/aspected by a trikona lord; or in a trikona AND conjunct/aspected by a kendra lord.
 - **Cancellation:** Association with a 6/8/12 lord.
 - **Result:** The node gives raja-yoga results in its dasha.
-- **Source:** BPHS ch. 34 v.17 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 34 v.17 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Dharma-Karmadhipati yoga  `dharma_karmadhipati`
 - **Condition:** 9th lord and 10th lord conjunct, in mutual aspect, or exchanging signs (9th lord in 10th and 10th lord in 9th).
 - **Cancellation:** For lagnas where one of them is also an 8th/11th/12th lord (e.g. Aries: Saturn 10+11; Gemini: Saturn 8+9; Leo: Venus 3+10) the result is mixed.
 - **Result:** Highest of the kendra-trikona yogas: rise through one's work in line with dharma; kingdom/high office.
-- **Source:** BPHS ch. 39 vv.33-38 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 39 vv.33-38 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Maha Raja yoga  `maha_raja`
 - **Condition:** Lagna lord and 5th lord exchange signs; OR Atmakaraka and Putrakaraka in Lagna/5th in own/exalted sign or aspected by a benefic.
 - **Cancellation:** None formal.
 - **Result:** Famous and happy.
-- **Source:** BPHS ch. 39 vv.6-7 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 39 vv.6-7 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Lagna lord - 10th lord exchange  `lagna_karma_exchange`
 - **Condition:** Lagna lord in house 10 AND 10th lord in house 1.
 - **Cancellation:** None formal.
 - **Result:** Great royal association; high standing.
-- **Source:** BPHS ch. 40 v.13 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 40 v.13 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Exalted-planet raja yoga  `exalted_count`
 - **Condition:** Count planets in exaltation or moolatrikona: 1-3 = king only if born in a ruling family; 4-5 = even a low-born person rises to rule; 6 = emperor.
 - **Cancellation:** Exalted planets that are retrograde/combust or in 6/8/12 count less in practice.
 - **Result:** Status scaled to the count.
-- **Source:** BPHS ch. 39 vv.44-46 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 39 vv.44-46 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Benefics in kendras, malefics in 3/6/11  `benefic_kendra_malefic_upachaya`
 - **Condition:** All benefics in kendras from Lagna AND malefics only in houses 3, 6, 11.
 - **Cancellation:** None formal.
 - **Result:** Even one of humble birth rises to the throne.
-- **Source:** BPHS ch. 39 v.48 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 39 v.48 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Vargottama Moon aspected by 4+  `moon_vargottama_aspected`
 - **Condition:** Moon strong and vargottama (same sign in D1 and D9) AND aspected by four or more planets.
 - **Cancellation:** None formal.
 - **Result:** Becomes a king.
-- **Source:** BPHS ch. 39 v.42 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 39 v.42 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Akhanda Samrajya yoga  `akhanda_samrajya`  [unverified]
 - **Condition:** Jupiter is lord of house 2, 5 or 11 from Lagna (e.g. Taurus lagna: 11th; Leo: 5th; Scorpio: 2nd and 5th; Aquarius: 2nd and 11th - compute from lordship, do not hard-code) AND one of the lords of the 2nd, 9th or 11th is in a kendra from the Moon (Raman: also requires that lord to be strong).
@@ -161,7 +161,7 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** Moon and Venus placed in houses 3 and 11 from each other (mutual 3-11) per BPHS wording 'aspecting each other'.
 - **Cancellation:** None formal.
 - **Result:** Raja yoga.
-- **Source:** BPHS ch. 39 v.41 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 39 v.41 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 
 ## Dhana yogas (8)
@@ -170,7 +170,7 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** All benefics (Mercury, Jupiter, Venus) in upachaya houses 3/6/10/11 counted from the Moon (B.V. Raman also allows from Lagna).
 - **Cancellation:** None formal.
 - **Result:** Affluence. Two benefics = medium wealth; one = negligible.
-- **Source:** BPHS ch. 37 v.6 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; name 'Vasumati' per B.V. Raman, 300 Important Combinations (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))
+- **Source:** BPHS ch. 37 v.6 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; name 'Vasumati' per B.V. Raman, 300 Important Combinations (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))
 
 ### Chandra-Mangala yoga  `chandra_mangala`  [unverified]
 - **Condition:** Moon and Mars in the same sign (some authors also accept mutual 7th aspect).
@@ -182,37 +182,37 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** 2nd lord and 9th lord exchange signs AND Lagna lord in a kendra or trikona.
 - **Cancellation:** None formal.
 - **Result:** Wealthy, learned, skilful, grateful, powerful.
-- **Source:** BPHS ch. 36 vv.25-26 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.25-26 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Lakshmi yoga  `lakshmi`
 - **Condition:** 9th lord in a kendra from Lagna in its own, moolatrikona or exaltation sign AND Lagna lord strong. (Raman variant: Lagna lord strong and 9th lord in own/exalted sign in kendra or trikona.)
 - **Cancellation:** Weak Lagna lord; 9th lord combust/afflicted.
 - **Result:** Charming, virtuous, kingly wealth, many sons, fame.
-- **Source:** BPHS ch. 36 vv.27-28 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.27-28 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Dhana yoga: own-sign planet in 5th with gainer in 11th  `dhana_5_11`
 - **Condition:** House 5 is the own sign of planet X and X sits there, with the paired planet(s) in house 11: Venus(5)+Mars(11); Mercury(5)+Moon,Jupiter(11); Sun in Leo(5)+Saturn,Moon,Jupiter(11); Saturn(5)+Sun,Moon(11); Jupiter(5)+Mercury(11); Mars(5)+Venus(11); Moon in Cancer(5)+Saturn(11).
 - **Cancellation:** None formal.
 - **Result:** Great affluence.
-- **Source:** BPHS ch. 41 vv.2-8 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 41 vv.2-8 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Dhana yoga: own-sign planet in Lagna  `dhana_lagna_own`
 - **Condition:** Lagna is the own sign of planet X, X sits in Lagna, and is joined/aspected by: Sun<-Mars,Jupiter; Moon<-Mercury,Jupiter; Mars<-Mercury,Venus,Saturn; Mercury<-Saturn,Jupiter; Jupiter<-Mercury,Mars; Venus<-Saturn,Mercury; Saturn<-Mars,Jupiter.
 - **Cancellation:** None formal.
 - **Result:** Wealthy.
-- **Source:** BPHS ch. 41 vv.9-15 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 41 vv.9-15 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Dhana yoga by lordship (2/5/9/11)  `dhana_lords`
 - **Condition:** Any conjunction, mutual aspect or exchange between lords of 2nd, 5th, 9th and 11th (and Lagna lord). BPHS: 5th and 9th lords and planets joined to them give wealth in their dashas.
 - **Cancellation:** Involvement of 6/8/12 lords or debility reduces it.
 - **Result:** Wealth in the dashas of the planets involved.
-- **Source:** BPHS ch. 41 v.16 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; general lordship rule per B.V. Raman (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))
+- **Source:** BPHS ch. 41 v.16 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; general lordship rule per B.V. Raman (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))
 
 ### Exalted benefic in 2nd  `dhana_benefic_2nd`
 - **Condition:** Moon, Jupiter, Venus or Mercury exalted and placed in house 2.
 - **Cancellation:** None formal.
 - **Result:** Wealthy.
-- **Source:** BPHS ch. 39 v.18 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 39 v.18 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 
 ## Lunar yogas (incl. Kemadruma and every cancellation) (14)
@@ -222,32 +222,32 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Strength:** Best when Jupiter and Moon are in good houses from Lagna (kendra/trikona), Moon waxing, and either is in own/exalted sign.
 - **Cancellation:** Fails or is nominal if Jupiter is debilitated, combust, in inimical sign, or Moon is very weak (dark fortnight near Sun) or both sit in 6/8/12 from Lagna. Common in ~1/3 of charts, so never read alone.
 - **Result:** Splendour, intelligence, wealth, virtue, favour of rulers.
-- **Source:** BPHS ch. 36 vv.3-4 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.3-4 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Sunapha yoga  `sunapha`
 - **Condition:** Any of Mars/Mercury/Jupiter/Venus/Saturn in house 2 counted from the Moon. Sun, Rahu, Ketu do not count.
 - **Strength:** Benefic occupant > malefic occupant; result coloured by the occupying planet.
 - **Cancellation:** None formal; a malefic alone (Mars/Saturn) gives a harsher version.
 - **Result:** Self-earned wealth, intelligence, king-like standing.
-- **Source:** BPHS ch. 37 vv.7-10 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 37 vv.7-10 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Anapha yoga  `anapha`
 - **Condition:** Any of Mars/Mercury/Jupiter/Venus/Saturn in house 12 counted from the Moon. Sun, Rahu, Ketu do not count.
 - **Cancellation:** None formal.
 - **Result:** Good health and presence, reputation, pleasures; later-life detachment.
-- **Source:** BPHS ch. 37 vv.7-10 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 37 vv.7-10 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Durudhara yoga  `durudhara`
 - **Condition:** Planets (other than Sun, Rahu, Ketu) in BOTH house 2 and house 12 counted from the Moon.
 - **Cancellation:** None formal; two malefics flanking = papa-kartari on the Moon, read as pressure on the mind.
 - **Result:** Wealth, conveyances, charity, enjoyment.
-- **Source:** BPHS ch. 37 vv.7-10 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 37 vv.7-10 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Kemadruma yoga  `kemadruma`
 - **Condition:** No planet (Sun, Rahu, Ketu not counted) in house 2 or house 12 from the Moon, AND no planet conjunct the Moon, AND (BPHS wording) no planet in a kendra from Lagna.
 - **Cancellation:** See kemadruma_bhanga_1..7 (each listed separately).
 - **Result:** Poverty of support: reproach, penury, dependence, mental distress, unstable residence even if born well.
-- **Source:** BPHS ch. 37 vv.11-13 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 37 vv.11-13 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 - **Note:** Definitions differ: Brihat Jataka/Saravali family also require no planet in a kendra from the Moon before calling it Kemadruma. Engine: compute the strict form (2/12/conjunction empty) then test each bhanga.
 
 ### Kemadruma bhanga #1  `kemadruma_bhanga_1`
@@ -260,7 +260,7 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** Kemadruma present AND: A planet (not Rahu/Ketu) in house 1/4/7/10 counted from Lagna (BPHS builds this into the definition itself).
 - **Cancellation:** n/a (this is itself a cancellation)
 - **Result:** Kemadruma is cancelled or reduced; some authors (Jataka Parijata tradition) then call it Kalpadruma, giving rise after early hardship.
-- **Source:** BPHS ch. 37 vv.11-13 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 37 vv.11-13 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Kemadruma bhanga #3  `kemadruma_bhanga_3`
 - **Condition:** Kemadruma present AND: Moon itself in house 1/4/7/10 from Lagna.
@@ -297,13 +297,13 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Strength:** Count how many of the three benefics participate and their dignity: 3 strong = top grade.
 - **Cancellation:** Weak if the benefics are combust/debilitated or malefics share those houses.
 - **Result:** King, minister or army chief according to strength (full / medium / low).
-- **Source:** BPHS ch. 37 v.5 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 37 v.5 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Moon's house-position from Sun  `chandra_sun_distance`
 - **Condition:** Moon in kendra (1/4/7/10) from Sun = low; in panaphara (2/5/8/11) = medium; in apoklima (3/6/9/12) = high.
 - **Cancellation:** n/a
 - **Result:** Grades wealth, intelligence and skill: little / middling / excellent.
-- **Source:** BPHS ch. 37 v.1 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 37 v.1 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 
 ## Solar yogas (4)
@@ -312,19 +312,19 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** A planet other than the Moon (and not Rahu/Ketu) in house 2 counted from the Sun.
 - **Cancellation:** Malefic occupant reverses the result.
 - **Result:** Balanced outlook, truthful, somewhat indolent, modest wealth.
-- **Source:** BPHS ch. 38 vv.1-4 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 38 vv.1-4 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Vasi (Vosi) yoga  `vasi`
 - **Condition:** A planet other than the Moon (and not Rahu/Ketu) in house 12 counted from the Sun.
 - **Cancellation:** Malefic occupant reverses the result.
 - **Result:** Skilful, charitable, learned, famous.
-- **Source:** BPHS ch. 38 vv.1-4 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 38 vv.1-4 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Ubhayachari yoga  `ubhayachari`
 - **Condition:** Planets other than the Moon in BOTH house 2 and house 12 counted from the Sun.
 - **Cancellation:** Malefics on both sides = hemmed Sun (papa-kartari): reverse.
 - **Result:** King or equal to a king; well-built, tolerant.
-- **Source:** BPHS ch. 38 vv.1-4 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 38 vv.1-4 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Budha-Aditya (Nipuna) yoga  `budha_aditya`  [unverified]
 - **Condition:** Sun and Mercury in the same sign.
@@ -361,7 +361,7 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** Lords of 6th, 8th and 12th debilitated/in inimical signs or combust, while Lagna lord in own/exalted sign aspects Lagna.
 - **Cancellation:** Strong dusthana lords.
 - **Result:** Becomes a king.
-- **Source:** BPHS ch. 39 vv.19-21, 28 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 39 vv.19-21, 28 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Harsha yoga  `harsha`
 - **Condition:** Lord of house 6 placed in house 6, 8 or 12 from Lagna (most authors: best when in its own dusthana or another dusthana, alone, without a non-dusthana lord).
@@ -471,80 +471,80 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** Benefics in houses 7 and 8 from Lagna (later authors: 6, 7, 8) with NO malefic conjunction or aspect on them.
 - **Cancellation:** Any malefic conjunction/aspect on those benefics.
 - **Result:** A great, learned person, happy.
-- **Source:** BPHS ch. 36 v.37 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 v.37 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Amala yoga  `amala`
 - **Condition:** Only benefic(s) (Jupiter, Venus, Mercury, waxing Moon) in house 10 counted from Lagna or from the Moon; no malefic there.
 - **Cancellation:** A malefic in or aspecting the 10th spoils it.
 - **Result:** Lasting fame, clean reputation, charity, respect of rulers.
-- **Source:** BPHS ch. 36 vv.5-6 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.5-6 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Shubha (Subha) yoga  `shubha_kartari_lagna`
 - **Condition:** A benefic in Lagna, OR benefics in both house 2 and house 12 from Lagna (shubha-kartari).
 - **Cancellation:** Malefic there instead = Ashubha yoga.
 - **Result:** Eloquent, virtuous, charming.
-- **Source:** BPHS ch. 36 vv.1-2 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.1-2 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Parvata yoga  `parvata`
 - **Condition:** Benefics in kendras from Lagna AND houses 7 and 8 empty or occupied by benefics only. (Raman variant: Lagna lord and 12th lord in mutual kendras.)
 - **Cancellation:** Malefic in 7th/8th.
 - **Result:** Wealthy, eloquent, charitable, leader of a town.
-- **Source:** BPHS ch. 36 vv.7-8 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.7-8 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Kahala yoga  `kahala`
 - **Condition:** (a) 4th lord and Jupiter in mutual kendras AND Lagna lord strong; OR (b) 4th lord in own/exalted sign conjunct the 10th lord.
 - **Cancellation:** Weak Lagna lord.
 - **Result:** Energetic, commands a force, heads villages.
-- **Source:** BPHS ch. 36 vv.9-10 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.9-10 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Shankha yoga  `shankha`
 - **Condition:** (a) Lagna lord strong AND 5th and 6th lords in mutual kendras; OR (b) Lagna lord and 10th lord in a movable sign AND 9th lord strong.
 - **Cancellation:** Weak Lagna/9th lord.
 - **Result:** Wealth, spouse, sons, piety, long life.
-- **Source:** BPHS ch. 36 vv.13-14 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.13-14 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Bheri yoga  `bheri`
 - **Condition:** (a) 9th lord strong AND planets occupy houses 1, 2, 7 and 12 (e-text reading varies); OR (b) Venus, Jupiter and Lagna lord in mutual kendras AND 9th lord strong.
 - **Cancellation:** Weak 9th lord.
 - **Result:** Wealth, spouse and sons, fame, royal standing.
-- **Source:** BPHS ch. 36 vv.15-16 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.15-16 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 - **Note:** House list in variant (a) is read differently in different editions.
 
 ### Sharada yoga  `sharada`
 - **Condition:** (a) 10th lord in house 5, Mercury in a kendra, Sun strong in Leo; OR (b) Jupiter or Mercury in a trine from the Moon AND Mars in house 11.
 - **Cancellation:** None formal.
 - **Result:** Wealth, learning, sons, favour of rulers, ascetic bent.
-- **Source:** BPHS ch. 36 vv.19-20 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.19-20 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Matsya yoga  `matsya`
 - **Condition:** Benefics in houses 1 and 9, mixed planets in house 5, malefics in houses 4 and 8.
 - **Cancellation:** None formal.
 - **Result:** Astrologer, kind, virtuous, learned, famous.
-- **Source:** BPHS ch. 36 vv.21-22 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.21-22 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Kalanidhi yoga  `kalanidhi`
 - **Condition:** Jupiter in house 2 or 5 AND aspected (or joined) by Mercury and Venus.
 - **Cancellation:** None formal.
 - **Result:** Virtuous, honoured by rulers, learned, free of disease.
-- **Source:** BPHS ch. 36 vv.31-32 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.31-32 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Hari yoga (Trimurti)  `hari`
 - **Condition:** Benefics in houses 2, 8 and 12 counted from the sign occupied by the 2nd lord.
 - **Cancellation:** None formal.
 - **Result:** Happy, learned, wealthy, with sons.
-- **Source:** BPHS ch. 36 vv.35-36 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.35-36 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Hara yoga (Trimurti)  `hara`
 - **Condition:** Benefics in houses 4, 8 and 9 counted from the sign occupied by the 7th lord.
 - **Cancellation:** None formal.
 - **Result:** Happy, learned, wealthy, with sons.
-- **Source:** BPHS ch. 36 vv.35-36 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.35-36 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Brahma yoga (Trimurti)  `brahma`
 - **Condition:** Benefics in houses 4, 10 and 11 counted from the sign occupied by the Lagna lord.
 - **Cancellation:** None formal.
 - **Result:** Happy, learned, wealthy, with sons.
-- **Source:** BPHS ch. 36 vv.35-36 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.35-36 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Saraswati yoga  `saraswati`  [unverified]
 - **Condition:** Jupiter, Venus and Mercury each in a kendra (1/4/7/10), trikona (5/9) or house 2 from Lagna (together or separately) AND Jupiter in own, exalted or friendly sign.
@@ -574,13 +574,13 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** Moon and Saturn in the same sign. Wider variants: Saturn aspecting the Moon (3rd/7th/10th aspect), or Moon in Saturn's nakshatra with Saturn in Moon's.
 - **Cancellation:** Mild when Moon is waxing/strong, in Taurus/Cancer, when Saturn is yogakaraka (Taurus/Libra lagna), or Jupiter aspects.
 - **Result:** Melancholy, emotional restraint, delayed comforts, distance from mother; also discipline and endurance. Classical texts read Moon-Saturn as a renunciation factor (BPHS 79 vv.6-8).
-- **Source:** Name 'Vish yoga' is modern/popular; Moon-Saturn pravrajya reading per BPHS ch. 79 vv.6-8 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** Name 'Vish yoga' is modern/popular; Moon-Saturn pravrajya reading per BPHS ch. 79 vv.6-8 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par7180.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
 
 ### Grahan (eclipse) dosha  `grahan`
 - **Condition:** Sun or Moon in the same sign as Rahu or Ketu. Strict form: within ~12-15 deg of the node, or birth during an actual solar/lunar eclipse.
 - **Cancellation:** Wide orb, luminary in own/exalted sign, Jupiter's aspect reduce it.
 - **Result:** Weakens what the luminary stands for (Sun: father, vitality, authority; Moon: mother, mind).
-- **Source:** Birth during eclipse and its shanti: BPHS ch. 91 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt); the generic 'Grahan dosha' label is modern
+- **Source:** Birth during eclipse and its shanti: BPHS ch. 91 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par9197.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified); the generic 'Grahan dosha' label is modern
 
 ### Kaal Sarp (Kala Sarpa) yoga  `kaal_sarp`
 - **Condition:** All seven planets Sun..Saturn lie in the half of the zodiac going from Rahu to Ketu (zodiacal order), no planet in the other half. Strict form (B.V. Raman): Lagna must also be inside the same half. Compute by longitude, not only by sign.
@@ -699,7 +699,7 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** A malefic in Lagna, OR malefics in both house 2 and house 12 from Lagna. (Generalised: any house/planet flanked by malefics on both sides is hemmed.)
 - **Cancellation:** A benefic in or aspecting the hemmed house eases it.
 - **Result:** Sensual, sinful, enjoys others' wealth; the hemmed house suffers.
-- **Source:** BPHS ch. 36 vv.1-2 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 36 vv.1-2 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Avayoga  `avayoga`
 - **Condition:** Lord of house 1 placed in house 6, 8 or 12 from Lagna; OR house 1 itself occupied/aspected by malefics with its lord weak.
@@ -768,49 +768,49 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** Lagna lord in house 12 (or 6) AND the 12th (or 6th) lord in Lagna, aspected/joined by a maraka (2nd/7th) lord.
 - **Cancellation:** Benefic aspect; strong Lagna lord.
 - **Result:** Penniless.
-- **Source:** BPHS ch. 42 vv.2-3 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 42 vv.2-3 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Daridra: Ketu with Lagna/Moon, Lagna lord in 8th  `daridra_2`
 - **Condition:** Ketu in Lagna or with the Moon AND Lagna lord in house 8.
 - **Cancellation:** None formal.
 - **Result:** Penniless.
-- **Source:** BPHS ch. 42 v.4 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 42 v.4 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Daridra: afflicted Lagna lord in dusthana  `daridra_3`
 - **Condition:** Lagna lord with malefics in 6/8/12, OR Lagna lord with a 6/8/12 lord or Saturn, with no benefic aspect.
 - **Cancellation:** Benefic aspect.
 - **Result:** Indigent.
-- **Source:** BPHS ch. 42 vv.5-6 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 42 vv.5-6 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Daridra: 5th and 9th lords in 6th and 12th  `daridra_4`
 - **Condition:** 5th lord in house 6 and 9th lord in house 12, aspected by maraka lords.
 - **Cancellation:** None formal.
 - **Result:** Penniless.
-- **Source:** BPHS ch. 42 vv.7-8 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 42 vv.7-8 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Daridra: benefics in bad houses, malefics in good  `daridra_5`
 - **Condition:** Benefics in 6/8/12 (inauspicious houses) AND malefics in kendras/trikonas.
 - **Cancellation:** None formal.
 - **Result:** Indigent; distress even over food.
-- **Source:** BPHS ch. 42 v.12 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 42 v.12 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Daridra: Mars+Saturn in 2nd  `daridra_6`
 - **Condition:** Mars and Saturn both in house 2 (unless aspected by Mercury, which reverses it to great wealth). Also: Sun in 2nd aspected by Saturn; Saturn in 2nd aspected by Sun.
 - **Cancellation:** Mercury's aspect on the 2nd; Sun in 2nd unaspected by Saturn gives riches.
 - **Result:** Wealth destroyed.
-- **Source:** BPHS ch. 42 vv.16-18 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 42 vv.16-18 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
 ### Sarpa shapa (serpent curse)  `sarpa_shapa`
 - **Condition:** Rahu in house 5 aspected by Mars, or in Mars's sign; 5th lord with Rahu; Jupiter with Rahu and 5th lord weak; and similar combinations afflicting the 5th house, its lord and Jupiter (several variants).
 - **Cancellation:** Remedy prescribed, not a cancellation: Naga worship, charity (vv.17-19).
 - **Result:** Difficulty in having or keeping children.
-- **Source:** BPHS ch. 83 vv.9-19 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 83 vv.9-19 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par8190.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
 
 ### Pitru dosha / Pitru shapa  `pitru_dosha`
 - **Condition:** Classical (BPHS): Sun debilitated in house 5 hemmed/joined by malefics; Sun as 5th lord with malefics; 9th/5th lords and Sun afflicted by Saturn/Rahu etc. (several variants, all tied to progeny). Popular: Sun with Rahu/Ketu/Saturn, or 9th house/9th lord afflicted by Rahu/Saturn.
 - **Cancellation:** Benefic (Jupiter) aspect on Sun/9th; strong 9th lord. Remedy in text: shraddha at Gaya, feeding, charity (vv.31-33).
 - **Result:** Classical: obstruction to children due to father's/ancestors' displeasure. Popular: generic family obstacles.
-- **Source:** BPHS ch. 83 vv.20-33 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 83 vv.20-33 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par8190.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
 - **Note:** The popular definition is far wider than the classical one; flag which one fired.
 
 ### Kalatra dosha (7th-house affliction)  `kalatra_dosha`  [unverified]
@@ -831,13 +831,13 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** Moon (nakshatra gandanta) or Lagna (lagna gandanta) at the water-fire junctions: end of Revati/start of Ashwini (Pisces-Aries), end of Ashlesha/start of Magha (Cancer-Leo), end of Jyeshtha/start of Mula (Scorpio-Sagittarius). Abhukta Mula = last 6 ghatis of Jyeshtha + first 8 ghatis of Mula.
 - **Cancellation:** Shanti rites prescribed; in practice strength of Moon/Lagna lord and benefic aspect.
 - **Result:** Risk to child or a parent in early life per text; modern reading: a knot to be untied around the junction's themes.
-- **Source:** BPHS ch. 92-94 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 92-94 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par9197.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
 
 ### Amavasya / Krishna Chaturdashi birth  `amavasya_birth`
 - **Condition:** Birth on new-moon tithi (Sun-Moon within 12 deg, dark side) or on the 14th tithi of the dark fortnight (divided into six parts; first part harmless).
 - **Cancellation:** Shanti prescribed.
 - **Result:** Poverty or harm to a specified relative per the part of the tithi.
-- **Source:** BPHS ch. 86-87 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 86-87 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par8190.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
 
 ### Balarishta (infant affliction)  `balarishta`  [unverified]
 - **Condition:** Moon in house 6, 8 or 12 from Lagna aspected by malefics with no benefic aspect (several variants).
@@ -852,19 +852,19 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Condition:** Four or more planets (Sun..Saturn) strong and together in one sign/house. The strongest decides the order: Sun-tapasvi, Moon-kapali, Mars-red-robed, Mercury-staff-bearer, Jupiter-yati/teacher order, Venus-chakra-bearer/wanderer, Saturn-naked ascetic.
 - **Cancellation:** If the planets are combust the person only reveres the order without initiation (v.4); if the deciding planet is defeated in planetary war the person abandons it (v.10).
 - **Result:** Renunciation or a monastic/ascetic way of life; with raja yoga present, a founder/leader instead.
-- **Source:** BPHS ch. 79 vv.2-13 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 79 vv.2-13 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par7180.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
 
 ### Pravrajya (Moon-Saturn) yoga  `pravrajya_moon_saturn`
 - **Condition:** Lord of the Moon's sign is weak and aspected only by Saturn; OR Moon in a drekkana/navamsa of Saturn or Mars and aspected by Saturn.
 - **Cancellation:** Benefic aspect on the Moon; strong Moon-sign lord.
 - **Result:** Takes to Saturn's (austere) order; in modern life: withdrawal, austerity, late or no marriage.
-- **Source:** BPHS ch. 79 vv.6-8 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 79 vv.6-8 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par7180.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
 
 ### Pravrajya with raja yoga  `pravrajya_jupiter_9`
 - **Condition:** Jupiter in house 9 AND Lagna, Moon and Jupiter all aspected by Saturn; OR Saturn in house 9 unaspected.
 - **Cancellation:** None formal.
 - **Result:** Founder of a school/philosophy; or initiation before/instead of kingship. Without a raja yoga: a religious wanderer.
-- **Source:** BPHS ch. 79 vv.14-15 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt)
+- **Source:** BPHS ch. 79 vv.14-15 (Sanskrit root text free at https://sanskritdocuments.org/doc_z_misc_sociology_astrology/par7180.html; the English reading used here came from an e-text of unclear provenance and is NOT yet re-verified)
 
 ### Moksha indicator (Ketu in 12th)  `sanyasa_ketu_12`  [unverified]
 - **Condition:** Ketu in house 12 from Lagna or from the Karakamsa, esp. with/aspected by benefics.
@@ -880,35 +880,35 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Fond of travel, earns abroad, restless, cruel.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Musala yoga (Nabhasa)  `nabhasa_musala`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): all in fixed signs (Taurus, Leo, Scorpio, Aquarius).
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Honoured, wealthy, steady, many sons.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Nala yoga (Nabhasa)  `nabhasa_nala`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): all in dual signs (Gemini, Virgo, Sagittarius, Pisces).
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Uneven build, shrewd, accumulates money, helps kin.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Mala (Srik) yoga (Nabhasa)  `nabhasa_mala`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): benefics (Mercury, Jupiter, Venus) occupy three kendras from Lagna. Moon not considered.
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Happy, comforts, vehicles, many partners.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Sarpa yoga (Nabhasa)  `nabhasa_sarpa`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): malefics (Sun, Mars, Saturn) occupy three kendras from Lagna. Moon not considered.
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Crooked, cruel, poor, dependent.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 - **Note:** This is the classical 'Sarpa yoga' - unrelated to Kaal Sarp.
 
 ### Gada yoga (Nabhasa)  `nabhasa_gada`
@@ -916,21 +916,21 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Effortful earner, ritual-minded, wealthy, learned.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Shakata yoga (Nabhasa)  `nabhasa_shakata`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): all in houses 1 and 7.
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Sickly, poor, lives by carts/transport, dull, ordinary spouse.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Vihaga (Pakshi) yoga (Nabhasa)  `nabhasa_vihaga`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): all in houses 4 and 10.
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Wanderer, messenger, quarrelsome.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 - **Note:** The BPHS e-text read prints '9th and 10th'; Brihat Jataka and the Wikipedia table give 4th and 10th - use 4 & 10.
 
 ### Shringataka yoga (Nabhasa)  `nabhasa_shringataka`
@@ -938,21 +938,21 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Fond of contest, happy, dear to rulers, good spouse.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Hala yoga (Nabhasa)  `nabhasa_hala`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): all in one of the non-lagna trine sets: {2,6,10} or {3,7,11} or {4,8,12}.
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Farmer, big eater, poor, servant, troubled.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Vajra yoga (Nabhasa)  `nabhasa_vajra`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): benefics in houses 1 and 7 AND malefics in houses 4 and 10.
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Happy at start and end of life, valiant.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 - **Note:** Varahamihira notes Vajra/Yava can hardly occur (Mercury/Venus cannot be 4 signs from the Sun) and lists them out of respect for earlier authors.
 
 ### Yava yoga (Nabhasa)  `nabhasa_yava`
@@ -960,147 +960,147 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Happy in mid-life, pious, charitable, steady.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Kamala (Padma) yoga (Nabhasa)  `nabhasa_kamala`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): all distributed in the four kendras 1, 4, 7, 10.
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Famous, virtuous, long-lived, king-like.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Vapi yoga (Nabhasa)  `nabhasa_vapi`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): all in panaphara houses {2,5,8,11} or all in apoklima houses {3,6,9,12}.
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Hoards wealth, steady comforts, sons.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Yupa yoga (Nabhasa)  `nabhasa_yupa`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): all within houses 1, 2, 3, 4.
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Self-knowledge, ritual, vows, charitable.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Ishu (Shara) yoga (Nabhasa)  `nabhasa_ishu`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): all within houses 4, 5, 6, 7.
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Maker of arrows/weapons, jailer, hunter-like trades.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Shakti yoga (Nabhasa)  `nabhasa_shakti`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): all within houses 7, 8, 9, 10.
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Lazy or unsuccessful, long-lived, skilled in war, steady.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Danda yoga (Nabhasa)  `nabhasa_danda`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): all within houses 10, 11, 12, 1.
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Loses sons/spouse, poor, serves the low, estranged from kin.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Nauka yoga (Nabhasa)  `nabhasa_nauka`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): all in the seven consecutive houses 1-7 (one in each, per strict reading).
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Earns by water, wealthy, famous, miserly.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Koota yoga (Nabhasa)  `nabhasa_koota`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): all in the seven consecutive houses 4-10.
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Liar, jailer, poor, lives in hills/forts.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Chatra yoga (Nabhasa)  `nabhasa_chatra`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): all in the seven consecutive houses 7-1.
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Kind, helps many, long-lived, happy at start and end.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Chapa (Dhanus) yoga (Nabhasa)  `nabhasa_chapa`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): all in the seven consecutive houses 10-4.
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Liar, thief-like, wanders in forests, happy in mid-life.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Ardha-Chandra yoga (Nabhasa)  `nabhasa_ardha_chandra`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): all in seven consecutive houses starting from a non-kendra house (2, 3, 5, 6, 8, 9, 11 or 12).
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Army leader, handsome, strong, gems and gold.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Chakra yoga (Nabhasa)  `nabhasa_chakra`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): all in the six odd houses 1, 3, 5, 7, 9, 11.
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Emperor; kings bow to him.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Samudra yoga (Nabhasa)  `nabhasa_samudra`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): all in the six even houses 2, 4, 6, 8, 10, 12.
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Many gems, wealth, pleasures, steady.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Gola [Sankhya] yoga (Nabhasa)  `nabhasa_sankhya_gola`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): the seven planets occupy exactly 1 sign(s).
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Poor, sorrowful, ignorant, wanderer.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Yuga [Sankhya] yoga (Nabhasa)  `nabhasa_sankhya_yuga`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): the seven planets occupy exactly 2 sign(s).
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Heretic, poor, shunned, sonless.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Shoola [Sankhya] yoga (Nabhasa)  `nabhasa_sankhya_shoola`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): the seven planets occupy exactly 3 sign(s).
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Sharp, cruel, poor, brave, wounded, famed in fight.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Kedara [Sankhya] yoga (Nabhasa)  `nabhasa_sankhya_kedara`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): the seven planets occupy exactly 4 sign(s).
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Farmer, truthful, happy, helps many.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Pasha [Sankhya] yoga (Nabhasa)  `nabhasa_sankhya_pasha`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): the seven planets occupy exactly 5 sign(s).
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Skilled, talkative, many servants, risk of bondage.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Dama (Damini) [Sankhya] yoga (Nabhasa)  `nabhasa_sankhya_dama`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): the seven planets occupy exactly 6 sign(s).
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Helps others, wealth by fair means, famous, many sons.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ### Veena (Vallaki) [Sankhya] yoga (Nabhasa)  `nabhasa_sankhya_veena`
 - **Condition:** Using the seven planets Sun..Saturn only (no Rahu/Ketu): the seven planets occupy exactly 7 sign(s).
 - **Strength:** Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.
 - **Cancellation:** Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).
 - **Result:** Fond of music and dance, skilful, leader, happy.
-- **Source:** BPHS ch. 35 (English e-text, https://archive.org/stream/ParasharaHoraSastra/BrihatParasharaHoraSastraVedicAstrologyEbook_djvu.txt) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
+- **Source:** BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)
 
 ## Tradition disagreements worth encoding
 - **Mahapurusha reference point.** BPHS ch. 75 counts kendras from Lagna only. Phaladeepika and later practice also count from the Moon. Engine: tag `from_lagna` vs `from_moon`; the Moon-based one gets lower weight and, in the 7th from Moon, the project calibration above.
