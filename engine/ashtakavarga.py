@@ -9,7 +9,8 @@ Sun, Mars, Mercury, Jupiter and Saturn agree in all twelve houses. Three cells d
 the same totals: Moon's table - Jupiter gives in the 2nd (not the 12th) and the Moon gives in the 9th where
 the standard table has Mars; Venus's table - Mars gives in the 4th (not the 5th). variant="bphs" applies them.
 
-Reading thresholds (Raman): a sign with 28 SAV bindus is average; 30+ strong, 25 or less weak.
+Reading thresholds (BPHS 72.3-4, read in the Sanskrit): a sign with more than 30 is good, 25 to 30 middling,
+below 25 weak. 72.30-31: plain transit is looked at only until the ashtakavarga is available.
 In a planet's own BAV, 4 is neutral, 5+ good and 3 or fewer poor for its transit through that sign.
 """
 from engine.chart import RASHI_NAMES
@@ -68,7 +69,7 @@ def house_checks(av):
     out.append(("11th > 12th (income exceeds expense)", h[11] > h[12]))
     out.append(("1st > 12th and 2nd > 12th (keeps what is earned)", h[1] > h[12] and h[2] > h[12]))
     out.append(("lagna >= 28 (constitution average or better)", h[1] >= 28))
-    strong = [k for k, x in h.items() if x >= 30]; weak = [k for k, x in h.items() if x <= 25]
+    strong = [k for k, x in h.items() if x > 30]; weak = [k for k, x in h.items() if x < 25]
     return {"checks": out, "strong_houses": strong, "weak_houses": weak}
 
 

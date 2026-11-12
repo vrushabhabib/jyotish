@@ -199,6 +199,17 @@ def markdown(r, name="native"):
             w("\nShadbala was checked against two references (an AstroSage printout and B.V. Raman's standard horoscope). Still unconfirmed: " + "; ".join(sb["unverified"]) + ".")
     else:
         w("\nShadbala: not computed here - take it from the kundli PDF if one is supplied.")
+    from engine import rashmi as RSM
+    rs = RSM.rashmi(c)
+    w("\n**Rays (Parashara ch. 73).** " + "; ".join(f"{p} {x}" for p, x in rs["planets"].items()) + f". Total {rs['total']} - {rs['grade']}. "
+      "A scale of means and following, read against the family's own standing (73.19-20); a planet moving toward its exaltation gives its rays more fully (73.21). "
+      "By construction a random chart averages about 24, so only a total well above 30 or below 18 says anything.\n")
+    age_now = (dt.datetime.now(c["input"]["local"].tzinfo) - c["input"]["local"]).days / 365.25
+    sy = RSM.sudarshana_year(c, age_now)
+    w(f"**Sudarshana year (Parashara 74.21-26).** Running year {int(age_now) + 1} is ruled by house {sy['house']}: " +
+      "; ".join(f"from {k} {RASHI_NAMES[x['sign'] - 1]}" + (f" ({', '.join(x['occupants'])})" if x['occupants'] else " (empty)") for k, x in sy["by"].items()) +
+      ". Benefics in its kendras, trines and 8th help; Rahu in it or many malefics harm; malefics in its 3rd, 6th, 11th help. " +
+      ("Lagna, Moon and Sun are in three different signs, so the three-ring reading applies (74.19-20)." if sy["applies"] else "Two or more of lagna, Moon and Sun share a sign, so Parashara says to judge from the lagna alone (74.19-20).") + "\n")
     pt = a["points"]
     w(f"\n**Special points.** Beeja sphuta {pt['beeja_sphuta']['sign']} ({pt['beeja_sphuta']['sign_parity']}) / navamsa {pt['beeja_sphuta']['navamsa']} ({pt['beeja_sphuta']['navamsa_parity']}); "
       f"Kshetra sphuta {pt['kshetra_sphuta']['sign']} ({pt['kshetra_sphuta']['sign_parity']}) / navamsa {pt['kshetra_sphuta']['navamsa']} ({pt['kshetra_sphuta']['navamsa_parity']}); "

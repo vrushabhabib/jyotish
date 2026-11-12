@@ -62,6 +62,8 @@ Take Shadbala and Bhava Bala from the PDF when one is supplied; `engine/shadbala
 
 ## Step 5 — Verify before reading (unchanged principle, sharper method)
 
+Parashara's own warrant for this step (BPHS 76.18, read in the Sanskrit): "for those whose birth is unknown, the running dasha is to be known from the results being experienced" - the chart is checked against the life, not the other way round.
+
 1. Ask 8–14 questions, one at a time, answered cold. Score hits/partly/miss in the open.
 2. **70 % or more → confirmed.** Below that, say so and limit the reading to timing of periods.
 3. Choose questions that discriminate:

@@ -39,3 +39,9 @@ I. **Plain-language summary** for a layman: two questions — "Is she the kind o
 ## Results on file (20 Oct 2026)
 - Pooja Kalburgi: same circle (stated), would live in India → his signatures UNMET, her Rahu-in-7th UNMET; Ashtakoota ~24/36 pass (Nadi clean, Bhakoot cancelled) → LOW FIT.
 - Sindhura Bachwal: same circle via family reference (stated) → UNMET; her chart's distance/abroad signature unmet if living in India; Ashtakoota ~12.5/36 fail (Nadi + Bhakoot uncancelled); lagna 8 min from Vrishchika (Manglik if later) → NOT A MATCH.
+
+## From Parashara's text, read in the Sanskrit (12 Nov 2026) - see `kb/sources/bphs/ch71-80.md`
+- **Likeness of temperament (BPHS 77.11-13):** affection between bride and groom is steady only when they are alike in quality (sattva / rajas / tamas, taken from the strongest planet - 77.1-4, 76.2-5). The eight-fold point table does not measure this; state it separately as a temperament comparison of the two strongest planets.
+- **Mars combination (BPHS 80.47-49):** Mars in the 1st, 4th, 7th, 8th or 12th from the lagna without a benefic's aspect or company; the 2nd house is not in the verse; counting from the Moon and Venus is later practice. When both partners have it, it is broken "for certain". The consequence in the verse is never stated to a client.
+- **"Poison-maiden" birth (BPHS 80.43-46):** cancelled by a benefic 7th lord or a benefic in the 7th from lagna or Moon; the project does not use the label at all.
+- **Husband described by the 7th (BPHS 80.22-25):** by the sign and the navamsa on the 7th; mixed when they differ.
