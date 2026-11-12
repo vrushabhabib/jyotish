@@ -165,7 +165,7 @@ def markdown(r, name="native"):
             if x["id"].startswith("nabhasa_sankhya") and any(y["id"].startswith("nabhasa_") and "sankhya" not in y["id"] for y in ex): continue
             w(f"| {e.get('name', x['id'])} | {', '.join(x['planets']) if len(x['planets']) < 7 else 'all seven'} | {x['note'] or e.get('condition', '')[:110]} | "
               f"{e.get('result', '')[:170]} | {e.get('cancellation', '')[:150]} | {_label(_rate('cat', x['id']))} |")
-        w(f"\nCoverage: {len(cv['in_analysis']) + len(cv['in_yogas_extra'])} of {cv['catalogue']} catalogued combinations are tested by the engine; not tested: {', '.join(cv['not_coded'])}.\n")
+        w(f"\nCoverage: {len(cv['in_analysis']) + len(cv['in_yogas_extra'])} of {cv['catalogue']} catalogued " + "combinations are tested by the engine" + (f"; not tested: {', '.join(cv['not_coded'])}" if cv['not_coded'] else "") + ".\n")
     except Exception as e:                                    # noqa: BLE001
         w(f"\n(catalogue yogas failed: {e})\n")
     if a.get("sex") == "F":

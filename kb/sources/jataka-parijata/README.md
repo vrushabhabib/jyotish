@@ -47,4 +47,6 @@ Vaidyanatha (15th century) says in his opening that he compiled "from the Sarava
 - "64th navamsa": only 5.52 above, and one mention in ch. 17.
 
 ## Still unread
+The reading stopped on the evening of 12 Nov 2026 because the browser link to the laptop dropped; the cloud workspace cannot reach the library site by itself. To continue: open the same file through Chrome on the laptop and read chapters 5-18 in order (14 marriage, 16 women, 13 children, 15 career and 18 dasha results first).
+
 Chapters 6, 8-18 apart from the verses above. The knowledge base cites "Jataka Parijata XI.18" (10th lord) through a Wikipedia page; that numbering belongs to another edition and the verse was not located. It keeps its "via secondary page" tag.
