@@ -56,36 +56,50 @@ def yogini(moon_lon, birth, cycles=3):
     return out
 
 
-def _chara_years(sign, signs_of, notes):
-    """signs_of: {planet: sign index 0..11}."""
+def _chara_years(sign, signs_of, notes, bphs_adjust=False):
+    """signs_of: {planet: sign index 0..11}. bphs_adjust: +1 year lord exalted, -1 debilitated (BPHS 46.165)."""
+    y, who = _chara_base(sign, signs_of, notes)
+    if bphs_adjust and who:
+        if signs_of[who] == EXALT[who]: y += 1
+        elif signs_of[who] == (EXALT[who] + 6) % 12: y -= 1
+    return y
+
+
+def _chara_base(sign, signs_of, notes):
     lord = LORD[sign]
+    who = None
     if isinstance(lord, tuple):
         a, b = lord
         sa, sb = signs_of[a], signs_of[b]
         if sa == sign and sb == sign:
-            return 12
+            return 12, None
         if sa == sign: target = sb
         elif sb == sign: target = sa
         elif sa == sb: target = sa
         else:
             comp = lambda p: sum(1 for q, s in signs_of.items() if q != p and s == signs_of[p])
             n = lambda s: ((s - sign) % 12 if sign in COUNT_FWD else (sign - s) % 12)
+            nature = lambda s: s % 3          # 0 movable, 1 fixed, 2 dual: rising strength (BPHS 46.163)
             if comp(a) != comp(b):
                 target = sa if comp(a) > comp(b) else sb
+            elif nature(sa) != nature(sb):
+                target = sa if nature(sa) > nature(sb) else sb
+                notes.append(f"{RASHI[sign]}: co-lord chosen by strength of sign (BPHS 46.163)")
             elif (EXALT[a] == sa) != (EXALT[b] == sb):
                 target = sa if EXALT[a] == sa else sb
                 notes.append(f"{RASHI[sign]}: co-lord chosen by exaltation (secondary rule)")
             else:
                 target = sa if n(sa) >= n(sb) else sb
                 notes.append(f"{RASHI[sign]}: co-lord chosen by larger count (tertiary rule; sources differ)")
+        who = a if target == sa else b
     else:
-        target = signs_of[lord]
+        target, who = signs_of[lord], lord
     if target == sign:
-        return 12
-    return (target - sign) % 12 if sign in COUNT_FWD else (sign - target) % 12
+        return 12, who
+    return ((target - sign) % 12 if sign in COUNT_FWD else (sign - target) % 12), who
 
 
-def chara(lagna_sign, signs_of, birth, cycles=1):
+def chara(lagna_sign, signs_of, birth, cycles=1, bphs_adjust=False):
     """lagna_sign and signs_of use 1..12 (engine convention). Returns {'maha': [...], 'notes': [...]}."""
     lag = lagna_sign - 1
     so = {p: s - 1 for p, s in signs_of.items()}
@@ -95,7 +109,7 @@ def chara(lagna_sign, signs_of, birth, cycles=1):
     for c in range(cycles):
         for k in range(12):
             s = (lag + step * k) % 12
-            y = _chara_years(s, so, notes)
+            y = _chara_years(s, so, notes, bphs_adjust)
             if c: y = 12 - y if y != 12 else 12
             end = _add(t, y)
             d = 1 if s in SEQ_DIRECT else -1
@@ -107,7 +121,9 @@ def chara(lagna_sign, signs_of, birth, cycles=1):
             out.append({"sign": RASHI[s], "years": y, "start": t, "end": end, "antar": antar})
             t = end
     return {"maha": out, "notes": sorted(set(notes)),
-            "method": "K.N. Rao: no exaltation/debilitation adjustment; antardasha direction by the mahadasha sign"}
+            "method": ("Parashara 46.155-167 with the one-year exaltation/debilitation change of 46.165" if bphs_adjust else
+                       "K.N. Rao: no exaltation/debilitation adjustment (BPHS 46.165 gives +1/-1; pass bphs_adjust=True); "
+                       "antardasha direction by the mahadasha sign")}
 
 
 ASHTOTTARI = [("Sun", 6, 4), ("Moon", 15, 3), ("Mars", 8, 4), ("Mercury", 17, 3), ("Saturn", 10, 3),
