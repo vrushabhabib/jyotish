@@ -688,11 +688,11 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 
 ## Arishta / Daridra / classical doshas (24)
 
-### Shakata yoga (Moon-Jupiter)  `shakata_lunar`  [unverified]
-- **Condition:** Jupiter in house 6, 8 or 12 counted from the Moon.
-- **Cancellation:** Cancelled if the Moon is in a kendra (1/4/7/10) from Lagna. Some also cancel if Jupiter is in own/exalted sign.
-- **Result:** Fortunes rise and fall like a cart wheel; periodic loss of standing.
-- **Source:** Phaladeepika ch. 6 / B.V. Raman 300 Important Combinations (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))
+### Shakata yoga (Moon-Jupiter)  `shakata_lunar`
+- **Condition:** The Moon in house 6, 8 or 12 counted from Jupiter (that is, Jupiter in the 2nd, 6th or 8th from the Moon). The earlier wording here had the count the wrong way round; the engine always had it right.
+- **Cancellation:** Not formed when the Moon is in a kendra (1/4/7/10) from the lagna - stated in the same verse.
+- **Result:** Fortune lost now and then and regained again and again; not widely known; "an inner thorn that cannot be removed" (6.17).
+- **Source:** Phaladeepika 6.14 and 6.17, read in the Sanskrit 12 Nov 2026 (`kb/sources/phaladeepika/ch05-07.md`).
 - **Note:** Do not confuse with the Nabhasa Shakata (all planets in houses 1 and 7).
 
 ### Ashubha yoga / Papa-kartari  `ashubha_papa_kartari`

@@ -210,6 +210,13 @@ def markdown(r, name="native"):
       "; ".join(f"from {k} {RASHI_NAMES[x['sign'] - 1]}" + (f" ({', '.join(x['occupants'])})" if x['occupants'] else " (empty)") for k, x in sy["by"].items()) +
       ". Benefics in its kendras, trines and 8th help; Rahu in it or many malefics harm; malefics in its 3rd, 6th, 11th help. " +
       ("Lagna, Moon and Sun are in three different signs, so the three-ring reading applies (74.19-20)." if sy["applies"] else "Two or more of lagna, Moon and Sun share a sign, so Parashara says to judge from the lagna alone (74.19-20).") + "\n")
+    def _liv(ref_sign):
+        tl = RASHI_LORD[(ref_sign - 1 + 9) % 12]
+        d_ = c["planets"][tl]; nl = RASHI_LORD[varga_rashi((d_["rashi"] - 1) * 30 + d_["deg"], 9) - 1]
+        return f"10th lord {tl}, in a navamsa of {nl}"
+    w("**Livelihood pointer (Parashara's and Phaladeepika 5.1 method: the lord of the navamsa occupied by the 10th lord, taken from the strongest of lagna, Moon and Sun).** "
+      f"From lagna: {_liv(c['lagna']['rashi'])}. From Moon: {_liv(c['planets']['Moon']['rashi'])}. From Sun: {_liv(c['planets']['Sun']['rashi'])}. "
+      "Kinds of work by that navamsa lord are listed in kb/sources/phaladeepika/ch05-07.md (5.2-8); where the three agree the pointer is firm.\n")
     pt = a["points"]
     w(f"\n**Special points.** Beeja sphuta {pt['beeja_sphuta']['sign']} ({pt['beeja_sphuta']['sign_parity']}) / navamsa {pt['beeja_sphuta']['navamsa']} ({pt['beeja_sphuta']['navamsa_parity']}); "
       f"Kshetra sphuta {pt['kshetra_sphuta']['sign']} ({pt['kshetra_sphuta']['sign_parity']}) / navamsa {pt['kshetra_sphuta']['navamsa']} ({pt['kshetra_sphuta']['navamsa_parity']}); "
