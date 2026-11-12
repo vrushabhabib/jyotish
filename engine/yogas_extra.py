@@ -23,10 +23,7 @@ IN_ANALYSIS = {"ruchaka", "bhadra", "hamsa", "malavya", "shasha", "gajakesari", 
                "lakshmi", "saraswati", "kendra_trikona_raja", "yogakaraka_planet", "dharma_karmadhipati", "harsha", "sarala",
                "vimala", "dhana_lords", "maha_parivartana", "khala_parivartana", "dainya_parivartana", "guru_chandala",
                "angaraka", "shrapit", "vish", "kaal_sarp", "kaal_sarp_partial", "kala_amrita", "mangal_dosha"}
-NOT_CODED = {"kemadruma_bhanga_4": "all planets in kendras - covered by the Kamala nabhasa yoga",
-             "kemadruma_bhanga_7": "full-Moon condition is contested; tithi is printed in the worksheet",
-             "mridanga": "needs a graded strength test for every planet"
-             }
+NOT_CODED = {}
 
 
 def detect(v: View):
@@ -126,8 +123,8 @@ def detect(v: View):
     # ---- named yogas
     if all(H[b] in (7, 8) for b in BEN3) and not any(S[m] in {S[b] for b in BEN3} for m in MAL3 + ["Rahu", "Ketu"]):
         add("lagnadhi", BEN3, "BPHS 36.37: benefics in the 7th and 8th from the lagna, free of malefics")
-    if all(hfrom(S[b], moon) in UPACHAYA for b in BEN3): add("vasumati", BEN3, "from the Moon")
-    elif all(H[b] in UPACHAYA for b in BEN3): add("vasumati", BEN3, "from the lagna (Raman variant)")
+    if all(H[b] in UPACHAYA for b in BEN3): add("vasumati", BEN3, "from the lagna (Brihat Jataka 13.9: very wealthy)")
+    elif all(hfrom(S[b], moon) in UPACHAYA for b in BEN3): add("vasumati", BEN3, "from the Moon (Brihat Jataka 13.9: wealthy)")
     d = hfrom(moon, S["Sun"])
     add("chandra_sun_distance", ["Sun", "Moon"], "Moon in " + ("a kendra from the Sun: low grade" if d in KENDRA else
         "panaphara from the Sun: middle grade" if d in (2, 5, 8, 11) else "apoklima from the Sun: high grade"))
@@ -197,6 +194,94 @@ def detect(v: View):
     chain.append(RASHI_LORD[c["planets"][k]["D9"] - 1])
     if all(H[p] in KENDRA | TRIKONA or S[p] == EXALT.get(p) for p in chain):
         add("kalpadruma", sorted(set(chain)), "BPHS 36.33: each of the four in a kendra, a trine or its exaltation")
+
+
+    # ---- the remaining verses of BPHS ch. 39, 24 and 42, coded from the Sanskrit reading (kb/sources/bphs/)
+    from engine.analysis import chara_karakas as _ck
+    ak = _ck(v)["seven"]["AK"]
+    ben_touch = lambda p: any(touched_by(p, b) for b in B4 if b != p)
+    if {H[L[9]], H[ak]} <= {1, 5, 7} and ben_touch(L[9]) and ben_touch(ak):
+        add("rj_ak_l9", sorted({L[9], ak}), "BPHS 39.8: 9th lord and Atma-karaka in the lagna, 5th or 7th, each joined or aspected by a benefic")
+    for ref, lab in ([(l1, "lagna lord")] + ([(ak, "Atma-karaka")] if ak != l1 else [])):
+        fr = lambda q: hfrom(S[q], S[ref])
+        if all(any(fr(b) == n for b in B4 if b != ref) for n in (2, 4, 5)):
+            add("rj_benefics_245", [ref], f"BPHS 39.9: a benefic in each of the 2nd, 4th and 5th from the {lab} {ref}")
+        if all(any(fr(m) == n for m in M5 if m != ref) for n in (3, 6)):
+            add("rj_malefics_36", [ref], f"BPHS 39.10: a malefic in both the 3rd and the 6th from the {lab} {ref}")
+    if any(H[b] == 1 for b in B4) and any(H[b] == 2 for b in B4) and any(H[m] == 3 for m in M5) and any(H[b] == 4 for b in B4):
+        add("rj_lagna_row", [], "BPHS 39.17: benefic in the lagna, benefic in the 2nd, malefic in the 3rd, benefic in the 4th")
+    if H["Jupiter"] == 9 and S["Jupiter"] in (9, 12) and (S["Venus"] == S["Jupiter"] or (L[5] != "Jupiter" and S[L[5]] == S["Jupiter"])):
+        add("rj_jupiter_9", ["Jupiter"], "BPHS 39.39: Jupiter in the 9th in his own sign with Venus or the 5th lord")
+    for b in BEN3:
+        if S[b] == EXALT[b] and H[b] in KENDRA and any(S[q] == S[b] for q in B4 if q != b):
+            add("rj_benefic_exalted_kendra", [b], f"BPHS 39.47: {b} exalted in a kendra with a benefic")
+    if H[L[5]] == 10: add("rj_5l_10", [L[5]], "BPHS 24.58: 5th lord in the 10th")
+    if H[L[9]] == 10: add("rj_9l_10", [L[9]], "BPHS 24.106: 9th lord in the 10th")
+    mk = {L[2], L[7]}
+    mal1 = [m for m in M5 if H[m] == 1 and m not in (L[9], L[10])]
+    hit = [m for m in mal1 if any(touched_by(m, k) for k in mk - {m})]
+    if hit: add("daridra_7", hit, "BPHS 42.8: a malefic in the lagna (not the 9th or 10th lord) joined or aspected by a maraka lord")
+    disp = [RASHI_LORD[S[L[h]] - 1] for h in (6, 8, 12)]
+    if all(H[d] in DUSTHANA and any(touched_by(d, m) for m in M5 if m != d) for d in disp):
+        add("daridra_8", sorted(set(disp)), "BPHS 42.9: the lords of the signs holding the 6th, 8th and 12th lords are themselves in the 6th, 8th or 12th with malefic influence")
+    mnl = RASHI_LORD[c["planets"]["Moon"]["D9"] - 1]
+    if H[mnl] in (2, 7) or any(S[k] == S[mnl] for k in mk - {mnl}):
+        add("daridra_9", [mnl], "BPHS 42.10: lord of the Moon's navamsa with a maraka lord or in a maraka house")
+    lnl = RASHI_LORD[c["lagna"]["vargas"]["D9"] - 1]
+    if H[l1] in DUSTHANA and H[lnl] in DUSTHANA and any(touched_by(q, k) for q in {l1, lnl} for k in mk - {q}):
+        add("daridra_10", sorted({l1, lnl}), "BPHS 42.11: lagna lord and the lord of the lagna's navamsa in the 6th, 8th or 12th, touched by a maraka lord")
+    dl = {L[6], L[8], L[12]}; tl2 = {L[5], L[9]}
+    lose = [p for p in SEVEN if p not in dl and any(S[q] == S[p] for q in dl) and not any(aspects_sign(t, S[t], S[p]) for t in tl2 if t != p)]
+    if lose: add("dhana_loss_dasha", lose, "BPHS 42.13: joined with a lord of the 6th, 8th or 12th and not aspected by a trine lord - a note for that planet's own period only")
+    a8, a12 = sign_at(v.lag, 8), sign_at(v.lag, 12)
+    if aspects_sign(l1, S[l1], a8) and aspects_sign(l1, S[l1], a12):
+        add("daridra_11", [l1], "BPHS 42.14: lagna lord aspects both the 8th and the 12th")
+    elif aspects_sign(l1, S[l1], a12):
+        add("vyaya_lord_aspect", [l1], "BPHS 42.15: lagna lord aspects the 12th - a spender")
+
+
+    # ---- BPHS 39.11-16, 23-27: raja yogas through the arudhas and the special lagnas
+    try:
+        from engine.analysis import arudha as _ar
+        from engine.classical import special_lagnas as _sl
+        al, a7 = _ar(v, 1), _ar(v, 7)
+        ksa = c["planets"][ak]["D9"]                                  # Karakamsa: the navamsa sign of the Atma-karaka
+        jm = lambda sign: all(S[q] == sign or aspects_sign(q, S[q], sign) for q in ("Jupiter", "Moon"))
+        if S["Venus"] in (ksa, sign_at(ksa, 5), v.lag, al) and jm(S["Venus"]):
+            add("rj_venus_ju_moon", ["Venus", "Jupiter", "Moon"], "BPHS 39.11: Venus in the Karakamsa, its 5th, the lagna or its arudha, joined or aspected by Jupiter and the Moon")
+        if S["Moon"] == al and any(S[b] == al for b in BEN3) and S["Jupiter"] == sign_at(al, 2) and \
+           any(S[q] == EXALT[q] and aspects_sign(q, S[q], al) for q in SEVEN):
+            add("rj_arudha_moon", ["Moon", "Jupiter"], "BPHS 39.16: a benefic with the Moon in the arudha, Jupiter in its 2nd, aspected by an exalted planet")
+        if hfrom(a7, al) in (1, 4, 7, 10, 3, 11, 5, 9):
+            add("rj_arudha_pair", [], f"BPHS 39.23: arudha of the lagna and of the 7th are {hfrom(a7, al)} apart (mutual kendra, 3rd-11th or trine)")
+        exa = [q for q in SEVEN if S[q] == al and S[q] == EXALT[q]]
+        if exa or (S["Jupiter"] == al and S["Venus"] == al):
+            add("rj_arudha_exalted", exa or ["Jupiter", "Venus"], "BPHS 39.26-27: the arudha of the lagna holds an exalted planet, or Jupiter with Venus")
+        sl = _sl(c); three = [v.lag, sl["hora_lagna"]["sign"], sl["ghati_lagna"]["sign"]]
+        for q in SEVEN:
+            n = sum(1 for t in three if S[q] == t or aspects_sign(q, S[q], t))
+            if n == 3:
+                add("rj_three_lagnas", [q], "BPHS 39.12-15, 24: " + q + (" (exalted)" if S[q] == EXALT[q] else "") +
+                    " joins or aspects the birth, hora and ghati lagnas - birth-time sensitive (the ghati lagna moves a sign in 24 minutes)")
+    except Exception:                                                # noqa: BLE001 - special lagnas need the birth instant
+        pass
+
+
+    # ---- the last three catalogue items that were not tested, and Jataka Parijata's navamsa form of neecha bhanga
+    near = [q for q in SEVEN if q not in ("Sun", "Moon") and (hfrom(S[q], moon) in (2, 12) or S[q] == moon)]
+    if not near:                                                          # Kemadruma by the strict form
+        if all(H[q] in KENDRA for q in SEVEN): add("kemadruma_bhanga_4", SEVEN, "all seven planets in kendras from the lagna")
+        elx = (v.lon["Moon"] - v.lon["Sun"]) % 360.0
+        if 168.0 <= elx <= 192.0: add("kemadruma_bhanga_7", ["Moon"], "Moon within a lunar day of full - a modern condition; no verse found in the texts read")
+    ok = [q for q in SEVEN if H[q] in KENDRA | TRIKONA and (S[q] == EXALT[q] or S[q] in OWN[q])]
+    if v.strong(l1) and len([q for q in ok if q != l1]) >= 2:
+        add("mridanga", [l1] + [q for q in ok if q != l1], "BPHS 36.17: lagna lord strong and at least two other planets in kendras or trines in own or exalted signs (the verse says 'planets', plural; two is the engine's floor)")
+    lag_mov = v.lag in (1, 4, 7, 10) or S[l1] in (1, 4, 7, 10) or c["planets"][l1]["D9"] in (1, 4, 7, 10)
+    for q in SEVEN:
+        if S[q] == DEBIL[q]:
+            nl = RASHI_LORD[c["planets"][q]["D9"] - 1]
+            if H[nl] in KENDRA | TRIKONA and lag_mov:
+                add("neecha_bhanga_12", [q, nl], f"Jataka Parijata 7.24: lord of {q}'s navamsa ({nl}) in a kendra or trine, with a movable lagna or the lagna lord in a movable sign or navamsa")
 
     # ---- afflictions
     mal7 = [m for m in M5 if H[m] == 7]

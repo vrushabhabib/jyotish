@@ -68,7 +68,7 @@ def test_yoga_catalogue_coverage():
     from engine.yogas_extra import coverage, detect, catalogue
     from engine.analysis import View
     cv = coverage()
-    assert cv["catalogue"] == 160 and len(cv["not_coded"]) <= 4
+    assert cv["catalogue"] == 181 and len(cv["not_coded"]) == 0
     ids = {x["id"] for x in detect(View(C))}
     assert {"mriti", "kuhu", "daridra_pd"} <= ids                 # 3L Jupiter in 12th, 4L/11L Mars in 8th
     assert ids <= set(catalogue())

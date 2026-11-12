@@ -78,7 +78,7 @@ Cross-check: Jataka Parijata XI.18 (via WP-Karma) agrees on the pattern — 10th
 
 | ID | Condition | Result | Source | Notes |
 |---|---|---|---|---|
-| CAR-13 | Compute the 10th from Lagna and from Moon; use whichever reference is stronger; note the planet occupying that 10th | That planet shows the channel wealth comes through: Sun = father, Moon = mother, Mars = enemy/competition, Mercury = friend, Jupiter = brother, Venus = wife/women, Saturn = servants/employees | PD-5 v.1; Brihat Jataka ch. 10 via WP-Karma | Saravali XXXIII (via WP-Karma) says the same: sign on the 10th from Lagna or Moon, whichever is stronger, plus its occupant |
+| CAR-13 | Compute the 10th from Lagna and from Moon; use whichever reference is stronger; note the planet occupying that 10th | That planet shows the channel wealth comes through: Sun = father, Moon = mother, Mars = enemy/competition, Mercury = friend, Jupiter = brother, Venus = wife/women, Saturn = servants/employees | PD 5.1; Brihat Jataka 10.1 (both read in the Sanskrit, 12 Nov 2026) | Saravali XXXIII (via WP-Karma) says the same: sign on the 10th from Lagna or Moon, whichever is stronger, plus its occupant |
 | CAR-14 | Power and fame: judge Lagna or Moon-lagna (whichever is stronger) and its 9th and 10th | Strong, unafflicted houses and lords = rise | WP-Karma (general rule cited there) | |
 | CAR-15 | Saturn in the 10th from the Moon, without aspect of Jupiter or Venus | Subordinate position, denied high status | WP-Karma (cited, source text not named) | Low confidence; treat as a flag only |
 | CAR-15a | Strong 10th lord counted from Moon placed in a kendra, 9th or 2nd from Lagna | Raja yoga | Jataka Tattva X.160 via WP-Karma | |

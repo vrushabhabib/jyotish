@@ -248,3 +248,6 @@ Status: **classical, not yet coded, not yet back-tested** - state such a window 
 4. Jupiter in transit is in a trine of the sign (or navamsa sign) occupied by the lord of the house (16.32). For marriage: of the 7th lord (10.14); for children: of the 5th lord or of natal Jupiter (12.29).
 5. For marriage also: Venus or the 7th lord in a trine of the lagna lord's sign (10.12); the lagna lord in the 7th sign (10.13).
 6. All of it is reckoned from the lagna and again from the Moon; the dasha must belong to a planet connected with the house (10.13-14, 12.25-28).
+
+## When inside a sign a transit gives (Brihat Jataka 22.6; Jataka Parijata 2.82 - both read in the Sanskrit, 12 Nov 2026)
+Sun and Mars give their result on entering a sign; Jupiter and Venus in its middle; Saturn and the Moon as they leave it; Mercury throughout. Use: when a window is stated for a transit, weight the first third of the stay for the Sun and Mars, the middle third for Jupiter and Venus and the last third for Saturn. Untested in the project's ledger; state it as the texts' rule, not as a finding.

@@ -9,6 +9,7 @@ All strengths are in virupas (shashtiamsas); 60 virupas = 1 rupa.
 API
     shadbala(date_str, time_str, lat, lon, tz_off=5.5, compat=None)  -> dict
     bhava_bala(date_str, time_str, lat, lon, tz_off=5.5, compat=None) -> dict
+    compat="parashara" uses the dignity scale of BPHS 27.2-3 itself (20/15/10/4/2) in place of Raman's
     compat="astrosage" additionally reproduces two AstroSage quirks that are NOT classical rules
     (see ASTROSAGE_QUIRKS); leave it None for normal use.
 CLI
@@ -172,6 +173,7 @@ EXALT = {"Sun": 10.0, "Moon": 33.0, "Mars": 298.0, "Mercury": 165.0, "Jupiter": 
 MOOLA = {"Sun": (4, 0, 20), "Moon": (1, 3, 30), "Mars": (0, 0, 12), "Mercury": (5, 15, 20),
          "Jupiter": (8, 0, 10), "Venus": (6, 0, 15), "Saturn": (10, 0, 20)}
 _SV_SCALE = {2: 22.5, 1: 15.0, 0: 7.5, -1: 3.75, -2: 1.875}
+_SV_SCALE_BPHS = {2: 20.0, 1: 15.0, 0: 10.0, -1: 4.0, -2: 2.0}      # BPHS 27.2-3 as read in the Sanskrit; compat="parashara"
 SAPTAVARGA = (1, 2, 3, 7, 9, 12, 30)
 
 
@@ -189,7 +191,7 @@ def saptavargaja_bala(p, lons, detail=None, compat=None):
         elif lord == p:
             v = 30.0
         else:
-            v = _SV_SCALE[compound_rel(p, lord, lons)]
+            v = (_SV_SCALE_BPHS if compat == "parashara" else _SV_SCALE)[compound_rel(p, lord, lons)]
         if detail is not None:
             detail[f"D{d}"] = v
         total += v
@@ -448,6 +450,11 @@ def drik_bala(p, lons):
 # assembly
 # ----------------------------------------------------------------------------------------------
 REQUIRED_RUPAS = {"Sun": 5.0, "Moon": 6.0, "Mars": 5.0, "Mercury": 7.0, "Jupiter": 6.5, "Venus": 5.5, "Saturn": 5.0}
+# The figures above are the ones Raman and AstroSage print, kept so that "ratio" and "rank" can be cross-checked
+# against a supplied kundli. The texts themselves give the Sun 390 virupas = 6.5 rupas (BPHS 27.32-33 and Jataka
+# Parijata 2.40, both read in the Sanskrit on 12 Nov 2026); the other six agree. "ratio_text" and "rank_text"
+# use the texts' figure and are the ones a reading should quote.
+REQUIRED_RUPAS_TEXT = dict(REQUIRED_RUPAS, Sun=6.5)
 
 
 def _chart(date_str, time_str, lat, lon, tz_off):
@@ -514,6 +521,11 @@ def shadbala(date_str, time_str, lat, lon, tz_off=5.5, compat=None):
     order = sorted(PLANETS, key=lambda q: -out[q]["ratio"])
     for i, p in enumerate(order, 1):
         out[p]["rank"] = i
+    for p in PLANETS:
+        out[p]["required_text"] = REQUIRED_RUPAS_TEXT[p]
+        out[p]["ratio_text"] = out[p]["rupas"] / REQUIRED_RUPAS_TEXT[p]
+    for i, p in enumerate(sorted(PLANETS, key=lambda q: -out[q]["ratio_text"]), 1):
+        out[p]["rank_text"] = i
     return {
         "planets": out,
         "order": order,

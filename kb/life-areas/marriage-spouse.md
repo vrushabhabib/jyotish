@@ -82,7 +82,7 @@ Suggested confidence tiers for output: timing with dasha + transit agreement = m
 - **MAR-10** — Condition: Moon in the 7th AND 7th lord in the 12th AND Venus weak. Result: no marital happiness. Source: BPHS-18 v.18. Note: often quoted online as "no marriage"; the text read says no happiness.
 - **MAR-11** — Condition: Venus and Moon in opposition to Mars and Saturn (the two pairs 7th from each other). Result: wifeless or childless. Source: PD-10 v.5.
 - **MAR-12** — Condition: Moon with Saturn in the 7th. Result: for a man, without wife or without children; for a woman, remarriage. Source: PD-10 v.8. Note: a common modern reading is simply "delay"; the text is harsher.
-- **MAR-13** — Condition (female chart): Saturn [in the 7th, per context] aspected by malefics. Result: remains unmarried into old age. Source: BPHS-80 v.18. Note: the same verse line is in Brihat Jataka's stri jataka chapter per tradition `[MEMORY]`; here only BPHS-80 was read.
+- **MAR-13** — Condition (female chart): Saturn [in the 7th, per context] aspected by malefics. Result: remains unmarried into old age. Source: BPHS-80 v.18. Note: confirmed in Brihat Jataka 24.8 (read in the Sanskrit, 12 Nov 2026): Saturn in the 7th under malefic aspect - she grows old unmarried.
 - **MAR-14** — Condition: Upapada (UL) joined or aspected by malefics or in a malefic's sign, with no benefic aspect or conjunction. Result: happiness from spouse does not fully arise; renunciation or wifelessness is possible. A benefic aspect or conjunction cancels this. Source: BPHS-30 v.4-5.
 - **MAR-15** — Condition: malefic in the 7th AND any planet in the 9th (female chart). Result: renunciation. Source: BPHS-80 v.53.
 - **MAR-16** — Condition (KP): sub lord of the 7th cusp signifies mainly houses 1, 6, 10 (12th from 2, 7, 11) and does not signify 2/7/11. Result: obstruction, delay, or denial within the dasha judged. Source: KP-AJ. Note: KP-JH gives the negating group as 6, 10, 12 with 1 and 8 as additions. The two KP secondary sources disagree on the exact list; no KP Reader was readable in this run. KP needs Placidus cusps and KP ayanamsa, so it cannot be computed from a Lahiri whole-sign chart.
@@ -114,7 +114,7 @@ Order of evidence used by most authors: 7th house and occupants, 7th lord, karak
 
 ### B2. Female chart: husband from the sign and navamsa of the 7th
 
-- **SP-10** — Condition (female chart): sign on the 7th or the navamsa rising on the 7th belongs to — Mars: husband fond of other women and short-tempered; Mercury: learned and skilled; Jupiter: virtuous and self-controlled; Venus: handsome and liked by women; Saturn: old and foolish; Sun: harsh and hard-working; Moon (Cancer): charming, passionate, gentle. Mixed sign/navamsa: weigh by strength. Source: BPHS-80 v.22-25. Note: the same scheme appears in Varahamihira's Brihat Jataka stri jataka chapter `[MEMORY]`. "Saturn = old husband" is another age rule to treat as weak (CAL-2).
+- **SP-10** — Condition (female chart): sign on the 7th or the navamsa rising on the 7th belongs to — Mars: husband fond of other women and short-tempered; Mercury: learned and skilled; Jupiter: virtuous and self-controlled; Venus: handsome and liked by women; Saturn: old and foolish; Sun: very gentle and hard-working; Moon (Cancer): charming, passionate, gentle. Mixed sign/navamsa: weigh by strength. Source: BPHS-80 v.22-25. Note: the same list is in Brihat Jataka 24.11-12 (read in the Sanskrit, 12 Nov 2026 - `kb/sources/brihat-jataka/`); both texts say the Sun's husband is "very gentle", not harsh. "Saturn = old husband" is another age rule to treat as weak (CAL-2).
 - **SP-11** — Condition (female chart): 7th house, by sign or navamsa, owned by a benefic. Result: husband bright, learned, well-known, wealthy. Otherwise: husband with defects, a gambler or deceitful, loss of wealth, and separation. Source: PD-11 v.3.
 - **SP-12** — Condition (female chart): lagna and Moon both in even signs and aspected by benefics. Result: good husband, sons, prosperity, good character. Both in odd signs with malefic aspect or conjunction: masculine bearing, hard to govern, poverty. Source: PD-11 v.2; BPHS-80 v.5-6. Note: BPHS-80 v.8-16 then refines by the trimsamsa of the stronger of lagna/Moon; that is character of the woman, not of the spouse.
 - **SP-13** — Condition (female chart): which houses to read. Husband and marital welfare = 7th; mangalya (duration of married state) = 8th; children = 9th (Phaladeepika) or 5th (BPHS); chastity = 4th; counted from the stronger of lagna or Moon. Source: PD-11 v.1; BPHS-80 v.3. Note: CONFLICT — Phaladeepika gives children to the 9th in a female chart, BPHS gives the 5th. Check both.
@@ -184,7 +184,7 @@ Ethical note: these are the most fear-inducing and least testable rules. The age
 - **PL-15** — Condition: 2nd from UL in a debilitation navamsa, or with debilitated planets and malefics. Result: loss of wife. Benefic aspect on the 2nd from UL, or a benefic sign there, keeps the good result. Source: BPHS-30 v.7-8.
 - **PL-16** — Condition: Saturn and Rahu in the 2nd from UL. Result: wife abandoned or lost through scandal. Source: BPHS-30 v.16.
 - **PL-17** — Condition: lord of the 2nd from UL placed in own sign, or the 2nd from UL occupied by its own lord; or DK in own sign. Result: no wife in later life (text) — CONFLICT: the Rath/PVR school reads a strong, own-sign 2nd from UL as a long-lasting marriage `[MEMORY]`. Source: BPHS-30 v.11-13 as glossed at the URL read. Note: the Sanskrit is elliptical; treat this rule as unsettled and do not use it for prediction.
-- **PL-18** — Condition (female chart): Sun in the 8th [or 7th, by other readings]. Result: abandoned by husband. Source: BPHS-80 v.18. Note: Brihat Jataka places Sun in the 7th for this result `[MEMORY]`; the gloss read says 8th.
+- **PL-18** — Condition (female chart): Sun in the 8th [or 7th, by other readings]. Result: abandoned by husband. Source: BPHS-80 v.18. Note: Brihat Jataka 24.8 (read in the Sanskrit, 12 Nov 2026) places the Sun in the **7th** for this result - the whole verse is about the 7th house; take the 7th as the older reading.
 
 ### C3. Loss of spouse
 
@@ -274,7 +274,7 @@ Working order: (1) confirm promise; (2) find the Vimshottari period whose lords 
 | KD-C04 | Mars in the 4th or 7th in Aries, Scorpio, Cancer or Capricorn | OJ-KD, citing Muhurta Chintamani; AV-KD item 1 | |
 | KD-C05 | Mars debilitated or exalted (so Mars in Cancer is exempt) | OJ-KD, citing a verse of Garga | CONFLICT: debilitated Mars is elsewhere treated as weak and more harmful |
 | KD-C06 | Mars in a movable sign (Aries, Cancer, Libra, Capricorn) | OJ-KD, citing Jataka Chandrika; AV-KD item 8 | |
-| KD-C07 | Mars conjunct or aspected by Jupiter or Mercury | OJ-KD, citing Jataka Parijata; AV-KD item 2 adds Moon | Raman is usually cited for "with Jupiter or Moon" `[MEMORY]` |
+| KD-C07 | Mars conjunct or aspected by Jupiter or Mercury | OJ-KD (it cites Jataka Parijata, but a keyword search of the Sanskrit text on 12 Nov 2026 found no Manglik rule in it - treat as unsourced); AV-KD item 2 adds Moon | Raman is usually cited for "with Jupiter or Moon" `[MEMORY]` |
 | KD-C08 | Jupiter aspects Mars (said to remove it wholly); Jupiter in a bride's 7th; Jupiter aspecting a groom's 8th | OJ-KD (verse, text not named); OJ-MD | |
 | KD-C09 | Mars with or aspected by Venus | RVA-KD | Unattributed |
 | KD-C10 | Mars in Leo or Aquarius in any house | AV-KD items 11, 21; RVA-KD ("some traditions", adds Cancer) | Raman cited for Leo/Aquarius `[MEMORY]` |
@@ -332,7 +332,7 @@ Implementation advice: compute KD-01 and KD-02 separately and report which defin
 
 - K.N. Rao's exact double-transit wording and his chara dasha marriage conditions.
 - B.V. Raman's Kuja dosha house verse and sign-by-house exemptions ("Muhurtha"), and his 7th-house chapter in "How to Judge a Horoscope" vol. 2.
-- Brihat Jataka ch. 24 and Saravali stri jataka parallels to BPHS-80.
+- Saravali stri jataka parallels to BPHS-80 (Brihat Jataka ch. 24 has now been read: `kb/sources/brihat-jataka/`).
 - Jaimini Sutras upapada section (the PDF portion read did not reach it); BPHS ch. 30 was used instead.
 - A KP Reader (vol. on marriage) for the exact denial house group and the dual-sign rule.
 

@@ -291,7 +291,7 @@ Junction of water and fire signs, which is also a nakshatra junction: Pisces/Ari
 Applies to Moon (nakshatra gandanta), lagna (lagna gandanta), and by extension planets. BPHS treats gandanta birth among the inauspicious births needing shanti (see rectification-and-panchanga.md). Flag severity by band: within 1° = strong, 1°–3°20' = mild.
 
 ### E5. Pushkara navamsa and Pushkara bhaga
-Read at https://gkayapilla.blogspot.com/2020/08/pushkara-namamsha-and-bhaga.html (cites Jataka Parijata 1.58 and C.S. Patel, *Navamsa and Nadi Astrology*).
+Read at https://gkayapilla.blogspot.com/2020/08/pushkara-namamsha-and-bhaga.html (cites Jataka Parijata 1.58 and C.S. Patel, *Navamsa and Nadi Astrology*). **Jataka Parijata 1.58 was then read in the Sanskrit (12 Nov 2026) and its letter-number code decoded: the twelve degrees in the first column below are confirmed exactly** (`kb/sources/jataka-parijata/`).
 
 Pushkara navamsa (two per sign, by element):
 
@@ -306,7 +306,7 @@ Pushkara navamsa (two per sign, by element):
 
 Pushkara bhaga (single degree per sign):
 
-| Sign | Jataka Parijata 1.58 (as listed by the source) | C.S. Patel set |
+| Sign | Jataka Parijata 1.58 (confirmed from the Sanskrit) | C.S. Patel set |
 |---|---|---|
 | Aries | 21 | 21 |
 | Taurus | 14 | 14 |
@@ -324,7 +324,7 @@ Pushkara bhaga (single degree per sign):
 The element-based set (fire 21, earth 14, air 24, water 7) is the one most software uses. "Degree N" is usually read as the N-th degree, i.e. (N−1)°00' to N°00'; some read it as N°. Use a ±1° tolerance and report which set matched. A planet in pushkara navamsa/bhaga is nourished: it gives its good results more readily and softens affliction.
 
 ### E6. Mrityu bhaga (fatal degrees)
-Table read at https://astrobix.com/learn/400-fatal-planetary-positions-in-vedic-astrology.html (the page does not name its text; the same table is normally attributed to Jataka Parijata / Sarvartha Chintamani). Degree within the sign:
+Table read at https://astrobix.com/learn/400-fatal-planetary-positions-in-vedic-astrology.html (the page does not name its text; the same table is normally attributed to Jataka Parijata / Sarvartha Chintamani). **Checked 12 Nov 2026: Jataka Parijata ch. 1 has one such list only (1.57), for the Moon alone - 8, 25, 22, 22, 21, 1, 4, 23, 18, 20, 20, 10 - and it is not the Moon column below. The attribution to that text is not supported; treat this whole table as source-unidentified and low confidence.** Degree within the sign:
 
 | Sign | Lagna | Sun | Moon | Mars | Merc | Jup | Ven | Sat | Rahu | Ketu | Mandi |
 |---|---|---|---|---|---|---|---|---|---|---|---|

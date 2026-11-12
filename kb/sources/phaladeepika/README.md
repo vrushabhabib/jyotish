@@ -15,7 +15,7 @@ Why this text matters here: the knowledge base cited Phaladeepika 41 times throu
 | ch09-19.md | 9 signs and dignity; 14 illness; 18 two planets together; 19 dashas | in full |
 | ch10-12.md | 10 marriage; 11 women's charts; 12 children | in full |
 | ch15-26.md | 15 judgement of houses; 26 transits | in full |
-| ch20-28.md | 20, 21, 23, 24, 25, 27, 28 | in full; ch. 22 (Kalachakra) read but its coded sequences not decoded; 13 and 17 excluded by rule |
+| ch20-28.md | 20, 21, 23, 24, 25, 27, 28 | in full; ch. 22 (Kalachakra) read and its coded sequences decoded (12 Nov 2026, second pass); 13 and 17 excluded by rule |
 
 ## Result of the citation check
 Every Phaladeepika citation in the knowledge base that carries a chapter or verse number was checked against the Sanskrit: livelihood (5.1-2), the house-lord yogas with Harsha, Sarala and Vimala (6.57-69), the exchange yogas (6.32), Sarasvati (6.26), Shakata (6.14), the four cancellation-of-debilitation rules (7.26-30), marriage timing (10.12-14), children in a woman's chart (11.1), children (12.1, 14, 25-29), illness (14.1-2), significators and "significator in its own house" (15.17, 15.26), planets in houses (ch. 8), a retrograde planet's strength (4.4, 9.20), transits, vedha, star transit and Latta (26). **All were confirmed in substance. Four needed correction:** the Shakata wording was reversed in the catalogue; a "mutual kendra" cancellation of debilitation attributed to this text is not in it; "significator in its own house harms it" is reported by the author as others' opinion; the nodes in transit are "like the Sun", not like Saturn. The siva.sh English that the citations came from is no longer the stated source for any of them.

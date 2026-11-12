@@ -9,6 +9,10 @@ Sun, Mars, Mercury, Jupiter and Saturn agree in all twelve houses. Three cells d
 the same totals: Moon's table - Jupiter gives in the 2nd (not the 12th) and the Moon gives in the 9th where
 the standard table has Mars; Venus's table - Mars gives in the 4th (not the 5th). variant="bphs" applies them.
 
+Brihat Jataka ch. 9 read in the Sanskrit (brihajjAtakam.itx, 12 Nov 2026): all seven tables decoded from the
+verses agree with the standard table below in every cell. So the default is Varahamihira's table and the three
+differing cells are Parashara's recension - two old texts, not an error in either.
+
 Reading thresholds (BPHS 72.3-4, read in the Sanskrit): a sign with more than 30 is good, 25 to 30 middling,
 below 25 weak. 72.30-31: plain transit is looked at only until the ashtakavarga is available.
 In a planet's own BAV, 4 is neutral, 5+ good and 3 or fewer poor for its transit through that sign.

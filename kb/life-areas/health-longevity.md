@@ -46,7 +46,7 @@ BPHS-4 v.4–5 lists the limbs "from the head downward, starting with Aries". Th
 | Leo | Upper belly, stomach | Aquarius | Calves, shanks, ankles |
 | Virgo | Waist, intestines | Pisces | Feet |
 
-Source: BPHS-4 v.4–5 (list in order); the sign-by-sign pairing is the universal reading (Brihat Jataka 1.4 is the usual citation — not read online: unsourced as to verse).
+Source: BPHS-4 v.4–5 (list in order); the sign-by-sign pairing is the universal reading (Brihat Jataka 1.4, read in the Sanskrit 12 Nov 2026: head, face, chest, heart, belly, waist, lower abdomen, private parts, thighs, knees, shanks, feet - confirmed).
 
 ## B. Body parts by house
 
@@ -215,7 +215,7 @@ BPHS-43 also gives arithmetic lifespans (pindayu, nisargayu, amsayu, v.5–23). 
 | HLT-64 | Rahu or Ketu in Lagna, 7th, 8th or 12th, or conjunct/7th from a maraka lord, acts as maraka in its own periods; in 6/8/12 it gives trouble unless joined/aspected by a benefic | BPHS-44 v.22–24 | Verse gloss truncated |
 | HLT-65 | Lords of the 2nd and 12th from the Moon also act as marakas; if benefic they give illness instead | BPHS-44 v.18 | |
 | HLT-66 | **22nd drekkana:** the drekkana 21 places after the Lagna's drekkana = the same degree in the 8th sign from Lagna. Its lord (by the Parashari drekkana rule: 0–10° the sign's lord, 10–20° lord of the 5th from it, 20–30° lord of the 9th from it) is the "Khara" | BPHS-44 v.17 (names the 22nd drekkana lord among afflictors); PD-14 (22nd decanate lord shows cause of death when the 8th is empty and unaspected); drekkana rule from https://en.wikipedia.org/wiki/Drekkana | The computation line is arithmetic (21 × 10° = 210°) |
-| HLT-67 | **64th navamsa:** 63 navamsas after the Moon's navamsa = the same degree in the 8th sign from the Moon (63 × 3°20′ = 210°). The lord of that navamsa sign is a secondary maraka; periods and transits involving it are sensitive | Unsourced – common practice (usually credited to Jataka Parijata; not read). Some also count from Lagna | |
+| HLT-67 | **64th navamsa:** 63 navamsas after the Moon's navamsa = the same degree in the 8th sign from the Moon (63 × 3°20′ = 210°). The lord of that navamsa sign is a secondary maraka; periods and transits involving it are sensitive | Jataka Parijata 5.52-53 (read in the Sanskrit 12 Nov 2026) names "the lord of the 64th navamsa" as one of seven "gap" planets in its chapter on length of life; it does not say from where the 64 are counted. Counting from the Moon or the lagna is later practice. Never used for timing a death | |
 | HLT-68 | Vipat (3rd), Pratyari (5th) and Vadha (7th) nakshatra lords counted from the birth star are sensitive; the text links them to short/medium/long-life cases respectively | BPHS-44 v.15–17 | Gloss incomplete |
 | HLT-69 | Rudra (stronger of the 8th lords from Lagna and 7th), Trishoola (trines from Rudra's sign) and Maheswara (8th lord from Atmakaraka) — Jaimini longevity tools | PVR §14.3 | Jaimini addition; needs Shoola dasha |
 | HLT-70 | Cause/manner indications by planets in the 3rd and 8th, and by the 22nd drekkana | BPHS-44 v.25–40; PD-14 | Never used in output |

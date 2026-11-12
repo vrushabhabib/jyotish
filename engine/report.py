@@ -157,7 +157,7 @@ def markdown(r, name="native"):
     try:
         from engine.yogas_extra import detect as _det, catalogue as _cat, coverage as _cov
         ex = _det(v); cat = _cat(); cv = _cov()
-        w("\n### 8b. Further combinations from the 160-yoga catalogue (kb/yogas/yogas.json)\n")
+        w("\n### 8b. Further combinations from the yoga catalogue (kb/yogas/yogas.json)\n")
         w("Sorted rarest first. 'n/a' in the last column means the combination did not occur once in 4,000 random charts.\n")
         w("| Yoga | Planets | Formed by | Classical result | Cancelled or weakened when | How common |\n|---|---|---|---|---|---|")
         for x in sorted(ex, key=lambda x: _rate("cat", x["id"]) or 0):
@@ -192,9 +192,21 @@ def markdown(r, name="native"):
     w(f"| **SAV** | " + " | ".join(str(x) for x in av["sav"]) + " |")
     sb = r.get("shadbala") or {}
     if "planets" in sb:
-        w("\n| Shadbala | Rupas | Required | Ratio | Rank |\n|---|---|---|---|---|")
-        for p, x in sorted(sb["planets"].items(), key=lambda kv: kv[1].get("rank", 9)):
-            w(f"| {p} | {x.get('rupas', 0):.2f} | {x.get('required', 0)} | {x.get('ratio', 0):.2f} | {x.get('rank', '')} |")
+        w("\n| Shadbala | Rupas | Required (texts) | Ratio | Rank | As printed by AstroSage / Raman: required, ratio, rank |\n|---|---|---|---|---|---|")
+        for p, x in sorted(sb["planets"].items(), key=lambda kv: kv[1].get("rank_text", kv[1].get("rank", 9))):
+            w(f"| {p} | {x.get('rupas', 0):.2f} | {x.get('required_text', x.get('required', 0))} | {x.get('ratio_text', x.get('ratio', 0)):.2f} | {x.get('rank_text', x.get('rank', ''))} | "
+              f"{x.get('required', 0)}, {x.get('ratio', 0):.2f}, {x.get('rank', '')} |")
+        w("\nThe Sun's required strength is 6.5 rupas in the texts (Parashara 27.32-33; Jataka Parijata 2.40) and 5 in Raman's book and AstroSage; the other six agree. "
+          "Quote the first three columns in a reading; the last column exists only to cross-check a supplied kundli.")
+        try:
+            from engine.shadbala import shadbala as _sbf
+            i_ = c["input"]; off_ = (i_["local"].utcoffset().total_seconds() / 3600.0) if i_["local"].utcoffset() else 0.0
+            sbp = _sbf(i_["date"], i_["time"], i_["lat"], i_["lon"], off_, compat="parashara")
+            w("With Parashara's own dignity scale (27.2-3: 20/15/10/4/2 in place of Raman's 22.5/15/7.5/3.75/1.875): " +
+              "; ".join(f"{p} {sbp['planets'][p]['rupas']:.2f}" for p in sorted(sbp["planets"], key=lambda q: sbp["planets"][q]["rank_text"])) +
+              ". A rank that changes between the two scales is not firm.")
+        except Exception as _e:                              # noqa: BLE001
+            w(f"(Parashara-scale Shadbala not computed: {_e})")
         if sb.get("unverified"):
             w("\nShadbala was checked against two references (an AstroSage printout and B.V. Raman's standard horoscope). Still unconfirmed: " + "; ".join(sb["unverified"]) + ".")
     else:
@@ -241,6 +253,43 @@ def markdown(r, name="native"):
       ("A birth for which Parashara prescribes a rite: " + "; ".join(bc["conditions"]) + ". Named only so the family's question can be answered; no harm is stated." if bc["conditions"] else "None of the computed conditions applies.") + "\n")
     sdc = KL2.star_dasha_conditions(c, day_, bc["half"] == "bright")
     w("**Conditional star dashas whose condition is met (Parashara 46.17-43).** " + ("; ".join(sdc) if sdc else "none") + ". Vimshottari remains the chief dasha (46.3, 46.14); the others are cross-checks.\n")
+    try:
+        from engine import parashara_extra as PX
+        ns, mo = PX.nine_states(c), PX.six_moods(c)
+        w("**States of the planets (Parashara 45.7-17).** " + "; ".join(
+            f"{p}: {ns[p]['state']}" + (", " + ", ".join(ns[p]['also']) if ns[p]['also'] else "") +
+            (" - mood " + "/".join(mo[p]['moods']) if mo[p]['moods'] else "") for p in ns) + ". " +
+          "'A house gives according to the state of the planet in it' (45.10). In 1,200 random charts 68% of planets are 'glad' and 47% 'hungry', so those two say little; "
+          "**ashamed (4%), thirsty (1%), agitated (1%) and proud (11%) are the moods worth a remark.** " +
+          ("Hungry or agitated with no glad or proud mood to offset it (45.18, 'harms the house it sits in'): " +
+           ", ".join(f"{p} in house {mo[p]['house']}" for p in mo if mo[p]['harms_house']) + " - one planet in seven is in this case." if any(x['harms_house'] for x in mo.values()) else "No planet is hungry or agitated without an offsetting mood.") + "\n")
+        ag = PX.argala(c)
+        none_ = [h for h in range(1, 13) if not ag[h]["planets"]]
+        pure = [h for h in range(1, 13) if ag[h]["kind"] == "benefic"]
+        malf = [h for h in range(1, 13) if ag[h]["kind"] == "malefic"]
+        w("**Argala - what makes a house's result firm (Parashara 31).** Planets in the 2nd, 4th, 11th and 5th from a house support it unless as many sit in the 12th, 10th, 3rd and 9th. " +
+          f"Houses with unobstructed support from benefics only: {pure or 'none'}; from malefics only (31.17: middling): {malf or 'none'}; houses with no unobstructed support: {none_ or 'none'}. " +
+          "Four houses in five have some argala and two charts in five have it on the 1st, 5th and 9th together, so only the houses with none, or with benefics alone, are worth a remark. " +
+          "The result comes in the period of the planet or sign that forms it (31.9).\n")
+        ug = PX.upagrahas(c); gl = ug["gulika_group"]["Gulika"]; md = ug["mandi_group_pd"]["Mandi"]; nl = ug["non_luminous"]; pp = ug["pranapada"]
+        w(f"**Gulika and the shadow points (Parashara 3.61-74; Phaladeepika 25).** Gulika by Parashara (the sign rising in Saturn's eighth of the {'day' if ug['day_birth'] else 'night'}): "
+          f"{gl['at_start']['sign_name']} (house {gl['at_start']['house']}) at the start of the part, {gl['at_end']['sign_name']} (house {gl['at_end']['house']}) at its end - the verse does not say which. "
+          f"Mandi by Mantreshvara's fixed time ({md['ghatis']} ghatis, PD 25.2): {md['sign_name']} (house {md['house']}). " +
+          ("All three agree." if len({gl['at_start']['sign'], gl['at_end']['sign'], md['sign']}) == 1 else "They do not all agree, so Gulika's house is uncertain for this chart; where it matters use the sign named twice.") +
+          " Read like Saturn (PD 25.18-21); in the 3rd, 6th or 11th it is counted favourable (PD 25.8-14). " +
+          "Non-luminous points: " + ", ".join(f"{k} {x['sign_name']} (H{x['house']})" for k, x in nl.items()) +
+          f". Pranapada {pp['sign_name']} (house {pp['house']}; " + ("one of the four good places" if pp['good_place'] else "not one of the good places 2, 4, 10, 11") +
+          ") - it moves a sign every six minutes, so it means something only for a birth time recorded to the minute. Low weight throughout.\n")
+        st = PX.sudarshana_table(c, int(age_now), 12)
+        w("**Sudarshana years ahead (Parashara 74.21-26).** " + ("Read all three rings." if st["applies"] else "Read from the lagna only (two of lagna, Moon, Sun share a sign).") +
+          " 'helped' = only benefics in the year's sign, 'pressed' = only malefics, by occupation alone; aspects and the lord are judged as for a birth chart.\n")
+        w("| Year of life | House | From lagna | From Moon | From Sun |\n|---|---|---|---|---|")
+        for rw in st["rows"]:
+            cell = lambda x: f"{x['sign']} - {x['tone']}" + (f" ({', '.join(x['occupants'])})" if x['occupants'] else "")
+            w(f"| {rw['year_of_life']} | {rw['house']} | {cell(rw['lagna'])} | {cell(rw['Moon'])} | {cell(rw['Sun'])} |")
+        w("")
+    except Exception as _e:                                  # noqa: BLE001
+        w(f"(States, argala, Gulika and Sudarshana table not computed: {_e})\n")
     pt = a["points"]
     w(f"\n**Special points.** Beeja sphuta {pt['beeja_sphuta']['sign']} ({pt['beeja_sphuta']['sign_parity']}) / navamsa {pt['beeja_sphuta']['navamsa']} ({pt['beeja_sphuta']['navamsa_parity']}); "
       f"Kshetra sphuta {pt['kshetra_sphuta']['sign']} ({pt['kshetra_sphuta']['sign_parity']}) / navamsa {pt['kshetra_sphuta']['navamsa']} ({pt['kshetra_sphuta']['navamsa_parity']}); "

@@ -84,7 +84,7 @@
   "strength": "Benefic occupant > malefic occupant; result coloured by the occupying planet.",
   "cancellation": "None formal; a malefic alone (Mars/Saturn) gives a harsher version.",
   "result": "Self-earned wealth, intelligence, king-like standing.",
-  "source": "BPHS ch. 37 vv.7-10 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)",
+  "source": "BPHS ch. 37 vv.7-10 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 13.3-6 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/)",
   "verified_this_session": true,
   "notes": ""
  },
@@ -96,7 +96,7 @@
   "strength": "",
   "cancellation": "None formal.",
   "result": "Good health and presence, reputation, pleasures; later-life detachment.",
-  "source": "BPHS ch. 37 vv.7-10 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)",
+  "source": "BPHS ch. 37 vv.7-10 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 13.3-6 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/)",
   "verified_this_session": true,
   "notes": ""
  },
@@ -108,7 +108,7 @@
   "strength": "",
   "cancellation": "None formal; two malefics flanking = papa-kartari on the Moon, read as pressure on the mind.",
   "result": "Wealth, conveyances, charity, enjoyment.",
-  "source": "BPHS ch. 37 vv.7-10 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)",
+  "source": "BPHS ch. 37 vv.7-10 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 13.3-6 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/)",
   "verified_this_session": true,
   "notes": ""
  },
@@ -122,7 +122,7 @@
   "result": "Poverty of support: reproach, penury, dependence, mental distress, unstable residence even if born well.",
   "source": "BPHS ch. 37 vv.11-13 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)",
   "verified_this_session": true,
-  "notes": "Definitions differ: Brihat Jataka/Saravali family also require no planet in a kendra from the Moon before calling it Kemadruma. Engine: compute the strict form (2/12/conjunction empty) then test each bhanga."
+  "notes": "Brihat Jataka 13.3 (read in the Sanskrit): Kemadruma when no planet other than the Sun is in the 2nd or 12th from the Moon - 'not held when a kendra or the Moon is joined by a planet'. He adds that reckoning it by kendra and navamsa is 'said by some, not established'. Definitions differ: Brihat Jataka/Saravali family also require no planet in a kendra from the Moon before calling it Kemadruma. Engine: compute the strict form (2/12/conjunction empty) then test each bhanga. Jataka Parijata 7.71 adds: the Moon in the lagna or the 7th without Jupiter's aspect is also Kemadruma; 7.82: 'where Kemadruma applies, raja yogas come to nothing'."
  },
  {
   "id": "kemadruma_bhanga_1",
@@ -132,7 +132,7 @@
   "strength": "",
   "cancellation": "n/a (this is itself a cancellation)",
   "result": "Kemadruma is cancelled or reduced; some authors (Jataka Parijata tradition) then call it Kalpadruma, giving rise after early hardship.",
-  "source": "Classical consensus (Brihat Jataka/Saravali family; listed at https://satyori.com/jyotish/articles/kemadruma-yoga/)",
+  "source": "Brihat Jataka 13.3 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - the cancellation is in the root verse; commentators differ on whether the kendra is counted from the lagna or the Moon, so both are tested",
   "verified_this_session": true,
   "notes": ""
  },
@@ -156,7 +156,7 @@
   "strength": "",
   "cancellation": "n/a (this is itself a cancellation)",
   "result": "Kemadruma is cancelled or reduced; some authors (Jataka Parijata tradition) then call it Kalpadruma, giving rise after early hardship.",
-  "source": "Listed at https://satyori.com/jyotish/articles/kemadruma-yoga/ (text attribution not given there)",
+  "source": "Brihat Jataka 13.3 on one reading of the verse ('when the Moon is in a kendra, or joined by a planet'); Jataka Parijata 7.80 (read in the Sanskrit, 12 Nov 2026; e-text marked 'needs proofreading'; notes in kb/sources/jataka-parijata/) requires Jupiter's aspect as well",
   "verified_this_session": true,
   "notes": ""
  },
@@ -168,7 +168,7 @@
   "strength": "",
   "cancellation": "n/a (this is itself a cancellation)",
   "result": "Kemadruma is cancelled or reduced; some authors (Jataka Parijata tradition) then call it Kalpadruma, giving rise after early hardship.",
-  "source": "Listed at https://satyori.com/jyotish/articles/kemadruma-yoga/",
+  "source": "No verse found in the texts read in Sanskrit (Parashara, Varahamihira, Mantreshvara, Jataka Parijata ch. 7). A modern list item (satyori.com). Low confidence.",
   "verified_this_session": true,
   "notes": ""
  },
@@ -180,9 +180,9 @@
   "strength": "",
   "cancellation": "n/a (this is itself a cancellation)",
   "result": "Kemadruma is cancelled or reduced; some authors (Jataka Parijata tradition) then call it Kalpadruma, giving rise after early hardship.",
-  "source": "Listed at https://satyori.com/jyotish/articles/kemadruma-yoga/; Jupiter's aspect on Moon is the most widely accepted mitigation",
+  "source": "Jataka Parijata 7.80-81 (read in the Sanskrit, 12 Nov 2026; e-text marked 'needs proofreading'; notes in kb/sources/jataka-parijata/): the Moon in a kendra, or with a benefic, or in her own, exaltation or great friend's navamsa - in each case aspected by Jupiter",
   "verified_this_session": true,
-  "notes": ""
+  "notes": "Jataka Parijata names Jupiter's aspect only (and Venus in a kendra with Jupiter's aspect). Venus's or Mercury's aspect on the Moon as a cancellation is a modern extension."
  },
  {
   "id": "kemadruma_bhanga_6",
@@ -192,7 +192,7 @@
   "strength": "",
   "cancellation": "n/a (this is itself a cancellation)",
   "result": "Kemadruma is cancelled or reduced; some authors (Jataka Parijata tradition) then call it Kalpadruma, giving rise after early hardship.",
-  "source": "Listed at https://satyori.com/jyotish/articles/kemadruma-yoga/",
+  "source": "Jataka Parijata 7.81 (read in the Sanskrit, 12 Nov 2026; e-text marked 'needs proofreading'; notes in kb/sources/jataka-parijata/) - but only together with Jupiter's aspect",
   "verified_this_session": true,
   "notes": ""
  },
@@ -204,7 +204,7 @@
   "strength": "",
   "cancellation": "n/a (this is itself a cancellation)",
   "result": "Kemadruma is cancelled or reduced; some authors (Jataka Parijata tradition) then call it Kalpadruma, giving rise after early hardship.",
-  "source": "Listed at https://satyori.com/jyotish/articles/kemadruma-yoga/",
+  "source": "No verse found in the texts read in Sanskrit (Parashara, Varahamihira, Mantreshvara, Jataka Parijata ch. 7). A modern list item (satyori.com). Low confidence.",
   "verified_this_session": true,
   "notes": ""
  },
@@ -216,7 +216,7 @@
   "strength": "Count how many of the three benefics participate and their dignity: 3 strong = top grade.",
   "cancellation": "Weak if the benefics are combust/debilitated or malefics share those houses.",
   "result": "King, minister or army chief according to strength (full / medium / low).",
-  "source": "BPHS ch. 37 v.5 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)",
+  "source": "BPHS ch. 37 v.5 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 13.2 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/)",
   "verified_this_session": true,
   "notes": ""
  },
@@ -240,9 +240,9 @@
   "strength": "",
   "cancellation": "None formal.",
   "result": "Affluence. Two benefics = medium wealth; one = negligible.",
-  "source": "BPHS ch. 37 v.6 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; name 'Vasumati' per B.V. Raman, 300 Important Combinations (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))",
+  "source": "BPHS 37.6 ; Brihat Jataka 13.9 (both read in the Sanskrit, 12 Nov 2026)",
   "verified_this_session": true,
-  "notes": ""
+  "notes": "Varahamihira gives both forms: all benefics in upachaya houses from the lagna - 'very wealthy'; from the Moon - 'wealthy'; two benefics - middling; fewer - little. The lagna form is his own and the stronger one (it was earlier mislabelled a 'Raman variant'). The name Vasumati is Raman's."
  },
  {
   "id": "chandra_sun_distance",
@@ -252,7 +252,7 @@
   "strength": "",
   "cancellation": "n/a",
   "result": "Grades wealth, intelligence and skill: little / middling / excellent.",
-  "source": "BPHS ch. 37 v.1 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)",
+  "source": "BPHS ch. 37 v.1 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 13.1 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/)",
   "verified_this_session": true,
   "notes": ""
  },
@@ -278,7 +278,7 @@
   "result": "Fortunes rise and fall like a cart wheel; periodic loss of standing.",
   "source": "Phaladeepika 6.14 and 6.17, read in the Sanskrit 12 Nov 2026",
   "verified_this_session": false,
-  "notes": "Do not confuse with the Nabhasa Shakata (all planets in houses 1 and 7)."
+  "notes": "Do not confuse with the Nabhasa Shakata (all planets in houses 1 and 7). Jataka Parijata 7.108 (read in the Sanskrit): Jupiter in the 6th or 8th from the Moon AND not in a kendra from the lagna - it does not include the 12th, and the kendra test is on Jupiter."
  },
  {
   "id": "amala",
@@ -432,7 +432,7 @@
   "strength": "",
   "cancellation": "Weak Lagna lord.",
   "result": "King or equal to a king, happy.",
-  "source": "BPHS ch. 36 v.17 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)",
+  "source": "BPHS 36.17 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
   "verified_this_session": true,
   "notes": ""
  },
@@ -912,7 +912,7 @@
   "strength": "",
   "cancellation": "Involvement of 6/8/12 lords or debility reduces it.",
   "result": "Wealth in the dashas of the planets involved.",
-  "source": "BPHS ch. 41 v.16 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; general lordship rule per B.V. Raman (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))",
+  "source": "BPHS 41.16 (the 5th and 9th lords and planets joined to them give wealth in their periods) and Phaladeepika 15-16, both read in the Sanskrit 12 Nov 2026",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1044,7 +1044,7 @@
   "strength": "Count how many conditions hold; 2+ classical conditions (1-4) = real. A cancelled debility is still not equal to exaltation.",
   "cancellation": "Bhanga itself fails in practice if: the dispositor is also debilitated, the planet is combust, or the planet sits in 6/8/12 (then relief only, no raja yoga).",
   "result": "Debility is cancelled; with conditions 1-4 the texts promise raja-yoga-level rise, usually after early struggle.",
-  "source": "Phaladeepika 7.26, 7.29 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/)",
+  "source": "Phaladeepika 7.26, 7.29 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/) ; Jataka Parijata 7.23 (read in the Sanskrit, 12 Nov 2026; e-text marked 'needs proofreading'; notes in kb/sources/jataka-parijata/)",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1056,7 +1056,7 @@
   "strength": "Count how many conditions hold; 2+ classical conditions (1-4) = real. A cancelled debility is still not equal to exaltation.",
   "cancellation": "Bhanga itself fails in practice if: the dispositor is also debilitated, the planet is combust, or the planet sits in 6/8/12 (then relief only, no raja yoga).",
   "result": "Debility is cancelled; with conditions 1-4 the texts promise raja-yoga-level rise, usually after early struggle.",
-  "source": "Phaladeepika 7.26, 7.29 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/)",
+  "source": "Phaladeepika 7.26, 7.29 (Sanskrit e-text sanskritdocuments.org phaladIpika.itx, read 12 Nov 2026 - see kb/sources/phaladeepika/) ; Jataka Parijata 7.23 (read in the Sanskrit, 12 Nov 2026; e-text marked 'needs proofreading'; notes in kb/sources/jataka-parijata/)",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1092,7 +1092,7 @@
   "strength": "Count how many conditions hold; 2+ classical conditions (1-4) = real. A cancelled debility is still not equal to exaltation.",
   "cancellation": "Bhanga itself fails in practice if: the dispositor is also debilitated, the planet is combust, or the planet sits in 6/8/12 (then relief only, no raja yoga).",
   "result": "Debility is cancelled; with conditions 1-4 the texts promise raja-yoga-level rise, usually after early struggle.",
-  "source": "Jataka Parijata, as listed via K.S. Charak at https://en.wikipedia-on-ipfs.org/wiki/Neechabhanga_Raja_yoga",
+  "source": "No verse found in the texts read in Sanskrit (Parashara, Varahamihira, Mantreshvara, Jataka Parijata ch. 7). A modern list item (K.S. Charak's list, via a Wikipedia mirror). Low confidence.",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1104,7 +1104,7 @@
   "strength": "Count how many conditions hold; 2+ classical conditions (1-4) = real. A cancelled debility is still not equal to exaltation.",
   "cancellation": "Bhanga itself fails in practice if: the dispositor is also debilitated, the planet is combust, or the planet sits in 6/8/12 (then relief only, no raja yoga).",
   "result": "Debility is cancelled; with conditions 1-4 the texts promise raja-yoga-level rise, usually after early struggle.",
-  "source": "K.S. Charak, Elements of Vedic Astrology p.335, via https://en.wikipedia-on-ipfs.org/wiki/Neechabhanga_Raja_yoga",
+  "source": "No verse found in the texts read in Sanskrit (Parashara, Varahamihira, Mantreshvara, Jataka Parijata ch. 7). A modern list item (K.S. Charak's list). Low confidence.",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1116,9 +1116,9 @@
   "strength": "Count how many conditions hold; 2+ classical conditions (1-4) = real. A cancelled debility is still not equal to exaltation.",
   "cancellation": "Bhanga itself fails in practice if: the dispositor is also debilitated, the planet is combust, or the planet sits in 6/8/12 (then relief only, no raja yoga).",
   "result": "Debility is cancelled; with conditions 1-4 the texts promise raja-yoga-level rise, usually after early struggle.",
-  "source": "Jataka Parijata list via https://en.wikipedia-on-ipfs.org/wiki/Neechabhanga_Raja_yoga - the same page cites a study finding navamsa-only bhanga rarely gave good results",
+  "source": "Jataka Parijata 7.30 (read in the Sanskrit, 12 Nov 2026; e-text marked 'needs proofreading'; notes in kb/sources/jataka-parijata/): 'two, three or four planets in debilitation, in good sixtieth-parts or in their own exaltation navamsa'",
   "verified_this_session": true,
-  "notes": ""
+  "notes": "The verse speaks of two to four debilitated planets together; applying it to a single planet is an extension. "
  },
  {
   "id": "neecha_bhanga_8",
@@ -1128,7 +1128,7 @@
   "strength": "Count how many conditions hold; 2+ classical conditions (1-4) = real. A cancelled debility is still not equal to exaltation.",
   "cancellation": "Bhanga itself fails in practice if: the dispositor is also debilitated, the planet is combust, or the planet sits in 6/8/12 (then relief only, no raja yoga).",
   "result": "Debility is cancelled; with conditions 1-4 the texts promise raja-yoga-level rise, usually after early struggle.",
-  "source": "K.S. Charak via https://en.wikipedia-on-ipfs.org/wiki/Neechabhanga_Raja_yoga (contested)",
+  "source": "No verse found in the texts read in Sanskrit (Parashara, Varahamihira, Mantreshvara, Jataka Parijata ch. 7). A modern list item (K.S. Charak's list; contested). Low confidence.",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1140,7 +1140,7 @@
   "strength": "Count how many conditions hold; 2+ classical conditions (1-4) = real. A cancelled debility is still not equal to exaltation.",
   "cancellation": "Bhanga itself fails in practice if: the dispositor is also debilitated, the planet is combust, or the planet sits in 6/8/12 (then relief only, no raja yoga).",
   "result": "Debility is cancelled; with conditions 1-4 the texts promise raja-yoga-level rise, usually after early struggle.",
-  "source": "Phaladeepika attribution via https://en.wikipedia-on-ipfs.org/wiki/Neechabhanga_Raja_yoga",
+  "source": "No verse found in the texts read in Sanskrit (Parashara, Varahamihira, Mantreshvara, Jataka Parijata ch. 7). A modern list item (attributed online to Phaladeepika, but not in Phaladeepika 7.26-30 as read). Low confidence.",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1238,7 +1238,7 @@
   "strength": "",
   "cancellation": "Broken if (1) any one planet is outside the arc, (2) Lagna is outside (Raman), (3) a planet is conjunct Rahu or Ketu in the same sign, esp. beyond the node's degree, (4) practice: strong Jupiter/Venus/Moon in a kendra or an exalted/own-sign planet inside. Raman: exalted well-placed Mercury nullifies.",
   "result": "Popular: struggle, delays, sudden reversals till the early 40s. Raman: it does not cancel other yogas nor shorten life; no single yoga makes or mars a chart.",
-  "source": "https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm (quoting B.V. Raman) ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
+  "source": "No classical verse: absent from Parashara, Varahamihira, Mantreshvara and Jataka Parijata as read in the Sanskrit (keyword search of the last, 12 Nov 2026). Modern definition from https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm (quoting B.V. Raman) ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
   "verified_this_session": true,
   "notes": "DEBATE: not found in BPHS, Brihat Jataka, Saravali or Phaladeepika. Raman notes it is absent in Varahamihira; K.N. Rao has called it a manufactured concept. The classical 'Sarpa yoga' is a different Nabhasa yoga (malefics in three kendras) and BPHS 83 'Sarpa shapa' concerns Rahu and the 5th house. Engine: report as 'modern, low weight'."
  },
@@ -1250,7 +1250,7 @@
   "strength": "",
   "cancellation": "Same as kaal_sarp.",
   "result": "Popular reading: stress falls on the self, health, marriage axis. The type shows which houses the nodal axis activates, not good vs bad.",
-  "source": "https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
+  "source": "No classical verse: absent from Parashara, Varahamihira, Mantreshvara and Jataka Parijata as read in the Sanskrit (keyword search of the last, 12 Nov 2026). Modern definition from https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
   "verified_this_session": true,
   "notes": "Names are modern (from the eight/twelve Nagas); no classical text lists them."
  },
@@ -1262,7 +1262,7 @@
   "strength": "",
   "cancellation": "Same as kaal_sarp.",
   "result": "Popular reading: stress falls on the family wealth, speech, longevity axis. The type shows which houses the nodal axis activates, not good vs bad.",
-  "source": "https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
+  "source": "No classical verse: absent from Parashara, Varahamihira, Mantreshvara and Jataka Parijata as read in the Sanskrit (keyword search of the last, 12 Nov 2026). Modern definition from https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
   "verified_this_session": true,
   "notes": "Names are modern (from the eight/twelve Nagas); no classical text lists them."
  },
@@ -1274,7 +1274,7 @@
   "strength": "",
   "cancellation": "Same as kaal_sarp.",
   "result": "Popular reading: stress falls on the courage, siblings, fortune axis. The type shows which houses the nodal axis activates, not good vs bad.",
-  "source": "https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
+  "source": "No classical verse: absent from Parashara, Varahamihira, Mantreshvara and Jataka Parijata as read in the Sanskrit (keyword search of the last, 12 Nov 2026). Modern definition from https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
   "verified_this_session": true,
   "notes": "Names are modern (from the eight/twelve Nagas); no classical text lists them."
  },
@@ -1286,7 +1286,7 @@
   "strength": "",
   "cancellation": "Same as kaal_sarp.",
   "result": "Popular reading: stress falls on the home, mother, career axis. The type shows which houses the nodal axis activates, not good vs bad.",
-  "source": "https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
+  "source": "No classical verse: absent from Parashara, Varahamihira, Mantreshvara and Jataka Parijata as read in the Sanskrit (keyword search of the last, 12 Nov 2026). Modern definition from https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
   "verified_this_session": true,
   "notes": "Names are modern (from the eight/twelve Nagas); no classical text lists them."
  },
@@ -1298,7 +1298,7 @@
   "strength": "",
   "cancellation": "Same as kaal_sarp.",
   "result": "Popular reading: stress falls on the children, intellect, gains axis. The type shows which houses the nodal axis activates, not good vs bad.",
-  "source": "https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
+  "source": "No classical verse: absent from Parashara, Varahamihira, Mantreshvara and Jataka Parijata as read in the Sanskrit (keyword search of the last, 12 Nov 2026). Modern definition from https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
   "verified_this_session": true,
   "notes": "Names are modern (from the eight/twelve Nagas); no classical text lists them."
  },
@@ -1310,7 +1310,7 @@
   "strength": "",
   "cancellation": "Same as kaal_sarp.",
   "result": "Popular reading: stress falls on the enemies, disease, expenses axis. The type shows which houses the nodal axis activates, not good vs bad.",
-  "source": "https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
+  "source": "No classical verse: absent from Parashara, Varahamihira, Mantreshvara and Jataka Parijata as read in the Sanskrit (keyword search of the last, 12 Nov 2026). Modern definition from https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
   "verified_this_session": true,
   "notes": "Names are modern (from the eight/twelve Nagas); no classical text lists them."
  },
@@ -1322,7 +1322,7 @@
   "strength": "",
   "cancellation": "Same as kaal_sarp.",
   "result": "Popular reading: stress falls on the marriage, partnerships, self axis. The type shows which houses the nodal axis activates, not good vs bad.",
-  "source": "https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
+  "source": "No classical verse: absent from Parashara, Varahamihira, Mantreshvara and Jataka Parijata as read in the Sanskrit (keyword search of the last, 12 Nov 2026). Modern definition from https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
   "verified_this_session": true,
   "notes": "Names are modern (from the eight/twelve Nagas); no classical text lists them."
  },
@@ -1334,7 +1334,7 @@
   "strength": "",
   "cancellation": "Same as kaal_sarp.",
   "result": "Popular reading: stress falls on the longevity, inheritance, family wealth axis. The type shows which houses the nodal axis activates, not good vs bad.",
-  "source": "https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
+  "source": "No classical verse: absent from Parashara, Varahamihira, Mantreshvara and Jataka Parijata as read in the Sanskrit (keyword search of the last, 12 Nov 2026). Modern definition from https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
   "verified_this_session": true,
   "notes": "Names are modern (from the eight/twelve Nagas); no classical text lists them."
  },
@@ -1346,7 +1346,7 @@
   "strength": "",
   "cancellation": "Same as kaal_sarp.",
   "result": "Popular reading: stress falls on the fortune, father, effort axis. The type shows which houses the nodal axis activates, not good vs bad.",
-  "source": "https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
+  "source": "No classical verse: absent from Parashara, Varahamihira, Mantreshvara and Jataka Parijata as read in the Sanskrit (keyword search of the last, 12 Nov 2026). Modern definition from https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
   "verified_this_session": true,
   "notes": "Names are modern (from the eight/twelve Nagas); no classical text lists them."
  },
@@ -1358,7 +1358,7 @@
   "strength": "",
   "cancellation": "Same as kaal_sarp.",
   "result": "Popular reading: stress falls on the career, status, home axis. The type shows which houses the nodal axis activates, not good vs bad.",
-  "source": "https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
+  "source": "No classical verse: absent from Parashara, Varahamihira, Mantreshvara and Jataka Parijata as read in the Sanskrit (keyword search of the last, 12 Nov 2026). Modern definition from https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
   "verified_this_session": true,
   "notes": "Names are modern (from the eight/twelve Nagas); no classical text lists them."
  },
@@ -1370,7 +1370,7 @@
   "strength": "",
   "cancellation": "Same as kaal_sarp.",
   "result": "Popular reading: stress falls on the gains, elder siblings, children axis. The type shows which houses the nodal axis activates, not good vs bad.",
-  "source": "https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
+  "source": "No classical verse: absent from Parashara, Varahamihira, Mantreshvara and Jataka Parijata as read in the Sanskrit (keyword search of the last, 12 Nov 2026). Modern definition from https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
   "verified_this_session": true,
   "notes": "Names are modern (from the eight/twelve Nagas); no classical text lists them."
  },
@@ -1382,7 +1382,7 @@
   "strength": "",
   "cancellation": "Same as kaal_sarp.",
   "result": "Popular reading: stress falls on the expenses, sleep, foreign, enemies axis. The type shows which houses the nodal axis activates, not good vs bad.",
-  "source": "https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
+  "source": "No classical verse: absent from Parashara, Varahamihira, Mantreshvara and Jataka Parijata as read in the Sanskrit (keyword search of the last, 12 Nov 2026). Modern definition from https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
   "verified_this_session": true,
   "notes": "Names are modern (from the eight/twelve Nagas); no classical text lists them."
  },
@@ -1394,7 +1394,7 @@
   "strength": "",
   "cancellation": "By definition already weakened; many traditions treat it as fully cancelled.",
   "result": "Diluted version; the one outside planet often becomes the life's outlet.",
-  "source": "https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
+  "source": "No classical verse: absent from Parashara, Varahamihira, Mantreshvara and Jataka Parijata as read in the Sanskrit (keyword search of the last, 12 Nov 2026). Modern definition from https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm ; https://jagannathhora.com/kaal-sarp-dosha-complete-guide/",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1406,7 +1406,7 @@
   "strength": "",
   "cancellation": "Same breakers as Kaal Sarp.",
   "result": "Most astrologers do not count it; some treat it as a milder or spiritual variant.",
-  "source": "https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm",
+  "source": "No classical verse: absent from Parashara, Varahamihira, Mantreshvara and Jataka Parijata as read in the Sanskrit (keyword search of the last, 12 Nov 2026). Modern definition from https://www.barbarapijan.com/bpa/Graha/Rahu/Kala_Sarpa_Yoga.htm",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1545,7 +1545,7 @@
   "strength": "",
   "cancellation": "None formal.",
   "result": "Inclination to liberation practices.",
-  "source": "Jaimini/BPHS Karakamsa chapter (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))",
+  "source": "Later tradition. BPHS ch. 33 (Karakamsa, read in the Sanskrit 12 Nov 2026) gives results for Ketu in the Karakamsa and in its 2nd, 3rd and 4th, not the 12th from the lagna. Low confidence",
   "verified_this_session": false,
   "notes": ""
  },
@@ -1557,7 +1557,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Fond of travel, earns abroad, restless, cruel.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1569,7 +1569,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Honoured, wealthy, steady, many sons.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1581,7 +1581,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Uneven build, shrewd, accumulates money, helps kin.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1593,7 +1593,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Happy, comforts, vehicles, many partners.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1605,7 +1605,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Crooked, cruel, poor, dependent.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": "This is the classical 'Sarpa yoga' - unrelated to Kaal Sarp."
  },
@@ -1617,7 +1617,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Effortful earner, ritual-minded, wealthy, learned.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1629,7 +1629,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Sickly, poor, lives by carts/transport, dull, ordinary spouse.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1641,7 +1641,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Wanderer, messenger, quarrelsome.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": "The BPHS e-text read prints '9th and 10th'; Brihat Jataka and the Wikipedia table give 4th and 10th - use 4 & 10."
  },
@@ -1653,7 +1653,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Fond of contest, happy, dear to rulers, good spouse.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1665,7 +1665,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Farmer, big eater, poor, servant, troubled.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1677,7 +1677,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Happy at start and end of life, valiant.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": "Varahamihira notes Vajra/Yava can hardly occur (Mercury/Venus cannot be 4 signs from the Sun) and lists them out of respect for earlier authors."
  },
@@ -1689,7 +1689,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Happy in mid-life, pious, charitable, steady.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1701,7 +1701,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Famous, virtuous, long-lived, king-like.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1713,7 +1713,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Hoards wealth, steady comforts, sons.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1725,7 +1725,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Self-knowledge, ritual, vows, charitable.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1737,7 +1737,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Maker of arrows/weapons, jailer, hunter-like trades.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1749,7 +1749,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Lazy or unsuccessful, long-lived, skilled in war, steady.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1761,7 +1761,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Loses sons/spouse, poor, serves the low, estranged from kin.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1773,7 +1773,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Earns by water, wealthy, famous, miserly.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1785,7 +1785,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Liar, jailer, poor, lives in hills/forts.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1797,7 +1797,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Kind, helps many, long-lived, happy at start and end.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1809,7 +1809,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Liar, thief-like, wanders in forests, happy in mid-life.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1821,7 +1821,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Army leader, handsome, strong, gems and gold.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1833,7 +1833,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Emperor; kings bow to him.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1845,7 +1845,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Many gems, wealth, pleasures, steady.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1857,7 +1857,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Poor, sorrowful, ignorant, wanderer.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1869,7 +1869,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Heretic, poor, shunned, sonless.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1881,7 +1881,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Sharp, cruel, poor, brave, wounded, famed in fight.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1893,7 +1893,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Farmer, truthful, happy, helps many.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1905,7 +1905,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Skilled, talkative, many servants, risk of bondage.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1917,7 +1917,7 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Helps others, wealth by fair means, famous, many sons.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
  },
@@ -1929,8 +1929,260 @@
   "strength": "Said to operate through life, not only in specific dashas. Most are rare; weight by how exactly the pattern holds.",
   "cancellation": "Nabhasa yogas have no bhanga. Precedence: if an Akriti/Asraya/Dala yoga is present, the Sankhya yoga is ignored; Asraya is ignored if an Akriti yoga coincides (Varahamihira).",
   "result": "Fond of music and dance, skilful, leader, happy.",
-  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; cross-checked https://en.wikipedia.org/wiki/Nabhasa_yoga (Brihat Jataka ch. 12 named there as parallel source)",
+  "source": "BPHS ch. 35 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; Brihat Jataka 12.2-19 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/brihat-jataka/) - definitions confirmed",
   "verified_this_session": true,
   "notes": ""
+ },
+ {
+  "id": "rj_ak_l9",
+  "name": "Raja yoga: 9th lord and Atma-karaka",
+  "category": "raja",
+  "condition": "9th lord and the Atma-karaka (planet with the most degrees) each in the lagna, 5th or 7th, each joined or aspected by a benefic.",
+  "strength": "",
+  "cancellation": "None stated in the verse.",
+  "result": "Raja yoga (standing, authority).",
+  "source": "BPHS 39.8 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": ""
+ },
+ {
+  "id": "rj_benefics_245",
+  "name": "Raja yoga: benefics in 2nd, 4th, 5th from lagna lord or Atma-karaka",
+  "category": "raja",
+  "condition": "A benefic in each of the 2nd, 4th and 5th counted from the lagna lord or from the Atma-karaka.",
+  "strength": "",
+  "cancellation": "None stated in the verse.",
+  "result": "Raja yoga.",
+  "source": "BPHS 39.9 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": "Engine reading: every one of the three houses must hold a benefic (Moon counted as a benefic)."
+ },
+ {
+  "id": "rj_malefics_36",
+  "name": "Raja yoga: malefics in 3rd and 6th from lagna lord or Atma-karaka",
+  "category": "raja",
+  "condition": "A malefic in both the 3rd and the 6th counted from the lagna lord or from the Atma-karaka.",
+  "strength": "",
+  "cancellation": "None stated in the verse.",
+  "result": "Raja yoga.",
+  "source": "BPHS 39.10 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": "Engine reading: both houses must hold a malefic (nodes counted)."
+ },
+ {
+  "id": "rj_lagna_row",
+  "name": "Raja yoga: benefic-benefic-malefic-benefic in houses 1-4",
+  "category": "raja",
+  "condition": "A benefic in the lagna, a benefic in the 2nd, a malefic in the 3rd and a benefic in the 4th.",
+  "strength": "",
+  "cancellation": "None stated in the verse.",
+  "result": "Raja yoga.",
+  "source": "BPHS 39.17 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": ""
+ },
+ {
+  "id": "rj_jupiter_9",
+  "name": "Raja yoga: Jupiter in the 9th in own sign",
+  "category": "raja",
+  "condition": "Jupiter in the 9th house in Sagittarius or Pisces, together with Venus or with the 5th lord.",
+  "strength": "",
+  "cancellation": "None stated in the verse.",
+  "result": "Raja yoga.",
+  "source": "BPHS 39.39 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": ""
+ },
+ {
+  "id": "rj_benefic_exalted_kendra",
+  "name": "Raja yoga: one benefic exalted in a kendra",
+  "category": "raja",
+  "condition": "Jupiter, Venus or Mercury exalted in a kendra and joined by another benefic.",
+  "strength": "",
+  "cancellation": "None stated in the verse.",
+  "result": "Raja yoga from a single planet.",
+  "source": "BPHS 39.47 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": ""
+ },
+ {
+  "id": "rj_5l_10",
+  "name": "5th lord in the 10th",
+  "category": "raja",
+  "condition": "Lord of the 5th house placed in the 10th.",
+  "strength": "",
+  "cancellation": "None stated in the verse.",
+  "result": "Parashara calls it a raja yoga: comforts, fame.",
+  "source": "BPHS 24.58 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": "A single lord placement: by arithmetic about one chart in twelve. Never a distinction on its own."
+ },
+ {
+  "id": "rj_9l_10",
+  "name": "9th lord in the 10th",
+  "category": "raja",
+  "condition": "Lord of the 9th house placed in the 10th.",
+  "strength": "",
+  "cancellation": "None stated in the verse.",
+  "result": "A ruler or like one; a minister or commander; virtuous.",
+  "source": "BPHS 24.106 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": "A single lord placement: about one chart in twelve."
+ },
+ {
+  "id": "daridra_7",
+  "name": "Daridra: malefic in the lagna touched by a maraka lord",
+  "category": "arishta",
+  "condition": "A malefic in the lagna, other than the 9th or 10th lord, joined or aspected by the 2nd or 7th lord.",
+  "strength": "",
+  "cancellation": "Not applied to a malefic that is the 9th or 10th lord (the verse's own exception).",
+  "result": "Pressure on means.",
+  "source": "BPHS 42.8 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": ""
+ },
+ {
+  "id": "daridra_8",
+  "name": "Daridra: dispositors of the 6th, 8th, 12th lords in dusthanas",
+  "category": "arishta",
+  "condition": "The lords of the signs in which the 6th, 8th and 12th lords sit are themselves in the 6th, 8th or 12th, with malefic aspect or company.",
+  "strength": "",
+  "cancellation": "None stated in the verse.",
+  "result": "Pressure on means.",
+  "source": "BPHS 42.9 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": ""
+ },
+ {
+  "id": "daridra_9",
+  "name": "Daridra: lord of the Moon's navamsa and the marakas",
+  "category": "arishta",
+  "condition": "The lord of the navamsa sign of the Moon is with a maraka lord (2nd or 7th lord) or in the 2nd or 7th house.",
+  "strength": "",
+  "cancellation": "None stated in the verse.",
+  "result": "Pressure on means.",
+  "source": "BPHS 42.10 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": "Depends on the Moon's navamsa: changes about every 6 hours of birth time."
+ },
+ {
+  "id": "daridra_10",
+  "name": "Daridra: lagna lord and lagna-navamsa lord in dusthanas",
+  "category": "arishta",
+  "condition": "The lagna lord and the lord of the lagna's navamsa both in the 6th, 8th or 12th, joined or aspected by a maraka lord.",
+  "strength": "",
+  "cancellation": "None stated in the verse.",
+  "result": "Pressure on means.",
+  "source": "BPHS 42.11 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": "Birth-time sensitive: the lagna's navamsa changes about every 13 minutes."
+ },
+ {
+  "id": "dhana_loss_dasha",
+  "name": "Loss of money in a planet's own period",
+  "category": "arishta",
+  "condition": "A planet joined with the lord of the 6th, 8th or 12th and not aspected by the 5th or 9th lord.",
+  "strength": "",
+  "cancellation": "Aspect of the 5th or 9th lord removes it (the verse's own condition).",
+  "result": "Loss of money in that planet's own dasha - a timing note, not a standing condition.",
+  "source": "BPHS 42.13 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": ""
+ },
+ {
+  "id": "daridra_11",
+  "name": "Daridra: lagna lord aspecting the 8th and 12th",
+  "category": "arishta",
+  "condition": "The lagna lord (or the lord of the Atma-karaka's sign, counted from the Atma-karaka) aspects both the 8th and the 12th.",
+  "strength": "",
+  "cancellation": "None stated in the verse.",
+  "result": "Without wealth.",
+  "source": "BPHS 42.14 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": "Engine tests the lagna form only."
+ },
+ {
+  "id": "vyaya_lord_aspect",
+  "name": "Spender: lagna lord aspecting the 12th",
+  "category": "other",
+  "condition": "The lagna lord aspects the 12th house.",
+  "strength": "",
+  "cancellation": "None stated in the verse.",
+  "result": "A spender.",
+  "source": "BPHS 42.15 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": "Engine tests the lagna form only."
+ },
+ {
+  "id": "rj_venus_ju_moon",
+  "name": "Raja yoga: Venus with Jupiter and Moon",
+  "category": "raja",
+  "condition": "Venus in the Karakamsa (navamsa sign of the Atma-karaka) or its 5th, or in the lagna or the arudha of the lagna, joined or aspected by both Jupiter and the Moon.",
+  "strength": "",
+  "cancellation": "None stated in the verse.",
+  "result": "Raja yoga.",
+  "source": "BPHS 39.11 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": ""
+ },
+ {
+  "id": "rj_arudha_moon",
+  "name": "Raja yoga: Moon with a benefic in the arudha",
+  "category": "raja",
+  "condition": "A benefic with the Moon in the arudha of the lagna, Jupiter in the 2nd from it, the arudha aspected by an exalted planet.",
+  "strength": "",
+  "cancellation": "None stated in the verse.",
+  "result": "Raja yoga.",
+  "source": "BPHS 39.16 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": ""
+ },
+ {
+  "id": "rj_arudha_pair",
+  "name": "Raja yoga: arudhas of the lagna and the 7th",
+  "category": "raja",
+  "condition": "The arudha of the lagna and the arudha of the 7th in mutual kendras, in the 3rd and 11th, or in trines.",
+  "strength": "",
+  "cancellation": "None stated in the verse.",
+  "result": "Raja yoga; lasting agreement in partnership.",
+  "source": "BPHS 39.23 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": "Eight of twelve possible distances qualify, so by arithmetic this holds in roughly two charts in three. It is the absence (2nd-12th or 6th-8th) that says something."
+ },
+ {
+  "id": "rj_arudha_exalted",
+  "name": "Raja yoga: exalted planet in the arudha",
+  "category": "raja",
+  "condition": "The arudha of the lagna occupied by an exalted planet - the Moon especially - or by Jupiter and Venus together, with no adverse argala.",
+  "strength": "",
+  "cancellation": "None stated in the verse.",
+  "result": "Raja yoga.",
+  "source": "BPHS 39.26-27 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": "Engine does not test the 'no adverse argala' clause."
+ },
+ {
+  "id": "rj_three_lagnas",
+  "name": "Raja yoga: one planet on the birth, hora and ghati lagnas",
+  "category": "raja",
+  "condition": "One planet joining or aspecting the birth lagna, the hora lagna and the ghati lagna; stronger when that planet is exalted.",
+  "strength": "",
+  "cancellation": "None stated in the verse.",
+  "result": "Raja yoga - full, half or quarter by the fullness of the aspect.",
+  "source": "BPHS 39.12-15, 39.24 (read in the Sanskrit, 12 Nov 2026; notes in kb/sources/bphs/)",
+  "verified_this_session": true,
+  "notes": "Usable only with a recorded birth time: the ghati lagna moves one sign in 24 minutes. Sign aspects only; the divisional-lagna form of the verse is not tested."
+ },
+ {
+  "id": "neecha_bhanga_12",
+  "name": "Neecha bhanga #12 (navamsa lord, Jataka Parijata)",
+  "category": "neecha-bhanga",
+  "condition": "A planet is in its debilitation sign AND the lord of the navamsa it occupies is in a kendra or trine AND the lagna is a movable sign, or the lagna lord is in a movable sign or navamsa.",
+  "strength": "",
+  "cancellation": "n/a (this is itself a cancellation)",
+  "result": "A powerful ruler, says the verse; in practice: the debilitation is offset.",
+  "source": "Jataka Parijata 7.24 (read in the Sanskrit, 12 Nov 2026; e-text marked 'needs proofreading'; notes in kb/sources/jataka-parijata/)",
+  "verified_this_session": true,
+  "notes": "Depends on the planet's navamsa and, in one form, the lagna lord's navamsa - check the birth-time sensitivity table."
  }
 ]
