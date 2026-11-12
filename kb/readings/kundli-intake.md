@@ -56,6 +56,8 @@ The table shows the minute at which the lagna, D9, D10, D7, D12 and D3 lagnas ch
 | 13b Yogini and Chara dashas | second and third timing systems |
 | 13c Convergence table and track record | experimental cross-check of timing. Back-test 12 Nov 2026: 2 of 8 known events fell in a 4-of-5 month (career 2 of 3, marriage 0 of 3, home/property 0 of 2). Not a filter: state such windows as tentative and log them |
 
+Added 12 Nov 2026 from the Sanskrit reading (all in sections 9 and 11, each with its verse): twenty-point strength, rays, running Sudarshana year, livelihood pointer, special lagnas, three-part combined Ashtakavarga, months to prefer and avoid, direction of the spouse, birth-time conditions, conditional star dashas; in section 11 the sub-lord's house from the dasha lord, when in its period a planet delivers (stated only where two pointers agree), and the dasha lord's own transit with its month trigger (tentative). Read `kb/sources/ANALYSIS.md` first: it says which of these the texts treat as primary and what our own cases do and do not support.
+
 Column "How common" in section 8: a yoga found in more than 40% of random charts (Dhana 88%, Raja kendra-trikona 80%, Pitru 61%, Budha-Aditya 51%) is not mentioned as a distinction. Lead with the uncommon ones.
 
 Take Shadbala and Bhava Bala from the PDF when one is supplied; `engine/shadbala.py` is used otherwise, and its unverified components are listed in the worksheet.
