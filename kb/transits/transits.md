@@ -239,3 +239,12 @@ Output each step separately so a human can see why the verdict moved.
 - **Modern method (20th century):** K.N. Rao's double transit; P.V.R. Narasimha Rao's stationary and mutual-trine transit principles (read); reading Sade Sati through lagna lordship and ashtakavarga.
 - **Modern internet lore:** per-Moon-sign "severity rankings" of Sade Sati; fixed claims such as "Kaal Sarp ends at 47"; planetary "return" psychology borrowed from Western astrology.
 - **Not sourced this session:** K.N. Rao's own statement of double transit (incl. the retrograde clause); a primary text for Moorti Nirnaya; a primary definition of Kantaka Shani; Phaladeepika 26 verses 1-25 (full per-house results for all planets) — the page available covered only vv. 26-30, so several per-house phrases for Jupiter/Saturn are from working knowledge and marked [WK].
+
+## House-fruition by transit - Mantreshvara's timing method (Phaladeepika 10.12-14, 12.25-29, 16.31-32, 16.35; Sanskrit read 12 Nov 2026)
+Status: **classical, not yet coded, not yet back-tested** - state such a window as tentative and log it.
+1. The lagna lord in transit reaches a trine of the sign (or navamsa sign) occupied by the lord of the house in question, or reaches that house itself.
+2. The lord of the house in transit reaches a trine of the sign (or navamsa sign) of the lagna lord, or reaches the lagna.
+3. The two lords join or aspect each other in transit - "that is the time of that house's result" (16.35); good if the house lord is strong at birth.
+4. Jupiter in transit is in a trine of the sign (or navamsa sign) occupied by the lord of the house (16.32). For marriage: of the 7th lord (10.14); for children: of the 5th lord or of natal Jupiter (12.29).
+5. For marriage also: Venus or the 7th lord in a trine of the lagna lord's sign (10.12); the lagna lord in the 7th sign (10.13).
+6. All of it is reckoned from the lagna and again from the Moon; the dasha must belong to a planet connected with the house (10.13-14, 12.25-28).
