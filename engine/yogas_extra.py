@@ -109,12 +109,19 @@ def detect(v: View):
     ben_asp = any(touched_by(l1, b) for b in BEN3 if b != l1)
     if H[l1] in DUSTHANA and any(S[m] == S[l1] for m in MAL3 + ["Rahu", "Ketu"] if m != l1) and L[2] in DEBIL and S[L[2]] == DEBIL[L[2]]:
         add("daridra_3", [l1, L[2]], "BPHS 42.5: lagna lord with a malefic in a dusthana, 2nd lord debilitated (enemy sign not tested)")
-    elif not ben_asp and any(S[q] == S[l1] for q in {L[6], L[8], L[12], "Saturn"} if q != l1):
-        add("daridra_3", [l1], "BPHS 42.6: lagna lord with a dusthana lord or Saturn, no benefic aspect")
+    elif (any(S[q] == S[l1] for q in {L[6], L[8], L[12]} if q != l1) and
+          any(aspects_sign(m, S[m], S[l1]) for m in MAL3 + ["Rahu", "Ketu"] if m != l1 and S[m] != S[l1])):
+        add("daridra_3", [l1], "BPHS 42.6: lagna lord with a lord of 6/8/12 and aspected by a malefic")
+    elif l1 != "Saturn" and S[l1] == S["Saturn"] and not any(aspects_sign(b, S[b], S[l1]) for b in BEN3 if b != l1):
+        add("daridra_3", [l1, "Saturn"], "BPHS 42.6: lagna lord with Saturn, unaspected by benefics")
     if H[L[5]] == 6 and H[L[9]] == 12 and all(any(touched_by(q, m) for m in {L[2], L[7]} - {q}) for q in (L[5], L[9])):
         add("daridra_4", [L[5], L[9]], "BPHS 42.7: both touched by maraka lords")
     if all(H[b] in DUSTHANA for b in BEN3) and all(H[m] in KENDRA | TRIKONA for m in MAL3): add("daridra_5", BEN3 + MAL3)
     if H["Mars"] == 2 and H["Saturn"] == 2 and not aspects_sign("Mercury", S["Mercury"], S["Mars"]): add("daridra_6", ["Mars", "Saturn"])
+    if H["Sun"] == 2 and H["Saturn"] != 2 and aspects_sign("Saturn", S["Saturn"], S["Sun"]):
+        add("daridra_6", ["Sun", "Saturn"], "BPHS 42.17: Sun in the 2nd aspected by Saturn")
+    if H["Saturn"] == 2 and H["Sun"] != 2 and aspects_sign("Sun", S["Sun"], S["Saturn"]):
+        add("daridra_6", ["Saturn", "Sun"], "BPHS 42.18: Saturn in the 2nd aspected by the Sun")
 
     # ---- named yogas
     if all(H[b] in (7, 8) for b in BEN3) and not any(S[m] in {S[b] for b in BEN3} for m in MAL3 + ["Rahu", "Ketu"]):
