@@ -44,7 +44,7 @@ VARIANTS = {
     "kendradi": "by whole-sign house from the lagna sign",
     "dig": "arc from the weak point (true MC / IC / lagna / descendant), /3",
     "nathonnata": "measured from true local midnight (midpoint of sunset..sunrise), i.e. noon = (sunrise+sunset)/2",
-    "paksha": "Moon-Sun elongation/3 for benefics, complement for malefics; Moon's own value doubled (not in compat mode); "
+    "paksha": "Moon-Sun elongation/3 for benefics, complement for malefics; Moon's own value plain per BPHS 27.10-11 (doubled only with compat='raman'); "
               "Mercury malefic when it is in the same sign as a natural malefic; Moon always benefic here",
     "tribhaga": "day/night divided in three from actual sunrise/sunset; Jupiter always 60",
     "abda_masa": "Raman's ahargana (his Table I count: 174 on 31 Dec 1951), 360-day years and 30-day months; "
@@ -483,8 +483,9 @@ def shadbala(date_str, time_str, lat, lon, tz_off=5.5, compat=None):
         }
         kala = {
             "nathonnata": nathonnata_bala(p, ctx),
-            # BPHS and Raman double the Moon's own paksha bala (confirmed on Raman's standard horoscope); AstroSage does not
-            "paksha": paksha_bala(p, lons) * (2.0 if p == "Moon" and compat != "astrosage" else 1.0),
+            # BPHS 27.10-11 (read in Sanskrit 12 Nov 2026) gives the Moon the plain value. Raman doubles it and his
+            # worked example needs the doubling: use compat="raman" to reproduce him.
+            "paksha": paksha_bala(p, lons) * (2.0 if p == "Moon" and compat == "raman" else 1.0),
             "tribhaga": tribhaga_bala(p, ctx),
             "abda": 15.0 if p == abda else 0.0,
             "masa": 30.0 if p == masa else 0.0,
@@ -535,7 +536,10 @@ RESOLVED = [
     "sthana.saptavargaja (incl. Mercury) and the dwadasamsa boundaries: identical to Raman's example; the AstroSage "
     "figures that differ (Mercury 48.75; shifted D12 for Moon and Venus) are AstroSage's own deviations",
     "kala.hora: the lord of the running hora, as Raman's example requires (Moon there); AstroSage credits the previous hora",
-    "kala.paksha: the Moon's own value is doubled (Raman, BPHS); AstroSage leaves it single",
+    "kala.paksha: Parashara's verse (BPHS 27.10-11) does not double the Moon's value, and AstroSage follows it; Raman doubles "
+    "it and his example needs that (compat='raman'). Default = Parashara",
+    "sthana.saptavargaja scale: the engine uses Raman's 45/30/22.5/15/7.5/3.75/1.875 (matches both references); Parashara's "
+    "verse (BPHS 27.2-3) reads 45/30/20/15/10/4/2 - a known difference, see kb/sources/bphs/ch21-30.md",
     "kala.abda / masa / vara / tribhaga / nathonnata / ayana: reproduced on both reference charts",
 ]
 # Still not confirmed against an independent reference.

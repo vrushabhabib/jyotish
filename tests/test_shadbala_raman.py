@@ -14,7 +14,7 @@ KALA = [103.0, 202.0, 30.2, 192.8, 211.2, 115.5, 117.0]
 def _run():
     E.set_ayanamsa("raman")
     try:
-        return shadbala("1918-10-16", "14:20", 13.0, 77.5833, 5.5)
+        return shadbala("1918-10-16", "14:20", 13.0, 77.5833, 5.5, compat="raman")
     finally:
         E.set_ayanamsa("lahiri")
 
