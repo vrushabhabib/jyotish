@@ -217,6 +217,30 @@ def markdown(r, name="native"):
     w("**Livelihood pointer (Parashara's and Phaladeepika 5.1 method: the lord of the navamsa occupied by the 10th lord, taken from the strongest of lagna, Moon and Sun).** "
       f"From lagna: {_liv(c['lagna']['rashi'])}. From Moon: {_liv(c['planets']['Moon']['rashi'])}. From Sun: {_liv(c['planets']['Sun']['rashi'])}. "
       "Kinds of work by that navamsa lord are listed in kb/sources/phaladeepika/ch05-07.md (5.2-8); where the three agree the pointer is firm.\n")
+    from engine import classical as KL2, ephemeris as EPH, ashtakavarga as AVM
+    vp = KL2.vimshopaka(c)
+    w("**Twenty-point strength over the sixteen divisions (Parashara 7.17-27).** " + "; ".join(f"{p} {x['points']} ({x['grade']})" for p, x in vp.items()) +
+      ". Below 5 a planet's period gives nothing of its own, 5-10 little, 10-15 middling, above 15 in full (7.26-27); the text grades dasha results by this. Over 800 random charts 68% of planets are middling, 20% full and 12% small - so only the full and small grades say anything.\n")
+    sl = KL2.special_lagnas(c)
+    w("**Special lagnas (Parashara 5.2-8).** " + "; ".join(f"{k.replace('_', ' ')} {sl[k]['sign_name']} (house {sl[k]['house']})" for k in ("bhava_lagna", "hora_lagna", "ghati_lagna")) +
+      f". Born {sl['hours_from_sunrise']} hours after sunrise. Hora and ghati lagna move a sign in 60 and 24 minutes, so they are usable only with a recorded birth time.\n")
+    try:
+        avx = AVM.ashtakavarga(c)
+        blk = KL2.sav_blocks(avx, c["lagna"]["rashi"]); gm = KL2.good_months(avx)
+        w(f"**Combined Ashtakavarga in three parts of life (Parashara 72.9-10).** Houses 1-4: {blk['early']}; 5-8: {blk['middle']}; 9-12: {blk['late']} - the {blk['strongest']} part carries the most points (the three always add to 337; a difference under about ten points is ordinary). "
+          f"**Solar months by the Sun's own table (70.19-20):** prefer the Sun in {', '.join(gm['prefer'])} ({gm['prefer_points']} points); avoid new beginnings with the Sun in {', '.join(gm['avoid'])} ({gm['avoid_points']}).\n")
+    except Exception as _e:
+        w(f"(Ashtakavarga blocks not computed: {_e})\n")
+    sd = KL2.spouse_direction(c)
+    w(f"**Direction the spouse comes from.** Parashara (7th from Venus, 70.35-36): {sd['parashara']}. Mantreshvara (signs of the 7th lord, Venus and any planet in the 7th, PD 10.12): {', '.join(sd['mantreshvara'])}. " +
+      (f"Both name the {sd['both']} (the two texts agree in about 28% of charts)." if sd["both"] else "The two texts do not agree here, so no direction is stated.") + "\n")
+    bc = KL2.birth_conditions(c)
+    rise_, set_ = EPH.sun_times(c["input"]["jd_ut"], c["input"]["lat"], c["input"]["lon"])
+    day_ = rise_ <= c["input"]["jd_ut"] < set_
+    w(f"**Birth-time conditions (Parashara ch. 85-92).** Lunar day {bc['tithi']} of 30 ({bc['half']} half), {'day' if day_ else 'night'} birth. " +
+      ("A birth for which Parashara prescribes a rite: " + "; ".join(bc["conditions"]) + ". Named only so the family's question can be answered; no harm is stated." if bc["conditions"] else "None of the computed conditions applies.") + "\n")
+    sdc = KL2.star_dasha_conditions(c, day_, bc["half"] == "bright")
+    w("**Conditional star dashas whose condition is met (Parashara 46.17-43).** " + ("; ".join(sdc) if sdc else "none") + ". Vimshottari remains the chief dasha (46.3, 46.14); the others are cross-checks.\n")
     pt = a["points"]
     w(f"\n**Special points.** Beeja sphuta {pt['beeja_sphuta']['sign']} ({pt['beeja_sphuta']['sign_parity']}) / navamsa {pt['beeja_sphuta']['navamsa']} ({pt['beeja_sphuta']['navamsa_parity']}); "
       f"Kshetra sphuta {pt['kshetra_sphuta']['sign']} ({pt['kshetra_sphuta']['sign_parity']}) / navamsa {pt['kshetra_sphuta']['navamsa']} ({pt['kshetra_sphuta']['navamsa_parity']}); "
@@ -255,10 +279,11 @@ def markdown(r, name="native"):
             tags = [ar_ for ar_ in AREAS if any(x.startswith(("occupies", "owns", "with", "is karaka")) for x in links[(ar_, ad)])]
             w(f"| {md} | {ad} | {_d(s2)} | {_d(e)} | {(s2 - local).days / 365.25:.1f}-{(e - local).days / 365.25:.1f} | {_rel(md, ad)} | {', '.join(tags)} |")
     w("\nSub-lord from dasha lord (Parashara ch. 52-60, stated pair by pair for most of the 81 pairs): in a kendra, a trine, the 3rd or the 11th from the dasha lord the sub-period supports; in the 6th, 8th or 12th it obstructs; the 2nd is listed with the supportive places for most pairs. This is weighed together with the sub-lord's own house from the lagna and its dignity.\n")
-    third = lambda p: ("start", "middle", "end")[min(2, int(P_[p]["deg"] // 10))]
-    flip = {"start": "end", "middle": "middle", "end": "start"}
-    w("When inside its own period a planet delivers (Parashara 47.3-4, by the third of the sign it is in; reversed when retrograde): " +
-      "; ".join(f"{p} {flip[third(p)] if P_[p].get('retrograde') else third(p)}" for p in PLANET_ORDER) + ".\n")
+    from engine import classical as KL
+    dv = KL.delivery_time(c)
+    w("When inside its own period a planet delivers - two classical pointers (by the third of its sign, reversed if retrograde: Parashara 47.3-4; by the rising-type of its sign: 50.88-89). "
+      "Where both agree: " + ("; ".join(f"{p} {x['by_third']}" for p, x in dv.items() if x["agree"]) or "none") +
+      ". Where they differ (no statement): " + ("; ".join(f"{p} {x['by_third']}/{x['by_rising']}" for p, x in dv.items() if not x["agree"]) or "none") + ".\n")
     cur_md = next((x for x in a["dasha_tree"] if x[1] <= dt.datetime.now(local.tzinfo) < x[2]), None)
     if cur_md:
         w("\nPratyantardashas of the running and next two antardashas:\n")
