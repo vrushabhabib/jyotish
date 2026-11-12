@@ -44,6 +44,9 @@ Tradition: Parashari (BPHS) as the base. Where Jaimini, KP, or regional (Tamil /
 | `remedies/remedies.md` | Remedies by planet with cautions |
 | `rashis/functional-nature.md`, `bhavas/lord-placements.md`, `matching/match-protocol.md` | Earlier files, still current |
 
+## Sources
+Only free, openly readable material is used; see `SOURCES.md` for the policy and the audit of every source cited.
+
 ## How to read the rule files
 - Each rule has an ID, a checkable condition, a result and the source that was actually opened in November 2026.
 - `[UNSOURCED]` or "unsourced – common practice" means widely taught but not traced to a text. `[MEMORY]` or `[MEM-…]` means attributed to a book that could not be opened online (B.V. Raman, K.N. Rao, the KP Readers, K.S. Charak, Uttara Kalamrita). Treat both as lower confidence.
