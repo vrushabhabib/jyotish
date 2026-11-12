@@ -117,8 +117,8 @@ def detect(v: View):
     if H["Mars"] == 2 and H["Saturn"] == 2 and not aspects_sign("Mercury", S["Mercury"], S["Mars"]): add("daridra_6", ["Mars", "Saturn"])
 
     # ---- named yogas
-    if all(H[b] in (6, 7, 8) for b in BEN3) and not any(S[m] in {S[b] for b in BEN3} for m in MAL3 + ["Rahu", "Ketu"]):
-        add("lagnadhi", BEN3)
+    if all(H[b] in (7, 8) for b in BEN3) and not any(S[m] in {S[b] for b in BEN3} for m in MAL3 + ["Rahu", "Ketu"]):
+        add("lagnadhi", BEN3, "BPHS 36.37: benefics in the 7th and 8th from the lagna, free of malefics")
     if all(hfrom(S[b], moon) in UPACHAYA for b in BEN3): add("vasumati", BEN3, "from the Moon")
     elif all(H[b] in UPACHAYA for b in BEN3): add("vasumati", BEN3, "from the lagna (Raman variant)")
     d = hfrom(moon, S["Sun"])
@@ -143,7 +143,8 @@ def detect(v: View):
         add("bheri", ["Venus", "Jupiter", l1], "BPHS 36.16: Venus, Jupiter and lagna lord in kendras, 9th lord strong")
     elif v.strong(L[9]) and all(any(H[p] == h for p in v.s) for h in (12, 1, 2, 7)):
         add("bheri", [L[9]], "BPHS 36.15: houses 12, 1, 2 and 7 occupied, 9th lord strong")
-    if H[L[7]] == 10 and L[10] in EXALT and S[L[10]] == EXALT[L[10]] and S[L[10]] == S[L[9]]: add("shrinatha", [L[7], L[10], L[9]])
+    if H[L[7]] == 10 and L[7] in EXALT and S[L[7]] == EXALT[L[7]] and L[10] != L[9] and S[L[10]] == S[L[9]]:
+        add("shrinatha", [L[7], L[10], L[9]], "BPHS 36.18: 7th lord exalted in the 10th, 10th lord with the 9th lord")
     if (H[L[10]] == 5 and H["Mercury"] in KENDRA and S["Sun"] == 5) or \
        (any(hfrom(S[p], moon) in (5, 9) for p in ("Jupiter", "Mercury")) and H["Mars"] == 11):
         add("sharada", ["Mercury", "Jupiter", "Mars"])
@@ -154,7 +155,8 @@ def detect(v: View):
     if L[2] != L[9] and H[L[2]] == 9 and H[L[9]] == 2 and H[l1] in KENDRA | TRIKONA: add("khadga", [L[2], L[9]])
     if v.lag in (2, 5, 8, 11) and H["Venus"] in KENDRA and H["Moon"] in (5, 9) and any(S[b] == moon for b in BEN3) and H["Saturn"] == 10:
         add("kusuma", ["Venus", "Moon", "Saturn"])
-    if H["Jupiter"] in (2, 5) and touched_by("Jupiter", "Mercury") and touched_by("Jupiter", "Venus"): add("kalanidhi", ["Jupiter", "Mercury", "Venus"])
+    if H["Jupiter"] in (2, 5) and ((touched_by("Jupiter", "Mercury") and touched_by("Jupiter", "Venus")) or S["Jupiter"] in (2, 3, 6, 7)):
+        add("kalanidhi", ["Jupiter", "Mercury", "Venus"], "BPHS 36.31: Jupiter in the 2nd or 5th with Mercury and Venus, or in their signs")
     for i, ref, need in (("hari", S[L[2]], {2, 8, 12}), ("hara", S[L[7]], {4, 8, 9}), ("brahma", S[l1], {4, 10, 11})):
         if {hfrom(S[b], ref) for b in BEN3} == need: add(i, BEN3, "one benefic in each of the three houses")
     for n in ("Rahu", "Ketu"):
@@ -186,8 +188,8 @@ def detect(v: View):
     for _ in range(2):
         k = RASHI_LORD[S[k] - 1]; chain.append(k)
     chain.append(RASHI_LORD[c["planets"][k]["D9"] - 1])
-    if all(H[p] in KENDRA | TRIKONA for p in chain) or all(S[p] == EXALT.get(p) for p in chain):
-        add("kalpadruma", sorted(set(chain)), "BPHS 36.33-34: all four in kendras/trikonas, or all exalted")
+    if all(H[p] in KENDRA | TRIKONA or S[p] == EXALT.get(p) for p in chain):
+        add("kalpadruma", sorted(set(chain)), "BPHS 36.33: each of the four in a kendra, a trine or its exaltation")
 
     # ---- afflictions
     mal7 = [m for m in M5 if H[m] == 7]

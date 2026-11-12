@@ -116,10 +116,12 @@ def markdown(r, name="native"):
     if a["graha_yuddha"]:
         w(f"\nGraha yuddha (within 1 deg): {a['graha_yuddha']}")
     w("\n## 3. Rulerships and functional nature\n")
-    w("| Graha | Owns | Nature for this lagna | Notes |\n|---|---|---|---|")
+    w("'Parashara says' is his own verdict for this lagna (BPHS 34.19-44, read in Sanskrit); where it differs from the rule-based column, his verdict wins.\n")
+    w("| Graha | Owns | Nature by the general rules | Parashara says | Notes |\n|---|---|---|---|---|")
     for p, f in a["functional"]["planets"].items():
-        w(f"| {p} | {f['owns']} | {f['nature']} | {'; '.join(f['notes'] + (['maraka'] if f['maraka'] else []) + (['badhaka lord'] if f['badhaka'] else []))} |")
-    w(f"\nBadhaka house: {a['functional']['badhaka_house']}.\n")
+        ps = (f.get("parashara") or "not named") + (", yoga-giver" if f.get("parashara_yoga_giver") else "") + (", death-inflicting" if f.get("parashara_maraka") else "")
+        w(f"| {p} | {f['owns']} | {f['nature']} | {ps} | {'; '.join(f['notes'] + (['maraka'] if f['maraka'] else []) + (['badhaka lord'] if f['badhaka'] else []))} |")
+    w(f"\nBadhaka house: {a['functional']['badhaka_house']}. {a['functional'].get('parashara_note', '')}\n")
     for title, key in (("## 4. Houses from the lagna", "houses"), ("## 5. Houses from the Moon", "houses_from_moon")):
         w(title + "\n")
         w("| H | Sign | Lord -> house (dignity) | Occupants | Aspected by | Nodes aspect | Lord with | Lord aspected by | SAV |\n|---|---|---|---|---|---|---|---|---|")

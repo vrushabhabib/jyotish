@@ -194,7 +194,44 @@ def functional(v: View):
         nature = "benefic" if score >= 2 else "malefic" if score <= -2 else "mixed/neutral"
         out[p] = {"owns": owns, "nature": nature, "yogakaraka": yk,
                   "maraka": [h for h in owns if h in (2, 7)], "badhaka": badhaka_house in owns, "notes": notes}
-    return {"planets": out, "badhaka_house": badhaka_house}
+    t = BPHS34[v.lag]
+    for p in SEVEN:
+        said = "malefic" if p in t["bad"] else "benefic" if p in t["good"] else "neutral" if p in t["neutral"] else None
+        out[p]["parashara"] = said
+        out[p]["parashara_yoga_giver"] = p in t["yoga"]
+        out[p]["parashara_maraka"] = p in t["maraka"]
+        out[p]["agrees"] = said is None or said == out[p]["nature"].split("/")[-1] or (said == "neutral" and "neutral" in out[p]["nature"])
+    return {"planets": out, "badhaka_house": badhaka_house, "parashara_note": t.get("note", ""),
+            "source": "BPHS ch. 34 vv.19-44, read in Sanskrit 12 Nov 2026 (kb/sources/bphs/ch31-40.md)"}
+
+
+# Parashara's own verdict for each lagna (BPHS 34.19-44). Planets not named in a verse are left out.
+BPHS34 = {
+    1: dict(bad=["Saturn", "Mercury", "Venus"], good=["Jupiter", "Sun"], neutral=[], yoga=[], maraka=["Venus", "Saturn"],
+            note="Mars helps the good though he rules the 8th; Saturn with Jupiter gives no yoga by mere union"),
+    2: dict(bad=["Jupiter", "Venus", "Moon"], good=["Saturn", "Sun"], neutral=[], yoga=["Saturn"], maraka=["Jupiter", "Mars"],
+            note="Mercury gives a little good"),
+    3: dict(bad=["Mars", "Jupiter", "Sun"], good=["Venus"], neutral=[], yoga=[], maraka=["Moon"],
+            note="Saturn with Jupiter gives no yoga by mere union"),
+    4: dict(bad=["Venus", "Mercury"], good=["Mars", "Jupiter", "Moon"], neutral=[], yoga=["Mars"], maraka=["Saturn"],
+            note="the Sun gives results by association"),
+    5: dict(bad=["Mercury", "Venus", "Saturn"], good=["Mars", "Jupiter", "Sun"], neutral=[], yoga=[], maraka=["Saturn"],
+            note="Jupiter with Venus gives no good by mere union; the Moon by association"),
+    6: dict(bad=["Mars", "Jupiter", "Moon"], good=["Mercury", "Venus"], neutral=[], yoga=["Venus", "Mercury"], maraka=["Venus"],
+            note="the Sun by association"),
+    7: dict(bad=["Jupiter", "Sun", "Mars"], good=["Saturn", "Mercury"], neutral=["Venus"], yoga=["Moon", "Mercury"], maraka=["Mars"],
+            note=""),
+    8: dict(bad=["Venus", "Mercury", "Saturn"], good=["Jupiter", "Moon"], neutral=["Mars"], yoga=["Sun", "Moon"], maraka=["Venus"],
+            note=""),
+    9: dict(bad=["Venus"], good=["Mars", "Sun"], neutral=["Jupiter"], yoga=["Sun", "Mercury"], maraka=["Saturn", "Venus"],
+            note=""),
+    10: dict(bad=["Mars", "Jupiter", "Moon"], good=["Venus", "Mercury"], neutral=["Sun"], yoga=["Venus"], maraka=["Mars"],
+             note="Saturn does not himself kill"),
+    11: dict(bad=["Jupiter", "Moon", "Mars"], good=["Venus", "Saturn"], neutral=["Mercury"], yoga=["Venus"], maraka=["Sun", "Mars"],
+             note=""),
+    12: dict(bad=["Saturn", "Venus", "Sun", "Mercury"], good=["Mars", "Moon"], neutral=[], yoga=["Mars", "Jupiter"],
+             maraka=["Saturn", "Mercury"], note="Mars, though a maraka lord, does not kill"),
+}
 
 
 # --------------------------------------------------------------------------- planet states
@@ -235,7 +272,13 @@ def chara_karakas(v: View):
     seven = sorted(SEVEN, key=lambda p: -deg[p])
     deg8 = dict(deg); deg8["Rahu"] = 30 - v.lon["Rahu"] % 30
     eight = sorted(deg8, key=lambda p: -deg8[p])
+    # BPHS 32.13-16 read in Sanskrit (12 Nov 2026): the order is self, minister, sibling, mother, father, child,
+    # kin, spouse; "others say the mother's significator is also the child's". So with seven planets Parashara's
+    # own list has the father fifth and the child sharing the fourth planet with the mother. "seven" keeps the
+    # labels most software prints (fifth = child) for cross-checking; "seven_bphs" is the text's.
+    sb = dict(zip(["AK", "AmK", "BK", "MK", "PiK", "GK", "DK"], seven)); sb["PK"] = sb["MK"]
     return {"seven": dict(zip(["AK", "AmK", "BK", "MK", "PK", "GK", "DK"], seven)),
+            "seven_bphs": sb,
             "eight": dict(zip(["AK", "AmK", "BK", "MK", "PiK", "PK", "GK", "DK"], eight))}
 
 

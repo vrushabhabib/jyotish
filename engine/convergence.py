@@ -51,7 +51,7 @@ def timeline(r, sex=None, years=15, need=4, start=None, rows_out=None):
     """r = engine.report.build(...) result. Returns {area: {'windows': [...], 'share': float, 'static': [...]}}."""
     a = r["analysis"]; v: View = a["view"]
     RN = {n: i + 1 for i, n in enumerate(["Mesha", "Vrishabha", "Mithuna", "Karka", "Simha", "Kanya", "Tula", "Vrishchika", "Dhanu", "Makara", "Kumbha", "Meena"])}
-    today = start or r["today"]; ck = a["karakas"]["seven"]
+    today = start or r["today"]; ck = a["karakas"]["seven_bphs"]
     tz = r["chart"]["input"]["local"].tzinfo
     out = {}
     for area, (hs, km, kf, ckey) in AREAS.items():
