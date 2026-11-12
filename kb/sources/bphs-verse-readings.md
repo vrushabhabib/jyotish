@@ -54,3 +54,33 @@ How the reading was done: the verses were retrieved line by line from the site a
 | Confirmed as catalogued | 9 |
 | Rule corrected | 4 (serpent curse, Pitru dosha, gandanta width, Saturn's renunciation) |
 | Citation wrong | 1 (Vish yoga is not in chapter 79) |
+
+## Chapter 80 — the female chart (*strī-jātaka*), vv. 1-52 of 55, read 12 Nov 2026
+- v.2-4: results for women are judged as for men; the special points are: her body from the lagna, **childbirth from the 5th**, the husband's fortune from the 7th, widowhood from the 8th; what cannot apply to a woman is said of her husband.
+  - Effect: settles a conflict recorded in the children file. Parashara reads a woman's children from the 5th house. The 9th-house method belongs to other schools.
+- v.5-7: lagna and Moon in even signs - feminine nature and good qualities, more so with benefic aspect; in odd signs - masculine bearing, and ill-natured if aspected by malefics; mixed gives mixed; the stronger of lagna and Moon decides.
+- v.17: 7th house weak, empty and unaspected by benefics - a husband of little worth; a movable sign there - he lives away from home.
+- v.18: Sun in the 7th - left by the husband; Mars - early widowhood; Saturn aspected by malefics - marriage very late or not at all.
+- v.19: **malefics in the 7th** - widowhood; benefics there - husband lives and she is virtuous; mixed planets - she marries again.
+  - **Citation error found:** the marriage file quoted this verse as "benefics in a woman's 8th are protective" and listed it as a conflict with vv.26-33. The verse is about the 7th house (*asta*). There is no conflict: benefics in the 7th are good; vv.26-33 treat every planet in the 8th as unfavourable.
+- v.22-25: the husband is described by the **sign on the 7th house or its navamsa**: Mars's - fond of women, quick-tempered; Mercury's - learned, skilled in arts; Jupiter's - all good qualities, self-controlled; Venus's - fortunate, handsome, liked by women; **Saturn's sign or navamsa - old and dull**; the Sun's - very gentle, hard-working; Cancer or its navamsa - attractive, amorous, soft; mixed - by the stronger of sign and navamsa.
+  - Effect on a failed project rule: "Saturn with the 7th lord means an older husband" was tested and failed. That was never Parashara's rule. His is: the 7th house falling in Saturn's sign (Capricorn, Aquarius) or Saturn's navamsa. The engine now prints this reading for female charts; it stays low confidence until tested.
+- v.26-33: each planet in the 8th of a woman's chart is given a harsh result. Never stated literally in a reading.
+- v.34, 38-41: childlessness and loss-of-children combinations (Moon and Venus in the lagna with Saturn and Mars and an afflicted 5th; Sun and Moon in the 8th in own signs; lagna in a sign of Saturn or Mars holding Moon and Venus with malefic aspect; and others). Recorded; not volunteered.
+- v.43-46: *Viṣa-kanyā*: birth under Ashlesha, Krittika or Shatabhisha on a Sunday, Saturday or Tuesday on a Bhadra tithi (2nd, 7th, 12th), or a second chart pattern; **cancelled** when the 7th lord or a benefic is in the 7th from the lagna or from the Moon.
+- v.47: **Mars in the lagna, 12th, 4th, 7th or 8th, without the aspect or company of a benefic** - the husband's life is harmed. Key words: *lagne vyaye sukhe vāpi saptame cāṣṭame kuje, śubha-dṛg-yoga-hīne*.
+  - Effect: confirms the engine exactly - Parashara's Mangal dosha is houses 1, 4, 7, 8, 12 (the 2nd house is a southern addition), and the one cancellation in the verse is a benefic's aspect or conjunction.
+- v.48: the same combination in a man's chart harms the wife.
+- v.49: when a woman with this combination marries a man who has it, the combination is broken.
+  - Effect: the "both partners have it" cancellation is Parashara's own. The engine had it under later claims; it is now classical and belongs in the matching protocol.
+- v.52: Mars, Mercury, Jupiter and Venus strong with an even sign rising - learned in many disciplines.
+- Not yet read: vv.8-14 (trimsamsa results), 53-55.
+
+## Running total (12 Nov 2026)
+| | Count |
+|---|---|
+| Parashara chapters read in Sanskrit | 75, 79, 80 (most), 83 (part), 86, 87, 91, 92 |
+| Rules corrected | 5 (serpent curse, Pitru dosha, gandanta width, Saturn's renunciation, mutual Mangal cancellation) |
+| Wrong citations found | 2 (Vish yoga at 79.6-8; "benefics in the 8th" at 80.19) |
+| Project rules explained | 1 ("Saturn with 7th lord = older spouse" was never the classical rule) |
+| Could not open | par1120.pdf (chapters 11-20: marriage ch. 18, children ch. 16) - site error on that file |

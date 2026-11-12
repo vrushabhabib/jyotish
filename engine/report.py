@@ -166,9 +166,17 @@ def markdown(r, name="native"):
         w(f"\nCoverage: {len(cv['in_analysis']) + len(cv['in_yogas_extra'])} of {cv['catalogue']} catalogued combinations are tested by the engine; not tested: {', '.join(cv['not_coded'])}.\n")
     except Exception as e:                                    # noqa: BLE001
         w(f"\n(catalogue yogas failed: {e})\n")
+    if a.get("sex") == "F":
+        try:
+            from engine.yogas_extra import husband_by_seventh as _hb
+            hb = _hb(v)
+            w(f"**Husband by the 7th house (BPHS 80.22-25, low confidence):** 7th sign ruled by {hb['seventh_sign_lord']} - {hb['by_sign']}; "
+              f"7th navamsa ruled by {hb['navamsa_lord']} - {hb['by_navamsa']} (time-sensitive). The stronger of the two prevails.\n")
+        except Exception:                                     # noqa: BLE001
+            pass
     m = a["doshas"]["manglik"]; ks = a["doshas"]["kaal_sarp"]
     w(f"\n**Manglik:** {m['verdict']}. Mars is in house {m['from']['lagna']['mars_house']} from lagna, {m['from']['moon']['mars_house']} from Moon, "
-      f"{m['from']['venus']['mars_house']} from Venus. Classical cancellations: {'; '.join(m['cancellations_classical']) or 'none'}. Also claimed: {'; '.join(m['cancellations_claimed']) or 'none'}. Base rate: {m['base_rate']}.  ")
+      f"{m['from']['venus']['mars_house']} from Venus. Classical cancellations: {'; '.join(m['cancellations_classical']) or 'none'}. Also claimed: {'; '.join(m['cancellations_claimed']) or 'none'}. Base rate: {m['base_rate']}. {m['matching_note']}.  ")
     w(f"**Kaal Sarp:** {'full - ' + ks['type'] if ks['full'] else 'partial (one planet outside: ' + ', '.join(ks['planets_outside']) + ')' if ks['partial'] else 'no'}.  ")
     w(f"**Pitru dosha, popular definition (NOT Parashara's; found in about 61% of charts, so almost no weight):** {'; '.join(a['doshas']['pitru']) or 'none'}. "
       "Parashara's own father's-curse combinations (BPHS 83.20-27) are tested in section 8b under 'Pitru dosha'.\n")

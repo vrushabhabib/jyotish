@@ -1,5 +1,8 @@
 # Children — Knowledge Base (Parashari base, Lahiri, whole-sign)
 
+> **Correction from the Sanskrit (12 Nov 2026).** BPHS 80.3: in a woman's chart childbirth is read from the **5th** house. The serpent-curse and father's-curse verses (83.9-13, 83.20-27) were re-read; the narrower conditions are in `kb/sources/bphs-verse-readings.md` and override the wording below.
+
+
 Scope: promise, delay, denial, adoption, medical assistance, Saptamsa (D7), Beeja and Kshetra sphuta, Santana tithi, number and sex of children, timing, male versus female chart, classical remedies.
 
 ## How to read this file

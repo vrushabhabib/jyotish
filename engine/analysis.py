@@ -422,6 +422,7 @@ def manglik(v: View, age=None, south=True):
     if v.lag in (1, 8): claimed.append("Mars is lagna lord")
     if v.lag in (4, 5): claimed.append("Mars is yogakaraka for this lagna")
     if v.house("Saturn") in (1, 4, 7, 8, 12): claimed.append("Saturn in 1/4/7/8/12 (equivalent affliction, used in matching)")
+    matching_note = "BPHS 80.49: the combination is broken when both partners have it (classical; apply in matching)"
     if age is not None and age >= 28: claimed.append("native past 28 (one source; another calls it a myth)")
     any_dosha = any(r["dosha"] for r in res.values())
     verdict = ("none" if not any_dosha else "present but cancelled (classical ground)" if classical
@@ -429,6 +430,8 @@ def manglik(v: View, age=None, south=True):
     return {"from": res, "present": any_dosha, "cancellations": classical + claimed,
             "cancellations_classical": classical, "cancellations_claimed": claimed,
             "base_rate": "about 50% of charts from lagna, 75% from lagna or Moon - weak evidence alone",
+            "matching_note": matching_note,
+            "source": "BPHS 80.47 read in Sanskrit 12 Nov 2026: Mars in 1, 12, 4, 7 or 8 without a benefic's aspect or conjunction",
             "verdict": verdict}
 
 

@@ -1,5 +1,12 @@
 # Marriage and Spouse — Knowledge Base (Parashari base, Lahiri, whole-sign)
 
+> **Corrections from the Sanskrit (12 Nov 2026) - these override the rules below where they differ.** See `kb/sources/bphs-verse-readings.md`, chapter 80.
+> - BPHS 80.19 is about planets in the **7th** house of a woman's chart (malefics harm, benefics protect, mixed = remarriage), not the 8th. The "benefics in the 8th are protective" reading and the conflict built on it are withdrawn.
+> - Older or dull husband (BPHS 80.24): the **7th house in Saturn's sign or navamsa**. "Saturn with the 7th lord" is not the classical rule.
+> - Mangal dosha (BPHS 80.47-49): Mars in 1, 4, 7, 8 or 12 without a benefic's aspect or conjunction; the same holds for a man's chart; **broken when both partners have it**. These three points are Parashara's own.
+> - Visha-kanya cancellation (80.46): 7th lord or a benefic in the 7th from the lagna or the Moon.
+
+
 Scope: promise/denial/delay, spouse description, plurality/separation/widowhood, timing, Mangal dosha.
 Jaimini and KP are noted where they add a checkable test. All rules are paraphrased, not quoted.
 

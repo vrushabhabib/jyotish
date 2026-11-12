@@ -285,3 +285,22 @@ def coverage():
 if __name__ == "__main__":
     cv = coverage()
     print(cv["catalogue"], "catalogued;", len(cv["in_analysis"]), "in analysis;", len(cv["in_yogas_extra"]), "here; not coded:", cv["not_coded"])
+
+
+HUSBAND_BY_7TH = {"Mars": "fond of women, quick-tempered", "Mercury": "learned, skilled in arts, intelligent",
+                  "Jupiter": "all good qualities, self-controlled", "Venus": "fortunate, handsome, well liked by women",
+                  "Saturn": "old and dull", "Sun": "very gentle, hard-working", "Moon": "attractive, amorous, soft"}
+
+
+def husband_by_seventh(v: View):
+    """BPHS 80.22-25 (female charts): the husband described by the sign on the 7th house and by its navamsa.
+    Low confidence; descriptions of other people are the project's weakest category."""
+    seventh = sign_at(v.lag, 7)
+    lon7 = (v.c["lagna"]["lon"] + 180.0) % 360.0
+    s = int(lon7 // 30); part = int((lon7 % 30) // (30 / 9))
+    start = s if s % 3 == 0 else (s + 8) % 12 if s % 3 == 1 else (s + 4) % 12
+    nav = (start + part) % 12 + 1
+    ls, ln = RASHI_LORD[seventh - 1], RASHI_LORD[nav - 1]
+    return {"seventh_sign_lord": ls, "by_sign": HUSBAND_BY_7TH[ls], "navamsa_lord": ln, "by_navamsa": HUSBAND_BY_7TH[ln],
+            "source": "BPHS 80.22-25; birth-time sensitive (the navamsa of the 7th changes about every 13 minutes)"}
+
