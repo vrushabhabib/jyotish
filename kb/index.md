@@ -56,3 +56,12 @@ Only free, openly readable material is used; see `SOURCES.md` for the policy and
 
 ## Sources the KB is built from
 Brihat Parashara Hora Shastra (BPHS), Phaladeepika, Saravali, Jataka Parijata, Brihat Jataka, Uttara Kalamrita, Hora Ratna, Jaimini Sutras; B.V. Raman (300 Combinations, How to Judge a Horoscope), K.N. Rao (Predicting through Jaimini, Sade Sati), Sanjay Rath, KP Reader series (Krishnamurti). Muhurta: Muhurta Chintamani. Matching: standard North Indian Ashtakoota tables and South Indian Dashakoota.
+
+
+## Source texts read in the Sanskrit (12 Nov 2026)
+| File | What it holds |
+|---|---|
+| `sources/ANALYSIS.md` | **Read first.** The two texts taken as a whole: the shared method, where they differ, popular rules that are not in them, what was corrected, what our own cases can and cannot show |
+| `sources/bphs/` | Brihat Parashara Hora Shastra, all 97 chapters, verse by verse, with engine checks |
+| `sources/phaladeepika/` | Phaladeepika, 20 of 28 chapters in full, with the citation check |
+| `SOURCES.md` | Source policy and audit: free and public-domain material only |

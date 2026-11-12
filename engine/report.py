@@ -203,7 +203,7 @@ def markdown(r, name="native"):
     rs = RSM.rashmi(c)
     w("\n**Rays (Parashara ch. 73).** " + "; ".join(f"{p} {x}" for p, x in rs["planets"].items()) + f". Total {rs['total']} - {rs['grade']}. "
       "A scale of means and following, read against the family's own standing (73.19-20); a planet moving toward its exaltation gives its rays more fully (73.21). "
-      "By construction a random chart averages about 24, so only a total well above 30 or below 18 says anything.\n")
+      "Measured over 1,500 random charts the total averages 22; one chart in nine is above 30 and one in twenty below 12 - only those tails say anything.\n")
     age_now = (dt.datetime.now(c["input"]["local"].tzinfo) - c["input"]["local"]).days / 365.25
     sy = RSM.sudarshana_year(c, age_now)
     w(f"**Sudarshana year (Parashara 74.21-26).** Running year {int(age_now) + 1} is ruled by house {sy['house']}: " +
