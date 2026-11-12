@@ -76,11 +76,30 @@ How the reading was done: the verses were retrieved line by line from the site a
 - v.52: Mars, Mercury, Jupiter and Venus strong with an even sign rising - learned in many disciplines.
 - Not yet read: vv.8-14 (trimsamsa results), 53-55.
 
+## Chapter 30 — Upapada, vv. 1-16, read 12 Nov 2026
+- v.2-3: the pada of the lagna is the principal pada; the pada of "that which follows the lagna" (*tanor anucarāt*) is the *upārūḍha*, also called Upapada or the secondary pada.
+  - Note: the verse does not say "12th house" in so many words. The project computes Upapada as the arudha of the 12th, the usual reading of "follower of the lagna"; some schools take the 2nd. This stays a stated convention, not a proven point.
+- v.3-4: Upapada in a benefic's sign, joined or aspected by benefics - full happiness from spouse and children.
+- v.4-5: a malefic there, a malefic's sign, malefic aspect - renunciation or no spouse; **a benefic's aspect or conjunction removes this**.
+- v.6: the Sun does not count as a malefic here when exalted or in its own or a friend's sign; debilitated or in an enemy's sign it does.
+- v.7: benefic aspect on the 2nd from Upapada, a benefic sign with a benefic in it - the good result.
+- v.8: the 2nd from Upapada in a debilitated navamsa, holding a debilitated planet, joined by cruel planets - loss of spouse.
+- v.9: in an exalted navamsa, or with an exalted planet, or aspected by one - several spouses, good-looking.
+- v.10: Gemini on the Upapada or its 2nd - several spouses.
+- v.11-12: the Upapada or its 2nd joined by its own lord, or that lord in its own sign anywhere - **without a spouse in later life**.
+  - Effect: the marriage file recorded this as disputed (some modern writers read an own-sign 2nd as a lasting marriage). The Sanskrit as printed says *nirdāra*, "without a spouse", in the later part of life. The classical reading stands; the modern one is marked as not Parashara's.
+- v.13: the same when Venus, the constant significator of the spouse, is in its own sign. (A harsh verse; never stated literally.)
+- v.14: lord of the Upapada exalted, or the fixed spouse-significator so - spouse from a good family; debilitated - the reverse.
+- v.15: benefic connection with the Upapada or its 2nd - a good-looking, good-natured spouse.
+- v.16: Saturn and Rahu in the 2nd from Upapada - the spouse is given up through scandal, or lost.
+- Not yet read: vv.17 onward (children and siblings from the Upapada).
+
 ## Running total (12 Nov 2026)
 | | Count |
 |---|---|
-| Parashara chapters read in Sanskrit | 75, 79, 80 (most), 83 (part), 86, 87, 91, 92 |
+| Parashara chapters read in Sanskrit | 30 (vv.1-16), 75, 79, 80 (most), 83 (part), 86, 87, 91, 92 |
 | Rules corrected | 5 (serpent curse, Pitru dosha, gandanta width, Saturn's renunciation, mutual Mangal cancellation) |
 | Wrong citations found | 2 (Vish yoga at 79.6-8; "benefics in the 8th" at 80.19) |
 | Project rules explained | 1 ("Saturn with 7th lord = older spouse" was never the classical rule) |
+| Disputes settled by the text | 2 (children of a woman from the 5th; own-sign 2nd from Upapada = no spouse in later life) |
 | Could not open | par1120.pdf (chapters 11-20: marriage ch. 18, children ch. 16) - site error on that file |
