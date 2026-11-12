@@ -39,3 +39,7 @@ Event = (natal promise) × (dasha activation) × (transit trigger).
 - Property: 4L/Mars periods.
 - Foreign: 12L/9L/Rahu periods + Rahu transit on 12th/9th.
 - Health crises: 6L/8L/maraka periods + Saturn transit on 1st/8th from Moon (Sade Sati peak).
+
+
+## Verified rules (12 Nov 2026)
+The ten rules for judging a dasha and sub-period, each with its verse, are the last section of `dasha-systems.md`. The texts behind them: `../sources/bphs/ch46-50.md`, `ch51-60.md`, `ch61-70.md` and `../sources/phaladeepika/ch20-28.md`. Read those ten rules before `antar-event-rules.md`; the antar rules are our own case lessons and sit on top of them.

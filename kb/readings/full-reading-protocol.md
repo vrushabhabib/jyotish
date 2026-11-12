@@ -64,3 +64,41 @@ List and tick before writing: occupants; lord's placement, dignity, retrogressio
 
 ## 7. Audit log of mistakes made (do not repeat)
 Filler romance in unlinked sub-periods · 6th read only as illness · "first job" after "first employment" · invented specifics ("trip alone", "visa") · Jupiter transit sign from memory (Mithuna vs Karka) · Sade Sati from memory (2034–41 vs computed 2036–43) · Saturn–Ketu AD dates misquoted · "Father's standard" from Sun+Saturn in 10th · "Venus exalted in D9" from a wrong summary · client's current personal events referenced in the reading · sub-lettered parts (10B) · translation added by default when not asked · Part 3 written at half depth on the second chart (user noticed) · "Jupiter joins 11L to 2L" when Jupiter ruled 3/12 (rulership not checked) · "study or work" when it was a job (don't pad a pattern with alternatives) · Covid collapse understated as "money tight" (caution that softens a real feature is an error).
+
+
+## 8. Method taken from the source texts (added 12 Nov 2026 - applies to every reading from now on)
+Background and evidence: `kb/sources/ANALYSIS.md`. Where a line below conflicts with an older line in sections 3-4, this section wins.
+
+**Order of judgement for any matter (BPHS 7.39-43; Phaladeepika 15.1-7, 16.31-35)**
+1. The house, its lord, its significator - from the lagna, then from the Moon. If Sun, Moon and lagna are in three different signs, from the Sun as well (worksheet: "Sudarshana year" line says whether this applies).
+2. Build / break test counted from the house itself: benefics in its kendras, trines and 2nd build it; malefics in its 3rd, 6th, 11th support it; its lord in the 6th, 8th or 12th, combust, debilitated or in an enemy's sign harms it; malefics in its 6th, 8th, 12th, 4th and trines harm it.
+3. Grade every planet on the dignity scale (full / three quarters / half / quarter / little / none) and by the worksheet's twenty-point strength. Only "full" and "small" grades are remarked on.
+4. Say nothing on one indication. Two agree = likely, three = probable ("it becomes clear when two or three agree", PD 15.6).
+
+**Timing (BPHS 48, 52-60; PD 20.22-63) - use `kb/dashas/dasha-systems.md`, last section, rules 1-10**
+- The dasha lord's houses give the subject; its strength gives the outcome. A strong lord of the 6th, 8th, 11th or 12th gives the good side of its house; Parashara's flat verdicts on those lords are quoted beside Mantreshvara's.
+- Read the worksheet column "Sub-lord from dasha lord": 6th, 8th, 12th = the sub-period works against the main period; everything else supports. This is checked for every dated statement, together with the link test.
+- "When in its period": state start / middle / end only for planets the worksheet lists under "both agree".
+- The fixed sub-period grids (BPHS 61-63, PD 21) are tie-breakers, never the basis of a statement.
+
+**Transits (BPHS 72.30-31; PD 26)**
+- Always from the Moon first, always with the Ashtakavarga points printed in section 13; a high-point sign is good even in the 6th, 8th or 12th.
+- Marriage and children windows: the "double transit" used until now is modern and is not in either text. Use it and the classical triggers side by side - (a) Jupiter in a trine of the sign or navamsa sign of the 7th (or 5th) lord, (b) the lagna lord passing the 7th (or 5th) sign or joining its lord, (c) Venus or the 7th lord in a trine of the lagna lord's sign - and state a window only inside a connected sub-period. Both methods are untested on our cases; every such window is called tentative and logged.
+- The dasha lord's own transit line and its month trigger (worksheet section 11) are tentative colour, not predictions.
+
+**Lines of the worksheet added today and what each is for**
+| Line | Use in the reading |
+|---|---|
+| Twenty-point strength | how fully a planet's period delivers (Part 4, 5, 12) |
+| Rays | one sentence in Part 2 only when the total is above 30 or below 12 |
+| Sudarshana year | the tone of the running year in Part 5, only when it agrees with Ashtakavarga (BPHS 74.27-28) |
+| Livelihood pointer | Part 6 block B - firm when lagna, Moon and Sun give the same planet |
+| Three-part Ashtakavarga | Part 12 (long view) - only if one block leads by ten points or more |
+| Months to prefer / avoid | Part 13 (rules) for beginnings |
+| Direction of the spouse | Part 10 - only when both texts agree |
+| Birth-time conditions | answered if the family asks; named with the rite, never with the harm wording |
+| Special lagnas | only with a recorded birth time |
+
+**Not stated to anyone, ever** - in addition to section 5: popular "Pitru dosha", "Vish yoga" and Kaal Sarp as if they were classical (they are not in the texts; if the person raises one, say so plainly); a significator in its own house as a fault by itself; any wording from the excluded chapters listed in `kb/sources/bphs/README.md`.
+
+**Part 1 of every reading now states**: the method is taken from Parashara and Mantreshvara read in the Sanskrit; the calculation is verified to the arc-second; the predictive record so far (from the ledger); and that no forward prediction has yet matured.

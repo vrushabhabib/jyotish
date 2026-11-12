@@ -41,7 +41,7 @@ Tradition: Parashari (BPHS) as the base. Where Jaimini, KP, or regional (Tamil /
 | `transits/transits.md` | Sade Sati by phase, Saturn and Jupiter from Moon, vedha, double transit, Rahu-Ketu, Ashtakavarga scoring |
 | `nakshatras/nakshatras-27.md` | The 27 nakshatras with padas |
 | `planets/planets-in-houses.md` | Each planet in each house, lordship notes |
-| `sources/bphs-verse-readings.md` | Parashara read in the Sanskrit: verse-by-verse readings and the rule corrections they caused |
+| `sources/bphs-verse-readings.md` | The first, partial Sanskrit readings (11-12 Nov) and the corrections they caused. Superseded by `sources/bphs/`; kept for the history of corrections |
 | `remedies/remedies.md` | Remedies by planet with cautions |
 | `rashis/functional-nature.md`, `bhavas/lord-placements.md`, `matching/match-protocol.md` | Earlier files, still current |
 
@@ -63,5 +63,5 @@ Brihat Parashara Hora Shastra (BPHS), Phaladeepika, Saravali, Jataka Parijata, B
 |---|---|
 | `sources/ANALYSIS.md` | **Read first.** The two texts taken as a whole: the shared method, where they differ, popular rules that are not in them, what was corrected, what our own cases can and cannot show |
 | `sources/bphs/` | Brihat Parashara Hora Shastra, all 97 chapters, verse by verse, with engine checks |
-| `sources/phaladeepika/` | Phaladeepika, 20 of 28 chapters in full, with the citation check |
+| `sources/phaladeepika/` | Phaladeepika, 25 of 28 chapters in full (13 and 17 excluded by rule, 22 not decoded), with the citation check |
 | `SOURCES.md` | Source policy and audit: free and public-domain material only |

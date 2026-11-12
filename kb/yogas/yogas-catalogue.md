@@ -151,11 +151,11 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Result:** Becomes a king.
 - **Source:** BPHS ch. 39 v.42 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
-### Akhanda Samrajya yoga  `akhanda_samrajya`  [unverified]
+### Akhanda Samrajya yoga  `akhanda_samrajya`
 - **Condition:** Jupiter is lord of house 2, 5 or 11 from Lagna (e.g. Taurus lagna: 11th; Leo: 5th; Scorpio: 2nd and 5th; Aquarius: 2nd and 11th - compute from lordship, do not hard-code) AND one of the lords of the 2nd, 9th or 11th is in a kendra from the Moon (Raman: also requires that lord to be strong).
 - **Cancellation:** Weak/afflicted Jupiter.
 - **Result:** Unbroken, long-lasting authority and wealth.
-- **Source:** B.V. Raman, 300 Important Combinations; Jataka Parijata (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))
+- **Source:** Phaladeepika 7.25, read in the Sanskrit 12 Nov 2026: one of the lords of the 11th, 9th and 2nd in a kendra from the Moon, with Jupiter as lord of the 2nd, 5th or 11th - 'unbroken sovereignty'
 
 ### Moon-Venus 3/11 raja yoga  `venus_moon_3_11`
 - **Condition:** Moon and Venus placed in houses 3 and 11 from each other (mutual 3-11) per BPHS wording 'aspecting each other'.
@@ -172,11 +172,11 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Result:** Affluence. Two benefics = medium wealth; one = negligible.
 - **Source:** BPHS ch. 37 v.6 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf) ; name 'Vasumati' per B.V. Raman, 300 Important Combinations (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))
 
-### Chandra-Mangala yoga  `chandra_mangala`  [unverified]
+### Chandra-Mangala yoga  `chandra_mangala`
 - **Condition:** Moon and Mars in the same sign (some authors also accept mutual 7th aspect).
 - **Cancellation:** Afflicted (in 6/8/12, with Saturn/Rahu, or Moon debilitated in Scorpio with Mars) it turns to restlessness and conflict with mother.
 - **Result:** Earning drive, wealth through trade, sometimes by unscrupulous means; friction with mother/women.
-- **Source:** B.V. Raman, 300 Important Combinations; Phaladeepika ch. 6 (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))
+- **Source:** Phaladeepika 18.2, read in the Sanskrit 12 Nov 2026: the verse for Moon with Mars speaks of trade in drink and vessels and hardship to the mother - it does NOT call it a wealth yoga. The 'wealth' reading is later tradition (Raman); treat as low confidence
 
 ### Khadga yoga  `khadga`
 - **Condition:** 2nd lord and 9th lord exchange signs AND Lagna lord in a kendra or trikona.
@@ -326,33 +326,33 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Result:** King or equal to a king; well-built, tolerant.
 - **Source:** BPHS ch. 38 vv.1-4 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
-### Budha-Aditya (Nipuna) yoga  `budha_aditya`  [unverified]
+### Budha-Aditya (Nipuna) yoga  `budha_aditya`
 - **Condition:** Sun and Mercury in the same sign.
 - **Cancellation:** Practice: void when Mercury is deeply combust (within ~3 deg; working band 3-14 deg apart preferred), or the pair is in 6/8/12 or in Mercury's/Sun's debilitation.
 - **Result:** Intelligence, skill, good reputation.
-- **Source:** B.V. Raman, 300 Important Combinations (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers)); degree bands are modern practice, not classical
+- **Source:** Phaladeepika 18.1 (Sun with Mercury: skilled, intelligent, famous, happy), read in the Sanskrit 12 Nov 2026. Present in about half of all charts - never a distinction
 - **Note:** Mercury is never more than ~28 deg from the Sun, so this occurs in a large share of charts. Low weight.
 
 
 ## Parivartana (exchange) (3)
 
-### Maha parivartana yoga  `maha_parivartana`  [unverified]
+### Maha parivartana yoga  `maha_parivartana`
 - **Condition:** Two planets occupy each other's signs AND both houses are among {1,2,4,5,7,9,10,11} (28 possible pairs).
 - **Cancellation:** Weak if either planet is debilitated by the exchange (e.g. Sun-Venus across Libra) or combust.
 - **Result:** Wealth, status, benefits of both houses; the two houses work as one.
-- **Source:** Phaladeepika ch. 6 (Mantreswara's 66 exchanges: 28 maha, 8 khala, 30 dainya) (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))
+- **Source:** Phaladeepika 6.32-34 (66 exchanges: 28 maha, 8 khala, 30 dainya), read in the Sanskrit 12 Nov 2026
 
-### Khala parivartana yoga  `khala_parivartana`  [unverified]
+### Khala parivartana yoga  `khala_parivartana`
 - **Condition:** Two planets occupy each other's signs AND one of the two houses is the 3rd while the other is among {1,2,4,5,7,9,10,11} (8 possible pairs).
 - **Cancellation:** None formal.
 - **Result:** Fluctuating temperament and fortune: sometimes well-behaved and prosperous, sometimes harsh and in difficulty.
-- **Source:** Phaladeepika ch. 6 (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))
+- **Source:** Phaladeepika 6.32-33, read in the Sanskrit 12 Nov 2026
 
-### Dainya parivartana yoga  `dainya_parivartana`  [unverified]
+### Dainya parivartana yoga  `dainya_parivartana`
 - **Condition:** Two planets occupy each other's signs AND at least one of the two houses is 6, 8 or 12 (30 possible pairs).
 - **Cancellation:** If BOTH houses are dusthanas (6-8, 6-12, 8-12) many read it as viparita (good).
 - **Result:** Foolishness, trouble from enemies, ill health, obstacles to the non-dusthana house.
-- **Source:** Phaladeepika ch. 6 (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))
+- **Source:** Phaladeepika 6.32-33, read in the Sanskrit 12 Nov 2026
 
 
 ## Viparita raja yogas (4)
@@ -457,12 +457,12 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Result:** Debility is cancelled; with conditions 1-4 the texts promise raja-yoga-level rise, usually after early struggle.
 - **Source:** Modern popular rule; NOT found in the Phaladeepika verses read
 
-### Neecha bhanga condition #11  `neecha_bhanga_11`  [unverified]
+### Neecha bhanga condition #11  `neecha_bhanga_11`
 - **Condition:** A planet is in its debilitation sign AND: The debilitated planet is retrograde (treated as 'like exalted').
 - **Strength:** Count how many conditions hold; 2+ classical conditions (1-4) = real. A cancelled debility is still not equal to exaltation.
 - **Cancellation:** Bhanga itself fails in practice if: the dispositor is also debilitated, the planet is combust, or the planet sits in 6/8/12 (then relief only, no raja yoga).
 - **Result:** Debility is cancelled; with conditions 1-4 the texts promise raja-yoga-level rise, usually after early struggle.
-- **Source:** Modern popular rule, loosely based on Uttara Kalamrita's retrograde dictum (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))
+- **Source:** Phaladeepika 4.4 and 9.20, read in the Sanskrit 12 Nov 2026: a retrograde planet with bright rays is strong even in debilitation and gives the result of exaltation
 
 
 ## Other named yogas and modern doshas (incl. Kaal Sarp) (34)
@@ -546,23 +546,23 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Result:** Happy, learned, wealthy, with sons.
 - **Source:** BPHS ch. 36 vv.35-36 (free English rendering at sanskritdocuments.org, re-read 12 Nov 2026, https://sanskritdocuments.org/doc_z_misc_sociology_astrology/horaashaastraEng34-45-gu.pdf)
 
-### Saraswati yoga  `saraswati`  [unverified]
+### Saraswati yoga  `saraswati`
 - **Condition:** Jupiter, Venus and Mercury each in a kendra (1/4/7/10), trikona (5/9) or house 2 from Lagna (together or separately) AND Jupiter in own, exalted or friendly sign.
 - **Cancellation:** Jupiter weak/combust; any of the three debilitated or combust.
 - **Result:** Learning, poetry, authorship, fame, good family.
-- **Source:** B.V. Raman, 300 Important Combinations; Phaladeepika ch. 6 (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))
+- **Source:** Phaladeepika 6.26-27, read in the Sanskrit 12 Nov 2026 (kb/sources/phaladeepika/ch05-07.md)
 
 ### Guru-Chandala yoga  `guru_chandala`  [unverified]
 - **Condition:** Jupiter and Rahu in the same sign (some include Jupiter-Ketu, and Rahu's aspect on Jupiter).
 - **Cancellation:** Mild if Jupiter is in own/exalted sign (Sagittarius, Pisces, Cancer), stronger in degrees than Rahu, or aspected by benefics; tighter orb = stronger.
 - **Result:** Unorthodox beliefs, break with teachers/tradition, poor judgment in ethics; in good dignity: unconventional teacher, foreign learning.
-- **Source:** Named in later compilations and modern practice; Jupiter-Rahu conjunction results appear in classical conjunction chapters but the dosha packaging is modern (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))
+- **Source:** Not found in Parashara or Phaladeepika as read in the Sanskrit (12 Nov 2026); a later name. Low confidence
 
 ### Angaraka yoga  `angaraka`  [unverified]
 - **Condition:** Mars and Rahu in the same sign (some include Mars-Ketu).
 - **Cancellation:** Mild if Mars is in own/exalted sign or aspected by Jupiter; worst in houses 1, 4, 7, 8, 12.
 - **Result:** Anger, accidents, litigation, conflicts with siblings; in upachaya houses gives fighting capacity.
-- **Source:** Modern practice name; not a named yoga in BPHS (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))
+- **Source:** Not found in Parashara or Phaladeepika as read in the Sanskrit (12 Nov 2026); a modern name. Low confidence
 
 ### Shrapit (Shapit) dosha  `shrapit`  [unverified]
 - **Condition:** Saturn and Rahu in the same sign (some extend to Saturn aspected by Rahu).
@@ -813,18 +813,18 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Source:** BPHS ch. 83 vv.20-33 (re-read in the Sanskrit 12 Nov 2026 - conditions corrected where needed in yogas.json and in kb/sources/bphs-verse-readings.md, which override this entry)
 - **Note:** The popular definition is far wider than the classical one; flag which one fired.
 
-### Kalatra dosha (7th-house affliction)  `kalatra_dosha`  [unverified]
+### Kalatra dosha (7th-house affliction)  `kalatra_dosha`
 - **Condition:** Any of: malefics (Mars/Saturn/Rahu/Ketu/Sun) in house 7 without benefic aspect; 7th lord in 6/8/12 or debilitated/combust; Venus hemmed between malefics, combust, or with Mars/Saturn/Rahu; 7th house hemmed by malefics. Check from Lagna, Moon and Venus.
 - **Strength:** PROJECT CALIBRATION: one dignified occupant does not outvote three malefic influences on the 7th.
 - **Cancellation:** Benefic aspect (Jupiter) on 7th/7th lord/Venus; strong 7th lord; same pattern in the partner's chart.
 - **Result:** Delay, discord, separation or ill-health of spouse in proportion to how many factors repeat.
-- **Source:** Aggregated from 7th-house chapters (BPHS ch. 18, Phaladeepika ch. 10) (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers)); BPHS 83 vv.82-94 'wife's curse' is a separate, narrower set
+- **Source:** Aggregated from Phaladeepika 10.2-4, 7, 15 and BPHS ch. 18, both read in the Sanskrit 12 Nov 2026; loss wordings are never stated
 
-### Mangal (Kuja) dosha  `mangal_dosha`  [unverified]
+### Mangal (Kuja) dosha  `mangal_dosha`
 - **Condition:** Mars in house 1, 2, 4, 7, 8 or 12 counted from Lagna; also checked from Moon and Venus. North Indian lists use 1/4/7/8/12; South Indian lists add 2.
 - **Cancellation:** Commonly listed: Mars in own/exalted sign (Aries, Scorpio, Capricorn); Mars conjunct/aspected by Jupiter; Mars in 2nd in Gemini/Virgo, 12th in Taurus/Libra, 4th in Aries/Scorpio, 7th in Cancer/Capricorn, 8th in Sagittarius/Pisces; partner has equal dosha.
 - **Result:** Friction, delay or danger in marriage.
-- **Source:** Regional muhurta/matching manuals; not in BPHS as a named dosha (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))
+- **Source:** BPHS 80.47-49, read in the Sanskrit 12 Nov 2026: Mars in the 1st, 4th, 7th, 8th or 12th from the lagna without a benefic's aspect or company; broken when both partners have it. The 2nd house and the counts from Moon and Venus are later practice
 - **Note:** Exception lists vary widely between regions; treat as matching practice, not Parashari doctrine.
 
 ### Gandanta birth  `gandanta_birth`
@@ -839,11 +839,11 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 - **Result:** Poverty or harm to a specified relative per the part of the tithi.
 - **Source:** BPHS ch. 86-87 (re-read in the Sanskrit 12 Nov 2026 - conditions corrected where needed in yogas.json and in kb/sources/bphs-verse-readings.md, which override this entry)
 
-### Balarishta (infant affliction)  `balarishta`  [unverified]
+### Balarishta (infant affliction)  `balarishta`
 - **Condition:** Moon in house 6, 8 or 12 from Lagna aspected by malefics with no benefic aspect (several variants).
 - **Cancellation:** Benefic aspect on Moon; strong Lagna lord in kendra; Jupiter strong in Lagna/kendra; waxing Moon in benefic varga.
 - **Result:** Danger in infancy; today read as early-childhood ill-health.
-- **Source:** BPHS ch. 9-10 (NOT re-read this session (stated from working knowledge of the named text; verify before relying on verse numbers))
+- **Source:** BPHS ch. 9-10, read in the Sanskrit 12 Nov 2026. Chapter 9 is never used; the cancellations of 10.2-4 and 10.9 are usable in their positive form
 
 
 ## Pravrajya / Sanyasa (4)
@@ -1115,7 +1115,7 @@ Total entries: **160** (machine copy: `yogas.json`, same ids). Entries marked `[
 ## Reliability notes
 **Classical consensus (read this session in the cited e-texts):** Pancha Mahapurusha (BPHS 75); Sunapha/Anapha/Durudhara/Kemadruma, Adhi, Vasumati (BPHS 37); Vesi/Vasi/Ubhayachari (BPHS 38); the BPHS 36 group (Gajakesari, Amala, Parvata, Kahala, Chamara, Shankha, Bheri, Mridanga, Shrinatha, Sharada, Matsya, Kurma, Khadga, Lakshmi, Kusuma, Kalanidhi, Kalpadruma, Hari-Hara-Brahma, Lagnadhi); kendra-trikona raja yoga and yogakaraka (BPHS 34, 39, 40); dhana and daridra sets (BPHS 41, 42); the 32 Nabhasa yogas (BPHS 35, cross-checked with the Wikipedia table that cites Brihat Jataka 12); pravrajya (BPHS 79); shapa yogas and birth doshas (BPHS 83, 85-94); the twelve Phaladeepika house-lord yogas incl. Harsha/Sarala/Vimala (results read at 6.58-70; formation per standard commentary); neecha bhanga 1-4 (Phaladeepika 7.26-30).
 
-**Classical but NOT re-read this session (`[unverified]`):** Saraswati, Chandra-Mangala, lunar Shakata, Budha-Aditya, Akhanda Samrajya, Maha/Khala/Dainya parivartana (Phaladeepika ch. 6 / Raman's 300 Important Combinations), Balarishta. Definitions given are the standard ones; verse numbers are not asserted.
+**Checked against the Sanskrit on 12 Nov 2026:** Saraswati, lunar Shakata, Budha-Aditya, Akhanda Samrajya, Maha/Khala/Dainya parivartana and Balarishta now carry their verse numbers. Chandra-Mangala as a wealth yoga, Guru-Chandala and Angaraka are **not** in Parashara or Phaladeepika as read and stay low confidence.
 
 **Secondary web sources used (treat as pointers, not authority):** Wikipedia (Nabhasa; Neechabhanga via an IPFS mirror, which itself flags uneven attributions), barbarapijan.com (for Raman's statements on Kaal Sarp), jagannathhora.com, satyori.com (Kemadruma bhanga list without text attributions).
 

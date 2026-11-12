@@ -15,7 +15,8 @@ Read at the start of every chat in the Claude project "Horoscope Reading And Ana
 3. Restore the engine (container resets between sessions):
    ```
    cd /home/claude && git clone https://github.com/vrushabhabib/jyotish.git && cd jyotish
-   pip install -q ephem pytest --break-system-packages && python3 -m pytest -q tests
+   pip install -q ephem pytest geonamescache --break-system-packages && python3 -m pytest -q tests   # 62 tests on 12 Nov 2026
+   bash tools/install_swisseph.sh    # optional second engine
    ```
    Never write position code in the chat. A hand-rolled fallback on 20 Oct 2026 had a reference-frame bug that moved dasha dates by two months; the tests pin the engine to JPL Horizons.
 4. Existing charts: `data/charts/*.json`. Load instead of recomputing when the person is known.
@@ -29,6 +30,8 @@ python3 -m engine.report YYYY-MM-DD HH:MM LAT LON Asia/Kolkata --name N --sex F 
 The worksheet has every factor the reading protocol asks for. Read its section 1 (birth-time sensitivity) first, then the cross-check. Save with `python3 -m engine.store data/charts/<name>_<date>.json`; the `computed` block is never typed by hand. Push to GitHub.
 
 ## 3. Reading protocol (kb/index.md, condensed)
+**Before the first reading of a session, read `kb/sources/ANALYSIS.md` (the method of the two source texts as a whole) and section 8 of `kb/readings/full-reading-protocol.md` (how that method is applied and what each new worksheet line is for).** The source notes themselves are in `kb/sources/bphs/` (all 97 chapters of Parashara) and `kb/sources/phaladeepika/`; cite a verse from them, never from memory.
+
 Lagna → Moon → Sun → all 12 bhavas (sign, lord placement+dignity, occupants, aspects, karaka) → yogas with strength → doshas with cancellations → vargas D9/D10/D7 → Vimshottari maha/antar/pratyantar → gochar (Sade Sati phase, Jupiter, Rahu-Ketu from Moon and lagna, SAV of transited sign) → synthesis.
 Use `kb/rashis/functional-nature.md` for which planets are benefic/malefic *for that lagna* before judging any conjunction.
 Output format for a first reading: snapshot line → 6–8 numbered findings (strongest first) → timing → health watch → what is uncertain → 1–2 questions.
@@ -53,5 +56,5 @@ The engine calculates and measures; the reader (Claude) interprets, asks and exp
 6. Reader: explanations in plain language, continuous prose, no jargon without a gloss; classical death, widowhood and childlessness wording is never passed on literally.
 
 ## 7. Roadmap
-Done 11-12 Nov 2026: Shadbala, Ashtakavarga, Jaimini karakas and arudhas, KP cusps and significators, Bhava Chalit, Yogini, Chara and Ashtottari dashas, AstroSage PDF parser, transits, convergence, base rates, ledger (all 39 past questions entered), time discrimination, 156 of 160 catalogued yogas detected.
-Open: geocoding; Narayana dasha; a second reference PDF to settle the three Shadbala items; reading Raman, K.N. Rao and the KP Readers from the printed books.
+Done 11-12 Nov 2026: two ephemeris engines validated against JPL; Shadbala, Ashtakavarga (standard and Sanskrit-recension tables), Jaimini karakas and arudhas, KP cusps, Bhava Chalit, Yogini, Chara and Ashtottari dashas, AstroSage PDF parser, transits, base rates, ledger, discriminating questions; **Parashara (97 chapters) and Phaladeepika (25 of 28) read in the Sanskrit and the rule files corrected to them**; `engine/classical.py` and `engine/rashmi.py` (twenty-point strength, special lagnas, rays, Sudarshana year, livelihood pointer, delivery timing, month triggers, birth-time conditions, Mantreshvara's transit triggers).
+Open: planetary states (BPHS 45.7-17), argala, leftover raja-yoga and poverty verses, Gulika; Narayana dasha; the same Sanskrit-first check for Jaimini, Brihat Jataka and Saravali; more dated events and forward-logged predictions - the only route to a proven hit rate.

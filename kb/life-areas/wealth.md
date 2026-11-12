@@ -267,3 +267,13 @@ Jaimini aspects (rasi drishti) are usually applied to AL work; BPHS-29 does not 
 - Daridra yogas need the maraka-lord link AND no trikona-lord relief before being stated; never tell a client "poverty" from one factor.
 
 **Empirical tests:** none found for any wealth rule. The one controlled Indian test read (Narlikar et al. 2009, *Current Science* 96(5); summary at https://thoughtnaction.antisuperstition.org/an-indian-test-of-indian-astrology/) found astrologers at chance on a different question. Score these rules against the project's own verified charts before trusting them.
+
+
+## Rules confirmed in the Sanskrit (read 12 Nov 2026; `kb/sources/bphs/ch41-45.md`, `ch71-80.md`, `kb/sources/phaladeepika/`)
+- **SRC-W1** The lords of the 9th and 5th give wealth, and so do the planets joined with them, in their own periods (BPHS 41.16). The two tables of BPHS 41.2-15 (5th house with the 11th; lagna in a planet's own sign) are in the engine as `dhana_5_11` and `dhana_lagna_own`.
+- **SRC-W2** 2nd lord in a chief house with benefics in the 2nd: family wealth and foresight (PD 16.5). A strong 2nd lord's period: family established, money by speech and livelihood; a weak one's: spending, unsettled family (PD 20.3, 20.15).
+- **SRC-W3** Poverty combinations are narrow and always involve the lagna lord in the 6th, 8th or 12th with a maraka's aspect, or the lords of the 5th and 9th in the 6th and 12th (BPHS 42.2-7). "Dhana yoga present" fires in most charts and is never offered as a distinction; a poverty combination is stated only as "care with money", with its verse.
+- **SRC-W4** Harsha, Sarala, Vimala - the lords of the 6th, 8th and 12th in the 6th, 8th or 12th - give comfort, firmness and saving (PD 6.63, 65, 69). Vimala in particular: "spends little, saves much".
+- **SRC-W5** Rays (BPHS 73): a scale of means "according to the family's standing"; remarked on only above 30 or below 12.
+- **SRC-W6** Ashtakavarga house comparisons as in career rule SRC-C8; the three-part table for which third of life carries the most (BPHS 72.9-10).
+- **SRC-W7** Gain and loss by house through the 11th and 12th lords (PD 16.29-30).
