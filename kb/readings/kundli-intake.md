@@ -45,7 +45,7 @@ The table shows the minute at which the lagna, D9, D10, D7, D12 and D3 lagnas ch
 | 2 Planets (dignity, D9 dignity, avastha, combust/retro/vargottama/gandanta) | strength of every statement |
 | 3 Rulerships and functional nature | written out before any interpretation (protocol rule) |
 | 4–5 Houses from lagna and from Moon (occupants, aspects, lord, lord's company, SAV) | every life area; the completeness checklist |
-| 6 Divisional charts | D9 marriage, D10 career, D7 children, D12 parents, D3 siblings, D4 property, D30 health |
+| 6 Divisional charts | Uses as Parashara states them (BPHS 7.1-8): D2 wealth, D3 siblings, D4 fortune (property is the later reading), D7 children, D9 spouse, D10 "the great result" (career, standing), D12 parents, D16 comforts and vehicles, D20 worship, D24 learning, D27 strength and weakness, D30 misfortunes, D40 and D45 good and bad in general, D60 everything |
 | 7 Jaimini (karakas, arudhas, UL and its 2nd/8th, karakamsa) | spouse, image, career |
 | 8 Yogas, Manglik with cancellations, Kaal Sarp, Pitru | never state a yoga without its "weakened by" column |
 | 9 Ashtakavarga, Shadbala, special points, KP lords | strength, fertility points, KP confirmation |
