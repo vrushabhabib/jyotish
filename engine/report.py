@@ -210,6 +210,12 @@ def markdown(r, name="native"):
         except Exception as _e:                              # noqa: BLE001
             w(f"(Parashara-scale Shadbala not computed: {_e})")
         if sb.get("unverified"):
+            try:                                                      # Parashara's good and bad share of each planet (ch. 28)
+                from engine.control import ishta_kashta as _ik
+                _b = c["input"]; _v = _ik({"date": _b["date"], "time": _b["time"], "lat": _b["lat"], "lon": _b["lon"], "tz": _b["tz"]})
+                w("**Good and bad share of each planet (Parashara ch. 28 v.2-6: ishta = root of exaltation strength x motional strength; kashta = root of the product of their complements; out of 60).** " + "; ".join(f"{p_} {a_:.0f} good / {b_:.0f} bad" for p_, (a_, b_) in _v.items()) + ". Parashara uses these to grade how much good or bad a planet's period carries. Tested 13 Nov 2026 on 25 dated good/bad events from five charts as a direction rule (good when ishta exceeds kashta): 11 right, wrong charts average 11.0 - at chance. Shown for completeness; not a basis for saying a period goes well or badly (antar-event-rules.md, Rule 17).\n")
+            except Exception as _e:                                  # noqa: BLE001
+                w(f"(Good and bad share not computed: {_e})\n")
             w("\nShadbala was checked against two references (an AstroSage printout and B.V. Raman's standard horoscope). Still unconfirmed: " + "; ".join(sb["unverified"]) + ".")
     else:
         w("\nShadbala: not computed here - take it from the kundli PDF if one is supplied.")

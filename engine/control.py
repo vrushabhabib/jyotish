@@ -22,6 +22,8 @@ Rules scored (all taken from the worksheet, nothing new):
     polarity       events marked good/bad only: good = sub-lord not in the 6th/8th/12th from the dasha lord and no
                    caution flag (Jataka Parijata 18.27-28); bad = one of those present
     link_and_pol   ad_link and polarity together (what a dated statement of gain or loss actually rests on)
+    polarity_ishta good/bad by Parashara's own measure (ch. 28): the sub-period lord's good share (ishta) against its
+                   bad share (kashta); no call for Rahu and Ketu
     polarity_text  good/bad by Parashara's full sub-period template (ch. 52-60): sub-lord's house from the lagna,
                    its dignity, its house from the dasha lord - one point each; ties make no call
 
@@ -33,7 +35,7 @@ from engine.analysis import analyse, period_cautions
 from engine.report import AREAS, MOVABLE
 
 STRONG = ("occupies", "owns", "with", "is karaka")
-RULES = ["ad_link", "md_link", "movable", "link_or_mov", "polarity", "link_and_pol", "polarity_text"]
+RULES = ["ad_link", "md_link", "movable", "link_or_mov", "polarity", "link_and_pol", "polarity_text", "polarity_ishta"]
 
 
 def _date(x):
@@ -48,12 +50,28 @@ def _periods(chart, when):
     return None, None
 
 
+def ishta_kashta(birth):
+    """{planet: (ishta, kashta)} for the seven planets, in sixtieths (BPHS 28.2-6)."""
+    from zoneinfo import ZoneInfo
+    from engine.shadbala import shadbala
+    t = dt.datetime.fromisoformat(birth["date"] + "T" + birth["time"][:5]).replace(tzinfo=ZoneInfo(birth.get("tz", "Asia/Kolkata")))
+    sb = shadbala(birth["date"], birth["time"][:5], birth["lat"], birth["lon"], t.utcoffset().total_seconds() / 3600)
+    pl = sb.get("planets", sb)
+    out = {}
+    for p, d in pl.items():
+        if isinstance(d, dict) and "cheshta" in d and "uchcha" in d.get("sthana", {}):
+            u, c = max(0.0, min(60.0, d["sthana"]["uchcha"])), max(0.0, min(60.0, d["cheshta"]))
+            out[p] = ((u * c) ** 0.5, ((60 - u) * (60 - c)) ** 0.5)
+    return out
+
+
 def score(birth, sex, events):
     """Hits per rule for one chart. Returns ({rule: hits}, {rule: events the rule could be applied to})."""
     c = build_chart(birth["date"], birth["time"], birth["lat"], birth["lon"], birth.get("tz", "Asia/Kolkata"))
     a = analyse(c, sex=sex); v = a["view"]
     caut = period_cautions(v); ck = a["karakas"]["seven_bphs"]
     hits = dict.fromkeys(RULES, 0); base = dict.fromkeys(RULES, 0)
+    ik = None
     for e in events:
         when = dt.date.fromisoformat(e["date"])
         md, ad = _periods(c, when)
@@ -82,6 +100,15 @@ def score(birth, sex, events):
             t += 0 if md == ad else (-1 if n in (6, 8, 12) else 1)
             if t != 0:
                 base["polarity_text"] += 1; hits["polarity_text"] += (t > 0) == (pol == "good")
+            # Parashara's own measure of a planet's good and bad share (BPHS ch. 28 v.2-6, kb/sources/bphs/ch21-30.md):
+            # ishta = root of (exaltation strength x motional strength), kashta = root of the product of their
+            # complements to 60. Stated before any result was seen: the period is called good when ishta exceeds
+            # kashta. The nodes have neither strength, so no call is made for them.
+            if ik is None:
+                ik = ishta_kashta(birth)
+            if ad in ik:
+                i_, k_ = ik[ad]
+                base["polarity_ishta"] += 1; hits["polarity_ishta"] += (i_ > k_) == (pol == "good")
     return hits, base
 
 
