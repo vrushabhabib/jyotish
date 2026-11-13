@@ -231,3 +231,18 @@ All seven chapters read verse by verse 13 Nov 2026 (17 Sun, 18 Moon, 19 Mars, 20
 **For the project**
 - Our engine computes all these components but the tests used only the total, exaltation share and motion. The text treats each component as its own yes/no. A component-count rule ("how many of the fourteen strengths does the period lord have") is pre-statable. NOT tested; goes to the design stage.
 - The division rule (item 2-6) adds the divisional charts to the same natural benefic/malefic idea. Also not tested.
+
+## Vriddha Yavana Jataka ch. 24, 24a - the first house (78 + 29 verses), read in full 13 Nov 2026
+- **24.1-12** character by rising sign. **24.13-40** the rising degree's hora, decanate, navamsa, twelfth-part and thirtieth-part by owner - same benefic/malefic split as before.
+- **24.41-48 the LAGNA's own strength**, four kinds (positional, directional, motional, time), strong and lacking - the lagna is treated like a planet.
+- **24.49-50:** a lagna "pure in all six divisions" (benefic-owned) gives a sound, attractive body; in malefic divisions the reverse.
+- **24.51-78** body marks, sight, deformities and sexual character from fixed pictures - NOT used (medical and private matters).
+- **24a.1-28** each planet in the lagna under twelve conditions, in fixed order: in exaltation / exalted navamsa / pure in six divisions; debilitated / debilitated navamsa / malefic divisions; friend's sign / friend's navamsa / vargottama; enemy's sign / enemy's navamsa / own trine sign. Here the results are body details (complexion, eyes, hair, build).
+- **24a.29:** Saturn rising in its exaltation or own sign = like a ruler, head of a town or region; in other signs = hardship in childhood, poverty, lazy.
+
+## Vriddha Yavana Jataka ch. 25-27 - 2nd, 3rd, 4th houses (about 30 verses each), read in full 13 Nov 2026
+Same twelve-condition grid as 24a for each of the seven planets sitting in the house.
+- **Ch. 25 (2nd, money):** what KIND of money and from where - e.g. Sun exalted in the 2nd = from royal honour; debilitated = by wrong means; Moon exalted = pearls and gems; Mars exalted = from fighting; Mercury exalted = much money, crops and cattle; Jupiter exalted = justly earned; Venus exalted = unfailing wealth, ancestral; Saturn exalted in the 2nd = money from bad work (!), debilitated = nothing. v.29-30 scale: Sun gives thousands, Moon hundreds of thousands, Mars hundreds, Mercury tens of millions, Jupiter more still, Venus beyond count, Saturn like Mars - at exaltation, in proportion below. **v.31: each planet gives its own kind of wealth in its own dasha.**
+- **Ch. 26 (3rd):** the kind of FRIEND or ally one has (this text reads the 3rd as companions as much as siblings). Odd lines: Jupiter or Venus exalted in the 3rd give a poor kind of friend (26.17, 21); Mars and Saturn exalted there give a ruler as friend (26.9, 25).
+- **Ch. 27 (4th):** the SOURCE of one's comfort. Sun in the 4th gives little or tainted comfort even when exalted (27.1-4); Moon, Mercury, Jupiter, Venus give comfort from vehicles, gold, children, wife, cattle; Mars and Saturn give comfort through harm to others or none (27.9-12, 25-28).
+- **For the project:** the twelve-condition grid is a ready rule for the QUALITY of a house result: sign dignity first, then navamsa dignity, then whether the six divisions are benefic-owned. Our engine has every input. It is description, not timing - but 25.31 again ties delivery to the planet's own dasha.
