@@ -37,13 +37,14 @@ import argparse, datetime as dt, json, random
 from engine.chart import build_chart
 from engine.analysis import analyse, period_cautions
 from engine.report import AREAS, MOVABLE
-from engine.ashtakavarga import ashtakavarga
+from engine.ashtakavarga import ashtakavarga, transit_score
 from engine import transits as T
 from engine.dashas_classical import kalachakra, kalachakra_at
 
 STRONG = ("occupies", "owns", "with", "is karaka")
 RULES = ["ad_link", "md_link", "movable", "link_or_mov", "polarity", "link_and_pol", "polarity_text", "polarity_ishta", "polarity_lp", "transit_moon", "transit_bav", "transit_sav", "polarity_natural", "polarity_bav_natal",
-         "link_sib4", "link_lagna_tie", "bad_2_7", "polarity_aspect", "kc_house"]
+         "link_sib4", "link_lagna_tie", "bad_2_7", "polarity_aspect", "kc_house",
+         "polarity_parts", "polarity_eighth"]
 
 
 def _date(x):
@@ -63,13 +64,39 @@ def ishta_kashta(birth):
     from zoneinfo import ZoneInfo
     from engine.shadbala import shadbala
     t = dt.datetime.fromisoformat(birth["date"] + "T" + birth["time"][:5]).replace(tzinfo=ZoneInfo(birth.get("tz", "Asia/Kolkata")))
-    sb = shadbala(birth["date"], birth["time"][:5], birth["lat"], birth["lon"], t.utcoffset().total_seconds() / 3600)
-    pl = sb.get("planets", sb)
+    pl = _shad(birth)
     out = {}
     for p, d in pl.items():
         if isinstance(d, dict) and "cheshta" in d and "uchcha" in d.get("sthana", {}):
             u, c = max(0.0, min(60.0, d["sthana"]["uchcha"])), max(0.0, min(60.0, d["cheshta"]))
             out[p] = ((u * c) ** 0.5, ((60 - u) * (60 - c)) ** 0.5)
+    return out
+
+
+_SHAD = {}
+
+
+def _shad(birth):
+    """Shadbala planets for one birth, computed once (used by ishta_kashta and strength_parts)."""
+    from zoneinfo import ZoneInfo
+    from engine.shadbala import shadbala
+    key = (birth["date"], birth["time"][:5], birth["lat"], birth["lon"])
+    if key not in _SHAD:
+        _SHAD.clear()
+        t = dt.datetime.fromisoformat(birth["date"] + "T" + birth["time"][:5]).replace(tzinfo=ZoneInfo(birth.get("tz", "Asia/Kolkata")))
+        sb = shadbala(birth["date"], birth["time"][:5], birth["lat"], birth["lon"], t.utcoffset().total_seconds() / 3600)
+        _SHAD[key] = sb.get("planets", sb)
+    return _SHAD[key]
+
+
+def strength_parts(birth):
+    """{planet: parts it has minus parts it lacks} - the same nine parts and thresholds as the findings register
+    (graded parts: 40 of 60 or more = has, 20 or less = lacks; being lord of the year, month, weekday or hour = has)."""
+    out = {}
+    for p, x in _shad(birth).items():
+        if not (isinstance(x, dict) and "kala" in x): continue
+        g = (x["sthana"]["uchcha"], x["dig"], x["cheshta"], x["kala"]["nathonnata"], x["kala"]["paksha"])
+        out[p] = sum(1 for v_ in g if v_ >= 40) - sum(1 for v_ in g if v_ <= 20) + sum(1 for k in ("abda", "masa", "vara", "hora") if x["kala"][k] > 0)
     return out
 
 
@@ -113,7 +140,7 @@ def score(birth, sex, events):
     a = analyse(c, sex=sex); v = a["view"]
     caut = period_cautions(v); ck = a["karakas"]["seven_bphs"]
     hits = dict.fromkeys(RULES, 0); base = dict.fromkeys(RULES, 0)
-    ik = None; kc = None; lpn = lp_nature(v); av = ashtakavarga(c)
+    ik = None; kc = None; sp = None; lpn = lp_nature(v); av = ashtakavarga(c)
     for e in events:
         when = dt.date.fromisoformat(e["date"])
         md, ad = _periods(c, when)
@@ -152,6 +179,22 @@ def score(birth, sex, events):
             sb_, sm_ = seen & {"Moon", "Mercury", "Jupiter", "Venus"}, seen & {"Sun", "Mars", "Saturn"}
             if bool(sb_) != bool(sm_):
                 base["polarity_aspect"] += 1; hits["polarity_aspect"] += bool(sb_) == (pol == "good")
+            # ---- Rule 20 (written down and pushed 13 Nov 2026 BEFORE either was run) ------------------------------
+            # polarity_parts   Vriddha Yavana Jataka ch. 17-23 v.41-68: each kind of strength present gives good, lacking
+            #                  gives bad. Sub-lord's (parts it has) - (parts it lacks): +2 or more = good, -2 or less = bad,
+            #                  between = no call. The thresholds are OURS (the text gives none). No call for the nodes.
+            # polarity_eighth  Vriddha Yavana Jataka 8.16-129: a planet standing in an eighth-part of its sign whose owner
+            #                  gave it a point is "on a line" = good in its period; otherwise "on a dot" = bad. The method
+            #                  verse is half missing and the ORDER of owners (Saturn, Jupiter, Mars, Sun, Venus, Mercury,
+            #                  Moon, Lagna) is from later practice, not from a text we have read. No call for the nodes.
+            if sp is None:
+                sp = strength_parts(birth)
+            if ad in sp and abs(sp[ad]) >= 2:
+                base["polarity_parts"] += 1; hits["polarity_parts"] += (sp[ad] > 0) == (pol == "good")
+            if ad in av["bav"]:
+                ks_ = transit_score(av, ad, v.s[ad], c["planets"][ad]["deg"])
+                if "kakshya_bindu" in ks_:
+                    base["polarity_eighth"] += 1; hits["polarity_eighth"] += bool(ks_["kakshya_bindu"]) == (pol == "good")
             if kc is None:
                 kc = kalachakra(c["planets"]["Moon"]["lon"], c["input"]["local"])
             kp, _ = kalachakra_at(kc, dt.datetime.combine(when, dt.time(12), c["input"]["local"].tzinfo))

@@ -189,3 +189,10 @@ How they will be read: five more rules on the same events makes fourteen directi
 | polarity_aspect | 7 of 15 | 6.2 | 43% |
 | kc_house | 14 of 27 | 14.8 | 78% |
 None is above chance. The wider sibling net (3, 9, 11, 7) links almost any chart, so it tells nothing. The Kalachakra house rule is at chance; most of the events fall in periods that rest on the unsourced continuation rule, so this is a weak test of Kalachakra itself. No rule here is used in a reading. Direction rules tried so far: twelve; one at 1.3% carried by one chart (Rule 18), one at 10%, ten at chance.
+
+## Rule 20 — The two held-back rules, written down BEFORE testing (13 Nov 2026)
+| Rule | Source | Statement | Our additions (not in the text) |
+|---|---|---|---|
+| polarity_parts | Vriddha Yavana Jataka ch. 17-23 v.41-68 | sub-lord's strength parts present minus lacking: +2 or more = good, -2 or less = bad | the thresholds 40/20 of 60 and the +-2 cut |
+| polarity_eighth | Vriddha Yavana Jataka 8.16-129 | sub-lord stands in an eighth-part whose owner gave it a point = good; otherwise bad | the order of owners; half the method verse is missing |
+Same reading rule as Rule 19: under 1% to be worth a note, and then only for the confirmation set.
