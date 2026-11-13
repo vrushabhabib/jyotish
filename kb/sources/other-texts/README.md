@@ -207,3 +207,27 @@ Read verse by verse 13 Nov 2026: ch. 9 (Sun), 10 (Moon), 11 (Mars), 12 (Mercury)
 - **Exceptions seen (few):** Sun in Aries seen by Mars = good (9.2); Sun in Gemini seen by the Moon = bad, by Mars = mixed (9.13-14); Sun in Libra = bad whoever looks, even Jupiter and Venus (9.37-42); Mars in Leo seen by the Sun = good (11.25); Jupiter in Aries seen by Venus = bad and by Saturn = good (13.5-6); Jupiter in Leo seen by Mars = power but bad company (13.27); Moon in Aries seen by the Sun = bad, in Leo, Virgo and Libra seen by the Sun = good (10.1, 25, 31, 37).
 - **Meaning for the project:** this is the same natural benefic / natural malefic split that underlies the frozen Rule 18, here applied to ASPECTS on a planet rather than to the sub-period lord. It suggests one more pre-statable rule: "a period lord looked at by Moon, Mercury, Jupiter or Venus and not by Sun, Mars, Saturn = good; the reverse = bad; mixed = no call." NOT tested. It would be the tenth direction rule on the same events and belongs with the Rule 18 confirmation on new people.
 - The word "chara" in these chapter titles does not mean transit; all of it is about the birth chart.
+
+## Vriddha Yavana Jataka ch. 16 - planets in the twelve houses, 84 verses (read in full 13 Nov 2026)
+One verse per planet per house (seven planets; no Rahu or Ketu anywhere in this text).
+- **Pattern:** Moon, Mercury, Jupiter, Venus are good in most houses and bad in 6, 8, 12. Sun, Mars, Saturn are bad in most houses and GOOD in 3, 6, 10, 11 (Sun: 3, 6, 10, 11 good, 9 mixed; Mars: 3, 6, 11 good, and - against most later books - bad in the 10th, v.34; Saturn: 3, 6, 10, 11 good).
+- **Lines that differ from what is usually said:** Sun in the 1st = sickly, angry, without lustre (v.1); Mercury in the 5th = few children, low vigour, bad (v.41); Mercury in the 6th = many enemies (v.42); Jupiter in the 6th = many enemies, illness, service abroad (v.54); Venus in the 6th = bad (v.66); waxing full Moon in the 1st good, waning bad (v.13).
+- **Use:** a third independent witness (with Brihat Jataka and Jataka Parijata ch. 8) for the planet-in-house lines in our life-area files. Where the three disagree (Mars in the 10th; Jupiter and Venus in the 6th) a reading must say the texts disagree.
+
+## Vriddha Yavana Jataka ch. 17-23 - one chapter per planet on its sign, divisions and STRENGTH (about 68 verses each)
+Ch. 17 (Sun) read verse by verse 13 Nov 2026 and the template established; ch. 18-23 noted below as read.
+**Template of each chapter**
+1. v.1-12: the planet in each of the twelve signs (character sketch; same matter as Brihat Jataka ch. 18).
+2. v.13-14: in the Sun's or the Moon's half-sign (hora).
+3. v.15-21: in the decanate of each of the seven planets.
+4. v.22-28: in the navamsa of each planet.
+5. v.29-35: in the twelfth-part of each planet.
+6. v.36-40: in the thirtieth-part of each of the five planets.
+7. v.41-54: results when the planet HAS each kind of strength, one verse each: friend's sign, own sign, exaltation, navamsa, benefic aspect, male/female sign, direction, motion, day/night, own weekday, own hour, fortnight, month, year.
+8. v.55-68: results when it LACKS each of the same strengths.
+**What it says**
+- Items 2-6 reduce to one rule again: in a division owned by Moon, Mercury, Jupiter, Venus = good; owned by Sun, Mars, Saturn = bad - even the planet's own division when it is a malefic's (Sun in its own navamsa or twelfth-part = bad, 17.22, 17.29).
+- Items 7-8 are the important part for us: this is the only text read so far that gives a RESULT for each separate component of Shadbala - positional, directional, motional, and each of the time strengths (day/night, weekday, hour, fortnight, month, year). Every component strong = good, lacking = bad, with a slightly different flavour each (e.g. lacking directional strength = loss in every direction, 17.61; lacking fortnight strength = without supporters, 17.66).
+**For the project**
+- Our engine computes all these components but the tests used only the total, exaltation share and motion. The text treats each component as its own yes/no. A component-count rule ("how many of the fourteen strengths does the period lord have") is pre-statable. NOT tested; goes to the design stage.
+- The division rule (item 2-6) adds the divisional charts to the same natural benefic/malefic idea. Also not tested.
