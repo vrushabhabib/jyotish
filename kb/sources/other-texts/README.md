@@ -46,3 +46,15 @@ A different branch from everything this project does: the chart is cast for the 
 - 42-43 **Planets heading to debilitation, inside the Sun's disc, beaten in planetary war or in bad divisions do not give good "like snakes struck by a spell"; they destroy good results and increase bad ones; mixed planets give mixed results.**
 **Ch. 7, 70 verses.** The result of each sub-period inside each dasha, pair by pair, for the seven planets and the lagna. The verses go by the natures of the two planets only - no house, no strength. Pattern: sub-periods of Jupiter, Venus, Mercury and the Moon read well in most dashas; those of the Sun, Mars and Saturn read badly; the lagna's sub-period is good or bad as the rising sign is benefic or malefic. Like Parashara ch. 61-63 and Phaladeepika 21, these are fixed grids.
 **What this adds:** a third witness (with Varahamihira and Laghu Jataka) for the life-span dasha and its share rule; a direction rule by natural benefic or malefic; and the same warning as Jataka Parijata 18.28 about combust and debilitated planets. No new method of timing.
+
+## Jataka Parijata 18.77-172 (read 13 Nov 2026 - chapter 18 is now read in full)
+- 77-166 One verse for each Vimshottari sub-period inside each dasha, and a verse or two for each dasha as a whole. Fixed results by the pair of planets, no chart condition - a grid like Parashara ch. 61-63 and Phaladeepika 21. Pattern: sub-periods of Jupiter and Mercury read well almost everywhere, Venus mostly well, the Moon mixed, the Sun mixed, Mars, Saturn, Rahu and Ketu badly (with exceptions: Jupiter in Ketu's dasha and Mercury in Rahu's and Saturn's read well).
+- 82 What part of a period gives what: the house result first, the sign result in the middle, the result of aspects at the end. (Same as 18.57-58.)
+- 93, 108, 156 Mars: loss at the start, fear in the middle and end. Rahu: sorrow at the start, great comfort in the middle, loss of place at the end. Ketu: trouble at the start, gain in the middle, comfort at the end.
+- 94, 119, 131, 142-143, 167-168 **A planet exalted by sign but in a debilitated navamsa gives bad results in its dasha; debilitated by sign but in an exalted navamsa gives good.** Stated for Mars, Jupiter, Saturn, Mercury and Venus. The engine prints D9 dignity but no rule uses this reversal - to be coded and tested.
+- 105-107 Rahu's dasha is good when Rahu is in Cancer, Taurus or Aries; Virgo, Pisces or Sagittarius; Leo, Taurus, Virgo or Cancer [three lists that overlap - a fourth version beside Parashara's three].
+- 154-155 Ketu with a benefic gives comfort in its dasha; with a malefic, fear and loss.
+- 169 A strong planet in its own exalted portion gives a full dasha; a weak one an empty one; one in a debilitated or enemy's navamsa a harmful one.
+- 170 In the dashas and sub-periods of a house's lord joined with its significators the matters of that house suffer [reading uncertain] [?].
+- 171 Strong benefics in a trine, the 2nd or the 11th give much comfort in their dashas and sub-periods.
+The full grid (9 x 9 pairs) can be coded as one more pre-stated direction rule once the Sun's and Moon's rows (v.60-76) are transcribed from the file.

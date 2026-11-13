@@ -40,3 +40,9 @@ G. **Discipline already in place and kept**: rules stated before results, counts
 
 ## What cannot be promised
 That any of this produces accurate prediction. Each step either finds a signal or shows there is none; both outcomes are reported.
+
+## Update, same evening
+- Vriddha Yavana Jataka ch. 6-7 and Jataka Parijata ch. 18 (rest) read in full. They add no new timing method: both give fixed results for each pair of dasha lord and sub-lord by the planets' natures.
+- That pattern, tested as a rule (natural benefic sub-lord = good), is the first direction rule to beat wrong charts: 17 of 25 against 11.4 (1.3%). One chart carries it (8 of 8); the other four are at chance. Frozen and pre-registered for confirmation on new people (antar-event-rules.md, Rule 18). Not used in readings.
+- New item for the build list: the navamsa reversal (exalted sign with debilitated navamsa gives bad, and the reverse) - stated five times in Jataka Parijata 18, used by no rule.
+- Still unread: Daivajna Vallabha ch. 2-15; Vriddha Yavana Jataka ch. 8-39; Jataka Parijata ch. 6, 8-12, 17 and the rest of 7.
