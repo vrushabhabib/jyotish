@@ -22,6 +22,8 @@ Rules scored (all taken from the worksheet, nothing new):
     polarity       events marked good/bad only: good = sub-lord not in the 6th/8th/12th from the dasha lord and no
                    caution flag (Jataka Parijata 18.27-28); bad = one of those present
     link_and_pol   ad_link and polarity together (what a dated statement of gain or loss actually rests on)
+    polarity_lp    good/bad by Laghu Parashari v.6-13 and 29-38: functional nature of the two lords and whether
+                   they are related; table in kb/sources/laghu-parashari/README.md, written before the test was run
     polarity_ishta good/bad by Parashara's own measure (ch. 28): the sub-period lord's good share (ishta) against its
                    bad share (kashta); no call for Rahu and Ketu
     polarity_text  good/bad by Parashara's full sub-period template (ch. 52-60): sub-lord's house from the lagna,
@@ -35,7 +37,7 @@ from engine.analysis import analyse, period_cautions
 from engine.report import AREAS, MOVABLE
 
 STRONG = ("occupies", "owns", "with", "is karaka")
-RULES = ["ad_link", "md_link", "movable", "link_or_mov", "polarity", "link_and_pol", "polarity_text", "polarity_ishta"]
+RULES = ["ad_link", "md_link", "movable", "link_or_mov", "polarity", "link_and_pol", "polarity_text", "polarity_ishta", "polarity_lp"]
 
 
 def _date(x):
@@ -65,13 +67,47 @@ def ishta_kashta(birth):
     return out
 
 
+def lp_nature(v):
+    """Functional nature by Laghu Parashari v.6-13 (kb/sources/laghu-parashari/README.md): +1 benefic, -1 malefic, 0 neutral."""
+    from engine.chart import RASHI_LORD
+    own = {}
+    for h in range(1, 13):
+        own.setdefault(v.lord(h), []).append(h)
+    nat = {}
+    for p, hs in own.items():
+        t = 0
+        for h in hs:
+            if h in (1, 5, 9): t += 1
+            elif h in (3, 6, 11): t -= 1
+            elif h == 8 and 1 not in hs and p not in ("Sun", "Moon"): t -= 1
+        nat[p] = (t > 0) - (t < 0)
+    for node in ("Rahu", "Ketu"):
+        nat[node] = nat.get(RASHI_LORD[v.s[node] - 1], 0)
+    return nat
+
+
+def lp_call(v, nat, md, ad):
+    """Laghu Parashari v.29-38: 'good', 'bad' or None (no call) for the sub-period of ad in the dasha of md."""
+    if md == ad:
+        return None
+    m, a, rel = nat.get(md, 0), nat.get(ad, 0), v.linked(md, ad)
+    if m > 0:
+        if a > 0 or rel: return "good"
+        return "bad" if a < 0 else None
+    if m < 0:
+        if a < 0: return "bad"
+        if a > 0: return None if rel else "bad"
+        return "bad" if rel else None
+    return "good" if a > 0 else "bad" if a < 0 else None
+
+
 def score(birth, sex, events):
     """Hits per rule for one chart. Returns ({rule: hits}, {rule: events the rule could be applied to})."""
     c = build_chart(birth["date"], birth["time"], birth["lat"], birth["lon"], birth.get("tz", "Asia/Kolkata"))
     a = analyse(c, sex=sex); v = a["view"]
     caut = period_cautions(v); ck = a["karakas"]["seven_bphs"]
     hits = dict.fromkeys(RULES, 0); base = dict.fromkeys(RULES, 0)
-    ik = None
+    ik = None; lpn = lp_nature(v)
     for e in events:
         when = dt.date.fromisoformat(e["date"])
         md, ad = _periods(c, when)
@@ -104,6 +140,9 @@ def score(birth, sex, events):
             # ishta = root of (exaltation strength x motional strength), kashta = root of the product of their
             # complements to 60. Stated before any result was seen: the period is called good when ishta exceeds
             # kashta. The nodes have neither strength, so no call is made for them.
+            call = lp_call(v, lpn, md, ad)
+            if call:
+                base["polarity_lp"] += 1; hits["polarity_lp"] += call == pol
             if ik is None:
                 ik = ishta_kashta(birth)
             if ad in ik:
