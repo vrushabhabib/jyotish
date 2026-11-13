@@ -110,3 +110,12 @@ Background and evidence: `kb/sources/ANALYSIS.md`. Where a line below conflicts 
 **Not stated to anyone, ever** - in addition to section 5: popular "Pitru dosha", "Vish yoga" and Kaal Sarp as if they were classical (they are not in the texts; if the person raises one, say so plainly); a significator in its own house as a fault by itself; any wording from the excluded chapters listed in `kb/sources/bphs/README.md`.
 
 **Part 1 of every reading now states**: the method is taken from Parashara and Mantreshvara read in the Sanskrit; the calculation is verified to the arc-second; the predictive record so far (from the ledger); and that no forward prediction has yet matured.
+
+## 9. Fresh start of 13 Nov 2026 - what may and may not be used
+The owner restarted every reading on 13 Nov 2026. From that date:
+1. A reading is built only from birth data supplied in the new round and from the worksheet the engine produces from it.
+2. **Never open `data/archive/`** or any earlier reading, forecast, window or verdict while preparing a reading - not to save time, not to "stay consistent". Earlier conclusions were made with earlier calculations and rules; consistency with them is not a goal.
+3. **What a person said about their own life may be used.** These answers are in the project memory, one file per person, under "Answers given". Use them as facts, and as ready answers to checking questions the new chart raises - but write the checking questions from the new chart first, then look up the answers, so the questions are not fitted to answers already known. An answer that was only ever given as a yes or no to an old chart statement counts for that statement alone.
+4. Where no stored answer covers a question, ask the person.
+5. The ledger starts empty. Part 1 says so, and says the earlier system scored 62% on 39 questions about the past as background only.
+6. Comparing old with new is done only when the owner asks, and after the new reading is finished.

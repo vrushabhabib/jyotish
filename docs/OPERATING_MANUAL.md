@@ -19,7 +19,7 @@ Read at the start of every chat in the Claude project "Horoscope Reading And Ana
    bash tools/install_swisseph.sh    # optional second engine
    ```
    Never write position code in the chat. A hand-rolled fallback on 20 Oct 2026 had a reference-frame bug that moved dasha dates by two months; the tests pin the engine to JPL Horizons.
-4. Existing charts: `data/charts/*.json`. Load instead of recomputing when the person is known.
+4. Charts: `data/charts/` was emptied on 13 Nov 2026 (fresh start). For each person create `data/charts/<name>_<date>.json` with only `{"name","sex","date","time","lat","lon","tz","place","time_confidence"}` from the newly supplied birth data, then run `python3 -m engine.store` on it. Never copy from `data/archive/`.
 
 ## 2. Intake of a shared document
 Follow `kb/readings/kundli-intake.md`. In short:
@@ -54,6 +54,9 @@ The engine calculates and measures; the reader (Claude) interprets, asks and exp
 4. Reader: logs each dated forward statement in the ledger before sending. Engine: reports the running hit rate, which is quoted in Part 1 of every reading.
 5. Reader: a miss becomes a numbered rule in `kb/dashas/antar-event-rules.md` (provisional until seen twice); a rule that keeps missing is demoted.
 6. Reader: explanations in plain language, continuous prose, no jargon without a gloss; classical death, widowhood and childlessness wording is never passed on literally.
+
+## 6b. Fresh start (13 Nov 2026)
+All earlier chart files, readings, forecasts and the old ledger are in `data/archive/2026-11-13/` and are **not an input**. New readings use new birth data plus the person's own stored answers only. Rules: `kb/readings/full-reading-protocol.md` section 9.
 
 ## 7. Roadmap
 State on the evening of 12 Nov 2026:

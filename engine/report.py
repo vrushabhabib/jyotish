@@ -444,6 +444,10 @@ def markdown(r, name="native"):
             for k in x["windows"][:8]:
                 w(f"| {area} | {_d(k['from'])} - {_d(k['to'])} | {k['peak']} | {', '.join(k['systems'])} | {', '.join(k['vimshottari'])} | {x['share']*100:.0f}% | {verdict} |")
         st = _lg.stats()
+        if not st["scored"]:
+            w("\n**Project track record (data/ledger.jsonl).** None yet: the ledger restarted empty on 13 Nov 2026 with the rebuilt system. "
+              "Say so in Part 1. The earlier system's record (24 fully right of 39 questions about the past) is archived and is not this system's record. "
+              "Log every checking question and every dated forward statement from this reading.\n")
         if st["scored"]:
             w(f"\n**Project track record (data/ledger.jsonl).** {st['scored']} verification questions scored: {st['overall_strict']*100:.0f}% fully right, "
               f"{st['overall']*100:.0f}% counting a partly-right answer as half. By chart: " +
