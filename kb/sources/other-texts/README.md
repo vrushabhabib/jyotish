@@ -215,7 +215,7 @@ One verse per planet per house (seven planets; no Rahu or Ketu anywhere in this 
 - **Use:** a third independent witness (with Brihat Jataka and Jataka Parijata ch. 8) for the planet-in-house lines in our life-area files. Where the three disagree (Mars in the 10th; Jupiter and Venus in the 6th) a reading must say the texts disagree.
 
 ## Vriddha Yavana Jataka ch. 17-23 - one chapter per planet on its sign, divisions and STRENGTH (about 68 verses each)
-Ch. 17 (Sun) read verse by verse 13 Nov 2026 and the template established; ch. 18-23 noted below as read.
+All seven chapters read verse by verse 13 Nov 2026 (17 Sun, 18 Moon, 19 Mars, 20 Mercury, 21 Jupiter, 22 Venus, 23 Saturn). The template below holds in every one. Two differences from later books in the sign verses: Saturn in Aquarius = truthful, healthy, honoured (23.11) and in Capricorn = head of his clan (23.10), but in Libra only 'respected in foreign lands, rising late in life' (23.7); Mars in Capricorn = commander or ruler (19.10). Ch. 20 has seven extra verses (35a-g) repeating the twelfth-part list - a copying duplicate.
 **Template of each chapter**
 1. v.1-12: the planet in each of the twelve signs (character sketch; same matter as Brihat Jataka ch. 18).
 2. v.13-14: in the Sun's or the Moon's half-sign (hora).
