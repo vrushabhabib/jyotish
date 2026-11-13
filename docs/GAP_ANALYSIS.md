@@ -1,0 +1,42 @@
+# Where the present setup is lacking, and how to improve it (13 Nov 2026)
+
+Written after reading Laghu Parashari, Laghu Jataka, Chamatkara Chintamani, Bhrigu Sutram and Shatpanchashika in full and taking stock of the day's tests. Figures are from `data/control_tests.json` (5 charts, 37 dated events, 10 exact dates).
+
+## What works
+- Calculation: positions, dashas, Ashtakavarga match AstroSage and JPL; 61 tests on two ephemeris engines.
+- Faithfulness: Parashara, Brihat Jataka, Laghu Parashari, Laghu Jataka read in full from the Sanskrit; rules carry verse numbers.
+- Honesty machinery: control-chart test, blind checks with sealed windows, forward ledger, fix-first rule.
+
+## What the tests say
+| Claim | Result |
+|---|---|
+| What a sub-period is about (link test) | 26 of 37 against 20.4 for wrong charts - a faint edge (7%) resting mostly on two people |
+| What a main period is about | worse than wrong charts (88%) |
+| Good or bad, four dasha-based methods (house from dasha lord + caution column; Parashara's template; ishta/kashta; Laghu Parashari) | all at chance |
+| Good or bad, three transit methods (Jupiter and Saturn from the Moon; their own Ashtakavarga points; combined points) | all at chance (88%, 95%, 34%) |
+| Blind checks on one chart | 0 of 2 |
+| Forward statements | none matured |
+
+## Where we are lacking
+1. **Evidence of prediction.** Seven ways of judging good and bad have been tested; none beats wrong charts. This is the central gap and reading has not closed it.
+2. **Data.** Five people, 37 events, 10 exact dates. Too little to confirm the faint edge or to find a small real effect; twelve rules have now been tried on the same events, so one looking good by luck is expected. There is no held-out set.
+3. **A whole dasha doctrine is missing from the engine.** Varahamihira (Brihat Jataka 8, Laghu Jataka 10) and the Yavana text time life by the life-span dasha with sub-periods given only to planets joined to, in trine to, opposite or square the dasha lord. The engine has Vimshottari, Yogini, Chara and Ashtottari only. Untested because not built.
+4. **A whole branch is missing: question charts.** Two classical texts on file. No module, no test.
+5. **Unread timing chapters.** Vriddha Yavana Jataka ch. 6-8 (dasha, sub-period, Ashtakavarga results); Jataka Parijata ch. 9-10, 17, 18 v.77-172; Daivajna Vallabha ch. 2-15.
+6. **Timing finer than a sub-period is untested** (sub-sub-periods; the eight-part division of a sign in Ashtakavarga transit).
+7. **Divisional charts play no part in any tested rule.**
+8. **Event coding is mine.** Which life area an event belongs to, and whether it is good or bad, is my judgement (salary counted as money or career changed one result). No second coder.
+9. **Translations are unreviewed.** The e-texts are volunteer-typed, with typing errors and gaps; my readings have not been checked by a Sanskrit scholar or a practising astrologer.
+10. **No Jaimini sutras or Saravali** - no clean free Sanskrit text found on either site searched.
+
+## How to improve, in order of expected value
+A. **Data drive.** A simple intake sheet (birth time and its source, 10-15 dated events from documents) for 50 people; split into a set for looking and a set kept unseen for confirming.
+B. **Question-chart module with a fast forward test.** Code the rules of Shatpanchashika and Daivajna Vallabha; every question he asks gets a logged answer with a due date; results come in weeks, not years. This is the only route to quick, honest forward evidence.
+C. **Build the life-span dasha** (after reading Yavana ch. 6-7 and re-reading Brihat Jataka 8) and put it through the control test beside Vimshottari.
+D. **Finish the unread timing chapters** (item 5) before any more descriptive ones.
+E. **Finer timing and divisional-chart rules**, each written down before its test.
+F. **Outside review**: a Sanskrit reader for the translations; a second person to code events blind to the chart.
+G. **Discipline already in place and kept**: rules stated before results, counts only in the repository, misses kept visible.
+
+## What cannot be promised
+That any of this produces accurate prediction. Each step either finds a signal or shows there is none; both outcomes are reported.
