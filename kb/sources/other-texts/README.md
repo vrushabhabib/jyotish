@@ -118,3 +118,18 @@ A book on QUESTION CHARTS only (the chart of the moment a question is asked). No
 - These rules give a YES or NO and sometimes a count of days or months - exactly the kind of statement that can be scored quickly. That is why a question-chart module is the fastest honest test of whether any of this predicts.
 - Usable subjects: gain or no gain, will a journey or return happen, lost article, will a marriage proposal go through, general success of an undertaking. Excluded: illness outcome, death, widowhood, child's sex, war.
 - Limit: the texts assume the question is asked sincerely, once, at a moment not chosen for the chart. A test must record the moment automatically.
+
+## Jataka Parijata ch. 6 - "What breaks a chart", 102 verses (read in full 13 Nov 2026)
+Source: sanskritdocuments.org e-text, many typing errors; my reading.
+Four things break a chart's promise (v.1): combinations that cancel raja yogas, "Reka" combinations, poverty combinations, servitude combinations. Then bodily defects (v.46-59) and illness (v.60-98).
+- **Raja-yoga breakers, v.2-20.** Mostly single fixed pictures (Sun in Aries but Libra navamsa seen by a malefic; Venus in Virgo and Virgo navamsa; Sun at its deepest fall). General statements worth keeping:
+  - v.10: Moon at the END of a movable sign, the START of a fixed sign or the MIDDLE of a dual sign, weak, with the lagna unseen by any planet - a raja yoga is destroyed.
+  - v.11: lords of the lagna, Moon sign and 9th, with Sun, Moon and Jupiter, in enemy or debilitation divisions - dependent on others.
+  - v.18: all malefics in angles in debilitation or enemy signs, benefics in 6/8/12 looking on, cruel sixtieth-parts - the raja yoga is killed.
+- **Reka, v.21-27.** Built from: lagna lord weak and seen by the 8th lord; Jupiter combust; 4th lord combust and seen by the 12th lord; 4th lord seen by the 6th lord or with the 8th lord; 9th lord combust with lagna lord and 2nd lord debilitated; three planets debilitated or combust with the lagna lord weak or in a bad house. v.25 is a TIMING line: such planets act in the first, middle or last third of life according to their place.
+- **Poverty, v.28-38.** Structural tests: the 8th lord stronger than the 9th lord (v.28); the 11th lord combust, weak and outside the angles (v.28); the 12th lord stronger than the lagna lord (v.30); fixed lagna with all malefics in angles and trines and benefics outside the angles (v.33).
+- **v.36 - the navamsa reversal, stated outright:** a planet in its exaltation sign but a debilitated navamsa quickly gives LOW results; a debilitated planet in an exalted navamsa gives GOOD results. This is the sixth place in this book that says so. No rule in our engine uses it. It belongs on the build list near the top.
+- **Servitude, v.39-45.** Fixed pictures; several turn on planets at sign junctions (v.41-43) and on night birth in the dark fortnight.
+- **Bodily defects v.46-59 and illness v.60-98.** Read. NOT used: our rules forbid medical statements, and these are single-picture verses with no general principle.
+- **v.101 the counter-case:** Jupiter strong in good divisions in the lagna or the 4th, planets in 2, 11 and the upachaya houses, lagna lord strong - a happy life.
+- **Use for the project:** the engine's yoga catalogue lists raja yogas but applies only the cancellations from ch. 7. The structural tests above (8th lord vs 9th lord strength, 12th lord vs lagna lord strength, 11th lord combust, Moon at the weak part of its sign, v.36 reversal) are measurable from quantities the engine already computes and are candidates for the "promise" side of a reading. None is a timing rule.
