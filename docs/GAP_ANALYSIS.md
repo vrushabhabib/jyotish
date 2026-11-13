@@ -50,7 +50,7 @@ That any of this produces accurate prediction. Each step either finds a signal o
 ## Update, reading batch 3 (13 Nov 2026)
 - Read in full: Jataka Parijata ch. 10 (Ashtakavarga) and ch. 17 (Kalachakra dasha); Vriddha Yavana Jataka ch. 8 (Ashtakavarga).
 - Tested (pre-stated): sub-lord's own Ashtakavarga points in its birth sign. 12 of 19 against 8.2 from wrong charts (10%). Not significant. Ninth direction rule tried.
-- **New gap 11: no Kalachakra dasha in the engine.** A whole second clock, by signs, that Parashara ranks highest and that we have never built or tested. The Jataka Parijata e-text is damaged at the sequence tables, so it must be built from BPHS and cross-checked.
+- **New gap 11: no Kalachakra dasha in the engine.** A second clock, by signs, never built or tested (Parashara keeps Vimshottari as chief, BPHS 46.3). Sequences are already decoded from BPHS in kb/sources/bphs/ch46-50.md; the Jataka Parijata e-text is damaged at the sequence tables. Sensitive to birth time (Moon's star-quarter).
 - **New gap 12: Ashtakavarga is used only for transits.** Both long texts also use it to judge the quality of a planet's own period (JP 10.10-11 by sign points; VYJ ch. 8 by the eighth-part). The second form is untested and its owner order is unsourced.
 - Honest count of direction rules so far: nine tested on the same 25 events; one at 1.3% (carried by one chart), one at 10%, seven at chance. With nine tries, one result near 1% is weak evidence. Only new people can settle it.
 - Still unread: Daivajna Vallabha ch. 2-15; Vriddha Yavana Jataka ch. 9-39; Jataka Parijata ch. 6, 8, 9, 11, 12 and the rest of 7.
