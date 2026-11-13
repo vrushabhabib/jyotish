@@ -41,7 +41,7 @@ from engine.ashtakavarga import ashtakavarga
 from engine import transits as T
 
 STRONG = ("occupies", "owns", "with", "is karaka")
-RULES = ["ad_link", "md_link", "movable", "link_or_mov", "polarity", "link_and_pol", "polarity_text", "polarity_ishta", "polarity_lp", "transit_moon", "transit_bav", "transit_sav", "polarity_natural"]
+RULES = ["ad_link", "md_link", "movable", "link_or_mov", "polarity", "link_and_pol", "polarity_text", "polarity_ishta", "polarity_lp", "transit_moon", "transit_bav", "transit_sav", "polarity_natural", "polarity_bav_natal"]
 
 
 def _date(x):
@@ -164,6 +164,14 @@ def score(birth, sex, events):
             if ad in ("Jupiter", "Venus", "Mercury", "Moon", "Sun", "Mars", "Saturn"):
                 base["polarity_natural"] += 1
                 hits["polarity_natural"] += (ad in ("Jupiter", "Venus", "Mercury", "Moon")) == (pol == "good")
+            # Jataka Parijata 10.10-11 (read 13 Nov 2026; stated before the test): a planet with few points in its own
+            # Ashtakavarga in the sign it occupies gives bad results even when exalted or strong, and one with many
+            # points gives good even when debilitated or badly placed. Sub-lord's own points in its natal sign:
+            # 5 or more = good, 3 or fewer = bad, 4 = no call (10.3-4). No call for the nodes.
+            if ad in av["bav"]:
+                pts = av["bav"][ad][v.s[ad] - 1]
+                if pts != 4:
+                    base["polarity_bav_natal"] += 1; hits["polarity_bav_natal"] += (pts >= 5) == (pol == "good")
             call = lp_call(v, lpn, md, ad)
             if call:
                 base["polarity_lp"] += 1; hits["polarity_lp"] += call == pol

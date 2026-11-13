@@ -58,3 +58,19 @@ A different branch from everything this project does: the chart is cast for the 
 - 170 In the dashas and sub-periods of a house's lord joined with its significators the matters of that house suffer [reading uncertain] [?].
 - 171 Strong benefics in a trine, the 2nd or the 11th give much comfort in their dashas and sub-periods.
 The full grid (9 x 9 pairs) can be coded as one more pre-stated direction rule once the Sun's and Moon's rows (v.60-76) are transcribed from the file.
+
+## Jataka Parijata ch. 10 - Ashtakavarga, 72 verses (read in full 13 Nov 2026)
+- 3-8 In a planet's own table: 8 points strengthens the house; 5, 6, 7 good; 4 mixed; 1, 2, 3 not good; 0 illness and fear. One verse of results for each count from 1 to 8.
+- 9 A planet passing through a sign where it has 5 or more points is good; otherwise it gives nothing or harm.
+- **10-11 Planets in exaltation, a friend's division or strong in a kendra all give bad results if they have few points; planets in bad houses or in debilitated or enemy divisions all give good if they have many.** Points override dignity. No rule in the engine uses this for a planet's own period.
+- 12 Saturn passing a zero-point sign of a planet's table harms that planet's relatives and matters.
+- 13-32 Results planet by planet for given counts (statements about length of life left out).
+- 33-35 The eight-part division of a sign: the part whose lord gave a point delivers; a planet in an enemy's or debilitated sign or combust cancels it even with a point.
+- 36-51 The two reductions and the life-span derived from them - excluded by the project's rule.
+- 52-53 Combined table: up to 25 fruitless, up to 30 middling, above 30 good. (Same thresholds as Parashara.)
+- 54-55 The same override for the combined table: well-placed planets in low-point signs harm.
+- 56 11th above the 10th, 12th below the 11th, lagna above the 12th = happy and well-off. (The worksheet's checks.)
+- 57-59 Three parts of life from the combined points; the text counts the parts from Pisces, Cancer and Scorpio and notes that "some" count from the 12th house - a variant of Parashara 72.9-10 as the worksheet prints it.
+- 60 The number of points in the lagna is the age at which fortune arrives [a fixed-age statement; noted, not adopted]. 61-66 Royal combinations by points. 67 Direction of gain by groups of signs.
+- 68-69 A timing device: points from the lagna to Saturn, times 7, divided by 27, gives a star; a malefic passing that star brings trouble, and the mirror count a star where a benefic brings good. Not in the engine.
+- 70-71 Life-span - excluded.
