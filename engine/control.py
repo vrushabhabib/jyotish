@@ -22,6 +22,8 @@ Rules scored (all taken from the worksheet, nothing new):
     polarity       events marked good/bad only: good = sub-lord not in the 6th/8th/12th from the dasha lord and no
                    caution flag (Jataka Parijata 18.27-28); bad = one of those present
     link_and_pol   ad_link and polarity together (what a dated statement of gain or loss actually rests on)
+    transit_moon / transit_bav / transit_sav   good/bad from where Jupiter and Saturn are passing on the day: houses
+                   from the natal Moon (Phaladeepika 26), their own Ashtakavarga points, the combined points
     polarity_lp    good/bad by Laghu Parashari v.6-13 and 29-38: functional nature of the two lords and whether
                    they are related; table in kb/sources/laghu-parashari/README.md, written before the test was run
     polarity_ishta good/bad by Parashara's own measure (ch. 28): the sub-period lord's good share (ishta) against its
@@ -35,9 +37,11 @@ import argparse, datetime as dt, json, random
 from engine.chart import build_chart
 from engine.analysis import analyse, period_cautions
 from engine.report import AREAS, MOVABLE
+from engine.ashtakavarga import ashtakavarga
+from engine import transits as T
 
 STRONG = ("occupies", "owns", "with", "is karaka")
-RULES = ["ad_link", "md_link", "movable", "link_or_mov", "polarity", "link_and_pol", "polarity_text", "polarity_ishta", "polarity_lp"]
+RULES = ["ad_link", "md_link", "movable", "link_or_mov", "polarity", "link_and_pol", "polarity_text", "polarity_ishta", "polarity_lp", "transit_moon", "transit_bav", "transit_sav"]
 
 
 def _date(x):
@@ -107,7 +111,7 @@ def score(birth, sex, events):
     a = analyse(c, sex=sex); v = a["view"]
     caut = period_cautions(v); ck = a["karakas"]["seven_bphs"]
     hits = dict.fromkeys(RULES, 0); base = dict.fromkeys(RULES, 0)
-    ik = None; lpn = lp_nature(v)
+    ik = None; lpn = lp_nature(v); av = ashtakavarga(c)
     for e in events:
         when = dt.date.fromisoformat(e["date"])
         md, ad = _periods(c, when)
@@ -140,6 +144,21 @@ def score(birth, sex, events):
             # ishta = root of (exaltation strength x motional strength), kashta = root of the product of their
             # complements to 60. Stated before any result was seen: the period is called good when ishta exceeds
             # kashta. The nodes have neither strength, so no call is made for them.
+            # Transit rules (Parashara 72.30-31 and Laghu Jataka 11.15: the particular good and bad comes from
+            # planets in transit, read through Ashtakavarga). Three rules, written down before any result:
+            #  transit_moon  Jupiter in the 2nd, 5th, 7th, 9th or 11th from the natal Moon = +1, else -1; Saturn in the
+            #                3rd, 6th or 11th = +1, else -1 (Phaladeepika 26); sum above 0 good, below 0 bad, 0 no call
+            #  transit_bav   (Jupiter's own Ashtakavarga points in the sign it is passing - 4) + the same for Saturn
+            #  transit_sav   combined points of Jupiter's sign + Saturn's sign, against the average 56
+            js, ss = T.sign_on("Jupiter", when), T.sign_on("Saturn", when)
+            moon = v.s["Moon"]
+            hj, hs_ = (js - moon) % 12 + 1, (ss - moon) % 12 + 1
+            tm = (1 if hj in (2, 5, 7, 9, 11) else -1) + (1 if hs_ in (3, 6, 11) else -1)
+            tb = (av["bav"]["Jupiter"][js - 1] - 4) + (av["bav"]["Saturn"][ss - 1] - 4)
+            ts = av["sav"][js - 1] + av["sav"][ss - 1] - 56
+            for k, val in (("transit_moon", tm), ("transit_bav", tb), ("transit_sav", ts)):
+                if val != 0:
+                    base[k] += 1; hits[k] += (val > 0) == (pol == "good")
             call = lp_call(v, lpn, md, ad)
             if call:
                 base["polarity_lp"] += 1; hits["polarity_lp"] += call == pol
