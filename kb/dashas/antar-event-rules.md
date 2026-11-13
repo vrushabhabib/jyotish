@@ -163,3 +163,8 @@ Why this is NOT yet a finding:
 - For the chart with an uncertain birth time the count moves from 9 to 5 of 11 across the hour.
 - Good/bad for each event was coded by me.
 **Pre-registered confirmation:** the rule is frozen as written. It is to be scored on the next 25 or more good/bad events from people who are NOT among the first five, with dates given before any chart is shown. Confirmed only if fewer than 5% of wrong-chart sets do as well on that new set alone. Until then readings do not use it; Rule 17's "state the subject, not the direction" stands.
+
+### Addendum to Rule 18 — the planet's own Ashtakavarga points as a direction rule (13 Nov 2026)
+Rule (Jataka Parijata 10.10-11, written and pushed before the test): sub-lord with 5 or more of its own points in its birth sign = good; 3 or fewer = bad; 4 = no call; no call for Rahu and Ketu.
+Pooled: 12 right of 19, wrong charts average 8.2, 10% of wrong-chart sets as good. By chart: 4 of 5, 6 of 10, 1 of 1, 1 of 2, 0 of 1.
+Verdict: leaning the right way, NOT a finding (needs under 5%, and this is the ninth direction rule on the same events). Not used in readings. It joins the Rule 18 confirmation set: scored, frozen as written, on the same new people.
