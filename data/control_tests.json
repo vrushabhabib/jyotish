@@ -255,5 +255,70 @@
     "share_controls_at_or_above_real": 0.574
    }
   }
+ },
+ {
+  "chart": "POOLED 5 charts",
+  "run": "2026-11-13",
+  "note": "with Laghu Parashari direction rule (pre-stated, commit c3a92e2)",
+  "charts": 5,
+  "events": 37,
+  "exact_dates": 10,
+  "controls": 1000,
+  "rules": {
+   "ad_link": {
+    "real": 26,
+    "of": 37,
+    "control_mean": 20.37,
+    "share_controls_at_or_above_real": 0.069
+   },
+   "md_link": {
+    "real": 16,
+    "of": 37,
+    "control_mean": 20.5,
+    "share_controls_at_or_above_real": 0.88
+   },
+   "movable": {
+    "real": 4,
+    "of": 37,
+    "control_mean": 3.3,
+    "share_controls_at_or_above_real": 0.417
+   },
+   "link_or_mov": {
+    "real": 27,
+    "of": 37,
+    "control_mean": 21.53,
+    "share_controls_at_or_above_real": 0.065
+   },
+   "polarity": {
+    "real": 13,
+    "of": 27,
+    "control_mean": 13.96,
+    "share_controls_at_or_above_real": 0.762
+   },
+   "link_and_pol": {
+    "real": 10,
+    "of": 27,
+    "control_mean": 8.03,
+    "share_controls_at_or_above_real": 0.274
+   },
+   "polarity_text": {
+    "real": 13,
+    "of": 24,
+    "control_mean": 12.45,
+    "share_controls_at_or_above_real": 0.5
+   },
+   "polarity_ishta": {
+    "real": 11,
+    "of": 25,
+    "control_mean": 10.98,
+    "share_controls_at_or_above_real": 0.574
+   },
+   "polarity_lp": {
+    "real": 7,
+    "of": 15,
+    "control_mean": 8.06,
+    "share_controls_at_or_above_real": 0.747
+   }
+  }
  }
 ]

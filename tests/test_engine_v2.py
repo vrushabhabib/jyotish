@@ -116,3 +116,20 @@ def test_control_chart_test_runs_and_is_reproducible():
     for r in a["rules"].values():
         assert 0 <= r["share_controls_at_or_above_real"] <= 1 and r["real"] <= r["of"]
     assert a["rules"]["polarity"]["of"] == 2
+
+
+def test_laghu_parashari_nature_and_ishta_kashta():
+    """Laghu Parashari v.6-13 for a Makara lagna, and Parashara's ishta/kashta bounds (13 Nov 2026)."""
+    from engine.control import lp_nature, lp_call, ishta_kashta
+    from engine.analysis import analyse
+    b = {"date": "1987-02-03", "time": "06:28", "lat": 15.3333, "lon": 75.1333, "tz": "Asia/Kolkata"}
+    v = analyse(build_chart(b["date"], b["time"], b["lat"], b["lon"], b["tz"]), sex="M")["view"]
+    n = lp_nature(v)
+    assert n["Venus"] == 1 and n["Saturn"] == 1          # 5th+10th lord; lagna lord
+    assert n["Jupiter"] == -1 and n["Mars"] == -1        # 3rd+12th; 4th+11th
+    assert n["Sun"] == 0                                 # 8th lord, but the Sun carries no 8th-lord blemish (v.11)
+    assert lp_call(v, n, "Venus", "Venus") is None       # v.29
+    assert lp_call(v, n, "Venus", "Saturn") == "good"    # benefic in a benefic's dasha (v.30)
+    ik = ishta_kashta(b)
+    assert set(ik) == {"Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"}
+    assert all(0 <= x <= 60 and 0 <= y <= 60 for x, y in ik.values())

@@ -7,8 +7,8 @@ Computes charts exactly, reads them by the classical texts, states the subject o
 
 ## Track B - research: find out whether a real signal exists, and grow it if it does
 1. **Study, aimed at the measured gap (direction and finer timing), Sanskrit first, free sources only.**
-   - Laghu Parashari / Jataka Chandrika (42 verses on judging dasha results - which sub-period gives a planet's results, functional benefics and malefics, yoga-givers, marakas). The KB's dasha-judgement rules from it are still tagged [MEM]: find a free Sanskrit text, read it, replace the [MEM] lines, code what can be coded.
-   - Parashara's own measures of how good or bad a planet's period is: Ishta and Kashta phala (not coded in the engine yet), with Shadbala and the twenty-point strength already coded. Read the chapter again, code it, test it as a direction rule.
+   - DONE 13 Nov 2026 (at chance as a direction rule): Laghu Parashari / Jataka Chandrika (42 verses on judging dasha results - which sub-period gives a planet's results, functional benefics and malefics, yoga-givers, marakas). The KB's dasha-judgement rules from it are still tagged [MEM]: find a free Sanskrit text, read it, replace the [MEM] lines, code what can be coded.
+   - DONE 13 Nov 2026 (at chance as a direction rule): Parashara's own measures of how good or bad a planet's period is: Ishta and Kashta phala (was not coded in the engine yet), with Shadbala and the twenty-point strength already coded. Read the chapter again, code it, test it as a direction rule.
    - The unread chapters of Jataka Parijata (6, 8-12, 17, rest of 7 and 18).
    - Finer timing inside a sub-period: sub-sub-periods and Ashtakavarga transit (kaksha) as Parashara states them.
    - Every rule that comes out of study enters the control test as a pre-stated rule BEFORE its result is looked at; rules are never tuned on the events they are scored on.

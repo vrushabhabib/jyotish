@@ -48,3 +48,5 @@ Parashara, introducing Ashtakavarga: to settle the length of life and the course
 | sanskritdocuments.org `jAtakapArijAtaH.itx` - Jataka Parijata of Vaidyanatha, Sanskrit | ch. 1-2 and the cited verses; `kb/sources/jataka-parijata/` | same terms; the file is marked "needs proofreading" and has lost pages |
 
 Not available as a clean free Sanskrit text (searched 12 Nov 2026) and therefore not used as sources: **Jaimini's Upadesha Sutras** and **Saravali**. Rules once cited to them through secondary pages keep that tag. Narayana dasha is taught only in modern in-copyright books and is not adopted.
+
+- **Laghu Parashari (Ududaya Pradipa)** - Sanskrit Wikisource, https://sa.wikisource.org/wiki/लघुपाराशरी (free). All 42 verses read 13 Nov 2026; record in `kb/sources/laghu-parashari/README.md`. Not on sanskritdocuments.org.

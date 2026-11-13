@@ -9,7 +9,7 @@ Sources read in this session:
 - **[TEM]** https://www.tempora.ltd/findings/chara-dasha-calculator-table
 - **[ABX]** https://astrobix.com/learn/141-calculation-of-char-dasha.html
 - **[MEM-KNR]** K.N. Rao, *Predicting through Jaimini's Chara Dasha* — from recall; the book itself was not readable online. Items so marked must be checked against the book.
-- **[MEM]** Laghu Parashari / BPHS dasha-phala chapters / standard teaching, from recall.
+- **[MEM]** standard teaching, from recall. (Laghu Parashari itself was read from the Sanskrit on 13 Nov 2026 - see `kb/sources/laghu-parashari/README.md`; lines below that still carry [MEM] and cite it are superseded by that file where they differ.)
 
 ---
 
@@ -33,7 +33,7 @@ Order and years: Ketu 7, Venus 20, Sun 6, Moon 10, Mars 7, Rahu 18, Jupiter 16, 
   - AD lord in a kendra, a trine, the 3rd or the 11th from the MD lord: supports. The **2nd** from the MD lord is listed with the supportive places in most pairs - the earlier note here that 2/12 is adverse on both sides was wrong for the 2nd. [same source]
   - Exceptions the text states outright (bad first, good only when specially strong): Ketu's AD in the Sun's, Rahu's and Saturn's MDs; Rahu's AD in Saturn's MD; Saturn's AD in Ketu's MD; the Sun's AD in Venus's MD. See `kb/sources/bphs/ch51-60.md`.
 - Natural and temporary friendship between the two lords: friends cooperate, enemies obstruct.
-- Laghu Parashari rules: (a) the MD lord does not give its own full results in its own AD; they come in the ADs of planets related to it (sambandhi) or of similar nature (sadharmi); (b) a yogakaraka's AD inside a malefic's MD still gives good results if the two are related; (c) maraka results come in the AD of a maraka related to the MD lord.
+- Laghu Parashari rules, **now read from the Sanskrit (13 Nov 2026, `kb/sources/laghu-parashari/README.md`) - these replace the recalled version:** (a) no planet gives its own nature's result in its own sub-period of its own dasha; it gives it in the sub-periods of planets related to it or of the same nature (v.29-30); (b) **in a malefic's dasha the sub-period of an unrelated benefic gives bad results, of a related benefic mixed results, and of an unrelated yoga-maker very bad results (v.37-38)** - the earlier recalled line "a yogakaraka's AD inside a malefic's MD still gives good results if the two are related" overstated it: the text says mixed; (c) Saturn and Venus give each other's results in each other's periods (v.40); (d) the 2nd and 12th lords go by association and by their other house (v.8); the 8th lord is not good unless he is also the lagna lord, and the Sun and Moon carry no 8th-lord blemish (v.9, 11); the maraka verses are not used. Tested as a direction rule on 13 Nov 2026: 7 right of 15 calls, wrong charts average 8.1 - at chance (antar-event-rules.md, Rule 17).
 - The AD lord is judged for houses counted from the MD lord's sign as a temporary lagna (e.g. AD lord in the 10th from the MD lord → work prominence).
 - Pratyantar (PD) lords are read the same way relative to the AD lord; use PD only to narrow timing once MD and AD both agree.
 
