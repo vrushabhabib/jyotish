@@ -59,6 +59,8 @@ List and tick before writing: occupants; lord's placement, dignity, retrogressio
 - Health lines are tendencies for a doctor; remedies are tradition; business timing is not a guarantee of returns and never replaces due diligence, accounts or a lawyer. Don't predict death.
 - Spiritual beliefs the person states: map the placements that carry them respectfully; the chart confirms the person, not the story.
 
+- **One person per chat (owner's hard rule, 13 Nov 2026).** When a chat is about one person, or a new chat is opened for a new person, no other person's horoscope is brought in: not named, not read, not compared, not suggested as the next test case, and their file is not opened - unless the owner asks for it explicitly. Pooled test results may be quoted only as anonymous counts.
+
 ## 6. Remedies by lagna (never by Moon sign)
 - Strengthen the weakest functional benefic first; at most one stone recommended; no stones for maraka lords, 8L, or combust Saturn; pacify Saturn by service; Rahu remedy = plainness; Ketu in 2nd = speak before writing; Ketu in 9th = ancestors remembered, Ganesha, the craft; Rahu-Moon = no decision at night, none alone; Jupiter = respect a teacher; weekday observances per planet. Makara lagna: diamond/white sapphire (Venus yogakaraka) primary; blue sapphire permitted with a trial; no ruby (8L), no pearl (7L maraka), no coral, no yellow sapphire. For business charts add the Mercury/Jupiter practices and the rule set from Part 6L.
 
