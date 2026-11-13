@@ -62,3 +62,26 @@ That any of this produces accurate prediction. Each step either finds a signal o
 - Jataka Parijata ch. 6 gives measurable "promise breakers" (8th lord stronger than 9th lord, 12th lord stronger than lagna lord, 11th lord combust, navamsa reversal v.36). No timing rule.
 - **Correction to my earlier unread lists:** Jataka Parijata ch. 5 (length of life, 18 KB) and ch. 4 after v.80 were never read and I had left them off the list. Ch. 5 matters for the life-span dasha gap; it is read for method only, never to state a length of life.
 - Still unread: Jataka Parijata ch. 4 (after v.80), 5, rest of 7, 8, 9, 11, 12 (about 125 KB); Vriddha Yavana Jataka ch. 9-39 (about 250 KB).
+
+## Reading complete - what the texts add (13 Nov 2026, batch 5)
+Read in full this sitting: Jataka Parijata ch. 4 (rest), 5, 7 (rest), 8, 9, 11, 12 - so all eighteen chapters are read; Vriddha Yavana Jataka ch. 9-39 - so all of part one is read. Every free text identified so far is now read, except Vriddha Yavana Jataka part two (ch. 40-71), whose availability is not yet checked.
+
+**Honest headline: the remaining 375 KB contained no new way to tell whether a period will be good or bad.** What it did contain:
+
+1. **The same single idea, over and over.** Aspect from, or division owned by, Moon/Mercury/Jupiter/Venus = good; Sun/Mars/Saturn = bad (VYJ ch. 9-23, 36). This is the idea behind the frozen Rule 18. The texts lean on it far more heavily than on house lordship. It is now better sourced, not better proven.
+2. **The texts' own timing rule is our link test.** Jataka Parijata 11.51, 11.53, 12.2-3, 12.23, 12.110, 12.130 and VYJ 25.31 all say: results come in the period of the planet in the house, looking at it, ruling it, or signifying it; Garga (JP 7.66): a yoga pays in its maker's own dasha. That is the one rule of ours with a faint edge.
+3. **Refinements to the link test not yet in the engine:** siblings from houses 3, 9, 11 and 7 (JP 12.2); the planet must also be tied to the lagna for rank and vehicles (JP 12.110); weight by closeness to the house degree (JP 11.12); check the dispositor of the house lord (JP 11.10).
+4. **A component-by-component reading of Shadbala** (VYJ ch. 17-23, 24.41-48): each of fourteen strengths has its own result, strong or lacking. We have only tested totals.
+5. **A quality grid for any planet in any house** (VYJ ch. 24a-35): sign dignity, then navamsa dignity, then whether its six divisions are benefic-owned. Useful for describing WHAT kind of money, work, spouse - not when.
+6. **Promise-breakers** (JP ch. 6) and the result scale by dignity (JP 7.58, 8.115-116).
+7. **New candidate rules, all untested by decision:** JP 5.50 (lords of the 2nd and 7th from any house harm it in their periods); aspects on the period lord by natural benefics/malefics; count of Shadbala components; eighth-part Ashtakavarga (VYJ ch. 8); Kalachakra sign by house.
+8. **Places where the three planet-in-house sources disagree** (Mars in the 10th; Jupiter and Venus in the 6th; Sun in the 7th) - a reading must say so.
+
+**What is still missing after all the reading**
+- Any rule for direction that is independent of the benefic/malefic idea. There is none in these texts.
+- Kalachakra dasha and the life-span dasha in the engine.
+- A question-chart module.
+- Data: five people and 37 events cannot confirm or kill anything. This is now the only thing that can move the accuracy question.
+- Jaimini, Saravali, and VYJ part two (house lords in houses) remain unread: not found free, or not yet checked.
+
+**Coverage note.** All of this was read in transliteration from e-texts with typing errors and gaps; my Sanskrit reading has not been reviewed by a scholar. Roughly one verse in twenty of Vriddha Yavana Jataka is missing or damaged.
