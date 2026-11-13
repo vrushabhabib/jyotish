@@ -127,3 +127,13 @@ Whenever a mistake, a gap, a limitation that can be reduced or an improvement to
 - Worksheet section 10 marks the movable significator of each area with 'm'. Shown, not counted (Rule 13).
 - **Dated life events first (Rule 15).** Before any chart statement is shown, ask for 10-15 dated events from the person's own memory or documents; keep them outside the repository; run `python3 -m engine.control EVENTS.json --n 1000 --save`; put the table in Part 1. Dates given in answer to a question that named a chart period are anchored to the chart and are not evidence of timing.
 - **State the subject, not the direction (Rule 17).** The pooled control test (5 charts, 37 events) gives the sub-period link test a small edge over wrong charts and puts every good/bad rule at chance. Until the pooled figures change, each period in a reading is described by what it is about; any statement that it will go well or badly is marked "direction not supported by our own data". Part 1 quotes the pooled table.
+
+## 11. Findings register - nothing present may be missed (13 Nov 2026)
+The worksheet's last section lists every finding with an id. Rules:
+1. Write the draft with a tag for each statement: `[F:id]`. Several tags on one sentence are fine.
+2. Every finding marked MUST is either used or set aside in the open with `[F:id waived: reason]`. "Common in a third of charts", "not relevant to the question asked" and "inside the birth-time doubt" are valid reasons; "does not fit the story" is not.
+3. Carry the evidence word into the wording: a `text` line is "the texts say"; a `frozen` or `chance` line is never worded as a prediction.
+4. Where the register says the texts disagree (`DIS.*`), say so.
+5. Copy the "NOT computed" block into Part 13.
+6. Before sending: `python3 -m engine.findings check DIR/name.computed.json DRAFT.md` must pass; then `python3 -m engine.findings strip DRAFT.md`.
+Design note: docs/SYSTEM_DESIGN.md.

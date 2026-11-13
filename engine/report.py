@@ -34,6 +34,9 @@ VARGA_USE = {2: "wealth", 3: "siblings", 4: "property", 7: "children", 9: "marri
              40: "maternal legacy", 45: "paternal legacy", 60: "past karma (needs exact time)"}
 
 
+from engine import findings as F
+
+
 def _d(x):
     return x.strftime("%d %b %Y") if hasattr(x, "strftime") else str(x)
 
@@ -85,6 +88,8 @@ def build(date, time, lat, lon, tz, name="native", sex=None, window=15, years_ah
                                               if H.chalit_house(d["lon"], bh) != d["bhava"]}}
     out["yogini"] = DX.yogini(chart["planets"]["Moon"]["lon"], naive, cycles=3)
     out["chara"] = DX.chara(chart["lagna"]["rashi"], {p: d["rashi"] for p, d in chart["planets"].items()}, naive)
+    out["findings"] = F.build(out)            # the register a reading is checked against (engine/findings.py)
+    out["pending"] = F.pending()
     return out
 
 
@@ -511,6 +516,7 @@ def main(argv=None):
         name, sex = o.name, o.sex
     r = build(date, time, float(lat), float(lon), tz, name, sex, o.window)
     md = markdown(r, name)
+    md += F.markdown(r["findings"])
     if check:
         md += "\n## 14. Cross-check against the supplied PDF\n\n```\n" + json.dumps(check, indent=1, default=str)[:3000] + "\n```\n"
     if o.out:
