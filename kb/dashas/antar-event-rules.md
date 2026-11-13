@@ -168,3 +168,14 @@ Why this is NOT yet a finding:
 Rule (Jataka Parijata 10.10-11, written and pushed before the test): sub-lord with 5 or more of its own points in its birth sign = good; 3 or fewer = bad; 4 = no call; no call for Rahu and Ketu.
 Pooled: 12 right of 19, wrong charts average 8.2, 10% of wrong-chart sets as good. By chart: 4 of 5, 6 of 10, 1 of 1, 1 of 2, 0 of 1.
 Verdict: leaning the right way, NOT a finding (needs under 5%, and this is the ninth direction rule on the same events). Not used in readings. It joins the Rule 18 confirmation set: scored, frozen as written, on the same new people.
+
+## Rule 19 — Five rules from the full reading, written down BEFORE testing (13 Nov 2026)
+Stated here and in `engine/control.py`, committed and pushed before any of them was run on any event.
+| Rule | Source | Statement | Scored on |
+|---|---|---|---|
+| link_sib4 | Jataka Parijata 12.2-3 | sub-lord linked to house 3, 9, 11 or 7 or the sibling significator | sibling events |
+| link_lagna_tie | Jataka Parijata 12.110, 12.130 | sub-lord linked to the area AND to the lagna | career and home events |
+| bad_2_7 | Jataka Parijata 5.50 | when the sub-lord is lord of the 2nd or 7th from the area's house, the event is bad | good/bad events where it fires |
+| polarity_aspect | Vriddha Yavana Jataka ch. 9-15 | sub-lord joined or seen only by Moon, Mercury, Jupiter, Venus = good; only by Sun, Mars, Saturn = bad | good/bad events where one side only |
+| kc_house | BPHS 46.131-154 | running Kalachakra sign in house 6, 8 or 12 from the lagna = bad; else good | good/bad events |
+How they will be read: five more rules on the same events makes fourteen direction or link variants in all. A single rule needs fewer than 1% of wrong-chart sets as good to be worth a note, and even then it goes to the confirmation set of Rule 18 - it is not used in a reading on this evidence. Held back, still untested: strength-part count (VYJ ch. 17-23) and the eighth-part rule (VYJ ch. 8).

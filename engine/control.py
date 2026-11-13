@@ -39,9 +39,11 @@ from engine.analysis import analyse, period_cautions
 from engine.report import AREAS, MOVABLE
 from engine.ashtakavarga import ashtakavarga
 from engine import transits as T
+from engine.dashas_classical import kalachakra, kalachakra_at
 
 STRONG = ("occupies", "owns", "with", "is karaka")
-RULES = ["ad_link", "md_link", "movable", "link_or_mov", "polarity", "link_and_pol", "polarity_text", "polarity_ishta", "polarity_lp", "transit_moon", "transit_bav", "transit_sav", "polarity_natural", "polarity_bav_natal"]
+RULES = ["ad_link", "md_link", "movable", "link_or_mov", "polarity", "link_and_pol", "polarity_text", "polarity_ishta", "polarity_lp", "transit_moon", "transit_bav", "transit_sav", "polarity_natural", "polarity_bav_natal",
+         "link_sib4", "link_lagna_tie", "bad_2_7", "polarity_aspect", "kc_house"]
 
 
 def _date(x):
@@ -111,7 +113,7 @@ def score(birth, sex, events):
     a = analyse(c, sex=sex); v = a["view"]
     caut = period_cautions(v); ck = a["karakas"]["seven_bphs"]
     hits = dict.fromkeys(RULES, 0); base = dict.fromkeys(RULES, 0)
-    ik = None; lpn = lp_nature(v); av = ashtakavarga(c)
+    ik = None; kc = None; lpn = lp_nature(v); av = ashtakavarga(c)
     for e in events:
         when = dt.date.fromisoformat(e["date"])
         md, ad = _periods(c, when)
@@ -124,8 +126,38 @@ def score(birth, sex, events):
         mov = ck.get(MOVABLE.get(e["area"], "")) == ad
         for k, val in (("ad_link", adl), ("md_link", mdl), ("movable", mov), ("link_or_mov", adl or mov)):
             base[k] += 1; hits[k] += bool(val)
+        # ---- Rule 19 batch (written down and pushed 13 Nov 2026 BEFORE any of the five was run) ----------------------
+        # link_sib4       Jataka Parijata 12.2-3: siblings from houses 3, 9, 11 and 7. Scored on sibling events only.
+        # link_lagna_tie  Jataka Parijata 12.110, 12.130: for rank, vehicles and house the sub-lord must be linked to the
+        #                 area AND to the lagna (in it, owning it, or with its lord). Scored on career and home events only.
+        if e["area"] == "siblings":
+            base["link_sib4"] += 1
+            hits["link_sib4"] += any(x.startswith(STRONG) for x in v.sambandha(ad, (3, 9, 11, 7), ks))
+        if e["area"] in ("career", "home/mother"):
+            base["link_lagna_tie"] += 1
+            hits["link_lagna_tie"] += bool(adl and any(x.startswith(STRONG) for x in v.sambandha(ad, (1,), ())))
         pol = e.get("polarity")
         if pol in ("good", "bad"):
+            # bad_2_7          Jataka Parijata 5.50: the period of the lord of the 2nd or the 7th counted from a house harms
+            #                  that house. Fires only when the sub-lord is one of those two lords for the area's first house;
+            #                  a hit = the event was bad.
+            # polarity_aspect  Vriddha Yavana Jataka ch. 9-15: sub-lord joined or seen only by Moon, Mercury, Jupiter, Venus
+            #                  = good; only by Sun, Mars, Saturn = bad; both or neither = no call.
+            # kc_house         BPHS 46.131-154: the running Kalachakra sign in house 6, 8 or 12 from the lagna = bad, else
+            #                  good. Periods after the birth quarter's nine signs use a continuation rule not in the verses.
+            h0 = hs[0]
+            if ad in (v.lord((h0 % 12) + 1), v.lord(((h0 + 5) % 12) + 1)):
+                base["bad_2_7"] += 1; hits["bad_2_7"] += pol == "bad"
+            seen = set(v.aspected_by(ad, nodes=False)) | set(v.conj(ad))
+            sb_, sm_ = seen & {"Moon", "Mercury", "Jupiter", "Venus"}, seen & {"Sun", "Mars", "Saturn"}
+            if bool(sb_) != bool(sm_):
+                base["polarity_aspect"] += 1; hits["polarity_aspect"] += bool(sb_) == (pol == "good")
+            if kc is None:
+                kc = kalachakra(c["planets"]["Moon"]["lon"], c["input"]["local"])
+            kp, _ = kalachakra_at(kc, dt.datetime.combine(when, dt.time(12), c["input"]["local"].tzinfo))
+            if kp:
+                kh = (kp["sign"] - v.lag) % 12 + 1
+                base["kc_house"] += 1; hits["kc_house"] += (kh not in (6, 8, 12)) == (pol == "good")
             n = 1 if md == ad else (c["planets"][ad]["rashi"] - c["planets"][md]["rashi"]) % 12 + 1
             against = n in (6, 8, 12) or bool(caut.get(ad))
             ok = (not against) if pol == "good" else against
