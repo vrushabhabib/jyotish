@@ -274,6 +274,16 @@ def disagreements(r, out):
             _f(out, f"DIS.{p}.{h}", HOUSE_PART[h], "must", f"{p} in house {h}: the texts disagree. {why}. Say so; do not pick one silently.", "sources_disagree")
 
 
+def _common(name):
+    """Share of 4,000 random charts with the same combination (engine.baserates), as words."""
+    try:
+        from engine.baserates import rate, label
+        x = rate("yoga", name)
+        return label(x) if x is not None else "not measured"
+    except Exception:                                         # noqa: BLE001
+        return "not measured"
+
+
 def named(r, out):
     a = r["analysis"]; v: View = a["view"]; seen = {}
     for y in a.get("yogas") or []:
@@ -284,13 +294,20 @@ def named(r, out):
         _f(out, f"Y.{slug}", 12, "must", f"{y['name']}" + (f" ({', '.join(y.get('planets') or [])})" if y.get("planets") else "") + (f": {y['note']}" if y.get("note") else "")
            + (f". Weakened by: {y['weakened_by']}" if y.get("weakened_by") else "")
            + (f". When: in the dasha of its strong maker ({', '.join(strong)})" if strong else ". When: its makers are not strong by sign - the text ties the result to a strong maker's dasha")
-           + ". See the 'how common' column before calling it a distinction.", "yoga", makers=makers, strong=strong)
+           + f". How common: {_common(y['name'])}.", "yoga", makers=makers, strong=strong)
     m = (a.get("doshas") or {}).get("manglik") or {}
     if m.get("present"):
         _f(out, "D.Mars.marriage", 10, "must", "Mars placement counted for marriage is present; cancellations found: " + ("; ".join(m.get("cancellations_classical") or []) or "none in the texts") + ".", "dosha")
     ts = r.get("time_sensitivity")
     if ts:
-        _f(out, "T.birth-time", 1, "must", "Birth-time sensitivity: quote section 1 of the worksheet (what changes inside the stated doubt) before any date.", "time_doubt")
+        win = r.get("window")
+        yrs = {"Ketu": 7, "Venus": 20, "Sun": 6, "Moon": 10, "Mars": 7, "Rahu": 18, "Jupiter": 16, "Saturn": 19, "Mercury": 17}
+        first = r["chart"]["dasha"]["maha"][0]["lord"]
+        per_min = yrs[first] * 365.25 / (360 / 27) * (13.176 / 1440)      # days of dasha shift per minute of birth time (mean Moon)
+        _f(out, "T.birth-time", 1, "must", f"Birth-time sensitivity, scanned {win} minutes either side of the stated time: " + (
+            "no lagna or divisional lagna (D1, D9, D10, D7, D12, D3) changes inside that doubt" if len(ts) <= 1 else
+            "a lagna or divisional lagna changes at " + ", ".join(str(x[0]) for x in ts[1:]) + " - findings resting on it are uncertain")
+           + f". Dasha dates move by about {per_min:.1f} days for each minute of error in the birth time, so dates are given as seasons. Quote this before any date.", "time_doubt")
     _f(out, "M.direction", 1, "must", "Our own tests: the SUBJECT of a period has a faint edge (26 of 37 against 20.4 for wrong charts); good/bad DIRECTION is at chance on every method tried. "
        "State subjects; mark any direction as unsupported.", "direction")
 
