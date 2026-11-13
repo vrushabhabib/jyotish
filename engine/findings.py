@@ -78,6 +78,13 @@ RULES = {
     "house_lords_in_houses_vyj": {"source": "Vriddha Yavana Jataka part two, ch. 40-71", "status": "pending", "what": "not read - searched 13 Nov 2026: no free e-text found; only a printed edition for sale, which the source rule excludes"},
     "saravali": {"source": "Saravali of Kalyanavarman, Nirnaya Sagar Press edition (1928), page text at jainqq.org/pagetext/Saravali/009887/1 to 268", "status": "pending", "what": "FOUND free online 13 Nov 2026, NOT yet read - about 268 pages, needs the browser"},
     "jaimini": {"source": "Jaimini (Upadesha) sutras", "status": "pending", "what": "not read - only manuscript images (UPenn Ms. Coll. 390 items 700, 706) and paid editions found; no clean free text yet"},
+    # --- the calendar and the tables (added 13 Nov 2026: a reading may only state what is in the register) -----
+    "period_link": {"text_quality": "calculation; link rule ours (antar-event-rules.md Rule 1)", "source": "BPHS 46 (Vimshottari), 52-60 (sub-lord's house from the dasha lord); engine link test", "status": "hint",
+                    "what": "which sub-period runs when, and which life areas its lord is strongly linked to - the SUBJECT of the period; faint edge in our tests"},
+    "transit": {"text_quality": "calculation; as a good/bad rule our tests put it at chance", "source": "Phaladeepika 26; BPHS 66-72; engine ephemeris", "status": "chance",
+                "what": "where Saturn, Jupiter and Rahu pass and when - positions are calculation; never a good/bad forecast"},
+    "table": {"text_quality": "calculation", "source": "engine (BPHS 6-7 divisions, 32 karakas, 29 arudhas, 34 lordships, 66-72 Ashtakavarga)", "status": "text",
+              "what": "placements and tables computed for the chart - facts of the chart, not judgements"},
     # --- read and never used ----------------------------------------------------------------------------------
     "excluded": {"source": "Jataka Parijata 4, 5.45-123, 6.46-98, 9.45-84; Vriddha Yavana Jataka 28.29-30, 31; Daivajna Vallabha 8, 12.5-10, 13",
                  "status": "excluded", "what": "length of life, time or manner of death, widowhood, sex or number of children, medical statements"},
@@ -317,9 +324,77 @@ def pending():
     return [{"rule": k, **x} for k, x in RULES.items() if x["status"] == "pending"]
 
 
+def timeline(r, out):
+    """The calendar and the tables as findings, so that a reading cannot state a period, a transit or a divisional
+    placement that the register does not hold (audit of 13 Nov 2026)."""
+    import datetime as dt
+    from engine.report import AREAS, MOVABLE
+    from engine.analysis import period_cautions
+    c, a = r["chart"], r["analysis"]; v = a.get("view"); tree = a.get("dasha_tree")
+    if v is None or not tree: return
+    local = c["input"]["local"]; now = dt.datetime.now(local.tzinfo); P = c["planets"]; lag = c["lagna"]["rashi"]
+    d = lambda x: x.strftime("%d %b %Y")
+    ck = a["karakas"]["seven_bphs"]; caut = period_cautions(v)
+    strong = lambda p, ar: any(x.startswith(("occupies", "owns", "with", "is karaka")) for x in v.sambandha(p, AREAS[ar][0], AREAS[ar][2] if a.get("sex") == "F" else AREAS[ar][1]))
+    def rel(md, ad):
+        if md == ad: return "same planet"
+        n = (P[ad]["rashi"] - P[md]["rashi"]) % 12 + 1
+        return f"sub-lord in house {n} from the dasha lord - " + ("the texts call this obstructing" if n in (6, 8, 12) else "the texts call this supporting" if n != 2 else "listed as mostly supporting")
+    for md, ms, me, ads in tree:
+        for ad, s, e, pds in ads:
+            if e <= local or (s - local).days > 365.25 * 90: continue      # fixed horizon by age, so the id list does not drift with the calendar
+            s2 = max(s, local); part = 4 if e <= now else 5 if s <= now else 12
+            areas = [ar for ar in AREAS if strong(ad, ar)]
+            _f(out, f"V.{md}-{ad}", part, "note", f"{md}-{ad}: {d(s2)} to {d(e)} (age {(s2 - local).days / 365.25:.1f} to {(e - local).days / 365.25:.1f}); {rel(md, ad)}; "
+               f"sub-lord strongly linked to: {', '.join(areas) or 'no area'}; check before stating any gain: {'; '.join(caut[ad]) or 'nothing flagged'}. "
+               "Subject of the period only; good/bad direction is not supported by our tests.", "period_link", md=md, ad=ad)
+            if s <= now < e and pds:
+                _f(out, "V.now.months", 5, "note", f"Shorter periods inside the running {md}-{ad}: " + "; ".join(f"{x[0]} from {d(x[1])}" for x in pds) + f"; ends {d(e)}. Dates move with the birth time.", "period_link")
+    for ar, (hs, km, kf) in AREAS.items():
+        ps = [p for p in ("Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn", "Rahu", "Ketu") if strong(p, ar)]
+        mv = next((p for p, role in [(ck.get(MOVABLE.get(ar, "")), 1)] if p), None)
+        _f(out, f"L.{ar.split('/')[0]}", 2, "note", f"Link test, {ar} (houses {', '.join(map(str, hs))}): planets strongly linked - {', '.join(ps) or 'none'}" + (f"; movable significator {mv} (shown, not counted)" if mv else "") + ".", "period_link")
+    for pl, rows in (r.get("transits") or {}).items():
+        near = [x for x in rows if str(x["to"]) >= str(now.date() - dt.timedelta(days=200)) and str(x["from"]) <= str(now.date() + dt.timedelta(days=int(365.25 * 5)))]
+        if near:
+            _f(out, f"TR.{pl}", 5, "note", f"{pl} passes: " + "; ".join(f"{x['sign']} (house {x['house']}, {x['house_from_moon']} from the Moon) {x['from']} to {x['to']}" for x in near)
+               + ". Positions only: transit rules for good or bad scored at chance in our tests.", "transit")
+    ph = [x for x in (r.get("saturn_phases") or []) if str(x["to"]) >= str(now.date() - dt.timedelta(days=1500)) and str(x["from"]) <= str(now.date() + dt.timedelta(days=int(365.25 * 9)))]
+    if ph:
+        _f(out, "TR.Saturn.phases", 5, "note", "Saturn's phases counted from the Moon: " + "; ".join(f"{x['phase']} in {x['sign']} {x['from']} to {x['to']}" for x in ph)
+           + ". A calendar fact; the popular reading of these years as bad is not tested here.", "transit")
+    av = r.get("ashtakavarga") or {}; chk = r.get("av_checks") or {}
+    if av.get("by_house"):
+        bh = av["by_house"]; bh = bh if isinstance(bh, dict) else dict(enumerate(bh, 1))
+        _f(out, "AV.houses", 2, "note", "Combined Ashtakavarga points by house: " + ", ".join(f"H{k} {bh[k]}" for k in sorted(bh, key=int)) + ". Checks: "
+           + "; ".join(f"{t} - {'yes' if ok else 'NO'}" for t, ok in chk.get("checks", [])) + f". Strong houses (30+): {chk.get('strong_houses')}; weak (25 or less): {chk.get('weak_houses')}.", "table")
+    fn = (a.get("functional") or {}).get("planets", {})
+    if fn:
+        _f(out, "FN.lords", 2, "note", "Lordships for this lagna (Parashara's own verdict where he gives one): " + "; ".join(
+            f"{p} owns {x['owns']} - {x.get('parashara') or x['nature']}" + (", yoga-giver" if x.get("parashara_yoga_giver") or x.get("yogakaraka") else "") for p, x in fn.items()) + ".", "table")
+    _f(out, "JM.karakas", 2, "note", "Movable significators (seven-planet scheme): " + ", ".join(f"{k} {p}" for k, p in a["karakas"]["seven"].items()) + ".", "table")
+    ar_ = a.get("arudhas") or {}
+    if ar_:
+        _f(out, "JM.arudhas", 2, "note", "Arudha padas: " + "; ".join(f"{k} in {x.get('sign')} (house {x.get('house')}" + (", with " + ", ".join(x["occupants"]) if x.get("occupants") else "") + ")"
+           for k, x in ar_.items() if isinstance(x, dict) and x.get("sign") and x.get("house")) + ". These rest on the lagna and move with it.", "table")
+    try:
+        from engine.chart import varga_rashi as varga_sign
+        ts = r.get("time_sensitivity") or []
+        for n, use in ((9, "marriage and inner strength"), (10, "work")):
+            L0 = varga_sign(c["lagna"]["lon"], n)
+            pos = "; ".join(f"{p} house {(varga_sign(P[p]['lon'], n) - L0) % 12 + 1}" for p in P)
+            _f(out, f"VG.D{n}", 2, "note", f"D{n} ({use}): lagna {RASHI_NAMES[L0 - 1]}; {pos}. The divisional lagna depends on the birth time - see the sensitivity table (rows: {len(ts)}).", "table")
+    except Exception:                                         # noqa: BLE001 - the tables are an aid, never a blocker
+        pass
+    pn = a.get("panchanga") or {}
+    if pn:
+        _f(out, "PN.birth", 2, "note", f"Birth: {pn.get('vara')}, {pn.get('tithi')}, Moon's star {pn.get('nakshatra')} quarter {pn.get('pada')}, {'day' if pn.get('day_birth') else 'night'} birth "
+           f"(sunrise {pn.get('sunrise')}).", "table")
+
+
 def build(r):
     out = []
-    for fn in (planets, strengths, houses, grid, breakers, disagreements, named, other_clocks):
+    for fn in (planets, strengths, houses, grid, breakers, disagreements, named, other_clocks, timeline):
         fn(r, out)
     ids = [f["id"] for f in out]
     assert len(ids) == len(set(ids)), "duplicate finding id: " + ", ".join(sorted({i for i in ids if ids.count(i) > 1}))

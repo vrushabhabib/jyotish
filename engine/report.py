@@ -475,11 +475,12 @@ def markdown(r, name="native"):
               "Say so in Part 1. The earlier system's record (24 fully right of 39 questions about the past) is archived and is not this system's record. "
               "Log every checking question and every dated forward statement from this reading.\n")
         if st["scored"]:
-            w(f"\n**Project track record (data/ledger.jsonl).** {st['scored']} verification questions scored: {st['overall_strict']*100:.0f}% fully right, "
-              f"{st['overall']*100:.0f}% counting a partly-right answer as half. By chart: " +
-              ", ".join(f"{k} {x['strict']*100:.0f}% (n={x['n']})" for k, x in st["by_chart"].items()) + ". By kind of statement: " +
+            bk = st.get("by_kind", {}); pk, bl = bk.get("past", {"n": 0, "rate": 0, "strict": 0}), bk.get("blind", {"n": 0, "rate": 0})
+            w(f"\n**Project track record (data/ledger.jsonl).** Checking questions about the past, asked cold: {pk['n']} scored, {pk['strict']*100:.0f}% fully right, "
+              f"{pk['rate']*100:.0f}% counting a partly-right answer as half. Sealed blind statements (windows fixed before the date was asked): {bl['n']} scored, {bl['rate']*100:.0f}% right. "
+              f"The two are different tests and are never added together. By kind of statement: " +
               "; ".join(f"{k} {x['strict']*100:.0f}% (n={x['n']})" for k, x in st["by_category"].items()) +
-              f". Every scored item is about the past, asked cold; {st['open']} forward prediction(s) open, none matured yet. "
+              f". {st['open']} statement(s) still open, none of the forward ones matured yet. "
               "Log every dated forward statement with `python3 -m engine.ledger add` before a reading is sent.\n")
     except Exception as e:                                    # noqa: BLE001
         w(f"\n(convergence section failed: {e})\n")
