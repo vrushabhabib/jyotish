@@ -157,3 +157,15 @@ Earlier read: v.5-30, 70-86, 106-110. Now the rest.
 - **v.112-163 named yogas with definitions:** Adhama/Sama/Varishtha (Moon in angle, succedent, cadent from the Sun), Adhi yoga from the Moon and from the lagna, Gaja-Kesari (with the condition: Moon seen by Mercury, Venus, Jupiter, none debilitated or combust - v.116), Amala, Vesi/Vasi/Ubhayachari, Shubha/Papa kartari, Parvata, Kahala, Malika (twelve forms), Chamara, Shankha, Bheri, Mridanga, Shrinatha, Sharada, Matsya, Kurma, Khadga, Lakshmi, Kusuma, Parijata, Kalanidhi, Amshavatara, Hari-Hara-Brahma.
 - **v.164-180 the 32 sky-pattern (nabhasa) yogas**, credited to Varahamihira - same as Brihat Jataka ch. 12, already in our catalogue.
 - **Check to do at design stage:** compare these definitions one by one with the engine's 181-yoga catalogue. Gaja-Kesari's extra condition (v.116) is the one most often dropped in popular use.
+
+## Jataka Parijata ch. 8 - Planets together, in signs and in houses, 118 verses (read in full 13 Nov 2026)
+A descriptive chapter: character and standing, no timing.
+- **v.1-38** results of two, three, four, five and six planets in one sign (every combination, one line each).
+- **v.39-45** each planet in each of the twelve signs (one word per sign); v.45: read the navamsa the same way as the sign.
+- **v.46-55** aspects: any planet seen by a malefic = illness and loss of standing; seen by a benefic = children, money, honour (v.46-47); the Moon in each sign seen by each planet (v.48-54); v.55: apply the same to navamsas.
+- **v.56-101** each planet (with Rahu and Ketu) in each of the twelve houses. Lines that differ from popular reading and agree with our existing rules: Sun in the 6th = respected, famous, wealthy (v.75); Mars in the 6th = destroys rivals (v.76); Rahu in the 6th = wins over rivals, long-lived, happy (v.78); Rahu in the 3rd = very strong and wealthy (v.66); Venus in the 3rd or 6th gives grief and illness unless it is AHEAD of the Sun (v.67); Rahu rising in Leo = royal comforts, Ketu rising in Saturn's signs = lasting wealth and sons (v.61).
+- **v.102-103** count of exalted planets: one exalted and seen by a friend = a person of rank; two = a chief; three = a ruler; four in angles = a great ruler.
+- **v.104-114** each planet in its trine sign, own sign, friend's sign, enemy's sign, debilitation. v.109-111 counts: three exalted = ruler, three in own sign = minister, three combust = servant, three debilitated = dull.
+- **v.115-116 scale, same as 7.58, and extended to navamsas:** full in exaltation; three quarters in trine sign; half in own; a quarter in friend's; little in enemy's; none when debilitated or combust. A friend's navamsa counts like own sign; a debilitated, enemy or combust navamsa like an enemy sign.
+- **v.117:** benefics in angles and trines are good when strong; malefics in 3, 6, 11 are good when strong.
+- **Use:** a second source to cross-check the planet-in-house lines in our life-area files. No new method.
