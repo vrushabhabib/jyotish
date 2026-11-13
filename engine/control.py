@@ -41,7 +41,7 @@ from engine.ashtakavarga import ashtakavarga
 from engine import transits as T
 
 STRONG = ("occupies", "owns", "with", "is karaka")
-RULES = ["ad_link", "md_link", "movable", "link_or_mov", "polarity", "link_and_pol", "polarity_text", "polarity_ishta", "polarity_lp", "transit_moon", "transit_bav", "transit_sav"]
+RULES = ["ad_link", "md_link", "movable", "link_or_mov", "polarity", "link_and_pol", "polarity_text", "polarity_ishta", "polarity_lp", "transit_moon", "transit_bav", "transit_sav", "polarity_natural"]
 
 
 def _date(x):
@@ -159,6 +159,11 @@ def score(birth, sex, events):
             for k, val in (("transit_moon", tm), ("transit_bav", tb), ("transit_sav", ts)):
                 if val != 0:
                     base[k] += 1; hits[k] += (val > 0) == (pol == "good")
+            # Natural benefic / malefic sub-lord (the pattern of Vriddha Yavana Jataka ch. 7; stated before the test):
+            # Jupiter, Venus, Mercury, Moon = good; Sun, Mars, Saturn = bad; no call for the nodes.
+            if ad in ("Jupiter", "Venus", "Mercury", "Moon", "Sun", "Mars", "Saturn"):
+                base["polarity_natural"] += 1
+                hits["polarity_natural"] += (ad in ("Jupiter", "Venus", "Mercury", "Moon")) == (pol == "good")
             call = lp_call(v, lpn, md, ad)
             if call:
                 base["polarity_lp"] += 1; hits["polarity_lp"] += call == pol

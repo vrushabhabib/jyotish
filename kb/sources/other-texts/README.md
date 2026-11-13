@@ -32,3 +32,17 @@ A different branch from everything this project does: the chart is cast for the 
 
 ## Vriddha Yavana Jataka, part 1 - chapter list (from its own table of contents)
 1 signs; 2 planets; 3 conception; 4 birth; 5 length of life; **6 dashas (43 verses); 7 sub-periods (70); 8 Ashtakavarga results (129; the e-text has gaps)**; 9-15 the aspects on each planet; 16 planets in houses; 17-23 each planet through the twelve signs (natal placement, not transit - checked on ch. 21); 24-35 the twelve houses; 36 the lagna; 37-39 lunar yogas. Chapters 6-8 are the part that bears on timing and they have NOT been read.
+
+## Vriddha Yavana Jataka ch. 6-7 - dashas and sub-periods (read in full 13 Nov 2026; the e-text has gaps marked by dots)
+**Ch. 6, 43 verses.**
+- 1 A planet's dasha is the share of the life-span it gave - the life-span dasha, as in Varahamihira. Not Vimshottari.
+- 2 **The dasha of a planet in its own navamsa, a friend's sign or its own sign is good by nature; otherwise it gives bad results.**
+- 3-16 For each of the seven planets, one verse for its good dasha and one for its bad dasha (Sun: standing and gold when good, fear, quarrels and loss of judgement when bad; Moon: ornaments, food, favour / travel, quarrels with one's own, illness; Mars: gain by courage and land / fevers, anger; Mercury: praise, gems / confusion, bad company; Jupiter: honour, learning / worry, separation; Venus: comforts of family / conflict with authority; Saturn: land through the ruler, coarse goods / family enmity, loss of cattle).
+- 17-21 The lagna has a dasha of its own, graded by which third of the sign rises and whether the sign is movable, fixed or dual; good, middling and bad versions.
+- 22-23 Order: the strongest of Moon, Sun and lagna first, then planets in its kendras, then those in the following houses.
+- 24-25 **Sub-period shares: a planet with the dasha lord takes a half, in its trines a third, in its squares a quarter, in its seventh a seventh.** (Same as Laghu Jataka 10.5.)
+- 26-33 How the shares are worked out; exalted double, debilitated or combust half.
+- 34-41 Early death - excluded by the project's rule.
+- 42-43 **Planets heading to debilitation, inside the Sun's disc, beaten in planetary war or in bad divisions do not give good "like snakes struck by a spell"; they destroy good results and increase bad ones; mixed planets give mixed results.**
+**Ch. 7, 70 verses.** The result of each sub-period inside each dasha, pair by pair, for the seven planets and the lagna. The verses go by the natures of the two planets only - no house, no strength. Pattern: sub-periods of Jupiter, Venus, Mercury and the Moon read well in most dashas; those of the Sun, Mars and Saturn read badly; the lagna's sub-period is good or bad as the rising sign is benefic or malefic. Like Parashara ch. 61-63 and Phaladeepika 21, these are fixed grids.
+**What this adds:** a third witness (with Varahamihira and Laghu Jataka) for the life-span dasha and its share rule; a direction rule by natural benefic or malefic; and the same warning as Jataka Parijata 18.28 about combust and debilitated planets. No new method of timing.
