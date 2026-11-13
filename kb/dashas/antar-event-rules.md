@@ -196,3 +196,10 @@ None is above chance. The wider sibling net (3, 9, 11, 7) links almost any chart
 | polarity_parts | Vriddha Yavana Jataka ch. 17-23 v.41-68 | sub-lord's strength parts present minus lacking: +2 or more = good, -2 or less = bad | the thresholds 40/20 of 60 and the +-2 cut |
 | polarity_eighth | Vriddha Yavana Jataka 8.16-129 | sub-lord stands in an eighth-part whose owner gave it a point = good; otherwise bad | the order of owners; half the method verse is missing |
 Same reading rule as Rule 19: under 1% to be worth a note, and then only for the confirmation set.
+
+### Result of Rule 20 (13 Nov 2026; 5 charts, 37 events, 1,000 wrong-chart sets)
+| Rule | Right | Wrong charts average | Wrong-chart sets as good |
+|---|---|---|---|
+| polarity_parts | 3 of 10 | 5.7 | 91% |
+| polarity_eighth | 13 of 25 | 11.1 | 27% |
+Neither is above chance. Neither is used in a reading. Direction rules tried so far: fourteen; one at 1.3% carried by one chart (Rule 18, frozen), one at 10%, twelve at chance. Every rule the reading produced has now been tested on the data we have; nothing more can be learned from these five people.

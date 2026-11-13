@@ -50,3 +50,8 @@ Parashara, introducing Ashtakavarga: to settle the length of life and the course
 Not available as a clean free Sanskrit text (searched 12 Nov 2026) and therefore not used as sources: **Jaimini's Upadesha Sutras** and **Saravali**. Rules once cited to them through secondary pages keep that tag. Narayana dasha is taught only in modern in-copyright books and is not adopted.
 
 - **Laghu Parashari (Ududaya Pradipa)** - Sanskrit Wikisource, https://sa.wikisource.org/wiki/लघुपाराशरी (free). All 42 verses read 13 Nov 2026; record in `kb/sources/laghu-parashari/README.md`. Not on sanskritdocuments.org.
+
+## Search of 13 Nov 2026 for the three unread texts
+- **Saravali (Kalyanavarman):** FOUND free - the Nirnaya Sagar Press edition of 1928 (ed. V. Subrahmanya Shastri), page text at https://jainqq.org/pagetext/Saravali/009887/1 (pages 1 to about 268); a scan of the same edition is listed by the National Virtual Library of India. Not yet read: the page text can only be taken through the browser. Out of copyright by age; no licence statement on the page.
+- **Vriddha Yavana Jataka part two (ch. 40-71):** no free e-text found; a printed edition is on sale. Excluded by the source rule until a free copy turns up.
+- **Jaimini sutras:** only manuscript images (University of Pennsylvania, Ms. Coll. 390 items 700 and 706, adhyayas 1-2) and paid editions found. No clean free text yet. One search each - not exhaustive.
