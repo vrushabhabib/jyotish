@@ -36,6 +36,9 @@ def save(rows):
 def add(chart, statement, category="timing", kind="forward", window=None, basis="", confidence=None,
         outcome="open", made=None, note="", count=1):
     rows = load()
+    for r in rows:                      # duplicate guard (13 Nov 2026): a retried turn must not log the same statement twice
+        if r["chart"] == chart and r["statement"] == statement and r.get("window") == window and r.get("kind") == kind:
+            return r["id"]
     rid = f"{chart}-{len([r for r in rows if r['chart'] == chart]) + 1:03d}"
     rows.append({"id": rid, "chart": chart, "made": made or dt.date.today().isoformat(), "kind": kind,
                  "category": category, "statement": statement, "window": window, "basis": basis,

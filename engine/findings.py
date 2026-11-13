@@ -48,33 +48,33 @@ HOUSE_NAME = {1: "self and body", 2: "money, speech, family", 3: "siblings, cour
 #         chance = tested, no better than wrong charts (never state as a direction) | frozen = awaiting confirmation on new people |
 #         pending = in the texts, NOT yet computed | excluded = read, never used (project rule)
 RULES = {
-    "state": {"source": "BPHS 3, 45; Jataka Parijata 2", "status": "text", "what": "dignity, combustion, retrogression, junctions"},
-    "scale": {"source": "Jataka Parijata 7.58, 8.115-116", "status": "text", "what": "share of result by dignity: exalted full, trine sign 3/4, own 1/2, friend 1/4, enemy little, debilitated or combust none"},
-    "navamsa_reversal": {"source": "Jataka Parijata 6.36 (also five places in ch. 18)", "status": "text", "what": "exalted sign with debilitated navamsa gives low results; debilitated sign with exalted navamsa gives good"},
-    "house_judgement": {"source": "Jataka Parijata 11.1-12", "status": "text", "what": "what builds and what harms each house"},
-    "house_degree": {"source": "Jataka Parijata 11.12", "status": "text", "what": "a planet at the house's own degree gives the full result, further away less"},
-    "breaker": {"source": "Jataka Parijata 6.10, 6.21-24, 6.28, 6.30", "status": "text", "what": "what breaks the chart's promise"},
-    "aspect_nature": {"source": "Vriddha Yavana Jataka ch. 9-15, 36", "status": "frozen", "what": "seen by Moon, Mercury, Jupiter, Venus = good; by Sun, Mars, Saturn = bad (same idea as Rule 18)"},
-    "strength_part": {"source": "Vriddha Yavana Jataka ch. 17-23 v.41-68", "status": "text", "what": "each separate kind of strength has its own result, present or lacking"},
-    "quality_grid": {"source": "Vriddha Yavana Jataka ch. 24a-35", "status": "text", "what": "kind of result of a planet in a house by sign dignity, navamsa dignity and division owners"},
-    "sources_disagree": {"source": "Vriddha Yavana Jataka ch. 16, 30 against Jataka Parijata ch. 8 and Brihat Jataka", "status": "text", "what": "the texts give opposite results for this placement"},
-    "caution": {"source": "Jataka Parijata 18.27-28", "status": "text", "what": "check before stating any gain in this planet's period"},
-    "yoga": {"source": "engine catalogue (BPHS, Phaladeepika, Brihat Jataka, Jataka Parijata 7)", "status": "text", "what": "named combination present"},
-    "yoga_timing": {"source": "Garga in Jataka Parijata 7.66", "status": "text", "what": "a yoga pays in the dasha of the strong planet that makes it"},
-    "dosha": {"source": "BPHS 80.47; Jataka Parijata 14.34", "status": "text", "what": "Mars placement for marriage"},
-    "link_timing": {"source": "Jataka Parijata 11.51, 12.2-3, 12.23, 12.110; Vriddha Yavana Jataka 25.31", "status": "hint", "what": "results come in the period of the planet in, looking at, ruling or signifying the house (26 of 37 against 20.4)"},
-    "direction": {"source": "our own control tests", "status": "chance", "what": "good/bad direction of a period - seven methods at chance; state the subject, not the direction"},
-    "time_doubt": {"source": "engine", "status": "text", "what": "what changes inside the doubt in the birth time"},
+    "state": {"text_quality": "clean", "source": "BPHS 3, 45; Jataka Parijata 2", "status": "text", "what": "dignity, combustion, retrogression, junctions"},
+    "scale": {"text_quality": "clean", "source": "Jataka Parijata 7.58, 8.115-116", "status": "text", "what": "share of result by dignity: exalted full, trine sign 3/4, own 1/2, friend 1/4, enemy little, debilitated or combust none"},
+    "navamsa_reversal": {"text_quality": "clean", "source": "Jataka Parijata 6.36 (also five places in ch. 18)", "status": "text", "what": "exalted sign with debilitated navamsa gives low results; debilitated sign with exalted navamsa gives good"},
+    "house_judgement": {"text_quality": "clean; one verse (11.4) has a gap", "source": "Jataka Parijata 11.1-12", "status": "text", "what": "what builds and what harms each house"},
+    "house_degree": {"text_quality": "clean; no scale given", "source": "Jataka Parijata 11.12", "status": "text", "what": "a planet at the house's own degree gives the full result, further away less"},
+    "breaker": {"text_quality": "clean; conditions sit in combined verses and are split by us", "source": "Jataka Parijata 6.10, 6.21-24, 6.28, 6.30", "status": "text", "what": "what breaks the chart's promise"},
+    "aspect_nature": {"text_quality": "clean; about one verse in twenty damaged", "source": "Vriddha Yavana Jataka ch. 9-15, 36", "status": "frozen", "what": "seen by Moon, Mercury, Jupiter, Venus = good; by Sun, Mars, Saturn = bad (same idea as Rule 18)"},
+    "strength_part": {"text_quality": "clean text; THRESHOLDS OURS", "source": "Vriddha Yavana Jataka ch. 17-23 v.41-68", "status": "text", "what": "each separate kind of strength has its own result, present or lacking"},
+    "quality_grid": {"text_quality": "about one verse in six damaged", "source": "Vriddha Yavana Jataka ch. 24a-35", "status": "text", "what": "kind of result of a planet in a house by sign dignity, navamsa dignity and division owners"},
+    "sources_disagree": {"text_quality": "clean", "source": "Vriddha Yavana Jataka ch. 16, 30 against Jataka Parijata ch. 8 and Brihat Jataka", "status": "text", "what": "the texts give opposite results for this placement"},
+    "caution": {"text_quality": "clean", "source": "Jataka Parijata 18.27-28", "status": "text", "what": "check before stating any gain in this planet's period"},
+    "yoga": {"text_quality": "mixed - see catalogue tags", "source": "engine catalogue (BPHS, Phaladeepika, Brihat Jataka, Jataka Parijata 7)", "status": "text", "what": "named combination present"},
+    "yoga_timing": {"text_quality": "clean", "source": "Garga in Jataka Parijata 7.66", "status": "text", "what": "a yoga pays in the dasha of the strong planet that makes it"},
+    "dosha": {"text_quality": "clean", "source": "BPHS 80.47; Jataka Parijata 14.34", "status": "text", "what": "Mars placement for marriage"},
+    "link_timing": {"text_quality": "clean", "source": "Jataka Parijata 11.51, 12.2-3, 12.23, 12.110; Vriddha Yavana Jataka 25.31", "status": "hint", "what": "results come in the period of the planet in, looking at, ruling or signifying the house (26 of 37 against 20.4)"},
+    "direction": {"text_quality": "our tests", "source": "our own control tests", "status": "chance", "what": "good/bad direction of a period - seven methods at chance; state the subject, not the direction"},
+    "time_doubt": {"text_quality": "calculation", "source": "engine", "status": "text", "what": "what changes inside the doubt in the birth time"},
     # --- in the texts, not yet computed: printed on every worksheet -------------------------------------------
-    "kalachakra": {"source": "BPHS 46.52-154; Jataka Parijata 17", "status": "text", "what": "Kalachakra dasha - a second clock, by signs; sensitive to birth time; periods after the first cycle rest on a rule not in the verses"},
-    "lifespan_dasha": {"source": "Brihat Jataka 7-8; Vriddha Yavana Jataka 6; Jataka Parijata 5.2-16", "status": "text", "what": "the old dasha built on each planet's share - periods only, experimental, several conventions ours, never a length of life"},
-    "prashna": {"source": "Shatpanchashika; Daivajna Vallabha", "status": "text", "what": "question charts - separate tool: python3 -m engine.prashna (not part of a birth reading)"},
-    "second_seventh_from_house": {"source": "Jataka Parijata 5.50", "status": "chance", "what": "periods of the lords of the 2nd and 7th from any house harm that house - tested 13 Nov 2026: 1 of 4, at chance, far too few cases"},
-    "eighth_part": {"source": "Vriddha Yavana Jataka 8.16-129", "status": "chance", "what": "a planet's period judged by the eighth-part of the sign it stands in - tested 13 Nov 2026: 13 of 25 against 11.1 (27% of wrong charts as good), not significant; owner order unsourced"},
-    "siblings_3_9_11_7": {"source": "Jataka Parijata 12.2-3", "status": "chance", "what": "siblings judged from houses 3, 9, 11 and 7 - tested 13 Nov 2026: 4 of 5 against 3.9 for wrong charts, no information (the wider net catches wrong charts too)"},
-    "lagna_tie": {"source": "Jataka Parijata 12.110, 12.130", "status": "chance", "what": "for rank and vehicles the planet must also be tied to the lagna - tested 13 Nov 2026: 4 of 12 against 2.4 (23% of wrong charts as good), not significant"},
+    "kalachakra": {"text_quality": "sequences clean after totals check; CONTINUATION RULE OURS", "source": "BPHS 46.52-154; Jataka Parijata 17", "status": "text", "what": "Kalachakra dasha - a second clock, by signs; sensitive to birth time; periods after the first cycle rest on a rule not in the verses"},
+    "lifespan_dasha": {"text_quality": "spans clean; SEVERAL CONVENTIONS OURS; one reduction omitted (damaged verse)", "source": "Brihat Jataka 7-8; Vriddha Yavana Jataka 6; Jataka Parijata 5.2-16", "status": "text", "what": "the old dasha built on each planet's share - periods only, experimental, several conventions ours, never a length of life"},
+    "prashna": {"text_quality": "clean; +-2 THRESHOLD OURS", "source": "Shatpanchashika; Daivajna Vallabha", "status": "text", "what": "question charts - separate tool: python3 -m engine.prashna (not part of a birth reading)"},
+    "second_seventh_from_house": {"text_quality": "clean", "source": "Jataka Parijata 5.50", "status": "chance", "what": "periods of the lords of the 2nd and 7th from any house harm that house - tested 13 Nov 2026: 1 of 4, at chance, far too few cases"},
+    "eighth_part": {"text_quality": "DAMAGED method verse; OWNER ORDER UNSOURCED", "source": "Vriddha Yavana Jataka 8.16-129", "status": "chance", "what": "a planet's period judged by the eighth-part of the sign it stands in - tested 13 Nov 2026: 13 of 25 against 11.1 (27% of wrong charts as good), not significant; owner order unsourced"},
+    "siblings_3_9_11_7": {"text_quality": "clean", "source": "Jataka Parijata 12.2-3", "status": "chance", "what": "siblings judged from houses 3, 9, 11 and 7 - tested 13 Nov 2026: 4 of 5 against 3.9 for wrong charts, no information (the wider net catches wrong charts too)"},
+    "lagna_tie": {"text_quality": "clean", "source": "Jataka Parijata 12.110, 12.130", "status": "chance", "what": "for rank and vehicles the planet must also be tied to the lagna - tested 13 Nov 2026: 4 of 12 against 2.4 (23% of wrong charts as good), not significant"},
     "grid_english": {"source": "Vriddha Yavana Jataka ch. 24a-35", "status": "pending", "what": "the grid verses are stored in Sanskrit (data/vyj_grid.json) and printed on the worksheet; a fixed English wording per verse is not stored - it is read at the time of the reading"},
-    "strength_count": {"source": "Vriddha Yavana Jataka ch. 17-23", "status": "chance", "what": "count of strength parts as a good/bad rule for a period - tested 13 Nov 2026: 3 of 10 against 5.7 for wrong charts, at chance (thresholds ours)"},
+    "strength_count": {"text_quality": "clean text; THRESHOLDS OURS", "source": "Vriddha Yavana Jataka ch. 17-23", "status": "chance", "what": "count of strength parts as a good/bad rule for a period - tested 13 Nov 2026: 3 of 10 against 5.7 for wrong charts, at chance (thresholds ours)"},
     "house_lords_in_houses_vyj": {"source": "Vriddha Yavana Jataka part two, ch. 40-71", "status": "pending", "what": "not read - searched 13 Nov 2026: no free e-text found; only a printed edition for sale, which the source rule excludes"},
     "saravali": {"source": "Saravali of Kalyanavarman, Nirnaya Sagar Press edition (1928), page text at jainqq.org/pagetext/Saravali/009887/1 to 268", "status": "pending", "what": "FOUND free online 13 Nov 2026, NOT yet read - about 268 pages, needs the browser"},
     "jaimini": {"source": "Jaimini (Upadesha) sutras", "status": "pending", "what": "not read - only manuscript images (UPenn Ms. Coll. 390 items 700, 706) and paid editions found; no clean free text yet"},
@@ -356,7 +356,7 @@ def markdown(findings):
         L.append(f"\n**Part {part} - {PARTS[part]}**\n")
         for f in sorted(rows, key=lambda x: (x["weight"] != "must", x["id"])):
             ru = RULES[f["rule"]]
-            L.append(f"- {'MUST' if f['weight'] == 'must' else 'note'} `[F:{f['id']}]` {f['text']} _(source: {ru['source']}; evidence: {ru['status']})_")
+            L.append(f"- {'MUST' if f['weight'] == 'must' else 'note'} `[F:{f['id']}]` {f['text']} _(source: {ru['source']}; text: {ru.get('text_quality', 'n/a')}; evidence: {ru['status']})_")
     L.append("\n**In the texts but NOT computed for this chart - say so in Part 13**\n")
     for p in pending():
         L.append(f"- {p['what']} _({p['source']})_")

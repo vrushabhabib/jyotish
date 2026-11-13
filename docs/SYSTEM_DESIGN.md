@@ -47,3 +47,27 @@
 
 ## What this does not do
 It makes the reading complete and traceable. It does not make it more accurate: accuracy is measured only by the ledger and the control tests, and those still say that the subject of a period has a faint edge and the direction has none.
+
+## The gated road (added 13 Nov 2026, evening) - `python3 -m engine.pipeline`
+| Step | Command | It refuses to pass when |
+|---|---|---|
+| 0 | `preflight` | a test fails on either engine, or the repo is out of step with GitHub |
+| 1 | `start SLUG ... --window MIN --events-before-chart yes/no --out DIR` | birth-time doubt or the events question is not answered |
+| 2 | `verify SLUG` | fewer than 8 checking questions are scored in the ledger |
+| 3 | `gate SLUG DRAFT.md --verdicts V.json` | a MUST finding is untouched; a tag matches nothing; the linter finds forbidden wording, the requester's name, an untagged chart claim or a prediction resting on frozen/chance evidence; the independent review has not marked every paragraph "supported" |
+| 4 | `send SLUG DRAFT.md --out FINAL.md` | the draft changed after the gate |
+Re-running a step wipes the steps after it. `status` shows where every case stands. Case files hold step states only.
+
+## Guard for each mistake we have made
+| Mistake | Guard | Where |
+|---|---|---|
+| A caution in the text skipped | findings register + check | engine/findings.py |
+| Anchored questions | events before chart; intake refuses otherwise | engine/intake.py, pipeline start |
+| Many rules on the same events | pre-registration; confirmation set | antar-event-rules Rules 18-20; engine/intake.py |
+| Our thresholds mixed with the texts' | source + evidence word + text-quality grade on every rule | RULES in engine/findings.py |
+| Calculation slips | two engines; PDF cross-check; frozen reference charts | tests/, tests/golden/reference.json (regenerate only on purpose with tools/make_golden.py) |
+| Duplicate ledger rows | duplicate guard | engine/ledger.py |
+| Claim with nothing behind it; forbidden content; requester named; overclaim | draft linter | engine/lint.py |
+| Writer checking his own work | review packet for a separate reviewer; record tied to the draft's hash | engine/review.py |
+| Private events lost on reset | private store outside this repo | engine/private_store.py - durable only once the separate private repository exists |
+| Wrong statements in my own source notes; unreviewed Sanskrit | NOT automated: text-quality grades flag damaged or convention-based rules; a second reader and scanned print editions are still needed | open |

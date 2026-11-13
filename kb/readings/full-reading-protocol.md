@@ -137,3 +137,6 @@ The worksheet's last section lists every finding with an id. Rules:
 5. Copy the "NOT computed" block into Part 13.
 6. Before sending: `python3 -m engine.findings check DIR/name.computed.json DRAFT.md` must pass; then `python3 -m engine.findings strip DRAFT.md`.
 Design note: docs/SYSTEM_DESIGN.md.
+
+## 12. The gated road (13 Nov 2026) - every reading goes through `python3 -m engine.pipeline`
+preflight -> start -> verify -> gate -> send. No step is done by hand around the pipeline. Before the gate: make the review packet (`python3 -m engine.review packet COMPUTED DRAFT`), give it to a separate reviewer that has not seen the draft being written, and save its verdicts as JSON. Method and limits paragraphs (Parts 1 and 13) start with `> method:` so the linter does not ask them for tags. Table of steps and what each refuses: docs/SYSTEM_DESIGN.md.
