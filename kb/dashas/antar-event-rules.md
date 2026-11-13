@@ -131,3 +131,5 @@ Asking "did X happen in period P?" anchors the answer (Rule 15). The blind form 
 3. Ask only for the date ("which month and year did ... happen?"), one question at a time.
 4. Reveal the sealed windows, score hit or miss (no "partly" for a single dated event; an event with several dates is scored date by date), and compare the hit rate with the average sealed share.
 5. The dated answers go into the person's private events file for the control-chart test.
+- **Choice form (added the same day, first chart).** Most people do not carry dates in their heads: three open "when did it happen?" questions in a row could not be answered. Offer instead three or four periods that together cover the plausible span, cut at the chart's own sub-period boundaries, WITHOUT saying which the chart points to; the person picks one (or names the month). Recognition is easier than recall and the answer is still blind. Chance of a hit by luck = the share of the offered span inside the sealed windows. Never fall back to "the chart says X - right or wrong?" (Rule 15).
+- First blind result: one scorable answer out of four questions, a miss (sealed share 25%).
