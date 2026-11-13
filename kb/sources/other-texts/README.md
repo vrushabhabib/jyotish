@@ -169,3 +169,11 @@ A descriptive chapter: character and standing, no timing.
 - **v.115-116 scale, same as 7.58, and extended to navamsas:** full in exaltation; three quarters in trine sign; half in own; a quarter in friend's; little in enemy's; none when debilitated or combust. A friend's navamsa counts like own sign; a debilitated, enemy or combust navamsa like an enemy sign.
 - **v.117:** benefics in angles and trines are good when strong; malefics in 3, 6, 11 are good when strong.
 - **Use:** a second source to cross-check the planet-in-house lines in our life-area files. No new method.
+
+## Jataka Parijata ch. 9 - Gulika and the calendar of birth, 129 verses (read in full 13 Nov 2026)
+Descriptive; no dasha or transit rule.
+- **v.1-9 Gulika (Mandi)** in each house; only the 3rd, 6th and 11th give good (v.2, 4, 6). v.7: planets with Gulika, and the lord of Gulika's sign, give unwanted results. v.8-9 Gulika with each planet. The engine already computes Gulika; this is its use.
+- **v.10-25** character by each of the sixty named years; **v.26-33** by half-year, season, month, fortnight, time of day; **v.34-37** by lunar day; **v.38-39** weekday; **v.85-91** by each of the 27 stars; **v.92-94** Moon's sign; **v.95-97** Moon's navamsa; **v.98-101** the 27 yogas; **v.102-104** the eleven karanas; **v.105-110** rising sign; **v.111-112** hora; **v.113-117** decanate classes (cruel, watery, gentle, mixed); **v.118-119** navamsa lord; **v.120-122** twelfth-part; **v.123** thirtieth-part; **v.124-126** the three qualities of the hour; **v.127-128** planetary hour of birth.
+- **v.40-44** list of star names and synonyms (useful for reading other texts).
+- **v.45-84 junction births (gandanta)** and star, lunar-day and yoga "faults". These verses name deaths of parents and relatives. NOT passed on under our rules. The definition itself is usable: the junctions Jyeshtha/Mula, Ashlesha/Magha, Revati/Ashvini (v.45).
+- **Use:** these are one-line character sketches by calendar element - the weakest kind of evidence, shared by everyone born that day or year. They belong, if anywhere, in Part 3 (nature) of a reading with that caveat. The engine already prints most of these calendar elements.
