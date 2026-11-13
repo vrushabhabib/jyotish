@@ -14,12 +14,18 @@
   "source_documents": [
    "AstroSage calculation report (19 pp.) and full report (56 pp.), both printed 13 Nov 2026"
   ],
-  "time_source": "stated by the native as 06:28; origin of the figure (record or family memory) to be confirmed",
+  "time_source": "hospital record (stated 13 Nov 2026) - margin taken as 2 minutes either side",
   "occupation": "business",
   "cross_check": "all bodies within 1 arc-minute of AstroSage except Jupiter (1.64', the known AstroSage residual); Moon star and quarter identical; combined Ashtakavarga identical sign by sign; D9, D10 and D7 lagnas identical; dasha balance differs by 3.5 days",
   "sensitivity": "D9 lagna changes at 06:25 (three minutes before the stated time), D10 lagna at 06:33; five minutes of doubt moves every dasha date about three weeks"
  },
- "verification": [],
+ "verification": [
+  {
+   "id": "vrushab-001",
+   "asked": "2026-11-13",
+   "score": "hit"
+  }
+ ],
  "readings": [],
  "computed": {
   "schema_version": 4,
