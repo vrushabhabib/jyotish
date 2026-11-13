@@ -177,3 +177,25 @@ Descriptive; no dasha or transit rule.
 - **v.40-44** list of star names and synonyms (useful for reading other texts).
 - **v.45-84 junction births (gandanta)** and star, lunar-day and yoga "faults". These verses name deaths of parents and relatives. NOT passed on under our rules. The definition itself is usable: the junctions Jyeshtha/Mula, Ashlesha/Magha, Revati/Ashvini (v.45).
 - **Use:** these are one-line character sketches by calendar element - the weakest kind of evidence, shared by everyone born that day or year. They belong, if anywhere, in Part 3 (nature) of a reading with that caveat. The engine already prints most of these calendar elements.
+
+## Jataka Parijata ch. 11 (1st and 2nd houses, 95 verses) and ch. 12 (3rd and 4th houses, 149 verses) - read in full 13 Nov 2026
+With these, ALL EIGHTEEN chapters of Jataka Parijata are read.
+**General rules for judging any house (11.1-12) - the clearest statement of method in the book:**
+- A house joined or seen by Venus, Mercury, Jupiter or its own lord, and not by others, prospers (v.1-2).
+- A planet in debilitation or an enemy's sign destroys the house it sits in; in its trine sign, exaltation or a friend's sign it builds it (v.3).
+- The house fails when its lord is in 6/8/12, or a lord of 6/8/12 sits in it, unless a benefic sees it (v.4); it thrives when its lord is in an angle or trine, seen by benefics, strong, in good divisions (v.5); also when benefics occupy the trines, 4th, 7th or 10th FROM THAT HOUSE (v.6).
+- v.8: when the house lord is in a bad house, combust or weak, planets sitting in the house cannot deliver.
+- v.10: if the lord of the sign where the house lord sits is badly placed, the house is weak (the engine does not check this second step).
+- v.11: planets in the 11th, 2nd, 3rd from a house, friends of its lord, and the lord of that lord's exaltation sign strengthen it.
+- **v.12: a planet at the same degree as the house's own degree gives the FULL result; nearer or further, in proportion.** (The engine uses whole signs and ignores this.)
+**Timing lines (all say the same thing: the period of the planet in, looking at, or ruling the house):**
+- 11.51: money comes in the dasha and sub-period of, first, the planet in the 2nd, second the one looking at it, third its lord. 11.53: the planet in the 2nd, if seen by a malefic and debilitated, in an enemy sign or combust, takes money away in its period, or when it is weak in transit.
+- 11.28: the lagna's occupant, aspector and lord give nothing in their periods if they are lords of 6/8/12, debilitated or weak.
+- 12.2-3: **siblings come in the dashas of the lords of the 3rd, 9th, 11th AND 7th**; of the lord, the sign and the occupant, the strongest one's dasha brings them. 12.23: significator, lord, aspector and occupant give good or bad to siblings in their dasha and sub-period.
+- 12.40, 12.109-111, 12.130: valour, vehicles, rank come in the periods of the strong planets tied to that house AND to the lagna. 12.132-133: gains and losses of fortune timed by the 4th lord's and 6th lord's periods.
+- 12.136: house and land are lost in the period of a planet hostile to the lagna lord that rules the 4th; trouble in the periods of planets joined to Saturn, Mars or Gulika.
+**Other content:** 11.13-48 body, fame, homeland or abroad (v.22-25: movable lagna and lord = fortune abroad; fixed = at home), early or late happiness (v.38-42); 11.49-64 money; 11.65-95 eyes, face, speech, learning, family, food. 12.1-58 siblings, courage, voice, ornaments, clothes, food; 12.59-149 learning, mother, comfort, relatives, vehicles, rank, land, house. Verses on the death of siblings and parents (12.6-10, 27-32, 62-80), on parentage and on the mother's conduct (12.67-73) are read and NOT passed on.
+**What this means for our setup**
+- It CONFIRMS the design of our link test: the text's own timing rule is "occupant, aspector, lord, significator of the house". That is the one rule in our tests with a faint edge (26 of 37 against 20.4).
+- Three refinements we do not have: (a) for siblings the houses are 3, 9, 11 and 7, not only 3 and 11; (b) the planet must also be tied to the lagna for rank and vehicles; (c) v.12, closeness to the house degree as a weight. Each is a change to the link rule and must be written down before it is tested.
+- Still no rule that turns a link into good or bad beyond the planet's dignity (v.3, 53) - which our tests already cover and found at chance.
