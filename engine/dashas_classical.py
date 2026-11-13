@@ -74,6 +74,7 @@ def kalachakra(moon_lon, birth, horizon_years=110):
             "notes": ["Sensitive to birth time: the Moon moves one star-quarter in about 6 hours, and the balance shifts by up to "
                       f"{KC_TOTAL[key] / (PADA / 13.18 * 24 * 60):.2f} years per minute of birth time.",
                       "Periods marked cycle 2 or later rest on a continuation rule that is NOT in the verses we read.",
+                      "Ashlesha is placed in the Ashvini group by the count of ten stars the text states; its name is not legible in our copy.",
                       "Order of sub-periods is our convention. Sub-period lengths follow Jataka Parijata 17.107-108.",
                       "The text's reading: the sign's house from the lagna gives the subject and direction (BPHS 46.131-154); untested by us."]}
 

@@ -550,10 +550,10 @@ def main(argv=None):
         name, sex = o.name, o.sex
     r = build(date, time, float(lat), float(lon), tz, name, sex, o.window)
     md = markdown(r, name)
-    md += F.markdown(r["findings"])
-    md += other_clocks_md(r)
     if check:
         md += "\n## 14. Cross-check against the supplied PDF\n\n```\n" + json.dumps(check, indent=1, default=str)[:3000] + "\n```\n"
+    md += F.markdown(r["findings"])
+    md += other_clocks_md(r)
     if o.out:
         os.makedirs(o.out, exist_ok=True)
         stem = os.path.join(o.out, f"{name.lower().replace(' ', '-')}_{date}")
