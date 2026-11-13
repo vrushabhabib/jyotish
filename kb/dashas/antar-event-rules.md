@@ -106,3 +106,12 @@ What was skipped: the sub-lord sat within about 3 degrees of Rahu, and the texts
 - Before reading the good side of a sub-lord's houses, check rule 13 of `dasha-systems.md` (debilitated, joined to a debilitated planet, joined to Rahu). If it applies, state the houses as the subject and do not promise the gain.
 - Strength (Shadbala rank) decides how much a planet can do, not whether a planet tied to Rahu does it cleanly.
 - One case only. Counts for and against go in the ledger; drop this rule if later cases contradict it.
+
+## Rule 13 — Movable significators are shown in the link test, not yet counted (added 13 Nov 2026, under test)
+The link test counts houses, their lords and the fixed significators. A sibling's birth fell in the sub-period of a planet with no such link to the 3rd or 11th; that planet was the native's movable significator of siblings by Parashara's own list (BPHS 32.13-16).
+- The worksheet now marks the movable significator of each area with 'm' in the link-test table. It is displayed only.
+- Evidence so far, sibling births on file (3 births, 2 charts): the house-and-fixed-significator test covered 2 of 3; the third is the case above. In one of those charts five of nine planets are strongly linked to siblings, so the test barely discriminates for this area anyway.
+- Do not state an event on an 'm' alone. Promote it to a counted link only if forward-logged cases support it; drop the mark if they do not. Keep the count here.
+
+## Rule 14 — Fix first (standing instruction of the owner, 13 Nov 2026)
+Whenever a mistake, a gap, a limitation that can be reduced or an improvement to the process is found - during verification, a reading or any other work - it is fixed before the next question is asked or the next statement is made: the rule is written here, the check is coded into the engine where it can be coded, a test is added, the worksheet is rebuilt, and the change is pushed. Only then does the work continue. What cannot be fixed is stated plainly as a limit instead.

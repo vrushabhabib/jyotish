@@ -85,3 +85,21 @@ def test_published_ingresses():
 
 def test_kp_subdivision_sums():
     assert kp_lords(0.0 - 5.8 / 60) == ["Ketu", "Ketu", "Ketu"]                         # 0 Aries KP = Ketu/Ketu/Ketu
+
+
+def test_period_cautions_and_movable_mark():
+    """Fix-first changes of 13 Nov 2026: planets the texts bar from giving good in their own period
+    (Jataka Parijata 18.27-28) and the movable-significator mark in the link test."""
+    from engine.report import build, MOVABLE
+    from engine.analysis import period_cautions
+    r = build("1987-02-03", "06:28", 15.3333, 75.1333, "Asia/Kolkata", sex="M")
+    c = period_cautions(r["analysis"]["view"])
+    assert any(x.startswith("joined to Rahu") for x in c["Mars"])
+    assert any(x.startswith("joined to Rahu") for x in c["Moon"])
+    assert "at a sign junction (strain)" in c["Jupiter"]
+    assert c["Venus"] == [] and c["Saturn"] == [] and c["Rahu"] == []
+    assert r["analysis"]["karakas"]["seven_bphs"][MOVABLE["siblings"]] == "Sun"
+    t = _chart()                                               # no debilitated-planet false positives on the reference chart
+    from engine.analysis import analyse
+    c2 = period_cautions(analyse(t)["view"])
+    assert set(c2) >= {"Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"}

@@ -119,3 +119,9 @@ The owner restarted every reading on 13 Nov 2026. From that date:
 4. Where no stored answer covers a question, ask the person.
 5. The ledger starts empty. Part 1 says so, and says the earlier system scored 62% on 39 questions about the past as background only.
 6. Comparing old with new is done only when the owner asks, and after the new reading is finished.
+
+
+## 10. Fix first (owner's standing instruction, 13 Nov 2026)
+Whenever a mistake, a gap, a limitation that can be reduced or an improvement to the process is found, fix it before the next question or prediction: write the rule (`kb/dashas/antar-event-rules.md`), code the check into the engine where it can be coded, add a test, rebuild the worksheet, push. Then continue. A limit that cannot be fixed is stated plainly instead.
+- Worksheet section 11 now has the column "Check before stating any gain" (Jataka Parijata 18.27-28). Where it is not "-", name the planet's houses as the subject of the period and do not promise their gain.
+- Worksheet section 10 marks the movable significator of each area with 'm'. Shown, not counted (Rule 13).

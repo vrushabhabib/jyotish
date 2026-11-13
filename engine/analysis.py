@@ -112,6 +112,32 @@ class View:
         return out
 
 
+
+def period_cautions(v: "View"):
+    """Planets the texts say do not give good in their own period, whatever their strength.
+    Jataka Parijata 18.28 (read in the Sanskrit, kb/sources/jataka-parijata/README.md): a debilitated planet,
+    a planet joined to it, a planet joined to Rahu, the lord of a debilitated planet's sign. 18.27: a planet at
+    a sign junction gives strain. Returns {planet: [caution, ...]}; an empty list means none applies.
+    Added 13 Nov 2026 after the first miss of the rebuilt system (kb/dashas/antar-event-rules.md, Rule 12)."""
+    out = {p: [] for p in PLANET_ORDER}
+    debil = [p for p in SEVEN if v.s[p] == DEBIL[p]]
+    for p in SEVEN:
+        if p in debil:
+            out[p].append("debilitated")
+        for d in debil:
+            if d != p and v.s[d] == v.s[p]:
+                out[p].append(f"joined to debilitated {d}")
+            if d != p and RASHI_LORD[v.s[d] - 1] == p:
+                out[p].append(f"lord of the sign of debilitated {d}")
+        if v.s[p] == v.s["Rahu"]:
+            gap = abs(v.lon[p] - v.lon["Rahu"]) % 360
+            out[p].append(f"joined to Rahu ({min(gap, 360 - gap):.0f} deg apart)")
+        deg = v.lon[p] % 30
+        if deg < 1 or deg > 29:
+            out[p].append("at a sign junction (strain)")
+    return out
+
+
 # --------------------------------------------------------------------------- panchanga
 TITHI = ["Pratipada", "Dwitiya", "Tritiya", "Chaturthi", "Panchami", "Shashthi", "Saptami", "Ashtami", "Navami",
          "Dashami", "Ekadashi", "Dwadashi", "Trayodashi", "Chaturdashi"]

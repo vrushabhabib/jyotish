@@ -12,10 +12,12 @@ from __future__ import annotations
 import argparse, datetime as dt, json, os, sys
 from zoneinfo import ZoneInfo
 from engine.chart import build_chart, RASHI_NAMES, RASHI_EN, RASHI_LORD, PLANET_ORDER, varga_rashi
-from engine.analysis import analyse, View, hfrom, sign_at, dasha_tree, SEVEN
+from engine.analysis import analyse, View, hfrom, sign_at, dasha_tree, SEVEN, period_cautions
 from engine.ashtakavarga import ashtakavarga, house_checks
 from engine import transits as T
 
+MOVABLE = {"self/health": "AK", "career": "AmK", "siblings": "BK", "home/mother": "MK", "father/fortune": "PiK",
+           "children": "PK", "marriage": "DK"}   # life area -> movable significator, Parashara's list (seven_bphs)
 AREAS = {   # life area -> (houses, karakas male, karakas female)
     "self/health":   ((1, 6, 8), ["Sun"], ["Sun"]),
     "money":         ((2, 11), ["Jupiter"], ["Jupiter"]),
@@ -300,6 +302,8 @@ def markdown(r, name="native"):
     w("A sub-period delivers an area only if its lord appears in that row (kb/dashas/antar-event-rules.md, Rule 1).\n")
     w("| Area | Houses | Karakas | " + " | ".join(p[:3] for p in PLANET_ORDER) + " |\n|---|---|---|" + "---|" * 9)
     links = {}
+    ckb = a["karakas"]["seven_bphs"]
+    movable = {area: ckb.get(key) for area, key in MOVABLE.items()}
     for area, (hs, km, kf) in AREAS.items():
         ks_ = kf if sex == "F" else km
         row = []
@@ -307,9 +311,11 @@ def markdown(r, name="native"):
             l = v.sambandha(p, hs, ks_)
             links[(area, p)] = l
             strong = sum(1 for x in l if x.startswith(("occupies", "owns", "with", "is karaka")))
-            row.append(f"{strong}+{len(l) - strong}" if l else "-")
+            cell = f"{strong}+{len(l) - strong}" if l else "-"
+            row.append(cell + (" m" if movable.get(area) == p else ""))
         w(f"| {area} | {hs} | {', '.join(ks_)} | " + " | ".join(row) + " |")
     w("\nEach cell is strong+weak links. Strong = occupies the house, owns it, sits with its lord or a karaka, or is the karaka. Weak = aspects or disposes. Read an area into a sub-period only on a strong link, or on two weak ones backed by a transit; a planet that links to every row (common for Saturn, Mars and the nodes) discriminates nothing by itself - see Rule 8.\n")
+    w("'m' marks the movable significator of that area by Parashara's own list (BPHS 32.13-16): " + "; ".join(f"{ar_} - {pl_}" for ar_, pl_ in movable.items() if pl_) + ". It is shown, not counted: whether a movable significator alone lets a sub-period deliver its area is under test (antar-event-rules.md, Rule 13) - never state an event on an 'm' alone.\n")
     w("## 11. Vimshottari\n")
     now = a["dasha_now"]
     w("Now: " + " / ".join(f"{d['lord']} (to {_d(d['end'])})" for d in now) + ".\n")
@@ -334,7 +340,8 @@ def markdown(r, name="native"):
         w("")
     except Exception as _e:                                  # noqa: BLE001
         w(f"(Date range across the birth-time window not computed: {_e})\n")
-    w("| Mahadasha | Antardasha | From | To | Age | Sub-lord from dasha lord | Areas the antardasha lord is STRONGLY linked to |\n|---|---|---|---|---|---|---|")
+    w("| Mahadasha | Antardasha | From | To | Age | Sub-lord from dasha lord | Check before stating any gain | Areas the antardasha lord is STRONGLY linked to |\n|---|---|---|---|---|---|---|---|")
+    caut = period_cautions(v)
     P_ = c["planets"]
     def _rel(md, ad):
         if md == ad: return "same"
@@ -347,8 +354,9 @@ def markdown(r, name="native"):
             if e <= local: continue
             s2 = max(s, local)
             tags = [ar_ for ar_ in AREAS if any(x.startswith(("occupies", "owns", "with", "is karaka")) for x in links[(ar_, ad)])]
-            w(f"| {md} | {ad} | {_d(s2)} | {_d(e)} | {(s2 - local).days / 365.25:.1f}-{(e - local).days / 365.25:.1f} | {_rel(md, ad)} | {', '.join(tags)} |")
+            w(f"| {md} | {ad} | {_d(s2)} | {_d(e)} | {(s2 - local).days / 365.25:.1f}-{(e - local).days / 365.25:.1f} | {_rel(md, ad)} | {'; '.join(caut[ad]) or '-'} | {', '.join(tags)} |")
     w("\nSub-lord from dasha lord (Parashara ch. 52-60, stated pair by pair for most of the 81 pairs): in a kendra, a trine, the 3rd or the 11th from the dasha lord the sub-period supports; in the 6th, 8th or 12th it obstructs; the 2nd is listed with the supportive places for most pairs. This is weighed together with the sub-lord's own house from the lagna and its dignity.\n")
+    w("**Check before stating any gain** (Jataka Parijata 18.27-28, read in the Sanskrit): a debilitated planet, a planet joined to one, a planet joined to Rahu and the lord of a debilitated planet's sign do not give good in their periods, however strong; a planet at a sign junction gives strain. Where this column is not '-', state the planet's houses as the subject of the period and do NOT promise their gain (antar-event-rules.md, Rule 12 - the first miss of the rebuilt system came from skipping this). In this chart: " + ("; ".join(f"{p_} - {', '.join(c_)}" for p_, c_ in caut.items() if c_) or "no planet is affected") + ".\n")
     from engine import classical as KL
     dv = KL.delivery_time(c)
     w("When inside its own period a planet delivers - two classical pointers (by the third of its sign, reversed if retrograde: Parashara 47.3-4; by the rising-type of its sign: 50.88-89). "
