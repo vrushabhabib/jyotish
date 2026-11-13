@@ -22,6 +22,8 @@ Rules scored (all taken from the worksheet, nothing new):
     polarity       events marked good/bad only: good = sub-lord not in the 6th/8th/12th from the dasha lord and no
                    caution flag (Jataka Parijata 18.27-28); bad = one of those present
     link_and_pol   ad_link and polarity together (what a dated statement of gain or loss actually rests on)
+    polarity_text  good/bad by Parashara's full sub-period template (ch. 52-60): sub-lord's house from the lagna,
+                   its dignity, its house from the dasha lord - one point each; ties make no call
 
 Only counts are printed or saved. Added 13 Nov 2026 (owner's instruction: fix the system for accuracy)."""
 from __future__ import annotations
@@ -31,7 +33,7 @@ from engine.analysis import analyse, period_cautions
 from engine.report import AREAS, MOVABLE
 
 STRONG = ("occupies", "owns", "with", "is karaka")
-RULES = ["ad_link", "md_link", "movable", "link_or_mov", "polarity", "link_and_pol"]
+RULES = ["ad_link", "md_link", "movable", "link_or_mov", "polarity", "link_and_pol", "polarity_text"]
 
 
 def _date(x):
@@ -71,10 +73,19 @@ def score(birth, sex, events):
             ok = (not against) if pol == "good" else against
             for k, val in (("polarity", ok), ("link_and_pol", ok and adl)):
                 base[k] += 1; hits[k] += bool(val)
+            # Parashara's full template for a sub-period (ch. 52-60): the sub-lord's own house from the lagna, its
+            # dignity, and its house from the dasha lord - one point each way. Specified from the text before
+            # looking at any result; not tuned. A tie makes no call and is left out of the count.
+            P = c["planets"][ad]; h = P["bhava"]; dg = (P.get("dignity") or "").lower(); t = 0
+            t += 1 if h in (1, 4, 7, 10, 5, 9, 11) else -1 if h in (6, 8, 12) else 0
+            t += 1 if any(w in dg for w in ("exalt", "own", "moola", "friend")) else -1 if (any(w in dg for w in ("debil", "enemy")) or P.get("combust")) else 0
+            t += 0 if md == ad else (-1 if n in (6, 8, 12) else 1)
+            if t != 0:
+                base["polarity_text"] += 1; hits["polarity_text"] += (t > 0) == (pol == "good")
     return hits, base
 
 
-def control_test(birth, sex, events, n=500, years_before=6.0, years_after=3.0, seed=1987):
+def control_test(birth, sex, events, n=500, years_before=6.0, years_after=3.0, seed=1987, raw=False):
     """Real chart against n control charts. Control births fall between `years_before` before and `years_after`
     after the real birth, never later than a month before the earliest event, never within 30 days of the real one."""
     rng = random.Random(seed)
@@ -95,6 +106,8 @@ def control_test(birth, sex, events, n=500, years_before=6.0, years_after=3.0, s
             ctrl[k].append(h[k])
         done += 1
     out = {}
+    if raw:
+        return real, base, ctrl
     for k in RULES:
         xs = ctrl[k]
         out[k] = {"real": real[k], "of": base[k], "control_mean": round(sum(xs) / len(xs), 2),
@@ -126,6 +139,25 @@ def indicated(birth, sex, area, polarity, start, end):
             if ok:
                 out.append((m["lord"], p, s.isoformat(), e.isoformat())); days += (e - s).days
     return out, round(days / max((e0 - s0).days, 1), 2)
+
+
+def pool(cases, n=1000):
+    """Several people together. cases: [{"birth":..., "sex":..., "events":[...]}]. For each rule the real hits are
+    summed over all charts and compared with the sum of one independent control chart per person, n times.
+    Returns the same table shape as control_test. One person's chart can look good or bad by luck; the pooled
+    figure is the one to judge a rule by."""
+    tot_real = dict.fromkeys(RULES, 0); tot_base = dict.fromkeys(RULES, 0)
+    sums = {k: [0] * n for k in RULES}; ev = 0
+    for i, c in enumerate(cases):
+        real, base, ctrl = control_test(c["birth"], c.get("sex"), c["events"], n=n, seed=1987 + i, raw=True)
+        ev += len(c["events"])
+        for k in RULES:
+            tot_real[k] += real[k]; tot_base[k] += base[k]
+            sums[k] = [a + b for a, b in zip(sums[k], ctrl[k])]
+    out = {k: {"real": tot_real[k], "of": tot_base[k], "control_mean": round(sum(sums[k]) / n, 2),
+               "share_controls_at_or_above_real": round(sum(1 for x in sums[k] if x >= tot_real[k]) / n, 3)} for k in RULES}
+    return {"charts": len(cases), "events": ev, "exact_dates": sum(1 for c in cases for e in c["events"] if e.get("exact")),
+            "controls": n, "rules": out}
 
 
 def markdown(res, name="chart"):

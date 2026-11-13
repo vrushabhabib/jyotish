@@ -135,3 +135,17 @@ Asking "did X happen in period P?" anchors the answer (Rule 15). The blind form 
 - First blind result: one scorable answer out of four questions, a miss (sealed share 25%).
 - Second blind result (same chart): best period for income fell in salaried years, outside the sealed "money, good" windows (share 31%) - a miss. Observation to test on other charts, NOT acted on from one case: the "money" row uses the 2nd and 11th houses and Jupiter only, so pay from employment (a 10th-house matter) is invisible to it; the same years were inside the "career, good" windows. If employed people's best-income years keep falling in career windows, the money row for an employee should read 2nd, 10th and 11th together.
 - Running blind tally, first chart: 5 asked, 2 scorable, 0 hits (about 0.6 expected by luck).
+
+## Rule 17 — What the pooled control test says so far (13 Nov 2026; 5 charts, 37 dated events, 10 exact dates)
+`engine.control.pool` on every dated event in the stored answers (counts in `data/control_tests.json`):
+| Rule | Real charts | Wrong charts (average) | Wrong charts as good | Same on the 28 cleanly dated events |
+|---|---|---|---|---|
+| Sub-period lord strongly linked to the event's area | 26 of 37 | 20.3 | 7% | 21 of 28, 5% |
+| Main-period lord linked to the area | 16 of 37 | 20.4 | 89% | 10 of 28, 94% |
+| Good/bad by house from the dasha lord + caution column | 13 of 27 | 13.9 | 74% | 11 of 21, 63% |
+| Good/bad by Parashara's full template (house from lagna, dignity, house from dasha lord) | 13 of 24 | 12.5 | 51% | 13 of 19, 18% |
+Working conclusions until more data arrives (each to be re-run whenever a chart is added):
+1. **What a sub-period is about** (the link test) is the only rule with any edge - a hint, not a finding (7%, and one of the five charts scored far below its controls).
+2. **The main-period lord's link carries no information** here and is not used as evidence for an area; it stays only as the frame the sub-periods sit in. The convergence table's main-period vote is to be read with that in mind.
+3. **Whether a period goes well or badly is at chance** by both methods. Until that changes, a reading states the SUBJECT of a period and marks any good/bad direction as unsupported by the project's own data. The caution column of Rule 12 stays as a brake on promising gains; it is not evidence that a period will go badly.
+4. The gap is therefore specific: judging direction, and timing finer than a sub-period. More people with independently dated events is the only way to close it; more reading of the texts helps only if it yields a different, testable way of judging direction.

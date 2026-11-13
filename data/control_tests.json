@@ -90,5 +90,111 @@
     "share_controls_at_or_above_real": 0.219
    }
   }
+ },
+ {
+  "chart": "POOLED 5 charts",
+  "run": "2026-11-13",
+  "note": "all dated events from stored answers",
+  "charts": 5,
+  "events": 37,
+  "exact_dates": 10,
+  "controls": 2000,
+  "rules": {
+   "ad_link": {
+    "real": 26,
+    "of": 37,
+    "control_mean": 20.32,
+    "share_controls_at_or_above_real": 0.069
+   },
+   "md_link": {
+    "real": 16,
+    "of": 37,
+    "control_mean": 20.36,
+    "share_controls_at_or_above_real": 0.888
+   },
+   "movable": {
+    "real": 4,
+    "of": 37,
+    "control_mean": 3.23,
+    "share_controls_at_or_above_real": 0.406
+   },
+   "link_or_mov": {
+    "real": 27,
+    "of": 37,
+    "control_mean": 21.47,
+    "share_controls_at_or_above_real": 0.064
+   },
+   "polarity": {
+    "real": 13,
+    "of": 27,
+    "control_mean": 13.88,
+    "share_controls_at_or_above_real": 0.741
+   },
+   "link_and_pol": {
+    "real": 10,
+    "of": 27,
+    "control_mean": 8.03,
+    "share_controls_at_or_above_real": 0.263
+   },
+   "polarity_text": {
+    "real": 13,
+    "of": 24,
+    "control_mean": 12.53,
+    "share_controls_at_or_above_real": 0.513
+   }
+  }
+ },
+ {
+  "chart": "POOLED 4 charts",
+  "run": "2026-11-13",
+  "note": "only dates given independently of any chart statement",
+  "charts": 4,
+  "events": 28,
+  "exact_dates": 10,
+  "controls": 2000,
+  "rules": {
+   "ad_link": {
+    "real": 21,
+    "of": 28,
+    "control_mean": 15.51,
+    "share_controls_at_or_above_real": 0.049
+   },
+   "md_link": {
+    "real": 10,
+    "of": 28,
+    "control_mean": 15.22,
+    "share_controls_at_or_above_real": 0.939
+   },
+   "movable": {
+    "real": 4,
+    "of": 28,
+    "control_mean": 2.44,
+    "share_controls_at_or_above_real": 0.233
+   },
+   "link_or_mov": {
+    "real": 22,
+    "of": 28,
+    "control_mean": 16.41,
+    "share_controls_at_or_above_real": 0.042
+   },
+   "polarity": {
+    "real": 11,
+    "of": 21,
+    "control_mean": 11.09,
+    "share_controls_at_or_above_real": 0.629
+   },
+   "link_and_pol": {
+    "real": 8,
+    "of": 21,
+    "control_mean": 6.32,
+    "share_controls_at_or_above_real": 0.291
+   },
+   "polarity_text": {
+    "real": 13,
+    "of": 19,
+    "control_mean": 10.4,
+    "share_controls_at_or_above_real": 0.179
+   }
+  }
  }
 ]
