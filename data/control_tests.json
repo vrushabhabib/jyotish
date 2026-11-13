@@ -849,5 +849,22 @@
     "share_controls_at_or_above_real": 0.265
    }
   }
+ },
+ {
+  "date": "2026-11-13",
+  "label": "audit re-run, one chart (the owner), 13 events, 1000 controls",
+  "note": "NOT a blind test: answers were already known. Single chart; pooled figures are the ones to judge a rule by.",
+  "rules": {
+   "ad_link": "10/13 vs 7.34 (15%)",
+   "link_or_mov": "11/13 vs 7.66 (9%)",
+   "md_link": "5/13 vs 7.30 (88%)",
+   "polarity_natural": "8/8 vs 3.44 (0.7%) - rule was drawn from this chart",
+   "polarity_eighth": "7/8 vs 3.22 (1%) - pooled 13/25 (27%)",
+   "polarity": "5/8 vs 4.2 (44%)",
+   "polarity_text": "4/8 (62%)",
+   "polarity_ishta": "1/8 (98%)",
+   "kc_house": "4/8 (88%)",
+   "transit_sav": "3/8 (81%)"
+  }
  }
 ]

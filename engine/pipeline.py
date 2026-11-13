@@ -73,13 +73,18 @@ def verify(o):
     from engine import ledger
     c = load(o.slug); _need(c, "verify")
     rows = [r for r in ledger.load() if r["chart"] == o.slug]
-    scored = [r for r in rows if r.get("kind") != "forward" and r.get("outcome") not in ("open", None)]
-    hits = sum(r["outcome"] == "hit" for r in scored) + 0.5 * sum(r["outcome"] == "partly" for r in scored)
-    rate = hits / len(scored) if scored else 0.0
+    # Two different questions, kept apart (audit 13 Nov 2026): cold answers about the past confirm the CHART;
+    # sealed blind statements test the TIMING RULES. Mixing them hid both figures.
+    done = lambda k: [r for r in rows if r.get("kind") == k and r.get("outcome") not in ("open", None)]
+    rate_of = lambda rs: (sum(r["outcome"] == "hit" for r in rs) + 0.5 * sum(r["outcome"] == "partly" for r in rs)) / len(rs) if rs else 0.0
+    scored, blind = done("past"), done("blind")
+    rate = rate_of(scored)
     ok = len(scored) >= o.min
-    _mark(c, "verify", ok, scored=len(scored), rate=round(rate, 2), confirmed=rate >= 0.7)
+    _mark(c, "verify", ok, scored=len(scored), rate=round(rate, 2), confirmed=rate >= 0.7, blind_scored=len(blind), blind_rate=round(rate_of(blind), 2))
     print(f"{len(scored)} checking questions scored, {rate*100:.0f}% right." + ("" if ok else f" BLOCKED: at least {o.min} are needed.")
           + ("" if rate >= 0.7 or not ok else " Below 70%: say so and limit the reading to timing of periods."))
+    if blind:
+        print(f"Sealed blind statements scored: {len(blind)}, {rate_of(blind)*100:.0f}% right - quote this beside any dated statement.")
     return ok
 
 
