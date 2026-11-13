@@ -36,12 +36,13 @@
 |---|---|
 | Findings register, check, strip, tests | DONE 13 Nov 2026 |
 | Navamsa reversal, dignity scale, house judgement with sign-lord step and degree distance, promise-breakers, strength by part, quality grid pointers, source disagreements | DONE (in the register) |
-| Kalachakra dasha | pending - sequences decoded in kb/sources/bphs/ch46-50.md |
-| Life-span dasha (for periods only) | pending |
-| Question-chart module with automatic time stamp and fast forward test | pending |
-| Wording of the grid verses stored per verse | pending |
-| New candidate timing rules (JP 5.50; siblings 3/9/11/7; lagna tie; eighth-part) | pending - each to be written down and pushed BEFORE it is tested |
-| Data: 25+ dated good/bad events from people outside the first five | pending - needs people |
+| Kalachakra dasha (`engine/dashas_classical.py`; worksheet section 16) | DONE 13 Nov 2026 - all 16 sequences checked against the totals the text states; periods after the first cycle rest on a rule not in the verses |
+| Life-span dasha, periods only | DONE - experimental; several conventions ours; not cross-checked |
+| Question-chart module (`python3 -m engine.prashna`) with clock time stamp, fixed verdict rule and ledger logging | DONE - no question scored yet |
+| Grid verses stored (`data/vyj_grid.json`, Sanskrit, 10 chapters; children and death chapters deliberately not stored) and printed in the register | DONE - a fixed English wording per verse is NOT stored |
+| Candidate timing rules (Rule 19: five rules) | DONE - pre-stated, pushed, then tested: all at chance |
+| Intake of new people (`data/intake/EVENTS_FORM.md`, `python3 -m engine.intake check/run/status`) | TOOL DONE - the people are still needed: 0 of 25 good/bad events |
+| Strength-part count and eighth-part rule | pending - not tested |
 | Vriddha Yavana Jataka part two; Jaimini; Saravali | not read |
 
 ## What this does not do

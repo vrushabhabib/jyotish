@@ -587,5 +587,130 @@
     "share_controls_at_or_above_real": 0.101
    }
   }
+ },
+ {
+  "chart": "POOLED 5 charts",
+  "run": "2026-11-13",
+  "note": "Rule 19 batch, all five pre-stated and pushed before the run: link_sib4 4/5 vs 3.91 (69%); link_lagna_tie 4/12 vs 2.38 (23%); bad_2_7 1/4 vs 2.49 (94%); polarity_aspect 7/15 vs 6.24 (43%); kc_house 14/27 vs 14.76 (78%). None above chance.",
+  "charts": 5,
+  "events": 37,
+  "exact_dates": 10,
+  "controls": 1000,
+  "rules": {
+   "ad_link": {
+    "real": 26,
+    "of": 37,
+    "control_mean": 20.37,
+    "share_controls_at_or_above_real": 0.069
+   },
+   "md_link": {
+    "real": 16,
+    "of": 37,
+    "control_mean": 20.5,
+    "share_controls_at_or_above_real": 0.88
+   },
+   "movable": {
+    "real": 4,
+    "of": 37,
+    "control_mean": 3.3,
+    "share_controls_at_or_above_real": 0.417
+   },
+   "link_or_mov": {
+    "real": 27,
+    "of": 37,
+    "control_mean": 21.53,
+    "share_controls_at_or_above_real": 0.065
+   },
+   "polarity": {
+    "real": 13,
+    "of": 27,
+    "control_mean": 13.96,
+    "share_controls_at_or_above_real": 0.762
+   },
+   "link_and_pol": {
+    "real": 10,
+    "of": 27,
+    "control_mean": 8.03,
+    "share_controls_at_or_above_real": 0.274
+   },
+   "polarity_text": {
+    "real": 13,
+    "of": 24,
+    "control_mean": 12.45,
+    "share_controls_at_or_above_real": 0.5
+   },
+   "polarity_ishta": {
+    "real": 11,
+    "of": 25,
+    "control_mean": 10.98,
+    "share_controls_at_or_above_real": 0.574
+   },
+   "polarity_lp": {
+    "real": 7,
+    "of": 15,
+    "control_mean": 8.06,
+    "share_controls_at_or_above_real": 0.747
+   },
+   "transit_moon": {
+    "real": 5,
+    "of": 12,
+    "control_mean": 6.72,
+    "share_controls_at_or_above_real": 0.883
+   },
+   "transit_bav": {
+    "real": 7,
+    "of": 22,
+    "control_mean": 10.84,
+    "share_controls_at_or_above_real": 0.948
+   },
+   "transit_sav": {
+    "real": 14,
+    "of": 25,
+    "control_mean": 12.46,
+    "share_controls_at_or_above_real": 0.344
+   },
+   "polarity_natural": {
+    "real": 17,
+    "of": 25,
+    "control_mean": 11.43,
+    "share_controls_at_or_above_real": 0.013
+   },
+   "polarity_bav_natal": {
+    "real": 12,
+    "of": 19,
+    "control_mean": 8.24,
+    "share_controls_at_or_above_real": 0.101
+   },
+   "link_sib4": {
+    "real": 4,
+    "of": 5,
+    "control_mean": 3.91,
+    "share_controls_at_or_above_real": 0.686
+   },
+   "link_lagna_tie": {
+    "real": 4,
+    "of": 12,
+    "control_mean": 2.38,
+    "share_controls_at_or_above_real": 0.23
+   },
+   "bad_2_7": {
+    "real": 1,
+    "of": 4,
+    "control_mean": 2.49,
+    "share_controls_at_or_above_real": 0.942
+   },
+   "polarity_aspect": {
+    "real": 7,
+    "of": 15,
+    "control_mean": 6.24,
+    "share_controls_at_or_above_real": 0.43
+   },
+   "kc_house": {
+    "real": 14,
+    "of": 27,
+    "control_mean": 14.76,
+    "share_controls_at_or_above_real": 0.777
+   }
+  }
  }
 ]

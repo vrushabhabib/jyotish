@@ -21,9 +21,14 @@ Thresholds marked UNSOURCED are ours, not the texts'. Nothing in this module pre
 present. Whether a listed feature may be stated as good/bad is governed by the rule's `status`.
 """
 from __future__ import annotations
-import json, re, sys
+import json, os, re, sys
 from engine.analysis import View, SEVEN, EXALT, DEBIL, hfrom, sign_at, period_cautions
 from engine.chart import RASHI_LORD, RASHI_NAMES
+
+try:
+    GRID = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "vyj_grid.json"), encoding="utf-8"))["chapters"]
+except Exception:                                   # noqa: BLE001 - the register still works without the verse texts
+    GRID = {}
 
 BEN3 = ("Mercury", "Jupiter", "Venus")            # Jataka Parijata 11.1 names exactly these three (and the house's own lord)
 BEN4 = ("Moon", "Mercury", "Jupiter", "Venus")    # Vriddha Yavana Jataka ch. 9-15, 36
@@ -61,14 +66,15 @@ RULES = {
     "direction": {"source": "our own control tests", "status": "chance", "what": "good/bad direction of a period - seven methods at chance; state the subject, not the direction"},
     "time_doubt": {"source": "engine", "status": "text", "what": "what changes inside the doubt in the birth time"},
     # --- in the texts, not yet computed: printed on every worksheet -------------------------------------------
-    "kalachakra": {"source": "BPHS 46.52-154; Jataka Parijata 17", "status": "pending", "what": "Kalachakra dasha (a second clock, by signs)"},
-    "lifespan_dasha": {"source": "Brihat Jataka 8; Vriddha Yavana Jataka 6", "status": "pending", "what": "the old dasha built on each planet's share of life (used for periods only, never to state a length of life)"},
-    "prashna": {"source": "Shatpanchashika; Daivajna Vallabha", "status": "pending", "what": "question charts"},
-    "second_seventh_from_house": {"source": "Jataka Parijata 5.50", "status": "pending", "what": "periods of the lords of the 2nd and 7th from any house harm that house"},
+    "kalachakra": {"source": "BPHS 46.52-154; Jataka Parijata 17", "status": "text", "what": "Kalachakra dasha - a second clock, by signs; sensitive to birth time; periods after the first cycle rest on a rule not in the verses"},
+    "lifespan_dasha": {"source": "Brihat Jataka 7-8; Vriddha Yavana Jataka 6; Jataka Parijata 5.2-16", "status": "text", "what": "the old dasha built on each planet's share - periods only, experimental, several conventions ours, never a length of life"},
+    "prashna": {"source": "Shatpanchashika; Daivajna Vallabha", "status": "text", "what": "question charts - separate tool: python3 -m engine.prashna (not part of a birth reading)"},
+    "second_seventh_from_house": {"source": "Jataka Parijata 5.50", "status": "chance", "what": "periods of the lords of the 2nd and 7th from any house harm that house - tested 13 Nov 2026: 1 of 4, at chance, far too few cases"},
     "eighth_part": {"source": "Vriddha Yavana Jataka 8.16-129", "status": "pending", "what": "a planet's period judged by the eighth-part of the sign it stands in (reading of the method verse uncertain)"},
-    "siblings_3_9_11_7": {"source": "Jataka Parijata 12.2-3", "status": "pending", "what": "siblings judged from houses 3, 9, 11 and 7 (the link test uses 3 and 11)"},
-    "lagna_tie": {"source": "Jataka Parijata 12.110, 12.130", "status": "pending", "what": "for rank and vehicles the planet must also be tied to the lagna"},
-    "grid_verses": {"source": "Vriddha Yavana Jataka ch. 24a-35", "status": "pending", "what": "the wording of each grid verse is not stored; the worksheet gives the verse number to look up"},
+    "siblings_3_9_11_7": {"source": "Jataka Parijata 12.2-3", "status": "chance", "what": "siblings judged from houses 3, 9, 11 and 7 - tested 13 Nov 2026: 4 of 5 against 3.9 for wrong charts, no information (the wider net catches wrong charts too)"},
+    "lagna_tie": {"source": "Jataka Parijata 12.110, 12.130", "status": "chance", "what": "for rank and vehicles the planet must also be tied to the lagna - tested 13 Nov 2026: 4 of 12 against 2.4 (23% of wrong charts as good), not significant"},
+    "grid_english": {"source": "Vriddha Yavana Jataka ch. 24a-35", "status": "pending", "what": "the grid verses are stored in Sanskrit (data/vyj_grid.json) and printed on the worksheet; a fixed English wording per verse is not stored - it is read at the time of the reading"},
+    "strength_count": {"source": "Vriddha Yavana Jataka ch. 17-23", "status": "pending", "what": "count of strength parts as a rule for a period - not yet tested"},
     "house_lords_in_houses_vyj": {"source": "Vriddha Yavana Jataka part two, ch. 54", "status": "pending", "what": "not read - availability of part two not yet checked"},
     "jaimini_saravali": {"source": "Jaimini sutras; Saravali", "status": "pending", "what": "not read - no free Sanskrit text found"},
     # --- read and never used ----------------------------------------------------------------------------------
@@ -204,10 +210,18 @@ def grid(r, out):
         if dg == "enemy": cond.append(("enemy's sign", base + 4))
         if d9 == "enemy": cond.append(("enemy's navamsa", base + 4))
         if dg == "trine": cond.append(("own trine sign", base + 4))
+        verses = {}
+        for _, vn in cond:
+            vv = (GRID.get(ch) or {}).get(str(vn))
+            if vv: verses[f"{ch}.{vn}"] = vv["text"] + (" [damaged in the e-text]" if vv["damaged"] else "")
         txt = (f"{p} in house {h}: " + ("; ".join(f"{n} - see Vriddha Yavana Jataka {ch}.{vn}" for n, vn in cond) if cond
                                         else "none of the twelve conditions of the text applies (own or neutral sign has no verse)")
                + f". Benefic-owned divisions: {nb} of 6.")
-        _f(out, f"Q.{p}", HOUSE_PART[h], "note", txt, "quality_grid", house=h, chapter=ch, conditions=cond, benefic_divisions=nb)
+        if h == 8: txt += " The text's chapter for the 8th house is on the manner of death - not stored, not used."
+        elif h == 5: txt += " The text's chapter for the 5th house is on children - not stored; never state number, sex or loss of children."
+        elif verses: txt += " Sanskrit (each line has three clauses, in the order sign / navamsa / divisions; take the clause for the condition met): " + " || ".join(f"{k}: {t}" for k, t in verses.items())
+        if h == 7 and verses: txt += " These are the classical wordings about a spouse - soften, and never state them as fact about a real person."
+        _f(out, f"Q.{p}", HOUSE_PART[h], "note", txt, "quality_grid", house=h, chapter=ch, conditions=cond, benefic_divisions=nb, verses=verses)
 
 
 def breakers(r, out):
@@ -273,13 +287,38 @@ def named(r, out):
        "State subjects; mark any direction as unsupported.", "direction")
 
 
+def other_clocks(r, out):
+    import datetime as dt
+    c = r["chart"]; now = dt.datetime.now(c["input"]["local"].tzinfo)
+    kc = r.get("kalachakra")
+    if kc:
+        from engine.dashas_classical import kalachakra_at
+        p, sub = kalachakra_at(kc, now)
+        if p:
+            h = (p["sign"] - c["lagna"]["rashi"]) % 12 + 1
+            _f(out, "K.kalachakra", 5, "note", f"Kalachakra dasha now: {p['name']} (house {h} from the lagna - {HOUSE_NAME[h]}), {p['start'].date()} to {p['end'].date()}"
+               + (f"; sub-period {RASHI_NAMES[sub['sign'] - 1]} to {sub['end'].date()}" if sub else "")
+               + (f"; entered by a {p['jump']}" if p.get("jump") else "")
+               + (". This period lies AFTER the birth quarter's own nine signs, so it rests on a continuation rule that is not in the verses we read" if p["cycle"] > 1 else "")
+               + ". The text reads the sign's house as the subject; as a good/bad rule it is untested or at chance - see the control table.", "kalachakra", sign=p["sign"], house=h, cycle=p["cycle"])
+    ls = r.get("lifespan_dasha")
+    if ls:
+        from engine.dashas_classical import lifespan_at
+        p, sub = lifespan_at(ls, now)
+        if p:
+            _f(out, "K.lifespan", 5, "note", f"Life-span dasha (periods only) now: {p['lord']}, from {p['start'].date()}" + (f"; sub-period {sub['lord']} to {sub['end'].date()}" if sub else "")
+               + ". Experimental: several conventions are ours and it has not been cross-checked. No length of life is ever derived from it.", "lifespan_dasha", lord=p["lord"])
+        else:
+            _f(out, "K.lifespan", 5, "note", "Life-span dasha: not usable for this chart at this date. This is a limit of the method (Varahamihira's own objection, Brihat Jataka 7.7-8) and says nothing about the person.", "lifespan_dasha")
+
+
 def pending():
     return [{"rule": k, **x} for k, x in RULES.items() if x["status"] == "pending"]
 
 
 def build(r):
     out = []
-    for fn in (planets, strengths, houses, grid, breakers, disagreements, named):
+    for fn in (planets, strengths, houses, grid, breakers, disagreements, named, other_clocks):
         fn(r, out)
     ids = [f["id"] for f in out]
     assert len(ids) == len(set(ids)), "duplicate finding id: " + ", ".join(sorted({i for i in ids if ids.count(i) > 1}))

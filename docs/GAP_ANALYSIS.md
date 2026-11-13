@@ -85,3 +85,10 @@ Read in full this sitting: Jataka Parijata ch. 4 (rest), 5, 7 (rest), 8, 9, 11, 
 - Jaimini, Saravali, and VYJ part two (house lords in houses) remain unread: not found free, or not yet checked.
 
 **Coverage note.** All of this was read in transliteration from e-texts with typing errors and gaps; my Sanskrit reading has not been reviewed by a scholar. Roughly one verse in twenty of Vriddha Yavana Jataka is missing or damaged.
+
+## Build of 13 Nov 2026 (evening) - what now exists and what it showed
+- Built: findings register and checker; Kalachakra dasha; life-span dasha (periods only); question-chart module; grid verses stored in Sanskrit; intake tool and form for new people.
+- Tested (pre-stated, pushed, then run): five rules from the reading - siblings from 3/9/11/7, lagna tie, lords of the 2nd/7th from the house, aspect nature, Kalachakra house. All at chance.
+- Standing result, unchanged: subject of a sub-period 26 of 37 against 20.4 (7%); direction - twelve rules tried, none confirmed.
+- What can still move the accuracy question: (1) new people through `engine.intake` - 0 of the 25 good/bad events needed; (2) question charts scored in the ledger - 0 scored.
+- Still not built: fixed English wording per grid verse; strength-part count rule; eighth-part rule. Still not read: Vriddha Yavana Jataka part two, Jaimini, Saravali.

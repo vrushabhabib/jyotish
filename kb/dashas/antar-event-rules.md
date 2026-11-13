@@ -179,3 +179,13 @@ Stated here and in `engine/control.py`, committed and pushed before any of them 
 | polarity_aspect | Vriddha Yavana Jataka ch. 9-15 | sub-lord joined or seen only by Moon, Mercury, Jupiter, Venus = good; only by Sun, Mars, Saturn = bad | good/bad events where one side only |
 | kc_house | BPHS 46.131-154 | running Kalachakra sign in house 6, 8 or 12 from the lagna = bad; else good | good/bad events |
 How they will be read: five more rules on the same events makes fourteen direction or link variants in all. A single rule needs fewer than 1% of wrong-chart sets as good to be worth a note, and even then it goes to the confirmation set of Rule 18 - it is not used in a reading on this evidence. Held back, still untested: strength-part count (VYJ ch. 17-23) and the eighth-part rule (VYJ ch. 8).
+
+### Result of the Rule 19 batch (13 Nov 2026, same evening; 5 charts, 37 events, 1,000 wrong-chart sets)
+| Rule | Right | Wrong charts average | Wrong-chart sets as good |
+|---|---|---|---|
+| link_sib4 | 4 of 5 | 3.9 | 69% |
+| link_lagna_tie | 4 of 12 | 2.4 | 23% |
+| bad_2_7 | 1 of 4 | 2.5 | 94% |
+| polarity_aspect | 7 of 15 | 6.2 | 43% |
+| kc_house | 14 of 27 | 14.8 | 78% |
+None is above chance. The wider sibling net (3, 9, 11, 7) links almost any chart, so it tells nothing. The Kalachakra house rule is at chance; most of the events fall in periods that rest on the unsourced continuation rule, so this is a weak test of Kalachakra itself. No rule here is used in a reading. Direction rules tried so far: twelve; one at 1.3% carried by one chart (Rule 18), one at 10%, ten at chance.

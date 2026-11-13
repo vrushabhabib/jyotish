@@ -20,7 +20,9 @@ def test_every_rule_is_used_or_declared_pending_or_excluded():
     for k, x in F.RULES.items():
         if x["status"] in ("pending", "excluded"): continue
         # rules that only fire when the feature is present in a chart are exercised in the synthetic tests below
-        assert k in used or k in ("navamsa_reversal", "sources_disagree", "dosha", "caution", "breaker", "link_timing", "yoga_timing", "scale"), k
+        assert k in used or k in ("navamsa_reversal", "sources_disagree", "dosha", "caution", "breaker", "link_timing", "yoga_timing", "scale",
+                                 # registry-only entries: a separate tool, and rules already tested and set aside
+                                 "prashna", "second_seventh_from_house", "siblings_3_9_11_7", "lagna_tie"), k
     assert {p["rule"] for p in F.pending()} == {k for k, x in F.RULES.items() if x["status"] == "pending"}
 
 

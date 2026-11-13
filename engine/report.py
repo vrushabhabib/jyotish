@@ -88,6 +88,13 @@ def build(date, time, lat, lon, tz, name="native", sex=None, window=15, years_ah
                                               if H.chalit_house(d["lon"], bh) != d["bhava"]}}
     out["yogini"] = DX.yogini(chart["planets"]["Moon"]["lon"], naive, cycles=3)
     out["chara"] = DX.chara(chart["lagna"]["rashi"], {p: d["rashi"] for p, d in chart["planets"].items()}, naive)
+    try:                                       # the two other classical clocks (engine/dashas_classical.py)
+        from engine import dashas_classical as DC
+        out["kalachakra"] = DC.kalachakra(chart["planets"]["Moon"]["lon"], local)
+        st_ = {q: d_["rupas"] for q, d_ in (out["shadbala"].get("planets") or {}).items()}
+        out["lifespan_dasha"] = DC.lifespan_dasha(chart, st_) if st_ else None
+    except Exception as e:                                    # noqa: BLE001
+        out["kalachakra"] = None; out["lifespan_dasha"] = None; out["classical_dasha_error"] = str(e)
     out["findings"] = F.build(out)            # the register a reading is checked against (engine/findings.py)
     out["pending"] = F.pending()
     return out
@@ -479,6 +486,33 @@ def markdown(r, name="native"):
     return "\n".join(L)
 
 
+def other_clocks_md(r):
+    L = ["\n## 16. Two other classical clocks (built 13 Nov 2026) - read the notes before using a date\n"]
+    kc = r.get("kalachakra")
+    if kc:
+        q = kc["quarter"]; RNn = __import__("engine.chart", fromlist=["RASHI_NAMES"]).RASHI_NAMES
+        L.append(f"**Kalachakra dasha** (BPHS 46; Jataka Parijata 17). Moon's star {q['star']}, quarter {q['pada']}, {'direct' if q['direct'] else 'reverse'} wheel; "
+                 f"body sign {RNn[q['body_sign'] - 1]}, life sign {RNn[q['life_sign'] - 1]}; {q['fraction_elapsed'] * 100:.0f}% of the quarter had passed at birth.\n")
+        L.append("| Sign | Lord | House from lagna | From | To | Cycle | Entered by |\n|---|---|---|---|---|---|---|")
+        lag = r["chart"]["lagna"]["rashi"]; lim = r["today"].year + 26
+        for p in kc["periods"]:
+            if p["start"].year > lim: break
+            L.append(f"| {p['name']} | {p['lord']} | {(p['sign'] - lag) % 12 + 1} | {p['start'].date()} | {p['end'].date()} | {p['cycle']}{' *' if p['cycle'] > 1 else ''} | {p['jump'] or ''} |")
+        L.append("\n\\* cycle 2 or later: continuation rule not in the verses we read.\n")
+        L += ["- " + n for n in kc["notes"]]
+    ls = r.get("lifespan_dasha")
+    if ls:
+        L.append("\n**Life-span dasha - periods only** (Brihat Jataka 7-8; Vriddha Yavana Jataka 6). Order of lords: " + ", ".join(ls["order"]) + ".\n")
+        if ls["ended_before_date"]:
+            L.append("Not usable for this chart at today's date - a limit of the method, nothing about the person.\n")
+        else:
+            L.append("| Lord | From | To | Reduction applied | Sub-period lords |\n|---|---|---|---|---|")
+            for p in ls["periods"]:
+                L.append(f"| {p['lord']} | {p['start'].date()} | {'beyond the window' if p['runs_past_window'] else p['end'].date()} | {p['reduction'] or ''} | {', '.join(x['lord'] for x in p['subs'])} |")
+        L += ["- " + n for n in ls["notes"]]
+    return "\n".join(L) + "\n"
+
+
 def to_json(r):
     def clean(o):
         if isinstance(o, dict): return {str(k): clean(x) for k, x in o.items() if k not in ("view", "dasha_tree", "contributors")}
@@ -517,6 +551,7 @@ def main(argv=None):
     r = build(date, time, float(lat), float(lon), tz, name, sex, o.window)
     md = markdown(r, name)
     md += F.markdown(r["findings"])
+    md += other_clocks_md(r)
     if check:
         md += "\n## 14. Cross-check against the supplied PDF\n\n```\n" + json.dumps(check, indent=1, default=str)[:3000] + "\n```\n"
     if o.out:

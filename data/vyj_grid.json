@@ -1,0 +1,1185 @@
+{
+"source": "Vriddha Yavana Jataka part one, sanskritdocuments.org e-text (encoded by Radu Canahai), ITRANS transliteration. Verses as typed there, with its errors. Chapters 28 (children) and 31 (manner of death) are deliberately not stored.",
+"chapters": {
+"24a": {
+"1": {
+"text": "tanusthito vAsarapaH svatu~Nge / tIvrAM tanuM saMjanayennarANAm | / tu~NgAMshake vA dR^iDhatAsametAM / ShaDvargashuddho bahudhAryatAM cha",
+"damaged": false
+},
+"2": {
+"text": "nIchAshritastIkShNaka\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / kAyaM vidhatte sarujaM sadaiva | / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. NyahInaM bhR^ishanichabhAge / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. varge nataye prayuktam",
+"damaged": true
+},
+"3": {
+"text": "mitrAshrayastho yadi vAsaresho / mUrtiM gavo dIrghataraM prasUte | / mitrasya bhAge jatilaM nitAntaM / vargottame vAdhikashAsinaM cha",
+"damaged": false
+},
+"4": {
+"text": "shatrorgR^ihe vA yadi tIkShNarashmirlagnAshrito hInasharIrakaM cha | / naraM prasUte tvatha shatrubhAge / hInakShakoNaM nayavarjitaM cha",
+"damaged": false
+},
+"5": {
+"text": "chandro vilagne paripUrNadehastu~NgasthitaH saumyatanuM prasUte | / tu~Ngasya bhAge sumanoharAM cha / ShaDvargashuddho.aparanetrayuktAm",
+"damaged": false
+},
+"6": {
+"text": "nIchAshritaH kShINatanuH shashA~NkaH / kANAM tanuM lagnagataH prasUte | / nishAndhakaM nIchanavAMshashaMsthaH / pApotthavarge timireNa yuktAm",
+"damaged": false
+},
+"7": {
+"text": "mitragR^iha shItakarA vilagne / tanuM suvAte subhagAM manoj~nAm | / mitrasyabhAge varavaktrayuktAM / vargottamasthaH susharitakAntim",
+"damaged": false
+},
+"8": {
+"text": "nishAndhakaM shatrugR^ihAshrite cha / lagnaM gataH sthUlaruDaM prasUte | / shatrorvibhAge pR^ithudIrghakaM cha / mUlatrikoNeShu shubhAdharauShTham",
+"damaged": false
+},
+"9": {
+"text": "bhaumaH svatu~Nge mUrtisaMsthaH / karoti saMraktananIshamartyam | / tu~NgAMshake vA chipiTasvabhAvaM / ShaDvargashuddhastvatha karkashAkhyam",
+"damaged": false
+},
+"10": {
+"text": "nIchashrito bhUtanayo vilagne / karoti sAndraM madanaM sadaiva | / nIchAMshake taimirikaM nishAndhaM / pApasya varge tvatha vakradR^iShTim",
+"damaged": false
+},
+"11": {
+"text": "\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. | / mitrAMshake rogasametadR^iShTiM / vargottame dUravilokanaM cha",
+"damaged": true
+},
+"12": {
+"text": "shatrorgR^ihe vA yadi bhUmiputro / mitraM prasUte bahudR^i\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / samIpadR^iShTiM cha navAMshake vA / mUlatrikoNe cha jalArdadR^iShTim",
+"damaged": true
+},
+"13": {
+"text": "budhA vilagna yAda tu~NgasaMstho / naraM suvAte sumukhorunAsam | / tu~NgAMshake vA suradAdharaiShThaM / ShaDvargashuddhaH susharirakAntim",
+"damaged": false
+},
+"14": {
+"text": "nIchAshrito vA yadi somaputrastanusthito vaktrakugandhabhAjam | / nIchAMshake dIrghakarAkajihvaM / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\.",
+"damaged": true
+},
+"15": {
+"text": "mitrAshrayasthA yadi somaputro / lagnaM gataH shubhrashiroruhaM cha | / mitrasya bhAge tvatha shubhradR^iShTi / vargittamasthaH suhanuM sadaiva",
+"damaged": false
+},
+"16": {
+"text": "shatrorgR^ihe vA yadi somaputraH / karoti martyaM tanugaH karAlam | / shatrorvibhAge chapalasvabhAvaM / trikoNago rogavivR^iddhakAyam",
+"damaged": false
+},
+"17": {
+"text": "surejyamantrI yadi tu~NgasaMstho / lagne manoj~naM janayenmanuShyam | / uchChAMshake vA shubhabAhuhastaM / ShaDvargashuddhaH shubhacharmabhAjam",
+"damaged": false
+},
+"18": {
+"text": "nIchAshrito devagururvilagne / khaMjaM suvAte nirujaM nitAntam | / nIchAMshake khaMjananAsakaM cha / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. varge cha subhUShaNADhyam",
+"damaged": true
+},
+"19": {
+"text": "mitrAshryastho yadi mUrtisaMstho / guruH prasUte varavastrabhAjam | / mitrAMshake vA sukaTiM sunAbhiM / vargottamasthaH subhagodaraM cha",
+"damaged": false
+},
+"20": {
+"text": "shatrorgR^ihe tA yadi devapUjyo / mUrtisthitaH svodarikaM prasUte | / shatrorvibhAge tvatha phullameva / mUlatrikoNe prajanatyali~Ngam",
+"damaged": false
+},
+"21": {
+"text": "shukraH svatu~Nge yadi lagnasaMsthaH / surUpajAnuM manujaM prasUte | / svochChAMshakasthaH shubhapANipAdaM / ShaDvargashuddhaH suvibhaktagAtram",
+"damaged": false
+},
+"22": {
+"text": "nIchasthito vA yadi dAnavejyo / mUrtisthitaH svalpakachaM prasUte | / svalvATakaM vA yadi nIchahAge / pApAtthavarge baliromabhAjam",
+"damaged": false
+},
+"23": {
+"text": "mitragR^ihastho yadi daityapUjyaH / saubhAgyayuktaM shubhakIrtibhAjam | / naraM prasUte sunakhaM vibhAge / vargottamastho bahurupiNaM cha",
+"damaged": false
+},
+"24": {
+"text": "shukro yadA shatrugR^ihaM prapanno / lagnaM gataH kubjatanuM prasUte | / shatrorvibhAge.atikR^ishaM viga\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / mUlatrikoNe nayanAbhirAmam",
+"damaged": true
+},
+"25": {
+"text": "shanaishcharo mUrtigataH svatu~Nge / lagnaM gataH shyAmatanuM manuShyam | / tu~NgAMshake sve tvatha bhinnavarNaM / ShaDvargashuddhastvatha gaura  \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. atram",
+"damaged": true
+},
+"26": {
+"text": "nIchasthitaH sUryasuto vilagne / kAsArtamartyaM janayenamanuShyam | / nIchAshakasthaH kaphavAtapAtaM / pApasya varge tvatha pittatAM cha",
+"damaged": false
+},
+"27": {
+"text": "mitrAshrayastho yadisUryasUnurlagnasthito gauravapuM prasUte | / mitrAMshakastho.asthasAyasAra / vargottamasthastvatha pIvarA~Ngam",
+"damaged": false
+},
+"28": {
+"text": "shatrorgR^ihastho ravijo.atirUpyaM / lagnAshritaH sthUlanakhaM prasUte | / susthUladantaM ripubhAgasaMstho / mUlatrikoNe tu sudIrghajAnum",
+"damaged": false
+},
+"29": {
+"text": "svochChasthitaH svabhavane kShitipAlatulyo / lagne.arkaje bhavati deshapurAdhinAthaH | / sheSheShu duHkhamadapIDita eva bAlye / dAridryakAmavyasano malino.alasashcha",
+"damaged": false
+}
+},
+"25": {
+"1": {
+"text": "sUryo dvitIye yadi tu~NgasaMstho / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. te nR^ipamAnajAtm | / uchChAMshake vA nR^ipasevakaM cha / ShaDvargashuddhaH shubhalokadattam",
+"damaged": true
+},
+"2": {
+"text": "nIchAshrito bAsarapo dvitIye / pApArjitaM dharmadhanaM prasUte | / nIchAMshakasthaH sthalajaM sadaiva / pApasya varge tvatha chauryajaM cha",
+"damaged": false
+},
+"3": {
+"text": "mitrAshrastho dinapo dvitIye / karoti jAtaM dhanadhAnyasambhavam | / mitrasya bhAge tvatha lohajAtaM / vargottamasthaH paradArajAtam",
+"damaged": false
+},
+"4": {
+"text": "shatrorgR^ihe vA yadi tIkShNarashmirdvitIyagaH svalpadhanaM prasUte | / kaShTAntadeshe.adhamasavayA cha / mUlatrikoNe tvatha bhikShajaM cha",
+"damaged": false
+},
+"5": {
+"text": "chandro dvitIye yadi tu~NgasaMsthe / muktAmaNiprAyabhanaM prasUte | / tu~NgAMshake vA kanakaM cha rUpyaM / ShaDvargashuddho vividhaM hiraNyam",
+"damaged": false
+},
+"6": {
+"text": "nIchAshritaH shItakaraH prasUte / dvitIyago vittamasadvyayaM cha | / nIchasya bhAge ty vyayena hInaM / pApotthavarge vasavAM bhayaM cha",
+"damaged": false
+},
+"7": {
+"text": "mitrAshrayastho yadi vA shashA~Nko / vittaM prasUte sutajaM narANAm | / mitrasya bhAge kR^iShikR^itprasUtaM / vargottamasthaH suhR^idarjitaM cha",
+"damaged": false
+},
+"8": {
+"text": "shatrorgR^ihe vA yadi rAtrinAthaH / koshAshritachChauryadhanaM prasUte | / tadAMshake vAtha kukarmajAtaM / mUlatrikoNe tvatha bhAryajottham",
+"damaged": false
+},
+"9": {
+"text": "bhaumaH svatu~Nge yadi koshagaH syAd / yuddhodbhavaM saMjanayeddhanaM cha | / uchChAMshake vAtikR^ishaM cha kaShTAt / ShaDvargashuddhaH svajanodbhavam cha",
+"damaged": false
+},
+"10": {
+"text": "nIchAshrito bhUtanayastu nIche / dvItIyago nirdhanameva sUte | / nIchAMshake bahvraNameva nityaM / pApotthavarge vraNayuktadeham",
+"damaged": false
+},
+"11": {
+"text": "mitragR^ihe vA yadi bhUmisute / koshAshrito mitrabalena jAtam | / dhanaM prasUte suhR^idaMshake cha / vargottame devaguruprasAdAt",
+"damaged": false
+},
+"12": {
+"text": "shatrorgR^ihe bhUtanayo dvitIye / dhanaM prasUte na kadAchideva | / shatrorvibhAge dhR^iNapApasa~NgAn / mUlatrikoNe tu janoparodhAt",
+"damaged": false
+},
+"13": {
+"text": "saumyasvatu~Nge yadi koshasaMsthaH / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. naM bhUridhanasya dhatte | / tu~NgAMshake sasyachatuShpadAttha / ShaDvargashuddho vividhairUpayaiH",
+"damaged": true
+},
+"14": {
+"text": "nIchAshritaH somasuto dhanastho / nikR^iShTavittaM kurute narANAm | / nIchAMshakastho riputo.atidainyAt / pApotthavarge bahuvaMchanAshcha",
+"damaged": false
+},
+"15": {
+"text": "mitrAshritasthe yadisomaputro / dvitIyago vAjijameva vittam | / dhatte narANAM chaM suhR^idvibhAge / vargottame vA sukR^itaM prasUte",
+"damaged": false
+},
+"16": {
+"text": "buddho yadA shatrugR^ihaM prayAto / dvitIyagaH shatrunIShevaNena | / dhanaM bhavecChatruvi\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / tvalpaM trikoNe varalokajAtam",
+"damaged": true
+},
+"17": {
+"text": "jIvo dvitIye yadi tu~Nga / sadA dhanaM nyAyajitaM prasUte | / tu~NgAMshake cha dvijasAdhuvR^itta / ShaDvargashuddho nR^ipasaMbhavaM cha",
+"damaged": false
+},
+"18": {
+"text": "nIchAshrito devagururdvitIye / dhanaM prasUte paradArajAtam | / nIchAMshake chAntyajalokajAtaM / pApasya varge bahukaShTajAtam",
+"damaged": false
+},
+"19": {
+"text": "mitrAshrayastho yadi devamantrI / dvitIyago vastragajAshchajaM cha | / dhatte tadaMshe na kR^iShiprasUtaM / vargottamasyaH sujanapradantam",
+"damaged": false
+},
+"20": {
+"text": "yadA dvitIye.arigR^ihe surejyo / vidhatte.ariniShevaNena | / shatrvaMshake shatrujanena dattaM / mUlatrikoNe nidhijaM sadaiva",
+"damaged": false
+},
+"21": {
+"text": "shukre dvitIye yadi tu~NgasaMsthaH / sadAkShayaM bhUridhanaM prasUte | / tu~NgAMshake pUrvajasaMchitaM cha / ShaDvargashuddho dvitayaM nitAntam",
+"damaged": false
+},
+"22": {
+"text": "nIchAshito daityagururdvitIye / dhanaM suvAte shrutijaM nitAntam | / dyUtarjitaM nIchanavAMshasaMsthaH / pApasya varg paradeshasa~gAt",
+"damaged": false
+},
+"23": {
+"text": "mitrAshryastho yadi dAnavejyo / dvitIyasaMstho nR^ipajaM vidhatte | / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. nnaM tadashaM nR^ipaputrajAta / rAj~nI\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. mutthaM yadi shubhavarge",
+"damaged": true
+},
+"24": {
+"text": "shukro dvitIye yadi shatrusaMstho / dhanaM prasUte varakarmajAtam | / shatrorvibhAge tvatha dainyajAtaM / mUlatrikoNe svasutArjitaM cha",
+"damaged": false
+},
+"25": {
+"text": "shAnirdvitIye yadi tu~NgasaMstho / dhanaM prasUte tu kukarmajAtam | / tadaMshake kaShTavinirjitaM cha / ShaDvargashudho vyasanodbhavaM cha",
+"damaged": false
+},
+"26": {
+"text": "nIchaM gato bhAskarajaH prasUte / niHkichanaM nityamanekaduHkham | / naraM tadaMshe.antyajavittabhAjaM / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. varge tu supApajaM cha",
+"damaged": true
+},
+"27": {
+"text": "mitrAshrayastho yadi sUryaputro / dvitIyagaH svasthadhanaM prasUte | / mitrasya bhAge tvatha mR^inmayaM cha / vargottamastho jalajaM sadaiva",
+"damaged": false
+},
+"28": {
+"text": "sauro yadA shatrugR^ihAshrayastho / dvitIyagaH pApadhanaM prasUte | / shatrorvibhage bahudAsatotthaM / mUlatrikoNe parapoSha cha",
+"damaged": false
+},
+"29": {
+"text": "sahasranAtho dinapH pradiShTo / lakShAdhipo ratrikaraH sadaiva | / shatAdhipo bhUtanayaH sadaiva / koTIshcharaH somasutaH sadaiva",
+"damaged": false
+},
+"30": {
+"text": "svarvAdhinAthaH surarAjamantrI / shukro hyasaMkhyaH shanirbhaumatulyaH | / svatu~NgAH syuryadi sarva eva / arthAntarAle tvanupAtajAtam",
+"damaged": false
+},
+"31": {
+"text": "svavargajaM vittamaho dadhatti / hitvA hi shukraM bahusa~NgajaM cha | / svaM svaM dhanaM svAsu dashAsu samyak / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\.",
+"damaged": true
+}
+},
+"26": {
+"1": {
+"text": "tR^itIyasaMstho yadi vAsaresho / mitraM nR^ipaM tu~Ngagato vidhatte | / tu~NgAMshake vA nR^ipasaMbhavaM cha / ShaDvargashuddhastvatha sArvabhaumam",
+"damaged": false
+},
+"2": {
+"text": "nIchAshrito nIchadhanaM vidhatte / mitraM tR^itIye yadi tIkShNarashmiH | / nIchAMshake bhikShukaputravairaM / pApasya varge tvatha vAraNaM  cha",
+"damaged": false
+},
+"3": {
+"text": "mitrAshrayastho yadi vAsarashI / mitraM dvijendraM kurute tR^itIye | / mitrAMshakastho janayet sushIlaM / vargottamastho.adbhutashAstraraktam",
+"damaged": false
+},
+"4": {
+"text": "ravitR^itIye.arigR^ihaM prayAto / mitraM vidhatte ripuvarjitA~Ngam | / dviShavibhAge guNavarjitaM cha / mUlatrikoNe patimeva shAntam",
+"damaged": false
+},
+"5": {
+"text": "tR^itIyagaH shItakaraH suvAte / mitraM svatu~Nge kR^ipaNasvabhAvam | / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. meva bhAge paratarkakaM cha / ShaDvargashuddhaH paradAraraktam",
+"damaged": true
+},
+"6": {
+"text": "nIchAshrito rAtripatistR^itIye / mitraM svAte.atyajameva nityam | / nIchasya bhAge tvatha nartakaM cha / bhaNDaM cha varge khalasambhavaM cha",
+"damaged": false
+},
+"7": {
+"text": "mitrAshrayastho yadi shItarashmirmitraM suvAte paravaMchakaM cha | / mitrasya bhAge bahudoShajaM cha / vargottamastho ghR^iNayA vihInam",
+"damaged": false
+},
+"8": {
+"text": "tR^itIyagaH shItakaro vidhatte / narAdhamaM shatrugR^ihaM prayAtaH | / shatrorvibhAge bahumAyayADhyaM / mUlatrikoNe paradAraraktam",
+"damaged": false
+},
+"9": {
+"text": "bhaumastR^itIye yadi tu~NgasaMstho / mitraM vidhatte varabhUmipAlam | / tu~NgAMshake vA nR^ipateramAtyaM / ShaDvargashuddho dvitayaM sadaiva",
+"damaged": false
+},
+"10": {
+"text": "nIchAshrito bhUtanayastR^itIye / mitraM vidhatte bahukAmasaktam | / nIchAMshakastho bhR^itakaM cha vaidyaM / pApotthavarge vyasanAbhibhUtam",
+"damaged": false
+},
+"11": {
+"text": "mitrAshrayastho yadi bhUmiputrastR^itIyago bhUrisukhaM prasUte | / mitrAMshake vAkShayajaM kumAraM / vargottamasthaH prachurAnnapAnam",
+"damaged": false
+},
+"12": {
+"text": "shatrorgR^ihastho yadi bhUmiputro / mitraM prasUte sahajAshritaM cha | / tasthaiva bhAge cha samR^iddhibhAjaM / mUlatrikoNe tvatha daNDanAtham",
+"damaged": false
+},
+"13": {
+"text": "saumyastR^itIye yadi tu~NgasaMstho / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. shAntamatiM prasUte | / tu~NgAMshake kaMchakina sama\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / ShaDvargashuddhaH sutarA kR^it \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. m",
+"damaged": true
+},
+"14": {
+"text": "nIchAritaH somasutastR^itIye / mitraM vidhatte vR^ijinaiH sametam | / gopAlakaM nIchavibhAgasaMsthaH / pApasya varge gatasauhR^idaM cha",
+"damaged": false
+},
+"15": {
+"text": "mitrAshrayasthaH shaijastR^itIya / mitraM suvAte bahukarmabhAjam | / bhAge tvatha nApitaM cha / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. khala\\.\\.\\.\\.\\.\\.\\.\\. ram",
+"damaged": true
+},
+"16": {
+"text": "shatrorgR^ihastho yadi somaputro / mitraM tR^itIye kurute sunindham | / tasthaiva bhAge janitAtigaM cha / mUlatrikoNe.atha malimlucham cha",
+"damaged": false
+},
+"17": {
+"text": "nIchastR^itIye yadi tu~NgasaMstho / mitraM suvAt vinayena hInam | / uchChAMshake dambhaparaM nR^ishaMsaM / ShaDvargashuddhastu tathAprajaM cha",
+"damaged": false
+},
+"18": {
+"text": "nIchAshrito devagurustR^itIye / mitraM prasUte bahupAchitAram | / tadaMshake dyUtarataM sadaiva / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. varge gatabadhuvargam",
+"damaged": true
+},
+"19": {
+"text": "jIvo yadA mitragR^ihe tR^itIye / tadA prasUte.atikR^ishaM cha mitram | / mitrAMshake paNyaparaM pradhAnaM / vargottamasthaH khalu dantakAram",
+"damaged": false
+},
+"20": {
+"text": "tR^itIyago devagururya\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / shatrorgR^ihe klIvasukhaM suvAte | / tadaMshake shilpinamapradhAnaM / mUlatrikoNe patitaM nikR^iShTam",
+"damaged": true
+},
+"21": {
+"text": "shukro yadA tu~NgatastR^itIye / tadA suvAte patitaM cha mitram | / tu~NgAMshake vA nR^ipasevakaM cha / ShaDvargashuddhaM kalahapriyaM cha",
+"damaged": false
+},
+"22": {
+"text": "nIchAshrito daityagurustR^itIye / mitraM vidhatte vadhakaM nR^ishaMsham | / nIchAMshake nichakulaprasUtaM / pApasya varge patitaM nR^ishaMsam",
+"damaged": false
+},
+"23": {
+"text": "mitrAshrayastho bhR^igujastR^itIye / karoti mitraM khalu bhANDamva | / mitAMshake vAraNamaprashastaM / vargottamasthaH shabaraM kR^itaghnam",
+"damaged": false
+},
+"24": {
+"text": "riporgR^ihe bhArgavajaH prasUte / tR^itIyagaH krIDanakaM cha mitram | / tadaMshake shilpinamaprashastaM / mUlatrikoNe.atha janairnirastam",
+"damaged": false
+},
+"25": {
+"text": "sUryAtmajastu~NgatastR^itIye / mitraM suvAte varabhUmipAlam | / tu~NgAMshake vittapatiM prasiddhaM / ShaDvargashuddho bahushAstraraktam",
+"damaged": false
+},
+"26": {
+"text": "nIchAshritaH sUryasutatR^itIye / mitraM prasUte malinasvabhAvam | / nIchAMshake vaMchanatatparaM cha / pApasya varge ghR^inathA vihInam",
+"damaged": false
+},
+"27": {
+"text": "mitrAshrayasthaH khalu sUryaputro / mitraM prasUte sachivaM nayacham | / mitrAMshake vA guNavittabhAjaM / vargottamastha sthitimAnayuktam",
+"damaged": false
+},
+"28": {
+"text": "shaniryadA shatrugR^ihAshrayasthastR^itIyagaH pAparataM cha mitram | / dhatte tadaMshe vR^ijinaM sudInaM / mUlatrikoNe vijitAripakSham",
+"damaged": false
+},
+"29": {
+"text": "\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. sAvatA pravi / dashAdhipaH shItkarastu \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / sahasramitraH kShitijo \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. u\\.\\.\\.\\.\\.\\.\\.\\. / shatAdhipo devapurohitashcha",
+"damaged": true
+},
+"30": {
+"text": "ashItinAtho bhR^iguna. \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / saurastu bhaumema \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. mito.adhiko vA | / svatu~NgarAshau yadi vattamAnAH / sarve \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. u\\.\\.\\.\\.\\.\\.\\.\\.atasya vashAddadanti",
+"damaged": true
+}
+},
+"27": {
+"1": {
+"text": "\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. bahuduShTajAtam | / tu~NgAMshakastho.aNusukhaM kadAchit / ShaDvargashuddhaH paradArashchaM cha",
+"damaged": true
+},
+"2": {
+"text": "nIchAshrito vAsarapashchaturthe / sukhaM vidhatte na kadAchideva | / nichAMshake duHkhavimishritaM cha / pApasya varge dhR^iNaduHkhamishram",
+"damaged": false
+},
+"3": {
+"text": "mitrAshrayastho dinakR^ishchaturthe / sukhaM vidhatte vR^ijinaiH sametam | / chauryadbhavaM shatruvibhAgasaMstho / vargottamastho.akShajameva nityam",
+"damaged": false
+},
+"4": {
+"text": "shatrorgR^ihe vAsarapashchaturthe / yuddhe tu saukhyaM kurute narANAm | / shatrorvibhAge parasevayA cha / mUlatrikoNe vadhavandhajAtam",
+"damaged": false
+},
+"5": {
+"text": "sukhasthitaH shItakaraH svatu~Nge / sukhaM vidhatte gajavAjijAtam | / tu~NgAMshake hemasamudbhavaM cha / ShaDvargashuddho vividhaM sadaiva",
+"damaged": false
+},
+"6": {
+"text": "nIchAshritaH shItakaraH \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / sukhaM sadA dyUtajameva puMsAm | / nIchAMshake bhUrikR^iShiprasUtaM / pApasya varge bahupApajAtam",
+"damaged": true
+},
+"7": {
+"text": "mitrAshrayasthaH khalu shItarashmiH / sukhasthito bhUrisukhaM vidhatte | / sutAdbhava mitrAvabhAgasaMstho / vargottamastho vanitodbhavaM cha",
+"damaged": false
+},
+"8": {
+"text": "chaturthago rAtripatiH prasUte / shatrorgR^ihe saukhyamanItijAtam | / shatrorvibhAge kapaTaprasUta / mUlatrikoNe tvatha dharmajAtam",
+"damaged": false
+},
+"9": {
+"text": "chaturtho bhUtanayaH svatu~Nge / sukhaM vidhatte parasUdanena / tu~NgAMshakasthaH parabandhanena / ShaDvargashuddhaH paravaMchanena",
+"damaged": false
+},
+"10": {
+"text": "sukhAshrito bhUmisutastu nIche / saukhyaM kadAchinna karoti puMsAm | / nIchAMshakasthaH parapoShaNena / pApatya varge vadhabandhanena",
+"damaged": false
+},
+"11": {
+"text": "mitrArayasthaH kShitijashchaturthe / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. paradeshayogAt | / mitrAMshakasthaH surataprasa~Nga\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / vargottamasthaH paravittanAshAt",
+"damaged": true
+},
+"12": {
+"text": "shatrorgR^ihe syAdhadi bhUmiputrarchaturthagaH puMshchalajaM cha saukhyam | / dhatte tadaMshe karayonijAtaM / mUlatrikoNe sukhamohanADhyam",
+"damaged": false
+},
+"13": {
+"text": "saumyaH sukhasthaH sukhameva dhatte / mahAjanotthaM yadi tu~NgasaMsthaH | / tu~NgAMshake pArthivajaM cha puMsAM / ShaDvargashuddho vyayameva puMsAm",
+"damaged": false
+},
+"14": {
+"text": "nIchAshrayasthaH shashijo vidhatte / chaturthagaH kleshajameva saukhyam | / nIchAMshakasthaH parasevayA cha / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. ativirgahaNena",
+"damaged": true
+},
+"15": {
+"text": "mitrAshrayasthaH shashijashchaturthe / sukhaM vidhatte varaputrajAtam | / mitrAMshakasthastu kalatrajAtaM / vargottamastho duhitodbhavaM cha",
+"damaged": false
+},
+"16": {
+"text": "shatrvAshrayasthaH shashijashchaturthe / sukhaM vidhatte krayavikrayeNa | / tasyaiva bhAge pashupAlanena / mUlatrikoNe nijabandhavottham",
+"damaged": false
+},
+"17": {
+"text": "jIvashchaturthe yadi tu~NgasaMstho / sukhaM vidhatte sakalaM sadaiva | / tu~Ngasya bhAge cha tathA tadardhaM / ShaDvargashudhashcha sudharmayuktam",
+"damaged": false
+},
+"18": {
+"text": "nIchAshrito devagurushchaturthe / saukhyaM vidhatte bahunIchasa~NgAt | / nIchAMshakasthashcha vichitrabhAvAt / pApasya varge parapoShaNena",
+"damaged": false
+},
+"19": {
+"text": "mitrAshrayasthe surarAjapUjye / chaturthage vaMshajameva saukhyam | / bhavettadaMshe bahubhR^ityajAta / vargottamasthe bhaginIsamuttham",
+"damaged": false
+},
+"20": {
+"text": "shatrorgR^ihatho yadi devapUjya\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / schaturthago nIchaniShevaNena | / saukhyaM vidhatte.atha tadaMshake vA / mUlatrikoNe nR^ipasa~Ngamena",
+"damaged": true
+},
+"21": {
+"text": "shukraH svatu~Nge yadi bandhu\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / sukhaM vidhatte bahuvittajAtam | / tu~NgAMshakasthastu svaroShTrajAtaM / ShaDvargashuddhashcha gajodbhavaM cha",
+"damaged": true
+},
+"22": {
+"text": "nIchAshrayastho yadi daityamantrI / sukhaM vidhatte paranArijAtam | / nIchAMshake chaiva vilAsinInAM / pApasya varge gurupatnisa~NgAt",
+"damaged": false
+},
+"23": {
+"text": "mitrAshrayastho bhR^igushchaturthe / saukhyaM vidhatte bahugodhanottham | / mitrAMshake.ajAvikameva nityaM / vargottamastho mahiShIsamuttham",
+"damaged": false
+},
+"24": {
+"text": "shatrorgR^ihastho yadi daityapUjyaH / sukhaM vidhatte kuniShevaNena | / tadaMshake vA paradeshavAsAn / mUlatrikoNe dvijadevasa~NgAt",
+"damaged": false
+},
+"25": {
+"text": "shaniH sukhastho yadi tu~NgasaMsthaH / sukhaM vidhatte mR^igapakShinAshAt | / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. ake vA viShabhakShiNena \\.\\.\\.\\.\\.\\.\\.\\. / ShaDvargashuddhaH kR^iShikarmajAtam",
+"damaged": true
+},
+"26": {
+"text": "nIchAshrito bhAskarajaH prasUte / chaturthagaH saukhyavinA manuShyam | / nIchAMshake lokanibandhanena / pApasya varge pararandhrasa~NgAt",
+"damaged": false
+},
+"27": {
+"text": "mitrAshrayastho yadi \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / vidhatte svakalatrabhuktam | / mitrAMshake vA svakutumbahInaM / vargottamasthaH parapIDanena",
+"damaged": true
+},
+"28": {
+"text": "\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. rAnajaH prasUte / sukhaM chaturthe paravaMchanena | / tadaMshake mAnuShavikrayeNa / mUlatrikoNe krayavikrayeNa",
+"damaged": true
+},
+"29": {
+"text": "saukhyaH surarAjamantrI \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / shatAdhipaH somasutaH sitashcha | / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. alI / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. yAdhipAH sUryashanaishcharArAH",
+"damaged": true
+},
+"30": {
+"text": "svatu~NgasaMstha\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / saukhyAni yacChanti sadA grahendrAH | / nIchAshritA hInasukhA bhavanti / ShaDvargashuddhAshcha yathA svatu~Nge",
+"damaged": true
+}
+},
+"29": {
+"1": {
+"text": "\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. vAsarapo.arisaMsthaH / shatruM vidhatte vratinaM sadaiva | / tu~NgAMshakasthita atha viprameva / ShaDvargashuddho nR^ipatiM sadaiva",
+"damaged": true
+},
+"2": {
+"text": "nIchAshrayasthaH savitArisaMsthaH / shatruM vidhatte kumatiM kR^itaghnam | / nIchAMshakasthaH pramadAnuraktaM / pApasya varge paratarkakaM cha",
+"damaged": false
+},
+"3": {
+"text": "suhR^idgR^ihasthaH savitArisaMsthaH / shatruM vidhatte vaNijAnuraktam | / mitrAMshakasthastvatha gAjapAla / vargottamastho bahushiShyabhAjam",
+"damaged": false
+},
+"4": {
+"text": "shatrvAshrayastho yadi tIkShNarashmiH / ShaShThe vidhatte pramadAsamuttham | / vairaM tadamshe tvatha paMshchalIbhIrmUlatrikoNe cha vilAsinIbhiH",
+"damaged": false
+},
+"5": {
+"text": "chandro.arisaMstho yadi tu~NgasaMthaH / shatruM vidhatte bahushAstraraktam | / uchChAMshake vA paradAraraktaM / ShaDvargashuddho.apyatha pArthivaM cha",
+"damaged": false
+},
+"6": {
+"text": "nIchAshritaH shItakaro.arisaMstho / mitraM na kiMchit kurute marANAm | / nichAMshakasthashcha bahuprakAraM / vairaM vavarNena khalotthavarge",
+"damaged": false
+},
+"7": {
+"text": "mitrAshrayastho yadi shItarashmiH / ShaShThasthito.ariM nR^ipatiM prasUte | / mitrAMshakasthastu narendraputraM / vargottamasthaH satataM nR^ishaMsam",
+"damaged": false
+},
+"8": {
+"text": "shatrvAshrayastho yadi shItarashmiH / shatruM vidhatte vikR^itasvabhAvam | / tasyaiva bhAge hyatha sainyanAthaM / mUlatrikoNe guruvatsanaM cha",
+"damaged": false
+},
+"9": {
+"text": "tu~NgAshrito bhUtanayastu ShaShThe / shatruM na puMsAM kurute kadAchit | / tu~NgAMshake chAtha sudInacheShTaM / ShaDvargashuddhaH paradeshabhAjam",
+"damaged": false
+},
+"10": {
+"text": "bhaumo.arisaMstho yadi nIchasaMsthaH / shatruM vidhatte.antyajameva puMsAm | / nIchAMshake vA kR^iShikarmaraktaM / pApasya varge dhanadhAnyahInam",
+"damaged": false
+},
+"11": {
+"text": "mitrAshrayastho yadi bhUmiputraH / ShaShthe prasUte tanayena vairam | / mitrAMshake vA tvatha bAndhavena / vargottamastho nijamAtulena",
+"damaged": false
+},
+"12": {
+"text": "bhaumo.arisaMstho yadi shatrurAshau / ripuM vidhatte gurudevatArim | / tasyaiva bhAge ghR^iNayA vihInaM / mUlatrikoNe priyasAhasaM cha",
+"damaged": false
+},
+"13": {
+"text": "saumyo.arisaMstho yadi tu~NgasaMsthaH / shatruM vidhatte vikR^itavabhAvam | / tu~NgAMshake vA dhaninaM virUpaM / ShaDvargashuddhaH suratAnukUlam",
+"damaged": false
+},
+"14": {
+"text": "budho.arisaMstho yadi nIcharAshau / shatruM suvAte vikalaM vinetram | / kANaM tadaMshe vikR^itAMghR^idaMShtraM / pApastha varge dvijadhAmaraktam",
+"damaged": false
+},
+"15": {
+"text": "mitrAshrayastho yadi somaputraH / ShaShthe vidhatte sachivaM hi mitram | / mitrAmshakasthaH sachivasya putraM / ShaDvargashuddhaH paradAraraktam",
+"damaged": false
+},
+"16": {
+"text": "shatrorgR^ihastho yadi somaputraH / shatruM vidhatte paravintaraktam | / chauraM tadaMshe satataM nR^ishaMsaM / mUlatrikoNe vyasanAbhibhUtam",
+"damaged": false
+},
+"17": {
+"text": "jIvaH svatu~Nge yadi ShaShThasaMsthaH / shatruM prasUte bahudoShabhAjam | / tu~NgAMshake \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. rivivarjitaM cha / ShaDvargashuddhaH pramadAnukUlam",
+"damaged": true
+},
+"18": {
+"text": "nIchAshraye vA yadi devapUjyaH / ShaShthe prasUte.alpasukhaM cha saktam | / tadaMshake vA bahupAnaraktaM / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. varge guNavarjitaM cha",
+"damaged": true
+},
+"19": {
+"text": "mitrAshraya\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. yadi devamantrI / shatruM suvAtte.a\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. patiM prasiddham | / tadaMshake vA kharagardabhADhyaM / vargottamasthaH shrutavarjitaM cha",
+"damaged": true
+},
+"20": {
+"text": "shatrvAshryasthaH kurute surejyaH / shatruM vihInaM nijabandhuvarge | / shatrorvibhAge vinayena hInaM / mUlatrikoNe bahuputrapautram",
+"damaged": false
+},
+"21": {
+"text": "shukraH svatu~Nge yadi shatrusaMsthaH / shatruM vidhatte jitashatrupakSham | / tu~NgAMshake vA jitashatrudAraM / ShaDvargashuddhaH praNatAripakSham",
+"damaged": false
+},
+"22": {
+"text": "nIchAshrayastho ripugo.asurejyaH / shatruM prasUte bahukanyakADhyam | / nIchAMshakasthastu gajAdhinAthaM / pApasya varge kR^itapApasa~Ngam",
+"damaged": false
+},
+"23": {
+"text": "mitrAshrayastho ripugo vidhatte / shukro ripuM bandhavavarganeva | / tadaMshake vA svakalatravarge / vargottamasthaH shvashuraM sadaiva",
+"damaged": false
+},
+"24": {
+"text": "shatrvAshrayastho.arigatastu shukro / ripuM prasUte sutarAM nR^ishaMsam | / tasyAMshake vyAdhuvivarjitA~NgaM / mUlatrikoNe dhanavarjitaM cha",
+"damaged": false
+},
+"25": {
+"text": "shanaishcharaH ShaShThagataH svatu~Nge / parairvihInaM janayenmanuShyam | / tu~NgAMshake svalparipuM jitAriM / ShaDvargashuddhaH sunataM paraishcha",
+"damaged": false
+},
+"26": {
+"text": "nIchAshrayastho yadi sUryaputraH / shatruM prasUte taralaM manuShyam | / nIchasya bhAge kanakADhyameva / pApasya varge kR^iShikarmadakSham",
+"damaged": false
+},
+"27": {
+"text": "mitrAshrayastho ravijo.arisaMsthaH / shaThaM ripuM svalpatanuM prasUte | / mitrasya bhAge haninaM pradhAnaM / vargottamastho bahukarmayuktam",
+"damaged": false
+},
+"28": {
+"text": "shatrvAshrayastho ravijo ripusthaH / shatruM suvAte satataM gatArtham | / shatrorvibhAge sutadArahInaM / mUlatrikoNe parasa~NgataM cha",
+"damaged": false
+},
+"29": {
+"text": "dashAdhipastIkShNakaraH pradiShtaM / sahatranAtho rajanIpatishcha / vakrArkajau hInaparau sadaiva / seShAstu chandreNa samAH svatu~Nge",
+"damaged": false
+}
+},
+"30": {
+"1": {
+"text": "dinAdhipaH saptamagaH svatu~Nge / karoti bhAryaM kalahapriyAM cha | / tu~NgAMshakasthaH parakarmaraktAM / ShaDvargashuddhatu daridrayuktAm",
+"damaged": false
+},
+"2": {
+"text": "nIchAshritaH saptamagastu sUryo / bhAryAM vidhatte vyadhichAriNIM cha | / nIchAMshakasthashcha sarogayuktAM / pApasya varge satataM kushIlAm",
+"damaged": false
+},
+"3": {
+"text": "mitrAshrayastho dinapaH kalatre / karoti bhAryAM sutarAM nR^ishaMsAm | / mitrasya bhAge suvihInachintAM / vargottamasthaH suratapriyAM cha",
+"damaged": false
+},
+"4": {
+"text": "shatrvAshrayastho yadi vAsareshaH / karoti bhAryAM vyasanAbhibhUtAm | / shatrorvibhage parahInakR^ityAM / mUlatrikoNe priyasAdhvasAM cha",
+"damaged": false
+},
+"5": {
+"text": "chandrastu kAm yadi tu~NgasaMstho / bhAryAM vidhatte subhagAM manoj~nAm | / tu~NgAMshake vA suradevabhaktAM / ShaDvargashuddho.atimanoshcharUpAm",
+"damaged": false
+},
+"6": {
+"text": "nishAkaraH kAmagataH svanIche / bhAryAm vidhatte bahurogabhAjAm | / nIchAMshake kuShTharujA sametAM / pApasya varge patinA virudhAm",
+"damaged": false
+},
+"7": {
+"text": "mitrAshrayastho yadi rAtrinAtho / bhAryAM prasUte priyavAdinIM cha | / mitrAMshake vA vinayena yuktAM / vargottamastho bahukarmayuktAm",
+"damaged": false
+},
+"8": {
+"text": "shatrvAshrayastho yadi rAtrinAtho / viruddhacheShTAM janayeshcha bhAryAm | / shatrorvibhAge vigataprabhAvAM / mUlatrikoNe bahubhR^ityadakShAm",
+"damaged": false
+},
+"9": {
+"text": "dharAsutaH kAtaH kAmagateH svatu~Nge / bhAryAM vidhatte gatarUpavittAm | / tu~NgAMshake vAtijarAbhibhUtAM / ShaDvargashuddhaH prachitaprabhAvAm",
+"damaged": false
+},
+"10": {
+"text": "nIchAshrayasthaH kShitijastu kAme / dAraM vidhatte prachurapragalbham | / nIchAMshake vA bahushatrupakShAM / pApasya varge nijavargahInAm",
+"damaged": false
+},
+"11": {
+"text": "mitrAshrayasthaH kShitijaH kalatre / bhAryAM suvAte laghucholanAM cha | / mitrasya bhAge.alpasaroruDAkShIM / vargottamasthaH prabhutAvihInAm",
+"damaged": false
+},
+"12": {
+"text": "shatrvAshrayastho yadi bhUmiputro / bhAryAM vidhatte kaThinasvabhAvAm | / tadaMshake vA hatabandhivargAM / mUlatrikoNe parasa~NgatAM cha",
+"damaged": false
+},
+"13": {
+"text": "kAmAshrayasthaH shashijaH svatu~Nge / bhAryAM vidhatte.adbhutarUpayuktAm | / tu~NgAMshake vA bahubhoyuktAM / ShaDvargashuddhaH kR^itamaNDanAM cha",
+"damaged": false
+},
+"14": {
+"text": "nIche cha saumyaH khalu saptamasthaH / karoti bhAryAM kunarAnuraktAm | / nIchAMshake vA vyasanAnuraktaM / pApasya varge guNavarjitAM cha",
+"damaged": false
+},
+"15": {
+"text": "mitrAshrayastho yadi somaputro / dAraM prasUte bahuputraputram | / mitrAMshake vA prachurAnnapAnAM / vargottamasthaH prabhayA sametAm",
+"damaged": false
+},
+"16": {
+"text": "shatrvAshrayasthe yadi kAmago j~no / bhAryAM suvAte.arthavivarjitAM cha | / tadaMshake vA dhanadhAnyahInAM / mUlatrikoNe janavallabhAM cha",
+"damaged": false
+},
+"17": {
+"text": "jIvaH kalatre yadi tu~NgasaMsthaH / karoti dAraM priyadarshanaM cha | / tu~NgAMshakastho bahusaukhyayuktAM / ShaDvargashuddhaH sukulodbhavAM cha",
+"damaged": false
+},
+"18": {
+"text": "nIchAshrito devaguruH kalatre / dAre vidhatte na kulodbhavaM cha | / nIchAMshakastho bahumAnayuktAM / pApasya varge pishunasvabhAvAm",
+"damaged": false
+},
+"19": {
+"text": "mitrAshrayastho madane surejyo / dAraM vidhatte bahusAdhumitram | / mitrAMshakastho maNimauktikADhyaM / vargottamastho.ativishuddhakAyAm",
+"damaged": false
+},
+"20": {
+"text": "shatrvAshrayastho madane surejyo / dAraM vidhatte chapalasvabhAvam | / parAMshakastho.atikaThoravAkyAM / mUlatrikoNe guNavarjitAM cha",
+"damaged": false
+},
+"21": {
+"text": "shukroshchasaMstho yadi saptamastho / bhAryAM suvate bahumitrapakShAm | / tu~NgAMshakastho dvijadevabhaktAM / ShaDvargashuddhastu pativratAM cha",
+"damaged": false
+},
+"22": {
+"text": "nIchAshrito daityaguruH kalatre / kalatramuchChaiH kurute prAnnam | / nIchAMshakasthastu surUpanetrAM / pApasya varge ghR^iNayA vihInAm",
+"damaged": false
+},
+"23": {
+"text": "mitrAshrayasthaH kurute cha shukraH / kAme sukAmAM subhagAM cha bhAryAm | / mitrAMshakasthashcha sushuddhachintAM / vargottamastho janavallabhAM cha",
+"damaged": false
+},
+"24": {
+"text": "shatrvAshrayastho bhR^igujastu kAme / bhAryAM uvAte sutarAM prahInAm | / tadaMshakastho.aprakR^itasvabhAvAM / mUlatrikoNe susamanvitAM cha",
+"damaged": false
+},
+"25": {
+"text": "shanaishcharastu~NgataH kalatre / sthUlaM kalatraM kurute narANAm | / tu~NgAMshakasthashcha sukR^iShNagAtrAM / ShaDvargashuddho bahuduHkhabhAjAm",
+"damaged": false
+},
+"26": {
+"text": "nIchAshritaH kAmagatastu koNo / dAraM prasUte vikarAlagAtram | / nIchAMshakasthashcha vihInadharmAM / pApasya varge pararaktachintAm",
+"damaged": false
+},
+"27": {
+"text": "mitrAshrayasthaH prakaroti sauraH / kAmAshritaH kopaparaM kalatram | / mitrasyabhAge guNavarjitA~NgAM / pApasya varge.atikhalasvabhAvAm",
+"damaged": false
+},
+"28": {
+"text": "shatrvAshrayastho ravijaH kalatre / dAraM prasUte bahupAparaktam | / tasthaiva bhAge patininditAM cha / mUlatrikoNe vidhanAM sadaiva",
+"damaged": false
+},
+"29": {
+"text": "pachAdhipo devaguruH sitashcha / somo visaMkhyaH shashijo gaNAnAm | / ekAdhipAH sUryashanaishcharArAH / svatu~NgagAH syuryadi sadgrahendrAH",
+"damaged": false
+}
+},
+"32": {
+"1": {
+"text": "dharmAshrito vAsarapaH svatu~Nge / dharmaM nR^iNAM tApasameva dhatte | / tu~NgAMshasaMsthastvatha dambhadaM cha / ShaDvargashuddhastvatha vajjayA cha",
+"damaged": false
+},
+"2": {
+"text": "nIchAshrayasthe dinapastu dharme / dharmeNa hInaM janayenmanuShyam | / nIchAMshakasthashcha kukarmaraktaM / pApasya varge paradharmaraktam",
+"damaged": false
+},
+"3": {
+"text": "mitrAshrayastho dinapastu dharme / kaulotthadharmaM kurute narANAm | / mitrAMshake vaikR^itikaM tathaiva / vargottamastho.atilaghupramANam",
+"damaged": false
+},
+"4": {
+"text": "shatrvAshrayastho dinapastu dharme / kR^itaghnadharmaM kurute narANAm | / tadaMshakasthastvatha chaurajaM cha / mUlatrikoNe.atisukhotthameva",
+"damaged": false
+},
+"5": {
+"text": "chandraH svatu~Nge yadi dharmasaMsthaH / prasAddharmaM kurute narANAm | / tadaMshasaMshthashcha tadAgajaM cha / ShaDvargashuddho dvijA\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. dAnajaM cha",
+"damaged": true
+},
+"6": {
+"text": "\\.\\.\\.\\.\\.\\.\\.\\.\\.\\.",
+"damaged": true
+},
+"7": {
+"text": "mitrAshrayastho himagushcha dharme / dharmaM vidhate svakuTumbada\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / tadaMshake mitrajanotthameva \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / vargottamastho.atra samR^iddhidam",
+"damaged": true
+},
+"8": {
+"text": "shtrvAshrayastho himagushcha dharme / dharmaM prasUte viTapAtradAnAt | / tadaMshakasthaH pramadAnusa~NgAn / mUlatrikoNe bahuvittadAnAt",
+"damaged": false
+},
+"9": {
+"text": "bhaumaH svatu~Nge yadi dharmasaMstho / dharmaM prasUte raNajaM narANAm | / tu~NgAMshakasthaH parasevayA cha / ShaDvargashuddho gurupoShaNena",
+"damaged": false
+},
+"10": {
+"text": "nIchAshrayasthaH kShitijastu dharme / dharmaM vidhatte \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / tadaNshakasthaH paradAralAbhAt / pApasya varge janatAparodhAt",
+"damaged": true
+},
+"11": {
+"text": "mitrAshrayastha kShitijastu dharme / dharmaM vidhatte suhR^idaprakopAt | / tasthaiva bhAge bahukopatashcha / vargottamasthaH parasevayA cha",
+"damaged": false
+},
+"12": {
+"text": "shatrvAshrayasthaH kShitijastu dharme / dharmaM vidhatte na kadAchideva | / tadAMshakasthaH kanachauraNAnAM / mUlatrikoNe namitArjitena",
+"damaged": false
+},
+"13": {
+"text": "dharmAshritaH somasutaH svatu~Nge / dharmaM vidhatte varashatrujAtam | / tadaMshakastho dvijadevatAnAM / ShaDvargashudho vratapAlanena",
+"damaged": false
+},
+"14": {
+"text": "nIchAshrayasthaH shashijastu dharme / dharmaM prasUte kapadena puMsAm | / tadaMshakasthaH kuhakaprayogaiH / pApasyavarge.atha Chalena nityam",
+"damaged": false
+},
+"15": {
+"text": "mitrAshrayastha shashijastu dharme / dharmaM prasUte gR^ihadAnatashcha | / mitrAMshake tApasameva nityaM / vargottamastho bahuvastradAnAt",
+"damaged": false
+},
+"16": {
+"text": "shatrvashryathaH shashijastu dharme / dharmaM vidhatte.akShavivarjitaM cha | / tasyaiva bhAge gurulokAbhAn / mUlatrikoNe bahushAntyameva",
+"damaged": false
+},
+"17": {
+"text": "dharmAshrito devaguruH svatu~Nge / dharmaM vidhatte pracharaM sadaiva | / tadaMshakastho \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / ShaDvargashuddho drutameva puMsAm",
+"damaged": true
+},
+"18": {
+"text": "nIchAshthito devagurushcha dharme / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. suvAte kR^itakaM narANAm | / nIchAMshakastho guruNAnurodhAt / pApasya varge bahutIrthasa~NgAt",
+"damaged": true
+},
+"19": {
+"text": "mitrAshrayasthaH surarAjamantrI / dharmaM vidhatte bahudharmamArgAt | / mitrAMshakastho vanitAmatena / vargottamasthastanayAnusa~NgAt",
+"damaged": false
+},
+"20": {
+"text": "shatrvAshrayasthaH kurute surejyo / dharme narANAM sunayena dharmam | / tadaMshakastho gurupoShaNena / mUlatrikoNe ghR^iNayAnurodhAt",
+"damaged": false
+},
+"21": {
+"text": "shukroshchasaMstho yadi dharmasaMstho / dharmaM prasUte varadAnajAtam | / \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. AnnajaM tasya vibhAgasaMsthaH / ShaDvargashuddhaH pitR^itarpaNena",
+"damaged": true
+},
+"22": {
+"text": "nIchAMshakastho bhR^igujashcha dharme / dharmaM prasUte paradeshasa~NgAt | / tadaMshakastho.adhvagalokasa~NgAt / vargottamasthaH sumukhairanekaiH",
+"damaged": false
+},
+"23": {
+"text": "mitrAshrayastho bhR^igujastu dharme / dharmaM suvAte.alpaphalaM narANAm | / tasthaiva bhAge cha vinisayena / pApasya varge paravaMchanena",
+"damaged": false
+},
+"24": {
+"text": "shatrvAshrayastho bhR^igujashcha dharme / dharmaM prasUte paralokasa~NgAt | / tadaMshakastho.ariniShevaNena / mUlatrikoNe kR^iShikarmalAbhAt",
+"damaged": false
+},
+"25": {
+"text": "shanaishcharastu~Ngatastu dharme / dharmaM vidhatte vayasi tR^itIye | / tadaMshakastho.alpataraM paraM cha / ShaDvargauddhastvatha bhaktibAhyam",
+"damaged": false
+},
+"26": {
+"text": "nIchAshritaH sUryautastu dharme / dharmeNa hInaM janayenmanuShyam | / tadaMshakasthaH paradharmaraktaM / pApasya varge kavalodbhavaM cha",
+"damaged": false
+},
+"27": {
+"text": "mitrAshrayastho.arkasutastu dharme / dharmaM vidhatte satataM sugarham | / tadaMshakasthastrayaja\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / vargottamastho nR^ipasevayA cha",
+"damaged": true
+},
+"28": {
+"text": "shatrvAshrayastho.arkasutastu dharme / kR^icCheNa dharmaM janayet susUkShmam | / tadaMshasthaH paradarshanotthaM / mUlatrikoNe gurulabdhamAnAt",
+"damaged": false
+}
+},
+"33": {
+"1": {
+"text": "karmAshritastIkShNakaraH svatu~Nge / karoti karma vratakR^ityameva | / tadaMshakastho vadhabandhajaM cha / ShaDvargashuddhaH sakalaM kalAjam",
+"damaged": false
+},
+"2": {
+"text": "nIchAshritastIkShNakaro.ambarastho / nR^iNAM vidhatte bahudAsakarma | / tasyaiva bhAge vaNijodbhavaM cha / vargottamastho vaNijaprasUtam",
+"damaged": false
+},
+"3": {
+"text": "mitrAshrayastho dinakR^it khasaMsthaH / karoti puMsAM kR^iShijaM cha karma | / mitrasya bhage kunR^ipasya sevajaM / pApasya varge vadhabandhajam",
+"damaged": false
+},
+"4": {
+"text": "shatrvAshrayastho dinapo narANA / dadAti karmAshubhameva nityam | / tasyaiva bhAge janagarhitaM cha / mUlatrikoNe kharasevajaM cha",
+"damaged": false
+},
+"5": {
+"text": "karmAshritaH shItakaraH svatu~Nge / karoti karma prathitaM nR^iloke | / tasyaiva bhAge dvijadevajaM cha / Shadvargashuddho varadAnabhAjam",
+"damaged": false
+},
+"6": {
+"text": "nIchAshritaH shItakaro.ambarastho / dadAti karmatisalajjameva | / tasyaiva bhAge krayavikrayotthaM / pApasya varge vyasanodbhavaM cha",
+"damaged": false
+},
+"7": {
+"text": "mitrAshrayastho yadi shIrashmiH / karmAshritaH karma dadAti saumyam | / tasyaiva bhAge bahushAstrabhAjaM / vargottamastho makhajaM sadaiva",
+"damaged": false
+},
+"8": {
+"text": "shatrvAshrayastho.ambarago nisheshaH / karma prasUte sutarAM nR^ishaMsam | / tasyaiva bhAge vanitodbhavaM cha / mUlatrikoNe nR^ipadaityajAtam",
+"damaged": false
+},
+"9": {
+"text": "bhaumo.ambastastho yadi tu~NgasaMstho / yuddhodbhavaM karma dadAti puMsAm | / tasyAMshake dyUtasamudbhavaM cha / ShaDvargashuddhaH smarajaM nitAntam",
+"damaged": false
+},
+"10": {
+"text": "nIchAshrito bhUtanayo.ambarasthaH / karma prasUte paradArajAtam | / tadaMshakastho gaNikodbhavaM cha / pApasya varge hyubhayaM sadaiva",
+"damaged": false
+},
+"11": {
+"text": "mitrAshrayasthaH kShitijo.ambarasthaH / karma prasUte.akShamamuddhavaM cha | / tasyAMshakastho bahubhArajAtaM / vargottamasthaH praNayena hInam",
+"damaged": false
+},
+"12": {
+"text": "shatrvAshrayasthaH kShitijo nabhogaH / karma prasUte bahudainyajAtam | / tasyaiva bhAge tvatha bhikShajaM cha / mUlatrikoNe.ambarakAShThajAtam",
+"damaged": false
+},
+"13": {
+"text": "saumyaH svatu~Nge yadi karmasaMsthaH / karma prasUte dhanadhAnyajAtam | / tasyaiva bhAge cha chatuShpadotthaM / ShaDvargauddho gajavAjijAtam",
+"damaged": false
+},
+"14": {
+"text": "nIchAshritaH somasuto.ambarasthaH / karma prasUte nijameva puMsAm | / tasyaiva bhAge paradeshajAtaM / pApasya varge khalajaM sadaiva",
+"damaged": false
+},
+"15": {
+"text": "mitrAshrayasyaH shashijo.ambarasthaH / karma prasUte hayavikrayottham | / tasyaiva bhAge rajataM narANAM / vargottamastho.adbhutamitrajAtam",
+"damaged": false
+},
+"16": {
+"text": "shatrvAshrayasthaH shashijo.ambarasthaH / karma prasUte bahukaShTajAtan | / tasyaiva bhAge guNavarjitaM cha / mUlatrikoNe suyashodbhavaM cha",
+"damaged": false
+},
+"17": {
+"text": "jIvo.ambarastho yadi tu~NgasaMstho / dadAti karma prachuraM pradhAnam | / tadaMshakastho dvijapUjanotthaM / ShaDvargashuddhaH sujanArthanottham",
+"damaged": false
+},
+"18": {
+"text": "nIchAshrito devaguruH sasaMsthaH / karoti karmAdhamalokasevyam | / tadaMshakastho.adbhutachauryajAtaM / pApasya varge.arthavivarjitaM cha",
+"damaged": false
+},
+"19": {
+"text": "mitrAshrayastho dashame surejyaH / karoti karmANi shubhAni nityam | / tadaMshasaMstho nR^ipateH samutthaM / vargottamastho mahiShIgavottham",
+"damaged": false
+},
+"20": {
+"text": "shatrvAshrayastho dashame surejyaH / karma prasUte satataM kR^itaghnam | / tasthaiva bhAge paravaMchanena / mUlatrikoNe nR^ipaterabhIShTam",
+"damaged": false
+},
+"21": {
+"text": "tu~NgAshrayastho.ambarago bhR^igushcha / marma prasUte janavallabhaM cha | / tasyaiva bhAge maNimauktikADhyaM / ShaDvargashuddhaH kanakodbhavaM cha",
+"damaged": false
+},
+"22": {
+"text": "nIchAshrayasthaH bhR^igujaH khasaMsthaH / karma prasUte vanitAshritaM cha / tasyaiva bhAge.alpasukhaM nitAntaM / pApasya varge guruduHkhajaM cha",
+"damaged": false
+},
+"23": {
+"text": "mitrAshrayastho bhR^igujo.ambarasthaH / karoti karma prabhutAsametam | / tasyaiva bhAge nijabandhujAtaM / vargottamastho bahugauravADhyam",
+"damaged": false
+},
+"24": {
+"text": "shatrvAshrayastho bhR^igujo.ambarasthaH / karma prasUte virajaM nR^ishaMsam | / tasyaiva bhAge bahuchintayADhyaM / mUlatrikoNe.anR^itasaMyutaM cha",
+"damaged": false
+},
+"25": {
+"text": "tu~NgAshritaH sUryasuto.ambarasthaH / karma prasUte.atimR^idusthiraM cha | / tasyaiva bhAge bahushilpajaM cha / ShadvargashuddhaH priyasAdhvasaM cha",
+"damaged": false
+},
+"26": {
+"text": "nIchAshritaH sUryasuto.ambarasthaH / karma prasUte dvijadrohajAtam | / tasyaiva bhAge nR^ipasevajaM cha / pApasya varge sanR^ishaMsarUpam",
+"damaged": false
+},
+"27": {
+"text": "mitrAshrito bhAskarajashcha khasthaH / karoti karma prabhutAvihInam | / tasyaiva bhAge nR^ipasevajaM cha / vargottamastho mR^igayA sametam",
+"damaged": false
+},
+"28": {
+"text": "shatrvAshrayastho.arkauto.ambarasthaH / karma prasUte bahukaShTajAtam | / tasyaiva bhAge parapaushunotthaM / mUlatrikoNe bhiShajodbhavaM cha",
+"damaged": false
+}
+},
+"34": {
+"1": {
+"text": "lAbhAshritastIkShNakaraH svatu~Nge / lAbhaM vidhatte gajavAjijaM cha | / tasyaiva bhAge mahiShisamutthaM / ShaDvargashuddhaH kanakodbhavaM cha",
+"damaged": false
+},
+"2": {
+"text": "nIchAshrito vAsarapastu lAbhe / lAbhaM vidhatte jalapAdapAnAm | / tasyaiva bhAge cha kudhAnyakAnAM / pApasya varge parayoShitAM cha",
+"damaged": false
+},
+"3": {
+"text": "mitrAshrayastho dinapastu lAbhe / lAbhaM prasUte suhR^idAM sadaiva | / mitrAMshakasthaH kulayoShitAno / vargottamastha pravarAryakANAm",
+"damaged": false
+},
+"4": {
+"text": "shatrvAshrayastho dinakR^ishcha lAbhe / lAbhaM prasUte rathakambalAnAm | / tadaMshakasthaH khalamAnavAnAM / mUlatrikoNe guNinAM nitAntam",
+"damaged": false
+},
+"5": {
+"text": "lAbhAshritaH shItakaraH svatu~Nge / lAbhaM vidhatte maNimauktikAnAm | / tasyaiva bhAge draviNAnnakAnAM / ShaDvargashuddhaH priyamAnuShANAm",
+"damaged": false
+},
+"6": {
+"text": "nIchAshryastho himagushcha lAbhe / lAbhaM prasUte kukalatrakANAm | / tadaMshakasthastu susevakAnAM / pApasya varge parapaishunAnAm",
+"damaged": false
+},
+"7": {
+"text": "mitrAshrayastho himagushcha lAbhe / lAbhaM vidhatte bahubandhavAnAm | / tasyaiva bhAge nadanartakAnAM / vargottamasthaH pravarArthakAnAm",
+"damaged": false
+},
+"8": {
+"text": "shatrvAshrayastho himagushcha lAbhe / lAbhaM prasUte bahukandajAnAm | / tadaMshakastho hi mahIruhANAM / mUlatrikoNe kShitimR^idgR^ihANAm",
+"damaged": false
+},
+"9": {
+"text": "bhaumaH svatu~Nge yadi lAbhasaMstho / lAbhaM vidhatte cha chatuShpadAnAm | / tasyaiva bhAge.atra subhakShakANAM / ShaDvargashuddho nR^ipamaNDalAnAm",
+"damaged": false
+},
+"10": {
+"text": "lAbhAshrito bhUtanayastu nIche / lAbhaM vidhatte bahushauryajAtam | / tasyaiva bhAge bahuvaMchanotthaM / pApasya varge vadhabandhujAtam",
+"damaged": false
+},
+"11": {
+"text": "mitrAshrayasthaH kShitijastu lAbhe / lAbhaM vidhatte nR^ipalokajAtam | / tadaMshakasthastu mahAjanotthaM / vargottamastho hyubhayaM sadaiva",
+"damaged": false
+},
+"12": {
+"text": "shatrvAshryasthaH kShitijastu lAbhe / lAbhaM suvAte bahuvachakAnAm | / tasyaiva bhAge partarkakAnAM / mUlatrikoNe.adbhutabhUShaNAnAm",
+"damaged": false
+},
+"13": {
+"text": "saumyaH svatu~Nge yadi lAbhasaMstho / lAbhaM suvAte bahushAstrajAtam | / tasyaiva bhAge vividhairupAyaiH / ShaDvargashuddhastvatha sarvavidhAm",
+"damaged": false
+},
+"14": {
+"text": "lAbhAshritaH somasutastu nIche / lAbhaM vidhatte bahunIchasa~NgAt | / tasyaiva bhAge kR^itakAnusa~NgAt / pApasya varge.antyajalokapArshchAt",
+"damaged": false
+},
+"15": {
+"text": "mitrAshrayasthaH shashijastu lAbhe / lAbhaM vidhatte paralokajAtam | / tasyaiva bhAge nijavidhayAto / vargottamastho vyavahAratashcha",
+"damaged": false
+},
+"16": {
+"text": "shatrvAshrayasthaH shashijastu lAbhe / karoti lAbhaM vitathopachArAt | / tasyaiva bhAge kapaTairanekairmUlatrikoNe krayavikrayAbhyAm",
+"damaged": false
+},
+"17": {
+"text": "jIvaH svatu~Nge yadi lAbhasaMstho / narendralAbhaM kurute narANAm | / tasyaiva bhAge nR^ipasevakAnAM / ShaDvargashuddhaH prachuraprabhAvAt",
+"damaged": false
+},
+"18": {
+"text": "nIchAshrito devagurushcha lAbhe / lAbhaM narANAM kurute dhanaM cha | / nIchAMshakastho bhR^itakAhvayAnAM / pApasya varge bahukaShTatashcha",
+"damaged": false
+},
+"19": {
+"text": "mitrAshrayathaH kurute surejyo / lAbhaM cha lAbhe rajatodbhavaM cha | / tasyAMshakastho bahudhAtujAtaM / vargottamasthaH sujanodbhavaM cha",
+"damaged": false
+},
+"20": {
+"text": "shatrvAshryasthaH kurute surejyo / lAbhaM cha lAbhe puruShAdhamAnAm | / tasyaiva bhAge guNavarjitAnAM / mUlatrikoNe vividha \\.\\.\\.\\.\\.\\.\\.\\.\\.\\. jAnAm",
+"damaged": true
+},
+"21": {
+"text": "shukraH svatu~Nge yadi lAbhasaMstho / lAbhaM suvAte sutabAndhavottham | / tasyAMshakastho nR^ipakanyakotthaM / ShaDvargashuddho dvitayasya chAsya",
+"damaged": false
+},
+"22": {
+"text": "nIchAshrayastho bhR^igujastu lAbhe / lAbhaM vidhatte cha kupashyakAnAm | / tadaMshakasthastu kubuddhikAnAM / pApasya varge dvijaninditAnAm",
+"damaged": false
+},
+"23": {
+"text": "mitrAshrayatho bhR^igujastu lAbhe / karoti lAbhaM varavAhanAnAm | / tasyaiva bhAge varasundarINAM / vargottamasthaH priyadarshanAnAm",
+"damaged": false
+},
+"24": {
+"text": "shatrvAshraytho bhR^igujashcha lAbhe / karoti lAbhaM hatabAndhavAnAm | / tasyaiva bhAge gatasauhR^idAnAM / mUlatrikoNe sukhinAM sadaiva",
+"damaged": false
+},
+"25": {
+"text": "saurochChasaMstho yadi lAbhasaMstho / lAbhaM vidhatte puruShottamAnAm | / tasyaiva bhAge dhanadhAnyakAnAM / vargottamasthaH pravarArchitAnAm",
+"damaged": false
+},
+"26": {
+"text": "nIchAshritaH sUryautastu lAbhe / lAbhaM vidhatte bahupAtakAnAm | / tasyaiva bhAge jananarDitAnAM / pApaya varge mativarjitAnAm",
+"damaged": false
+},
+"27": {
+"text": "mitrAshrayastho.arkasutastu lAbhe / lAbhaM vidhatte bahumitranAtam | / tasyaiva bhAge vanitAsamutyaM / vargottamasthaH shubhakaryalAbham",
+"damaged": false
+},
+"28": {
+"text": "shatrvAshrayastho.arkasutastu lAbhe / lAbhaM vidhatte bahuvittajaM cha | / tasyaiva bhAge kR^imijaM sadaiva / mUlatrikoNe sthiradharmajAtam",
+"damaged": false
+}
+},
+"35": {
+"1": {
+"text": "vyayasthito vAsarapaH svatu~Nge / vyayaM vidhatte shru\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. lo\\.\\.\\.\\.\\.\\.\\.\\. sa~NgAt | / tasyaiva bhAge gurusevakAnAM / ShaDvargashuddho dvijadeva\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. ryAt",
+"damaged": true
+},
+"2": {
+"text": "nIchArayastho vyayagodinesho / vyayaM prasUte kujanAt kusa~NgAt | / tasyaiva bhAge vanitAnirodhAd / vargottamastho nR^ipasa~NgAmAshcha",
+"damaged": false
+},
+"3": {
+"text": "mitrAshrayastho vyayago dinesho / vyayaM vidhatte bahumitrakArye | / tasyaiva bhAge kukalatratashcha / pApasya varge.antyajakAraNena",
+"damaged": false
+},
+"4": {
+"text": "shatrvAshrayastho vyayago dinesho / vyayaM vidhatte gaNikAnusa~NgAt | / tasyaiva bhAge kujanAnurAgAn / mulatrikoNe janataH sadaiva",
+"damaged": false
+},
+"5": {
+"text": "chandro vyayastho yadi tu~NgasaMstho / vyayaM prasUte.akShavidevanena | / tasyaiva bhAge krayavikrayAbhyAM / ShaDvargashuddho dvijasevanAshcha",
+"damaged": false
+},
+"6": {
+"text": "nIchAshrayasthaH shashabhR^idjayastho / vyayaM prasUte paramArisa~NgAt | / tasyaiva bhAge paralokasa~NgAt / pApasya varge bahupApatashcha",
+"damaged": false
+},
+"7": {
+"text": "mitrAshrayastho vyayagaH shashA~Nko / vyayaM vidhatte suhR^idAM prasa~NgAt | / tsyaiva bhAge nijabandhumAnAd / vargottamasthaH priyasa~NgamAshcha",
+"damaged": false
+},
+"8": {
+"text": "shatrvAshrayastho vyayagaH shashA~Nko / vyayaM vidhatte ripulokatashcha | / tasyaiva bhAge bahudhA cha sarvaM / mUlatrikoNe nijabandhutashcha",
+"damaged": false
+},
+"9": {
+"text": "bhaumo vyayastho yadi tu~Ngasamstho / vyayaM vidhatte raNajairvikAraiH | / tasyaiva bhAge paravaMchanena / ShaDvargashuddho raNajAdvikArAt",
+"damaged": false
+},
+"10": {
+"text": "nIchArayasthaH kShitijo vyayastho / vyayaM vidhatte.antyajalokasa~NgAt | / tasyaiva bhAge vyasanairanekaiH / pApasya varge khalasa~Ngamena",
+"damaged": false
+},
+"11": {
+"text": "mitrAshrayasthaH kShitijo vyayastho / vyayaM suvAte vitathaM narANAm | / tasyaiva bhAge pitR^ikarmajAtaM / vargottamasthaH suhR^idAnurAgAt",
+"damaged": false
+},
+"12": {
+"text": "shatrvAshrayasthaH kShitijo vyayastho / vyayaM suvAte cha chatuShpadottham | / tasyaiva bhAge bahurogAta\\.\\.\\.\\.\\.\\.\\.\\.\\.\\. / mUlatrikoNe varabanditashcha",
+"damaged": true
+},
+"13": {
+"text": "saumyo vyayastho yadi tu~NgasaMstho / vyayaM vidhatte bahugItavAdhaiH | / tasyaiva bhAge guNinAM prasa~NgAt / ShaDvargauddho.agniparigraheNa",
+"damaged": false
+},
+"14": {
+"text": "nIchAshrayastho vyayagashcha saumyo / vyayaM prasUte dhanasa~Ngamena | / tasyaiva bhAge.adhamalokajAtaM / pApasya varge nR^ipalokadAnAt",
+"damaged": false
+},
+"15": {
+"text": "mitrAshrathaH shashijo vyayastho / vyayaM suvAte bhumitrasa~NgAt | / tasyaiva bhAge nijabAndhavAnAM / vargottamastho vratinAM sadaiva",
+"damaged": false
+},
+"16": {
+"text": "shatrvAshrayasthaH shashijo vyayastho / vyayaM suvAte sutajaM sadaiva | / tasyaiva bhAge sutadArajaM cha / mUlatrikoNe varabhogatashcha",
+"damaged": false
+},
+"17": {
+"text": "vIvo vyayastho yadi tu~NgasaMstho / vyayaM prasUte gurulokadAnAt | / tasyaiva bhAge gurusevakAnAM / ShaDvargashuddho nijabAndhavAnAm",
+"damaged": false
+},
+"18": {
+"text": "nIchAshrito devagururvyayastho / vyayaM suvAte vyavahArajAtam | / tasyaiva bhAge tu kusIdajAtaM / pApasya varge vaNijotthameva",
+"damaged": false
+},
+"19": {
+"text": "mitrAshrayastho vyayagaH surejjyo / vyayaM vidhatte paravAdatashcha | / tasyaiva bhAge paradeshasa~NgAt / vargottamasthaH praNayAnurodhAt",
+"damaged": false
+},
+"20": {
+"text": "shatrvAshrayastho vyayagaH surejyo / vyayaM suvAte vyasanairvichitraiH | / tasyaiva bhAge mativibhrameNa / mUlatrikoNe suratoparodhAt",
+"damaged": false
+},
+"21": {
+"text": "shukro vyaystho yadi tu~NgasaMstho / vyayaM prasUte vratajairvikAraiH | / tasyaiva bhAge bahushAstraragAt / ShaDvargashuddhaH priyasa~Ngamena",
+"damaged": false
+},
+"22": {
+"text": "nIchAshrayastho bhR^igujo vyayastho / vyayaM vidhatte nR^ipalokasa~NgAt | / tasyaiva bhAge pararoShatashcha / pApasya varge daytashcha nityam",
+"damaged": false
+},
+"23": {
+"text": "mitrAshrayastho bhR^igujo vyayastho / vyayaM vidhatte bahubhakShaNena | / tasyaiva bhAge bahupAnayogAd / vargottamasthaH kShitijairvikAraiH",
+"damaged": false
+},
+"24": {
+"text": "shatrvAshraya bhR^igujo vyaystho / vyayaM prasUte raNakarmayogAt | / tasyaiva bhAge janaviplavena / mUlatrikoNe vitathopachAraiH",
+"damaged": false
+},
+"25": {
+"text": "mando vyaystho yadi tu~Ngasamstho / vyayaM suvAte.adhamakarmajAtam | / tasyaiva bhAge.adhammitrasa~NgAt / ShaDvargashuddho nijabandhudoShAt",
+"damaged": false
+},
+"26": {
+"text": "nIchAshritaH sUryasuto vyayastho / vyayaM prasUte.antyajamAntashcha | / tasyaiva bhAge.adbhutavAdasa~NgAt / pApasya varge nijabandhanena",
+"damaged": false
+},
+"27": {
+"text": "mitrAshraytho ravijaH prasUte / vyayaM vidhatte bahumitrarodhAt | / tasyaiva bhAge sutadAsadoShAd / vargottamasthaH praNayaprakopAt",
+"damaged": false
+},
+"28": {
+"text": "shatrvAshryastho.arkasuto vyayastho / vyayaM suvAte karaNAnurodhAt | / tasyaiva bhAge bahulaulyadoShAn / mUlatrikoNe priyasa~NgamAshcha",
+"damaged": false
+}
+}
+}
+}
