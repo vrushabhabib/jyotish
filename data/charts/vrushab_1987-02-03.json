@@ -58,6 +58,12 @@
    "asked": "2026-11-13",
    "score": "hit",
    "note": "native unsure of the years; the distance part rests on a sentence to be confirmed"
+  },
+  {
+   "id": "vrushab-008",
+   "asked": "2026-11-13",
+   "score": "hit",
+   "note": "strain confirmed inside the period; a larger interruption fell in an earlier period that was not flagged"
   }
  ],
  "readings": [],
@@ -883,5 +889,15 @@
    },
    "birth_conditions": []
   }
+ },
+ "verification_summary": {
+  "date": "2026-11-13",
+  "checks": 8,
+  "hit": 5,
+  "partly": 2,
+  "miss": 1,
+  "rate": 0.75,
+  "strict": 0.625,
+  "verdict": "confirmed, narrowly; several statements were broad or partly known in advance"
  }
 }
