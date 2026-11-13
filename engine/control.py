@@ -102,6 +102,32 @@ def control_test(birth, sex, events, n=500, years_before=6.0, years_after=3.0, s
     return {"events": len(events), "exact_dates": sum(1 for e in events if e.get("exact")), "controls": n, "rules": out}
 
 
+def indicated(birth, sex, area, polarity, start, end):
+    """Sub-periods between two dates that the rules point to for an event of this area and direction:
+    sub-period lord strongly linked to the area (or its movable significator), and for a 'good' event not placed
+    6th/8th/12th from the dasha lord and free of a caution flag; for a 'bad' event one of those present.
+    Returns (windows, share): share = the part of the whole span the windows cover = the chance a randomly dated
+    event would fall inside. Used to SEAL a statement before the person is asked for a date (Rule 16)."""
+    c = build_chart(birth["date"], birth["time"], birth["lat"], birth["lon"], birth.get("tz", "Asia/Kolkata"))
+    a = analyse(c, sex=sex); v = a["view"]; caut = period_cautions(v); ck = a["karakas"]["seven_bphs"]
+    hs, km, kf = AREAS[area]; ks = kf if sex == "F" else km
+    s0, e0 = dt.date.fromisoformat(start), dt.date.fromisoformat(end)
+    out, days = [], 0
+    for m in c["dasha"]["maha"]:
+        for ad in m["antar"]:
+            s, e = max(_date(ad["start"]), s0), min(_date(ad["end"]), e0)
+            if s >= e:
+                continue
+            p = ad["lord"]
+            link = any(x.startswith(STRONG) for x in v.sambandha(p, hs, ks)) or ck.get(MOVABLE.get(area, "")) == p
+            n = 1 if m["lord"] == p else (c["planets"][p]["rashi"] - c["planets"][m["lord"]]["rashi"]) % 12 + 1
+            against = n in (6, 8, 12) or bool(caut.get(p))
+            ok = link and (polarity is None or (against if polarity == "bad" else not against))
+            if ok:
+                out.append((m["lord"], p, s.isoformat(), e.isoformat())); days += (e - s).days
+    return out, round(days / max((e0 - s0).days, 1), 2)
+
+
 def markdown(res, name="chart"):
     L = [f"Control-chart test - {name}: {res['events']} dated events ({res['exact_dates']} with an exact date), "
          f"{res['controls']} control charts.\n",

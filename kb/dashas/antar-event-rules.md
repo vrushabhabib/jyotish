@@ -123,3 +123,11 @@ First run, one chart: with all 11 dated events from the verification answers the
 - Therefore: at intake, BEFORE any chart statement is shown, ask the person for 10-15 dated events of their life from their own memory or documents (month and year where possible; births, moves, jobs started and lost, marriage, losses, court matters). Store them outside the repository and run the control test on them.
 - Report the control-test table in Part 1 of the reading beside the verification score. Near 50% = the rule says nothing about this person.
 - No rule is called supported on one chart. Pool the counts across charts in `data/control_tests.json`; a rule that stays near or above 50% across several charts is demoted (the main-period link is the first candidate).
+
+## Rule 16 — Blind checks: seal the windows, then ask for the date (added 13 Nov 2026)
+Asking "did X happen in period P?" anchors the answer (Rule 15). The blind form removes that:
+1. Choose an event type whose date is not yet known. `engine.control.indicated(birth, sex, area, polarity, start, end)` lists the sub-periods the rules point to and the share of the span they cover - the chance of a hit by luck. Prefer types where the share is under about a third; above half the check cannot discriminate and is not asked.
+2. Log the windows in the ledger with `--kind blind` and push BEFORE asking. The commit time is the seal. Do not show the windows.
+3. Ask only for the date ("which month and year did ... happen?"), one question at a time.
+4. Reveal the sealed windows, score hit or miss (no "partly" for a single dated event; an event with several dates is scored date by date), and compare the hit rate with the average sealed share.
+5. The dated answers go into the person's private events file for the control-chart test.
