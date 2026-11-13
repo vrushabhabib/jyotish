@@ -99,3 +99,10 @@ The five-system convergence vote (Vimshottari main and sub lord, Yogini, Chara, 
 - Agreement between systems that share inputs (Vimshottari and Yogini both start from the Moon's nakshatra) is not independent confirmation.
 - Shadbala (12 Nov): settled against two references. Mercury's Saptavargaja, the Hora lord and the dwadasamsa boundaries follow Raman's worked example exactly; AstroSage deviates on all three. The Moon's paksha bala is doubled (Raman, BPHS).
 
+
+## Rule 12 — A sub-lord joined to Rahu is not read on its strength alone (added 13 Nov 2026, one case: provisional)
+First miss of the rebuilt system. A sub-period of the 4th and 11th lord, second in Shadbala, in a friend's sign and well placed from the dasha lord, was read as "earnings improve and the home base changes". The person reported the opposite for earnings; the move came a year later.
+What was skipped: the sub-lord sat within about 3 degrees of Rahu, and the texts say a planet joined to Rahu does not give good in its period (Jataka Parijata 18.28 - rule 13 in `dasha-systems.md`); Saturn was also in the 8th from the Moon for most of the period.
+- Before reading the good side of a sub-lord's houses, check rule 13 of `dasha-systems.md` (debilitated, joined to a debilitated planet, joined to Rahu). If it applies, state the houses as the subject and do not promise the gain.
+- Strength (Shadbala rank) decides how much a planet can do, not whether a planet tied to Rahu does it cleanly.
+- One case only. Counts for and against go in the ledger; drop this rule if later cases contradict it.
