@@ -23,6 +23,9 @@ python3 -m pytest -q tests                                # must be all green be
 
 Record at intake: where the **time** comes from (hospital record / family memory / estimate / window), where the **date** comes from, sex, and whether the person is employed, in business, or both.
 
+### Step 1b — Dated life events, before anything from the chart is shown (added 13 Nov 2026)
+Ask the person for 10-15 dated events of their life from their own memory or documents (month and year where possible): births of siblings and children, moves, jobs started and lost, marriage, big gains and losses, court matters. Record each with a life area and good/bad where that is clear. Keep the file outside the repository. After the chart is verified run `python3 -m engine.control EVENTS.json --n 1000 --save` (real chart against 1,000 wrong charts) and quote its table in Part 1. See `kb/dashas/antar-event-rules.md` Rule 15.
+
 ## Step 2 — Cross-check (stop if it fails)
 
 - Lagna and every planet within **5′** of the document; a difference over 1′ is noted. Known: AstroSage's own Sun runs about 0.5′ and its Jupiter about 3′ from JPL — those two residuals are AstroSage's, not ours.

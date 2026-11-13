@@ -115,3 +115,11 @@ The link test counts houses, their lords and the fixed significators. A sibling'
 
 ## Rule 14 — Fix first (standing instruction of the owner, 13 Nov 2026)
 Whenever a mistake, a gap, a limitation that can be reduced or an improvement to the process is found - during verification, a reading or any other work - it is fixed before the next question is asked or the next statement is made: the rule is written here, the check is coded into the engine where it can be coded, a test is added, the worksheet is rebuilt, and the change is pushed. Only then does the work continue. What cannot be fixed is stated plainly as a limit instead.
+
+## Rule 15 — Dates are collected before the chart is shown; every verified chart gets a control-chart test (added 13 Nov 2026)
+`python3 -m engine.control EVENTS.json --n 1000 --save` scores each rule on the real chart and on 1,000 charts with a wrong birth moment (events file kept outside the repository; only counts are saved in `data/control_tests.json`).
+First run, one chart: with all 11 dated events from the verification answers the sub-period link rule scored 9 of 11 against a control average of 6.2 (11% of wrong charts did as well; link-or-movable 4%; link-and-polarity 7%). But four of those dates had been given in reply to questions that named the chart's own period. On the 7 independently dated events the edge disappears (31%, 16%, 22%). The main-period lord's link did worse than the controls in both runs (80% and 93%).
+- A "yes" to "did X happen in period P?" yields a date anchored to the chart. Such dates may be scored as checks but must NOT be used as evidence that the timing works.
+- Therefore: at intake, BEFORE any chart statement is shown, ask the person for 10-15 dated events of their life from their own memory or documents (month and year where possible; births, moves, jobs started and lost, marriage, losses, court matters). Store them outside the repository and run the control test on them.
+- Report the control-test table in Part 1 of the reading beside the verification score. Near 50% = the rule says nothing about this person.
+- No rule is called supported on one chart. Pool the counts across charts in `data/control_tests.json`; a rule that stays near or above 50% across several charts is demoted (the main-period link is the first candidate).

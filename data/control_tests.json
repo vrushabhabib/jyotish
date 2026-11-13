@@ -1,0 +1,94 @@
+[
+ {
+  "chart": "vrushab",
+  "run": "2026-11-13",
+  "events": 11,
+  "exact_dates": 2,
+  "controls": 1000,
+  "rules": {
+   "ad_link": {
+    "real": 9,
+    "of": 11,
+    "control_mean": 6.17,
+    "share_controls_at_or_above_real": 0.111
+   },
+   "md_link": {
+    "real": 5,
+    "of": 11,
+    "control_mean": 6.2,
+    "share_controls_at_or_above_real": 0.803
+   },
+   "movable": {
+    "real": 1,
+    "of": 11,
+    "control_mean": 0.84,
+    "share_controls_at_or_above_real": 0.641
+   },
+   "link_or_mov": {
+    "real": 10,
+    "of": 11,
+    "control_mean": 6.45,
+    "share_controls_at_or_above_real": 0.039
+   },
+   "polarity": {
+    "real": 4,
+    "of": 6,
+    "control_mean": 2.97,
+    "share_controls_at_or_above_real": 0.31
+   },
+   "link_and_pol": {
+    "real": 4,
+    "of": 6,
+    "control_mean": 1.88,
+    "share_controls_at_or_above_real": 0.066
+   }
+  },
+  "note": "all events from the verification answers; four of the dates were given in reply to questions that named the chart's own period, so they lean toward the real chart"
+ },
+ {
+  "chart": "vrushab",
+  "run": "2026-11-13",
+  "note": "only events whose dates were given independently of any chart period",
+  "events": 7,
+  "exact_dates": 2,
+  "controls": 1000,
+  "rules": {
+   "ad_link": {
+    "real": 5,
+    "of": 7,
+    "control_mean": 3.8,
+    "share_controls_at_or_above_real": 0.307
+   },
+   "md_link": {
+    "real": 2,
+    "of": 7,
+    "control_mean": 3.84,
+    "share_controls_at_or_above_real": 0.934
+   },
+   "movable": {
+    "real": 1,
+    "of": 7,
+    "control_mean": 0.59,
+    "share_controls_at_or_above_real": 0.493
+   },
+   "link_or_mov": {
+    "real": 6,
+    "of": 7,
+    "control_mean": 4.02,
+    "share_controls_at_or_above_real": 0.158
+   },
+   "polarity": {
+    "real": 2,
+    "of": 3,
+    "control_mean": 1.58,
+    "share_controls_at_or_above_real": 0.567
+   },
+   "link_and_pol": {
+    "real": 2,
+    "of": 3,
+    "control_mean": 0.93,
+    "share_controls_at_or_above_real": 0.219
+   }
+  }
+ }
+]

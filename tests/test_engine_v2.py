@@ -103,3 +103,16 @@ def test_period_cautions_and_movable_mark():
     from engine.analysis import analyse
     c2 = period_cautions(analyse(t)["view"])
     assert set(c2) >= {"Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"}
+
+
+def test_control_chart_test_runs_and_is_reproducible():
+    """Control-chart test (13 Nov 2026): fixed seed gives the same counts; shares are proportions."""
+    from engine.control import control_test, RULES
+    birth = {"date": "1996-11-24", "time": "12:05", "lat": 15.3333, "lon": 75.1333, "tz": "Asia/Kolkata"}
+    ev = [{"area": "career", "date": "2019-06-01", "polarity": "good"}, {"area": "home/mother", "date": "2021-03-01", "polarity": None},
+          {"area": "money", "date": "2023-01-15", "polarity": "bad"}]
+    a = control_test(birth, "F", ev, n=20); b = control_test(birth, "F", ev, n=20)
+    assert a == b and a["events"] == 3 and set(a["rules"]) == set(RULES)
+    for r in a["rules"].values():
+        assert 0 <= r["share_controls_at_or_above_real"] <= 1 and r["real"] <= r["of"]
+    assert a["rules"]["polarity"]["of"] == 2
