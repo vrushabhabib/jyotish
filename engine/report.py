@@ -397,6 +397,22 @@ def markdown(r, name="native"):
             if e <= nowdt or shown >= 3: continue
             shown += 1
             w(f"- **{cur_md[0]}-{ad}** ({_d(s)} - {_d(e)}): " + "; ".join(f"{p} from {_d(ps)}" for p, ps, pe, _ in pds))
+    try:                                               # Rule 21/22 (15 Nov 2026): every year readable at all three levels
+        from engine.rectify import linked_areas as _la
+        _now = dt.datetime.now(local.tzinfo); _lo = _now - dt.timedelta(days=365.25 * 6); _hi = _now + dt.timedelta(days=365.25 * 4)
+        w("\n### 11b. All three levels, six years back to four years ahead\n")
+        w("Each row is one third-level period. Read a year from the sub-period lord's areas first, then see which third-level lord runs the weeks in question. "
+          "The third-level link is UNTESTED (antar-event-rules.md Rule 21): a possible subject, never a prediction. 'No area listed' means the chart is silent there - it does NOT mean nothing happened in that area.\n")
+        w("| Main | Sub | Third level | From | To | Age | Sub-period lord linked to | Third-level lord linked to |\n|---|---|---|---|---|---|---|---|")
+        _sx = a.get("sex")
+        for _md, _ms, _me, _ads in a["dasha_tree"]:
+            for _ad, _s, _e, _pds in _ads:
+                for _pd, _ps, _pe, _x in _pds:
+                    if _pe <= _lo or _ps >= _hi or _pe <= local: continue
+                    w(f"| {_md} | {_ad} | {_pd} | {_d(_ps)} | {_d(_pe)} | {(_ps - local).days / 365.25:.1f} | {', '.join(_la(v, _sx, _ad)) or '-'} | {', '.join(_la(v, _sx, _pd)) or '-'} |")
+        w("")
+    except Exception as _e:
+        w(f"(three-level table not computed: {_e})\n")
     w("\n## 12. Saturn phases from the Moon\n")
     w("Sade Sati cycles: " + "; ".join(f"{_d(x)} - {_d(y)}" for x, y in r["sade_sati"]) + ".\n")
     w("| Phase | Saturn in | From | To |\n|---|---|---|---|")

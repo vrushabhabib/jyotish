@@ -15,7 +15,7 @@ def snapshot(b):
             "maha": [[m["lord"], str(m["start"])[:10]] for m in c["dasha"]["maha"][:6]],
             "kalachakra": [[p["sign"], str(p["start"])[:10]] for p in r["kalachakra"]["periods"][:6]],
             "rupas": {p: round(x["rupas"], 2) for p, x in r["shadbala"]["planets"].items()},
-            "sav": r["ashtakavarga"]["sav"], "finding_ids": sorted(f["id"] for f in r["findings"])}
+            "sav": r["ashtakavarga"]["sav"], "finding_ids": sorted(f["id"] for f in r["findings"] if not f["id"].startswith("V3."))   # V3.* follow today's date, so they are not frozen}
 
 
 if __name__ == "__main__":

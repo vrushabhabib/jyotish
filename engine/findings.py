@@ -81,6 +81,8 @@ RULES = {
     # --- the calendar and the tables (added 13 Nov 2026: a reading may only state what is in the register) -----
     "period_link": {"text_quality": "calculation; link rule ours (antar-event-rules.md Rule 1)", "source": "BPHS 46 (Vimshottari), 52-60 (sub-lord's house from the dasha lord); engine link test", "status": "hint",
                     "what": "which sub-period runs when, and which life areas its lord is strongly linked to - the SUBJECT of the period; faint edge in our tests"},
+    "period_fine": {"text_quality": "calculation; third-level link rule ours and UNTESTED (antar-event-rules.md Rule 21)", "source": "BPHS 46, 61 (third-level periods); engine link test", "status": "frozen",
+                    "what": "which third-level (pratyantar) period runs in which weeks and which life areas its lord is strongly linked to - shown so no level is skipped; not a prediction until Rule 21 is confirmed"},
     "transit": {"text_quality": "calculation; as a good/bad rule our tests put it at chance", "source": "Phaladeepika 26; BPHS 66-72; engine ephemeris", "status": "chance",
                 "what": "where Saturn, Jupiter and Rahu pass and when - positions are calculation; never a good/bad forecast"},
     "table": {"text_quality": "calculation", "source": "engine (BPHS 6-7 divisions, 32 karakas, 29 arudhas, 34 lordships, 66-72 Ashtakavarga)", "status": "text",
@@ -365,6 +367,12 @@ def timeline(r, out):
             _f(out, f"V.{md}-{ad}", part, "note", f"{md}-{ad}: {d(s2)} to {d(e)} (age {(s2 - local).days / 365.25:.1f} to {(e - local).days / 365.25:.1f}); {rel(md, ad)}; "
                f"sub-lord strongly linked to: {', '.join(areas) or 'no area'}; check before stating any gain: {'; '.join(caut[ad]) or 'nothing flagged'}. "
                "Subject of the period only; good/bad direction is not supported by our tests.", "period_link", md=md, ad=ad)
+            if pds and e > now - dt.timedelta(days=365.25 * 6) and s < now + dt.timedelta(days=365.25 * 4):
+                _f(out, f"V3.{md}-{ad}", 4 if e <= now else 5 if s <= now else 12, "note",
+                   f"Third-level periods inside {md}-{ad} (sub-lord {ad} linked to: {', '.join(areas) or 'no area'}): "
+                   + "; ".join(f"{x[0]} {d(x[1])} to {d(x[2])} [{', '.join(ar for ar in AREAS if strong(x[0], ar)) or 'no area'}]" for x in pds)
+                   + ". A third-level period shows where the weeks inside a sub-period lean; the rule is untested (Rule 21) - name it as a possible subject, never as a prediction. Dates move with the birth time.",
+                   "period_fine", md=md, ad=ad)
             if s <= now < e and pds:
                 _f(out, "V.now.months", 5, "note", f"Shorter periods inside the running {md}-{ad}: " + "; ".join(f"{x[0]} from {d(x[1])}" for x in pds) + f"; ends {d(e)}. Dates move with the birth time.", "period_link")
     for ar, (hs, km, kf) in AREAS.items():

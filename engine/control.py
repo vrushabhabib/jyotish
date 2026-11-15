@@ -35,7 +35,7 @@ Only counts are printed or saved. Added 13 Nov 2026 (owner's instruction: fix th
 from __future__ import annotations
 import argparse, datetime as dt, json, random
 from engine.chart import build_chart
-from engine.analysis import analyse, period_cautions
+from engine.analysis import analyse, period_cautions, dasha_at
 from engine.report import AREAS, MOVABLE
 from engine.ashtakavarga import ashtakavarga, transit_score
 from engine import transits as T
@@ -44,7 +44,8 @@ from engine.dashas_classical import kalachakra, kalachakra_at
 STRONG = ("occupies", "owns", "with", "is karaka")
 RULES = ["ad_link", "md_link", "movable", "link_or_mov", "polarity", "link_and_pol", "polarity_text", "polarity_ishta", "polarity_lp", "transit_moon", "transit_bav", "transit_sav", "polarity_natural", "polarity_bav_natal",
          "link_sib4", "link_lagna_tie", "bad_2_7", "polarity_aspect", "kc_house",
-         "polarity_parts", "polarity_eighth"]
+         "polarity_parts", "polarity_eighth",
+         "pd_link", "adpd_link"]
 
 
 def _date(x):
@@ -153,6 +154,18 @@ def score(birth, sex, events):
         mov = ck.get(MOVABLE.get(e["area"], "")) == ad
         for k, val in (("ad_link", adl), ("md_link", mdl), ("movable", mov), ("link_or_mov", adl or mov)):
             base[k] += 1; hits[k] += bool(val)
+        # ---- Rule 21 (written down and pushed 15 Nov 2026 BEFORE it was run on anyone) ------------------------------
+        # pd_link    the running third-level (pratyantar) lord is STRONGLY linked to the event's area
+        # adpd_link  the sub-period lord AND the third-level lord are both strongly linked to it
+        # Scored only on events dated to the day ("exact": true): a third-level period lasts weeks to a few months,
+        # so a date known to the year or the month cannot test it.
+        if e.get("exact"):
+            tree = a["dasha_tree"]
+            path = dasha_at(tree, dt.datetime.combine(when, dt.time(12, 0), tzinfo=tree[0][1].tzinfo))
+            if len(path) >= 3:
+                pdl = strong(path[2]["lord"])
+                base["pd_link"] += 1; hits["pd_link"] += bool(pdl)
+                base["adpd_link"] += 1; hits["adpd_link"] += bool(pdl and adl)
         # ---- Rule 19 batch (written down and pushed 13 Nov 2026 BEFORE any of the five was run) ----------------------
         # link_sib4       Jataka Parijata 12.2-3: siblings from houses 3, 9, 11 and 7. Scored on sibling events only.
         # link_lagna_tie  Jataka Parijata 12.110, 12.130: for rank, vehicles and house the sub-lord must be linked to the

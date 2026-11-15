@@ -203,3 +203,22 @@ Same reading rule as Rule 19: under 1% to be worth a note, and then only for the
 | polarity_parts | 3 of 10 | 5.7 | 91% |
 | polarity_eighth | 13 of 25 | 11.1 | 27% |
 Neither is above chance. Neither is used in a reading. Direction rules tried so far: fourteen; one at 1.3% carried by one chart (Rule 18, frozen), one at 10%, twelve at chance. Every rule the reading produced has now been tested on the data we have; nothing more can be learned from these five people.
+
+## Rule 21 — The third-level period, written down BEFORE testing (15 Nov 2026)
+Found in a live reading: a year was described from the sub-period alone, a dated event inside it was missed, and the event was then "found" at the third level after the date was told. A fit made after hearing the date is not evidence. The third level therefore goes into the worksheet and into the control test as a pre-stated rule, and is not worded as a prediction until it is confirmed.
+| Rule | Source | Statement | Scored on |
+|---|---|---|---|
+| pd_link | BPHS 46, 61 (third-level periods); link rule ours | the running third-level (pratyantar) lord is strongly linked to the event's area | events dated to the day only |
+| adpd_link | same | the sub-period lord AND the third-level lord are both strongly linked | events dated to the day only |
+How it will be read: nine third-level lords each link to several areas, so a link somewhere is common; only a score clear of wrong charts on pooled, independently dated events counts. Under 1% to be worth a note, and then only for the confirmation set. Until then the worksheet's three-level table (section 11b) and the register lines `V3.*` carry the evidence word `frozen`.
+Reading rule from now on: every year in a timeline is read at all three levels from the table; "the chart lists no area" is said as "the chart is silent on this", never as "this did not happen".
+
+## Rule 22 — A birth time from memory is a window, not a minute (15 Nov 2026)
+1. Ask where the time comes from BEFORE building anything. "From memory", "around noon", "in the afternoon" = the doubt is the whole stretch the family can name, in hours if need be.
+2. Run `python3 -m engine.rectify scan DATE T0 T1 LAT LON TZ --sex S --stated HH:MM [--events FILE]` over that whole stretch. If the rising sign changes inside it, or the dasha dates move by more than about two months, there is NO single chart yet: say so first, and give only what holds across the stretch (planets in signs, the Moon's sign and star, Saturn's phases from the Moon).
+3. A rising sign is not chosen by counting trait questions made up on the spot. Each separating question must quote, for both candidate charts, the worksheet row it rests on, and be written down before it is asked. Character and "manner of speech" questions fit most people and do not count.
+4. What narrows a window: a document (hospital record, birth certificate with time, a horoscope cast at birth), a family anchor (before or after a meal, a prayer call, a shift change, daylight), and 10-15 independently dated events through `engine.rectify scan --events`.
+5. Until the window is narrowed the reading is limited to step 2's common ground plus period SUBJECTS marked with how far their dates move.
+
+## Rule 23 — Speaking a reading aloud (15 Nov 2026)
+In a voice conversation nothing can be computed. Say only what the prepared briefing or worksheet holds; when asked for something it does not hold, say "that needs the engine" and note it. Do not derive placements, do not name a product, a kind of partner or a place from a planet on the spot, and do not keep a running "points" score. Give every period with its age. Explain once that the "subject" of a period is where its main events tend to fall, and that other areas of life carry on.
