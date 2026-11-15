@@ -28,3 +28,13 @@ def test_third_level_rules_are_scored_only_on_day_dated_events():
     hits, base = score({"date": B[0], "time": B[1], "lat": B[2], "lon": B[3], "tz": B[4]}, "F", ev)
     assert base["ad_link"] == 2 and base["pd_link"] == 1 and base["adpd_link"] == 1
     assert hits["adpd_link"] <= hits["pd_link"] <= 1
+
+
+def test_hybrid_sheet_gives_subject_verdict_and_hold_line_for_every_period():
+    from engine import hybrid as H
+    rs = H.rows(*B, "F", dt.date(2018, 1, 1), dt.date(2026, 1, 1), dt.date(2024, 1, 1), dt.date(2025, 1, 1))
+    assert rs and all(r["verdict"] in ("favourable", "mixed", "difficult") for r in rs)
+    assert any(r["fine"] for r in rs) and all(set(r["holds"]) | set(r["not_hold"]) == set(H.AREAS) for r in rs)
+    md = H.markdown(rs)
+    assert "Tradition's verdict" in md and "Hold line" in md and "age" in md
+    assert "hold_rule" in RULES

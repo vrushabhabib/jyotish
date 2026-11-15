@@ -45,7 +45,7 @@ STRONG = ("occupies", "owns", "with", "is karaka")
 RULES = ["ad_link", "md_link", "movable", "link_or_mov", "polarity", "link_and_pol", "polarity_text", "polarity_ishta", "polarity_lp", "transit_moon", "transit_bav", "transit_sav", "polarity_natural", "polarity_bav_natal",
          "link_sib4", "link_lagna_tie", "bad_2_7", "polarity_aspect", "kc_house",
          "polarity_parts", "polarity_eighth",
-         "pd_link", "adpd_link"]
+         "pd_link", "adpd_link", "hold_rule"]
 
 
 def _date(x):
@@ -176,6 +176,12 @@ def score(birth, sex, events):
         if e["area"] in ("career", "home/mother"):
             base["link_lagna_tie"] += 1
             hits["link_lagna_tie"] += bool(adl and any(x.startswith(STRONG) for x in v.sambandha(ad, (1,), ())))
+        # ---- Rule 24 (written down and pushed 15 Nov 2026 BEFORE it was run on anyone) ------------------------------
+        # hold_rule  events carrying "phase": "begin_held" (a start that lasted), "begin_failed" (a start that did not
+        #            last) or "end". Call: sub-period lord strongly linked to the area -> the start holds; not linked ->
+        #            the start does not hold, and endings fall in such periods. A hit = the call matches the phase.
+        if e.get("phase") in ("begin_held", "begin_failed", "end"):
+            base["hold_rule"] += 1; hits["hold_rule"] += bool(adl) == (e["phase"] == "begin_held")
         pol = e.get("polarity")
         if pol in ("good", "bad"):
             # bad_2_7          Jataka Parijata 5.50: the period of the lord of the 2nd or the 7th counted from a house harms
