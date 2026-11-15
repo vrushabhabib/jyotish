@@ -7,10 +7,10 @@
  "lon": 75.1333,
  "tz": "Asia/Kolkata",
  "place": "Hubli",
- "time_confidence": "unknown - from an AstroSage printout dated 15 Apr 2018; source of the time not yet asked; lagna changes sign 11 minutes later (12:16)",
+ "time_confidence": "FROM MEMORY (asked 15 Nov 2026): the mother recalls 'somewhere in the afternoon' and settled on 12:05; no record. Real window about 11:30-16:30 = four rising signs (Makara to 12:15, Kumbha to 13:55, Meena to 15:30, Mesha after) and dasha dates up to 13 months earlier. NOT rectified - see engine.rectify scan; no single chart yet (Rule 22).",
  "computed": {
   "schema_version": 4,
-  "generated": "2026-11-13",
+  "generated": "2026-11-15",
   "engine": {
    "backend": "swisseph",
    "ayanamsa_lahiri": 23.81375
