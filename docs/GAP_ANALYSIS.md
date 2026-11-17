@@ -92,3 +92,6 @@ Read in full this sitting: Jataka Parijata ch. 4 (rest), 5, 7 (rest), 8, 9, 11, 
 - Standing result, unchanged: subject of a sub-period 26 of 37 against 20.4 (7%); direction - twelve rules tried, none confirmed.
 - What can still move the accuracy question: (1) new people through `engine.intake` - 0 of the 25 good/bad events needed; (2) question charts scored in the ledger - 0 scored.
 - Still not built: fixed English wording per grid verse; strength-part count rule; eighth-part rule. Still not read: Vriddha Yavana Jataka part two, Jaimini, Saravali.
+
+## Found 17 Nov 2026 while preparing a fresh reading - to fix in the engine
+- `D.Mars.marriage` and the worksheet's Mars line say "present" when Mars is in a listed house counted from the Moon or Venus only, and cite BPHS 80.47 / Jataka Parijata 14.34. Both verses count from the lagna (1, 4, 7, 8, 12 and 2, 12, 7, 4, 8). When Mars is in none of those from the lagna the line must read "not present by either text; present only by the popular count from the Moon/Venus". Until fixed, word it that way by hand in every reading.
