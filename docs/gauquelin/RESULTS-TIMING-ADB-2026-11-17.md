@@ -33,3 +33,9 @@ share 0.021 on the all-areas set. One rule at ~0.02 among 24 is what chance prod
 sealed bar and is NOT a result. It is the only candidate that may deserve one pre-registered
 confirmation on a fresh sample (entries 400-800 of the same category walk); if that is run, this
 note is its pre-registration.
+
+## Confirmation run, pre-registered before collection (17 Nov 2026, 20:30 IST)
+Sample: entries 401-800 of the same mechanical category walk, collected the same way, anonymous.
+Rule under test: link_lagna_tie ALONE, as already coded, on the all-areas event set, engine.control.pool,
+1,000 controls. Bar, fixed now: pooled share of controls at or above the real score < 0.01. Any other
+rule's number in that run is reported but is not a result. If the share is >= 0.01 the candidate is dead.
