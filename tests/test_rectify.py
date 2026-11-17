@@ -38,3 +38,10 @@ def test_hybrid_sheet_gives_subject_verdict_and_hold_line_for_every_period():
     md = H.markdown(rs)
     assert "Tradition's verdict" in md and "Hold line" in md and "age" in md
     assert "hold_rule" in RULES
+
+
+def test_completeness_check_names_what_a_script_leaves_out():
+    from engine import complete as C
+    assert "vehicles" in C.missing("# Work and business\n## Money\n")
+    full = "\n".join("## " + words[0] for words in C.ASPECTS.values())
+    assert C.missing(full) == []
