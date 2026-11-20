@@ -145,7 +145,9 @@ def business_synastry(a, b):
     for tag, x, y in (("A's Saturn on B", a, b), ("B's Saturn on A", b, a)):
         sat = x["planets"]["Saturn"]["rashi"]
         hit = sat in (y["moon_rashi"], y["lagna"]["rashi"])
-        F.append({"factor": tag, "finding": "Saturn conjoins partner's Moon/Lagna" if hit else "clear", "weight": -2 if hit else 0})
+        F.append({"factor": tag, "finding": ("Saturn conjoins partner's Moon/Lagna" if hit else "clear")
+                  + (" [slow planet: shared by everyone born within ~2.5 years - do not count as special]" if hit else ""),
+                  "weight": -2 if hit else 0, "shared": bool(hit)})
     # 6. Mercury (commerce) & Jupiter (wealth) dignity in each
     for tag, c in (("A", a), ("B", b)):
         for p in ("Mercury", "Jupiter"):
@@ -161,6 +163,9 @@ def business_synastry(a, b):
                   "weight": 1 if lord_house in (1, 2, 5, 9, 10, 11) else -1 if lord_house in (6, 8, 12) else 0})
     score = sum(f["weight"] for f in F)
     return {"factors": F, "net": score,
+            "source": ("UNSOURCED modern checklist - no partnership-matching method exists in Parashara, "
+                       "Phaladeepika, Brihat Jataka or Jataka Parijata; the net figure is a tally, never a verdict "
+                       "(engine finding 2026-11-20)."),
             "read": "Supportive" if score >= 4 else "Mixed — workable with clear roles" if score >= 0 else "Friction likely — define exit terms"}
 
 
@@ -177,3 +182,4 @@ if __name__ == "__main__":
     for f in bs["factors"]:
         print(f"{f['weight']:+d}  {f['factor']:<22} {f['finding']}")
     print("NET", bs["net"], "—", bs["read"])
+    print(bs["source"])

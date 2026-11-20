@@ -95,3 +95,6 @@ Read in full this sitting: Jataka Parijata ch. 4 (rest), 5, 7 (rest), 8, 9, 11, 
 
 ## Found 17 Nov 2026 while preparing a fresh reading - to fix in the engine
 - `D.Mars.marriage` and the worksheet's Mars line say "present" when Mars is in a listed house counted from the Moon or Venus only, and cite BPHS 80.47 / Jataka Parijata 14.34. Both verses count from the lagna (1, 4, 7, 8, 12 and 2, 12, 7, 4, 8). When Mars is in none of those from the lagna the line must read "not present by either text; present only by the popular count from the Moon/Venus". Until fixed, word it that way by hand in every reading.
+
+## 2026-11-20 - business partnership matching
+`engine.matching.business_synastry` is a modern checklist, not a classical method: none of the four texts read has a partnership-matching procedure. Its net figure is now labelled UNSOURCED in the output, and a Saturn-on-Moon/lagna contact is marked as shared (slow planet). Partnership questions are answered from each chart's own 7th/11th/10th houses and the two dasha calendars, with the checklist shown only as a tally.
