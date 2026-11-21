@@ -243,3 +243,26 @@ Every dated forward statement of a hybrid reading goes into the ledger with kind
 3. Where the texts or the chart give nothing on an aspect, the script still has the heading and says so in one line. Silence is stated, never skipped.
 4. Each aspect is written at speaking length - what the chart shows, why, what it means in daily life, when by age - so that nothing has to be added on the spot.
 5. A new aspect asked for during a sitting is added to `ASPECTS` the same day, so it is never missing again.
+
+## Rule 26 — traditional synthesis mode (21 Nov 2026, owner's instruction)
+
+Owner: the project had lost its predictive capacity — readings had become separate hedged points that did not join the
+chart up or predict. Instruction: "do everything needed to fix it". The over-correction is reversed as follows:
+
+1. **Read as a whole.** Every area is judged from all its angles at once (`engine.synthesis.dossier`): house points,
+   lord's house, dignity and strength rank, occupants and aspects, lord in the navamsa, the same house from the Moon,
+   the significator, house-from-house. The verdict comes from the count, not from one factor.
+2. **Join the dots.** `engine.synthesis.connections` states what each planet's rulership flows into ("lord of A in
+   house B", BPHS ch. 24 logic) and which areas move together. The reading opens with this picture.
+3. **Predict by convergence.** Eight clocks vote monthly per area (Vimshottari main/sub/third level, Yogini, Jaimini
+   Chara, Kalachakra, Jupiter–Saturn double transit, Muntha). A window needs at least four agreeing AND must be
+   selective (at most about a third of months reach its level). Tone = Parashara's template + transit points.
+   Muntha is Tajika — not in the texts the KB has read; marked so. Kalachakra cycle-2 dates rest on our continuation rule.
+4. **Calibrate on the person's own past** (`calibrate`): clocks that lit up during the person's real events get weight
+   0.5–1.5. Spans of a year or more are flagged untestable — month- or day-dated events are needed.
+5. **Speak plainly and specifically.** Firm dated predictions, sourced spouse description (low confidence), joined
+   reading. The honest record is said ONCE at the start, not on every line.
+6. **Ledger unchanged.** Every dated window is logged (engine.ledger add, kind forward) before it is spoken.
+
+Command: `python3 -m engine.synthesis DATE TIME LAT LON TZ --sex M|F --events SPANS.json --years 12 --out FILE`
+(events file stays outside the repo). Voice scripts are built from this sheet and still pass `engine.complete`.

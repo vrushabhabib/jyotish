@@ -98,3 +98,9 @@ Read in full this sitting: Jataka Parijata ch. 4 (rest), 5, 7 (rest), 8, 9, 11, 
 
 ## 2026-11-20 - business partnership matching
 `engine.matching.business_synastry` is a modern checklist, not a classical method: none of the four texts read has a partnership-matching procedure. Its net figure is now labelled UNSOURCED in the output, and a Saturn-on-Moon/lagna contact is marked as shared (slow planet). Partnership questions are answered from each chart's own 7th/11th/10th houses and the two dasha calendars, with the checklist shown only as a tally.
+
+## 21 Nov 2026 — synthesis mode (Rule 26)
+- Added `engine/synthesis.py`: whole-area dossier, cross-area connections, eight-clock convergence with selective
+  windows and per-person calibration. Still missing: the Tajika yearly chart beyond Muntha (year lord, sahams — needs
+  Tajika Neelakanthi read in the Sanskrit), D10/D7 in the dossier, and finely dated events for calibration. On the
+  owner's chart all five past events were caught but every one was a 2–3 year span, so the check carries no information.
