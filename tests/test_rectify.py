@@ -45,3 +45,11 @@ def test_completeness_check_names_what_a_script_leaves_out():
     assert "vehicles" in C.missing("# Work and business\n## Money\n")
     full = "\n".join("## " + words[0] for words in C.ASPECTS.values())
     assert C.missing(full) == []
+
+
+def test_balance_check_flags_a_section_with_only_problems():
+    from engine.complete import unbalanced
+    bad = "## 3. Money\n**The challenge.** Savings leak.\n"
+    good = "## 3. Money\n**The good.** Gains strong.\n**The challenge.** Savings leak.\n**Why.** Points.\n**How.** Buy property.\n"
+    assert unbalanced(bad) and unbalanced(bad)[0][1] == ["the good", "why", "how"]
+    assert unbalanced(good) == []

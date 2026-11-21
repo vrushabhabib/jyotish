@@ -4,7 +4,12 @@ a reading is prepared for EVERY aspect of life before any voice sitting - never 
     python3 -m engine.complete SCRIPT.md
 
 Prints the aspects the script does not cover and exits 1 if any is missing. An aspect counts as covered when one of
-its words appears in a heading line (a line starting with '#' or a bold '**...**' label)."""
+its words appears in a heading line (a line starting with '#' or a bold '**...**' label).
+
+Rule 27 (owner's hard rule of 22 Nov 2026) - BALANCE: a reading is never a list of problems. Every life-area section
+('## ' heading) must carry four labelled parts: **The good**, **The challenge**, **Why** (the chart reason in plain
+words) and **How** (what to do with it). `--balance` (and the default run) reports sections missing any of them.
+Sections that are not life areas (the honest note, method, tables, predictions, never-said) are exempt."""
 from __future__ import annotations
 import re, sys
 
@@ -51,12 +56,48 @@ def missing(text):
     return [a for a, words in ASPECTS.items() if not any(w in heads for w in words)]
 
 
+PARTS = {"the good": r"\*\*the good", "the challenge": r"\*\*the challenge", "why": r"\*\*why", "how": r"\*\*how"}
+EXEMPT = ("said once", "honest", "method", "how this script", "checked", "predictions on record", "never said", "cannot say",
+          "quick answers", "when", "the past", "age by age", "best and hardest", "right now", "the picture", "verdict", "in short")
+
+
+def unbalanced(text):
+    """[(section heading, [missing parts])] for life-area sections lacking any of the four balance parts."""
+    out, cur, body = [], None, []
+    def flush():
+        if cur is None: return
+        h = cur.lower()
+        if any(e in h for e in EXEMPT): return
+        b = "\n".join(body).lower()
+        miss = [k for k, rx in PARTS.items() if not re.search(rx, b)]
+        if miss: out.append((cur, miss))
+    for l in text.splitlines():
+        if l.startswith("## "):
+            flush(); cur, body = l[3:].strip(), []
+        elif cur is not None:
+            body.append(l)
+    flush()
+    return out
+
+
 def main(argv=None):
     argv = argv or sys.argv[1:]
-    m = missing(open(argv[0], encoding="utf-8").read())
-    if m:
-        print("NOT COMPLETE - aspects with no heading in the script:"); [print("  -", a) for a in m]; sys.exit(1)
-    print(f"COMPLETE - all {len(ASPECTS)} aspects have a heading.")
+    text = open(argv[0], encoding="utf-8").read()
+    bal = unbalanced(text)
+    if "--balance" not in argv:
+        m = missing(text)
+        if m:
+            print("NOT COMPLETE - aspects with no heading in the script:"); [print("  -", a) for a in m]
+        else:
+            print(f"COMPLETE - all {len(ASPECTS)} aspects have a heading.")
+    else:
+        m = []
+    if bal:
+        print("NOT BALANCED (Rule 27) - sections missing The good / The challenge / Why / How:")
+        for h, miss in bal: print(f"  - {h}: missing {', '.join(miss)}")
+    else:
+        print("BALANCED - every life-area section has the good, the challenge, why and how.")
+    if m or bal: sys.exit(1)
 
 
 if __name__ == "__main__":

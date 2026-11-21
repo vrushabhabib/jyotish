@@ -266,3 +266,16 @@ chart up or predict. Instruction: "do everything needed to fix it". The over-cor
 
 Command: `python3 -m engine.synthesis DATE TIME LAT LON TZ --sex M|F --events SPANS.json --years 12 --out FILE`
 (events file stays outside the repo). Voice scripts are built from this sheet and still pass `engine.complete`.
+
+## Rule 27 — balance: the good, the challenge, why and how (22 Nov 2026, owner's HARD RULE)
+
+Owner: readings must not be lists of problems. "It only makes sense in totality, not just problems... it feels like
+you're giving bad predictions that dishearten people without touching the why and what and how." Every life-area
+section of every reading or script carries four labelled parts, in this order:
+**The good** (what genuinely supports the area - always looked for and stated first),
+**The challenge** (what works against it, stated plainly, never in harsh classical wording),
+**Why** (the chart reason in plain words - which houses, rulers and points, so the person can see the logic),
+**How** (what to do with it - practical, the chart's tendency turned into action).
+Enforced by `python3 -m engine.complete SCRIPT.md` (fails if any life-area section lacks a part; `--balance` runs the
+balance check alone). Exempt: the once-only honest note, method notes, timelines, predictions, quick answers,
+never-said. The balance must be real: if an area has little good, say the little there is - never invent.
