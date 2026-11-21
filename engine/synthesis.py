@@ -34,6 +34,17 @@ from engine.report import AREAS
 from engine.rectify import _strong
 from engine import transits as T, dashas_extra as DX, dashas_classical as DC
 from engine.hybrid import template
+from engine.analysis import EXALT, DEBIL, OWN
+from engine import ephemeris as E
+
+VARGA_FOR = {"career": (10, 10, "career chart (D10)"), "children": (5, 7, "children chart (D7)"),
+             "home/mother": (4, 4, "property chart (D4)"), "marriage": (7, 9, "navamsa (D9)"),
+             "money": (2, 2, "wealth chart (D2)"), "siblings": (3, 3, "siblings chart (D3)")}
+
+
+def _vdig(p, sign):
+    if p not in EXALT: return 0
+    return 1 if (sign == EXALT[p] or sign in OWN[p]) else -1 if sign == DEBIL[p] else 0
 
 SYSTEMS = ("VMD", "VAD", "VPD", "YOG", "CHA", "KC", "DT", "MUN")
 CK = {"self/health": "AK", "siblings": "BK", "home/mother": "MK", "children": "PK", "marriage": "DK",
@@ -102,6 +113,13 @@ def dossier(c, a, av, shad, sex):
             if kh in (6, 8, 12): ag.append(f"its significator {k} sits in the house of {HOUSE_PLAIN[kh]}")
             elif kh in (1, 4, 7, 10, 5, 9): fo.append(f"its significator {k} sits in the house of {HOUSE_PLAIN[kh]}")
             if kd: (fo if kd > 0 else ag).append(f"its significator {k} is in a {'friendly or own' if kd > 0 else 'hostile or low'} sign")
+        if area in VARGA_FOR:                                # the matching divisional chart (BPHS ch. 6-7 assignments)
+            vh, n, vname = VARGA_FOR[area]
+            vl = varga_rashi(c["lagna"]["lon"], n); vs = sign_at(vl, vh); vlord = RASHI_LORD[vs - 1]
+            vpos = varga_rashi(c["planets"][vlord]["lon"], n); vhouse = hfrom(vpos, vl); vd = _vdig(vlord, vpos)
+            if vhouse in (6, 8, 12): ag.append(f"in the {vname} the ruler of this house sits in a hard house")
+            elif vhouse in (1, 4, 7, 10, 5, 9): fo.append(f"in the {vname} the ruler of this house sits in a good house")
+            if vd: (fo if vd > 0 else ag).append(f"in the {vname} that ruler is {'exalted or in its own sign' if vd > 0 else 'debilitated'}")
         bb = sign_at(sg, h)                                  # bhavat bhavam: the house as far from itself
         bl = RASHI_LORD[bb - 1]
         if v.house(bl) in (6, 8, 12): ag.append(f"house-from-house check: the {_ord(hfrom(bb, v.lag))} house's ruler sits in a hard house")
@@ -169,7 +187,7 @@ class Clocks:
         self.kc = DC.kalachakra(c["planets"]["Moon"]["lon"], self.local)
         self.ck = a["karakas"]["seven_bphs"]
         self.link = {ar: {p: _strong(v, sex, p, ar) for p in v.s} for ar in AREAS}
-        self._tr = {}
+        self._tr = {}; self._keys = {}
 
     def transit(self, d):
         if d not in self._tr: self._tr[d] = (T.sign_on("Jupiter", d), T.sign_on("Saturn", d))
@@ -213,12 +231,25 @@ class Clocks:
         return t
 
 
+def key_planets(cl, area):
+    """Planets whose period specifically triggers the area: house lord(s), significator(s), chara karaka, and for
+    marriage the Upapada lord (BPHS 30)."""
+    v = cl.v; hs, km, kf = AREAS[area]; ks = set(kf if cl.sex == "F" else km)
+    ks |= {v.lord(h) for h in hs}
+    k = cl.ck.get(CK.get(area, "")); ks |= {k} if k else set()
+    if area == "marriage":
+        ul = cl.a["arudhas"].get("UL")
+        if ul: ks.add(RASHI_LORD[RASHI_NAMES.index(ul["sign"])])
+    return ks
+
+
 def series(cl: Clocks, start, end, weights=None):
     w = weights or {}
     rows = []
     for d in _months(start, end):
         vs, path, js = cl.votes(d)
-        rows.append({"date": d, "votes": vs, "path": path, "tone": cl.tone(path, js),
+        trig = {ar: sum(1 for p in path[1:] if p in cl._keys.setdefault(ar, key_planets(cl, ar))) for ar in AREAS}
+        rows.append({"date": d, "votes": vs, "path": path, "tone": cl.tone(path, js), "trigger": trig,
                      "score": {ar: round(sum(w.get(ar, {}).get(k, 1.0) * x for k, x in vv.items()), 2) for ar, vv in vs.items()}})
     return rows
 
@@ -241,6 +272,7 @@ def windows(rows, area, max_share=0.34, min_systems=4):
             if run is None: run = {"from": r["date"], "to": r["date"], "systems": set(), "peak": 0, "tone": [], "paths": set()}
             run["to"] = r["date"] + dt.timedelta(days=29); run["peak"] = max(run["peak"], sum(r["votes"][area].values()))
             run["systems"] |= {k for k, x in r["votes"][area].items() if x}; run["tone"].append(r["tone"]); run["paths"].add("-".join(x or "" for x in r["path"][:2]))
+            run["trigger"] = max(run.get("trigger", 0), r.get("trigger", {}).get(area, 0))
         elif run:
             out.append(run); run = None
     if run: out.append(run)
@@ -248,6 +280,26 @@ def windows(rows, area, max_share=0.34, min_systems=4):
         t = sum(x["tone"]) / len(x["tone"]); x["tone"] = "favourable" if t >= 1.5 else "difficult" if t <= -1.5 else "mixed"
         x["systems"] = sorted(x["systems"]); x["paths"] = sorted(x["paths"])
     return out, level, round(share, 3)
+
+
+# ---------------------------------------------------------------------------------------- yearly chart (Tajika)
+def solar_return(cl: Clocks, year):
+    """Moment the sidereal Sun returns to its birth longitude in `year` (bisection on the ephemeris) and the
+    yearly chart's rising sign, Muntha and their houses from the birth lagna. Tajika rules beyond these facts
+    (year lord, sahams) are NOT applied: Tajika Neelakanthi has not yet been read in the Sanskrit."""
+    sun0 = cl.c["planets"]["Sun"]["lon"]; b = cl.local.astimezone(dt.timezone.utc)
+    t = b.replace(year=year) - dt.timedelta(days=3); lo, hi = t, t + dt.timedelta(days=6)
+    f = lambda x: ((E.body("Sun", E.julday(x))[0] - sun0 + 180) % 360) - 180
+    for _ in range(40):
+        mid = lo + (hi - lo) / 2
+        if f(mid) < 0: lo = mid
+        else: hi = mid
+    jd = E.julday(lo); lat, lon = cl.c["input"]["lat"], cl.c["input"]["lon"]
+    asc = E.angles(jd, lat, lon)[0] % 360; vl = int(asc // 30) + 1
+    age = year - cl.local.year; mun = (cl.c["lagna"]["rashi"] - 1 + age) % 12 + 1
+    return {"year": year, "moment_utc": lo.strftime("%Y-%m-%d %H:%M"), "year_lagna": RASHI_NAMES[vl - 1],
+            "year_lagna_house": hfrom(vl, cl.v.lag), "year_lagna_lord": RASHI_LORD[vl - 1],
+            "muntha": RASHI_NAMES[mun - 1], "muntha_house": hfrom(mun, cl.v.lag), "muntha_lord": RASHI_LORD[mun - 1]}
 
 
 # ------------------------------------------------------------------------------------------------ 4. calibrate
@@ -289,7 +341,8 @@ def run(date, time, lat, lon, tz, sex, events=None, years=12, start=None):
     weights, cal = (calibrate(cl, events) if events else (None, None))
     fwd = series(cl, start, end, weights)
     out = {"dossier": dossier(cl.c, cl.a, cl.av, shad, sex), "connections": connections(cl.c, cl.a), "calibration": cal,
-           "windows": {}, "start": start, "end": end, "birth": cl.local.date()}
+           "windows": {}, "start": start, "end": end, "birth": cl.local.date(),
+           "years": [solar_return(cl, y) for y in range(start.year, end.year + 1)]}
     for ar in AREAS:
         ws, lv, sh = windows(fwd, ar)
         out["windows"][ar] = {"windows": ws, "level": lv, "share": sh}
@@ -331,20 +384,51 @@ def markdown(res):
                 L.append("\nNone of these events is dated finely enough to test the clocks: a span of a year or more contains a window by luck. "
                          "Day- or month-dated events (wedding, company registration, passport stamps, offer letters) are needed; until then the weights are weak.")
     L += ["\n## 4. Forward windows (selective; each must be logged before it is spoken)\n",
-          "| Area | From | To | Age | Clocks agreeing | Tone | Vimshottari | Months at this level |", "|---|---|---|---|---|---|---|---|"]
+          "| Area | From | To | Age | Most clocks agreeing in one month (all that voted in the window) | Tone | Vimshottari | Months at this level |", "|---|---|---|---|---|---|---|---|"]
     for ar, d in res["windows"].items():
         for w in d["windows"]:
-            L.append(f"| {PLAIN[ar]} | {w['from']:%b %Y} | {w['to']:%b %Y} | {age(w['from']):.1f}-{age(w['to']):.1f} | {w['peak']} of 8 ({', '.join(w['systems'])}) | {w['tone']} | {', '.join(w['paths'])} | {d['share']:.0%} |")
+            L.append(f"| {PLAIN[ar]} | {w['from']:%b %Y} | {w['to']:%b %Y} | {age(w['from']):.1f}-{age(w['to']):.1f} | {w['peak']} of 8 ({len(w['systems'])} voted: {', '.join(w['systems'])}) | {w['tone']} | {', '.join(w['paths'])} | {d['share']:.0%} |")
+    L += ["\n## 5. Yearly charts (computed facts; Tajika reading rules not yet applied)\n",
+          "| Year | Return (UTC) | Year's rising sign (house from birth lagna) | Muntha (house) |", "|---|---|---|---|"]
+    for y in res.get("years", []):
+        L.append(f"| {y['year']} | {y['moment_utc']} | {y['year_lagna']} ({_ord(y['year_lagna_house'])}) | {y['muntha']} ({_ord(y['muntha_house'])}) |")
+    L += ["\n## 6. Quick answers for a voice call (from section 4 only)\n"]
+    Q = {"marriage": "When will I marry or commit?", "home/mother": "When will I buy property or move house?",
+         "career": "When will work change or pick up?", "money": "When will money come in?", "foreign/loss": "When will I go abroad?",
+         "father/fortune": "When will something happen about my father?", "self/health": "When will my own standing rise?",
+         "siblings": "When is the good time for brothers, sisters and own effort?", "children": "Children: timing is not spoken (rule)."}
+    for ar, q in Q.items():
+        ws = [w for w in res["windows"][ar]["windows"] if (w["to"] - w["from"]).days >= 45 or w["peak"] >= 6]
+        ws = sorted(ws, key=lambda w: (-w["peak"], -(w["to"] - w["from"]).days))[:3]
+        if ar == "children" or not ws: L.append(f"- **{q}** " + ("Not spoken." if ar == "children" else "No selective window in this span.")); continue
+        L.append(f"- **{q}** " + "; ".join(f"{w['from']:%b %Y}–{w['to']:%b %Y} (age {age(w['from']):.0f}, {w['peak']} of 8, {w['tone']}"
+                                            + (f", {w.get('trigger', 0)} key-planet trigger" if w.get("trigger") else "") + ")" for w in sorted(ws, key=lambda w: w["from"])))
     return "\n".join(L)
+
+
+def forecast(res, months=3):
+    """Windows that overlap the next `months` months - used by the monthly scheduled check."""
+    end = res["start"] + dt.timedelta(days=int(30.5 * months)); out = []
+    for ar, d in res["windows"].items():
+        if ar == "children": continue
+        for w in d["windows"]:
+            if w["from"] <= end and w["to"] >= res["start"]:
+                out.append({"area": ar, "plain": PLAIN[ar], "from": max(w["from"], res["start"]).isoformat(), "to": w["to"].isoformat(),
+                            "clocks": w["peak"], "tone": w["tone"], "trigger": w.get("trigger", 0)})
+    return out
 
 
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("date"); ap.add_argument("time"); ap.add_argument("lat", type=float); ap.add_argument("lon", type=float); ap.add_argument("tz")
     ap.add_argument("--sex", default="M"); ap.add_argument("--events"); ap.add_argument("--years", type=int, default=12); ap.add_argument("--out")
+    ap.add_argument("--forecast", type=int, default=0, help="print only the windows overlapping the next N months, as JSON")
     x = ap.parse_args(argv)
     ev = json.load(open(x.events)) if x.events else None
-    md = markdown(run(x.date, x.time, x.lat, x.lon, x.tz, x.sex, ev, x.years))
+    res = run(x.date, x.time, x.lat, x.lon, x.tz, x.sex, ev, x.years)
+    if x.forecast:
+        print(json.dumps(forecast(res, x.forecast), indent=1)); return
+    md = markdown(res)
     if x.out: open(x.out, "w").write(md)
     print(md)
 
