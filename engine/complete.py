@@ -81,6 +81,15 @@ def unbalanced(text):
     return out
 
 
+def pointy(text, limit=0.20):
+    """Rule 28 (24 Nov 2026): a written reading explains in prose, it does not list points.
+    Returns the share of non-empty body lines (outside tables and front matter) that are bullets, if above limit, else None."""
+    body = [l for l in text.split("\n---\n", 2)[-1].splitlines() if l.strip() and not l.lstrip().startswith(("|", "#"))]
+    if not body: return None
+    share = sum(1 for l in body if re.match(r"\s*([-*]|\d+\.)\s", l)) / len(body)
+    return round(share, 2) if share > limit else None
+
+
 def main(argv=None):
     argv = argv or sys.argv[1:]
     text = open(argv[0], encoding="utf-8").read()
@@ -98,7 +107,12 @@ def main(argv=None):
         for h, miss in bal: print(f"  - {h}: missing {', '.join(miss)}")
     else:
         print("BALANCED - every life-area section has the good, the challenge, why and how.")
-    if m or bal: sys.exit(1)
+    pt = pointy(text) if "--prose" in argv else None
+    if pt is not None:
+        print(f"TOO POINTY (Rule 28) - {int(pt*100)}% of lines are bullets; explain in prose (limit 20%).")
+    elif "--prose" in argv:
+        print("PROSE - the reading explains rather than lists.")
+    if m or bal or pt is not None: sys.exit(1)
 
 
 if __name__ == "__main__":

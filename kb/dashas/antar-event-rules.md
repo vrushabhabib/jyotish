@@ -279,3 +279,7 @@ section of every reading or script carries four labelled parts, in this order:
 Enforced by `python3 -m engine.complete SCRIPT.md` (fails if any life-area section lacks a part; `--balance` runs the
 balance check alone). Exempt: the once-only honest note, method notes, timelines, predictions, quick answers,
 never-said. The balance must be real: if an area has little good, say the little there is - never invent.
+
+
+## Rule 28 (24 Nov 2026) - a written reading explains, it does not list
+The owner rejected a bullet-point PDF as too technical. Written readings use the "Your Birth Chart, Explained" style (protocol section 1): a connected "The astrology." paragraph, then "In plain words." prose that walks through each aspect, joins the dots, and gives the good, the challenge, why and how. Checked by `python3 -m engine.complete SOURCE.md --prose` (bullets at most 20% of body lines).

@@ -53,3 +53,9 @@ def test_balance_check_flags_a_section_with_only_problems():
     good = "## 3. Money\n**The good.** Gains strong.\n**The challenge.** Savings leak.\n**Why.** Points.\n**How.** Buy property.\n"
     assert unbalanced(bad) and unbalanced(bad)[0][1] == ["the good", "why", "how"]
     assert unbalanced(good) == []
+
+
+def test_pointy_flags_bullet_lists_and_passes_prose():
+    from engine.complete import pointy
+    assert pointy("---\ntitle: x\n---\n# PART 1\n- a\n- b\n- c\nOne line of prose.\n") is not None
+    assert pointy("---\ntitle: x\n---\n# PART 1\nA paragraph that explains.\nAnother one.\n- one point\nMore prose.\nAnd more.\nStill more.\n") is None
