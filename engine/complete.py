@@ -58,7 +58,8 @@ def missing(text):
 
 PARTS = {"the good": r"\*\*the good", "the challenge": r"\*\*the challenge", "why": r"\*\*why", "how": r"\*\*how"}
 EXEMPT = ("said once", "honest", "method", "how this script", "checked", "predictions on record", "never said", "cannot say",
-          "quick answers", "when", "the past", "age by age", "best and hardest", "right now", "the picture", "verdict", "in short")
+          "quick answers", "when", "the past", "age by age", "best and hardest", "right now", "the picture", "verdict", "in short",
+          "at a glance", "how this was made")
 
 
 def unbalanced(text):
